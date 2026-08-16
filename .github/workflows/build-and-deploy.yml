@@ -44,6 +44,7 @@ jobs:
       - name: Setup problem matcher
         uses: sphinx-doc/github-problem-matcher@v1.1
 
+
       - name: Check translations
         run: |
           ls -la Doc/locales/fa/LC_MESSAGES
