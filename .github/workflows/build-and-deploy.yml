@@ -43,7 +43,12 @@ jobs:
         
       - name: Setup problem matcher
         uses: sphinx-doc/github-problem-matcher@v1.1
-        
+
+      - name: Check translations
+        run: |
+          ls -la Doc/locales/fa/LC_MESSAGES
+          msgunfmt Doc/locales/fa/LC_MESSAGES/tutorial.mo | grep -A3 "there are no easy answers" || true
+
       - name: Build documentation
         run: make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -W --keep-going" html
         working-directory: ./Doc
