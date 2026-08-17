@@ -78,6 +78,7 @@ jobs:
           publish_dir: ./html-preview
           destination_dir: previews/${{ steps.pr.outputs.number }}
           keep_files: true
+          enable_jekyll: false
 
       - name: Debug deployed structure
         run: |
