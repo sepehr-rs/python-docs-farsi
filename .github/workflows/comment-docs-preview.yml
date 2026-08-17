@@ -112,26 +112,37 @@ jobs:
             });
 
   cleanup:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+      if: github.event_name == 'pull_request' && github.event.action == 'closed'
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
 
-    steps:
-      - name: Checkout gh-pages
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
+      steps:
+        - name: Check if gh-pages exists
+          id: check
+          run: |
+            if git ls-remote --exit-code --heads https://github.com/${{ github.repository }}.git gh-pages; then
+              echo "exists=true" >> $GITHUB_OUTPUT
+            else
+              echo "exists=false" >> $GITHUB_OUTPUT
+            fi
 
-      - name: Remove preview folder
-        run: |
-          PR=${{ github.event.pull_request.number }}
-          if [ -d "previews/$PR" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git rm -rf "previews/$PR"
-            git commit -m "chore: remove preview for PR #$PR"
-            git push
-          else
-            echo "No preview folder found for PR #$PR, nothing to clean up."
-          fi
+        - name: Checkout gh-pages
+          if: steps.check.outputs.exists == 'true'
+          uses: actions/checkout@v4
+          with:
+            ref: gh-pages
+
+        - name: Remove preview folder
+          if: steps.check.outputs.exists == 'true'
+          run: |
+            PR=${{ github.event.pull_request.number }}
+            if [ -d "previews/$PR" ]; then
+              git config user.name "github-actions[bot]"
+              git config user.email "github-actions[bot]@users.noreply.github.com"
+              git rm -rf "previews/$PR"
+              git commit -m "chore: remove preview for PR #$PR"
+              git push
+            else
+              echo "No preview folder found for PR #$PR, nothing to clean up."
+            fi
