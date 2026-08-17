@@ -80,6 +80,13 @@ jobs:
           keep_files: true
           enable_jekyll: false
 
+      - name: Debug deployed structure
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          find previews/11/ -type f | grep -E "_static|\.css" | head -20
+          git checkout -
+
       - name: Post comment
         uses: actions/github-script@v7
         with:
