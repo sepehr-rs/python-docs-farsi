@@ -48,6 +48,9 @@ jobs:
           echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
         working-directory: ./Doc
 
+      - name: Move log to root
+        run: mv Doc/build.log build.log
+
       - name: Save PR number
         run: echo "${{ github.event.pull_request.number }}" > pr_number.txt
 
