@@ -80,13 +80,6 @@ jobs:
           keep_files: true
           enable_jekyll: false
 
-      - name: Debug deployed structure
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          find previews/ -type f | head -30
-          git checkout -
-
       - name: Post comment
         uses: actions/github-script@v7
         with:
@@ -97,7 +90,7 @@ jobs:
             const prNumber = ${{ steps.pr.outputs.number }};
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const previewUrl = `https://${owner}.github.io/${repo}/previews/${prNumber}/`;
+            const previewUrl = `https://${owner}.github.io/${repo}/previews/${prNumber}/index.html`;
 
             const body = `### ${icon} Docs build ${status}
 
