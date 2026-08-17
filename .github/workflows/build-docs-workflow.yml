@@ -42,9 +42,11 @@ jobs:
 
       - name: Build documentation
         id: build
+        env:
+          PREVIEW_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ github.event.pull_request.number }}/
         run: |
           set +e
-          make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 --keep-going" html 2>&1 | tee build.log
+          make -e SPHINXOPTS="--color -D language='fa' -D gettext_allow_fuzzy_translations=1 -D html_baseurl=$PREVIEW_URL --keep-going" html 2>&1 | tee build.log
           echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
         working-directory: ./Doc
 
