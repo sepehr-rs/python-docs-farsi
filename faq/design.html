@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -435,11 +435,11 @@ methods were added which give the same functionality that has always been
 available using the functions of the string module.  Most of these new methods
 have been widely accepted, but the one which appears to make some programmers
 feel uncomfortable is:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;16&#39;</span><span class="p">])</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">'1'</span><span class="p">,</span> <span class="s1">'2'</span><span class="p">,</span> <span class="s1">'4'</span><span class="p">,</span> <span class="s1">'8'</span><span class="p">,</span> <span class="s1">'16'</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>which gives the result:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;1, 2, 4, 8, 16&quot;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">"1, 2, 4, 8, 16"</span>
 </pre></div>
 </div>
 <p>There are two common arguments against this usage.</p>
@@ -452,7 +452,7 @@ literals.</p>
 join its members together with a string constant&quot;.  Sadly, you aren't.  For some
 reason there seems to be much less difficulty with having <a class="reference internal" href="../library/stdtypes.html#str.split" title="str.split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">split()</span></code></a> as
 a string method, since in that case it is easy to see that</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;1, 2, 4, 8, 16&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">"1, 2, 4, 8, 16"</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">", "</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>is an instruction to a string literal to return the substrings delimited by the
@@ -498,9 +498,9 @@ An older alternative is a sequence of <code class="docutils literal notranslate"
 <p>For cases where you need to choose from a very large number of possibilities,
 you can create a dictionary mapping case values to functions to call.  For
 example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">functions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="n">function_1</span><span class="p">,</span>
-             <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="n">function_2</span><span class="p">,</span>
-             <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">method_1</span><span class="p">}</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">functions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'a'</span><span class="p">:</span> <span class="n">function_1</span><span class="p">,</span>
+             <span class="s1">'b'</span><span class="p">:</span> <span class="n">function_2</span><span class="p">,</span>
+             <span class="s1">'c'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">method_1</span><span class="p">}</span>
 
 <span class="n">func</span> <span class="o">=</span> <span class="n">functions</span><span class="p">[</span><span class="n">value</span><span class="p">]</span>
 <span class="n">func</span><span class="p">()</span>
@@ -513,7 +513,7 @@ example:</p>
         <span class="o">...</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="n">method_name</span> <span class="o">=</span> <span class="s1">&#39;visit_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">method_name</span> <span class="o">=</span> <span class="s1">'visit_'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
         <span class="n">method</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)</span>
         <span class="n">method</span><span class="p">()</span>
 </pre></div>
@@ -675,7 +675,7 @@ list <code class="docutils literal notranslate"><span class="pre">L</span></code
 <ul>
 <li><p>Hash lists by their address (object ID).  This doesn't work because if you
 construct a new list with the same value it won't be found; e.g.:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">mydict</span> <span class="o">=</span> <span class="p">{[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span> <span class="s1">&#39;12&#39;</span><span class="p">}</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">mydict</span> <span class="o">=</span> <span class="p">{[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span> <span class="s1">'12'</span><span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mydict</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </pre></div>
 </div>
@@ -823,13 +823,13 @@ quote character by escaping it with a backslash.  These rules work well when
 r-strings are used for their intended purpose.</p>
 <p>If you're trying to build Windows pathnames, note that all Windows system calls
 accept forward slashes too:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/mydir/file.txt&quot;</span><span class="p">)</span>  <span class="c1"># works fine!</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"/mydir/file.txt"</span><span class="p">)</span>  <span class="c1"># works fine!</span>
 </pre></div>
 </div>
 <p>If you're trying to build a pathname for a DOS command, try e.g. one of</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;\this\is\my\dos\dir&quot;</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span>
-<span class="nb">dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;\this\is\my\dos\dir\ &quot;</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">dir</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">this</span><span class="se">\\</span><span class="s2">is</span><span class="se">\\</span><span class="s2">my</span><span class="se">\\</span><span class="s2">dos</span><span class="se">\\</span><span class="s2">dir</span><span class="se">\\</span><span class="s2">&quot;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\this\is\my\dos\dir"</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">"</span>
+<span class="nb">dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\this\is\my\dos\dir\ "</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">dir</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">this</span><span class="se">\\</span><span class="s2">is</span><span class="se">\\</span><span class="s2">my</span><span class="se">\\</span><span class="s2">dos</span><span class="se">\\</span><span class="s2">dir</span><span class="se">\\</span><span class="s2">"</span>
 </pre></div>
 </div>
 </section>
@@ -917,10 +917,10 @@ increased instead of having to do a more elaborate parsing of the program text.<
 <p>Python lets you add a trailing comma at the end of lists, tuples, and
 dictionaries:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,]</span>
-<span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,)</span>
+<span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,)</span>
 <span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-    <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>  <span class="c1"># last trailing comma is optional but good style</span>
+    <span class="s2">"A"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="s2">"B"</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>  <span class="c1"># last trailing comma is optional but good style</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -932,10 +932,10 @@ without creating a syntax error.</p>
 <p>Accidentally omitting the comma can lead to errors that are hard to diagnose.
 For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="s2">&quot;fee&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;fie&quot;</span>
-  <span class="s2">&quot;foo&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;fum&quot;</span>
+  <span class="s2">"fee"</span><span class="p">,</span>
+  <span class="s2">"fie"</span>
+  <span class="s2">"foo"</span><span class="p">,</span>
+  <span class="s2">"fum"</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -1110,7 +1110,7 @@ For example:</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

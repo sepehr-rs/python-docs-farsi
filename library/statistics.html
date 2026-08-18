@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -259,7 +259,7 @@ functions:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">isnan</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">filterfalse</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">20.7</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">),</span><span class="mf">19.2</span><span class="p">,</span> <span class="mf">18.3</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">),</span> <span class="mf">14.4</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">20.7</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'NaN'</span><span class="p">),</span><span class="mf">19.2</span><span class="p">,</span> <span class="mf">18.3</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'NaN'</span><span class="p">),</span> <span class="mf">14.4</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># This has surprising behavior</span>
 <span class="go">[20.7, nan, 14.4, 18.3, 19.2, nan]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">median</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># This result is unexpected</span>
@@ -386,8 +386,8 @@ the data.</p>
 <span class="go">Fraction(13, 21)</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span> <span class="k">as</span> <span class="n">D</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mean</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;0.5&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;0.75&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;0.625&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;0.375&quot;</span><span class="p">)])</span>
-<span class="go">Decimal(&#39;0.5625&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mean</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">"0.5"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"0.75"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"0.625"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"0.375"</span><span class="p">)])</span>
+<span class="go">Decimal('0.5625')</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -677,8 +677,8 @@ standard treatment of the mode as commonly taught in schools:</p>
 </div>
 <p>The mode is unique in that it is the only statistic in this package that
 also applies to nominal (non-numeric) data:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mode</span><span class="p">([</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">])</span>
-<span class="go">&#39;red&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mode</span><span class="p">([</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">])</span>
+<span class="go">'red'</span>
 </pre></div>
 </div>
 <p>Only hashable inputs are supported.  To handle type <a class="reference internal" href="stdtypes.html#set" title="set"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>,
@@ -699,9 +699,9 @@ found.</p>
 <dd><p>Return a list of the most frequently occurring values in the order they
 were first encountered in the <em>data</em>.  Will return more than one result if
 there are multiple modes or an empty list if the <em>data</em> is empty:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">multimode</span><span class="p">(</span><span class="s1">&#39;aabbbbccddddeeffffgg&#39;</span><span class="p">)</span>
-<span class="go">[&#39;b&#39;, &#39;d&#39;, &#39;f&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">multimode</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">multimode</span><span class="p">(</span><span class="s1">'aabbbbccddddeeffffgg'</span><span class="p">)</span>
+<span class="go">['b', 'd', 'f']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">multimode</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
 <span class="go">[]</span>
 </pre></div>
 </div>
@@ -752,8 +752,8 @@ optional second argument <em>mu</em> to avoid recalculation:</p>
 </div>
 <p>Decimals and Fractions are supported:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span> <span class="k">as</span> <span class="n">D</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pvariance</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;27.5&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;30.25&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;30.25&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;34.5&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;41.75&quot;</span><span class="p">)])</span>
-<span class="go">Decimal(&#39;24.815&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pvariance</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">"27.5"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"30.25"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"30.25"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"34.5"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"41.75"</span><span class="p">)])</span>
+<span class="go">Decimal('24.815')</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span> <span class="k">as</span> <span class="n">F</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pvariance</span><span class="p">([</span><span class="n">F</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">F</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">F</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
@@ -816,8 +816,8 @@ as <em>xbar</em>.  Using arbitrary values for <em>xbar</em> can lead to invalid 
 impossible results.</p>
 <p>Decimal and Fraction values are supported:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span> <span class="k">as</span> <span class="n">D</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">variance</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">&quot;27.5&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;30.25&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;30.25&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;34.5&quot;</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">&quot;41.75&quot;</span><span class="p">)])</span>
-<span class="go">Decimal(&#39;31.01875&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">variance</span><span class="p">([</span><span class="n">D</span><span class="p">(</span><span class="s2">"27.5"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"30.25"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"30.25"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"34.5"</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="s2">"41.75"</span><span class="p">)])</span>
+<span class="go">Decimal('31.01875')</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span> <span class="k">as</span> <span class="n">F</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">variance</span><span class="p">([</span><span class="n">F</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">F</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">F</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
@@ -935,14 +935,14 @@ not to be constant, otherwise <a class="reference internal" href="#statistics.St
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dist_from_sun</span> <span class="o">=</span> <span class="p">[</span><span class="mi">58</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">228</span><span class="p">,</span> <span class="mi">778</span><span class="p">,</span> <span class="mi">1_400</span><span class="p">,</span> <span class="mi">2_900</span><span class="p">,</span> <span class="mi">4_500</span><span class="p">]</span> <span class="c1"># million km</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Show that a perfect monotonic relationship exists</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">correlation</span><span class="p">(</span><span class="n">orbital_period</span><span class="p">,</span> <span class="n">dist_from_sun</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;ranked&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">correlation</span><span class="p">(</span><span class="n">orbital_period</span><span class="p">,</span> <span class="n">dist_from_sun</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'ranked'</span><span class="p">)</span>
 <span class="go">1.0</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Observe that a linear relationship is imperfect</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">correlation</span><span class="p">(</span><span class="n">orbital_period</span><span class="p">,</span> <span class="n">dist_from_sun</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
 <span class="go">0.9882</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Demonstrate Kepler&#39;s third law: There is a linear correlation</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Demonstrate Kepler's third law: There is a linear correlation</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># between the square of the orbital period and the cube of the</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># distance from the sun.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">period_squared</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="o">*</span> <span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">orbital_period</span><span class="p">]</span>
@@ -1315,8 +1315,8 @@ feature measurements given the gender:</p>
 </div>
 <p>The final prediction goes to the largest posterior. This is known as the
 <a class="reference external" href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">maximum a posteriori</a> or MAP:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;male&#39;</span> <span class="k">if</span> <span class="n">posterior_male</span> <span class="o">&gt;</span> <span class="n">posterior_female</span> <span class="k">else</span> <span class="s1">&#39;female&#39;</span>
-<span class="go">&#39;female&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'male'</span> <span class="k">if</span> <span class="n">posterior_male</span> <span class="o">&gt;</span> <span class="n">posterior_female</span> <span class="k">else</span> <span class="s1">'female'</span>
+<span class="go">'female'</span>
 </pre></div>
 </div>
 </section>
@@ -1474,7 +1474,7 @@ feature measurements given the gender:</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

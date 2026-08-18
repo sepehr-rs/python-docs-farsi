@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -325,7 +325,7 @@ implements <a class="reference internal" href="functions.html#hash" title="hash"
     <span class="k">if</span> <span class="bp">self</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="c1"># Use tuple&#39;s hash to avoid a high collision rate on</span>
+        <span class="c1"># Use tuple's hash to avoid a high collision rate on</span>
         <span class="c1"># simple fractions.</span>
         <span class="k">return</span> <span class="nb">hash</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">numerator</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">denominator</span><span class="p">))</span>
 </pre></div>
@@ -417,7 +417,7 @@ forward and reverse instances of any given operator. For example,
             <span class="k">return</span> <span class="n">fallback_operator</span><span class="p">(</span><span class="nb">complex</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">b</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">NotImplemented</span>
-    <span class="n">forward</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">&#39;__&#39;</span> <span class="o">+</span> <span class="n">fallback_operator</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">&#39;__&#39;</span>
+    <span class="n">forward</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">'__'</span> <span class="o">+</span> <span class="n">fallback_operator</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">'__'</span>
     <span class="n">forward</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">monomorphic_operator</span><span class="o">.</span><span class="vm">__doc__</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
@@ -430,13 +430,13 @@ forward and reverse instances of any given operator. For example,
             <span class="k">return</span> <span class="n">fallback_operator</span><span class="p">(</span><span class="nb">complex</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">complex</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">NotImplemented</span>
-    <span class="n">reverse</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">&#39;__r&#39;</span> <span class="o">+</span> <span class="n">fallback_operator</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">&#39;__&#39;</span>
+    <span class="n">reverse</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">'__r'</span> <span class="o">+</span> <span class="n">fallback_operator</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">+</span> <span class="s1">'__'</span>
     <span class="n">reverse</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">monomorphic_operator</span><span class="o">.</span><span class="vm">__doc__</span>
 
     <span class="k">return</span> <span class="n">forward</span><span class="p">,</span> <span class="n">reverse</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;a + b&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""a + b"""</span>
     <span class="k">return</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">numerator</span> <span class="o">*</span> <span class="n">b</span><span class="o">.</span><span class="n">denominator</span> <span class="o">+</span>
                     <span class="n">b</span><span class="o">.</span><span class="n">numerator</span> <span class="o">*</span> <span class="n">a</span><span class="o">.</span><span class="n">denominator</span><span class="p">,</span>
                     <span class="n">a</span><span class="o">.</span><span class="n">denominator</span> <span class="o">*</span> <span class="n">b</span><span class="o">.</span><span class="n">denominator</span><span class="p">)</span>
@@ -594,7 +594,7 @@ forward and reverse instances of any given operator. For example,
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

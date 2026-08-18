@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -442,17 +442,17 @@ For instance, consider the following code (notice the unclosed '{'):</p>
 </div>
 <p>Previous versions of the interpreter reported confusing places as the location of
 the syntax error:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="s2">&quot;example.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="s2">"example.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span>
     <span class="n">some_other_code</span> <span class="o">=</span> <span class="n">foo</span><span class="p">()</span>
                     <span class="o">^</span>
 <span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span>
 </pre></div>
 </div>
 <p>but in Python 3.10 a more informative error is emitted:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="s2">&quot;example.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="s2">"example.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
     <span class="n">expected</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">19</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">27</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">28</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">29</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">36</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">37</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
                <span class="o">^</span>
-<span class="ne">SyntaxError</span><span class="p">:</span> <span class="s1">&#39;{&#39;</span> <span class="n">was</span> <span class="n">never</span> <span class="n">closed</span>
+<span class="ne">SyntaxError</span><span class="p">:</span> <span class="s1">'{'</span> <span class="n">was</span> <span class="n">never</span> <span class="n">closed</span>
 </pre></div>
 </div>
 <p>In a similar way, errors involving unclosed string literals (single and triple
@@ -465,7 +465,7 @@ full error range of the expression that constitutes the syntax error itself,
 instead of just where the problem is detected. In this way, instead of displaying
 (before Python 3.10):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
 <span class="w">           </span><span class="pm">^</span>
 <span class="gr">SyntaxError</span>: <span class="n">Generator expression must be parenthesized</span>
@@ -473,7 +473,7 @@ instead of just where the problem is detected. In this way, instead of displayin
 </div>
 <p>now Python 3.10 will display the exception as:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
 <span class="w">           </span><span class="pm">^^^^^^^^^^^^^^^^^^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">Generator expression must be parenthesized</span>
@@ -485,18 +485,18 @@ have been incorporated. Some of the most notable ones are as follows:</p>
 <ul>
 <li><p>Missing <code class="docutils literal notranslate"><span class="pre">:</span></code> before blocks:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">rocket</span><span class="o">.</span><span class="n">position</span> <span class="o">&gt;</span> <span class="n">event_horizon</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="k">if</span> <span class="n">rocket</span><span class="o">.</span><span class="n">position</span> <span class="o">&gt;</span> <span class="n">event_horizon</span>
 <span class="w">                                      </span><span class="pm">^</span>
-<span class="gr">SyntaxError</span>: <span class="n">expected &#39;:&#39;</span>
+<span class="gr">SyntaxError</span>: <span class="n">expected ':'</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=42997">bpo-42997</a>.)</p>
 </li>
 <li><p>Unparenthesised tuples in comprehensions targets:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="s1">&#39;1234&#39;</span><span class="p">)}</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="w">    </span><span class="p">{</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="s1">&#39;1234&#39;</span><span class="p">)}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="s1">'abcd'</span><span class="p">,</span> <span class="s1">'1234'</span><span class="p">)}</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
+<span class="w">    </span><span class="p">{</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="s1">'abcd'</span><span class="p">,</span> <span class="s1">'1234'</span><span class="p">)}</span>
 <span class="w">     </span><span class="pm">^</span>
 <span class="gr">SyntaxError</span>: <span class="n">did you forget parentheses around the comprehension target?</span>
 </pre></div>
@@ -508,7 +508,7 @@ have been incorporated. Some of the most notable ones are as follows:</p>
 <span class="gp">... </span><span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 <span class="gp">... </span><span class="n">y</span><span class="p">:</span> <span class="mi">2</span>
 <span class="gp">... </span><span class="n">z</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">3</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">3</span>
 <span class="w">    </span><span class="n">y</span><span class="p">:</span> <span class="mi">2</span>
 <span class="w">       </span><span class="pm">^</span>
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax. Perhaps you forgot a comma?</span>
@@ -520,7 +520,7 @@ have been incorporated. Some of the most notable ones are as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">build_dyson_sphere</span><span class="p">()</span>
 <span class="gp">... </span><span class="k">except</span> <span class="n">NotEnoughScienceError</span><span class="p">,</span> <span class="n">NotEnoughResourcesError</span><span class="p">:</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">3</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">3</span>
 <span class="w">    </span><span class="k">except</span> <span class="n">NotEnoughScienceError</span><span class="p">,</span> <span class="n">NotEnoughResourcesError</span><span class="p">:</span>
 <span class="w">           </span><span class="pm">^</span>
 <span class="gr">SyntaxError</span>: <span class="n">multiple exception types must be parenthesized</span>
@@ -534,16 +534,16 @@ have been incorporated. Some of the most notable ones are as follows:</p>
 <span class="gp">... </span><span class="n">y</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 <span class="gp">... </span><span class="n">z</span><span class="p">:</span>
 <span class="gp">... </span><span class="p">}</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">4</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">4</span>
 <span class="w">    </span><span class="n">z</span><span class="p">:</span>
 <span class="w">     </span><span class="pm">^</span>
-<span class="gr">SyntaxError</span>: <span class="n">expression expected after dictionary key and &#39;:&#39;</span>
+<span class="gr">SyntaxError</span>: <span class="n">expression expected after dictionary key and ':'</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="n">z</span> <span class="n">w</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="n">z</span> <span class="n">w</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
 <span class="w">                        </span><span class="pm">^</span>
-<span class="gr">SyntaxError</span>: <span class="n">&#39;:&#39; expected after dictionary key</span>
+<span class="gr">SyntaxError</span>: <span class="n">':' expected after dictionary key</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=43823">bpo-43823</a>.)</p>
@@ -552,27 +552,27 @@ have been incorporated. Some of the most notable ones are as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">... </span><span class="n">something</span> <span class="o">=</span> <span class="mi">3</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">3</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">3</span>
 <span class="w">    </span><span class="n">something</span>  <span class="o">=</span> <span class="mi">3</span>
 <span class="w">    </span><span class="pm">^^^^^^^^^</span>
-<span class="gr">SyntaxError</span>: <span class="n">expected &#39;except&#39; or &#39;finally&#39; block</span>
+<span class="gr">SyntaxError</span>: <span class="n">expected 'except' or 'finally' block</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=44305">bpo-44305</a>.)</p>
 </li>
 <li><p>Usage of <code class="docutils literal notranslate"><span class="pre">=</span></code> instead of <code class="docutils literal notranslate"><span class="pre">==</span></code> in comparisons:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">rocket</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">event_horizon</span><span class="p">:</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="k">if</span> <span class="n">rocket</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">event_horizon</span><span class="p">:</span>
 <span class="w">                       </span><span class="pm">^</span>
-<span class="gr">SyntaxError</span>: <span class="n">cannot assign to attribute here. Maybe you meant &#39;==&#39; instead of &#39;=&#39;?</span>
+<span class="gr">SyntaxError</span>: <span class="n">cannot assign to attribute here. Maybe you meant '==' instead of '='?</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=43797">bpo-43797</a>.)</p>
 </li>
 <li><p>Usage of <code class="docutils literal notranslate"><span class="pre">*</span></code> in f-strings:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">&quot;Black holes </span><span class="si">{</span><span class="o">*</span><span class="n">all_black_holes</span><span class="si">}</span><span class="s2"> and revelations&quot;</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"Black holes </span><span class="si">{</span><span class="o">*</span><span class="n">all_black_holes</span><span class="si">}</span><span class="s2"> and revelations"</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="p">(</span><span class="o">*</span><span class="n">all_black_holes</span><span class="p">)</span>
 <span class="w">     </span><span class="pm">^</span>
 <span class="gr">SyntaxError</span>: <span class="n">f-string: cannot use starred expression here</span>
@@ -589,10 +589,10 @@ was expecting an indentation, including the location of the statement:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">():</span>
 <span class="gp">... </span>   <span class="k">if</span> <span class="n">lel</span><span class="p">:</span>
 <span class="gp">... </span>   <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">3</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">3</span>
 <span class="w">    </span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="w">    </span><span class="pm">^</span>
-<span class="gr">IndentationError</span>: <span class="n">expected an indented block after &#39;if&#39; statement in line 2</span>
+<span class="gr">IndentationError</span>: <span class="n">expected an indented block after 'if' statement in line 2</span>
 </pre></div>
 </div>
 </section>
@@ -603,8 +603,8 @@ suggestions of similar attribute names in the object that the exception was
 raised from:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">collections</span><span class="o">.</span><span class="n">namedtoplo</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">AttributeError</span>: <span class="n">module &#39;collections&#39; has no attribute &#39;namedtoplo&#39;. Did you mean: namedtuple?</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AttributeError</span>: <span class="n">module 'collections' has no attribute 'namedtoplo'. Did you mean: namedtuple?</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=38530">bpo-38530</a>.)</p>
@@ -623,8 +623,8 @@ was raised from:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">schwarzschild_black_hole</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">schwarschild_black_hole</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">NameError</span>: <span class="n">name &#39;schwarschild_black_hole&#39; is not defined. Did you mean: schwarzschild_black_hole?</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name 'schwarschild_black_hole' is not defined. Did you mean: schwarzschild_black_hole?</span>
 </pre></div>
 </div>
 <p>(Contributed by Pablo Galindo in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=38530">bpo-38530</a>.)</p>
@@ -714,13 +714,13 @@ The associated action to the case is executed after a match:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">http_error</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">status</span><span class="p">:</span>
         <span class="k">case</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Bad request&quot;</span>
+            <span class="k">return</span> <span class="s2">"Bad request"</span>
         <span class="k">case</span> <span class="mi">404</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Not found&quot;</span>
+            <span class="k">return</span> <span class="s2">"Not found"</span>
         <span class="k">case</span> <span class="mi">418</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;I&#39;m a teapot&quot;</span>
+            <span class="k">return</span> <span class="s2">"I'm a teapot"</span>
         <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Something&#39;s wrong with the internet&quot;</span>
+            <span class="k">return</span> <span class="s2">"Something's wrong with the internet"</span>
 </pre></div>
 </div>
 <p>If the above function is passed a <code class="docutils literal notranslate"><span class="pre">status</span></code> of 418, &quot;I'm a teapot&quot; is returned.
@@ -731,7 +731,7 @@ Note the last block: the variable name, <code class="docutils literal notranslat
 the subject will always match. The use of <code class="docutils literal notranslate"><span class="pre">_</span></code> is optional.</p>
 <p>You can combine several literals in a single pattern using <code class="docutils literal notranslate"><span class="pre">|</span></code> (&quot;or&quot;):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="mi">401</span> <span class="o">|</span> <span class="mi">403</span> <span class="o">|</span> <span class="mi">404</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;Not allowed&quot;</span>
+    <span class="k">return</span> <span class="s2">"Not allowed"</span>
 </pre></div>
 </div>
 <section id="behavior-without-the-wildcard">
@@ -741,11 +741,11 @@ becomes:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">http_error</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">status</span><span class="p">:</span>
         <span class="k">case</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Bad request&quot;</span>
+            <span class="k">return</span> <span class="s2">"Bad request"</span>
         <span class="k">case</span> <span class="mi">404</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Not found&quot;</span>
+            <span class="k">return</span> <span class="s2">"Not found"</span>
         <span class="k">case</span> <span class="mi">418</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;I&#39;m a teapot&quot;</span>
+            <span class="k">return</span> <span class="s2">"I'm a teapot"</span>
 </pre></div>
 </div>
 <p>Without the use of <code class="docutils literal notranslate"><span class="pre">_</span></code> in a case statement, a match may not exist. If no
@@ -761,15 +761,15 @@ and y-coordinate:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># point is an (x, y) tuple</span>
 <span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Origin&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Origin"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Not a point&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Not a point"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The first pattern has two literals, <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>, and may be thought of as an
@@ -791,15 +791,15 @@ pattern has the ability to capture instance attributes into variables:</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">location</span><span class="p">(</span><span class="n">point</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">point</span><span class="p">:</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Origin is the point&#39;s location.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Origin is the point's location."</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2"> and the point is on the y-axis.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2"> and the point is on the y-axis."</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> and the point is on the x-axis.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> and the point is on the x-axis."</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">():</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The point is located somewhere else on the plane.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"The point is located somewhere else on the plane."</span><span class="p">)</span>
         <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not a point&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Not a point"</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="patterns-with-positional-parameters">
@@ -823,15 +823,15 @@ are all equivalent (and all bind the <code class="docutils literal notranslate">
 list of points, it could be matched like this:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">match</span> <span class="n">points</span><span class="p">:</span>
     <span class="k">case</span> <span class="p">[]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No points in the list.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"No points in the list."</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The origin is the only point in the list.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"The origin is the only point in the list."</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A single point </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2"> is in the list.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A single point </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2"> is in the list."</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y2</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Two points on the Y axis at </span><span class="si">{</span><span class="n">y1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y2</span><span class="si">}</span><span class="s2"> are in the list.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Two points on the Y axis at </span><span class="si">{</span><span class="n">y1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y2</span><span class="si">}</span><span class="s2"> are in the list."</span><span class="p">)</span>
     <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something else is found in the list.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Something else is found in the list."</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -841,10 +841,10 @@ list of points, it could be matched like this:</p>
 A wildcard can be used in more complex patterns, such as <code class="docutils literal notranslate"><span class="pre">('error',</span> <span class="pre">code,</span> <span class="pre">_)</span></code>.
 For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">match</span> <span class="n">test_variable</span><span class="p">:</span>
-    <span class="k">case</span> <span class="p">(</span><span class="s1">&#39;warning&#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="mi">40</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A warning has been received.&quot;</span><span class="p">)</span>
-    <span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="k">_</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An error </span><span class="si">{</span><span class="n">code</span><span class="si">}</span><span class="s2"> occurred.&quot;</span><span class="p">)</span>
+    <span class="k">case</span> <span class="p">(</span><span class="s1">'warning'</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="mi">40</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"A warning has been received."</span><span class="p">)</span>
+    <span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="k">_</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"An error </span><span class="si">{</span><span class="n">code</span><span class="si">}</span><span class="s2"> occurred."</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>In the above case, <code class="docutils literal notranslate"><span class="pre">test_variable</span></code> will match for ('error', code, 100) and
@@ -857,9 +857,9 @@ guard is false, <code class="docutils literal notranslate"><span class="pre">mat
 that value capture happens before the guard is evaluated:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The point is located on the diagonal Y=X at </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The point is located on the diagonal Y=X at </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Point is not on the diagonal.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Point is not on the diagonal."</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -901,11 +901,11 @@ variable:</p>
 <span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span>
 <span class="k">match</span> <span class="n">color</span><span class="p">:</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I see red!&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"I see red!"</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grass is green&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grass is green"</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m feeling the blues :(&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"I'm feeling the blues :("</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
@@ -920,8 +920,8 @@ are in <span class="target" id="index-16"></span><a class="pep reference externa
 platform and locale dependent. Since UTF-8 is used on most Unix
 platforms, omitting <code class="docutils literal notranslate"><span class="pre">encoding</span></code> option when opening UTF-8 files
 (e.g. JSON, YAML, TOML, Markdown) is a very common bug. For example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BUG: &quot;rb&quot; mode or encoding=&quot;utf-8&quot; should be used.</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BUG: "rb" mode or encoding="utf-8" should be used.</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"data.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -988,14 +988,14 @@ Zijlstra in <a class="reference external" href="https://bugs.python.org/issue?&#
 top-level unannotated assignments. This simplicity sometimes made it difficult
 for type checkers to distinguish between type aliases and ordinary assignments,
 especially when forward references or invalid types were involved. Compare:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">StrCache</span> <span class="o">=</span> <span class="s1">&#39;Cache[str]&#39;</span>  <span class="c1"># a type alias</span>
-<span class="n">LOG_PREFIX</span> <span class="o">=</span> <span class="s1">&#39;LOG[DEBUG]&#39;</span>  <span class="c1"># a module constant</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">StrCache</span> <span class="o">=</span> <span class="s1">'Cache[str]'</span>  <span class="c1"># a type alias</span>
+<span class="n">LOG_PREFIX</span> <span class="o">=</span> <span class="s1">'LOG[DEBUG]'</span>  <span class="c1"># a module constant</span>
 </pre></div>
 </div>
 <p>Now the <a class="reference internal" href="../library/typing.html#module-typing" title="typing: Support for type hints (see :pep:`484`)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">typing</span></code></a> module has a special value <a class="reference internal" href="../library/typing.html#typing.TypeAlias" title="typing.TypeAlias"><code class="xref py py-data docutils literal notranslate"><span class="pre">TypeAlias</span></code></a>
 which lets you declare type aliases more explicitly:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">StrCache</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="s1">&#39;Cache[str]&#39;</span>  <span class="c1"># a type alias</span>
-<span class="n">LOG_PREFIX</span> <span class="o">=</span> <span class="s1">&#39;LOG[DEBUG]&#39;</span>  <span class="c1"># a module constant</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">StrCache</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="s1">'Cache[str]'</span>  <span class="c1"># a type alias</span>
+<span class="n">LOG_PREFIX</span> <span class="o">=</span> <span class="s1">'LOG[DEBUG]'</span>  <span class="c1"># a module constant</span>
 </pre></div>
 </div>
 <p>See <span class="target" id="index-24"></span><a class="pep reference external" href="https://peps.python.org/pep-0613/"><strong>PEP 613</strong></a> for more details.</p>
@@ -1565,8 +1565,8 @@ an error:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Literal</span><span class="p">[{</span><span class="mi">0</span><span class="p">}]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Literal</span><span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="o">==</span> <span class="n">Literal</span><span class="p">[{</span><span class="kc">False</span><span class="p">}]</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">unhashable type: &#39;set&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">unhashable type: 'set'</span>
 </pre></div>
 </div>
 </li>
@@ -1985,10 +1985,10 @@ it and compile the result. One way to do this is using the <a class="reference i
 module with <a class="reference internal" href="../c-api/import.html#c.PyImport_ImportModule" title="PyImport_ImportModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyImport_ImportModule()</span></code></a>, <a class="reference internal" href="../c-api/call.html#c.PyObject_CallMethod" title="PyObject_CallMethod"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_CallMethod()</span></code></a>,
 <a class="reference internal" href="../c-api/bytes.html#c.PyBytes_AsString" title="PyBytes_AsString"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyBytes_AsString()</span></code></a> and <a class="reference internal" href="../c-api/veryhigh.html#c.Py_CompileString" title="Py_CompileString"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_CompileString()</span></code></a>,
 as sketched below. (Declarations and error handling are omitted.)</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">io_module</span> <span class="o">=</span> <span class="n">Import_ImportModule</span><span class="p">(</span><span class="s2">&quot;io&quot;</span><span class="p">);</span>
-<span class="n">fileobject</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">io_module</span><span class="p">,</span> <span class="s2">&quot;open&quot;</span><span class="p">,</span> <span class="s2">&quot;ss&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">);</span>
-<span class="n">source_bytes_object</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">fileobject</span><span class="p">,</span> <span class="s2">&quot;read&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">fileobject</span><span class="p">,</span> <span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">io_module</span> <span class="o">=</span> <span class="n">Import_ImportModule</span><span class="p">(</span><span class="s2">"io"</span><span class="p">);</span>
+<span class="n">fileobject</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">io_module</span><span class="p">,</span> <span class="s2">"open"</span><span class="p">,</span> <span class="s2">"ss"</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">"rb"</span><span class="p">);</span>
+<span class="n">source_bytes_object</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">fileobject</span><span class="p">,</span> <span class="s2">"read"</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">PyObject_CallMethod</span><span class="p">(</span><span class="n">fileobject</span><span class="p">,</span> <span class="s2">"close"</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span>
 <span class="n">source_buf</span> <span class="o">=</span> <span class="n">PyBytes_AsString</span><span class="p">(</span><span class="n">source_bytes_object</span><span class="p">);</span>
 <span class="n">code</span> <span class="o">=</span> <span class="n">Py_CompileString</span><span class="p">(</span><span class="n">source_buf</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">Py_file_input</span><span class="p">);</span>
 </pre></div>
@@ -2608,7 +2608,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

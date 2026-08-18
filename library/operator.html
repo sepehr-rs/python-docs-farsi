@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -569,7 +569,7 @@ returns <code class="docutils literal notranslate"><span class="pre">(b.name.fir
 <p>Equivalent to:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">attrgetter</span><span class="p">(</span><span class="o">*</span><span class="n">items</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;attribute name must be a string&#39;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">'attribute name must be a string'</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">attr</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">def</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
@@ -580,7 +580,7 @@ returns <code class="docutils literal notranslate"><span class="pre">(b.name.fir
     <span class="k">return</span> <span class="n">g</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">resolve_attr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">attr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">attr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">):</span>
         <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">obj</span>
 </pre></div>
@@ -615,25 +615,25 @@ returns a tuple of lookup values.  For example:</p>
 <p>The items can be any type accepted by the operand's <a class="reference internal" href="../reference/datamodel.html#object.__getitem__" title="object.__getitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code></a>
 method.  Dictionaries accept any <a class="reference internal" href="../glossary.html#term-hashable"><span class="xref std std-term">hashable</span></a> value.  Lists, tuples, and
 strings accept an index or a slice:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">)</span>
-<span class="go">&#39;B&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)(</span><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">)</span>
-<span class="go">(&#39;B&#39;, &#39;D&#39;, &#39;F&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="kc">None</span><span class="p">))(</span><span class="s1">&#39;ABCDEFG&#39;</span><span class="p">)</span>
-<span class="go">&#39;CDEFG&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">soldier</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">rank</span><span class="o">=</span><span class="s1">&#39;captain&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;dotterbart&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;rank&#39;</span><span class="p">)(</span><span class="n">soldier</span><span class="p">)</span>
-<span class="go">&#39;captain&#39;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="s1">'ABCDEFG'</span><span class="p">)</span>
+<span class="go">'B'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)(</span><span class="s1">'ABCDEFG'</span><span class="p">)</span>
+<span class="go">('B', 'D', 'F')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="kc">None</span><span class="p">))(</span><span class="s1">'ABCDEFG'</span><span class="p">)</span>
+<span class="go">'CDEFG'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">soldier</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">rank</span><span class="o">=</span><span class="s1">'captain'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'dotterbart'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">'rank'</span><span class="p">)(</span><span class="n">soldier</span><span class="p">)</span>
+<span class="go">'captain'</span>
 </pre></div>
 </div>
 <p>Example of using <code class="xref py py-func docutils literal notranslate"><span class="pre">itemgetter()</span></code> to retrieve specific fields from a
 tuple record:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">inventory</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">inventory</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'apple'</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'banana'</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">'pear'</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="s1">'orange'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcount</span> <span class="o">=</span> <span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">getcount</span><span class="p">,</span> <span class="n">inventory</span><span class="p">))</span>
 <span class="go">[3, 2, 5, 1]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">inventory</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">getcount</span><span class="p">)</span>
-<span class="go">[(&#39;orange&#39;, 1), (&#39;banana&#39;, 2), (&#39;apple&#39;, 3), (&#39;pear&#39;, 5)]</span>
+<span class="go">[('orange', 1), ('banana', 2), ('apple', 3), ('pear', 5)]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -840,20 +840,20 @@ listed below only do the first step, calling the in-place method.  The second
 step, assignment, is not handled.</p>
 <p>For immutable targets such as strings, numbers, and tuples, the updated
 value is computed, but not assigned back to the input variable:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iadd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39; world&#39;</span><span class="p">)</span>
-<span class="go">&#39;hello world&#39;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="s1">'hello'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">iadd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">' world'</span><span class="p">)</span>
+<span class="go">'hello world'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
-<span class="go">&#39;hello&#39;</span>
+<span class="go">'hello'</span>
 </pre></div>
 </div>
 <p>For mutable targets such as lists and dictionaries, the in-place method
 will perform the update, so no subsequent assignment is necessary:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iadd</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">])</span>
-<span class="go">[&#39;h&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;, &#39; &#39;, &#39;w&#39;, &#39;o&#39;, &#39;r&#39;, &#39;l&#39;, &#39;d&#39;]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'h'</span><span class="p">,</span> <span class="s1">'e'</span><span class="p">,</span> <span class="s1">'l'</span><span class="p">,</span> <span class="s1">'l'</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">iadd</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">,</span> <span class="s1">'l'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">])</span>
+<span class="go">['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
-<span class="go">[&#39;h&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;, &#39; &#39;, &#39;w&#39;, &#39;o&#39;, &#39;r&#39;, &#39;l&#39;, &#39;d&#39;]</span>
+<span class="go">['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']</span>
 </pre></div>
 </div>
 <dl class="py function">
@@ -1114,7 +1114,7 @@ will perform the update, so no subsequent assignment is necessary:</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

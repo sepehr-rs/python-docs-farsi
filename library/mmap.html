@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -325,22 +325,22 @@ with the physical backing store on macOS.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">mmap</span>
 
 <span class="c1"># write a simple example file</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hello.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;Hello Python!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"hello.txt"</span><span class="p">,</span> <span class="s2">"wb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">"Hello Python!</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hello.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r+b&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"hello.txt"</span><span class="p">,</span> <span class="s2">"r+b"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="c1"># memory-map the file, size 0 means whole file</span>
     <span class="n">mm</span> <span class="o">=</span> <span class="n">mmap</span><span class="o">.</span><span class="n">mmap</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span> <span class="mi">0</span><span class="p">)</span>
     <span class="c1"># read content via standard file methods</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>  <span class="c1"># prints b&quot;Hello Python!\n&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>  <span class="c1"># prints b"Hello Python!\n"</span>
     <span class="c1"># read content via slice notation</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>  <span class="c1"># prints b&quot;Hello&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>  <span class="c1"># prints b"Hello"</span>
     <span class="c1"># update content using slice notation;</span>
     <span class="c1"># note that new content must have same size</span>
-    <span class="n">mm</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot; world!</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">mm</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">" world!</span><span class="se">\n</span><span class="s2">"</span>
     <span class="c1"># ... and read again using standard file methods</span>
     <span class="n">mm</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>  <span class="c1"># prints b&quot;Hello  world!\n&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mm</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>  <span class="c1"># prints b"Hello  world!\n"</span>
     <span class="c1"># close the map</span>
     <span class="n">mm</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -350,7 +350,7 @@ statement:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">mmap</span>
 
 <span class="k">with</span> <span class="n">mmap</span><span class="o">.</span><span class="n">mmap</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span> <span class="k">as</span> <span class="n">mm</span><span class="p">:</span>
-    <span class="n">mm</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+    <span class="n">mm</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">"Hello world!"</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="versionadded">
@@ -362,7 +362,7 @@ data between the parent and child processes:</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="n">mm</span> <span class="o">=</span> <span class="n">mmap</span><span class="o">.</span><span class="n">mmap</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
-<span class="n">mm</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+<span class="n">mm</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">"Hello world!"</span><span class="p">)</span>
 
 <span class="n">pid</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fork</span><span class="p">()</span>
 
@@ -836,7 +836,7 @@ that some options might not be present on some systems.</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

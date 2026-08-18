@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -723,13 +723,13 @@ sequence when the compatible seeder is given the same seed.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>              <span class="c1"># Even integer from 0 to 100 inclusive</span>
 <span class="go">26</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">choice</span><span class="p">([</span><span class="s1">&#39;win&#39;</span><span class="p">,</span> <span class="s1">&#39;lose&#39;</span><span class="p">,</span> <span class="s1">&#39;draw&#39;</span><span class="p">])</span>   <span class="c1"># Single random element from a sequence</span>
-<span class="go">&#39;draw&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">choice</span><span class="p">([</span><span class="s1">'win'</span><span class="p">,</span> <span class="s1">'lose'</span><span class="p">,</span> <span class="s1">'draw'</span><span class="p">])</span>   <span class="c1"># Single random element from a sequence</span>
+<span class="go">'draw'</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deck</span> <span class="o">=</span> <span class="s1">&#39;ace two three four&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deck</span> <span class="o">=</span> <span class="s1">'ace two three four'</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">shuffle</span><span class="p">(</span><span class="n">deck</span><span class="p">)</span>                     <span class="c1"># Shuffle a list</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">deck</span>
-<span class="go">[&#39;four&#39;, &#39;two&#39;, &#39;ace&#39;, &#39;three&#39;]</span>
+<span class="go">['four', 'two', 'ace', 'three']</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sample</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># Four samples without replacement</span>
 <span class="go">[40, 10, 50, 30]</span>
@@ -737,14 +737,14 @@ sequence when the compatible seeder is given the same seed.</p></li>
 </div>
 <p>Simulations:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Six roulette wheel spins (weighted sampling with replacement)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">choices</span><span class="p">([</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
-<span class="go">[&#39;red&#39;, &#39;green&#39;, &#39;black&#39;, &#39;black&#39;, &#39;red&#39;, &#39;black&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">choices</span><span class="p">([</span><span class="s1">'red'</span><span class="p">,</span> <span class="s1">'black'</span><span class="p">,</span> <span class="s1">'green'</span><span class="p">],</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="go">['red', 'green', 'black', 'black', 'red', 'black']</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Deal 20 cards without replacement from a deck</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># of 52 playing cards, and determine the proportion of cards</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># with a ten-value:  ten, jack, queen, or king.</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deal</span> <span class="o">=</span> <span class="n">sample</span><span class="p">([</span><span class="s1">&#39;tens&#39;</span><span class="p">,</span> <span class="s1">&#39;low cards&#39;</span><span class="p">],</span> <span class="n">counts</span><span class="o">=</span><span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">36</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deal</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;tens&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deal</span> <span class="o">=</span> <span class="n">sample</span><span class="p">([</span><span class="s1">'tens'</span><span class="p">,</span> <span class="s1">'low cards'</span><span class="p">],</span> <span class="n">counts</span><span class="o">=</span><span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">36</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deal</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">'tens'</span><span class="p">)</span> <span class="o">/</span> <span class="mi">20</span>
 <span class="go">0.15</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Estimate the probability of getting 5 or more heads from 7 spins</span>
@@ -768,14 +768,14 @@ with replacement to estimate a confidence interval for the mean of a sample:</p>
 
 <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">41</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">95</span><span class="p">]</span>
 <span class="n">means</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mean</span><span class="p">(</span><span class="n">choices</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The sample mean of </span><span class="si">{</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> has a 90% confidence &#39;</span>
-      <span class="sa">f</span><span class="s1">&#39;interval from </span><span class="si">{</span><span class="n">means</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> to </span><span class="si">{</span><span class="n">means</span><span class="p">[</span><span class="mi">94</span><span class="p">]</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The sample mean of </span><span class="si">{</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> has a 90% confidence '</span>
+      <span class="sa">f</span><span class="s1">'interval from </span><span class="si">{</span><span class="n">means</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> to </span><span class="si">{</span><span class="n">means</span><span class="p">[</span><span class="mi">94</span><span class="p">]</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Example of a <a class="reference external" href="https://en.wikipedia.org/wiki/Resampling_(statistics)#Permutation_tests">resampling permutation test</a>
 to determine the statistical significance or <a class="reference external" href="https://en.wikipedia.org/wiki/P-value">p-value</a> of an observed difference
 between the effects of a drug versus a placebo:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example from &quot;Statistics is Easy&quot; by Dennis Shasha and Manda Wilson</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example from "Statistics is Easy" by Dennis Shasha and Manda Wilson</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">statistics</span><span class="w"> </span><span class="kn">import</span> <span class="n">fmean</span> <span class="k">as</span> <span class="n">mean</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">shuffle</span>
 
@@ -791,10 +791,10 @@ between the effects of a drug versus a placebo:</p>
     <span class="n">new_diff</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">combined</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">drug</span><span class="p">)])</span> <span class="o">-</span> <span class="n">mean</span><span class="p">(</span><span class="n">combined</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">drug</span><span class="p">):])</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="p">(</span><span class="n">new_diff</span> <span class="o">&gt;=</span> <span class="n">observed_diff</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> label reshufflings produced only </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s1"> instances with a difference&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;at least as extreme as the observed difference of </span><span class="si">{</span><span class="n">observed_diff</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The one-sided p-value of </span><span class="si">{</span><span class="n">count</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> leads us to reject the null&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;hypothesis that there is no difference between the drug and the placebo.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> label reshufflings produced only </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s1"> instances with a difference'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'at least as extreme as the observed difference of </span><span class="si">{</span><span class="n">observed_diff</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">.'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The one-sided p-value of </span><span class="si">{</span><span class="n">count</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> leads us to reject the null'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'hypothesis that there is no difference between the drug and the placebo.'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Simulation of arrival times and service deliveries for a multiserver queue:</p>
@@ -820,8 +820,8 @@ between the effects of a drug versus a placebo:</p>
     <span class="n">service_completed</span> <span class="o">=</span> <span class="n">arrival_time</span> <span class="o">+</span> <span class="n">wait</span> <span class="o">+</span> <span class="n">service_duration</span>
     <span class="n">heapreplace</span><span class="p">(</span><span class="n">servers</span><span class="p">,</span> <span class="n">service_completed</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Mean wait: </span><span class="si">{</span><span class="n">mean</span><span class="p">(</span><span class="n">waits</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">   Max wait: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">waits</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Quartiles:&#39;</span><span class="p">,</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">quantiles</span><span class="p">(</span><span class="n">waits</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Mean wait: </span><span class="si">{</span><span class="n">mean</span><span class="p">(</span><span class="n">waits</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">   Max wait: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">waits</span><span class="p">)</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Quartiles:'</span><span class="p">,</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">quantiles</span><span class="p">(</span><span class="n">waits</span><span class="p">)])</span>
 </pre></div>
 </div>
 <div class="admonition seealso">
@@ -849,25 +849,25 @@ from the combinatoric iterators in the <a class="reference internal" href="itert
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">random_product</span><span class="p">(</span><span class="o">*</span><span class="n">iterables</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="s2">&quot;Random selection from itertools.product(*iterables, repeat=repeat)&quot;</span>
+    <span class="s2">"Random selection from itertools.product(*iterables, repeat=repeat)"</span>
     <span class="n">pools</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="n">iterables</span><span class="p">))</span> <span class="o">*</span> <span class="n">repeat</span>
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">pools</span><span class="p">))</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">random_permutation</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="s2">&quot;Random selection from itertools.permutations(iterable, r)&quot;</span>
+    <span class="s2">"Random selection from itertools.permutations(iterable, r)"</span>
     <span class="n">pool</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
     <span class="n">r</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pool</span><span class="p">)</span> <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">r</span>
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">pool</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">random_combination</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
-    <span class="s2">&quot;Random selection from itertools.combinations(iterable, r)&quot;</span>
+    <span class="s2">"Random selection from itertools.combinations(iterable, r)"</span>
     <span class="n">pool</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pool</span><span class="p">)</span>
     <span class="n">indices</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">r</span><span class="p">))</span>
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">pool</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indices</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">random_combination_with_replacement</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
-    <span class="s2">&quot;Choose r elements with replacement.  Order the result to match the iterable.&quot;</span>
+    <span class="s2">"Choose r elements with replacement.  Order the result to match the iterable."</span>
     <span class="c1"># Result will be in set(itertools.combinations_with_replacement(iterable, r)).</span>
     <span class="n">pool</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pool</span><span class="p">)</span>
@@ -875,12 +875,12 @@ from the combinatoric iterators in the <a class="reference internal" href="itert
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">pool</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indices</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">random_derangement</span><span class="p">(</span><span class="n">iterable</span><span class="p">):</span>
-    <span class="s2">&quot;Choose a permutation where no element stays in its original position.&quot;</span>
+    <span class="s2">"Choose a permutation where no element stays in its original position."</span>
     <span class="n">seq</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">seq</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">()</span>
-        <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s1">&#39;No derangments to choose from&#39;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s1">'No derangments to choose from'</span><span class="p">)</span>
     <span class="n">perm</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)))</span>
     <span class="n">start</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">perm</span><span class="p">)</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -987,7 +987,7 @@ using <a class="reference internal" href="#random.uniform" title="random.uniform
 <span id="random-cli-example"></span><h2>Command-line example<a class="headerlink" href="#command-line-example" title="Link to this heading">¶</a></h2>
 <p>Here are some examples of the <code class="xref py py-mod docutils literal notranslate"><span class="pre">random</span></code> command-line interface:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="c1"># Choose one at random</span>
-<span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>random<span class="w"> </span>egg<span class="w"> </span>bacon<span class="w"> </span>sausage<span class="w"> </span>spam<span class="w"> </span><span class="s2">&quot;Lobster Thermidor aux crevettes with a Mornay sauce&quot;</span>
+<span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>random<span class="w"> </span>egg<span class="w"> </span>bacon<span class="w"> </span>sausage<span class="w"> </span>spam<span class="w"> </span><span class="s2">"Lobster Thermidor aux crevettes with a Mornay sauce"</span>
 <span class="go">Lobster Thermidor aux crevettes with a Mornay sauce</span>
 
 <span class="gp">$ </span><span class="c1"># Random integer</span>
@@ -999,7 +999,7 @@ using <a class="reference internal" href="#random.uniform" title="random.uniform
 <span class="go">1.7080016272295635</span>
 
 <span class="gp">$ </span><span class="c1"># With explicit arguments</span>
-<span class="gp">$ </span>python<span class="w">  </span>-m<span class="w"> </span>random<span class="w"> </span>--choice<span class="w"> </span>egg<span class="w"> </span>bacon<span class="w"> </span>sausage<span class="w"> </span>spam<span class="w"> </span><span class="s2">&quot;Lobster Thermidor aux crevettes with a Mornay sauce&quot;</span>
+<span class="gp">$ </span>python<span class="w">  </span>-m<span class="w"> </span>random<span class="w"> </span>--choice<span class="w"> </span>egg<span class="w"> </span>bacon<span class="w"> </span>sausage<span class="w"> </span>spam<span class="w"> </span><span class="s2">"Lobster Thermidor aux crevettes with a Mornay sauce"</span>
 <span class="go">egg</span>
 
 <span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>random<span class="w"> </span>--integer<span class="w"> </span><span class="m">6</span>
@@ -1168,7 +1168,7 @@ using <a class="reference internal" href="#random.uniform" title="random.uniform
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

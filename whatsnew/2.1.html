@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -275,7 +275,7 @@ the <a class="reference internal" href="../reference/expressions.html#lambda"><c
 In code which uses <code class="xref std std-keyword docutils literal notranslate"><span class="pre">lambda</span></code> you can often find local variables being
 copied by passing them as the default values of arguments.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="s2">&quot;Return list of any entries equal to &#39;name&#39;&quot;</span>
+    <span class="s2">"Return list of any entries equal to 'name'"</span>
     <span class="n">L</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">:</span> <span class="n">x</span> <span class="o">==</span> <span class="n">name</span><span class="p">,</span>
                <span class="bp">self</span><span class="o">.</span><span class="n">list_attribute</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">L</span>
@@ -312,7 +312,7 @@ will flag this by raising a <a class="reference internal" href="../library/excep
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
     <span class="c1"># The next line is a syntax error</span>
-    <span class="n">exec</span> <span class="s1">&#39;x=2&#39;</span>
+    <span class="n">exec</span> <span class="s1">'x=2'</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">g</span><span class="p">():</span>
         <span class="k">return</span> <span class="n">x</span>
 </pre></div>
@@ -460,7 +460,7 @@ it causes a warning to be printed:</p>
 </pre></div>
 </div>
 <p>Warnings can be issued by calling the <a class="reference internal" href="../library/warnings.html#warnings.warn" title="warnings.warn"><code class="xref py py-func docutils literal notranslate"><span class="pre">warnings.warn()</span></code></a> function:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;feature X no longer supported&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">"feature X no longer supported"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The first parameter is the warning message; an additional optional parameters
@@ -471,10 +471,10 @@ warning.  For example, you may have a program that uses the <code class="xref py
 and not want to spare the time to convert it to use the <a class="reference internal" href="../library/re.html#module-re" title="re: Regular expression operations."><code class="xref py py-mod docutils literal notranslate"><span class="pre">re</span></code></a> module right
 now.  The warning can be suppressed by calling</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span>
-                        <span class="n">message</span><span class="o">=</span><span class="s1">&#39;.*regex module is deprecated&#39;</span><span class="p">,</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span> <span class="o">=</span> <span class="s1">'ignore'</span><span class="p">,</span>
+                        <span class="n">message</span><span class="o">=</span><span class="s1">'.*regex module is deprecated'</span><span class="p">,</span>
                         <span class="n">category</span><span class="o">=</span><span class="ne">DeprecationWarning</span><span class="p">,</span>
-                        <span class="n">module</span> <span class="o">=</span> <span class="s1">&#39;__main__&#39;</span><span class="p">)</span>
+                        <span class="n">module</span> <span class="o">=</span> <span class="s1">'__main__'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>This adds a filter that will apply only to warnings of the class
@@ -626,7 +626,7 @@ Python syntax:</p>
 
 <span class="n">f</span><span class="o">.</span><span class="n">publish</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">f</span><span class="o">.</span><span class="n">secure</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">f</span><span class="o">.</span><span class="n">grammar</span> <span class="o">=</span> <span class="s2">&quot;A ::= B (C D)*&quot;</span>
+<span class="n">f</span><span class="o">.</span><span class="n">grammar</span> <span class="o">=</span> <span class="s2">"A ::= B (C D)*"</span>
 </pre></div>
 </div>
 <p>The dictionary containing attributes can be accessed as the function's
@@ -666,7 +666,7 @@ pretty-printing function:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create a recursive data structure</span>
 <span class="gp">... </span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="c1"># Show Python&#39;s default output</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="c1"># Show Python's default output</span>
 <span class="go">[1, 2, 3, [...]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Use pprint.pprint() as the display function</span>
 <span class="gp">... </span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">pprint</span>
@@ -903,7 +903,7 @@ modules such as <a class="reference internal" href="../library/sys.html#module-s
 them to the importing module's namespace.  To fix this, simply list the public
 names in <code class="docutils literal notranslate"><span class="pre">__all__</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># List public names</span>
-<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Database&#39;</span><span class="p">,</span> <span class="s1">&#39;open&#39;</span><span class="p">]</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Database'</span><span class="p">,</span> <span class="s1">'open'</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>A stricter version of this patch was first suggested and implemented by Ben
@@ -1093,7 +1093,7 @@ Hudson, Marc-André Lemburg, Fredrik Lundh, Neil Schemenauer, Thomas Wouters.</p
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -249,8 +249,8 @@ quote characters in the string.  If both single- and double-quote characters
 are already in <em>data</em>, the double-quote characters will be encoded and <em>data</em>
 will be wrapped in double-quotes.  The resulting string can be used directly
 as an attribute value:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&lt;element attr=</span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="n">quoteattr</span><span class="p">(</span><span class="s2">&quot;ab &#39; cd </span><span class="se">\&quot;</span><span class="s2"> ef&quot;</span><span class="p">))</span>
-<span class="go">&lt;element attr=&quot;ab &#39; cd &amp;quot; ef&quot;&gt;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;element attr=</span><span class="si">%s</span><span class="s2">&gt;"</span> <span class="o">%</span> <span class="n">quoteattr</span><span class="p">(</span><span class="s2">"ab ' cd </span><span class="se">\"</span><span class="s2"> ef"</span><span class="p">))</span>
+<span class="go">&lt;element attr="ab ' cd &amp;quot; ef"&gt;</span>
 </pre></div>
 </div>
 <p>This function is useful when generating attribute values for HTML or any SGML
@@ -427,7 +427,7 @@ function to implement the polymorphic <em>source</em> argument to their
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

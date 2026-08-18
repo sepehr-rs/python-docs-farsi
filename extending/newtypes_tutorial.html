@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -257,8 +257,8 @@ allows defining heap-allocated extension types using the
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">CustomType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom.Custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom.Custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="p">,</span>
@@ -272,7 +272,7 @@ allows defining heap-allocated extension types using the
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Custom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"Custom"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -288,8 +288,8 @@ allows defining heap-allocated extension types using the
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef</span><span class="w"> </span><span class="n">custom_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Example module that creates an extension type.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Example module that creates an extension type."</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_slots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">custom_module_slots</span><span class="p">,</span>
 <span class="p">};</span>
@@ -343,8 +343,8 @@ standard Python floats:</p>
 <p>The second bit is the definition of the type object.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">CustomType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom.Custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom.Custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="p">,</span>
@@ -368,15 +368,15 @@ common practice to not specify them explicitly unless you need them.</p>
 </div>
 <p>This line is mandatory boilerplate to initialize the <code class="docutils literal notranslate"><span class="pre">ob_base</span></code>
 field mentioned above.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom.Custom&quot;</span><span class="p">,</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom.Custom"</span><span class="p">,</span>
 </pre></div>
 </div>
 <p>The name of our type.  This will appear in the default textual representation of
 our objects and in some error messages, for example:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;&quot;</span> <span class="o">+</span> <span class="n">custom</span><span class="o">.</span><span class="n">Custom</span><span class="p">()</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">""</span> <span class="o">+</span> <span class="n">custom</span><span class="o">.</span><span class="n">Custom</span><span class="p">()</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">can only concatenate str (not &quot;custom.Custom&quot;) to str</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">can only concatenate str (not "custom.Custom") to str</span>
 </pre></div>
 </div>
 <p>Note that the name is a dotted name that includes both the module name and the
@@ -411,7 +411,7 @@ your base type, and therefore increasing its size.</p>
 members defined until at least Python 3.3.  If you need further members,
 you will need to OR the corresponding flags.</p>
 <p>We provide a doc string for the type in <a class="reference internal" href="../c-api/typeobj.html#c.PyTypeObject.tp_doc" title="PyTypeObject.tp_doc"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_doc</span></code></a>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 </pre></div>
 </div>
 <p>To enable object creation, we have to provide a <a class="reference internal" href="../c-api/typeobj.html#c.PyTypeObject.tp_new" title="PyTypeObject.tp_new"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_new</span></code></a>
@@ -431,7 +431,7 @@ implementation provided by the API function <a class="reference internal" href="
 <p>This initializes the <code class="xref py py-class docutils literal notranslate"><span class="pre">Custom</span></code> type, filling in a number of members
 to the appropriate default values, including <a class="reference internal" href="../c-api/structures.html#c.PyObject.ob_type" title="PyObject.ob_type"><code class="xref c c-member docutils literal notranslate"><span class="pre">ob_type</span></code></a> that we initially
 set to <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Custom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"Custom"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -445,17 +445,17 @@ set to <code class="docutils literal notranslate"><span class="pre">NULL</span><
 <p>That's it!  All that remains is to build it; put the above code in a file called
 <code class="file docutils literal notranslate"><span class="pre">custom.c</span></code>,</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">build</span><span class="o">-</span><span class="n">system</span><span class="p">]</span>
-<span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;setuptools&quot;</span><span class="p">]</span>
-<span class="n">build</span><span class="o">-</span><span class="n">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;setuptools.build_meta&quot;</span>
+<span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">"setuptools"</span><span class="p">]</span>
+<span class="n">build</span><span class="o">-</span><span class="n">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"setuptools.build_meta"</span>
 
 <span class="p">[</span><span class="n">project</span><span class="p">]</span>
-<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom&quot;</span>
-<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom"</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"1"</span>
 </pre></div>
 </div>
 <p>in a file called <code class="file docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, and</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">setuptools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Extension</span><span class="p">,</span> <span class="n">setup</span>
-<span class="n">setup</span><span class="p">(</span><span class="n">ext_modules</span><span class="o">=</span><span class="p">[</span><span class="n">Extension</span><span class="p">(</span><span class="s2">&quot;custom&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;custom.c&quot;</span><span class="p">])])</span>
+<span class="n">setup</span><span class="p">(</span><span class="n">ext_modules</span><span class="o">=</span><span class="p">[</span><span class="n">Extension</span><span class="p">(</span><span class="s2">"custom"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"custom.c"</span><span class="p">])])</span>
 </pre></div>
 </div>
 <p>in a file called <code class="file docutils literal notranslate"><span class="pre">setup.py</span></code>; then typing</p>
@@ -476,7 +476,7 @@ the type usable as a base class. We'll create a new module, <code class="xref py
 adds these capabilities:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PY_SSIZE_T_CLEAN</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Python.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="c1"> /* for offsetof() */</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="w"> </span><span class="cm">/* for offsetof() */</span>
 
 <span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">PyObject_HEAD</span>
@@ -519,10 +519,10 @@ adds these capabilities:</p>
 <span class="nf">Custom_init</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">kwds</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;|OOi&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">"|OOi"</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">last</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">number</span><span class="p">))</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
@@ -537,12 +537,12 @@ adds these capabilities:</p>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMemberDef</span><span class="w"> </span><span class="n">Custom_members</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;first name&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;last name&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;custom number&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"first name"</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"last name"</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"custom number"</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
@@ -551,27 +551,27 @@ adds these capabilities:</p>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;first&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">"first"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">&quot;%S %S&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">"%S %S"</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">Custom_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;Return the name, combining the first and last name&quot;</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"name"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"Return the name, combining the first and last name"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">CustomType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom2.Custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom2.Custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Py_TPFLAGS_BASETYPE</span><span class="p">,</span>
@@ -589,7 +589,7 @@ adds these capabilities:</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Custom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"Custom"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -604,8 +604,8 @@ adds these capabilities:</p>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef</span><span class="w"> </span><span class="n">custom_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom2&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Example module that creates an extension type.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom2"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Example module that creates an extension type."</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_slots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">custom_module_slots</span><span class="p">,</span>
 <span class="p">};</span>
@@ -687,12 +687,12 @@ strings, so we provide a <code class="docutils literal notranslate"><span class=
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">;</span>
 <span class="w">    </span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">type</span><span class="o">-&gt;</span><span class="n">tp_alloc</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyUnicode_FromString</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyUnicode_FromString</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">Py_DECREF</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyUnicode_FromString</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyUnicode_FromString</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">Py_DECREF</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
@@ -757,10 +757,10 @@ initial values for our instance:</p>
 <span class="nf">Custom_init</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">kwds</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">tmp</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;|OOi&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">"|OOi"</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">last</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">number</span><span class="p">))</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
@@ -822,12 +822,12 @@ handler on a type which doesn't support cyclic garbage collection <a class="foot
 <p>We want to expose our instance variables as attributes. There are a
 number of ways to do that. The simplest way is to define member definitions:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyMemberDef</span><span class="w"> </span><span class="n">Custom_members</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;first name&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;last name&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;custom number&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"first name"</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_OBJECT_EX</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"last name"</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"custom number"</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 </pre></div>
@@ -852,14 +852,14 @@ concatenation of the first and last names.</p>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;first&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">"first"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_AttributeError</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">&quot;%S %S&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">"%S %S"</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -870,7 +870,7 @@ arguments as well, but in this case we don't take any and don't need to accept
 a positional argument tuple or keyword argument dictionary. This method is
 equivalent to the Python method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">"</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">last</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Note that we have to check for the possibility that our <code class="xref py py-attr docutils literal notranslate"><span class="pre">first</span></code> and
@@ -881,8 +881,8 @@ do that in the next section.</p>
 <p>Now that we've defined the method, we need to create an array of method
 definitions:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">Custom_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;Return the name, combining the first and last name&quot;</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"name"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"Return the name, combining the first and last name"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
@@ -907,8 +907,8 @@ name in the <a class="reference internal" href="../c-api/type.html#c.PyTypeObjec
 <p>Finally, we update our <code class="file docutils literal notranslate"><span class="pre">setup.py</span></code> file to include the new module,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">setuptools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Extension</span><span class="p">,</span> <span class="n">setup</span>
 <span class="n">setup</span><span class="p">(</span><span class="n">ext_modules</span><span class="o">=</span><span class="p">[</span>
-    <span class="n">Extension</span><span class="p">(</span><span class="s2">&quot;custom&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;custom.c&quot;</span><span class="p">]),</span>
-    <span class="n">Extension</span><span class="p">(</span><span class="s2">&quot;custom2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;custom2.c&quot;</span><span class="p">]),</span>
+    <span class="n">Extension</span><span class="p">(</span><span class="s2">"custom"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"custom.c"</span><span class="p">]),</span>
+    <span class="n">Extension</span><span class="p">(</span><span class="s2">"custom2"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"custom2.c"</span><span class="p">]),</span>
 <span class="p">])</span>
 </pre></div>
 </div>
@@ -926,7 +926,7 @@ could be set to non-string values or even deleted. We want to make sure that
 these attributes always contain strings.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PY_SSIZE_T_CLEAN</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Python.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="c1"> /* for offsetof() */</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="w"> </span><span class="cm">/* for offsetof() */</span>
 
 <span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">PyObject_HEAD</span>
@@ -969,10 +969,10 @@ these attributes always contain strings.</p>
 <span class="nf">Custom_init</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">kwds</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;|UUi&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">"|UUi"</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">last</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">number</span><span class="p">))</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
@@ -987,8 +987,8 @@ these attributes always contain strings.</p>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMemberDef</span><span class="w"> </span><span class="n">Custom_members</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;custom number&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"custom number"</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
@@ -1004,12 +1004,12 @@ these attributes always contain strings.</p>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cannot delete the first attribute&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">"Cannot delete the first attribute"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyUnicode_Check</span><span class="p">(</span><span class="n">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span>
-<span class="w">                        </span><span class="s">&quot;The first attribute value must be a string&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="s">"The first attribute value must be a string"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">Py_SETREF</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">Py_NewRef</span><span class="p">(</span><span class="n">value</span><span class="p">));</span>
@@ -1028,12 +1028,12 @@ these attributes always contain strings.</p>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cannot delete the last attribute&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">"Cannot delete the last attribute"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyUnicode_Check</span><span class="p">(</span><span class="n">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span>
-<span class="w">                        </span><span class="s">&quot;The last attribute value must be a string&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="s">"The last attribute value must be a string"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">Py_SETREF</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">,</span><span class="w"> </span><span class="n">Py_NewRef</span><span class="p">(</span><span class="n">value</span><span class="p">));</span>
@@ -1041,10 +1041,10 @@ these attributes always contain strings.</p>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyGetSetDef</span><span class="w"> </span><span class="n">Custom_getsetters</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;first name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;last name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"first name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"last name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
@@ -1052,20 +1052,20 @@ these attributes always contain strings.</p>
 <span class="nf">Custom_name</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">Py_UNUSED</span><span class="p">(</span><span class="n">dummy</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">&quot;%S %S&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">"%S %S"</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">Custom_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;Return the name, combining the first and last name&quot;</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"name"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"Return the name, combining the first and last name"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">CustomType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom3.Custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom3.Custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Py_TPFLAGS_BASETYPE</span><span class="p">,</span>
@@ -1084,7 +1084,7 @@ these attributes always contain strings.</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Custom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"Custom"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -1099,8 +1099,8 @@ these attributes always contain strings.</p>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef</span><span class="w"> </span><span class="n">custom_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom3&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Example module that creates an extension type.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom3"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Example module that creates an extension type."</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_slots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">custom_module_slots</span><span class="p">,</span>
 <span class="p">};</span>
@@ -1129,12 +1129,12 @@ getting and setting the <code class="xref py py-attr docutils literal notranslat
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">tmp</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cannot delete the first attribute&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">"Cannot delete the first attribute"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyUnicode_Check</span><span class="p">(</span><span class="n">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span>
-<span class="w">                        </span><span class="s">&quot;The first attribute value must be a string&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="s">"The first attribute value must be a string"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
@@ -1156,10 +1156,10 @@ deleted.  In our setter, we raise an error if the attribute is deleted or if its
 new value is not a string.</p>
 <p>We create an array of <a class="reference internal" href="../c-api/structures.html#c.PyGetSetDef" title="PyGetSetDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyGetSetDef</span></code></a> structures:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyGetSetDef</span><span class="w"> </span><span class="n">Custom_getsetters</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;first name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;last name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"first name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"last name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 </pre></div>
@@ -1172,8 +1172,8 @@ new value is not a string.</p>
 above.  In this case, we aren't using a closure, so we just pass <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <p>We also remove the member definitions for these attributes:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyMemberDef</span><span class="w"> </span><span class="n">Custom_members</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;custom number&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"custom number"</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 </pre></div>
@@ -1184,10 +1184,10 @@ allow strings <a class="footnote-reference brackets" href="#id7" id="id3" role="
 <span class="nf">Custom_init</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">kwds</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">tmp</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;|UUi&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">"|UUi"</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">last</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">number</span><span class="p">))</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
@@ -1249,7 +1249,7 @@ be properly detected and collected by the cyclic GC, our <code class="xref py py
 needs to fill two additional slots and to enable a flag that enables these slots:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PY_SSIZE_T_CLEAN</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Python.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="c1"> /* for offsetof() */</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="w"> </span><span class="cm">/* for offsetof() */</span>
 
 <span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">PyObject_HEAD</span>
@@ -1309,10 +1309,10 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="nf">Custom_init</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">kwds</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">kwlist</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">};</span>
 <span class="w">    </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;|UUi&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTupleAndKeywords</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">kwds</span><span class="p">,</span><span class="w"> </span><span class="s">"|UUi"</span><span class="p">,</span><span class="w"> </span><span class="n">kwlist</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">last</span><span class="p">,</span>
 <span class="w">                                     </span><span class="o">&amp;</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">number</span><span class="p">))</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
@@ -1327,8 +1327,8 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMemberDef</span><span class="w"> </span><span class="n">Custom_members</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;custom number&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"number"</span><span class="p">,</span><span class="w"> </span><span class="n">Py_T_INT</span><span class="p">,</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"custom number"</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
@@ -1344,12 +1344,12 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cannot delete the first attribute&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">"Cannot delete the first attribute"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyUnicode_Check</span><span class="p">(</span><span class="n">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span>
-<span class="w">                        </span><span class="s">&quot;The first attribute value must be a string&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="s">"The first attribute value must be a string"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">Py_XSETREF</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">Py_NewRef</span><span class="p">(</span><span class="n">value</span><span class="p">));</span>
@@ -1368,12 +1368,12 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cannot delete the last attribute&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span><span class="w"> </span><span class="s">"Cannot delete the last attribute"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">PyUnicode_Check</span><span class="p">(</span><span class="n">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">PyErr_SetString</span><span class="p">(</span><span class="n">PyExc_TypeError</span><span class="p">,</span>
-<span class="w">                        </span><span class="s">&quot;The last attribute value must be a string&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="s">"The last attribute value must be a string"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">Py_XSETREF</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">,</span><span class="w"> </span><span class="n">Py_NewRef</span><span class="p">(</span><span class="n">value</span><span class="p">));</span>
@@ -1381,10 +1381,10 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyGetSetDef</span><span class="w"> </span><span class="n">Custom_getsetters</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;first&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;first name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;last&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;last name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"first"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getfirst</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setfirst</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"first name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"last"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_getlast</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_setlast</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"last name"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
@@ -1392,20 +1392,20 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="nf">Custom_name</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">op</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">Py_UNUSED</span><span class="p">(</span><span class="n">dummy</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CustomObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">&quot;%S %S&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">PyUnicode_FromFormat</span><span class="p">(</span><span class="s">"%S %S"</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="o">-&gt;</span><span class="n">last</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">Custom_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
-<span class="w">     </span><span class="s">&quot;Return the name, combining the first and last name&quot;</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"name"</span><span class="p">,</span><span class="w"> </span><span class="n">Custom_name</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
+<span class="w">     </span><span class="s">"Return the name, combining the first and last name"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">}</span><span class="w">  </span><span class="cm">/* Sentinel */</span>
 <span class="p">};</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">CustomType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom4.Custom&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Custom objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom4.Custom"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"Custom objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">CustomObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Py_TPFLAGS_BASETYPE</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Py_TPFLAGS_HAVE_GC</span><span class="p">,</span>
@@ -1426,7 +1426,7 @@ needs to fill two additional slots and to enable a flag that enables these slots
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Custom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"Custom"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">CustomType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -1441,8 +1441,8 @@ needs to fill two additional slots and to enable a flag that enables these slots
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef</span><span class="w"> </span><span class="n">custom_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom4&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Example module that creates an extension type.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"custom4"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Example module that creates an extension type."</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_slots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">custom_module_slots</span><span class="p">,</span>
 <span class="p">};</span>
@@ -1590,8 +1590,8 @@ increases an internal counter:</p>
 <span class="p">}</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">SubList_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="s">&quot;increment&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">SubList_increment</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
-<span class="w">     </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;increment state counter&quot;</span><span class="p">)},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"increment"</span><span class="p">,</span><span class="w"> </span><span class="n">SubList_increment</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
+<span class="w">     </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"increment state counter"</span><span class="p">)},</span>
 <span class="w">    </span><span class="p">{</span><span class="nb">NULL</span><span class="p">},</span>
 <span class="p">};</span>
 
@@ -1607,8 +1607,8 @@ increases an internal counter:</p>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyTypeObject</span><span class="w"> </span><span class="n">SubListType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">ob_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyVarObject_HEAD_INIT</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sublist.SubList&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;SubList objects&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"sublist.SubList"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tp_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">"SubList objects"</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_basicsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">SubListObject</span><span class="p">),</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_itemsize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">tp_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Py_TPFLAGS_DEFAULT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Py_TPFLAGS_BASETYPE</span><span class="p">,</span>
@@ -1624,7 +1624,7 @@ increases an internal counter:</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SubList&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">SubListType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"SubList"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">SubListType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -1639,8 +1639,8 @@ increases an internal counter:</p>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef</span><span class="w"> </span><span class="n">sublist_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sublist&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Example module that creates an extension type.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"sublist"</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">m_doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Example module that creates an extension type."</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">    </span><span class="p">.</span><span class="n">m_slots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sublist_module_slots</span><span class="p">,</span>
 <span class="p">};</span>
@@ -1696,7 +1696,7 @@ function:</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SubList&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">SubListType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">PyModule_AddObjectRef</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s">"SubList"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">SubListType</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -1883,7 +1883,7 @@ reference cycles.</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

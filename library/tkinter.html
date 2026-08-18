@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -516,8 +516,8 @@ key concepts you'll need to know.</p>
 <span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
 <span class="n">frm</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">frm</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-<span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Quit&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">root</span><span class="o">.</span><span class="n">destroy</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">"Hello World!"</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">"Quit"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">root</span><span class="o">.</span><span class="n">destroy</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -577,8 +577,8 @@ what those underlying Tcl/Tk commands look like.</p>
 script above.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">ttk</span><span class="p">::</span><span class="n">frame</span> <span class="o">.</span><span class="n">frm</span> <span class="o">-</span><span class="n">padding</span> <span class="mi">10</span>
 <span class="n">grid</span> <span class="o">.</span><span class="n">frm</span>
-<span class="n">grid</span> <span class="p">[</span><span class="n">ttk</span><span class="p">::</span><span class="n">label</span> <span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">lbl</span> <span class="o">-</span><span class="n">text</span> <span class="s2">&quot;Hello World!&quot;</span><span class="p">]</span> <span class="o">-</span><span class="n">column</span> <span class="mi">0</span> <span class="o">-</span><span class="n">row</span> <span class="mi">0</span>
-<span class="n">grid</span> <span class="p">[</span><span class="n">ttk</span><span class="p">::</span><span class="n">button</span> <span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">btn</span> <span class="o">-</span><span class="n">text</span> <span class="s2">&quot;Quit&quot;</span> <span class="o">-</span><span class="n">command</span> <span class="s2">&quot;destroy .&quot;</span><span class="p">]</span> <span class="o">-</span><span class="n">column</span> <span class="mi">1</span> <span class="o">-</span><span class="n">row</span> <span class="mi">0</span>
+<span class="n">grid</span> <span class="p">[</span><span class="n">ttk</span><span class="p">::</span><span class="n">label</span> <span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">lbl</span> <span class="o">-</span><span class="n">text</span> <span class="s2">"Hello World!"</span><span class="p">]</span> <span class="o">-</span><span class="n">column</span> <span class="mi">0</span> <span class="o">-</span><span class="n">row</span> <span class="mi">0</span>
+<span class="n">grid</span> <span class="p">[</span><span class="n">ttk</span><span class="p">::</span><span class="n">button</span> <span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">btn</span> <span class="o">-</span><span class="n">text</span> <span class="s2">"Quit"</span> <span class="o">-</span><span class="n">command</span> <span class="s2">"destroy ."</span><span class="p">]</span> <span class="o">-</span><span class="n">column</span> <span class="mi">1</span> <span class="o">-</span><span class="n">row</span> <span class="mi">0</span>
 </pre></div>
 </div>
 <p>Tcl's syntax is similar to many shell languages, where the first word is the
@@ -659,7 +659,7 @@ when you create a widget in Tcl/Tk, it creates a Tcl command with the name
 of the widget pathname, with the first parameter to that command being the
 name of a method to call).</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">btn</span> <span class="n">invoke</span>
-<span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">lbl</span> <span class="n">configure</span> <span class="o">-</span><span class="n">text</span> <span class="s2">&quot;Goodbye&quot;</span>
+<span class="o">.</span><span class="n">frm</span><span class="o">.</span><span class="n">lbl</span> <span class="n">configure</span> <span class="o">-</span><span class="n">text</span> <span class="s2">"Goodbye"</span>
 </pre></div>
 </div>
 <p>In the official Tcl/Tk reference documentation, you'll find most operations
@@ -739,16 +739,16 @@ called from the thread that created the Tcl interpreter.</p></li>
 <p>Options control things like the color and border width of a widget. Options can
 be set in three ways:</p>
 <dl>
-<dt>At object creation time, using keyword arguments</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<dt>At object creation time, using keyword arguments</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
-<dt>After object creation, treating the option name like a dictionary index</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="p">[</span><span class="s2">&quot;fg&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
-<span class="n">fred</span><span class="p">[</span><span class="s2">&quot;bg&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;blue&quot;</span>
+<dt>After object creation, treating the option name like a dictionary index</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="p">[</span><span class="s2">"fg"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"red"</span>
+<span class="n">fred</span><span class="p">[</span><span class="s2">"bg"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"blue"</span>
 </pre></div>
 </div>
 </dd>
-<dt>Use the config() method to update multiple attrs subsequent to object creation</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">fg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<dt>Use the config() method to update multiple attrs subsequent to object creation</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">fg</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
@@ -807,7 +807,7 @@ lookup</p></td>
 </table>
 <p>Example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">fred</span><span class="o">.</span><span class="n">config</span><span class="p">())</span>
-<span class="go">{&#39;relief&#39;: (&#39;relief&#39;, &#39;relief&#39;, &#39;Relief&#39;, &#39;raised&#39;, &#39;groove&#39;)}</span>
+<span class="go">{'relief': ('relief', 'relief', 'Relief', 'raised', 'groove')}</span>
 </pre></div>
 </div>
 <p>Of course, the dictionary printed will include all the options available and
@@ -835,8 +835,8 @@ appears.  A widget will appear only after it has had, for example, the packer's
 <p>The pack() method can be called with keyword-option/value pairs that control
 where the widget is to appear within its container, and how it is to behave when
 the main application window is resized.  Here are some examples:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>                     <span class="c1"># defaults to side = &quot;top&quot;</span>
-<span class="n">fred</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">fred</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>                     <span class="c1"># defaults to side = "top"</span>
+<span class="n">fred</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
 <span class="n">fred</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -892,17 +892,17 @@ the variable, with no further intervention on your part.</p>
         <span class="c1"># Create the application variable.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">contents</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">()</span>
         <span class="c1"># Set it to some value.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;this is a variable&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">"this is a variable"</span><span class="p">)</span>
         <span class="c1"># Tell the entry widget to watch this variable.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">entrythingy</span><span class="p">[</span><span class="s2">&quot;textvariable&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">contents</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">entrythingy</span><span class="p">[</span><span class="s2">"textvariable"</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">contents</span>
 
         <span class="c1"># Define a callback for when the user hits return.</span>
         <span class="c1"># It prints the current value of the variable.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">entrythingy</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;&lt;Key-Return&gt;&#39;</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">entrythingy</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">'&lt;Key-Return&gt;'</span><span class="p">,</span>
                              <span class="bp">self</span><span class="o">.</span><span class="n">print_contents</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">print_contents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi. The current entry content is:&quot;</span><span class="p">,</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Hi. The current entry content is:"</span><span class="p">,</span>
               <span class="bp">self</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
 
 <span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
@@ -939,7 +939,7 @@ part of the implementation, and not an interface to Tk functionality.</p>
 <span class="c1">#</span>
 <span class="c1"># here are method calls to the window manager class</span>
 <span class="c1">#</span>
-<span class="n">myapp</span><span class="o">.</span><span class="n">master</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;My Do-Nothing Application&quot;</span><span class="p">)</span>
+<span class="n">myapp</span><span class="o">.</span><span class="n">master</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"My Do-Nothing Application"</span><span class="p">)</span>
 <span class="n">myapp</span><span class="o">.</span><span class="n">master</span><span class="o">.</span><span class="n">maxsize</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
 
 <span class="c1"># start the program</span>
@@ -962,8 +962,8 @@ preceded with an <code class="docutils literal notranslate"><span class="pre">&#
 </dd>
 <dt>callback</dt><dd><p>This is any Python function that takes no arguments.  For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_it</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hi there&quot;</span><span class="p">)</span>
-<span class="n">fred</span><span class="p">[</span><span class="s2">&quot;command&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">print_it</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"hi there"</span><span class="p">)</span>
+<span class="n">fred</span><span class="p">[</span><span class="s2">"command"</span><span class="p">]</span> <span class="o">=</span> <span class="n">print_it</span>
 </pre></div>
 </div>
 </dd>
@@ -1012,7 +1012,7 @@ be any widget method that takes a single argument.</p>
 <p id="index-5">The bind method from the widget command allows you to watch for certain events
 and to have a callback function trigger when that event type occurs.  The form
 of the bind method is:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bind</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bind</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="s1">''</span><span class="p">):</span>
 </pre></div>
 </div>
 <p>where:</p>
@@ -1033,9 +1033,9 @@ of functions bound to this event type.</p>
 </dl>
 <p>For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">turn_red</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
-    <span class="n">event</span><span class="o">.</span><span class="n">widget</span><span class="p">[</span><span class="s2">&quot;activeforeground&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+    <span class="n">event</span><span class="o">.</span><span class="n">widget</span><span class="p">[</span><span class="s2">"activeforeground"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"red"</span>
 
-<span class="bp">self</span><span class="o">.</span><span class="n">button</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;Enter&gt;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn_red</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">button</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">"&lt;Enter&gt;"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn_red</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Notice how the widget field of the event is being accessed in the
@@ -1375,7 +1375,7 @@ The callback is called as follows:</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

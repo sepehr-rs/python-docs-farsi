@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -406,16 +406,16 @@
 <span class="sig-name descname"><span class="pre">bin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integer</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bin" title="Link to this definition">¶</a></dt>
 <dd><p>تبدیل یک عدد صحیح به یک رشته باینری که با &quot;0b&quot; پیشوند شده است. نتیجه یک عبارت معتبر پایتون خواهد بود. اگر <em>integer</em> یک شیء پایتون <a class="reference internal" href="#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> نباشد، لازم است یک متد <a class="reference internal" href="../reference/datamodel.html#object.__index__" title="object.__index__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__index__()</span></code></a> تعریف کند که یک عدد صحیح برگرداند. برخی مثال ها:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">bin</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="go">&#39;0b11&#39;</span>
+<span class="go">'0b11'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">bin</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span>
-<span class="go">&#39;-0b1010&#39;</span>
+<span class="go">'-0b1010'</span>
 </pre></div>
 </div>
 <p>چنانچه پیشوند &quot;0b&quot; مطلوب باشد یا نباشد، می‌توانید از یکی از روش‌های زیر استفاده کنید.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s1">&#39;#b&#39;</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
-<span class="go">(&#39;0b1110&#39;, &#39;1110&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">14</span><span class="si">:</span><span class="s1">#b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">14</span><span class="si">:</span><span class="s1">b</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">(&#39;0b1110&#39;, &#39;1110&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s1">'#b'</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">)</span>
+<span class="go">('0b1110', '1110')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">14</span><span class="si">:</span><span class="s1">#b</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">14</span><span class="si">:</span><span class="s1">b</span><span class="si">}</span><span class="s1">'</span>
+<span class="go">('0b1110', '1110')</span>
 </pre></div>
 </div>
 <p>همچنین برای نمایش مقادیر منفی به‌صورت مکمل دو، به <a class="reference internal" href="enum.html#enum.bin" title="enum.bin"><code class="xref py py-func docutils literal notranslate"><span class="pre">enum.bin()</span></code></a> مراجعه کنید.</p>
@@ -551,15 +551,15 @@
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">complex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">real</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>تبدیل یک رشته یا عدد به یک عدد مختلط، یا ایجاد یک عدد مختلط از بخش‌های حقیقی و موهومی یک عدد.</p>
 <p>مثال‌ها:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">&#39;+1.23&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">'+1.23'</span><span class="p">)</span>
 <span class="go">(1.23+0j)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">&#39;-4.5j&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">'-4.5j'</span><span class="p">)</span>
 <span class="go">-4.5j</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">&#39;-1.23+4.5j&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">'-1.23+4.5j'</span><span class="p">)</span>
 <span class="go">(-1.23+4.5j)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">( -1.23+4.5J )</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">( -1.23+4.5J )</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="go">(-1.23+4.5j)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">&#39;-Infinity+NaNj&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="s1">'-Infinity+NaNj'</span><span class="p">)</span>
 <span class="go">(-inf+nanj)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">complex</span><span class="p">(</span><span class="mf">1.23</span><span class="p">)</span>
 <span class="go">(1.23+0j)</span>
@@ -625,19 +625,19 @@
 <p>فهرست حاصل به‌ترتیب الفبایی مرتب می‌شود. برای مثال:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">struct</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">()</span>   <span class="c1"># show the names in the module namespace</span>
-<span class="go">[&#39;__builtins__&#39;, &#39;__name__&#39;, &#39;struct&#39;]</span>
+<span class="go">['__builtins__', '__name__', 'struct']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">struct</span><span class="p">)</span>   <span class="c1"># show the names in the struct module</span>
-<span class="go">[&#39;Struct&#39;, &#39;__all__&#39;, &#39;__builtins__&#39;, &#39;__cached__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;,</span>
-<span class="go"> &#39;__initializing__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;,</span>
-<span class="go"> &#39;_clearcache&#39;, &#39;calcsize&#39;, &#39;error&#39;, &#39;pack&#39;, &#39;pack_into&#39;,</span>
-<span class="go"> &#39;unpack&#39;, &#39;unpack_from&#39;]</span>
+<span class="go">['Struct', '__all__', '__builtins__', '__cached__', '__doc__', '__file__',</span>
+<span class="go"> '__initializing__', '__loader__', '__name__', '__package__',</span>
+<span class="go"> '_clearcache', 'calcsize', 'error', 'pack', 'pack_into',</span>
+<span class="go"> 'unpack', 'unpack_from']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">class</span><span class="w"> </span><span class="nc">Shape</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">def</span><span class="w"> </span><span class="fm">__dir__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="gp">... </span>        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;area&#39;</span><span class="p">,</span> <span class="s1">&#39;perimeter&#39;</span><span class="p">,</span> <span class="s1">&#39;location&#39;</span><span class="p">]</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="p">[</span><span class="s1">'area'</span><span class="p">,</span> <span class="s1">'perimeter'</span><span class="p">,</span> <span class="s1">'location'</span><span class="p">]</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="go">[&#39;area&#39;, &#39;location&#39;, &#39;perimeter&#39;]</span>
+<span class="go">['area', 'location', 'perimeter']</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -656,11 +656,11 @@
 <dt class="sig sig-object py" id="enumerate">
 <span class="sig-name descname"><span class="pre">enumerate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#enumerate" title="Link to this definition">¶</a></dt>
 <dd><p>یک شیء enumerate را برمی‌گرداند. <em>iterable</em> باید یک دنباله، یک <a class="reference internal" href="../glossary.html#term-iterator"><span class="xref std std-term">تکرارگر</span></a> یا هر شیء دیگری باشد که از پیمایش پشتیبانی می‌کند. متد <a class="reference internal" href="stdtypes.html#iterator.__next__" title="iterator.__next__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__next__()</span></code></a> تکرارگر بازگردانده‌شده توسط <a class="reference internal" href="#enumerate" title="enumerate"><code class="xref py py-func docutils literal notranslate"><span class="pre">enumerate()</span></code></a>، تاپلی شامل یک شمارنده (که از <em>start</em> آغاز می‌شود و مقدار پیش‌فرض آن 0 است) و مقادیر به‌دست‌آمده از پیمایش <em>iterable</em> را برمی‌گرداند.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">seasons</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Spring&#39;</span><span class="p">,</span> <span class="s1">&#39;Summer&#39;</span><span class="p">,</span> <span class="s1">&#39;Fall&#39;</span><span class="p">,</span> <span class="s1">&#39;Winter&#39;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">seasons</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Spring'</span><span class="p">,</span> <span class="s1">'Summer'</span><span class="p">,</span> <span class="s1">'Fall'</span><span class="p">,</span> <span class="s1">'Winter'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">seasons</span><span class="p">))</span>
-<span class="go">[(0, &#39;Spring&#39;), (1, &#39;Summer&#39;), (2, &#39;Fall&#39;), (3, &#39;Winter&#39;)]</span>
+<span class="go">[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">seasons</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-<span class="go">[(1, &#39;Spring&#39;), (2, &#39;Summer&#39;), (3, &#39;Fall&#39;), (4, &#39;Winter&#39;)]</span>
+<span class="go">[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]</span>
 </pre></div>
 </div>
 <p>مساوی است با:</p>
@@ -698,7 +698,7 @@
 <p>آرگومان <em>source</em> به‌عنوان یک عبارت پایتون (از نظر فنی، یک condition list) با استفاده از نگاشت‌های <em>globals</em> و <em>locals</em> به‌ترتیب به‌عنوان فضای نام سراسری و محلی، تجزیه و ارزیابی می‌شود. اگر دیکشنری <em>globals</em> وجود داشته باشد اما کلید <code class="docutils literal notranslate"><span class="pre">__builtins__</span></code> را نداشته باشد، پیش از تجزیهٔ <em>source</em>، ارجاعی به دیکشنری ماژول داخلی <a class="reference internal" href="builtins.html#module-builtins" title="builtins: The module that provides the built-in namespace."><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> تحت این کلید درج می‌شود. بازنویسی <code class="docutils literal notranslate"><span class="pre">__builtins__</span></code> می‌تواند برای محدود کردن یا تغییر نام‌های در دسترس استفاده شود، اما این <strong>یک سازوکار امنیتی نیست</strong>؛ زیرا کد اجراشده همچنان می‌تواند به تمام توابع و اشیای داخلی دسترسی داشته باشد. اگر نگاشت <em>locals</em> ارائه نشود، به‌طور پیش‌فرض از دیکشنری <em>globals</em> استفاده می‌شود. اگر هر دو نگاشت حذف شوند، <em>source</em> با استفاده از <em>globals</em> و <em>locals</em> محیطی که <a class="reference internal" href="#eval" title="eval"><code class="xref py py-func docutils literal notranslate"><span class="pre">eval()</span></code></a> در آن فراخوانی شده اجرا می‌شود. توجه داشته باشید که <em>eval()</em> تنها در صورتی به <a class="reference internal" href="../glossary.html#term-nested-scope"><span class="xref std std-term">دامنه‌های تو‌در‌تو</span></a> (متغیرهای nonlocal) محیط پیرامون دسترسی خواهد داشت که آن‌ها از قبل در دامنه‌ای که <code class="xref py py-func docutils literal notranslate"><span class="pre">eval()</span></code> را فراخوانی می‌کند ارجاع داده شده باشند (برای مثال، از طریق دستور <a class="reference internal" href="../reference/simple_stmts.html#nonlocal"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">nonlocal</span></code></a>).</p>
 <p>مثال:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">eval</span><span class="p">(</span><span class="s1">&#39;x+1&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">eval</span><span class="p">(</span><span class="s1">'x+1'</span><span class="p">)</span>
 <span class="go">2</span>
 </pre></div>
 </div>
@@ -765,15 +765,15 @@
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span></dt>
 <dd><p id="index-3">یک عدد ممیز شناور که از یک عدد یا یک رشته ساخته شده است را برمی‌گرداند.</p>
 <p>مثال‌ها:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;+1.23&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">'+1.23'</span><span class="p">)</span>
 <span class="go">1.23</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;   -12345</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">'   -12345</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="go">-12345.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;1e-003&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">'1e-003'</span><span class="p">)</span>
 <span class="go">0.001</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;+1E6&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">'+1E6'</span><span class="p">)</span>
 <span class="go">1000000.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-Infinity&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">'-Infinity'</span><span class="p">)</span>
 <span class="go">-inf</span>
 </pre></div>
 </div>
@@ -877,18 +877,18 @@
 <span class="sig-name descname"><span class="pre">hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integer</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hex" title="Link to this definition">¶</a></dt>
 <dd><p>یک عدد صحیح را به یک رشتهٔ شانزده‌شانزدهی کوچک‌حرف با پیشوند «0x» تبدیل می‌کند. اگر <em>integer</em> یک شیء از نوع <a class="reference internal" href="#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> پایتون نباشد، باید متدی به نام <a class="reference internal" href="../reference/datamodel.html#object.__index__" title="object.__index__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__index__()</span></code></a> تعریف کند که یک عدد صحیح برمی‌گرداند. چند نمونه:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">hex</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
-<span class="go">&#39;0xff&#39;</span>
+<span class="go">'0xff'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">hex</span><span class="p">(</span><span class="o">-</span><span class="mi">42</span><span class="p">)</span>
-<span class="go">&#39;-0x2a&#39;</span>
+<span class="go">'-0x2a'</span>
 </pre></div>
 </div>
 <p>اگر می‌خواهید یک عدد صحیح را به یک رشتهٔ شانزده‌شانزدهی با حروف بزرگ یا کوچک، با پیشوند یا بدون آن، تبدیل کنید، می‌توانید از هر یک از روش‌های زیر استفاده کنید:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;</span><span class="si">%#x</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%x</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%X</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="mi">255</span>
-<span class="go">(&#39;0xff&#39;, &#39;ff&#39;, &#39;FF&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;#x&#39;</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">)</span>
-<span class="go">(&#39;0xff&#39;, &#39;ff&#39;, &#39;FF&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">#x</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">x</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">X</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">(&#39;0xff&#39;, &#39;ff&#39;, &#39;FF&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'</span><span class="si">%#x</span><span class="s1">'</span> <span class="o">%</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">'</span><span class="si">%x</span><span class="s1">'</span> <span class="o">%</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">'</span><span class="si">%X</span><span class="s1">'</span> <span class="o">%</span> <span class="mi">255</span>
+<span class="go">('0xff', 'ff', 'FF')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">'#x'</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">'x'</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="s1">'X'</span><span class="p">)</span>
+<span class="go">('0xff', 'ff', 'FF')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">#x</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">x</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">255</span><span class="si">:</span><span class="s1">X</span><span class="si">}</span><span class="s1">'</span>
+<span class="go">('0xff', 'ff', 'FF')</span>
 </pre></div>
 </div>
 <p>همچنین برای اطلاعات بیشتر، به تابع <a class="reference internal" href="#format" title="format"><code class="xref py py-func docutils literal notranslate"><span class="pre">format()</span></code></a> مراجعه کنید.</p>
@@ -915,10 +915,10 @@
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span></dt>
 <dd><p>اگر آرگومان <em>prompt</em> ارائه شود، بدون افزودن نویسهٔ پایان خط در خروجی استاندارد نوشته می‌شود. سپس تابع یک خط از ورودی می‌خواند، آن را به یک رشته تبدیل می‌کند (با حذف نویسهٔ پایان خط انتهایی) و همان را برمی‌گرداند. اگر به انتهای فایل (EOF) برسد، استثنای <a class="reference internal" href="exceptions.html#EOFError" title="EOFError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">EOFError</span></code></a> پرتاب می‌شود. مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;--&gt; &#39;</span><span class="p">)</span>
-<span class="go">--&gt; Monty Python&#39;s Flying Circus</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'--&gt; '</span><span class="p">)</span>
+<span class="go">--&gt; Monty Python's Flying Circus</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
-<span class="go">&quot;Monty Python&#39;s Flying Circus&quot;</span>
+<span class="go">"Monty Python's Flying Circus"</span>
 </pre></div>
 </div>
 <p>اگر ماژول <a class="reference internal" href="readline.html#module-readline" title="readline: GNU readline support for Python."><code class="xref py py-mod docutils literal notranslate"><span class="pre">readline</span></code></a> بارگذاری شده باشد، <a class="reference internal" href="#input" title="input"><code class="xref py py-func docutils literal notranslate"><span class="pre">input()</span></code></a> از آن برای فراهم کردن امکانات پیشرفتهٔ ویرایش خط و تاریخچهٔ ورودی استفاده می‌کند.</p>
@@ -935,15 +935,15 @@
 <p>مثال‌ها:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="mf">123.45</span><span class="p">)</span>
 <span class="go">123</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">'123'</span><span class="p">)</span>
 <span class="go">123</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;   -12_345</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">'   -12_345</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="go">-12345</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;FACE&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">'FACE'</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
 <span class="go">64206</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;0xface&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">'0xface'</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="go">64206</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;01110011&#39;</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="s1">'01110011'</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="go">115</span>
 </pre></div>
 </div>
@@ -998,8 +998,8 @@
 <p>همچنین به <a class="reference internal" href="stdtypes.html#typeiter"><span class="std std-ref">Iterator Types</span></a> مراجعه کنید.</p>
 <p>یکی از کاربردهای مفید شکل دوم <a class="reference internal" href="#iter" title="iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">iter()</span></code></a>، ساختن یک خوانندهٔ بلوکی (block reader) است. برای مثال، خواندن بلوک‌هایی با اندازهٔ ثابت از یک پروندهٔ پایگاه دادهٔ دودویی تا رسیدن به انتهای پرونده:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">partial</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mydata.db&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'mydata.db'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">,</span> <span class="mi">64</span><span class="p">),</span> <span class="sa">b</span><span class="s1">''</span><span class="p">):</span>
         <span class="n">process_block</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1115,18 +1115,18 @@
 <span class="sig-name descname"><span class="pre">oct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integer</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oct" title="Link to this definition">¶</a></dt>
 <dd><p>تبدیل یک عدد صحیح به یک رشته باینری که با &quot;0b&quot; پیشوند شده است. نتیجه یک عبارت معتبر پایتون خواهد بود. اگر <em>integer</em> یک شیء پایتون <a class="reference internal" href="#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> نباشد، لازم است یک متد <a class="reference internal" href="../reference/datamodel.html#object.__index__" title="object.__index__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__index__()</span></code></a> تعریف کند که یک عدد صحیح برگرداند. برخی مثال ها:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">oct</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-<span class="go">&#39;0o10&#39;</span>
+<span class="go">'0o10'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">oct</span><span class="p">(</span><span class="o">-</span><span class="mi">56</span><span class="p">)</span>
-<span class="go">&#39;-0o70&#39;</span>
+<span class="go">'-0o70'</span>
 </pre></div>
 </div>
 <p>اگر می‌خواهید یک عدد صحیح را به یک رشتهٔ هشت‌هشتی، با پیشوند «0o» یا بدون آن، تبدیل کنید، می‌توانید از هر یک از روش‌های زیر استفاده کنید.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;</span><span class="si">%#o</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%o</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="mi">10</span>
-<span class="go">(&#39;0o12&#39;, &#39;12&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;#o&#39;</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
-<span class="go">(&#39;0o12&#39;, &#39;12&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">10</span><span class="si">:</span><span class="s1">#o</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">10</span><span class="si">:</span><span class="s1">o</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">(&#39;0o12&#39;, &#39;12&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'</span><span class="si">%#o</span><span class="s1">'</span> <span class="o">%</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">'</span><span class="si">%o</span><span class="s1">'</span> <span class="o">%</span> <span class="mi">10</span>
+<span class="go">('0o12', '12')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">'#o'</span><span class="p">),</span> <span class="nb">format</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">)</span>
+<span class="go">('0o12', '12')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">10</span><span class="si">:</span><span class="s1">#o</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">10</span><span class="si">:</span><span class="s1">o</span><span class="si">}</span><span class="s1">'</span>
+<span class="go">('0o12', '12')</span>
 </pre></div>
 </div>
 <p>همچنین برای اطلاعات بیشتر، به تابع <a class="reference internal" href="#format" title="format"><code class="xref py py-func docutils literal notranslate"><span class="pre">format()</span></code></a> مراجعه کنید.</p>
@@ -1200,14 +1200,14 @@
 <p>پروندهٔ تازه ایجادشده <a class="reference internal" href="os.html#fd-inheritance"><span class="std std-ref">غیرقابل‌وراثت</span></a> است.</p>
 <p>مثال زیر از پارامتر <a class="reference internal" href="os.html#dir-fd"><span class="std std-ref">dir_fd</span></a> تابع <a class="reference internal" href="os.html#os.open" title="os.open"><code class="xref py py-func docutils literal notranslate"><span class="pre">os.open()</span></code></a> برای باز کردن پرونده‌ای نسبت به یک پوشه مشخص استفاده می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">dir_fd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;somedir&#39;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">O_RDONLY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dir_fd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'somedir'</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">O_RDONLY</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">opener</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">flags</span><span class="p">,</span> <span class="n">dir_fd</span><span class="o">=</span><span class="n">dir_fd</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;spamspam.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">opener</span><span class="o">=</span><span class="n">opener</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This will be written to somedir/spamspam.txt&#39;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'spamspam.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="n">opener</span><span class="o">=</span><span class="n">opener</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'This will be written to somedir/spamspam.txt'</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">dir_fd</span><span class="p">)</span>  <span class="c1"># don&#39;t leak a file descriptor</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">dir_fd</span><span class="p">)</span>  <span class="c1"># don't leak a file descriptor</span>
 </pre></div>
 </div>
 <p>نوع <a class="reference internal" href="../glossary.html#term-file-object"><span class="xref std std-term">شیء فایل</span></a> بازگردانده‌شده توسط تابع <a class="reference internal" href="#open" title="open"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> به حالت (mode) بستگی دارد. هنگامی که <code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code> برای باز کردن پرونده در حالت متنی (مانند <code class="docutils literal notranslate"><span class="pre">'w'</span></code>، <code class="docutils literal notranslate"><span class="pre">'r'</span></code>، <code class="docutils literal notranslate"><span class="pre">'wt'</span></code>، <code class="docutils literal notranslate"><span class="pre">'rt'</span></code> و غیره) استفاده شود، زیرکلاسی از <a class="reference internal" href="io.html#io.TextIOBase" title="io.TextIOBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.TextIOBase</span></code></a> (به‌طور مشخص <a class="reference internal" href="io.html#io.TextIOWrapper" title="io.TextIOWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.TextIOWrapper</span></code></a>) را بازمی‌گرداند. هنگام باز کردن پرونده در حالت دودویی همراه با بافر، کلاس بازگردانده‌شده زیرکلاسی از <a class="reference internal" href="io.html#io.BufferedIOBase" title="io.BufferedIOBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.BufferedIOBase</span></code></a> خواهد بود. کلاس دقیق بسته به حالت متفاوت است: در حالت خواندن دودویی، <a class="reference internal" href="io.html#io.BufferedReader" title="io.BufferedReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.BufferedReader</span></code></a>؛ در حالت‌های نوشتن دودویی و افزودن به انتهای پرونده، <a class="reference internal" href="io.html#io.BufferedWriter" title="io.BufferedWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.BufferedWriter</span></code></a>؛ و در حالت خواندن/نوشتن، <a class="reference internal" href="io.html#io.BufferedRandom" title="io.BufferedRandom"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.BufferedRandom</span></code></a> بازگردانده می‌شود. اگر بافر غیرفعال باشد، جریان خام (raw stream)، یعنی <a class="reference internal" href="io.html#io.FileIO" title="io.FileIO"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.FileIO</span></code></a> که زیرکلاسی از <a class="reference internal" href="io.html#io.RawIOBase" title="io.RawIOBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.RawIOBase</span></code></a> است، بازگردانده می‌شود.</p>
@@ -1308,7 +1308,7 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">delx</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">getx</span><span class="p">,</span> <span class="n">setx</span><span class="p">,</span> <span class="n">delx</span><span class="p">,</span> <span class="s2">&quot;I&#39;m the &#39;x&#39; property.&quot;</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">getx</span><span class="p">,</span> <span class="n">setx</span><span class="p">,</span> <span class="n">delx</span><span class="p">,</span> <span class="s2">"I'm the 'x' property."</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>اگر <em>c</em> نمونه‌ای از <em>C</em> باشد، عبارت <code class="docutils literal notranslate"><span class="pre">c.x</span></code> فراخوانی‌کنندهٔ getter، عبارت <code class="docutils literal notranslate"><span class="pre">c.x</span> <span class="pre">=</span> <span class="pre">value</span></code> فراخوانی‌کنندهٔ setter، و عبارت <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">c.x</span></code> فراخوانی‌کنندهٔ deleter خواهد بود.</p>
@@ -1319,7 +1319,7 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">voltage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the current voltage.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Get the current voltage."""</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_voltage</span>
 </pre></div>
 </div>
@@ -1344,7 +1344,7 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">x</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;I&#39;m the &#39;x&#39; property.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""I'm the 'x' property."""</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_x</span>
 
     <span class="nd">@x</span><span class="o">.</span><span class="n">setter</span>
@@ -1393,7 +1393,7 @@
       <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Person(&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39;, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2">)&quot;</span>
+      <span class="k">return</span> <span class="sa">f</span><span class="s2">"Person('</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">', </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2">)"</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1572,7 +1572,7 @@
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span><span class="w"> </span><span class="nc">X</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="p">(),</span> <span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">'X'</span><span class="p">,</span> <span class="p">(),</span> <span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>همچنین ببینید:</p>
@@ -1606,12 +1606,12 @@
 <span class="sig-name descname"><span class="pre">zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">iterables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zip" title="Link to this definition">¶</a></dt>
 <dd><p>روی چندین تکرارپذیر به‌طور هم‌زمان پیمایش می‌کند و تاپل‌هایی تولید می‌کند که هر یک شامل یک عنصر از هر تکرارپذیر هستند.</p>
 <p>مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sugar&#39;</span><span class="p">,</span> <span class="s1">&#39;spice&#39;</span><span class="p">,</span> <span class="s1">&#39;everything nice&#39;</span><span class="p">]):</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">'sugar'</span><span class="p">,</span> <span class="s1">'spice'</span><span class="p">,</span> <span class="s1">'everything nice'</span><span class="p">]):</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">(1, &#39;sugar&#39;)</span>
-<span class="go">(2, &#39;spice&#39;)</span>
-<span class="go">(3, &#39;everything nice&#39;)</span>
+<span class="go">(1, 'sugar')</span>
+<span class="go">(2, 'spice')</span>
+<span class="go">(3, 'everything nice')</span>
 </pre></div>
 </div>
 <p>به‌طور دقیق‌تر، <a class="reference internal" href="#zip" title="zip"><code class="xref py py-func docutils literal notranslate"><span class="pre">zip()</span></code></a> یک تکرارگر از تاپل‌ها برمی‌گرداند که در آن، تاپل <em>i</em>ام شامل عنصر <em>i</em>ام از هر یک از تکرارپذیرهای آرگومان‌ها است.</p>
@@ -1620,23 +1620,23 @@
 <p>یکی از نکاتی که باید در نظر داشت این است که تکرارپذیرهای ارسال‌شده به <a class="reference internal" href="#zip" title="zip"><code class="xref py py-func docutils literal notranslate"><span class="pre">zip()</span></code></a> ممکن است طول‌های متفاوتی داشته باشند؛ گاهی این موضوع عمدی است و گاهی به دلیل وجود یک باگ در کدی است که این تکرارپذیرها را آماده کرده است. پایتون سه روش مختلف برای برخورد با این مسئله ارائه می‌دهد:</p>
 <ul>
 <li><p>به‌طور پیش‌فرض، <a class="reference internal" href="#zip" title="zip"><code class="xref py py-func docutils literal notranslate"><span class="pre">zip()</span></code></a> زمانی متوقف می‌شود که کوتاه‌ترین تکرارپذیر به پایان برسد. در این حالت، عناصر باقی‌مانده در تکرارپذیرهای بلندتر نادیده گرفته می‌شوند و طول نتیجه برابر با طول کوتاه‌ترین تکرارپذیر خواهد بود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;fee&#39;</span><span class="p">,</span> <span class="s1">&#39;fi&#39;</span><span class="p">,</span> <span class="s1">&#39;fo&#39;</span><span class="p">,</span> <span class="s1">&#39;fum&#39;</span><span class="p">]))</span>
-<span class="go">[(0, &#39;fee&#39;), (1, &#39;fi&#39;), (2, &#39;fo&#39;)]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="p">[</span><span class="s1">'fee'</span><span class="p">,</span> <span class="s1">'fi'</span><span class="p">,</span> <span class="s1">'fo'</span><span class="p">,</span> <span class="s1">'fum'</span><span class="p">]))</span>
+<span class="go">[(0, 'fee'), (1, 'fi'), (2, 'fo')]</span>
 </pre></div>
 </div>
 </li>
 <li><p>از <a class="reference internal" href="#zip" title="zip"><code class="xref py py-func docutils literal notranslate"><span class="pre">zip()</span></code></a> اغلب در مواردی استفاده می‌شود که فرض بر این است تکرارپذیرها طول یکسانی دارند. در چنین مواردی، توصیه می‌شود از گزینهٔ <code class="docutils literal notranslate"><span class="pre">strict=True</span></code> استفاده کنید. خروجی آن با <code class="xref py py-func docutils literal notranslate"><span class="pre">zip()</span></code> معمولی یکسان است:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<span class="go">[(&#39;a&#39;, 1), (&#39;b&#39;, 2), (&#39;c&#39;, 3)]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">((</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="go">[('a', 1), ('b', 2), ('c', 3)]</span>
 </pre></div>
 </div>
 <p>برخلاف رفتار پیش‌فرض، اگر یکی از تکرارپذیرها پیش از بقیه به پایان برسد، استثنای <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> پرتاب می‌کند:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;fee&#39;</span><span class="p">,</span> <span class="s1">&#39;fi&#39;</span><span class="p">,</span> <span class="s1">&#39;fo&#39;</span><span class="p">,</span> <span class="s1">&#39;fum&#39;</span><span class="p">],</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="p">[</span><span class="s1">'fee'</span><span class="p">,</span> <span class="s1">'fi'</span><span class="p">,</span> <span class="s1">'fo'</span><span class="p">,</span> <span class="s1">'fum'</span><span class="p">],</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">(0, &#39;fee&#39;)</span>
-<span class="go">(1, &#39;fi&#39;)</span>
-<span class="go">(2, &#39;fo&#39;)</span>
+<span class="go">(0, 'fee')</span>
+<span class="go">(1, 'fi')</span>
+<span class="go">(2, 'fo')</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">  </span><span class="c">...</span>
 <span class="gr">ValueError</span>: <span class="n">zip() argument 2 is longer than argument 1</span>
@@ -1679,16 +1679,16 @@
 <p><em>level</em> مشخص می‌کند که از درون‌ریزی مطلق استفاده شود یا نسبی. مقدار <code class="docutils literal notranslate"><span class="pre">0</span></code> (که مقدار پیش‌فرض است) به این معناست که فقط درون‌ریزی مطلق انجام شود. مقادیر مثبت برای <em>level</em> تعداد پوشه‌های والد را مشخص می‌کنند که باید نسبت به پوشهٔ ماژولی که <a class="reference internal" href="#import__" title="__import__"><code class="xref py py-func docutils literal notranslate"><span class="pre">__import__()</span></code></a> را فراخوانی کرده است جست‌وجو شوند (برای جزئیات، <span class="target" id="index-33"></span><a class="pep reference external" href="https://peps.python.org/pep-0328/"><strong>PEP 328</strong></a> را ببینید).</p>
 <p>وقتی متغیر <em>name</em> به شکل <code class="docutils literal notranslate"><span class="pre">package.module</span></code> باشد، به‌طور معمول بستهٔ سطح بالا (بخشی از نام تا اولین نقطه) بازگردانده می‌شود، نه ماژولی که <em>name</em> به آن اشاره می‌کند. با این حال، اگر آرگومان <em>fromlist</em> ناتهی باشد، ماژول مشخص‌شده توسط <em>name</em> بازگردانده می‌شود.</p>
 <p>برای مثال، دستور <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">spam</span></code> به بایت‌کدی مشابه کد زیر تبدیل می‌شود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[],</span> <span class="mi">0</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">'spam'</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[],</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>دستور <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">spam.ham</span></code> منجر به این فراخوانی می‌شود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;spam.ham&#39;</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[],</span> <span class="mi">0</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">'spam.ham'</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[],</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>توجه داشته باشید که <a class="reference internal" href="#import__" title="__import__"><code class="xref py py-func docutils literal notranslate"><span class="pre">__import__()</span></code></a> در اینجا ماژول سطح بالا را برمی‌گرداند، زیرا این همان شیئی است که توسط دستور <a class="reference internal" href="../reference/simple_stmts.html#import"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a> به یک نام منتسب می‌شود.</p>
 <p>از سوی دیگر، دستور <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">spam.ham</span> <span class="pre">import</span> <span class="pre">eggs,</span> <span class="pre">sausage</span> <span class="pre">as</span> <span class="pre">saus</span></code> به نتیجهٔ زیر منجر می‌شود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">_temp</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;spam.ham&#39;</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;sausage&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">_temp</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">'spam.ham'</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'eggs'</span><span class="p">,</span> <span class="s1">'sausage'</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">eggs</span> <span class="o">=</span> <span class="n">_temp</span><span class="o">.</span><span class="n">eggs</span>
 <span class="n">saus</span> <span class="o">=</span> <span class="n">_temp</span><span class="o">.</span><span class="n">sausage</span>
 </pre></div>
@@ -1840,7 +1840,7 @@
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

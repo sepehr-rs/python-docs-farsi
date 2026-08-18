@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -229,7 +229,7 @@
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># این توضیح اول است</span>
 <span class="n">spam</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># و این توضیح دوم است</span>
           <span class="c1"># ... و حالا سومی!</span>
-<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;# این یکی توضیح نیست چرا که داخل گیومه است..&quot;</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">"# این یکی توضیح نیست چرا که داخل گیومه است.."</span>
 </pre></div>
 </div>
 <section id="using-python-as-a-calculator">
@@ -278,8 +278,8 @@
 <p>اگر یک متغیر «تعریف» نشده باشد (مقداری به آن اختصاص داده نشده باشد)، تلاش برای استفاده از آن باعث ایجاد خطا خواهد شد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">n</span>  <span class="c1"># تلاش برای استفاده از یک متغیر که تعریف نشده است</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">NameError</span>: <span class="n">name &#39;n&#39; is not defined</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name 'n' is not defined</span>
 </pre></div>
 </div>
 <p>پشتیبانی کامل از اعداد اعشاری وجود دارد؛ عملگرهایی که عملوندهایی با نوع‌های مختلف دارند، عملوند صحیح را به عدد اعشاری تبدیل می‌کنند:</p>
@@ -304,51 +304,51 @@
 <section id="text">
 <span id="tut-strings"></span><h3><span class="section-number">3.1.2. </span>متن<a class="headerlink" href="#text" title="Link to this heading">¶</a></h3>
 <p>پایتون می‌تواند متن (که توسط نوع <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> نمایش داده می‌شود و به آن «رشته» گفته می‌شود) را نیز مانند اعداد پردازش کند. این شامل نویسه‌های &quot;<code class="docutils literal notranslate"><span class="pre">!</span></code>&quot;، واژه‌های &quot;<code class="docutils literal notranslate"><span class="pre">rabbit</span></code>&quot;، نام‌ها &quot;<code class="docutils literal notranslate"><span class="pre">Paris</span></code>&quot;، جمله‌های &quot;<code class="docutils literal notranslate"><span class="pre">Got</span> <span class="pre">your</span> <span class="pre">back.</span></code>&quot;، و مواردی مانند &quot;<code class="docutils literal notranslate"><span class="pre">Yay!</span> <span class="pre">:)</span></code>&quot; است. این موارد را می‌توان درون نقل‌قول تکی (<code class="docutils literal notranslate"><span class="pre">'...'</span></code>) یا نقل‌قول دوتایی (<code class="docutils literal notranslate"><span class="pre">&quot;...&quot;</span></code>) قرار داد و نتیجه یکسان خواهد بود <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;spam eggs&#39;</span>  <span class="c1"># علامت نقل‌قول تکی</span>
-<span class="go">&#39;spam eggs&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;Paris rabbit got your back :)! Yay!&quot;</span>  <span class="c1"># علامت نقل‌قول دوتایی</span>
-<span class="go">&#39;Paris rabbit got your back :)! Yay!&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;1975&#39;</span>  <span class="c1"># رقم‌ها و عددهایی که داخل علامت نقل‌وقول قرار می‌گیرند نیز رشته هستند</span>
-<span class="go">&#39;1975&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'spam eggs'</span>  <span class="c1"># علامت نقل‌قول تکی</span>
+<span class="go">'spam eggs'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">"Paris rabbit got your back :)! Yay!"</span>  <span class="c1"># علامت نقل‌قول دوتایی</span>
+<span class="go">'Paris rabbit got your back :)! Yay!'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'1975'</span>  <span class="c1"># رقم‌ها و عددهایی که داخل علامت نقل‌وقول قرار می‌گیرند نیز رشته هستند</span>
+<span class="go">'1975'</span>
 </pre></div>
 </div>
 <p>برای قرار دادن یک نقل‌قول درون یک نقل‌قول، باید آن را با قرار دادن <code class="docutils literal notranslate"><span class="pre">\</span></code> پیش از آن، «escape» کنیم. همچنین می‌توانیم از نوع دیگر علامت‌های نقل‌قول استفاده کنیم:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;doesn</span><span class="se">\&#39;</span><span class="s1">t&#39;</span>  <span class="c1"># برای خنثی کردن علامت نقل‌قول تکی، از \&#39; استفاده کنید...</span>
-<span class="go">&quot;doesn&#39;t&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;doesn&#39;t&quot;</span>  <span class="c1"># ...یا به‌جای آن از علامت نقل‌وقول دوتایی استفاده کنید</span>
-<span class="go">&quot;doesn&#39;t&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&quot;Yes,&quot; they said.&#39;</span>
-<span class="go">&#39;&quot;Yes,&quot; they said.&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">Yes,</span><span class="se">\&quot;</span><span class="s2"> they said.&quot;</span>
-<span class="go">&#39;&quot;Yes,&quot; they said.&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&quot;Isn</span><span class="se">\&#39;</span><span class="s1">t,&quot; they said.&#39;</span>
-<span class="go">&#39;&quot;Isn\&#39;t,&quot; they said.&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'doesn</span><span class="se">\'</span><span class="s1">t'</span>  <span class="c1"># برای خنثی کردن علامت نقل‌قول تکی، از \' استفاده کنید...</span>
+<span class="go">"doesn't"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">"doesn't"</span>  <span class="c1"># ...یا به‌جای آن از علامت نقل‌وقول دوتایی استفاده کنید</span>
+<span class="go">"doesn't"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'"Yes," they said.'</span>
+<span class="go">'"Yes," they said.'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">"</span><span class="se">\"</span><span class="s2">Yes,</span><span class="se">\"</span><span class="s2"> they said."</span>
+<span class="go">'"Yes," they said.'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'"Isn</span><span class="se">\'</span><span class="s1">t," they said.'</span>
+<span class="go">'"Isn\'t," they said.'</span>
 </pre></div>
 </div>
 <p>در پوستهٔ پایتون، تعریف رشته و رشتهٔ خروجی ممکن است متفاوت به نظر برسند. تابع <a class="reference internal" href="../library/functions.html#print" title="print"><code class="xref py py-func docutils literal notranslate"><span class="pre">print()</span></code></a> خروجی خواناتری تولید می‌کند، زیرا نقل‌قول‌های احاطه‌کننده را حذف می‌کند و نویسه‌های escape‌شده و ویژه را چاپ می‌کند:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;First line.</span><span class="se">\n</span><span class="s1">Second line.&#39;</span>  <span class="c1"># \n نشان‌دهندهٔ رفتن به خط بعد است</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">'First line.</span><span class="se">\n</span><span class="s1">Second line.'</span>  <span class="c1"># \n نشان‌دهندهٔ رفتن به خط بعد است</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>  <span class="c1"># بدون print()، نویسه‌های ویژه در رشته نمایش داده می‌شوند</span>
-<span class="go">&#39;First line.\nSecond line.&#39;</span>
+<span class="go">'First line.\nSecond line.'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># با print()، نویسه‌های ویژه تفسیر می‌شوند، بنابراین \n یک خط جدید ایجاد می‌کند</span>
 <span class="go">First line.</span>
 <span class="go">Second line.</span>
 </pre></div>
 </div>
 <p>اگر نمی‌خواهید نویسه‌هایی که با <code class="docutils literal notranslate"><span class="pre">\</span></code> پیش از آن‌ها آمده است به‌عنوان نویسه‌های ویژه تفسیر شوند، می‌توانید با افزودن <code class="docutils literal notranslate"><span class="pre">r</span></code> پیش از اولین علامت نقل‌قول، از <em>رشته‌های خام</em> استفاده کنید:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\t</span><span class="s1">his</span><span class="se">\n</span><span class="s1">ame&#39;</span><span class="p">)</span>  <span class="c1"># در اینجا \t نشان‌دهندهٔ تب و \n نشان‌دهندهٔ خط جدید است</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'C:</span><span class="se">\t</span><span class="s1">his</span><span class="se">\n</span><span class="s1">ame'</span><span class="p">)</span>  <span class="c1"># در اینجا \t نشان‌دهندهٔ تب و \n نشان‌دهندهٔ خط جدید است</span>
 <span class="go">C:      his</span>
 <span class="go">ame</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\this\name&#39;</span><span class="p">)</span>  <span class="c1"># به حرف r قبل از علامت نقل‌وقول توجه کنید</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">r</span><span class="s1">'C:\this\name'</span><span class="p">)</span>  <span class="c1"># به حرف r قبل از علامت نقل‌وقول توجه کنید</span>
 <span class="go">C:\this\name</span>
 </pre></div>
 </div>
 <p>یک نکتهٔ ظریف دربارهٔ رشته‌های خام وجود دارد: یک رشتهٔ خام نمی‌تواند با تعداد فردی از نویسه‌های <code class="docutils literal notranslate"><span class="pre">\</span></code> پایان یابد؛ برای اطلاعات بیشتر و راه‌حل‌های جایگزین، به <a class="reference internal" href="../faq/programming.html#faq-programming-raw-string-backslash"><span class="std std-ref">ورودی پرسش‌های متداول</span></a> مراجعه کنید.</p>
 <p>رشته‌های متنی می‌توانند چندین خط را دربر بگیرند. یک روش استفاده از نقل‌قول‌های سه‌تایی است: <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;...&quot;&quot;&quot;</span></code> یا <code class="docutils literal notranslate"><span class="pre">'''...'''</span></code>. نویسه‌های پایان خط به‌صورت خودکار در رشته قرار می‌گیرند، اما می‌توان با افزودن یک <code class="docutils literal notranslate"><span class="pre">\</span></code> در انتهای خط از این کار جلوگیری کرد. در مثال زیر، خط جدید ابتدایی در رشته قرار نمی‌گیرد:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">"""</span><span class="se">\</span>
 <span class="gp">... </span><span class="s2">Usage: thingy [OPTIONS]</span>
 <span class="gp">... </span><span class="s2">     -h                        Display this usage message</span>
 <span class="gp">... </span><span class="s2">     -H hostname               Hostname to connect to</span>
-<span class="gp">... </span><span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="s2">"""</span><span class="p">)</span>
 <span class="go">Usage: thingy [OPTIONS]</span>
 <span class="go">     -h                        Display this usage message</span>
 <span class="go">     -H hostname               Hostname to connect to</span>
@@ -358,80 +358,80 @@
 </div>
 <p>رشته‌ها را می‌توان با عملگر <code class="docutils literal notranslate"><span class="pre">+</span></code> به یکدیگر متصل (چسباند) کرد و با <code class="docutils literal notranslate"><span class="pre">*</span></code> تکرار کرد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;# سه بار رشتهٔ «un»، به دنبال آن رشتهٔ «ium»</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span> <span class="o">*</span> <span class="s1">&#39;un&#39;</span> <span class="o">+</span> <span class="s1">&#39;ium&#39;</span>
-<span class="go">&#39;unununium&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span> <span class="o">*</span> <span class="s1">'un'</span> <span class="o">+</span> <span class="s1">'ium'</span>
+<span class="go">'unununium'</span>
 </pre></div>
 </div>
 <p>دو یا چند <em>رشتهٔ متنی</em> (یعنی مواردی که بین علامت‌های نقل‌قول قرار گرفته‌اند) که در کنار یکدیگر قرار دارند، به‌صورت خودکار به هم متصل می‌شوند.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Py&#39;</span> <span class="s1">&#39;thon&#39;</span>
-<span class="go">&#39;Python&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'Py'</span> <span class="s1">'thon'</span>
+<span class="go">'Python'</span>
 </pre></div>
 </div>
 <p>این قابلیت به‌ویژه زمانی مفید است که بخواهید رشته‌های طولانی را شکسته و در چند خط بنویسید:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Put several strings within parentheses &#39;</span>
-<span class="gp">... </span>        <span class="s1">&#39;to have them joined together.&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Put several strings within parentheses '</span>
+<span class="gp">... </span>        <span class="s1">'to have them joined together.'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">text</span>
-<span class="go">&#39;Put several strings within parentheses to have them joined together.&#39;</span>
+<span class="go">'Put several strings within parentheses to have them joined together.'</span>
 </pre></div>
 </div>
 <p>البته این فقط برای دو رشتهٔ متنی ثابت کار می‌کند، نه برای متغیرها یا عبارت‌ها:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;Py&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="s1">&#39;thon&#39;</span>  <span class="c1"># نمی‌توان یک متغیر و یک رشتهٔ متنی را به هم الحاق کرد</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="w">    </span><span class="n">prefix</span> <span class="s1">&#39;thon&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">=</span> <span class="s1">'Py'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="s1">'thon'</span>  <span class="c1"># نمی‌توان یک متغیر و یک رشتهٔ متنی را به هم الحاق کرد</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
+<span class="w">    </span><span class="n">prefix</span> <span class="s1">'thon'</span>
 <span class="w">           </span><span class="pm">^^^^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="s1">&#39;un&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">&#39;ium&#39;</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="w">    </span><span class="p">(</span><span class="s1">&#39;un&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">&#39;ium&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="s1">'un'</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">'ium'</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
+<span class="w">    </span><span class="p">(</span><span class="s1">'un'</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">'ium'</span>
 <span class="w">               </span><span class="pm">^^^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
 </pre></div>
 </div>
 <p>اگر می‌خواهید متغیرها یا یک متغیر و یک رشتهٔ متنی ثابت را به هم متصل کنید، از <code class="docutils literal notranslate"><span class="pre">+</span></code> استفاده کنید:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">+</span> <span class="s1">&#39;thon&#39;</span>
-<span class="go">&#39;Python&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">+</span> <span class="s1">'thon'</span>
+<span class="go">'Python'</span>
 </pre></div>
 </div>
 <p>رشته‌ها را می‌توان <em>اندیس‌‌گذاری</em> (اندیس‌گذاری) کرد؛ به‌طوری که اولین نویسه دارای اندیس 0 است. نوع جداگانه‌ای برای نویسه وجود ندارد؛ یک نویسه در واقع فقط رشته‌ای با اندازهٔ یک است:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span> <span class="o">=</span> <span class="s1">'Python'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># نویسه در موقعیت ۰</span>
-<span class="go">&#39;P&#39;</span>
+<span class="go">'P'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>  <span class="c1"># نویسه در موقعیت ۵</span>
-<span class="go">&#39;n&#39;</span>
+<span class="go">'n'</span>
 </pre></div>
 </div>
 <p>اندیس‌‌ها همچنین می‌توانند اعداد منفی باشند تا شمارش از سمت راست آغاز شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># نویسه آخر</span>
-<span class="go">&#39;n&#39;</span>
+<span class="go">'n'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># نویسه یکی مانده به آخر</span>
-<span class="go">&#39;o&#39;</span>
+<span class="go">'o'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">]</span>
-<span class="go">&#39;P&#39;</span>
+<span class="go">'P'</span>
 </pre></div>
 </div>
 <p>توجه کنید که چون ‎-0 همان 0 است، اندیس‌‌های منفی از ‎-1 شروع می‌شوند.</p>
 <p>علاوه بر اندیس‌‌گذاری، <em>برش‌دهی</em> نیز پشتیبانی می‌شود. در حالی که اندیس‌‌گذاری برای به‌دست آوردن نویسه‌های جداگانه استفاده می‌شود، <em>برش‌دهی</em> به شما اجازه می‌دهد یک زیررشته به‌دست آورید:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># نویسه‌ها از موقعیت ۰ تا قبل از موقعیت ۲</span>
-<span class="go">&#39;Py&#39;</span>
+<span class="go">'Py'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>  <span class="c1"># نویسه‌ها از موقعیت ۲ تا قبل از موقعیت ۵</span>
-<span class="go">&#39;tho&#39;</span>
+<span class="go">'tho'</span>
 </pre></div>
 </div>
 <p>اندیس‌‌های برش مقدارهای پیش‌فرض مفیدی دارند؛ اگر اندیس اول حذف شود، مقدار پیش‌فرض آن صفر است و اگر اندیس دوم حذف شود، مقدار پیش‌فرض آن اندازهٔ رشته‌ای است که در حال برش خوردن است.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>   <span class="c1"># نویسه‌ها از ابتدای رشته تا قبل از موقعیت ۲</span>
-<span class="go">&#39;Py&#39;</span>
+<span class="go">'Py'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>   <span class="c1"># نویسه‌ها از موقعیت ۴ به بعد تا انتهای رشته</span>
-<span class="go">&#39;on&#39;</span>
+<span class="go">'on'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>  <span class="c1"># نویسه‌ها از دومین نویسهٔ آخر به بعد تا انتهای رشته</span>
-<span class="go">&#39;on&#39;</span>
+<span class="go">'on'</span>
 </pre></div>
 </div>
 <p>توجه کنید که نقطهٔ شروع همیشه شامل می‌شود و نقطهٔ پایان همیشه حذف می‌شود. این موضوع تضمین می‌کند که <code class="docutils literal notranslate"><span class="pre">s[:i]</span> <span class="pre">+</span> <span class="pre">s[i:]</span></code> همیشه برابر با <code class="docutils literal notranslate"><span class="pre">s</span></code> باشد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
-<span class="go">&#39;Python&#39;</span>
+<span class="go">'Python'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
-<span class="go">&#39;Python&#39;</span>
+<span class="go">'Python'</span>
 </pre></div>
 </div>
 <p>یک روش برای به خاطر سپردن نحوهٔ کار برش‌ها این است که تصور کنید اندیس‌‌ها به <em>بین</em> نویسه‌ها اشاره می‌کنند، به‌طوری که لبهٔ سمت چپ اولین نویسه شمارهٔ 0 دارد. سپس لبهٔ سمت راست آخرین نویسهٔ یک رشته با <em>n</em> نویسه، دارای اندیس <em>n</em> است؛ برای مثال:</p>
@@ -447,37 +447,37 @@
 <p>تلاش برای استفاده از اندیسی که بیش از حد بزرگ است، باعث ایجاد خطا خواهد شد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">42</span><span class="p">]</span>  <span class="c1"># این کلمه فقط ۶ نویسه دارد</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">IndexError</span>: <span class="n">string index out of range</span>
 </pre></div>
 </div>
 <p>بااین‌حال، اندیس‌‌های برش خارج از محدوده هنگام استفاده برای برش‌دهی به‌صورت مناسبی مدیریت می‌شوند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">42</span><span class="p">]</span>
-<span class="go">&#39;on&#39;</span>
+<span class="go">'on'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">42</span><span class="p">:]</span>
-<span class="go">&#39;&#39;</span>
+<span class="go">''</span>
 </pre></div>
 </div>
 <p>رشته‌های پایتون قابل تغییر نیستند --- آن‌ها <a class="reference internal" href="../glossary.html#term-immutable"><span class="xref std std-term">immutable</span></a> هستند. بنابراین، اختصاص دادن مقدار به یک موقعیت اندیس‌‌گذاری‌شده در رشته باعث ایجاد خطا می‌شود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;J&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'J'</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">&#39;str&#39; object does not support item assignment</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span> <span class="o">=</span> <span class="s1">&#39;py&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">'str' object does not support item assignment</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span> <span class="o">=</span> <span class="s1">'py'</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">&#39;str&#39; object does not support item assignment</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">'str' object does not support item assignment</span>
 </pre></div>
 </div>
 <p>اگر به یک رشتهٔ متفاوت نیاز دارید، باید یک رشتهٔ جدید ایجاد کنید:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;J&#39;</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-<span class="go">&#39;Jython&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;py&#39;</span>
-<span class="go">&#39;Pypy&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'J'</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="go">'Jython'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'py'</span>
+<span class="go">'Pypy'</span>
 </pre></div>
 </div>
 <p>تابع داخلی <a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a> طول یک رشته را برمی‌گرداند:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;supercalifragilisticexpialidocious&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">'supercalifragilisticexpialidocious'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">34</span>
 </pre></div>
@@ -537,36 +537,36 @@
 </pre></div>
 </div>
 <p>انتساب ساده در پایتون هرگز داده‌ها را کپی نمی‌کند. هنگامی که یک فهرست را به یک متغیر اختصاص می‌دهید، متغیر به <em>فهرست موجود</em> اشاره می‌کند. هر تغییری که از طریق یک متغیر در فهرست ایجاد کنید، از طریق تمام متغیرهای دیگری که به آن اشاره می‌کنند نیز دیده خواهد شد.:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rgb</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Red&quot;</span><span class="p">,</span> <span class="s2">&quot;Green&quot;</span><span class="p">,</span> <span class="s2">&quot;Blue&quot;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rgb</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Red"</span><span class="p">,</span> <span class="s2">"Green"</span><span class="p">,</span> <span class="s2">"Blue"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rgba</span> <span class="o">=</span> <span class="n">rgb</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">id</span><span class="p">(</span><span class="n">rgb</span><span class="p">)</span> <span class="o">==</span> <span class="nb">id</span><span class="p">(</span><span class="n">rgba</span><span class="p">)</span>  <span class="c1"># هر دو به یک شیء اشاره می‌کنند</span>
 <span class="go">True</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">rgba</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Alph&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rgba</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Alph"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rgb</span>
-<span class="go">[&quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;Alph&quot;]</span>
+<span class="go">["Red", "Green", "Blue", "Alph"]</span>
 </pre></div>
 </div>
 <p>تمام عملیات برش یک فهرست جدید شامل عناصر درخواست‌شده برمی‌گردانند. این یعنی برش زیر یک <a class="reference internal" href="../library/copy.html#shallow-vs-deep-copy"><span class="std std-ref">کپی سطحی</span></a> از فهرست ایجاد می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">correct_rgba</span> <span class="o">=</span> <span class="n">rgba</span><span class="p">[:]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">correct_rgba</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Alpha&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">correct_rgba</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Alpha"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">correct_rgba</span>
-<span class="go">[&quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;Alpha&quot;]</span>
+<span class="go">["Red", "Green", "Blue", "Alpha"]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rgba</span>
-<span class="go">[&quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;Alph&quot;]</span>
+<span class="go">["Red", "Green", "Blue", "Alph"]</span>
 </pre></div>
 </div>
 <p>انتساب به برش‌ها نیز امکان‌پذیر است و حتی می‌تواند اندازهٔ فهرست را تغییر دهد یا آن را به‌طور کامل خالی کند:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">,</span> <span class="s1">'e'</span><span class="p">,</span> <span class="s1">'f'</span><span class="p">,</span> <span class="s1">'g'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;]</span>
+<span class="go">['a', 'b', 'c', 'd', 'e', 'f', 'g']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># جایگزین کردن بعضی از مقادیر</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'C'</span><span class="p">,</span> <span class="s1">'D'</span><span class="p">,</span> <span class="s1">'E'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;f&#39;, &#39;g&#39;]</span>
+<span class="go">['a', 'b', 'C', 'D', 'E', 'f', 'g']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># حالا آن‌ها را حذف می‌کنیم</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;, &#39;f&#39;, &#39;g&#39;]</span>
+<span class="go">['a', 'b', 'f', 'g']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># خالی کردن فهرست با جایگزین کردن همهٔ عناصر آن با یک فهرست خالی</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span>
@@ -574,21 +574,21 @@
 </pre></div>
 </div>
 <p>تابع داخلی <a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a> برای فهرست‌ها نیز کاربرد دارد:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span>
 <span class="go">4</span>
 </pre></div>
 </div>
 <p>امکان تو در تو کردن فهرست‌ها وجود دارد (ایجاد فهرست‌هایی که شامل فهرست‌های دیگر هستند)، برای مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
-<span class="go">[[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [1, 2, 3]]</span>
+<span class="go">[['a', 'b', 'c'], [1, 2, 3]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</span>
+<span class="go">['a', 'b', 'c']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-<span class="go">&#39;b&#39;</span>
+<span class="go">'b'</span>
 </pre></div>
 </div>
 </section>
@@ -619,14 +619,14 @@
 <li><p><em>بدنه</em> حلقه <em>تورفته</em> است: تورفتگی روش پایتون برای گروه‌بندی دستورهاست. در اعلان تعاملی، باید برای هر خط تورفته یک تب یا چند فاصله تایپ کنید. در عمل، ورودی‌های پیچیده‌تر پایتون را با یک ویرایشگر متن آماده خواهید کرد؛ تمام ویرایشگرهای متن مناسب قابلیت تورفتگی خودکار دارند. هنگامی که یک دستور مرکب به‌صورت تعاملی وارد می‌شود، باید پس از آن یک خط خالی قرار گیرد تا پایان آن مشخص شود (زیرا تجزیه‌کننده نمی‌تواند حدس بزند که آخرین خط را چه زمانی نوشته‌اید). توجه کنید که هر خط درون یک بلوک پایه باید به یک اندازه تورفته باشد.</p></li>
 <li><p>تابع <a class="reference internal" href="../library/functions.html#print" title="print"><code class="xref py py-func docutils literal notranslate"><span class="pre">print()</span></code></a> مقدار آرگومان(هایی) را که دریافت می‌کند می‌نویسد. این تابع با نوشتن مستقیم عبارتی که می‌خواهید نمایش دهید (مانند مثال‌های قبلی ماشین‌حساب) تفاوت دارد، زیرا آرگومان‌های متعدد، مقدارهای اعشاری و رشته‌ها را به شکل متفاوتی مدیریت می‌کند. رشته‌ها بدون علامت نقل‌قول چاپ می‌شوند و بین آیتم‌ها یک فاصله قرار می‌گیرد، بنابراین می‌توانید خروجی را به شکل مناسبی قالب‌بندی کنید، مانند این:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="mi">256</span><span class="o">*</span><span class="mi">256</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The value of i is&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">'The value of i is'</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 <span class="go">The value of i is 65536</span>
 </pre></div>
 </div>
 <p>آرگومان کلیدواژه‌ای <em>end</em> می‌تواند برای جلوگیری از ایجاد خط جدید پس از خروجی، یا پایان دادن خروجی با یک رشتهٔ متفاوت استفاده شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
 <span class="gp">...</span>
 <span class="go">0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,</span>
@@ -792,7 +792,7 @@
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -266,10 +266,10 @@ a given problem:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.142857&#39;)</span>
+<span class="go">Decimal('0.142857')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">28</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.1428571428571428571428571429&#39;)</span>
+<span class="go">Decimal('0.1428571428571428571428571429')</span>
 </pre></div>
 </div>
 </li>
@@ -335,21 +335,21 @@ value of that integer or float.  Decimal numbers include special values such as
 <code class="docutils literal notranslate"><span class="pre">Infinity</span></code>, and <code class="docutils literal notranslate"><span class="pre">-0</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">28</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="go">Decimal(&#39;10&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.14&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.14&#39;)</span>
+<span class="go">Decimal('10')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.14'</span><span class="p">)</span>
+<span class="go">Decimal('3.14')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.140000000000000124344978758017532527446746826171875&#39;)</span>
+<span class="go">Decimal('3.140000000000000124344978758017532527446746826171875')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
-<span class="go">Decimal(&#39;3.14&#39;)</span>
+<span class="go">Decimal('3.14')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">))</span>
-<span class="go">Decimal(&#39;1.4142135623730951&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0.5&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;1.414213562373095048801688724&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;NaN&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;-Infinity&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;-Infinity&#39;)</span>
+<span class="go">Decimal('1.4142135623730951')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'0.5'</span><span class="p">)</span>
+<span class="go">Decimal('1.414213562373095048801688724')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'NaN'</span><span class="p">)</span>
+<span class="go">Decimal('NaN')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'-Infinity'</span><span class="p">)</span>
+<span class="go">Decimal('-Infinity')</span>
 </pre></div>
 </div>
 <p>If the <a class="reference internal" href="#decimal.FloatOperation" title="decimal.FloatOperation"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FloatOperation</span></code></a> signal is trapped, accidental mixing of
@@ -359,13 +359,13 @@ an exception:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">traps</span><span class="p">[</span><span class="n">FloatOperation</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">decimal.FloatOperation</span>: <span class="n">[&lt;class &#39;decimal.FloatOperation&#39;&gt;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.5&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">3.7</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">decimal.FloatOperation</span>: <span class="n">[&lt;class 'decimal.FloatOperation'&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.5'</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">3.7</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">decimal.FloatOperation</span>: <span class="n">[&lt;class &#39;decimal.FloatOperation&#39;&gt;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.5&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.5</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">decimal.FloatOperation</span>: <span class="n">[&lt;class 'decimal.FloatOperation'&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.5'</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.5</span>
 <span class="go">True</span>
 </pre></div>
 </div>
@@ -376,23 +376,23 @@ an exception:</p>
 input.  Context precision and rounding only come into play during arithmetic
 operations.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.0&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.0&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.1415926535&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.1415926535&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.1415926535&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.7182818285&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;5.85987&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.0'</span><span class="p">)</span>
+<span class="go">Decimal('3.0')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.1415926535'</span><span class="p">)</span>
+<span class="go">Decimal('3.1415926535')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.1415926535'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.7182818285'</span><span class="p">)</span>
+<span class="go">Decimal('5.85987')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">rounding</span> <span class="o">=</span> <span class="n">ROUND_UP</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.1415926535&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.7182818285&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;5.85988&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.1415926535'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.7182818285'</span><span class="p">)</span>
+<span class="go">Decimal('5.85988')</span>
 </pre></div>
 </div>
 <p>If the internal limits of the C version are exceeded, constructing
 a decimal raises <a class="reference internal" href="#decimal.InvalidOperation" title="decimal.InvalidOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">InvalidOperation</span></code></a>:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;1e9999999999999999999&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"1e9999999999999999999"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">decimal.InvalidOperation</span>: <span class="n">[&lt;class &#39;decimal.InvalidOperation&#39;&gt;]</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">decimal.InvalidOperation</span>: <span class="n">[&lt;class 'decimal.InvalidOperation'&gt;]</span>
 </pre></div>
 </div>
 <div class="versionchanged">
@@ -400,47 +400,47 @@ a decimal raises <a class="reference internal" href="#decimal.InvalidOperation" 
 </div>
 <p>Decimals interact well with much of the rest of Python.  Here is a small decimal
 floating-point flying circus:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">Decimal</span><span class="p">,</span> <span class="s1">&#39;1.34 1.87 3.45 2.35 1.00 0.03 9.25&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">Decimal</span><span class="p">,</span> <span class="s1">'1.34 1.87 3.45 2.35 1.00 0.03 9.25'</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="go">Decimal(&#39;9.25&#39;)</span>
+<span class="go">Decimal('9.25')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.03&#39;)</span>
+<span class="go">Decimal('0.03')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="go">[Decimal(&#39;0.03&#39;), Decimal(&#39;1.00&#39;), Decimal(&#39;1.34&#39;), Decimal(&#39;1.87&#39;),</span>
-<span class="go"> Decimal(&#39;2.35&#39;), Decimal(&#39;3.45&#39;), Decimal(&#39;9.25&#39;)]</span>
+<span class="go">[Decimal('0.03'), Decimal('1.00'), Decimal('1.34'), Decimal('1.87'),</span>
+<span class="go"> Decimal('2.35'), Decimal('3.45'), Decimal('9.25')]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="go">Decimal(&#39;19.29&#39;)</span>
+<span class="go">Decimal('19.29')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="go">&#39;1.34&#39;</span>
+<span class="go">'1.34'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="go">1.34</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;1.3&#39;)</span>
+<span class="go">Decimal('1.3')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="go">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">*</span> <span class="mi">5</span>
-<span class="go">Decimal(&#39;6.70&#39;)</span>
+<span class="go">Decimal('6.70')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
-<span class="go">Decimal(&#39;2.5058&#39;)</span>
+<span class="go">Decimal('2.5058')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">%</span> <span class="n">a</span>
-<span class="go">Decimal(&#39;0.77&#39;)</span>
+<span class="go">Decimal('0.77')</span>
 </pre></div>
 </div>
 <p>Decimals can be formatted (with <a class="reference internal" href="functions.html#format" title="format"><code class="xref py py-func docutils literal notranslate"><span class="pre">format()</span></code></a> built-in or <a class="reference internal" href="../reference/lexical_analysis.html#f-strings"><span class="std std-ref">f-strings</span></a>) in
 fixed-point or scientific notation, using the same formatting syntax (see
 <a class="reference internal" href="string.html#formatspec"><span class="std std-ref">Format specification mini-language</span></a>) as builtin <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a> type:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.675&#39;</span><span class="p">),</span> <span class="s2">&quot;f&quot;</span><span class="p">)</span>
-<span class="go">&#39;2.675&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.675&#39;</span><span class="p">),</span> <span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
-<span class="go">&#39;2.68&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.675&#39;</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="go">&#39;2.68&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.675&#39;</span><span class="p">),</span> <span class="s2">&quot;.2e&quot;</span><span class="p">)</span>
-<span class="go">&#39;2.68e+0&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.675'</span><span class="p">),</span> <span class="s2">"f"</span><span class="p">)</span>
+<span class="go">'2.675'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.675'</span><span class="p">),</span> <span class="s2">".2f"</span><span class="p">)</span>
+<span class="go">'2.68'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.675'</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'2.68'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.675'</span><span class="p">),</span> <span class="s2">".2e"</span><span class="p">)</span>
+<span class="go">'2.68e+0'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">localcontext</span><span class="p">()</span> <span class="k">as</span> <span class="n">ctx</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">ctx</span><span class="o">.</span><span class="n">rounding</span> <span class="o">=</span> <span class="n">ROUND_DOWN</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.675&#39;</span><span class="p">),</span> <span class="s2">&quot;.2f&quot;</span><span class="p">))</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.675'</span><span class="p">),</span> <span class="s2">".2f"</span><span class="p">))</span>
 <span class="gp">...</span>
 <span class="go">2.67</span>
 </pre></div>
@@ -448,22 +448,22 @@ fixed-point or scientific notation, using the same formatting syntax (see
 <p>And some mathematical functions are also available to Decimal:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">28</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
-<span class="go">Decimal(&#39;1.414213562373095048801688724&#39;)</span>
+<span class="go">Decimal('1.414213562373095048801688724')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">exp</span><span class="p">()</span>
-<span class="go">Decimal(&#39;2.718281828459045235360287471&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">ln</span><span class="p">()</span>
-<span class="go">Decimal(&#39;2.302585092994045684017991455&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">log10</span><span class="p">()</span>
-<span class="go">Decimal(&#39;1&#39;)</span>
+<span class="go">Decimal('2.718281828459045235360287471')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'10'</span><span class="p">)</span><span class="o">.</span><span class="n">ln</span><span class="p">()</span>
+<span class="go">Decimal('2.302585092994045684017991455')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'10'</span><span class="p">)</span><span class="o">.</span><span class="n">log10</span><span class="p">()</span>
+<span class="go">Decimal('1')</span>
 </pre></div>
 </div>
 <p>The <a class="reference internal" href="#decimal.Decimal.quantize" title="decimal.Decimal.quantize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">quantize()</span></code></a> method rounds a number to a fixed exponent.  This method is
 useful for monetary applications that often round results to a fixed number of
 places:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.325&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;.01&#39;</span><span class="p">),</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_DOWN</span><span class="p">)</span>
-<span class="go">Decimal(&#39;7.32&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.325&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.&#39;</span><span class="p">),</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_UP</span><span class="p">)</span>
-<span class="go">Decimal(&#39;8&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'7.325'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'.01'</span><span class="p">),</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_DOWN</span><span class="p">)</span>
+<span class="go">Decimal('7.32')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'7.325'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.'</span><span class="p">),</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_UP</span><span class="p">)</span>
+<span class="go">Decimal('8')</span>
 </pre></div>
 </div>
 <p>As shown above, the <a class="reference internal" href="#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal notranslate"><span class="pre">getcontext()</span></code></a> function accesses the current context and
@@ -479,21 +479,21 @@ enabled:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">myothercontext</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_HALF_DOWN</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">myothercontext</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.142857142857142857142857142857142857142857142857142857142857&#39;)</span>
+<span class="go">Decimal('0.142857142857142857142857142857142857142857142857142857142857')</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ExtendedContext</span>
 <span class="go">Context(prec=9, rounding=ROUND_HALF_EVEN, Emin=-999999, Emax=999999,</span>
 <span class="go">        capitals=1, clamp=0, flags=[], traps=[])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">ExtendedContext</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.142857143&#39;)</span>
+<span class="go">Decimal('0.142857143')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="go">Decimal(&#39;Infinity&#39;)</span>
+<span class="go">Decimal('Infinity')</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">BasicContext</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;pyshell#143&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">-toplevel-</span>
+  File <span class="nb">"&lt;pyshell#143&gt;"</span>, line <span class="m">1</span>, in <span class="n">-toplevel-</span>
 <span class="w">    </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gr">DivisionByZero</span>: <span class="n">x / 0</span>
 </pre></div>
@@ -505,7 +505,7 @@ using the <a class="reference internal" href="#decimal.Context.clear_flags" titl
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">ExtendedContext</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">clear_flags</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">355</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">113</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.14159292&#39;)</span>
+<span class="go">Decimal('3.14159292')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span>
 <span class="go">Context(prec=9, rounding=ROUND_HALF_EVEN, Emin=-999999, Emax=999999,</span>
 <span class="go">        capitals=1, clamp=0, flags=[Inexact, Rounded], traps=[])</span>
@@ -518,11 +518,11 @@ result is inexact (some of the discarded digits were non-zero).</p>
 attribute of a context:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">ExtendedContext</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="go">Decimal(&#39;Infinity&#39;)</span>
+<span class="go">Decimal('Infinity')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">traps</span><span class="p">[</span><span class="n">DivisionByZero</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;pyshell#112&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">-toplevel-</span>
+  File <span class="nb">"&lt;pyshell#112&gt;"</span>, line <span class="m">1</span>, in <span class="n">-toplevel-</span>
 <span class="w">    </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gr">DivisionByZero</span>: <span class="n">x / 0</span>
 </pre></div>
@@ -543,14 +543,14 @@ types.</p>
 object. If no <em>value</em> is given, returns <code class="docutils literal notranslate"><span class="pre">Decimal('0')</span></code>.  If <em>value</em> is a
 string, it should conform to the decimal numeric string syntax after leading
 and trailing whitespace characters, as well as underscores throughout, are removed:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">sign</span>           <span class="p">:</span><span class="o">:=</span>  <span class="s1">&#39;+&#39;</span> <span class="o">|</span> <span class="s1">&#39;-&#39;</span>
-<span class="n">digit</span>          <span class="p">:</span><span class="o">:=</span>  <span class="s1">&#39;0&#39;</span> <span class="o">|</span> <span class="s1">&#39;1&#39;</span> <span class="o">|</span> <span class="s1">&#39;2&#39;</span> <span class="o">|</span> <span class="s1">&#39;3&#39;</span> <span class="o">|</span> <span class="s1">&#39;4&#39;</span> <span class="o">|</span> <span class="s1">&#39;5&#39;</span> <span class="o">|</span> <span class="s1">&#39;6&#39;</span> <span class="o">|</span> <span class="s1">&#39;7&#39;</span> <span class="o">|</span> <span class="s1">&#39;8&#39;</span> <span class="o">|</span> <span class="s1">&#39;9&#39;</span>
-<span class="n">indicator</span>      <span class="p">:</span><span class="o">:=</span>  <span class="s1">&#39;e&#39;</span> <span class="o">|</span> <span class="s1">&#39;E&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">sign</span>           <span class="p">:</span><span class="o">:=</span>  <span class="s1">'+'</span> <span class="o">|</span> <span class="s1">'-'</span>
+<span class="n">digit</span>          <span class="p">:</span><span class="o">:=</span>  <span class="s1">'0'</span> <span class="o">|</span> <span class="s1">'1'</span> <span class="o">|</span> <span class="s1">'2'</span> <span class="o">|</span> <span class="s1">'3'</span> <span class="o">|</span> <span class="s1">'4'</span> <span class="o">|</span> <span class="s1">'5'</span> <span class="o">|</span> <span class="s1">'6'</span> <span class="o">|</span> <span class="s1">'7'</span> <span class="o">|</span> <span class="s1">'8'</span> <span class="o">|</span> <span class="s1">'9'</span>
+<span class="n">indicator</span>      <span class="p">:</span><span class="o">:=</span>  <span class="s1">'e'</span> <span class="o">|</span> <span class="s1">'E'</span>
 <span class="n">digits</span>         <span class="p">:</span><span class="o">:=</span>  <span class="n">digit</span> <span class="p">[</span><span class="n">digit</span><span class="p">]</span><span class="o">...</span>
-<span class="n">decimal</span><span class="o">-</span><span class="n">part</span>   <span class="p">:</span><span class="o">:=</span>  <span class="n">digits</span> <span class="s1">&#39;.&#39;</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">]</span> <span class="n">digits</span>
+<span class="n">decimal</span><span class="o">-</span><span class="n">part</span>   <span class="p">:</span><span class="o">:=</span>  <span class="n">digits</span> <span class="s1">'.'</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="s1">'.'</span><span class="p">]</span> <span class="n">digits</span>
 <span class="n">exponent</span><span class="o">-</span><span class="n">part</span>  <span class="p">:</span><span class="o">:=</span>  <span class="n">indicator</span> <span class="p">[</span><span class="n">sign</span><span class="p">]</span> <span class="n">digits</span>
-<span class="n">infinity</span>       <span class="p">:</span><span class="o">:=</span>  <span class="s1">&#39;Infinity&#39;</span> <span class="o">|</span> <span class="s1">&#39;Inf&#39;</span>
-<span class="n">nan</span>            <span class="p">:</span><span class="o">:=</span>  <span class="s1">&#39;NaN&#39;</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span> <span class="o">|</span> <span class="s1">&#39;sNaN&#39;</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span>
+<span class="n">infinity</span>       <span class="p">:</span><span class="o">:=</span>  <span class="s1">'Infinity'</span> <span class="o">|</span> <span class="s1">'Inf'</span>
+<span class="n">nan</span>            <span class="p">:</span><span class="o">:=</span>  <span class="s1">'NaN'</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span> <span class="o">|</span> <span class="s1">'sNaN'</span> <span class="p">[</span><span class="n">digits</span><span class="p">]</span>
 <span class="n">numeric</span><span class="o">-</span><span class="n">value</span>  <span class="p">:</span><span class="o">:=</span>  <span class="n">decimal</span><span class="o">-</span><span class="n">part</span> <span class="p">[</span><span class="n">exponent</span><span class="o">-</span><span class="n">part</span><span class="p">]</span> <span class="o">|</span> <span class="n">infinity</span>
 <span class="n">numeric</span><span class="o">-</span><span class="n">string</span> <span class="p">:</span><span class="o">:=</span>  <span class="p">[</span><span class="n">sign</span><span class="p">]</span> <span class="n">numeric</span><span class="o">-</span><span class="n">value</span> <span class="o">|</span> <span class="p">[</span><span class="n">sign</span><span class="p">]</span> <span class="n">nan</span>
 </pre></div>
@@ -604,7 +604,7 @@ applied to Decimal objects, the sign of the result is the sign of the
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">)</span> <span class="o">%</span> <span class="mi">4</span>
 <span class="go">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">)</span> <span class="o">%</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="go">Decimal(&#39;-3&#39;)</span>
+<span class="go">Decimal('-3')</span>
 </pre></div>
 </div>
 <p>The integer division operator <code class="docutils literal notranslate"><span class="pre">//</span></code> behaves analogously, returning the
@@ -613,7 +613,7 @@ floor, so as to preserve the usual identity <code class="docutils literal notran
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">7</span> <span class="o">//</span> <span class="mi">4</span>
 <span class="go">-2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">)</span> <span class="o">//</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="go">Decimal(&#39;-1&#39;)</span>
+<span class="go">Decimal('-1')</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">%</span></code> and <code class="docutils literal notranslate"><span class="pre">//</span></code> operators implement the <code class="docutils literal notranslate"><span class="pre">remainder</span></code> and
@@ -647,7 +647,7 @@ position of the most significant digit with respect to the decimal point.</p>
 <dd><p>Return a pair <code class="docutils literal notranslate"><span class="pre">(n,</span> <span class="pre">d)</span></code> of integers that represent the given
 <code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code> instance as a fraction, in lowest terms and
 with a positive denominator:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;-3.14&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">as_integer_ratio</span><span class="p">()</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'-3.14'</span><span class="p">)</span><span class="o">.</span><span class="n">as_integer_ratio</span><span class="p">()</span>
 <span class="go">(-157, 50)</span>
 </pre></div>
 </div>
@@ -679,10 +679,10 @@ its argument unchanged.</p>
 <dd><p>Compare the values of two Decimal instances.  <code class="xref py py-meth docutils literal notranslate"><span class="pre">compare()</span></code> returns a
 Decimal instance, and if either operand is a NaN then the result is a
 NaN:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">NaN</span>  <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>            <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;-1&#39;</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">==</span> <span class="n">b</span>           <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>            <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">NaN</span>  <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'NaN'</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>            <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'-1'</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">==</span> <span class="n">b</span>           <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'0'</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>            <span class="o">==&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'1'</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -703,8 +703,8 @@ numerical value.  Similar to the <a class="reference internal" href="#decimal.De
 gives a total ordering on <code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code> instances.  Two
 <code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code> instances with the same numeric value but different
 representations compare unequal in this ordering:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;12.0&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">compare_total</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;-1&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'12.0'</span><span class="p">)</span><span class="o">.</span><span class="n">compare_total</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'12'</span><span class="p">))</span>
+<span class="go">Decimal('-1')</span>
 </pre></div>
 </div>
 <p>Quiet and signaling NaNs are also included in the total ordering.  The
@@ -757,8 +757,8 @@ context and is quiet: no flags are changed and no rounding is performed.</p>
 <span class="sig-name descname"><span class="pre">copy_sign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decimal.Decimal.copy_sign" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the first operand with the sign set to be the same as the
 sign of the second operand.  For example:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.3&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_sign</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;-1.5&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;-2.3&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.3'</span><span class="p">)</span><span class="o">.</span><span class="n">copy_sign</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'-1.5'</span><span class="p">))</span>
+<span class="go">Decimal('-2.3')</span>
 </pre></div>
 </div>
 <p>This operation is unaffected by context and is quiet: no flags are changed
@@ -773,9 +773,9 @@ InvalidOperation if the second operand cannot be converted exactly.</p>
 given number.  The result is correctly rounded using the
 <a class="reference internal" href="#decimal.ROUND_HALF_EVEN" title="decimal.ROUND_HALF_EVEN"><code class="xref py py-const docutils literal notranslate"><span class="pre">ROUND_HALF_EVEN</span></code></a> rounding mode.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">exp</span><span class="p">()</span>
-<span class="go">Decimal(&#39;2.718281828459045235360287471&#39;)</span>
+<span class="go">Decimal('2.718281828459045235360287471')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">321</span><span class="p">)</span><span class="o">.</span><span class="n">exp</span><span class="p">()</span>
-<span class="go">Decimal(&#39;2.561702493119680037517373933E+139&#39;)</span>
+<span class="go">Decimal('2.561702493119680037517373933E+139')</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -796,13 +796,13 @@ value is stored as the nearest representable value which is
 can also be constructed directly from a <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>.</p>
 </div>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.1000000000000000055511151231257827021181583404541015625&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;nan&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;NaN&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;Infinity&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;-Infinity&#39;)</span>
+<span class="go">Decimal('0.1000000000000000055511151231257827021181583404541015625')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">'nan'</span><span class="p">))</span>
+<span class="go">Decimal('NaN')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">'inf'</span><span class="p">))</span>
+<span class="go">Decimal('Infinity')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">'-inf'</span><span class="p">))</span>
+<span class="go">Decimal('-Infinity')</span>
 </pre></div>
 </div>
 <div class="versionadded">
@@ -817,11 +817,11 @@ can also be constructed directly from a <a class="reference internal" href="func
 <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code>, but not strings
 or tuples.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_number</span><span class="p">(</span><span class="mi">314</span><span class="p">)</span>
-<span class="go">Decimal(&#39;314&#39;)</span>
+<span class="go">Decimal('314')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_number</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.1000000000000000055511151231257827021181583404541015625&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_number</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.14&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;3.14&#39;)</span>
+<span class="go">Decimal('0.1000000000000000055511151231257827021181583404541015625')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_number</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.14'</span><span class="p">))</span>
+<span class="go">Decimal('3.14')</span>
 </pre></div>
 </div>
 <div class="versionadded">
@@ -835,7 +835,7 @@ or tuples.</p>
 <dd><p>Fused multiply-add.  Return self*other+third with no rounding of the
 intermediate product self*other.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">fma</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="go">Decimal(&#39;11&#39;)</span>
+<span class="go">Decimal('11')</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1065,8 +1065,8 @@ is one of the following ten strings.</p>
 <span class="sig-name descname"><span class="pre">quantize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decimal.Decimal.quantize" title="Link to this definition">¶</a></dt>
 <dd><p>Return a value equal to the first operand after rounding and having the
 exponent of the second operand.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.41421356&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;1.414&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.41421356'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.000'</span><span class="p">))</span>
+<span class="go">Decimal('1.414')</span>
 </pre></div>
 </div>
 <p>Unlike other operations, if the length of the coefficient after the
@@ -1104,11 +1104,11 @@ value of <code class="docutils literal notranslate"><span class="pre">self</span
 even one is chosen.</p>
 <p>If the result is zero then its sign will be the sign of <em>self</em>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span><span class="o">.</span><span class="n">remainder_near</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="go">Decimal(&#39;-2&#39;)</span>
+<span class="go">Decimal('-2')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">remainder_near</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="go">Decimal(&#39;5&#39;)</span>
+<span class="go">Decimal('5')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span><span class="o">.</span><span class="n">remainder_near</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="go">Decimal(&#39;-5&#39;)</span>
+<span class="go">Decimal('-5')</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1230,16 +1230,16 @@ multiple of <code class="docutils literal notranslate"><span class="pre">10**abs
 <p>For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span><span class="p">,</span> <span class="n">getcontext</span><span class="p">,</span> <span class="n">ROUND_DOWN</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">rounding</span> <span class="o">=</span> <span class="n">ROUND_DOWN</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.75&#39;</span><span class="p">))</span>     <span class="c1"># context rounding ignored</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.75'</span><span class="p">))</span>     <span class="c1"># context rounding ignored</span>
 <span class="go">4</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.5&#39;</span><span class="p">))</span>      <span class="c1"># round-ties-to-even</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.5'</span><span class="p">))</span>      <span class="c1"># round-ties-to-even</span>
 <span class="go">4</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.75&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># uses the context rounding</span>
-<span class="go">Decimal(&#39;3&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.75&#39;</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.7&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.75&#39;</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0E+1&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.75'</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># uses the context rounding</span>
+<span class="go">Decimal('3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.75'</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">Decimal('3.7')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">round</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.75'</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">Decimal('0E+1')</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1426,8 +1426,8 @@ exponent reduced and a corresponding number of zeros added to its
 coefficient, in order to fit the exponent constraints; this
 preserves the value of the number but loses information about
 significant trailing zeros.  For example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">Emax</span><span class="o">=</span><span class="mi">999</span><span class="p">,</span> <span class="n">clamp</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">create_decimal</span><span class="p">(</span><span class="s1">&#39;1.23e999&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;1.23000E+999&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">Emax</span><span class="o">=</span><span class="mi">999</span><span class="p">,</span> <span class="n">clamp</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">create_decimal</span><span class="p">(</span><span class="s1">'1.23e999'</span><span class="p">)</span>
+<span class="go">Decimal('1.23000E+999')</span>
 </pre></div>
 </div>
 <p>A <em>clamp</em> value of <code class="docutils literal notranslate"><span class="pre">1</span></code> allows compatibility with the
@@ -1482,10 +1482,10 @@ immediately eliminates unintended effects from digits beyond the current
 precision. In the following example, using unrounded inputs means that
 adding zero to a sum can change the result:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.4445&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.0023&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;4.45&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.4445&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.0023&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;4.44&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.4445'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.0023'</span><span class="p">)</span>
+<span class="go">Decimal('4.45')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.4445'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.0023'</span><span class="p">)</span>
+<span class="go">Decimal('4.44')</span>
 </pre></div>
 </div>
 <p>This method implements the to-number operation of the IBM specification.
@@ -1502,7 +1502,7 @@ the context precision, rounding method, flags, and traps are applied to
 the conversion.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">context</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_DOWN</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">context</span><span class="o">.</span><span class="n">create_decimal_from_float</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.1415&#39;)</span>
+<span class="go">Decimal('3.1415')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">context</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">traps</span><span class="o">=</span><span class="p">[</span><span class="n">Inexact</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">context</span><span class="o">.</span><span class="n">create_decimal_from_float</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
@@ -2200,33 +2200,33 @@ properties of addition:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span><span class="p">,</span> <span class="n">getcontext</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">8</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">11111113</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">11111111</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.51111111&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">11111113</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">11111111</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'7.51111111'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">u</span> <span class="o">+</span> <span class="n">v</span><span class="p">)</span> <span class="o">+</span> <span class="n">w</span>
-<span class="go">Decimal(&#39;9.5111111&#39;)</span>
+<span class="go">Decimal('9.5111111')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">+</span> <span class="p">(</span><span class="n">v</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;10&#39;)</span>
+<span class="go">Decimal('10')</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">20000</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;6.0000003&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">20000</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'6.0000003'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">u</span><span class="o">*</span><span class="n">v</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">u</span><span class="o">*</span><span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.01&#39;)</span>
+<span class="go">Decimal('0.01')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">*</span> <span class="p">(</span><span class="n">v</span><span class="o">+</span><span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.0060000&#39;)</span>
+<span class="go">Decimal('0.0060000')</span>
 </pre></div>
 </div>
 <p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">decimal</span></code> module makes it possible to restore the identities by
 expanding the precision sufficiently to avoid loss of significance:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">11111113</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">11111111</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.51111111&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">11111113</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">11111111</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'7.51111111'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">u</span> <span class="o">+</span> <span class="n">v</span><span class="p">)</span> <span class="o">+</span> <span class="n">w</span>
-<span class="go">Decimal(&#39;9.51111111&#39;)</span>
+<span class="go">Decimal('9.51111111')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">+</span> <span class="p">(</span><span class="n">v</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;9.51111111&#39;)</span>
+<span class="go">Decimal('9.51111111')</span>
 <span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">20000</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;6.0000003&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">20000</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">),</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'6.0000003'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">u</span><span class="o">*</span><span class="n">v</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">u</span><span class="o">*</span><span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.0060000&#39;)</span>
+<span class="go">Decimal('0.0060000')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">*</span> <span class="p">(</span><span class="n">v</span><span class="o">+</span><span class="n">w</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.0060000&#39;)</span>
+<span class="go">Decimal('0.0060000')</span>
 </pre></div>
 </div>
 </section>
@@ -2273,8 +2273,8 @@ various representations of zero with differing precisions yet equivalent in
 value.  This takes a bit of getting used to.  For an eye accustomed to
 normalized floating-point representations, it is not immediately obvious that
 the following calculation returns a value equal to zero:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;Infinity&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0E-1000026&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="o">/</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'Infinity'</span><span class="p">)</span>
+<span class="go">Decimal('0E-1000026')</span>
 </pre></div>
 </div>
 </section>
@@ -2319,33 +2319,33 @@ between threads calling <a class="reference internal" href="#decimal.getcontext"
 <span id="decimal-recipes"></span><h2>Recipes<a class="headerlink" href="#recipes" title="Link to this heading">¶</a></h2>
 <p>Here are a few recipes that serve as utility functions and that demonstrate ways
 to work with the <a class="reference internal" href="#decimal.Decimal" title="decimal.Decimal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code></a> class:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">moneyfmt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">curr</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">dp</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span>
-             <span class="n">pos</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">neg</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">trailneg</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert Decimal to a money formatted string.</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">moneyfmt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">curr</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">','</span><span class="p">,</span> <span class="n">dp</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span>
+             <span class="n">pos</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">neg</span><span class="o">=</span><span class="s1">'-'</span><span class="p">,</span> <span class="n">trailneg</span><span class="o">=</span><span class="s1">''</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Convert Decimal to a money formatted string.</span>
 
 <span class="sd">    places:  required number of places after the decimal point</span>
 <span class="sd">    curr:    optional currency symbol before the sign (may be blank)</span>
 <span class="sd">    sep:     optional grouping separator (comma, period, space, or blank)</span>
 <span class="sd">    dp:      decimal point indicator (comma or period)</span>
 <span class="sd">             only specify as blank when places is zero</span>
-<span class="sd">    pos:     optional sign for positive numbers: &#39;+&#39;, space or blank</span>
-<span class="sd">    neg:     optional sign for negative numbers: &#39;-&#39;, &#39;(&#39;, space or blank</span>
-<span class="sd">    trailneg:optional trailing minus indicator:  &#39;-&#39;, &#39;)&#39;, space or blank</span>
+<span class="sd">    pos:     optional sign for positive numbers: '+', space or blank</span>
+<span class="sd">    neg:     optional sign for negative numbers: '-', '(', space or blank</span>
+<span class="sd">    trailneg:optional trailing minus indicator:  '-', ')', space or blank</span>
 
-<span class="sd">    &gt;&gt;&gt; d = Decimal(&#39;-1234567.8901&#39;)</span>
-<span class="sd">    &gt;&gt;&gt; moneyfmt(d, curr=&#39;$&#39;)</span>
-<span class="sd">    &#39;-$1,234,567.89&#39;</span>
-<span class="sd">    &gt;&gt;&gt; moneyfmt(d, places=0, sep=&#39;.&#39;, dp=&#39;&#39;, neg=&#39;&#39;, trailneg=&#39;-&#39;)</span>
-<span class="sd">    &#39;1.234.568-&#39;</span>
-<span class="sd">    &gt;&gt;&gt; moneyfmt(d, curr=&#39;$&#39;, neg=&#39;(&#39;, trailneg=&#39;)&#39;)</span>
-<span class="sd">    &#39;($1,234,567.89)&#39;</span>
-<span class="sd">    &gt;&gt;&gt; moneyfmt(Decimal(123456789), sep=&#39; &#39;)</span>
-<span class="sd">    &#39;123 456 789.00&#39;</span>
-<span class="sd">    &gt;&gt;&gt; moneyfmt(Decimal(&#39;-0.02&#39;), neg=&#39;&lt;&#39;, trailneg=&#39;&gt;&#39;)</span>
-<span class="sd">    &#39;&lt;0.02&gt;&#39;</span>
+<span class="sd">    &gt;&gt;&gt; d = Decimal('-1234567.8901')</span>
+<span class="sd">    &gt;&gt;&gt; moneyfmt(d, curr='$')</span>
+<span class="sd">    '-$1,234,567.89'</span>
+<span class="sd">    &gt;&gt;&gt; moneyfmt(d, places=0, sep='.', dp='', neg='', trailneg='-')</span>
+<span class="sd">    '1.234.568-'</span>
+<span class="sd">    &gt;&gt;&gt; moneyfmt(d, curr='$', neg='(', trailneg=')')</span>
+<span class="sd">    '($1,234,567.89)'</span>
+<span class="sd">    &gt;&gt;&gt; moneyfmt(Decimal(123456789), sep=' ')</span>
+<span class="sd">    '123 456 789.00'</span>
+<span class="sd">    &gt;&gt;&gt; moneyfmt(Decimal('-0.02'), neg='&lt;', trailneg='&gt;')</span>
+<span class="sd">    '&lt;0.02&gt;'</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">q</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="o">-</span><span class="n">places</span>      <span class="c1"># 2 places --&gt; &#39;0.01&#39;</span>
+<span class="sd">    """</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="o">-</span><span class="n">places</span>      <span class="c1"># 2 places --&gt; '0.01'</span>
     <span class="n">sign</span><span class="p">,</span> <span class="n">digits</span><span class="p">,</span> <span class="n">exp</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">.</span><span class="n">as_tuple</span><span class="p">()</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">digits</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">digits</span><span class="p">))</span>
@@ -2353,11 +2353,11 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
     <span class="k">if</span> <span class="n">sign</span><span class="p">:</span>
         <span class="n">build</span><span class="p">(</span><span class="n">trailneg</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">places</span><span class="p">):</span>
-        <span class="n">build</span><span class="p">(</span><span class="nb">next</span><span class="p">()</span> <span class="k">if</span> <span class="n">digits</span> <span class="k">else</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="n">build</span><span class="p">(</span><span class="nb">next</span><span class="p">()</span> <span class="k">if</span> <span class="n">digits</span> <span class="k">else</span> <span class="s1">'0'</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">places</span><span class="p">:</span>
         <span class="n">build</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">digits</span><span class="p">:</span>
-        <span class="n">build</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="n">build</span><span class="p">(</span><span class="s1">'0'</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">digits</span><span class="p">:</span>
         <span class="n">build</span><span class="p">(</span><span class="nb">next</span><span class="p">())</span>
@@ -2367,17 +2367,17 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
             <span class="n">build</span><span class="p">(</span><span class="n">sep</span><span class="p">)</span>
     <span class="n">build</span><span class="p">(</span><span class="n">curr</span><span class="p">)</span>
     <span class="n">build</span><span class="p">(</span><span class="n">neg</span> <span class="k">if</span> <span class="n">sign</span> <span class="k">else</span> <span class="n">pos</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+    <span class="k">return</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">pi</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Compute Pi to the current precision.</span>
+<span class="w">    </span><span class="sd">"""Compute Pi to the current precision.</span>
 
 <span class="sd">    &gt;&gt;&gt; print(pi())</span>
 <span class="sd">    3.141592653589793238462643383</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># extra digits for intermediate steps</span>
-    <span class="n">three</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>      <span class="c1"># substitute &quot;three=3.0&quot; for regular floats</span>
+    <span class="n">three</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>      <span class="c1"># substitute "three=3.0" for regular floats</span>
     <span class="n">lasts</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">na</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">da</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">three</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">24</span>
     <span class="k">while</span> <span class="n">s</span> <span class="o">!=</span> <span class="n">lasts</span><span class="p">:</span>
         <span class="n">lasts</span> <span class="o">=</span> <span class="n">s</span>
@@ -2389,7 +2389,7 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
     <span class="k">return</span> <span class="o">+</span><span class="n">s</span>               <span class="c1"># unary plus applies the new precision</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return e raised to the power of x.  Result type matches input type.</span>
+<span class="w">    </span><span class="sd">"""Return e raised to the power of x.  Result type matches input type.</span>
 
 <span class="sd">    &gt;&gt;&gt; print(exp(Decimal(1)))</span>
 <span class="sd">    2.718281828459045235360287471</span>
@@ -2400,7 +2400,7 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
 <span class="sd">    &gt;&gt;&gt; print(exp(2+0j))</span>
 <span class="sd">    (7.38905609893+0j)</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">i</span><span class="p">,</span> <span class="n">lasts</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">fact</span><span class="p">,</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">s</span> <span class="o">!=</span> <span class="n">lasts</span><span class="p">:</span>
@@ -2413,19 +2413,19 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
     <span class="k">return</span> <span class="o">+</span><span class="n">s</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">cos</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the cosine of x as measured in radians.</span>
+<span class="w">    </span><span class="sd">"""Return the cosine of x as measured in radians.</span>
 
 <span class="sd">    The Taylor series approximation works best for a small value of x.</span>
 <span class="sd">    For larger values, first compute x = x % (2 * pi).</span>
 
-<span class="sd">    &gt;&gt;&gt; print(cos(Decimal(&#39;0.5&#39;)))</span>
+<span class="sd">    &gt;&gt;&gt; print(cos(Decimal('0.5')))</span>
 <span class="sd">    0.8775825618903727161162815826</span>
 <span class="sd">    &gt;&gt;&gt; print(cos(0.5))</span>
 <span class="sd">    0.87758256189</span>
 <span class="sd">    &gt;&gt;&gt; print(cos(0.5+0j))</span>
 <span class="sd">    (0.87758256189+0j)</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">i</span><span class="p">,</span> <span class="n">lasts</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">fact</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">sign</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">s</span> <span class="o">!=</span> <span class="n">lasts</span><span class="p">:</span>
@@ -2439,19 +2439,19 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
     <span class="k">return</span> <span class="o">+</span><span class="n">s</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the sine of x as measured in radians.</span>
+<span class="w">    </span><span class="sd">"""Return the sine of x as measured in radians.</span>
 
 <span class="sd">    The Taylor series approximation works best for a small value of x.</span>
 <span class="sd">    For larger values, first compute x = x % (2 * pi).</span>
 
-<span class="sd">    &gt;&gt;&gt; print(sin(Decimal(&#39;0.5&#39;)))</span>
+<span class="sd">    &gt;&gt;&gt; print(sin(Decimal('0.5')))</span>
 <span class="sd">    0.4794255386042030002732879352</span>
 <span class="sd">    &gt;&gt;&gt; print(sin(0.5))</span>
 <span class="sd">    0.479425538604</span>
 <span class="sd">    &gt;&gt;&gt; print(sin(0.5+0j))</span>
 <span class="sd">    (0.479425538604+0j)</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">i</span><span class="p">,</span> <span class="n">lasts</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">fact</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">sign</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">s</span> <span class="o">!=</span> <span class="n">lasts</span><span class="p">:</span>
@@ -2472,8 +2472,8 @@ to work with the <a class="reference internal" href="#decimal.Decimal" title="de
 minimize typing when using the interactive interpreter?</p>
 <p>A: Some users abbreviate the constructor to just a single letter:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span><span class="p">(</span><span class="s1">&#39;1.23&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">D</span><span class="p">(</span><span class="s1">&#39;3.45&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;4.68&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span><span class="p">(</span><span class="s1">'1.23'</span><span class="p">)</span> <span class="o">+</span> <span class="n">D</span><span class="p">(</span><span class="s1">'3.45'</span><span class="p">)</span>
+<span class="go">Decimal('4.68')</span>
 </pre></div>
 </div>
 <p>Q: In a fixed-point application with two decimal places, some inputs have many
@@ -2481,20 +2481,20 @@ places and need to be rounded.  Others are not supposed to have excess digits
 and need to be validated.  What methods should be used?</p>
 <p>A: The <a class="reference internal" href="#decimal.Decimal.quantize" title="decimal.Decimal.quantize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">quantize()</span></code></a> method rounds to a fixed number of decimal places. If
 the <a class="reference internal" href="#decimal.Inexact" title="decimal.Inexact"><code class="xref py py-const docutils literal notranslate"><span class="pre">Inexact</span></code></a> trap is set, it is also useful for validation:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">TWOPLACES</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="o">-</span><span class="mi">2</span>       <span class="c1"># same as Decimal(&#39;0.01&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">TWOPLACES</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="o">-</span><span class="mi">2</span>       <span class="c1"># same as Decimal('0.01')</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Round to two places</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.214&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.21&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.214'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">)</span>
+<span class="go">Decimal('3.21')</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Validate that a number does not exceed two places</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.21&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">Context</span><span class="p">(</span><span class="n">traps</span><span class="o">=</span><span class="p">[</span><span class="n">Inexact</span><span class="p">]))</span>
-<span class="go">Decimal(&#39;3.21&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.21'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">Context</span><span class="p">(</span><span class="n">traps</span><span class="o">=</span><span class="p">[</span><span class="n">Inexact</span><span class="p">]))</span>
+<span class="go">Decimal('3.21')</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.214&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">Context</span><span class="p">(</span><span class="n">traps</span><span class="o">=</span><span class="p">[</span><span class="n">Inexact</span><span class="p">]))</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.214'</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">Context</span><span class="p">(</span><span class="n">traps</span><span class="o">=</span><span class="p">[</span><span class="n">Inexact</span><span class="p">]))</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">   </span><span class="c">...</span>
 <span class="gr">Inexact</span>: <span class="n">None</span>
@@ -2506,18 +2506,18 @@ throughout an application?</p>
 will automatically preserve fixed point.  Others operations, like division and
 non-integer multiplication, will change the number of decimal places and need to
 be followed-up with a <a class="reference internal" href="#decimal.Decimal.quantize" title="decimal.Decimal.quantize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">quantize()</span></code></a> step:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;102.72&#39;</span><span class="p">)</span>           <span class="c1"># Initial fixed-point values</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.17&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'102.72'</span><span class="p">)</span>           <span class="c1"># Initial fixed-point values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.17'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>                           <span class="c1"># Addition preserves fixed-point</span>
-<span class="go">Decimal(&#39;105.89&#39;)</span>
+<span class="go">Decimal('105.89')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-<span class="go">Decimal(&#39;99.55&#39;)</span>
+<span class="go">Decimal('99.55')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">*</span> <span class="mi">42</span>                          <span class="c1"># So does integer multiplication</span>
-<span class="go">Decimal(&#39;4314.24&#39;)</span>
+<span class="go">Decimal('4314.24')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">)</span>     <span class="c1"># Must quantize non-integer multiplication</span>
-<span class="go">Decimal(&#39;325.62&#39;)</span>
+<span class="go">Decimal('325.62')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">b</span> <span class="o">/</span> <span class="n">a</span><span class="p">)</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">TWOPLACES</span><span class="p">)</span>     <span class="c1"># And quantize division</span>
-<span class="go">Decimal(&#39;0.03&#39;)</span>
+<span class="go">Decimal('0.03')</span>
 </pre></div>
 </div>
 <p>In developing fixed-point applications, it is convenient to define functions
@@ -2530,9 +2530,9 @@ to handle the <a class="reference internal" href="#decimal.Decimal.quantize" tit
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mul</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>                       <span class="c1"># Automatically preserve fixed-point</span>
-<span class="go">Decimal(&#39;325.62&#39;)</span>
+<span class="go">Decimal('325.62')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">div</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.03&#39;)</span>
+<span class="go">Decimal('0.03')</span>
 </pre></div>
 </div>
 <p>Q: There are many ways to express the same value.  The numbers <code class="docutils literal notranslate"><span class="pre">200</span></code>,
@@ -2541,9 +2541,9 @@ various precisions. Is there a way to transform them to a single recognizable
 canonical value?</p>
 <p>A: The <a class="reference internal" href="#decimal.Decimal.normalize" title="decimal.Decimal.normalize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">normalize()</span></code></a> method maps all equivalent values to a single
 representative:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">Decimal</span><span class="p">,</span> <span class="s1">&#39;200 200.000 2E2 .02E+4&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">Decimal</span><span class="p">,</span> <span class="s1">'200 200.000 2E2 .02E+4'</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">values</span><span class="p">]</span>
-<span class="go">[Decimal(&#39;2E+2&#39;), Decimal(&#39;2E+2&#39;), Decimal(&#39;2E+2&#39;), Decimal(&#39;2E+2&#39;)]</span>
+<span class="go">[Decimal('2E+2'), Decimal('2E+2'), Decimal('2E+2'), Decimal('2E+2')]</span>
 </pre></div>
 </div>
 <p>Q: When does rounding occur in a computation?</p>
@@ -2554,15 +2554,15 @@ precision than current context.  Computations process with those
 exact inputs and then rounding (or other context operations) is
 applied to the <em>result</em> of the computation:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.1415926535&#39;</span><span class="p">)</span>   <span class="c1"># More than 5 digits</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.1415926535'</span><span class="p">)</span>   <span class="c1"># More than 5 digits</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span>                             <span class="c1"># All digits are retained</span>
-<span class="go">Decimal(&#39;3.1415926535&#39;)</span>
+<span class="go">Decimal('3.1415926535')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">+</span> <span class="mi">0</span>                         <span class="c1"># Rounded after an addition</span>
-<span class="go">Decimal(&#39;3.1416&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0.00005&#39;</span><span class="p">)</span>        <span class="c1"># Subtract unrounded numbers, then round</span>
-<span class="go">Decimal(&#39;3.1415&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0.00005&#39;</span><span class="p">)</span><span class="o">.</span>   <span class="c1"># Intermediate values are rounded</span>
-<span class="go">Decimal(&#39;3.1416&#39;)</span>
+<span class="go">Decimal('3.1416')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'0.00005'</span><span class="p">)</span>        <span class="c1"># Subtract unrounded numbers, then round</span>
+<span class="go">Decimal('3.1415')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'0.00005'</span><span class="p">)</span><span class="o">.</span>   <span class="c1"># Intermediate values are rounded</span>
+<span class="go">Decimal('3.1416')</span>
 </pre></div>
 </div>
 <p>Q: Some decimal values always print with exponential notation.  Is there a way
@@ -2578,8 +2578,8 @@ value unchanged:</p>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">d</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="k">if</span> <span class="n">d</span> <span class="o">==</span> <span class="n">d</span><span class="o">.</span><span class="n">to_integral</span><span class="p">()</span> <span class="k">else</span> <span class="n">d</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">remove_exponent</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;5E+3&#39;</span><span class="p">))</span>
-<span class="go">Decimal(&#39;5000&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">remove_exponent</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'5E+3'</span><span class="p">))</span>
+<span class="go">Decimal('5000')</span>
 </pre></div>
 </div>
 <p>Q: Is there a way to convert a regular float to a <a class="reference internal" href="#decimal.Decimal" title="decimal.Decimal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code></a>?</p>
@@ -2587,7 +2587,7 @@ value unchanged:</p>
 Decimal though an exact conversion may take more precision than intuition would
 suggest:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-<span class="go">Decimal(&#39;3.141592653589793115997963468544185161590576171875&#39;)</span>
+<span class="go">Decimal('3.141592653589793115997963468544185161590576171875')</span>
 </pre></div>
 </div>
 <p>Q: Within a complex calculation, how can I make sure that I haven't gotten a
@@ -2604,23 +2604,23 @@ the arithmetic on those values.  Only the results are rounded.  The advantage
 for inputs is that &quot;what you type is what you get&quot;.  A disadvantage is that the
 results can look odd if you forget that the inputs haven't been rounded:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.104&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.104&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;5.21&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.104&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0.000&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2.104&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;5.20&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.104'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.104'</span><span class="p">)</span>
+<span class="go">Decimal('5.21')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'3.104'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'0.000'</span><span class="p">)</span> <span class="o">+</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">'2.104'</span><span class="p">)</span>
+<span class="go">Decimal('5.20')</span>
 </pre></div>
 </div>
 <p>The solution is either to increase precision or to force rounding of inputs
 using the unary plus operation:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span><span class="o">.</span><span class="n">prec</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="o">+</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.23456789&#39;</span><span class="p">)</span>      <span class="c1"># unary plus triggers rounding</span>
-<span class="go">Decimal(&#39;1.23&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">+</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">'1.23456789'</span><span class="p">)</span>      <span class="c1"># unary plus triggers rounding</span>
+<span class="go">Decimal('1.23')</span>
 </pre></div>
 </div>
 <p>Alternatively, inputs can be rounded upon creation using the
 <a class="reference internal" href="#decimal.Context.create_decimal" title="decimal.Context.create_decimal"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Context.create_decimal()</span></code></a> method:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_DOWN</span><span class="p">)</span><span class="o">.</span><span class="n">create_decimal</span><span class="p">(</span><span class="s1">&#39;1.2345678&#39;</span><span class="p">)</span>
-<span class="go">Decimal(&#39;1.2345&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_DOWN</span><span class="p">)</span><span class="o">.</span><span class="n">create_decimal</span><span class="p">(</span><span class="s1">'1.2345678'</span><span class="p">)</span>
+<span class="go">Decimal('1.2345')</span>
 </pre></div>
 </div>
 <p>Q: Is the CPython implementation fast for large numbers?</p>
@@ -2638,14 +2638,14 @@ value for <a class="reference internal" href="#decimal.Context.prec" title="deci
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">setcontext</span><span class="p">(</span><span class="n">Context</span><span class="p">(</span><span class="n">prec</span><span class="o">=</span><span class="n">MAX_PREC</span><span class="p">,</span> <span class="n">Emax</span><span class="o">=</span><span class="n">MAX_EMAX</span><span class="p">,</span> <span class="n">Emin</span><span class="o">=</span><span class="n">MIN_EMIN</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mi">256</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">/</span> <span class="mi">128</span>
-<span class="go">Decimal(&#39;904625697166532776746648320380374280103671755200316906558262375061821325312&#39;)</span>
+<span class="go">Decimal('904625697166532776746648320380374280103671755200316906558262375061821325312')</span>
 </pre></div>
 </div>
 <p>For inexact results, <a class="reference internal" href="#decimal.MAX_PREC" title="decimal.MAX_PREC"><code class="xref py py-const docutils literal notranslate"><span class="pre">MAX_PREC</span></code></a> is far too large on 64-bit platforms and
 the available memory will be insufficient:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">MemoryError</span>
 </pre></div>
 </div>
@@ -2669,8 +2669,8 @@ RAM and expect 10 simultaneous operands using a maximum of 500MB each:</p>
 <span class="go">524288112</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">  decimal.Inexact</span>: <span class="n">[&lt;class &#39;decimal.Inexact&#39;&gt;]</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">  decimal.Inexact</span>: <span class="n">[&lt;class 'decimal.Inexact'&gt;]</span>
 </pre></div>
 </div>
 <p>In general (and especially on systems without overallocation), it is recommended
@@ -2848,7 +2848,7 @@ are expected to be exact.</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

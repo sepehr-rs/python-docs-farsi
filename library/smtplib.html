@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -256,10 +256,10 @@ An example is included below.</p>
 like this, the SMTP <code class="docutils literal notranslate"><span class="pre">QUIT</span></code> command is issued automatically when the
 <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code> statement exits.  E.g.:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">smtplib</span><span class="w"> </span><span class="kn">import</span> <span class="n">SMTP</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">SMTP</span><span class="p">(</span><span class="s2">&quot;domain.org&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">smtp</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">SMTP</span><span class="p">(</span><span class="s2">"domain.org"</span><span class="p">)</span> <span class="k">as</span> <span class="n">smtp</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">smtp</span><span class="o">.</span><span class="n">noop</span><span class="p">()</span>
 <span class="gp">...</span>
-<span class="go">(250, b&#39;Ok&#39;)</span>
+<span class="go">(250, b'Ok')</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
@@ -800,12 +800,12 @@ example doesn't do any processing of the <span class="target" id="index-12"></sp
 <span class="k">def</span><span class="w"> </span><span class="nf">prompt</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">input</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="n">from_addr</span> <span class="o">=</span> <span class="n">prompt</span><span class="p">(</span><span class="s2">&quot;From: &quot;</span><span class="p">)</span>
-<span class="n">to_addrs</span>  <span class="o">=</span> <span class="n">prompt</span><span class="p">(</span><span class="s2">&quot;To: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enter message, end with ^D (Unix) or ^Z (Windows):&quot;</span><span class="p">)</span>
+<span class="n">from_addr</span> <span class="o">=</span> <span class="n">prompt</span><span class="p">(</span><span class="s2">"From: "</span><span class="p">)</span>
+<span class="n">to_addrs</span>  <span class="o">=</span> <span class="n">prompt</span><span class="p">(</span><span class="s2">"To: "</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Enter message, end with ^D (Unix) or ^Z (Windows):"</span><span class="p">)</span>
 
 <span class="c1"># Add the From: and To: headers at the start!</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;From: </span><span class="si">{</span><span class="n">from_addr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;To: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">to_addrs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">]</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"From: </span><span class="si">{</span><span class="n">from_addr</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"To: </span><span class="si">{</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">to_addrs</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="s2">""</span><span class="p">]</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">line</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
@@ -814,10 +814,10 @@ example doesn't do any processing of the <span class="target" id="index-12"></sp
     <span class="k">else</span><span class="p">:</span>
         <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 
-<span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Message length is&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\r\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Message length is"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
 
-<span class="n">server</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s2">&quot;localhost&quot;</span><span class="p">)</span>
+<span class="n">server</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s2">"localhost"</span><span class="p">)</span>
 <span class="n">server</span><span class="o">.</span><span class="n">set_debuglevel</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">server</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">from_addr</span><span class="p">,</span> <span class="n">to_addrs</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
 <span class="n">server</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
@@ -972,7 +972,7 @@ via <a class="reference internal" href="#smtplib.SMTP.send_message" title="smtpl
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

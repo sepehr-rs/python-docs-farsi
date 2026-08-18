@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -502,23 +502,23 @@ Let's cover these in detail:</p>
 raises a <a class="reference internal" href="../library/exceptions.html#SyntaxError" title="SyntaxError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a>, forcing the user to either use other available
 quotes (like using double quotes or triple quotes if the f-string uses single
 quotes). In Python 3.12, you can now do things like this:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Take me back to Eden&#39;</span><span class="p">,</span> <span class="s1">&#39;Alkaline&#39;</span><span class="p">,</span> <span class="s1">&#39;Ascensionism&#39;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">&quot;This is the playlist: </span><span class="si">{</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="go">&#39;This is the playlist: Take me back to Eden, Alkaline, Ascensionism&#39;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Take me back to Eden'</span><span class="p">,</span> <span class="s1">'Alkaline'</span><span class="p">,</span> <span class="s1">'Ascensionism'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"This is the playlist: </span><span class="si">{</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'This is the playlist: Take me back to Eden, Alkaline, Ascensionism'</span>
 </pre></div>
 </div>
 <p>Note that before this change there was no explicit limit in how f-strings can
 be nested, but the fact that string quotes cannot be reused inside the
 expression component of f-strings made it impossible to nest f-strings
 arbitrarily. In fact, this is the most nested f-string that could be written:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span><span class="si">{</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s1">&#39;</span><span class="si">}</span><span class="s1">&#39;&#39;&#39;</span><span class="si">}</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="go">&#39;2&#39;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"""</span><span class="si">{</span><span class="sa">f</span><span class="s1">'''</span><span class="si">{</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s1">'</span><span class="si">}</span><span class="s1">'''</span><span class="si">}</span><span class="s2">"""</span>
+<span class="go">'2'</span>
 </pre></div>
 </div>
 <p>As now f-strings can contain any valid Python expression inside expression
 components, it is now possible to nest f-strings arbitrarily:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s2">&quot;</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="go">&#39;2&#39;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s2">"</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'2'</span>
 </pre></div>
 </div>
 </li>
@@ -528,12 +528,12 @@ could normally span multiple lines
 (like literal lists being defined over multiple lines),
 making them harder to read. In Python 3.12 you can now define f-strings
 spanning multiple lines, and add inline comments:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; f&quot;This is the playlist: {&quot;, &quot;.join([
-...     &#39;Take me back to Eden&#39;,  # My, my, those eyes like fire
-...     &#39;Alkaline&#39;,              # Not acid nor alkaline
-...     &#39;Ascensionism&#39;           # Take to the broken skies at last
-... ])}&quot;
-&#39;This is the playlist: Take me back to Eden, Alkaline, Ascensionism&#39;
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; f"This is the playlist: {", ".join([
+...     'Take me back to Eden',  # My, my, those eyes like fire
+...     'Alkaline',              # Not acid nor alkaline
+...     'Ascensionism'           # Take to the broken skies at last
+... ])}"
+'This is the playlist: Take me back to Eden, Alkaline, Ascensionism'
 </pre></div>
 </div>
 </li>
@@ -542,11 +542,11 @@ couldn't contain any <code class="docutils literal notranslate"><span class="pre
 sequences</span></a> (such as <code class="docutils literal notranslate"><span class="pre">\N{snowman}</span></code>) as these contain
 the <code class="docutils literal notranslate"><span class="pre">\N</span></code> part that previously could not be part of expression components of
 f-strings. Now, you can define expressions like this:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This is the playlist: </span><span class="si">{</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"This is the playlist: </span><span class="si">{</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="go">This is the playlist: Take me back to Eden</span>
 <span class="go">Alkaline</span>
 <span class="go">Ascensionism</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This is the playlist: </span><span class="si">{</span><span class="s2">&quot;</span><span class="se">\N{BLACK HEART SUIT}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"This is the playlist: </span><span class="si">{</span><span class="s2">"</span><span class="se">\N{BLACK HEART SUIT}</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="go">This is the playlist: Take me back to Eden♥Alkaline♥Ascensionism</span>
 </pre></div>
 </div>
@@ -557,8 +557,8 @@ f-strings. Now, you can define expressions like this:</p>
 with <span class="target" id="index-9"></span><a class="pep reference external" href="https://peps.python.org/pep-0617/"><strong>the PEG parser</strong></a>), now error messages for f-strings are more precise
 and include the exact location of the error. For example, in Python 3.11, the following
 f-string raises a <a class="reference internal" href="../library/exceptions.html#SyntaxError" title="SyntaxError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="p">(</span><span class="n">x</span> <span class="n">z</span> <span class="n">y</span><span class="p">)</span>
 <span class="w">     </span><span class="pm">^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">f-string: invalid syntax. Perhaps you forgot a comma?</span>
@@ -567,9 +567,9 @@ f-string raises a <a class="reference internal" href="../library/exceptions.html
 <p>but the error message doesn't include the exact location of the error within the line and
 also has the expression artificially surrounded by parentheses. In Python 3.12, as f-strings
 are parsed with the PEG parser, error messages can be more precise and show the entire line:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="w">    </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
+<span class="w">    </span><span class="n">my_string</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">y</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
 <span class="w">                   </span><span class="pm">^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax. Perhaps you forgot a comma?</span>
 </pre></div>
@@ -660,8 +660,8 @@ the error messages displayed by the interpreter when a <a class="reference inter
 raised to the top level. (Contributed by Pablo Galindo in <a class="reference external" href="https://github.com/python/cpython/issues/98254">gh-98254</a>.)</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">NameError</span>: <span class="n">name &#39;sys&#39; is not defined. Did you forget to import &#39;sys&#39;?</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name 'sys' is not defined. Did you forget to import 'sys'?</span>
 </pre></div>
 </div>
 </li>
@@ -679,10 +679,10 @@ scope. (Contributed by Pablo Galindo in <a class="reference external" href="http
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="p">()</span><span class="o">.</span><span class="n">foo</span><span class="p">()</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="n">somethin</span> <span class="o">=</span> <span class="n">blech</span>
 <span class="w">               </span><span class="pm">^^^^^</span>
-<span class="gr">NameError</span>: <span class="n">name &#39;blech&#39; is not defined. Did you mean: &#39;self.blech&#39;?</span>
+<span class="gr">NameError</span>: <span class="n">name 'blech' is not defined. Did you mean: 'self.blech'?</span>
 </pre></div>
 </div>
 </li>
@@ -690,10 +690,10 @@ scope. (Contributed by Pablo Galindo in <a class="reference external" href="http
 <span class="pre">from</span> <span class="pre">y</span></code> instead of <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">y</span> <span class="pre">import</span> <span class="pre">x</span></code>. (Contributed by Pablo Galindo in <a class="reference external" href="https://github.com/python/cpython/issues/98931">gh-98931</a>.)</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">a.y.z</span> <span class="kn">from</span><span class="w"> </span><span class="nn">b.y.z</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>
 <span class="w">    </span><span class="kn">import</span><span class="w"> </span><span class="nn">a.y.z</span> <span class="kn">from</span><span class="w"> </span><span class="nn">b.y.z</span>
 <span class="w">    </span><span class="pm">^^^^^^^^^^^^^^^^^^^^^^^</span>
-<span class="gr">SyntaxError</span>: <span class="n">Did you mean to use &#39;from ... import ...&#39; instead?</span>
+<span class="gr">SyntaxError</span>: <span class="n">Did you mean to use 'from ... import ...' instead?</span>
 </pre></div>
 </div>
 </li>
@@ -702,8 +702,8 @@ scope. (Contributed by Pablo Galindo in <a class="reference external" href="http
 available names in <code class="docutils literal notranslate"><span class="pre">&lt;module&gt;</span></code>. (Contributed by Pablo Galindo in <a class="reference external" href="https://github.com/python/cpython/issues/91058">gh-91058</a>.)</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">chainmap</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">ImportError</span>: <span class="n">cannot import name &#39;chainmap&#39; from &#39;collections&#39;. Did you mean: &#39;ChainMap&#39;?</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">ImportError</span>: <span class="n">cannot import name 'chainmap' from 'collections'. Did you mean: 'ChainMap'?</span>
 </pre></div>
 </div>
 </li>
@@ -745,17 +745,17 @@ does not in fact do so.</p>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Base</span><span class="p">:</span>
   <span class="k">def</span><span class="w"> </span><span class="nf">get_color</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;blue&quot;</span>
+    <span class="k">return</span> <span class="s2">"blue"</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">GoodChild</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
   <span class="nd">@override</span>  <span class="c1"># ok: overrides Base.get_color</span>
   <span class="k">def</span><span class="w"> </span><span class="nf">get_color</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;yellow&quot;</span>
+    <span class="k">return</span> <span class="s2">"yellow"</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">BadChild</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
   <span class="nd">@override</span>  <span class="c1"># type checker error: does not override Base.get_color</span>
   <span class="k">def</span><span class="w"> </span><span class="nf">get_colour</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;red&quot;</span>
+    <span class="k">return</span> <span class="s2">"red"</span>
 </pre></div>
 </div>
 <p>See <span class="target" id="index-20"></span><a class="pep reference external" href="https://peps.python.org/pep-0698/"><strong>PEP 698</strong></a> for more details.</p>
@@ -1200,7 +1200,7 @@ onto a runtime-checkable protocol will still work, but will have no impact on
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">HasX</span><span class="p">)</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">HasX</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">HasX</span><span class="p">)</span>  <span class="c1"># unchanged, even though HasX now also has a &quot;y&quot; attribute</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">HasX</span><span class="p">)</span>  <span class="c1"># unchanged, even though HasX now also has a "y" attribute</span>
 <span class="go">True</span>
 </pre></div>
 </div>
@@ -2551,19 +2551,19 @@ tokens described in <span class="target" id="index-45"></span><a class="pep refe
 parts in addition to the appropriate tokens for the tokenization in the
 expression components. For example for the f-string <code class="docutils literal notranslate"><span class="pre">f&quot;start</span> <span class="pre">{1+1}</span> <span class="pre">end&quot;</span></code>
 the old version of the tokenizer emitted:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">:</span>           <span class="n">STRING</span>         <span class="s1">&#39;f&quot;start {1+1} end&quot;&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">:</span>           <span class="n">STRING</span>         <span class="s1">'f"start {1+1} end"'</span>
 </pre></div>
 </div>
 <p>while the new version emits:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span>            <span class="n">FSTRING_START</span>  <span class="s1">&#39;f&quot;&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span>            <span class="n">FSTRING_MIDDLE</span> <span class="s1">&#39;start &#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">:</span>            <span class="n">OP</span>             <span class="s1">&#39;{&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">:</span>           <span class="n">NUMBER</span>         <span class="s1">&#39;1&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">:</span>          <span class="n">OP</span>             <span class="s1">&#39;+&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">:</span>          <span class="n">NUMBER</span>         <span class="s1">&#39;1&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">:</span>          <span class="n">OP</span>             <span class="s1">&#39;}&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">:</span>          <span class="n">FSTRING_MIDDLE</span> <span class="s1">&#39; end&#39;</span>
-<span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">:</span>          <span class="n">FSTRING_END</span>    <span class="s1">&#39;&quot;&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span>            <span class="n">FSTRING_START</span>  <span class="s1">'f"'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span>            <span class="n">FSTRING_MIDDLE</span> <span class="s1">'start '</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">:</span>            <span class="n">OP</span>             <span class="s1">'{'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">:</span>           <span class="n">NUMBER</span>         <span class="s1">'1'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">:</span>          <span class="n">OP</span>             <span class="s1">'+'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">:</span>          <span class="n">NUMBER</span>         <span class="s1">'1'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">:</span>          <span class="n">OP</span>             <span class="s1">'}'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">:</span>          <span class="n">FSTRING_MIDDLE</span> <span class="s1">' end'</span>
+<span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">:</span>          <span class="n">FSTRING_END</span>    <span class="s1">'"'</span>
 </pre></div>
 </div>
 <p>Additionally, there may be some minor behavioral changes as a consequence of the
@@ -3458,7 +3458,7 @@ internals.
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

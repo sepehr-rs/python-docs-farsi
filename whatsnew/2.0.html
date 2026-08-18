@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -433,18 +433,18 @@ strings, translating them to the given encoding on output.</p></li>
 it as UTF-8:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">codecs</span>
 
-<span class="n">unistr</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="se">\u0660\u2000</span><span class="s1">ab ...&#39;</span>
+<span class="n">unistr</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">'</span><span class="se">\u0660\u2000</span><span class="s1">ab ...'</span>
 
 <span class="p">(</span><span class="n">UTF8_encode</span><span class="p">,</span> <span class="n">UTF8_decode</span><span class="p">,</span>
- <span class="n">UTF8_streamreader</span><span class="p">,</span> <span class="n">UTF8_streamwriter</span><span class="p">)</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">lookup</span><span class="p">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+ <span class="n">UTF8_streamreader</span><span class="p">,</span> <span class="n">UTF8_streamwriter</span><span class="p">)</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">lookup</span><span class="p">(</span><span class="s1">'UTF-8'</span><span class="p">)</span>
 
-<span class="n">output</span> <span class="o">=</span> <span class="n">UTF8_streamwriter</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s1">&#39;/tmp/output&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">UTF8_streamwriter</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s1">'/tmp/output'</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="n">unistr</span> <span class="p">)</span>
 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>The following code would then read UTF-8 input from the file:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">input</span> <span class="o">=</span> <span class="n">UTF8_streamreader</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s1">&#39;/tmp/output&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">input</span> <span class="o">=</span> <span class="n">UTF8_streamreader</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s1">'/tmp/output'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="p">)</span>
 <span class="nb">print</span> <span class="nb">repr</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 <span class="nb">input</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -516,11 +516,11 @@ following Python code:</p>
 clauses, the resulting list will be equal to the product of the lengths of all
 the sequences.  If you have two lists of length 3, the output list is 9 elements
 long:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">seq1</span> <span class="o">=</span> <span class="s1">&#39;abc&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">seq1</span> <span class="o">=</span> <span class="s1">'abc'</span>
 <span class="n">seq2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="p">[</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">seq1</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">seq2</span><span class="p">]</span>
-<span class="p">[(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-<span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
+<span class="p">[(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'c'</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+<span class="p">(</span><span class="s1">'c'</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">'c'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
 </pre></div>
 </div>
 <p>To avoid introducing an ambiguity into Python's grammar, if <em>expression</em> is
@@ -581,11 +581,11 @@ complicated code.</p>
 <p>Instead, Python 2.0 pushes the problem onto the string type, making string
 manipulation functionality available through methods on both 8-bit strings and
 Unicode strings.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;andrew&#39;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="go">&#39;Andrew&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;hostname&#39;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;os&#39;</span><span class="p">,</span> <span class="s1">&#39;linux&#39;</span><span class="p">)</span>
-<span class="go">&#39;hlinuxtname&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;moshe&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sh&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'andrew'</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="go">'Andrew'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'hostname'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'os'</span><span class="p">,</span> <span class="s1">'linux'</span><span class="p">)</span>
+<span class="go">'hlinuxtname'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'moshe'</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'sh'</span><span class="p">)</span>
 <span class="go">2</span>
 </pre></div>
 </div>
@@ -683,7 +683,7 @@ redirection operator in Unix shells. Previously you'd either have to use the
 simplicity of <code class="docutils literal notranslate"><span class="pre">print</span></code>, or you could assign a new value to
 <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code> and then restore the old value.  For sending output to standard
 error, it's much easier to write this:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;Warning: action field not supplied&quot;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">"Warning: action field not supplied"</span>
 </pre></div>
 </div>
 <p>Modules can now be renamed on importing them, using the syntax <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">module</span>
@@ -739,7 +739,7 @@ exception on the <code class="docutils literal notranslate"><span class="pre">pr
 <code class="xref py py-exc docutils literal notranslate"><span class="pre">NameError</span></code>, so any existing code that expects <code class="xref py py-exc docutils literal notranslate"><span class="pre">NameError</span></code> to be
 raised should still work.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
-    <span class="nb">print</span> <span class="s2">&quot;i=&quot;</span><span class="p">,</span><span class="n">i</span>
+    <span class="nb">print</span> <span class="s2">"i="</span><span class="p">,</span><span class="n">i</span>
     <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">f</span><span class="p">()</span>
 </pre></div>
@@ -943,30 +943,30 @@ or installing in non-default directories, and more.</p>
 the simple case, when the software contains only .py files, a minimal
 <code class="file docutils literal notranslate"><span class="pre">setup.py</span></code> can be just a few lines long:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">distutils.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span>
-<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
-       <span class="n">py_modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;module1&quot;</span><span class="p">,</span> <span class="s2">&quot;module2&quot;</span><span class="p">])</span>
+<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">"1.0"</span><span class="p">,</span>
+       <span class="n">py_modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"module1"</span><span class="p">,</span> <span class="s2">"module2"</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>The <code class="file docutils literal notranslate"><span class="pre">setup.py</span></code> file isn't much more complicated if the software consists
 of a few packages:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">distutils.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span>
-<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
-       <span class="n">packages</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;package&quot;</span><span class="p">,</span> <span class="s2">&quot;package.subpackage&quot;</span><span class="p">])</span>
+<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">"1.0"</span><span class="p">,</span>
+       <span class="n">packages</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"package"</span><span class="p">,</span> <span class="s2">"package.subpackage"</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>A C extension can be the most complicated case; here's an example taken from
 the PyXML package:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">distutils.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">Extension</span>
 
-<span class="n">expat_extension</span> <span class="o">=</span> <span class="n">Extension</span><span class="p">(</span><span class="s1">&#39;xml.parsers.pyexpat&#39;</span><span class="p">,</span>
-     <span class="n">define_macros</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;XML_NS&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)],</span>
-     <span class="n">include_dirs</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;extensions/expat/xmltok&#39;</span><span class="p">,</span>
-                      <span class="s1">&#39;extensions/expat/xmlparse&#39;</span> <span class="p">],</span>
-     <span class="n">sources</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;extensions/pyexpat.c&#39;</span><span class="p">,</span>
-                 <span class="s1">&#39;extensions/expat/xmltok/xmltok.c&#39;</span><span class="p">,</span>
-                 <span class="s1">&#39;extensions/expat/xmltok/xmlrole.c&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">expat_extension</span> <span class="o">=</span> <span class="n">Extension</span><span class="p">(</span><span class="s1">'xml.parsers.pyexpat'</span><span class="p">,</span>
+     <span class="n">define_macros</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'XML_NS'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)],</span>
+     <span class="n">include_dirs</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'extensions/expat/xmltok'</span><span class="p">,</span>
+                      <span class="s1">'extensions/expat/xmlparse'</span> <span class="p">],</span>
+     <span class="n">sources</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'extensions/pyexpat.c'</span><span class="p">,</span>
+                 <span class="s1">'extensions/expat/xmltok/xmltok.c'</span><span class="p">,</span>
+                 <span class="s1">'extensions/expat/xmltok/xmlrole.c'</span><span class="p">,</span> <span class="p">]</span>
        <span class="p">)</span>
-<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;PyXML&quot;</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;0.5.4&quot;</span><span class="p">,</span>
+<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"PyXML"</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">"0.5.4"</span><span class="p">,</span>
        <span class="n">ext_modules</span> <span class="o">=</span><span class="p">[</span> <span class="n">expat_extension</span> <span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
@@ -1015,10 +1015,10 @@ using it:</p>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">SimpleHandler</span><span class="p">(</span><span class="n">sax</span><span class="o">.</span><span class="n">ContentHandler</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">startElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
-        <span class="nb">print</span> <span class="s1">&#39;Start of element:&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attrs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+        <span class="nb">print</span> <span class="s1">'Start of element:'</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attrs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">endElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="nb">print</span> <span class="s1">&#39;End of element:&#39;</span><span class="p">,</span> <span class="n">name</span>
+        <span class="nb">print</span> <span class="s1">'End of element:'</span><span class="p">,</span> <span class="n">name</span>
 
 <span class="c1"># Create a parser object</span>
 <span class="n">parser</span> <span class="o">=</span> <span class="n">sax</span><span class="o">.</span><span class="n">make_parser</span><span class="p">()</span>
@@ -1028,7 +1028,7 @@ using it:</p>
 <span class="n">parser</span><span class="o">.</span><span class="n">setContentHandler</span><span class="p">(</span> <span class="n">handler</span> <span class="p">)</span>
 
 <span class="c1"># Parse a file!</span>
-<span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span> <span class="s1">&#39;hamlet.xml&#39;</span> <span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span> <span class="s1">'hamlet.xml'</span> <span class="p">)</span>
 </pre></div>
 </div>
 <p>For more information, consult the Python documentation, or the XML HOWTO at
@@ -1053,7 +1053,7 @@ module.  It's a lightweight implementation of the Level 1 DOM with support for
 XML namespaces.  The  <code class="xref py py-func docutils literal notranslate"><span class="pre">parse()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">parseString()</span></code> convenience
 functions are provided for generating a DOM tree:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">xml.dom</span><span class="w"> </span><span class="kn">import</span> <span class="n">minidom</span>
-<span class="n">doc</span> <span class="o">=</span> <span class="n">minidom</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;hamlet.xml&#39;</span><span class="p">)</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">minidom</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">'hamlet.xml'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">doc</span></code> is a <code class="xref py py-class docutils literal notranslate"><span class="pre">Document</span></code> instance.  <code class="xref py py-class docutils literal notranslate"><span class="pre">Document</span></code>, like all the other
@@ -1064,7 +1064,7 @@ representation of the node and its children.  Each class also has special
 methods of its own; for example, <code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Document</span></code>
 instances have a method to find all child elements with a given tag name.
 Continuing from the previous 2-line example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">perslist</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span> <span class="s1">&#39;PERSONA&#39;</span> <span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">perslist</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span> <span class="s1">'PERSONA'</span> <span class="p">)</span>
 <span class="nb">print</span> <span class="n">perslist</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">toxml</span><span class="p">()</span>
 <span class="nb">print</span> <span class="n">perslist</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">toxml</span><span class="p">()</span>
 </pre></div>
@@ -1418,7 +1418,7 @@ Marangozov, Tobias Polzin, Guido van Rossum, Neil Schemenauer, and Russ Schmidt.
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

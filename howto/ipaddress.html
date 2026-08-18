@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -268,29 +268,29 @@ when working with IP addressing. The simplest way to create addresses is
 to use the <a class="reference internal" href="../library/ipaddress.html#ipaddress.ip_address" title="ipaddress.ip_address"><code class="xref py py-func docutils literal notranslate"><span class="pre">ipaddress.ip_address()</span></code></a> factory function, which automatically
 determines whether to create an IPv4 or IPv6 address based on the passed in
 value:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.1&#39;</span><span class="p">)</span>
-<span class="go">IPv4Address(&#39;192.0.2.1&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;2001:DB8::1&#39;</span><span class="p">)</span>
-<span class="go">IPv6Address(&#39;2001:db8::1&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.1'</span><span class="p">)</span>
+<span class="go">IPv4Address('192.0.2.1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'2001:DB8::1'</span><span class="p">)</span>
+<span class="go">IPv6Address('2001:db8::1')</span>
 </pre></div>
 </div>
 <p>Addresses can also be created directly from integers. Values that will
 fit within 32 bits are assumed to be IPv4 addresses:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="mi">3221225985</span><span class="p">)</span>
-<span class="go">IPv4Address(&#39;192.0.2.1&#39;)</span>
+<span class="go">IPv4Address('192.0.2.1')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="mi">42540766411282592856903984951653826561</span><span class="p">)</span>
-<span class="go">IPv6Address(&#39;2001:db8::1&#39;)</span>
+<span class="go">IPv6Address('2001:db8::1')</span>
 </pre></div>
 </div>
 <p>To force the use of IPv4 or IPv6 addresses, the relevant classes can be
 invoked directly. This is particularly useful to force creation of IPv6
 addresses for small integers:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">IPv4Address(&#39;0.0.0.1&#39;)</span>
+<span class="go">IPv4Address('0.0.0.1')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Address</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">IPv4Address(&#39;0.0.0.1&#39;)</span>
+<span class="go">IPv4Address('0.0.0.1')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv6Address</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">IPv6Address(&#39;::1&#39;)</span>
+<span class="go">IPv6Address('::1')</span>
 </pre></div>
 </div>
 </section>
@@ -306,10 +306,10 @@ whether or not an address is part of the network and the network address
 defines the expected value of those bits.</p>
 <p>As for addresses, a factory function is provided that determines the correct
 IP version automatically:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.0/24&#39;</span><span class="p">)</span>
-<span class="go">IPv4Network(&#39;192.0.2.0/24&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;2001:db8::0/96&#39;</span><span class="p">)</span>
-<span class="go">IPv6Network(&#39;2001:db8::/96&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.0/24'</span><span class="p">)</span>
+<span class="go">IPv4Network('192.0.2.0/24')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'2001:db8::0/96'</span><span class="p">)</span>
+<span class="go">IPv6Network('2001:db8::/96')</span>
 </pre></div>
 </div>
 <p>Network objects cannot have any host bits set.  The practical effect of this
@@ -321,12 +321,12 @@ and are described further in the next section.</p>
 result in <a class="reference internal" href="../library/exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> being raised. To request that the
 additional bits instead be coerced to zero, the flag <code class="docutils literal notranslate"><span class="pre">strict=False</span></code> can
 be passed to the constructor:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.1/24&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.1/24'</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">   </span><span class="c">...</span>
 <span class="gr">ValueError</span>: <span class="n">192.0.2.1/24 has host bits set</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.1/24&#39;</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="go">IPv4Network(&#39;192.0.2.0/24&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.1/24'</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">IPv4Network('192.0.2.0/24')</span>
 </pre></div>
 </div>
 <p>While the string form offers significantly more flexibility, networks can
@@ -334,9 +334,9 @@ also be defined with integers, just like host addresses. In this case, the
 network is considered to contain only the single address identified by the
 integer, so the network prefix includes the entire network address:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="mi">3221225984</span><span class="p">)</span>
-<span class="go">IPv4Network(&#39;192.0.2.0/32&#39;)</span>
+<span class="go">IPv4Network('192.0.2.0/32')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="mi">42540766411282592856903984951653826560</span><span class="p">)</span>
-<span class="go">IPv6Network(&#39;2001:db8::/128&#39;)</span>
+<span class="go">IPv6Network('2001:db8::/128')</span>
 </pre></div>
 </div>
 <p>As with addresses, creation of a particular kind of network can be forced
@@ -354,10 +354,10 @@ provides a set of hybrid classes that associate an address with a particular
 network. The interface for creation is identical to that for defining network
 objects, except that the address portion isn't constrained to being a network
 address.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">&#39;192.0.2.1/24&#39;</span><span class="p">)</span>
-<span class="go">IPv4Interface(&#39;192.0.2.1/24&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">&#39;2001:db8::1/96&#39;</span><span class="p">)</span>
-<span class="go">IPv6Interface(&#39;2001:db8::1/96&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">'192.0.2.1/24'</span><span class="p">)</span>
+<span class="go">IPv4Interface('192.0.2.1/24')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">'2001:db8::1/96'</span><span class="p">)</span>
+<span class="go">IPv6Interface('2001:db8::1/96')</span>
 </pre></div>
 </div>
 <p>Integer inputs are accepted (as with networks), and use of a particular IP
@@ -370,8 +370,8 @@ version can be forced by calling the relevant constructor directly.</p>
 object, so you probably want to get information about it.  <a class="reference internal" href="../library/ipaddress.html#module-ipaddress" title="ipaddress: IPv4/IPv6 manipulation library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipaddress</span></code></a>
 tries to make doing this easy and intuitive.</p>
 <p>Extracting the IP version:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.1&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">addr6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;2001:db8::1&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.1'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">addr6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'2001:db8::1'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">addr6</span><span class="o">.</span><span class="n">version</span>
 <span class="go">6</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span><span class="o">.</span><span class="n">version</span>
@@ -379,25 +379,25 @@ tries to make doing this easy and intuitive.</p>
 </pre></div>
 </div>
 <p>Obtaining the network from an interface:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">host4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">&#39;192.0.2.1/24&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">host4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">'192.0.2.1/24'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">host4</span><span class="o">.</span><span class="n">network</span>
-<span class="go">IPv4Network(&#39;192.0.2.0/24&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">host6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">&#39;2001:db8::1/96&#39;</span><span class="p">)</span>
+<span class="go">IPv4Network('192.0.2.0/24')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">host6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_interface</span><span class="p">(</span><span class="s1">'2001:db8::1/96'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">host6</span><span class="o">.</span><span class="n">network</span>
-<span class="go">IPv6Network(&#39;2001:db8::/96&#39;)</span>
+<span class="go">IPv6Network('2001:db8::/96')</span>
 </pre></div>
 </div>
 <p>Finding out how many individual addresses are in a network:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.0/24&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.0/24'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span><span class="o">.</span><span class="n">num_addresses</span>
 <span class="go">256</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;2001:db8::0/96&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'2001:db8::0/96'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="o">.</span><span class="n">num_addresses</span>
 <span class="go">4294967296</span>
 </pre></div>
 </div>
 <p>Iterating through the &quot;usable&quot; addresses on a network:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.0/24&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.0/24'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">net4</span><span class="o">.</span><span class="n">hosts</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="go">192.0.2.1</span>
@@ -412,27 +412,27 @@ tries to make doing this easy and intuitive.</p>
 </div>
 <p>Obtaining the netmask (i.e. set bits corresponding to the network prefix) or
 the hostmask (any bits that are not part of the netmask):</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.0/24&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.0/24'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span><span class="o">.</span><span class="n">netmask</span>
-<span class="go">IPv4Address(&#39;255.255.255.0&#39;)</span>
+<span class="go">IPv4Address('255.255.255.0')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span><span class="o">.</span><span class="n">hostmask</span>
-<span class="go">IPv4Address(&#39;0.0.0.255&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;2001:db8::0/96&#39;</span><span class="p">)</span>
+<span class="go">IPv4Address('0.0.0.255')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'2001:db8::0/96'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="o">.</span><span class="n">netmask</span>
-<span class="go">IPv6Address(&#39;ffff:ffff:ffff:ffff:ffff:ffff::&#39;)</span>
+<span class="go">IPv6Address('ffff:ffff:ffff:ffff:ffff:ffff::')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="o">.</span><span class="n">hostmask</span>
-<span class="go">IPv6Address(&#39;::ffff:ffff&#39;)</span>
+<span class="go">IPv6Address('::ffff:ffff')</span>
 </pre></div>
 </div>
 <p>Exploding or compressing the address:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr6</span><span class="o">.</span><span class="n">exploded</span>
-<span class="go">&#39;2001:0db8:0000:0000:0000:0000:0000:0001&#39;</span>
+<span class="go">'2001:0db8:0000:0000:0000:0000:0000:0001'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">addr6</span><span class="o">.</span><span class="n">compressed</span>
-<span class="go">&#39;2001:db8::1&#39;</span>
+<span class="go">'2001:db8::1'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="o">.</span><span class="n">exploded</span>
-<span class="go">&#39;2001:0db8:0000:0000:0000:0000:0000:0000/96&#39;</span>
+<span class="go">'2001:0db8:0000:0000:0000:0000:0000:0000/96'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="o">.</span><span class="n">compressed</span>
-<span class="go">&#39;2001:db8::/96&#39;</span>
+<span class="go">'2001:db8::/96'</span>
 </pre></div>
 </div>
 <p>While IPv4 doesn't support explosion or compression, the associated objects
@@ -445,13 +445,13 @@ addresses while still correctly handling IPv4 addresses.</p>
 <p>It's sometimes useful to treat networks as lists.  This means it is possible
 to index them like this:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="go">IPv4Address(&#39;192.0.2.1&#39;)</span>
+<span class="go">IPv4Address('192.0.2.1')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net4</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="go">IPv4Address(&#39;192.0.2.255&#39;)</span>
+<span class="go">IPv4Address('192.0.2.255')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="go">IPv6Address(&#39;2001:db8::1&#39;)</span>
+<span class="go">IPv6Address('2001:db8::1')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">net6</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="go">IPv6Address(&#39;2001:db8::ffff:ffff&#39;)</span>
+<span class="go">IPv6Address('2001:db8::ffff:ffff')</span>
 </pre></div>
 </div>
 <p>It also means that network objects lend themselves to using the list
@@ -461,10 +461,10 @@ membership test syntax like this:</p>
 </pre></div>
 </div>
 <p>Containment testing is done efficiently based on the network prefix:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.1&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="ow">in</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.2.0/24&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.1'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="ow">in</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.2.0/24'</span><span class="p">)</span>
 <span class="go">True</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="ow">in</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">&#39;192.0.3.0/24&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="ow">in</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s1">'192.0.3.0/24'</span><span class="p">)</span>
 <span class="go">False</span>
 </pre></div>
 </div>
@@ -473,7 +473,7 @@ membership test syntax like this:</p>
 <h2>Comparisons<a class="headerlink" href="#comparisons" title="Link to this heading">¶</a></h2>
 <p><a class="reference internal" href="../library/ipaddress.html#module-ipaddress" title="ipaddress: IPv4/IPv6 manipulation library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipaddress</span></code></a> provides some simple, hopefully intuitive ways to compare
 objects, where it makes sense:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.1&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.2&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.1'</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.2'</span><span class="p">)</span>
 <span class="go">True</span>
 </pre></div>
 </div>
@@ -485,9 +485,9 @@ different versions or different types.</p>
 <p>Other modules that use IP addresses (such as <a class="reference internal" href="../library/socket.html#module-socket" title="socket: Low-level networking interface."><code class="xref py py-mod docutils literal notranslate"><span class="pre">socket</span></code></a>) usually won't
 accept objects from this module directly. Instead, they must be coerced to
 an integer or string that the other module will accept:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">&#39;192.0.2.1&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addr4</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s1">'192.0.2.1'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">addr4</span><span class="p">)</span>
-<span class="go">&#39;192.0.2.1&#39;</span>
+<span class="go">'192.0.2.1'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="n">addr4</span><span class="p">)</span>
 <span class="go">3221225985</span>
 </pre></div>
@@ -508,23 +508,23 @@ detail, the individual class constructors actually raise the
 the definition failed to parse correctly.</p>
 <p>The error messages are significantly more detailed when using the
 class constructors directly. For example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s2">&quot;192.168.0.256&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="s2">"192.168.0.256"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">  </span><span class="c">...</span>
-<span class="gr">ValueError</span>: <span class="n">&#39;192.168.0.256&#39; does not appear to be an IPv4 or IPv6 address</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Address</span><span class="p">(</span><span class="s2">&quot;192.168.0.256&quot;</span><span class="p">)</span>
+<span class="gr">ValueError</span>: <span class="n">'192.168.0.256' does not appear to be an IPv4 or IPv6 address</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Address</span><span class="p">(</span><span class="s2">"192.168.0.256"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">  </span><span class="c">...</span>
-<span class="gr">ipaddress.AddressValueError</span>: <span class="n">Octet 256 (&gt; 255) not permitted in &#39;192.168.0.256&#39;</span>
+<span class="gr">ipaddress.AddressValueError</span>: <span class="n">Octet 256 (&gt; 255) not permitted in '192.168.0.256'</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s2">&quot;192.168.0.1/64&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="s2">"192.168.0.1/64"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">  </span><span class="c">...</span>
-<span class="gr">ValueError</span>: <span class="n">&#39;192.168.0.1/64&#39; does not appear to be an IPv4 or IPv6 network</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Network</span><span class="p">(</span><span class="s2">&quot;192.168.0.1/64&quot;</span><span class="p">)</span>
+<span class="gr">ValueError</span>: <span class="n">'192.168.0.1/64' does not appear to be an IPv4 or IPv6 network</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Network</span><span class="p">(</span><span class="s2">"192.168.0.1/64"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">  </span><span class="c">...</span>
-<span class="gr">ipaddress.NetmaskValueError</span>: <span class="n">&#39;64&#39; is not a valid netmask</span>
+<span class="gr">ipaddress.NetmaskValueError</span>: <span class="n">'64' is not a valid netmask</span>
 </pre></div>
 </div>
 <p>However, both of the module specific exceptions have <a class="reference internal" href="../library/exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> as their
@@ -533,7 +533,7 @@ you can still write code like the following:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="n">network</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">IPv4Network</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;address/netmask is invalid for IPv4:&#39;</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'address/netmask is invalid for IPv4:'</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -688,7 +688,7 @@ you can still write code like the following:</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

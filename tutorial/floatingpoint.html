@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -251,14 +251,14 @@
 <p>در گذشته، اعلان پایتون و تابع داخلی <a class="reference internal" href="../library/functions.html#repr" title="repr"><code class="xref py py-func docutils literal notranslate"><span class="pre">repr()</span></code></a> مقداری را با 17 رقم معنادار انتخاب می‌کردند: <code class="docutils literal notranslate"><span class="pre">0.10000000000000001</span></code>. از پایتون 3.1 به بعد، پایتون (در بیشتر سیستم‌ها) قادر است کوتاه‌ترین مقدار از میان این نمایش‌ها را انتخاب کند و به‌سادگی <code class="docutils literal notranslate"><span class="pre">0.1</span></code> را نمایش دهد.</p>
 <p>توجه داشته باشید که این موضوع ذاتاً بخشی از ممیز شناور دودویی است: این یک باگ در پایتون نیست و در کد شما نیز اشکالی وجود ندارد. همین رفتار را در تمام زبان‌هایی که از محاسبات ممیز شناور سخت‌افزار شما پشتیبانی می‌کنند خواهید دید (اگرچه برخی زبان‌ها ممکن است این تفاوت را به‌صورت پیش‌فرض یا در همهٔ حالت‌های خروجی نمایش ندهند).</p>
 <p>برای خروجی خواناتر، می‌توانید از قالب‌بندی رشته‌ها استفاده کنید تا تعداد محدودی رقم معنادار تولید شود:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="s1">&#39;.12g&#39;</span><span class="p">)</span>  <span class="c1"># نمایش ۱۲ رقم معنادار</span>
-<span class="go">&#39;3.14159265359&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="s1">'.12g'</span><span class="p">)</span>  <span class="c1"># نمایش ۱۲ رقم معنادار</span>
+<span class="go">'3.14159265359'</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="s1">&#39;.2f&#39;</span><span class="p">)</span>   <span class="c1"># نمایش ۲ رقم پس از ممیز</span>
-<span class="go">&#39;3.14&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="s1">'.2f'</span><span class="p">)</span>   <span class="c1"># نمایش ۲ رقم پس از ممیز</span>
+<span class="go">'3.14'</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">repr</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-<span class="go">&#39;3.141592653589793&#39;</span>
+<span class="go">'3.141592653589793'</span>
 </pre></div>
 </div>
 <p>مهم است بدانید که این، از یک نظر واقعی، یک توهم است: شما تنها نمایش مقدار واقعی ماشین را گرد می‌کنید.</p>
@@ -301,11 +301,11 @@
 </div>
 <p>متد <a class="reference internal" href="../library/stdtypes.html#float.hex" title="float.hex"><code class="xref py py-meth docutils literal notranslate"><span class="pre">float.hex()</span></code></a> یک عدد ممیز شناور را به شکل هگزادسیمال (مبنای ۱۶) نمایش می‌دهد و دوباره مقدار دقیقی را که توسط کامپیوتر شما ذخیره شده است ارائه می‌کند:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
-<span class="go">&#39;0x1.921f9f01b866ep+1&#39;</span>
+<span class="go">'0x1.921f9f01b866ep+1'</span>
 </pre></div>
 </div>
 <p>این نمایش دقیق هگزادسیمال می‌تواند برای بازسازی دقیق مقدار عدد ممیز شناور استفاده شود:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">==</span> <span class="nb">float</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s1">&#39;0x1.921f9f01b866ep+1&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">==</span> <span class="nb">float</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s1">'0x1.921f9f01b866ep+1'</span><span class="p">)</span>
 <span class="go">True</span>
 </pre></div>
 </div>
@@ -384,8 +384,8 @@
 <p>یعنی مقدار دقیق ذخیره‌شده در کامپیوتر برابر با مقدار اعشاری زیر است:
 0.1000000000000000055511151231257827021181583404541015625
 به‌جای نمایش مقدار کامل اعشاری، بسیاری از زبان‌ها (از جمله نسخه‌های قدیمی‌تر پایتون) نتیجه را تا ۱۷ رقم معنادار گرد می‌کنند:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="s1">&#39;.17f&#39;</span><span class="p">)</span>
-<span class="go">&#39;0.10000000000000001&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="s1">'.17f'</span><span class="p">)</span>
+<span class="go">'0.10000000000000001'</span>
 </pre></div>
 </div>
 <p>ماژول‌های <a class="reference internal" href="../library/fractions.html#module-fractions" title="fractions: Rational numbers."><code class="xref py py-mod docutils literal notranslate"><span class="pre">fractions</span></code></a> و <a class="reference internal" href="../library/decimal.html#module-decimal" title="decimal: Implementation of the General Decimal Arithmetic Specification."><code class="xref py py-mod docutils literal notranslate"><span class="pre">decimal</span></code></a> انجام این محاسبات را آسان می‌کنند:</p>
@@ -399,10 +399,10 @@
 <span class="go">(3602879701896397, 36028797018963968)</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-<span class="go">Decimal(&#39;0.1000000000000000055511151231257827021181583404541015625&#39;)</span>
+<span class="go">Decimal('0.1000000000000000055511151231257827021181583404541015625')</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="s1">&#39;.17&#39;</span><span class="p">)</span>
-<span class="go">&#39;0.10000000000000001&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">format</span><span class="p">(</span><span class="n">Decimal</span><span class="o">.</span><span class="n">from_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="s1">'.17'</span><span class="p">)</span>
+<span class="go">'0.10000000000000001'</span>
 </pre></div>
 </div>
 </section>
@@ -546,7 +546,7 @@
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

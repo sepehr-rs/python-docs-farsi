@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -257,7 +257,7 @@ instead of <code class="docutils literal notranslate"><span class="pre">import</
    <span class="nb">breakpoint</span><span class="p">()</span>
    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="n">val</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2"> * 2 is </span><span class="si">{</span><span class="n">double</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2"> * 2 is </span><span class="si">{</span><span class="n">double</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The debugger's prompt is <code class="docutils literal notranslate"><span class="pre">(Pdb)</span></code>, which is the indicator that you are in debug mode:</p>
@@ -330,7 +330,7 @@ process receives a signal.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pdb</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">x</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pdb</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;f(2)&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdb</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">"f(2)"</span><span class="p">)</span>
 <span class="go">&gt; &lt;string&gt;(1)&lt;module&gt;()</span>
 <span class="go">(Pdb) continue</span>
 <span class="go">0.5</span>
@@ -344,8 +344,8 @@ process receives a signal.</p>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">f</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">2</span>, in <span class="n">f</span>
 <span class="gr">ZeroDivisionError</span>: <span class="n">division by zero</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pdb</span><span class="o">.</span><span class="n">pm</span><span class="p">()</span>
 <span class="go">&gt; &lt;stdin&gt;(2)f()</span>
@@ -502,7 +502,7 @@ Otherwise the supported backends are <code class="docutils literal notranslate">
 <p>The <em>colorize</em> argument, if set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, will enable colorized output in the
 debugger, if color is supported. This will highlight source code displayed in pdb.</p>
 <p>Example call to enable tracing with <em>skip</em>:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">Pdb</span><span class="p">(</span><span class="n">skip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;django.*&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">Pdb</span><span class="p">(</span><span class="n">skip</span><span class="o">=</span><span class="p">[</span><span class="s1">'django.*'</span><span class="p">])</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
 </pre></div>
 </div>
 <p class="audit-hook">Raises an <a class="reference internal" href="sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">pdb.Pdb</span></code> with no arguments.</p>
@@ -977,8 +977,8 @@ is recursively applied to the first word of the command line; all other words
 in the line are left alone.</p>
 <p>As an example, here are two useful aliases (especially when placed in the
 <code class="file docutils literal notranslate"><span class="pre">.pdbrc</span></code> file):</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print instance variables (usage &quot;pi classInst&quot;)</span>
-<span class="n">alias</span> <span class="n">pi</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="o">%</span><span class="mf">1.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;%1.</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="o">%</span><span class="mf">1.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print instance variables (usage "pi classInst")</span>
+<span class="n">alias</span> <span class="n">pi</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="o">%</span><span class="mf">1.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"%1.</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="o">%</span><span class="mf">1.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="c1"># Print instance variables in self</span>
 <span class="n">alias</span> <span class="n">ps</span> <span class="n">pi</span> <span class="bp">self</span>
 </pre></div>
@@ -1003,7 +1003,7 @@ resembles a debugger command, e.g.:</p>
 </div>
 <p>To set a global variable, you can prefix the assignment command with a
 <a class="reference internal" href="../reference/simple_stmts.html#global"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">global</span></code></a> statement on the same line, e.g.:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(Pdb) global list_options; list_options = [&#39;-l&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(Pdb) global list_options; list_options = ['-l']
 (Pdb)
 </pre></div>
 </div>
@@ -1067,13 +1067,13 @@ chained exceptions using <code class="docutils literal notranslate"><span class=
     <span class="k">try</span><span class="p">:</span>
         <span class="n">middle</span><span class="p">()</span>
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;reraise middle() error&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"reraise middle() error"</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">middle</span><span class="p">():</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">inner</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Middle fail&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Middle fail"</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">inner</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="mi">1</span> <span class="o">/</span> <span class="n">x</span>
@@ -1083,12 +1083,12 @@ chained exceptions using <code class="docutils literal notranslate"><span class=
 </div>
 <p>calling <code class="docutils literal notranslate"><span class="pre">pdb.pm()</span></code> will allow to move between exceptions:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="n">out</span><span class="p">()</span>
-<span class="o">-&gt;</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;reraise middle() error&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="o">-&gt;</span> <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"reraise middle() error"</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
 
 <span class="p">(</span><span class="n">Pdb</span><span class="p">)</span> <span class="n">exceptions</span>
-  <span class="mi">0</span> <span class="ne">ZeroDivisionError</span><span class="p">(</span><span class="s1">&#39;division by zero&#39;</span><span class="p">)</span>
-  <span class="mi">1</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Middle fail&#39;</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="mi">2</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;reraise middle() error&#39;</span><span class="p">)</span>
+  <span class="mi">0</span> <span class="ne">ZeroDivisionError</span><span class="p">(</span><span class="s1">'division by zero'</span><span class="p">)</span>
+  <span class="mi">1</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Middle fail'</span><span class="p">)</span>
+<span class="o">&gt;</span> <span class="mi">2</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'reraise middle() error'</span><span class="p">)</span>
 
 <span class="p">(</span><span class="n">Pdb</span><span class="p">)</span> <span class="n">exceptions</span> <span class="mi">0</span>
 <span class="o">&gt;</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="n">inner</span><span class="p">()</span>
@@ -1255,7 +1255,7 @@ is determined by the <code class="docutils literal notranslate"><span class="pre
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

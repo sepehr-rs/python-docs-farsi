@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -232,9 +232,9 @@
 <p>ماژول <a class="reference internal" href="../library/os.html#module-os" title="os: Miscellaneous operating system interfaces."><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code></a> ده‌ها تابع برای تعامل با سیستم‌عامل فراهم می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>      <span class="c1"># مسیر کاری فعلی را برمی‌گرداند</span>
-<span class="go">&#39;C:\\Python314&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;/server/accesslogs&#39;</span><span class="p">)</span>   <span class="c1"># مسیر کاری فعلی را تغییر می‌دهد</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;mkdir today&#39;</span><span class="p">)</span>   <span class="c1"># دستور mkdir را در پوستهٔ سیستم اجرا می‌کند</span>
+<span class="go">'C:\\Python314'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">'/server/accesslogs'</span><span class="p">)</span>   <span class="c1"># مسیر کاری فعلی را تغییر می‌دهد</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">'mkdir today'</span><span class="p">)</span>   <span class="c1"># دستور mkdir را در پوستهٔ سیستم اجرا می‌کند</span>
 <span class="go">0</span>
 </pre></div>
 </div>
@@ -244,15 +244,15 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">os</span><span class="p">)</span>
 <span class="go">&lt;returns a list of all module functions&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">os</span><span class="p">)</span>
-<span class="go">&lt;returns an extensive manual page created from the module&#39;s docstrings&gt;</span>
+<span class="go">&lt;returns an extensive manual page created from the module's docstrings&gt;</span>
 </pre></div>
 </div>
 <p>برای کارهای روزمرهٔ مدیریت فایل‌ها و پوشه‌ها، ماژول <a class="reference internal" href="../library/shutil.html#module-shutil" title="shutil: High-level file operations, including copying."><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code></a> یک رابط سطح بالاتر ارائه می‌دهد که استفاده از آن ساده‌تر است:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="s1">&#39;data.db&#39;</span><span class="p">,</span> <span class="s1">&#39;archive.db&#39;</span><span class="p">)</span>
-<span class="go">&#39;archive.db&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;/build/executables&#39;</span><span class="p">,</span> <span class="s1">&#39;installdir&#39;</span><span class="p">)</span>
-<span class="go">&#39;installdir&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="s1">'data.db'</span><span class="p">,</span> <span class="s1">'archive.db'</span><span class="p">)</span>
+<span class="go">'archive.db'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">'/build/executables'</span><span class="p">,</span> <span class="s1">'installdir'</span><span class="p">)</span>
+<span class="go">'installdir'</span>
 </pre></div>
 </div>
 </section>
@@ -260,8 +260,8 @@
 <span id="tut-file-wildcards"></span><h2><span class="section-number">10.2. </span>الگوهای عام فایل<a class="headerlink" href="#file-wildcards" title="Link to this heading">¶</a></h2>
 <p>ماژول <a class="reference internal" href="../library/glob.html#module-glob" title="glob: Unix shell style pathname pattern expansion."><code class="xref py py-mod docutils literal notranslate"><span class="pre">glob</span></code></a> تابعی برای ساخت فهرستی از فایل‌ها با استفاده از جست‌وجوهای الگوی عام در پوشه‌ها فراهم می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.py&#39;</span><span class="p">)</span>
-<span class="go">[&#39;primes.py&#39;, &#39;random.py&#39;, &#39;quote.py&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*.py'</span><span class="p">)</span>
+<span class="go">['primes.py', 'random.py', 'quote.py']</span>
 </pre></div>
 </div>
 </section>
@@ -274,17 +274,17 @@
 </pre></div>
 </div>
 <p>خروجی اجرای <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">demo.py</span> <span class="pre">one</span> <span class="pre">two</span> <span class="pre">three</span></code> در خط فرمان به شکل زیر است:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;demo.py&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">'demo.py'</span><span class="p">,</span> <span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>ماژول <a class="reference internal" href="../library/argparse.html#module-argparse" title="argparse: Command-line option and argument parsing library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">argparse</span></code></a> سازوکار پیشرفته‌تری برای پردازش آرگومان‌های خط فرمان فراهم می‌کند. اسکریپت زیر یک یا چند نام فایل و همچنین تعداد اختیاری خطوطی که باید نمایش داده شوند را استخراج می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
 
 <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
-    <span class="n">prog</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Show top lines from each file&#39;</span><span class="p">)</span>
-<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;filenames&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
-<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-l&#39;</span><span class="p">,</span> <span class="s1">&#39;--lines&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">prog</span><span class="o">=</span><span class="s1">'top'</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">'Show top lines from each file'</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'filenames'</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">'+'</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-l'</span><span class="p">,</span> <span class="s1">'--lines'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 </pre></div>
@@ -294,7 +294,7 @@
 <section id="error-output-redirection-and-program-termination">
 <span id="tut-stderr"></span><h2><span class="section-number">10.4. </span>تغییر مسیر خروجی خطا و پایان دادن به برنامه<a class="headerlink" href="#error-output-redirection-and-program-termination" title="Link to this heading">¶</a></h2>
 <p>ماژول <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> همچنین ویژگی‌هایی برای <em>stdin</em>، <em>stdout</em> و <em>stderr</em> دارد. مورد آخر برای ارسال هشدارها و پیام‌های خطا مفید است، زیرا حتی زمانی که <em>stdout</em> تغییر مسیر داده شده باشد، این پیام‌ها همچنان قابل مشاهده خواهند بود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Warning, log file not found starting a new one</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'Warning, log file not found starting a new one</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="go">Warning, log file not found starting a new one</span>
 </pre></div>
 </div>
@@ -304,15 +304,15 @@
 <span id="tut-string-pattern-matching"></span><h2><span class="section-number">10.5. </span>تطبیق الگوهای رشته‌ای<a class="headerlink" href="#string-pattern-matching" title="Link to this heading">¶</a></h2>
 <p>ماژول <a class="reference internal" href="../library/re.html#module-re" title="re: Regular expression operations."><code class="xref py py-mod docutils literal notranslate"><span class="pre">re</span></code></a> ابزارهای عبارت باقاعده را برای پردازش پیشرفتهٔ رشته‌ها فراهم می‌کند. برای تطبیق و تغییرات پیچیده، عبارت‌های باقاعده راه‌حل‌هایی کوتاه و بهینه ارائه می‌دهند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\bf[a-z]*&#39;</span><span class="p">,</span> <span class="s1">&#39;which foot or hand fell fastest&#39;</span><span class="p">)</span>
-<span class="go">[&#39;foot&#39;, &#39;fell&#39;, &#39;fastest&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\b[a-z]+) \1&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="s1">&#39;cat in the the hat&#39;</span><span class="p">)</span>
-<span class="go">&#39;cat in the hat&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\bf[a-z]*'</span><span class="p">,</span> <span class="s1">'which foot or hand fell fastest'</span><span class="p">)</span>
+<span class="go">['foot', 'fell', 'fastest']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'(\b[a-z]+) \1'</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'\1'</span><span class="p">,</span> <span class="s1">'cat in the the hat'</span><span class="p">)</span>
+<span class="go">'cat in the hat'</span>
 </pre></div>
 </div>
 <p>وقتی فقط به قابلیت‌های ساده نیاز است، استفاده از متدهای رشته‌ای ترجیح داده می‌شود، زیرا خواندن و اشکال‌زدایی آن‌ها آسان‌تر است:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;tea for too&#39;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;too&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">)</span>
-<span class="go">&#39;tea for two&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">'tea for too'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'too'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">)</span>
+<span class="go">'tea for two'</span>
 </pre></div>
 </div>
 </section>
@@ -328,8 +328,8 @@
 </div>
 <p>ماژول <a class="reference internal" href="../library/random.html#module-random" title="random: Generate pseudo-random numbers with various common distributions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">random</span></code></a> ابزارهایی برای انتخاب‌های تصادفی فراهم می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">])</span>
-<span class="go">&#39;apple&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s1">'apple'</span><span class="p">,</span> <span class="s1">'pear'</span><span class="p">,</span> <span class="s1">'banana'</span><span class="p">])</span>
+<span class="go">'apple'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>   <span class="c1"># نمونه‌گیری بدون جایگذاری</span>
 <span class="go">[30, 83, 16, 4, 8, 81, 41, 50, 18, 33]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>    <span class="c1"># عدد اعشاری تصادفی از بازهٔ [0.0، 1.0)</span>
@@ -355,22 +355,22 @@
 <span id="tut-internet-access"></span><h2><span class="section-number">10.7. </span>دسترسی به اینترنت<a class="headerlink" href="#internet-access" title="Link to this heading">¶</a></h2>
 <p>تعدادی ماژول برای دسترسی به اینترنت و پردازش پروتکل‌های اینترنتی وجود دارد. دو مورد از ساده‌ترین آن‌ها <a class="reference internal" href="../library/urllib.request.html#module-urllib.request" title="urllib.request: Extensible library for opening URLs."><code class="xref py py-mod docutils literal notranslate"><span class="pre">urllib.request</span></code></a> برای دریافت داده از URLها و <a class="reference internal" href="../library/smtplib.html#module-smtplib" title="smtplib: SMTP protocol client (requires sockets)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">smtplib</span></code></a> برای ارسال ایمیل هستند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">urllib.request</span><span class="w"> </span><span class="kn">import</span> <span class="n">urlopen</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;https://docs.python.org/3/&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">'https://docs.python.org/3/'</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>             <span class="c1"># تبدیل بایت‌ها به یک رشته</span>
-<span class="gp">... </span>        <span class="k">if</span> <span class="s1">&#39;updated&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">if</span> <span class="s1">'updated'</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
 <span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>         <span class="c1"># حذف خط جدیدِ انتهایی</span>
 <span class="gp">...</span>
 <span class="go">      Last updated on Nov 11, 2025 (20:11 UTC).</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">smtplib</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">server</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">server</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="s1">&#39;soothsayer@example.org&#39;</span><span class="p">,</span> <span class="s1">&#39;jcaesar@example.org&#39;</span><span class="p">,</span>
-<span class="gp">... </span><span class="sd">&quot;&quot;&quot;To: jcaesar@example.org</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">server</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">'localhost'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">server</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="s1">'soothsayer@example.org'</span><span class="p">,</span> <span class="s1">'jcaesar@example.org'</span><span class="p">,</span>
+<span class="gp">... </span><span class="sd">"""To: jcaesar@example.org</span>
 <span class="gp">... </span><span class="sd">From: soothsayer@example.org</span>
 <span class="gp">...</span>
 <span class="gp">... </span><span class="sd">Beware the Ides of March.</span>
-<span class="gp">... </span><span class="sd">&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="sd">"""</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">server</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -384,8 +384,8 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">now</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">now</span>
 <span class="go">datetime.date(2003, 12, 2)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%m-</span><span class="si">%d</span><span class="s2">-%y. </span><span class="si">%d</span><span class="s2"> %b %Y is a %A on the </span><span class="si">%d</span><span class="s2"> day of %B.&quot;</span><span class="p">)</span>
-<span class="go">&#39;12-02-03. 02 Dec 2003 is a Tuesday on the 02 day of December.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%m-</span><span class="si">%d</span><span class="s2">-%y. </span><span class="si">%d</span><span class="s2"> %b %Y is a %A on the </span><span class="si">%d</span><span class="s2"> day of %B."</span><span class="p">)</span>
+<span class="go">'12-02-03. 02 Dec 2003 is a Tuesday on the 02 day of December.'</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># تاریخ‌ها از محاسبات تقویمی پشتیبانی می‌کنند</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">birthday</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1964</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
@@ -399,14 +399,14 @@
 <span id="tut-data-compression"></span><h2><span class="section-number">10.9. </span>فشرده‌سازی داده‌ها<a class="headerlink" href="#data-compression" title="Link to this heading">¶</a></h2>
 <p>قالب‌های رایج بایگانی و فشرده‌سازی داده مستقیماً توسط ماژول‌هایی مانند <a class="reference internal" href="../library/zlib.html#module-zlib" title="zlib: Low-level interface to compression and decompression routines compatible with gzip."><code class="xref py py-mod docutils literal notranslate"><span class="pre">zlib</span></code></a>، <a class="reference internal" href="../library/gzip.html#module-gzip" title="gzip: Interfaces for gzip compression and decompression using file objects."><code class="xref py py-mod docutils literal notranslate"><span class="pre">gzip</span></code></a>، <a class="reference internal" href="../library/bz2.html#module-bz2" title="bz2: Interfaces for bzip2 compression and decompression."><code class="xref py py-mod docutils literal notranslate"><span class="pre">bz2</span></code></a>، <a class="reference internal" href="../library/lzma.html#module-lzma" title="lzma: A Python wrapper for the liblzma compression library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">lzma</span></code></a>، <a class="reference internal" href="../library/zipfile.html#module-zipfile" title="zipfile: Read and write ZIP-format archive files."><code class="xref py py-mod docutils literal notranslate"><span class="pre">zipfile</span></code></a> و <a class="reference internal" href="../library/tarfile.html#module-tarfile" title="tarfile: Read and write tar-format archive files."><code class="xref py py-mod docutils literal notranslate"><span class="pre">tarfile</span></code></a> پشتیبانی می‌شوند.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">zlib</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;witch which has which witches wrist watch&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">'witch which has which witches wrist watch'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">41</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">compress</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 <span class="go">37</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">zlib</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-<span class="go">b&#39;witch which has which witches wrist watch&#39;</span>
+<span class="go">b'witch which has which witches wrist watch'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">zlib</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">226805979</span>
 </pre></div>
@@ -417,9 +417,9 @@
 <p>برخی کاربران پایتون علاقهٔ زیادی دارند که کارایی نسبی روش‌های مختلف برای حل یک مسئلهٔ یکسان را بدانند. پایتون ابزاری برای اندازه‌گیری فراهم می‌کند که بلافاصله به این پرسش‌ها پاسخ می‌دهد.</p>
 <p>برای مثال، ممکن است وسوسه شوید که به‌جای روش سنتی جابه‌جایی آرگومان‌ها، از قابلیت بسته‌بندی و بازکردن تاپل‌ها استفاده کنید. ماژول <a class="reference internal" href="../library/timeit.html#module-timeit" title="timeit: Measure the execution time of small code snippets."><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code></a> به‌سرعت یک برتری کوچک در کارایی را نشان می‌دهد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">timeit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Timer</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Timer</span><span class="p">(</span><span class="s1">&#39;t=a; a=b; b=t&#39;</span><span class="p">,</span> <span class="s1">&#39;a=1; b=2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">timeit</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Timer</span><span class="p">(</span><span class="s1">'t=a; a=b; b=t'</span><span class="p">,</span> <span class="s1">'a=1; b=2'</span><span class="p">)</span><span class="o">.</span><span class="n">timeit</span><span class="p">()</span>
 <span class="go">0.57535828626024577</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">Timer</span><span class="p">(</span><span class="s1">&#39;a,b = b,a&#39;</span><span class="p">,</span> <span class="s1">&#39;a=1; b=2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">timeit</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Timer</span><span class="p">(</span><span class="s1">'a,b = b,a'</span><span class="p">,</span> <span class="s1">'a=1; b=2'</span><span class="p">)</span><span class="o">.</span><span class="n">timeit</span><span class="p">()</span>
 <span class="go">0.54962537085770791</span>
 </pre></div>
 </div>
@@ -430,11 +430,11 @@
 <p>یکی از روش‌ها برای توسعهٔ نرم‌افزار با کیفیت بالا این است که برای هر تابع، هم‌زمان با توسعهٔ آن، آزمون‌هایی نوشته شود و این آزمون‌ها در طول فرایند توسعه به‌طور مکرر اجرا شوند.</p>
 <p>ماژول <a class="reference internal" href="../library/doctest.html#module-doctest" title="doctest: Test pieces of code within docstrings."><code class="xref py py-mod docutils literal notranslate"><span class="pre">doctest</span></code></a> ابزاری برای پیمایش یک ماژول و اعتبارسنجی آزمون‌هایی که در رشته‌های مستندات (docstring) برنامه قرار داده شده‌اند فراهم می‌کند. ساخت آزمون‌ها به سادگیِ کپی‌کردن یک فراخوانی معمولی به همراه نتیجهٔ آن در docstring است. این کار مستندات را بهتر می‌کند، زیرا نمونه‌ای برای کاربر فراهم می‌کند و همچنین به ماژول doctest اجازه می‌دهد اطمینان حاصل کند که کد همچنان مطابق با مستندات عمل می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">average</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;میانگین حسابیِ یک فهرست از اعداد را محاسبه می‌کند.</span>
+<span class="w">    </span><span class="sd">"""میانگین حسابیِ یک فهرست از اعداد را محاسبه می‌کند.</span>
 
 <span class="sd">    &gt;&gt;&gt; print(average([20, 30, 70]))</span>
 <span class="sd">    40.0</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">doctest</span>
@@ -620,7 +620,7 @@
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

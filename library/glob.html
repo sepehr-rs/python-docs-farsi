@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -339,12 +339,12 @@ sharepoints are not escaped, e.g. on Windows
 <p>For example:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">glob</span><span class="o">,</span><span class="w"> </span><span class="nn">re</span>
 <span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">regex</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">&#39;**/*.txt&#39;</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">regex</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">'**/*.txt'</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">regex</span>
-<span class="go">&#39;(?s:(?:.+/)?[^/]*\\.txt)\\z&#39;</span>
+<span class="go">'(?s:(?:.+/)?[^/]*\\.txt)\\z'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">reobj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">regex</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">reobj</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;foo/bar/baz.txt&#39;</span><span class="p">)</span>
-<span class="go">&lt;re.Match object; span=(0, 15), match=&#39;foo/bar/baz.txt&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reobj</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">'foo/bar/baz.txt'</span><span class="p">)</span>
+<span class="go">&lt;re.Match object; span=(0, 15), match='foo/bar/baz.txt'&gt;</span>
 </pre></div>
 </div>
 <p>Path separators and segments are meaningful to this function, unlike
@@ -375,26 +375,26 @@ which contains only the file <code class="file docutils literal notranslate"><sp
 the following results.  Notice how any leading components of the path are
 preserved.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;./[0-9].*&#39;</span><span class="p">)</span>
-<span class="go">[&#39;./1.gif&#39;, &#39;./2.txt&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.gif&#39;</span><span class="p">)</span>
-<span class="go">[&#39;1.gif&#39;, &#39;card.gif&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;?.gif&#39;</span><span class="p">)</span>
-<span class="go">[&#39;1.gif&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;**/*.txt&#39;</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="go">[&#39;2.txt&#39;, &#39;sub/3.txt&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;./**/&#39;</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="go">[&#39;./&#39;, &#39;./sub/&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'./[0-9].*'</span><span class="p">)</span>
+<span class="go">['./1.gif', './2.txt']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*.gif'</span><span class="p">)</span>
+<span class="go">['1.gif', 'card.gif']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'?.gif'</span><span class="p">)</span>
+<span class="go">['1.gif']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'**/*.txt'</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">['2.txt', 'sub/3.txt']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'./**/'</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">['./', './sub/']</span>
 </pre></div>
 </div>
 <p>If the directory contains files starting with <code class="docutils literal notranslate"><span class="pre">.</span></code> they won't be matched by
 default. For example, consider a directory containing <code class="file docutils literal notranslate"><span class="pre">card.gif</span></code> and
 <code class="file docutils literal notranslate"><span class="pre">.card.gif</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.gif&#39;</span><span class="p">)</span>
-<span class="go">[&#39;card.gif&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;.c*&#39;</span><span class="p">)</span>
-<span class="go">[&#39;.card.gif&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*.gif'</span><span class="p">)</span>
+<span class="go">['card.gif']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'.c*'</span><span class="p">)</span>
+<span class="go">['.card.gif']</span>
 </pre></div>
 </div>
 <div class="admonition seealso">
@@ -547,7 +547,7 @@ default. For example, consider a directory containing <code class="file docutils
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -500,11 +500,11 @@ customize the CSS classes used by the calendar:</p>
 <dt class="sig sig-object py" id="calendar.HTMLCalendar.cssclasses">
 <span class="sig-name descname"><span class="pre">cssclasses</span></span><a class="headerlink" href="#calendar.HTMLCalendar.cssclasses" title="Link to this definition">¶</a></dt>
 <dd><p>A list of CSS classes used for each weekday. The default class list is:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mon&quot;</span><span class="p">,</span> <span class="s2">&quot;tue&quot;</span><span class="p">,</span> <span class="s2">&quot;wed&quot;</span><span class="p">,</span> <span class="s2">&quot;thu&quot;</span><span class="p">,</span> <span class="s2">&quot;fri&quot;</span><span class="p">,</span> <span class="s2">&quot;sat&quot;</span><span class="p">,</span> <span class="s2">&quot;sun&quot;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mon"</span><span class="p">,</span> <span class="s2">"tue"</span><span class="p">,</span> <span class="s2">"wed"</span><span class="p">,</span> <span class="s2">"thu"</span><span class="p">,</span> <span class="s2">"fri"</span><span class="p">,</span> <span class="s2">"sat"</span><span class="p">,</span> <span class="s2">"sun"</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>more styles can be added for each day:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mon text-bold&quot;</span><span class="p">,</span> <span class="s2">&quot;tue&quot;</span><span class="p">,</span> <span class="s2">&quot;wed&quot;</span><span class="p">,</span> <span class="s2">&quot;thu&quot;</span><span class="p">,</span> <span class="s2">&quot;fri&quot;</span><span class="p">,</span> <span class="s2">&quot;sat&quot;</span><span class="p">,</span> <span class="s2">&quot;sun red&quot;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mon text-bold"</span><span class="p">,</span> <span class="s2">"tue"</span><span class="p">,</span> <span class="s2">"wed"</span><span class="p">,</span> <span class="s2">"thu"</span><span class="p">,</span> <span class="s2">"fri"</span><span class="p">,</span> <span class="s2">"sat"</span><span class="p">,</span> <span class="s2">"sun red"</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Note that the length of this list must be seven items.</p>
@@ -572,16 +572,16 @@ The default value is <code class="docutils literal notranslate"><span class="pre
 <p>Note that although the naming for the above described class attributes is
 singular (e.g. <code class="docutils literal notranslate"><span class="pre">cssclass_month</span></code> <code class="docutils literal notranslate"><span class="pre">cssclass_noday</span></code>), one can replace the
 single CSS class with a space separated list of CSS classes, for example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;text-bold text-red&quot;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="s2">"text-bold text-red"</span>
 </pre></div>
 </div>
 <p>Here is an example how <code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLCalendar</span></code> can be customized:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CustomHTMLCal</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">HTMLCalendar</span><span class="p">):</span>
-    <span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="n">style</span> <span class="o">+</span> <span class="s2">&quot; text-nowrap&quot;</span> <span class="k">for</span> <span class="n">style</span> <span class="ow">in</span>
+    <span class="n">cssclasses</span> <span class="o">=</span> <span class="p">[</span><span class="n">style</span> <span class="o">+</span> <span class="s2">" text-nowrap"</span> <span class="k">for</span> <span class="n">style</span> <span class="ow">in</span>
                   <span class="n">calendar</span><span class="o">.</span><span class="n">HTMLCalendar</span><span class="o">.</span><span class="n">cssclasses</span><span class="p">]</span>
-    <span class="n">cssclass_month_head</span> <span class="o">=</span> <span class="s2">&quot;text-center month-head&quot;</span>
-    <span class="n">cssclass_month</span> <span class="o">=</span> <span class="s2">&quot;text-center month&quot;</span>
-    <span class="n">cssclass_year</span> <span class="o">=</span> <span class="s2">&quot;text-italic lead&quot;</span>
+    <span class="n">cssclass_month_head</span> <span class="o">=</span> <span class="s2">"text-center month-head"</span>
+    <span class="n">cssclass_month</span> <span class="o">=</span> <span class="s2">"text-center month"</span>
+    <span class="n">cssclass_year</span> <span class="o">=</span> <span class="s2">"text-italic lead"</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -715,7 +715,7 @@ inverse.</p>
 where Monday is day number 0.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">calendar</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">day_name</span><span class="p">)</span>
-<span class="go">[&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;, &#39;Saturday&#39;, &#39;Sunday&#39;]</span>
+<span class="go">['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -727,7 +727,7 @@ where Monday is day number 0.</p>
 where Mon is day number 0.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">calendar</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">day_abbr</span><span class="p">)</span>
-<span class="go">[&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]</span>
+<span class="go">['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -773,7 +773,7 @@ follows normal convention of January being month number 1, so it has a length of
 13 and <code class="docutils literal notranslate"><span class="pre">month_name[0]</span></code> is the empty string.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">calendar</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">month_name</span><span class="p">)</span>
-<span class="go">[&#39;&#39;, &#39;January&#39;, &#39;February&#39;, &#39;March&#39;, &#39;April&#39;, &#39;May&#39;, &#39;June&#39;, &#39;July&#39;, &#39;August&#39;, &#39;September&#39;, &#39;October&#39;, &#39;November&#39;, &#39;December&#39;]</span>
+<span class="go">['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -786,7 +786,7 @@ locale.  This follows normal convention of January being month number 1, so it
 has a length of 13 and  <code class="docutils literal notranslate"><span class="pre">month_abbr[0]</span></code> is the empty string.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">calendar</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">)</span>
-<span class="go">[&#39;&#39;, &#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39;, &#39;Jun&#39;, &#39;Jul&#39;, &#39;Aug&#39;, &#39;Sep&#39;, &#39;Oct&#39;, &#39;Nov&#39;, &#39;Dec&#39;]</span>
+<span class="go">['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1172,7 +1172,7 @@ or an absolute HTTP or <code class="docutils literal notranslate"><span class="p
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

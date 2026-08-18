@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -308,11 +308,11 @@ character at a time.
 If you need a <strong>common path prefix</strong>, then the algorithm
 implemented in this function is not secure. Use
 <a class="reference internal" href="#os.path.commonpath" title="os.path.commonpath"><code class="xref py py-func docutils literal notranslate"><span class="pre">commonpath()</span></code></a> for finding a common path prefix.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">commonprefix</span><span class="p">([</span><span class="s1">&#39;/usr/lib&#39;</span><span class="p">,</span> <span class="s1">&#39;/usr/local/lib&#39;</span><span class="p">])</span>
-<span class="go">&#39;/usr/l&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">commonprefix</span><span class="p">([</span><span class="s1">'/usr/lib'</span><span class="p">,</span> <span class="s1">'/usr/local/lib'</span><span class="p">])</span>
+<span class="go">'/usr/l'</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">commonpath</span><span class="p">([</span><span class="s1">&#39;/usr/lib&#39;</span><span class="p">,</span> <span class="s1">&#39;/usr/local/lib&#39;</span><span class="p">])</span>
-<span class="go">&#39;/usr&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">commonpath</span><span class="p">([</span><span class="s1">'/usr/lib'</span><span class="p">,</span> <span class="s1">'/usr/local/lib'</span><span class="p">])</span>
+<span class="go">'/usr'</span>
 </pre></div>
 </div>
 </div>
@@ -577,20 +577,20 @@ ends in a separator.</p>
 <p>If a segment is an absolute path (which on Windows requires both a drive and
 a root), then all previous segments are ignored and joining continues from the
 absolute path segment. On Linux, for example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;/home/foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">)</span>
-<span class="go">&#39;/home/foo/bar&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;/home/foo&#39;</span><span class="p">,</span> <span class="s1">&#39;/home/bar&#39;</span><span class="p">)</span>
-<span class="go">&#39;/home/bar&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'/home/foo'</span><span class="p">,</span> <span class="s1">'bar'</span><span class="p">)</span>
+<span class="go">'/home/foo/bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'/home/foo'</span><span class="p">,</span> <span class="s1">'/home/bar'</span><span class="p">)</span>
+<span class="go">'/home/bar'</span>
 </pre></div>
 </div>
 <p>On Windows, the drive is not reset when a rooted path segment (e.g.,
 <code class="docutils literal notranslate"><span class="pre">r'\foo'</span></code>) is encountered. If a segment is on a different drive or is an
 absolute path, all previous segments are ignored and the drive is reset. For
 example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;c:</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">)</span>
-<span class="go">&#39;c:\\foo&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;c:</span><span class="se">\\</span><span class="s1">foo&#39;</span><span class="p">,</span> <span class="s1">&#39;d:</span><span class="se">\\</span><span class="s1">bar&#39;</span><span class="p">)</span>
-<span class="go">&#39;d:\\bar&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'c:</span><span class="se">\\</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'foo'</span><span class="p">)</span>
+<span class="go">'c:\\foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'c:</span><span class="se">\\</span><span class="s1">foo'</span><span class="p">,</span> <span class="s1">'d:</span><span class="se">\\</span><span class="s1">bar'</span><span class="p">)</span>
+<span class="go">'d:\\bar'</span>
 </pre></div>
 </div>
 <p>Note that since there is a current directory for each drive,
@@ -771,14 +771,14 @@ specifications, <em>drive</em> will always be the empty string.  In all cases, <
 <p>On Windows, splits a pathname into drive/UNC sharepoint and relative path.</p>
 <p>If the path contains a drive letter, drive will contain everything
 up to and including the colon:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitdrive</span><span class="p">(</span><span class="s2">&quot;c:/dir&quot;</span><span class="p">)</span>
-<span class="go">(&quot;c:&quot;, &quot;/dir&quot;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitdrive</span><span class="p">(</span><span class="s2">"c:/dir"</span><span class="p">)</span>
+<span class="go">("c:", "/dir")</span>
 </pre></div>
 </div>
 <p>If the path contains a UNC path, drive will contain the host name
 and share:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitdrive</span><span class="p">(</span><span class="s2">&quot;//host/computer/dir&quot;</span><span class="p">)</span>
-<span class="go">(&quot;//host/computer&quot;, &quot;/dir&quot;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitdrive</span><span class="p">(</span><span class="s2">"//host/computer/dir"</span><span class="p">)</span>
+<span class="go">("//host/computer", "/dir")</span>
 </pre></div>
 </div>
 <div class="versionchanged">
@@ -798,21 +798,21 @@ be the same as <em>path</em>.</p>
 relative), a single forward slash (if <em>path</em> is absolute), or two forward slashes
 (implementation-defined per <a class="reference external" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13">IEEE Std 1003.1-2017; 4.13 Pathname Resolution</a>.)
 For example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">&#39;/home/sam&#39;</span><span class="p">)</span>
-<span class="go">(&#39;&#39;, &#39;/&#39;, &#39;home/sam&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">&#39;//home/sam&#39;</span><span class="p">)</span>
-<span class="go">(&#39;&#39;, &#39;//&#39;, &#39;home/sam&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">&#39;///home/sam&#39;</span><span class="p">)</span>
-<span class="go">(&#39;&#39;, &#39;/&#39;, &#39;//home/sam&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">'/home/sam'</span><span class="p">)</span>
+<span class="go">('', '/', 'home/sam')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">'//home/sam'</span><span class="p">)</span>
+<span class="go">('', '//', 'home/sam')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">'///home/sam'</span><span class="p">)</span>
+<span class="go">('', '/', '//home/sam')</span>
 </pre></div>
 </div>
 <p>On Windows, <em>drive</em> may be empty, a drive-letter name, a UNC share, or a device
 name. The <em>root</em> may be empty, a forward slash, or a backward slash. For
 example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">&#39;C:/Users/Sam&#39;</span><span class="p">)</span>
-<span class="go">(&#39;C:&#39;, &#39;/&#39;, &#39;Users/Sam&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">&#39;//Server/Share/Users/Sam&#39;</span><span class="p">)</span>
-<span class="go">(&#39;//Server/Share&#39;, &#39;/&#39;, &#39;Users/Sam&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">'C:/Users/Sam'</span><span class="p">)</span>
+<span class="go">('C:', '/', 'Users/Sam')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splitroot</span><span class="p">(</span><span class="s1">'//Server/Share/Users/Sam'</span><span class="p">)</span>
+<span class="go">('//Server/Share', '/', 'Users/Sam')</span>
 </pre></div>
 </div>
 <div class="versionadded">
@@ -827,24 +827,24 @@ example:</p>
 <span class="pre">path</span></code>, and the extension, <em>ext</em>, is empty or begins with a period and contains at
 most one period.</p>
 <p>If the path contains no extension, <em>ext</em> will be <code class="docutils literal notranslate"><span class="pre">''</span></code>:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
-<span class="go">(&#39;bar&#39;, &#39;&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">'bar'</span><span class="p">)</span>
+<span class="go">('bar', '')</span>
 </pre></div>
 </div>
 <p>If the path contains an extension, then <em>ext</em> will be set to this extension,
 including the leading period. Note that previous periods will be ignored:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;foo.bar.exe&#39;</span><span class="p">)</span>
-<span class="go">(&#39;foo.bar&#39;, &#39;.exe&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;/foo/bar.exe&#39;</span><span class="p">)</span>
-<span class="go">(&#39;/foo/bar&#39;, &#39;.exe&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">'foo.bar.exe'</span><span class="p">)</span>
+<span class="go">('foo.bar', '.exe')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">'/foo/bar.exe'</span><span class="p">)</span>
+<span class="go">('/foo/bar', '.exe')</span>
 </pre></div>
 </div>
 <p>Leading periods of the last component of the path are considered to
 be part of the root:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;.cshrc&#39;</span><span class="p">)</span>
-<span class="go">(&#39;.cshrc&#39;, &#39;&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;/foo/....jpg&#39;</span><span class="p">)</span>
-<span class="go">(&#39;/foo/....jpg&#39;, &#39;&#39;)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">'.cshrc'</span><span class="p">)</span>
+<span class="go">('.cshrc', '')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splitext</span><span class="p">(</span><span class="s1">'/foo/....jpg'</span><span class="p">)</span>
+<span class="go">('/foo/....jpg', '')</span>
 </pre></div>
 </div>
 <div class="versionchanged">
@@ -990,7 +990,7 @@ imposed by the file system).</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -246,17 +246,17 @@
 <section id="if-statements">
 <span id="tut-if"></span><h2><span class="section-number">4.1. </span>دستورهای <code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#if-statements" title="Link to this heading">¶</a></h2>
 <p>شاید شناخته‌شده‌ترین نوع دستور، دستور <a class="reference internal" href="../reference/compound_stmts.html#if"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code></a> باشد. برای مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter an integer: &quot;</span><span class="p">))</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter an integer: "</span><span class="p">))</span>
 <span class="go">Please enter an integer: 42</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Negative changed to zero&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Negative changed to zero'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Zero&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Zero'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Single&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Single'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;More&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'More'</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">More</span>
 </pre></div>
@@ -268,7 +268,7 @@
 <span id="tut-for"></span><h2><span class="section-number">4.2. </span>دستورهای <code class="xref std std-keyword docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#for-statements" title="Link to this heading">¶</a></h2>
 <p id="index-0">دستور <a class="reference internal" href="../reference/compound_stmts.html#for"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">for</span></code></a> در پایتون کمی با چیزی که ممکن است در C یا Pascal به آن عادت کرده باشید تفاوت دارد. به‌جای اینکه همیشه روی یک تصاعد حسابی از اعداد پیمایش کند (مانند Pascal)، یا به کاربر امکان تعریف هم گام پیمایش و هم شرط توقف را بدهد (مانند C)، دستور <code class="xref std std-keyword docutils literal notranslate"><span class="pre">for</span></code> پایتون روی آیتم‌های هر دنباله‌ای (یک فهرست یا یک رشته) به ترتیبی که در دنباله ظاهر شده‌اند پیمایش می‌کند. برای مثال (بدون قصد استعاره):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># اندازه‌گیری طول چند رشته:</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;window&#39;</span><span class="p">,</span> <span class="s1">&#39;defenestrate&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'window'</span><span class="p">,</span> <span class="s1">'defenestrate'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">))</span>
 <span class="gp">...</span>
@@ -279,17 +279,17 @@
 </div>
 <p>کدی که هنگام پیمایش روی یک مجموعه، همان مجموعه را تغییر می‌دهد، ممکن است به‌درستی نوشتن دشوار باشد. در عوض، معمولاً ساده‌تر است که روی یک کپی از مجموعه پیمایش کنید یا یک مجموعهٔ جدید ایجاد کنید:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ایجاد یک مجموعه‌ی نمونه</span>
-<span class="n">users</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Hans&#39;</span><span class="p">:</span> <span class="s1">&#39;active&#39;</span><span class="p">,</span> <span class="s1">&#39;Éléonore&#39;</span><span class="p">:</span> <span class="s1">&#39;inactive&#39;</span><span class="p">,</span> <span class="s1">&#39;景太郎&#39;</span><span class="p">:</span> <span class="s1">&#39;active&#39;</span><span class="p">}</span>
+<span class="n">users</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Hans'</span><span class="p">:</span> <span class="s1">'active'</span><span class="p">,</span> <span class="s1">'Éléonore'</span><span class="p">:</span> <span class="s1">'inactive'</span><span class="p">,</span> <span class="s1">'景太郎'</span><span class="p">:</span> <span class="s1">'active'</span><span class="p">}</span>
 
 <span class="c1"># راهبرد: پیمایش روی یک کپی</span>
 <span class="k">for</span> <span class="n">user</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">users</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;inactive&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">'inactive'</span><span class="p">:</span>
         <span class="k">del</span> <span class="n">users</span><span class="p">[</span><span class="n">user</span><span class="p">]</span>
 
 <span class="c1"># راهبرد: ایجاد یک مجموعه‌ی جدید</span>
 <span class="n">active_users</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">user</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">users</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;active&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">'active'</span><span class="p">:</span>
         <span class="n">active_users</span><span class="p">[</span><span class="n">user</span><span class="p">]</span> <span class="o">=</span> <span class="n">status</span>
 </pre></div>
 </div>
@@ -319,7 +319,7 @@
 </pre></div>
 </div>
 <p>برای پیمایش روی اندیس‌‌های یک دنباله، می‌توانید <a class="reference internal" href="../library/stdtypes.html#range" title="range"><code class="xref py py-func docutils literal notranslate"><span class="pre">range()</span></code></a> و <a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a> را به شکل زیر ترکیب کنید:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Mary&#39;</span><span class="p">,</span> <span class="s1">&#39;had&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;little&#39;</span><span class="p">,</span> <span class="s1">&#39;lamb&#39;</span><span class="p">]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Mary'</span><span class="p">,</span> <span class="s1">'had'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">,</span> <span class="s1">'little'</span><span class="p">,</span> <span class="s1">'lamb'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 <span class="gp">...</span>
@@ -350,7 +350,7 @@
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> equals </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> * </span><span class="si">{</span><span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> equals </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> * </span><span class="si">{</span><span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="gp">... </span>            <span class="k">break</span>
 <span class="gp">...</span>
 <span class="go">4 equals 2 * 2</span>
@@ -362,9 +362,9 @@
 <p>دستور <a class="reference internal" href="../reference/simple_stmts.html#continue"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a> به تکرار بعدی حلقه ادامه می‌دهد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found an even number </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Found an even number </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="k">continue</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found an odd number </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Found an odd number </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">Found an even number 2</span>
 <span class="go">Found an odd number 3</span>
@@ -387,11 +387,11 @@
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;equals&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">'equals'</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="p">)</span>
 <span class="gp">... </span>            <span class="k">break</span>
 <span class="gp">... </span>    <span class="k">else</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="c1"># حلقه بدون پیدا کردن هیچ مقسوم‌علیهی به پایان رسید</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;is a prime number&#39;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">'is a prime number'</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">2 is a prime number</span>
 <span class="go">3 is a prime number</span>
@@ -436,34 +436,34 @@
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">http_error</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">status</span><span class="p">:</span>
         <span class="k">case</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Bad request&quot;</span>
+            <span class="k">return</span> <span class="s2">"Bad request"</span>
         <span class="k">case</span> <span class="mi">404</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Not found&quot;</span>
+            <span class="k">return</span> <span class="s2">"Not found"</span>
         <span class="k">case</span> <span class="mi">418</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;I&#39;m a teapot&quot;</span>
+            <span class="k">return</span> <span class="s2">"I'm a teapot"</span>
         <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Something&#39;s wrong with the internet&quot;</span>
+            <span class="k">return</span> <span class="s2">"Something's wrong with the internet"</span>
 </pre></div>
 </div>
 <p>به آخرین بلوک توجه کنید: «نام متغیر» <code class="docutils literal notranslate"><span class="pre">_</span></code> به‌عنوان یک <em>wildcard</em> عمل می‌کند و هرگز در تطبیق شکست نمی‌خورد.</p>
 <p>می‌توانید چند مقدار لفظی را با استفاده از <code class="docutils literal notranslate"><span class="pre">|</span></code> («یا») در یک الگو ترکیب کنید:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="mi">401</span> <span class="o">|</span> <span class="mi">403</span> <span class="o">|</span> <span class="mi">404</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;Not allowed&quot;</span>
+    <span class="k">return</span> <span class="s2">"Not allowed"</span>
 </pre></div>
 </div>
 <p>الگوها می‌توانند شبیه انتساب‌های واگشایی (<em>unpacking assignments</em>) باشند و برای مقداردهی به متغیرها استفاده شوند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># نقطه یک تاپل (x, y) است</span>
 <span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Origin&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Origin"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Not a point&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Not a point"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>این مورد را با دقت بررسی کنید! الگوی اول دو مقدار لفظی دارد و می‌توان آن را گسترشی از الگوی لفظی نشان‌داده‌شده در بالا در نظر گرفت. اما دو الگوی بعدی یک مقدار لفظی و یک متغیر را ترکیب می‌کنند، و متغیر یک مقدار را از موضوع (<code class="docutils literal notranslate"><span class="pre">point</span></code>) <em>دریافت</em> می‌کند. الگوی چهارم دو مقدار را دریافت می‌کند، که از نظر مفهومی شبیه به انتساب واگشاییٔ <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span> <span class="pre">=</span> <span class="pre">point</span></code> است.</p>
@@ -476,15 +476,15 @@
 <span class="k">def</span><span class="w"> </span><span class="nf">where_is</span><span class="p">(</span><span class="n">point</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">point</span><span class="p">:</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Origin&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Origin"</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">case</span> <span class="n">Point</span><span class="p">():</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Somewhere else&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Somewhere else"</span><span class="p">)</span>
         <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not a point&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Not a point"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>می‌توانید از پارامترهای موقعیتی با برخی کلاس‌های داخلی که برای ویژگی‌های خود ترتیب مشخصی ارائه می‌کنند (برای مثال dataclassها) استفاده کنید. همچنین می‌توانید با تنظیم ویژگی ویژهٔ <code class="docutils literal notranslate"><span class="pre">__match_args__</span></code> در کلاس‌های خود، موقعیت مشخصی برای ویژگی‌ها در الگوها تعریف کنید. اگر این ویژگی روی (&quot;x&quot;, &quot;y&quot;) تنظیم شده باشد، الگوهای زیر همگی معادل هستند (و همگی ویژگی <code class="docutils literal notranslate"><span class="pre">y</span></code> را در متغیر <code class="docutils literal notranslate"><span class="pre">var</span></code> قرار می‌دهند):</p>
@@ -497,30 +497,30 @@
 <p>روش پیشنهادی برای خواندن الگوها این است که آن‌ها را شکل گسترش‌یافته‌ای از چیزی در نظر بگیرید که در سمت چپ یک انتساب قرار می‌دهید، تا متوجه شوید چه متغیرهایی با چه مقادیری تنظیم خواهند شد. تنها نام‌های مستقل (مانند <code class="docutils literal notranslate"><span class="pre">var</span></code> در بالا) توسط دستور match مقداردهی می‌شوند. نام‌های نقطه‌ای (مانند <code class="docutils literal notranslate"><span class="pre">foo.bar</span></code>)، نام ویژگی‌ها (مانند <code class="docutils literal notranslate"><span class="pre">x=</span></code> و <code class="docutils literal notranslate"><span class="pre">y=</span></code> در بالا) یا نام کلاس‌ها (که با (...) کنار آن‌ها، مانند <code class="docutils literal notranslate"><span class="pre">Point</span></code> در بالا، شناخته می‌شوند) هرگز مقداردهی نمی‌شوند.</p>
 <p>الگوها می‌توانند به‌صورت دلخواه تو‌در‌تو باشند. برای مثال، اگر یک فهرست کوتاه از Pointها داشته باشیم و <code class="docutils literal notranslate"><span class="pre">__match_args__</span></code> را به آن‌ها اضافه کرده باشیم، می‌توانیم آن را به این شکل تطبیق دهیم:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Point</span><span class="p">:</span>
-    <span class="n">__match_args__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">)</span>
+    <span class="n">__match_args__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="s1">'y'</span><span class="p">)</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
 
 <span class="k">match</span> <span class="n">points</span><span class="p">:</span>
     <span class="k">case</span> <span class="p">[]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No points&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"No points"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The origin&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"The origin"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Single point </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Single point </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y2</span><span class="p">)]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Two on the Y axis at </span><span class="si">{</span><span class="n">y1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Two on the Y axis at </span><span class="si">{</span><span class="n">y1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something else&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Something else"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>می‌توانیم یک بخش <code class="docutils literal notranslate"><span class="pre">if</span></code> به یک الگو اضافه کنیم که به آن «نگهبان» (<em>guard</em>) گفته می‌شود. اگر نگهبان نادرست باشد، <code class="docutils literal notranslate"><span class="pre">match</span></code> به تلاش برای بلوک case بعدی ادامه می‌دهد. توجه کنید که دریافت مقدار پیش از ارزیابی نگهبان انجام می‌شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=X at </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Y=X at </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Not on the diagonal&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Not on the diagonal"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>چند ویژگی کلیدی دیگر این دستور:</p>
@@ -538,19 +538,19 @@
 <li><p>الگوها می‌توانند از ثابت‌های نام‌گذاری‌شده استفاده کنند. این‌ها باید نام‌های نقطه‌ای باشند تا از تفسیر شدن آن‌ها به‌عنوان متغیرهای دریافت‌کننده جلوگیری شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span>
-    <span class="n">BLUE</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span>
+    <span class="n">RED</span> <span class="o">=</span> <span class="s1">'red'</span>
+    <span class="n">GREEN</span> <span class="o">=</span> <span class="s1">'green'</span>
+    <span class="n">BLUE</span> <span class="o">=</span> <span class="s1">'blue'</span>
 
-<span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your choice of &#39;red&#39;, &#39;blue&#39; or &#39;green&#39;: &quot;</span><span class="p">))</span>
+<span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your choice of 'red', 'blue' or 'green': "</span><span class="p">))</span>
 
 <span class="k">match</span> <span class="n">color</span><span class="p">:</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I see red!&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"I see red!"</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grass is green&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grass is green"</span><span class="p">)</span>
     <span class="k">case</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m feeling the blues :(&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"I'm feeling the blues :("</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
@@ -561,10 +561,10 @@
 <span id="tut-functions"></span><h2><span class="section-number">4.8. </span>تعریف توابع<a class="headerlink" href="#defining-functions" title="Link to this heading">¶</a></h2>
 <p>می‌توانیم تابعی ایجاد کنیم که سری فیبوناچی را تا یک کران دلخواه بنویسد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c1"># نوشتن دنباله‌ی فیبوناچی کوچک‌تر از n</span>
-<span class="gp">... </span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Print a Fibonacci series less than n.&quot;&quot;&quot;</span>
+<span class="gp">... </span><span class="w">    </span><span class="sd">"""Print a Fibonacci series less than n."""</span>
 <span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">()</span>
 <span class="gp">...</span>
@@ -593,7 +593,7 @@
 </div>
 <p>نوشتن تابعی که به‌جای چاپ کردن سری فیبوناچی، فهرستی از اعداد آن را برگرداند ساده است:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>  <span class="c1"># بازگرداندن دنباله‌ی فیبوناچی تا n</span>
-<span class="gp">... </span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a list containing the Fibonacci series up to n.&quot;&quot;&quot;</span>
+<span class="gp">... </span><span class="w">    </span><span class="sd">"""Return a list containing the Fibonacci series up to n."""</span>
 <span class="gp">... </span>    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">... </span>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="gp">... </span>    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
@@ -618,16 +618,16 @@
 <section id="default-argument-values">
 <span id="tut-defaultargs"></span><h3><span class="section-number">4.9.1. </span>مقدارهای پیش‌فرض آرگومان‌ها<a class="headerlink" href="#default-argument-values" title="Link to this heading">¶</a></h3>
 <p>کاربردی‌ترین شکل، مشخص کردن یک مقدار پیش‌فرض برای یک یا چند آرگومان است. این کار تابعی ایجاد می‌کند که می‌توان آن را با آرگومان‌های کمتری نسبت به تعداد تعریف‌شده فراخوانی کرد. برای مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ask_ok</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">retries</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">reminder</span><span class="o">=</span><span class="s1">&#39;Please try again!&#39;</span><span class="p">):</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ask_ok</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">retries</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">reminder</span><span class="o">=</span><span class="s1">'Please try again!'</span><span class="p">):</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">reply</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">reply</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;ye&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">}:</span>
+        <span class="k">if</span> <span class="n">reply</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">'y'</span><span class="p">,</span> <span class="s1">'ye'</span><span class="p">,</span> <span class="s1">'yes'</span><span class="p">}:</span>
             <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">reply</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;nop&#39;</span><span class="p">,</span> <span class="s1">&#39;nope&#39;</span><span class="p">}:</span>
+        <span class="k">if</span> <span class="n">reply</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">'n'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'nop'</span><span class="p">,</span> <span class="s1">'nope'</span><span class="p">}:</span>
             <span class="k">return</span> <span class="kc">False</span>
         <span class="n">retries</span> <span class="o">=</span> <span class="n">retries</span> <span class="o">-</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="n">retries</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;invalid user response&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'invalid user response'</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">reminder</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -677,27 +677,27 @@
 <section id="keyword-arguments">
 <span id="tut-keywordargs"></span><h3><span class="section-number">4.9.2. </span>آرگومان‌های کلیدواژه‌ای<a class="headerlink" href="#keyword-arguments" title="Link to this heading">¶</a></h3>
 <p>تابع‌ها همچنین می‌توانند با استفاده از <a class="reference internal" href="../glossary.html#term-keyword-argument"><span class="xref std std-term">keyword arguments</span></a> به شکل <code class="docutils literal notranslate"><span class="pre">kwarg=value</span></code> فراخوانی شوند. برای نمونه، تابع زیر:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">&#39;a stiff&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;voom&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;Norwegian Blue&#39;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- This parrot wouldn&#39;t&quot;</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;if you put&quot;</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s2">&quot;volts through it.&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- Lovely plumage, the&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- It&#39;s&quot;</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">'a stiff'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'voom'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'Norwegian Blue'</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- This parrot wouldn't"</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"if you put"</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s2">"volts through it."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- Lovely plumage, the"</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- It's"</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s2">"!"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>یک آرگومان اجباری (<code class="docutils literal notranslate"><span class="pre">voltage</span></code>) و سه آرگومان اختیاری (<code class="docutils literal notranslate"><span class="pre">state</span></code>، <code class="docutils literal notranslate"><span class="pre">action</span></code> و <code class="docutils literal notranslate"><span class="pre">type</span></code>) را می‌پذیرد. این تابع می‌تواند به هر یک از روش‌های زیر فراخوانی شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">parrot</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>                                          <span class="c1"># یک آرگومان موقعیتی</span>
 <span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>                                  <span class="c1"># یک آرگومان کلیدواژه‌ای</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;VOOOOOM&#39;</span><span class="p">)</span>             <span class="c1"># دو آرگومان کلیدواژه‌ای</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;VOOOOOM&#39;</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             <span class="c1"># دو آرگومان کلیدواژه‌ای</span>
-<span class="n">parrot</span><span class="p">(</span><span class="s1">&#39;a million&#39;</span><span class="p">,</span> <span class="s1">&#39;bereft of life&#39;</span><span class="p">,</span> <span class="s1">&#39;jump&#39;</span><span class="p">)</span>         <span class="c1"># سه آرگومان موقعیتی</span>
-<span class="n">parrot</span><span class="p">(</span><span class="s1">&#39;a thousand&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">&#39;pushing up the daisies&#39;</span><span class="p">)</span>  <span class="c1"># یک آرگومان موقعیتی، یک آرگومان کلیدواژه‌ای</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'VOOOOOM'</span><span class="p">)</span>             <span class="c1"># دو آرگومان کلیدواژه‌ای</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">'VOOOOOM'</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             <span class="c1"># دو آرگومان کلیدواژه‌ای</span>
+<span class="n">parrot</span><span class="p">(</span><span class="s1">'a million'</span><span class="p">,</span> <span class="s1">'bereft of life'</span><span class="p">,</span> <span class="s1">'jump'</span><span class="p">)</span>         <span class="c1"># سه آرگومان موقعیتی</span>
+<span class="n">parrot</span><span class="p">(</span><span class="s1">'a thousand'</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">'pushing up the daisies'</span><span class="p">)</span>  <span class="c1"># یک آرگومان موقعیتی، یک آرگومان کلیدواژه‌ای</span>
 </pre></div>
 </div>
 <p>اما تمام فراخوانی‌های زیر نامعتبر خواهند بود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">parrot</span><span class="p">()</span>                     <span class="c1"># آرگومان الزامی وارد نشده است</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;dead&#39;</span><span class="p">)</span>  <span class="c1"># آرگومان غیرکلیدواژه‌ای پس از آرگومان کلیدواژه‌ای آمده است</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s1">'dead'</span><span class="p">)</span>  <span class="c1"># آرگومان غیرکلیدواژه‌ای پس از آرگومان کلیدواژه‌ای آمده است</span>
 <span class="n">parrot</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>     <span class="c1"># مقدار تکراری برای یک آرگومان یکسان</span>
-<span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s1">&#39;John Cleese&#39;</span><span class="p">)</span>  <span class="c1"># آرگومان کلیدواژه‌ای ناشناخته</span>
+<span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s1">'John Cleese'</span><span class="p">)</span>  <span class="c1"># آرگومان کلیدواژه‌ای ناشناخته</span>
 </pre></div>
 </div>
 <p>در یک فراخوانی تابع، آرگومان‌های کلیدواژه‌ای باید پس از آرگومان‌های موقعیتی بیایند. تمام آرگومان‌های کلیدواژه‌ای ارسال‌شده باید با یکی از آرگومان‌های پذیرفته‌شده توسط تابع مطابقت داشته باشند (برای مثال، <code class="docutils literal notranslate"><span class="pre">actor</span></code> یک آرگومان معتبر برای تابع <code class="docutils literal notranslate"><span class="pre">parrot</span></code> نیست)، و ترتیب آن‌ها اهمیتی ندارد. این موضوع شامل آرگومان‌های غیر‌اختیاری نیز می‌شود (برای مثال، <code class="docutils literal notranslate"><span class="pre">parrot(voltage=1000)</span></code> نیز معتبر است). هیچ آرگومانی نمی‌تواند بیش از یک‌بار مقدار دریافت کند. در اینجا مثالی وجود دارد که به دلیل این محدودیت شکست می‌خورد:</p>
@@ -706,34 +706,34 @@
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">function</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">function() got multiple values for argument &#39;a&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">function() got multiple values for argument 'a'</span>
 </pre></div>
 </div>
 <p>هنگامی که یک پارامتر رسمی نهایی به شکل <code class="docutils literal notranslate"><span class="pre">**name</span></code> وجود داشته باشد، یک فرهنگ لغت (به <a class="reference internal" href="../library/stdtypes.html#typesmapping"><span class="std std-ref">Mapping Types --- dict</span></a> مراجعه کنید) دریافت می‌کند که شامل تمام آرگومان‌های کلیدواژه‌ای است، به‌جز آن‌هایی که متناظر با یک پارامتر رسمی هستند. این مورد می‌تواند با یک پارامتر رسمی به شکل <code class="docutils literal notranslate"><span class="pre">*name</span></code> ترکیب شود (که در زیربخش بعدی توضیح داده شده است)؛ این پارامتر یک <a class="reference internal" href="datastructures.html#tut-tuples"><span class="std std-ref">tuple</span></a> دریافت می‌کند که شامل آرگومان‌های موقعیتی فراتر از فهرست پارامترهای رسمی است. (<code class="docutils literal notranslate"><span class="pre">*name</span></code> باید پیش از <code class="docutils literal notranslate"><span class="pre">**name</span></code> قرار گیرد.) برای مثال، اگر تابعی مانند زیر تعریف کنیم:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cheeseshop</span><span class="p">(</span><span class="n">kind</span><span class="p">,</span> <span class="o">*</span><span class="n">arguments</span><span class="p">,</span> <span class="o">**</span><span class="n">keywords</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- Do you have any&quot;</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="s2">&quot;?&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- I&#39;m sorry, we&#39;re all out of&quot;</span><span class="p">,</span> <span class="n">kind</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- Do you have any"</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="s2">"?"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- I'm sorry, we're all out of"</span><span class="p">,</span> <span class="n">kind</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">arguments</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">kw</span> <span class="ow">in</span> <span class="n">keywords</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">keywords</span><span class="p">[</span><span class="n">kw</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="n">keywords</span><span class="p">[</span><span class="n">kw</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>میتواند اینگونه فراخوانده شود:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cheeseshop</span><span class="p">(</span><span class="s2">&quot;Limburger&quot;</span><span class="p">,</span> <span class="s2">&quot;It&#39;s very runny, sir.&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;It&#39;s really very, VERY runny, sir.&quot;</span><span class="p">,</span>
-           <span class="n">shopkeeper</span><span class="o">=</span><span class="s2">&quot;Michael Palin&quot;</span><span class="p">,</span>
-           <span class="n">client</span><span class="o">=</span><span class="s2">&quot;John Cleese&quot;</span><span class="p">,</span>
-           <span class="n">sketch</span><span class="o">=</span><span class="s2">&quot;Cheese Shop Sketch&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">cheeseshop</span><span class="p">(</span><span class="s2">"Limburger"</span><span class="p">,</span> <span class="s2">"It's very runny, sir."</span><span class="p">,</span>
+           <span class="s2">"It's really very, VERY runny, sir."</span><span class="p">,</span>
+           <span class="n">shopkeeper</span><span class="o">=</span><span class="s2">"Michael Palin"</span><span class="p">,</span>
+           <span class="n">client</span><span class="o">=</span><span class="s2">"John Cleese"</span><span class="p">,</span>
+           <span class="n">sketch</span><span class="o">=</span><span class="s2">"Cheese Shop Sketch"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>و قطعا این دستور چاپ خواهد کرد:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>-- Do you have any Limburger ?
--- I&#39;m sorry, we&#39;re all out of Limburger
-It&#39;s very runny, sir.
-It&#39;s really very, VERY runny, sir.
+-- I'm sorry, we're all out of Limburger
+It's very runny, sir.
+It's really very, VERY runny, sir.
 ----------------------------------------
 shopkeeper : Michael Palin
 client : John Cleese
@@ -798,14 +798,14 @@ sketch : Cheese Shop Sketch
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pos_only_arg</span><span class="p">(</span><span class="n">arg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">pos_only_arg() got some positional-only arguments passed as keyword arguments: &#39;arg&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'</span>
 </pre></div>
 </div>
 <p>تابع سوم، <code class="docutils literal notranslate"><span class="pre">kwd_only_arg</span></code>، همان‌طور که وجود یک <code class="docutils literal notranslate"><span class="pre">*</span></code> در تعریف تابع نشان می‌دهد، فقط آرگومان‌های کلیدواژه‌ای را می‌پذیرد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kwd_only_arg</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">TypeError</span>: <span class="n">kwd_only_arg() takes 0 positional arguments but 1 was given</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">kwd_only_arg</span><span class="p">(</span><span class="n">arg</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -815,7 +815,7 @@ sketch : Cheese Shop Sketch
 <p>و تابع آخر از هر سه شیوه فراخوانی در یک تعریف تابع استفاده می‌کند:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">combined_example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">TypeError</span>: <span class="n">combined_example() takes 2 positional arguments but 3 were given</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">combined_example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">kwd_only</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -826,28 +826,28 @@ sketch : Cheese Shop Sketch
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">combined_example</span><span class="p">(</span><span class="n">pos_only</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">standard</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">kwd_only</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">combined_example() got some positional-only arguments passed as keyword arguments: &#39;pos_only&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'</span>
 </pre></div>
 </div>
 <p>در نهایت، این تعریف تابع را در نظر بگیرید که در آن بین آرگومان موقعیتی <code class="docutils literal notranslate"><span class="pre">name</span></code> و <code class="docutils literal notranslate"><span class="pre">**kwds</span></code> که دارای کلیدواژه‌ای به نام <code class="docutils literal notranslate"><span class="pre">name</span></code> است، یک برخورد احتمالی وجود دارد:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">kwds</span>
+    <span class="k">return</span> <span class="s1">'name'</span> <span class="ow">in</span> <span class="n">kwds</span>
 </pre></div>
 </div>
 <p>هیچ فراخوانی ممکنی وجود ندارد که باعث شود این تابع مقدار <code class="docutils literal notranslate"><span class="pre">True</span></code> را برگرداند، زیرا کلیدواژه <code class="docutils literal notranslate"><span class="pre">'name'</span></code> همیشه به اولین پارامتر متصل می‌شود. برای مثال:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">TypeError</span>: <span class="n">foo() got multiple values for argument &#39;name&#39;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">foo() got multiple values for argument 'name'</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
 <p>اما با استفاده از <code class="docutils literal notranslate"><span class="pre">/</span></code> (آرگومان‌های فقط موقعیتی)، این امکان وجود دارد، زیرا اجازه می‌دهد <code class="docutils literal notranslate"><span class="pre">name</span></code> به‌عنوان یک آرگومان موقعیتی و <code class="docutils literal notranslate"><span class="pre">'name'</span></code> به‌عنوان یک کلید در آرگومان‌های کلیدواژه‌ای استفاده شود:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">kwds</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="s1">'name'</span> <span class="ow">in</span> <span class="n">kwds</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 <span class="go">True</span>
 </pre></div>
 </div>
@@ -875,13 +875,13 @@ sketch : Cheese Shop Sketch
 </pre></div>
 </div>
 <p>معمولاً این آرگومان‌های <em>متغیرتعداد</em> در انتهای فهرست پارامترهای رسمی قرار می‌گیرند، زیرا تمام آرگومان‌های ورودی باقی‌مانده‌ای که به تابع ارسال می‌شوند را جمع‌آوری می‌کنند. هر پارامتر رسمی که پس از پارامتر <code class="docutils literal notranslate"><span class="pre">*args</span></code> قرار گیرد، یک آرگومان «فقط کلیدواژه‌ای» است؛ یعنی فقط می‌تواند به‌عنوان کلیدواژه استفاده شود و نه به صورت آرگومان موقعیتی.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">concat</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="p">):</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">concat</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"/"</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">sep</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">concat</span><span class="p">(</span><span class="s2">&quot;earth&quot;</span><span class="p">,</span> <span class="s2">&quot;mars&quot;</span><span class="p">,</span> <span class="s2">&quot;venus&quot;</span><span class="p">)</span>
-<span class="go">&#39;earth/mars/venus&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">concat</span><span class="p">(</span><span class="s2">&quot;earth&quot;</span><span class="p">,</span> <span class="s2">&quot;mars&quot;</span><span class="p">,</span> <span class="s2">&quot;venus&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
-<span class="go">&#39;earth.mars.venus&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">concat</span><span class="p">(</span><span class="s2">"earth"</span><span class="p">,</span> <span class="s2">"mars"</span><span class="p">,</span> <span class="s2">"venus"</span><span class="p">)</span>
+<span class="go">'earth/mars/venus'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">concat</span><span class="p">(</span><span class="s2">"earth"</span><span class="p">,</span> <span class="s2">"mars"</span><span class="p">,</span> <span class="s2">"venus"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"."</span><span class="p">)</span>
+<span class="go">'earth.mars.venus'</span>
 </pre></div>
 </div>
 </section>
@@ -896,14 +896,14 @@ sketch : Cheese Shop Sketch
 </pre></div>
 </div>
 <p id="index-5">به همین شکل، دیکشنری‌ها می‌توانند با عملگر <code class="docutils literal notranslate"><span class="pre">**</span></code> آرگومان‌های کلیدواژه‌ای فراهم کنند:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">&#39;a stiff&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;voom&#39;</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- This parrot wouldn&#39;t&quot;</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;if you put&quot;</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s2">&quot;volts through it.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E&#39;s&quot;</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">'a stiff'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'voom'</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- This parrot wouldn't"</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"if you put"</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s2">"volts through it."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"E's"</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s2">"!"</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voltage&quot;</span><span class="p">:</span> <span class="s2">&quot;four million&quot;</span><span class="p">,</span> <span class="s2">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;bleedin&#39; demised&quot;</span><span class="p">,</span> <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;VOOM&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"voltage"</span><span class="p">:</span> <span class="s2">"four million"</span><span class="p">,</span> <span class="s2">"state"</span><span class="p">:</span> <span class="s2">"bleedin' demised"</span><span class="p">,</span> <span class="s2">"action"</span><span class="p">:</span> <span class="s2">"VOOM"</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">parrot</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>
-<span class="go">-- This parrot wouldn&#39;t VOOM if you put four million volts through it. E&#39;s bleedin&#39; demised !</span>
+<span class="go">-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !</span>
 </pre></div>
 </div>
 </section>
@@ -921,10 +921,10 @@ sketch : Cheese Shop Sketch
 </pre></div>
 </div>
 <p>مثال بالا از یک عبارت لامبدا برای برگرداندن یک تابع استفاده می‌کند. کاربرد دیگر آن، ارسال یک تابع کوچک به‌عنوان آرگومان است. برای مثال، <a class="reference internal" href="../library/stdtypes.html#list.sort" title="list.sort"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.sort()</span></code></a> یک تابع کلید مرتب‌سازی <em>key</em> می‌گیرد که می‌تواند یک تابع لامبدا باشد:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;four&#39;</span><span class="p">)]</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'one'</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">)]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pairs</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">pair</span><span class="p">:</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pairs</span>
-<span class="go">[(4, &#39;four&#39;), (1, &#39;one&#39;), (3, &#39;three&#39;), (2, &#39;two&#39;)]</span>
+<span class="go">[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]</span>
 </pre></div>
 </div>
 </section>
@@ -936,19 +936,19 @@ sketch : Cheese Shop Sketch
 <p>تجزیه‌گر پایتون هنگام استفاده از رشته‌های چندخطی به‌عنوان رشته‌های مستندسازی ماژول، کلاس یا تابع، تورفتگی را از آن‌ها حذف می‌کند.</p>
 <p>در اینجا یک نمونه از یک رشتهٔ مستندسازی چندخطی آمده است:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
-<span class="gp">... </span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Do nothing, but document it.</span>
+<span class="gp">... </span><span class="w">    </span><span class="sd">"""Do nothing, but document it.</span>
 <span class="gp">...</span>
-<span class="gp">... </span><span class="sd">    No, really, it doesn&#39;t do anything:</span>
+<span class="gp">... </span><span class="sd">    No, really, it doesn't do anything:</span>
 <span class="gp">...</span>
 <span class="gp">... </span><span class="sd">        &gt;&gt;&gt; my_function()</span>
 <span class="gp">... </span><span class="sd">        &gt;&gt;&gt;</span>
-<span class="gp">... </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="gp">... </span><span class="sd">    """</span>
 <span class="gp">... </span>    <span class="k">pass</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">my_function</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
 <span class="go">Do nothing, but document it.</span>
 
-<span class="go">No, really, it doesn&#39;t do anything:</span>
+<span class="go">No, really, it doesn't do anything:</span>
 
 <span class="go">    &gt;&gt;&gt; my_function()</span>
 <span class="go">    &gt;&gt;&gt;</span>
@@ -959,15 +959,15 @@ sketch : Cheese Shop Sketch
 <span id="tut-annotations"></span><h3><span class="section-number">4.9.8. </span>حاشیه‌نویسی‌های تابع<a class="headerlink" href="#function-annotations" title="Link to this heading">¶</a></h3>
 <p id="index-7"><a class="reference internal" href="../reference/compound_stmts.html#function"><span class="std std-ref">حاشیه‌نویسی‌های تابع</span></a> فراداده‌های کاملاً اختیاری دربارهٔ نوع‌های استفاده‌شده در توابع تعریف‌شده توسط کاربر هستند (برای اطلاعات بیشتر به <span class="target" id="index-17"></span><a class="pep reference external" href="https://peps.python.org/pep-3107/"><strong>PEP 3107</strong></a> و <span class="target" id="index-18"></span><a class="pep reference external" href="https://peps.python.org/pep-0484/"><strong>PEP 484</strong></a> مراجعه کنید).</p>
 <p><a class="reference internal" href="../glossary.html#term-function-annotation"><span class="xref std std-term">حاشیه‌نویسی‌ها</span></a> در ویژگی <a class="reference internal" href="../reference/datamodel.html#object.__annotations__" title="object.__annotations__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__annotations__</span></code></a> تابع، به‌صورت یک دیکشنری ذخیره می‌شوند و هیچ تأثیری بر بخش دیگری از تابع ندارند. حاشیه‌نویسی پارامترها با قرار دادن یک دونقطه پس از نام پارامتر و سپس یک عبارت که مقدار حاشیه‌نویسی را ارزیابی می‌کند، تعریف می‌شود. حاشیه‌نویسی مقدار بازگشتی با قرار دادن یک نشانهٔ لفظی <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code> و سپس یک عبارت، بین فهرست پارامترها و دونقطه‌ای که پایان دستور <a class="reference internal" href="../reference/compound_stmts.html#def"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">def</span></code></a> را مشخص می‌کند، تعریف می‌شود. مثال زیر دارای یک آرگومان اجباری، یک آرگومان اختیاری و مقدار بازگشتیِ حاشیه‌نویسی‌شده است:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">ham</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">eggs</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;eggs&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Annotations:&quot;</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="vm">__annotations__</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arguments:&quot;</span><span class="p">,</span> <span class="n">ham</span><span class="p">,</span> <span class="n">eggs</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="n">ham</span> <span class="o">+</span> <span class="s1">&#39; and &#39;</span> <span class="o">+</span> <span class="n">eggs</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">ham</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">eggs</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">'eggs'</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Annotations:"</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="vm">__annotations__</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Arguments:"</span><span class="p">,</span> <span class="n">ham</span><span class="p">,</span> <span class="n">eggs</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">ham</span> <span class="o">+</span> <span class="s1">' and '</span> <span class="o">+</span> <span class="n">eggs</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span><span class="p">)</span>
-<span class="go">Annotations: {&#39;ham&#39;: &lt;class &#39;str&#39;&gt;, &#39;return&#39;: &lt;class &#39;str&#39;&gt;, &#39;eggs&#39;: &lt;class &#39;str&#39;&gt;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="s1">'spam'</span><span class="p">)</span>
+<span class="go">Annotations: {'ham': &lt;class 'str'&gt;, 'return': &lt;class 'str'&gt;, 'eggs': &lt;class 'str'&gt;}</span>
 <span class="go">Arguments: spam eggs</span>
-<span class="go">&#39;spam and eggs&#39;</span>
+<span class="go">'spam and eggs'</span>
 </pre></div>
 </div>
 </section>
@@ -1165,7 +1165,7 @@ sketch : Cheese Shop Sketch
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -348,7 +348,7 @@ invocations are not going to be listed:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>self int indent;
 
 python$target:::function-entry
-/copyinstr(arg1) == &quot;start&quot;/
+/copyinstr(arg1) == "start"/
 {
         self-&gt;trace = 1;
 }
@@ -356,9 +356,9 @@ python$target:::function-entry
 python$target:::function-entry
 /self-&gt;trace/
 {
-        printf(&quot;%d\t%*s:&quot;, timestamp, 15, probename);
-        printf(&quot;%*s&quot;, self-&gt;indent, &quot;&quot;);
-        printf(&quot;%s:%s:%d\n&quot;, basename(copyinstr(arg0)), copyinstr(arg1), arg2);
+        printf("%d\t%*s:", timestamp, 15, probename);
+        printf("%*s", self-&gt;indent, "");
+        printf("%s:%s:%d\n", basename(copyinstr(arg0)), copyinstr(arg1), arg2);
         self-&gt;indent++;
 }
 
@@ -366,20 +366,20 @@ python$target:::function-return
 /self-&gt;trace/
 {
         self-&gt;indent--;
-        printf(&quot;%d\t%*s:&quot;, timestamp, 15, probename);
-        printf(&quot;%*s&quot;, self-&gt;indent, &quot;&quot;);
-        printf(&quot;%s:%s:%d\n&quot;, basename(copyinstr(arg0)), copyinstr(arg1), arg2);
+        printf("%d\t%*s:", timestamp, 15, probename);
+        printf("%*s", self-&gt;indent, "");
+        printf("%s:%s:%d\n", basename(copyinstr(arg0)), copyinstr(arg1), arg2);
 }
 
 python$target:::function-return
-/copyinstr(arg1) == &quot;start&quot;/
+/copyinstr(arg1) == "start"/
 {
         self-&gt;trace = 0;
 }
 </pre></div>
 </div>
 <p>It can be invoked like this:</p>
-<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dtrace<span class="w"> </span>-q<span class="w"> </span>-s<span class="w"> </span>call_stack.d<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;python3.6 script.py&quot;</span>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dtrace<span class="w"> </span>-q<span class="w"> </span>-s<span class="w"> </span>call_stack.d<span class="w"> </span>-c<span class="w"> </span><span class="s2">"python3.6 script.py"</span>
 </pre></div>
 </div>
 <p>The output looks like this:</p>
@@ -411,21 +411,21 @@ markers directly.  This requires you to explicitly state the binary file
 containing them.</p>
 <p>For example, this SystemTap script can be used to show the call/return
 hierarchy of a Python script:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process(&quot;python&quot;).mark(&quot;function__entry&quot;) {
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process("python").mark("function__entry") {
      filename = user_string($arg1);
      funcname = user_string($arg2);
      lineno = $arg3;
 
-     printf(&quot;%s =&gt; %s in %s:%d\\n&quot;,
+     printf("%s =&gt; %s in %s:%d\\n",
             thread_indent(1), funcname, filename, lineno);
 }
 
-probe process(&quot;python&quot;).mark(&quot;function__return&quot;) {
+probe process("python").mark("function__return") {
     filename = user_string($arg1);
     funcname = user_string($arg2);
     lineno = $arg3;
 
-    printf(&quot;%s &lt;= %s in %s:%d\\n&quot;,
+    printf("%s &lt;= %s in %s:%d\\n",
            thread_indent(-1), funcname, filename, lineno);
 }
 </pre></div>
@@ -433,7 +433,7 @@ probe process(&quot;python&quot;).mark(&quot;function__return&quot;) {
 <p>It can be invoked like this:</p>
 <div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>stap<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>show-call-hierarchy.stp<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-c<span class="w"> </span><span class="s2">&quot;./python test.py&quot;</span>
+<span class="w">  </span>-c<span class="w"> </span><span class="s2">"./python test.py"</span>
 </pre></div>
 </div>
 <p>The output looks like this:</p>
@@ -455,11 +455,11 @@ probe process(&quot;python&quot;).mark(&quot;function__return&quot;) {
 <p>For a <a class="reference internal" href="../using/configure.html#cmdoption-enable-shared"><code class="xref std std-option docutils literal notranslate"><span class="pre">--enable-shared</span></code></a> build of CPython, the markers are contained within the
 libpython shared library, and the probe's dotted path needs to reflect this. For
 example, this line from the above example:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process(&quot;python&quot;).mark(&quot;function__entry&quot;) {
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process("python").mark("function__entry") {
 </pre></div>
 </div>
 <p>should instead read:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process(&quot;python&quot;).library(&quot;libpython3.6dm.so.1.0&quot;).mark(&quot;function__entry&quot;) {
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe process("python").library("libpython3.6dm.so.1.0").mark("function__entry") {
 </pre></div>
 </div>
 <p>(assuming a <a class="reference internal" href="../using/configure.html#debug-build"><span class="std std-ref">debug build</span></a> of CPython 3.6)</p>
@@ -758,14 +758,14 @@ details of the static markers.</p>
    Provide a higher-level wrapping around the function__entry and
    function__return markers:
  \*/
-probe python.function.entry = process(&quot;python&quot;).mark(&quot;function__entry&quot;)
+probe python.function.entry = process("python").mark("function__entry")
 {
     filename = user_string($arg1);
     funcname = user_string($arg2);
     lineno = $arg3;
     frameptr = $arg4
 }
-probe python.function.return = process(&quot;python&quot;).mark(&quot;function__return&quot;)
+probe python.function.return = process("python").mark("function__return")
 {
     filename = user_string($arg1);
     funcname = user_string($arg2);
@@ -801,13 +801,13 @@ example given above of tracing the Python function-call hierarchy, without
 needing to directly name the static markers:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>probe python.function.entry
 {
-  printf(&quot;%s =&gt; %s in %s:%d\n&quot;,
+  printf("%s =&gt; %s in %s:%d\n",
          thread_indent(1), funcname, filename, lineno);
 }
 
 probe python.function.return
 {
-  printf(&quot;%s &lt;= %s in %s:%d\n&quot;,
+  printf("%s &lt;= %s in %s:%d\n",
          thread_indent(-1), funcname, filename, lineno);
 }
 </pre></div>
@@ -823,11 +823,11 @@ probe python.function.entry
 }
 
 probe timer.ms(1000) {
-    printf(&quot;\033[2J\033[1;1H&quot;) /* clear screen \*/
-    printf(&quot;%6s %80s %6s %30s %6s\n&quot;,
-           &quot;PID&quot;, &quot;FILENAME&quot;, &quot;LINE&quot;, &quot;FUNCTION&quot;, &quot;CALLS&quot;)
+    printf("\033[2J\033[1;1H") /* clear screen \*/
+    printf("%6s %80s %6s %30s %6s\n",
+           "PID", "FILENAME", "LINE", "FUNCTION", "CALLS")
     foreach ([pid, filename, funcname, lineno] in fn_calls- limit 20) {
-        printf(&quot;%6d %80s %6d %30s %6d\n&quot;,
+        printf("%6d %80s %6d %30s %6d\n",
             pid, filename, lineno, funcname,
             fn_calls[pid, filename, funcname, lineno]);
     }
@@ -985,7 +985,7 @@ probe timer.ms(1000) {
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

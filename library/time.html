@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -825,8 +825,8 @@ calculations when the day of the week and the year are specified.</p></li>
 <p>Here is an example, a format for dates compatible with that specified  in the
 <span class="target" id="index-10"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc5322.html"><strong>RFC 5322</strong></a> Internet email standard.  <a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">gmtime</span><span class="p">,</span> <span class="n">strftime</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%a</span><span class="s2">, </span><span class="si">%d</span><span class="s2"> %b %Y %H:%M:%S +0000&quot;</span><span class="p">,</span> <span class="n">gmtime</span><span class="p">())</span>
-<span class="go">&#39;Thu, 28 Jun 2001 14:17:15 +0000&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">strftime</span><span class="p">(</span><span class="s2">"</span><span class="si">%a</span><span class="s2">, </span><span class="si">%d</span><span class="s2"> %b %Y %H:%M:%S +0000"</span><span class="p">,</span> <span class="n">gmtime</span><span class="p">())</span>
+<span class="go">'Thu, 28 Jun 2001 14:17:15 +0000'</span>
 </pre></div>
 </div>
 <p>Additional directives may be supported on certain platforms, but only the
@@ -854,7 +854,7 @@ accurate values cannot be inferred are <code class="docutils literal notranslate
 Both <em>string</em> and <em>format</em> must be strings.</p>
 <p>For example:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;30 Nov 00&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> %b %y&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">"30 Nov 00"</span><span class="p">,</span> <span class="s2">"</span><span class="si">%d</span><span class="s2"> %b %y"</span><span class="p">)</span>
 <span class="go">time.struct_time(tm_year=2000, tm_mon=11, tm_mday=30, tm_hour=0, tm_min=0,</span>
 <span class="go">                 tm_sec=0, tm_wday=3, tm_yday=335, tm_isdst=-1)</span>
 </pre></div>
@@ -1120,14 +1120,14 @@ zero is a Sunday.</p>
 ('-' or '+') is allowed. The default, if time is not given, is 02:00:00.</p>
 </dd>
 </dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TZ&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;EST+05EDT,M4.1.0,M10.5.0&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TZ'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'EST+05EDT,M4.1.0,M10.5.0'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzset</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%X</span><span class="s1"> </span><span class="si">%x</span><span class="s1"> %Z&#39;</span><span class="p">)</span>
-<span class="go">&#39;02:07:36 05/08/03 EDT&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TZ&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;AEST-10AEDT-11,M10.5.0,M3.5.0&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'</span><span class="si">%X</span><span class="s1"> </span><span class="si">%x</span><span class="s1"> %Z'</span><span class="p">)</span>
+<span class="go">'02:07:36 05/08/03 EDT'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TZ'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'AEST-10AEDT-11,M10.5.0,M3.5.0'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzset</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%X</span><span class="s1"> </span><span class="si">%x</span><span class="s1"> %Z&#39;</span><span class="p">)</span>
-<span class="go">&#39;16:08:12 05/08/03 AEST&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'</span><span class="si">%X</span><span class="s1"> </span><span class="si">%x</span><span class="s1"> %Z'</span><span class="p">)</span>
+<span class="go">'16:08:12 05/08/03 AEST'</span>
 </pre></div>
 </div>
 <p>On many Unix systems (including *BSD, Linux, Solaris, and Darwin), it is more
@@ -1137,14 +1137,14 @@ variable to the path of the required timezone  datafile, relative to the root of
 the systems 'zoneinfo' timezone database, usually located at
 <code class="file docutils literal notranslate"><span class="pre">/usr/share/zoneinfo</span></code>. For example,  <code class="docutils literal notranslate"><span class="pre">'US/Eastern'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'Australia/Melbourne'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Egypt'</span></code> or  <code class="docutils literal notranslate"><span class="pre">'Europe/Amsterdam'</span></code>.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TZ&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;US/Eastern&#39;</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TZ'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'US/Eastern'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzset</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzname</span>
-<span class="go">(&#39;EST&#39;, &#39;EDT&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TZ&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Egypt&#39;</span>
+<span class="go">('EST', 'EDT')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TZ'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Egypt'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzset</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">tzname</span>
-<span class="go">(&#39;EET&#39;, &#39;EEST&#39;)</span>
+<span class="go">('EET', 'EEST')</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1541,7 +1541,7 @@ with <span class="target" id="index-23"></span><a class="rfc reference external"
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

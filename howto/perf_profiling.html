@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -258,7 +258,7 @@ to see if your system is supported.</p>
 <span class="k">def</span><span class="w"> </span><span class="nf">baz</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">bar</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">baz</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -373,7 +373,7 @@ the <code class="xref std std-option docutils literal notranslate"><span class="
 <p>Example, using the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> APIs in file <code class="file docutils literal notranslate"><span class="pre">example.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
-<span class="n">sys</span><span class="o">.</span><span class="n">activate_stack_trampoline</span><span class="p">(</span><span class="s2">&quot;perf&quot;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">activate_stack_trampoline</span><span class="p">(</span><span class="s2">"perf"</span><span class="p">)</span>
 <span class="n">do_profiled_stuff</span><span class="p">()</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">deactivate_stack_trampoline</span><span class="p">()</span>
 
@@ -395,7 +395,7 @@ information. This is because as the code that is interposed to allow <code class
 support is dynamically generated it doesn't have any DWARF debugging information
 available.</p>
 <p>You can check if your system has been compiled with this flag by running:</p>
-<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>sysconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;no-omit-frame-pointer&#39;</span>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>sysconfig<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">'no-omit-frame-pointer'</span>
 </pre></div>
 </div>
 <p>If you don't see any output it means that your interpreter has not been compiled with
@@ -613,7 +613,7 @@ size to 65528 bytes (the maximum):</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     

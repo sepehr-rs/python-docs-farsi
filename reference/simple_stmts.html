@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
     <link rel="stylesheet" type="text/css" href="../_static/pydoctheme.css?v=4365c8fe" />
-    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=5349f25f" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../_static/pygments_dark.css?v=0fc419ee" />
     
     <script src="../_static/documentation_options.js?v=e254dbbb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -621,7 +621,7 @@ and attached to it as the <a class="reference internal" href="../library/excepti
 You can create an exception and set your own traceback in one step using the
 <a class="reference internal" href="../library/exceptions.html#BaseException.with_traceback" title="BaseException.with_traceback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">with_traceback()</span></code></a> exception method (which returns the
 same exception instance, with its traceback set to its argument), like so:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;foo occurred&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_traceback</span><span class="p">(</span><span class="n">tracebackobj</span><span class="p">)</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">"foo occurred"</span><span class="p">)</span><span class="o">.</span><span class="n">with_traceback</span><span class="p">(</span><span class="n">tracebackobj</span><span class="p">)</span>
 </pre></div>
 </div>
 <p id="index-29">The <code class="docutils literal notranslate"><span class="pre">from</span></code> clause is used for exception chaining: if given, the second
@@ -635,10 +635,10 @@ exceptions will be printed:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Something bad happened&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">"Something bad happened"</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
 <span class="gp">...</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>
 <span class="w">          </span><span class="pm">~~^~~</span>
 <span class="gr">ZeroDivisionError</span>: <span class="n">division by zero</span>
@@ -646,8 +646,8 @@ exceptions will be printed:</p>
 <span class="gt">The above exception was the direct cause of the following exception:</span>
 
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Something bad happened&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">"Something bad happened"</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
 <span class="gr">RuntimeError</span>: <span class="n">Something bad happened</span>
 </pre></div>
 </div>
@@ -659,10 +659,10 @@ attached as the new exception's <a class="reference internal" href="../library/e
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Something bad happened&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">"Something bad happened"</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>
 <span class="w">          </span><span class="pm">~~^~~</span>
 <span class="gr">ZeroDivisionError</span>: <span class="n">division by zero</span>
@@ -670,8 +670,8 @@ attached as the new exception's <a class="reference internal" href="../library/e
 <span class="gt">During handling of the above exception, another exception occurred:</span>
 
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Something bad happened&quot;</span><span class="p">)</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">"Something bad happened"</span><span class="p">)</span>
 <span class="gr">RuntimeError</span>: <span class="n">Something bad happened</span>
 </pre></div>
 </div>
@@ -680,10 +680,10 @@ the <code class="docutils literal notranslate"><span class="pre">from</span></co
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Something bad happened&quot;</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">"Something bad happened"</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
 <span class="gp">...</span>
 <span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">4</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">RuntimeError</span>: <span class="n">Something bad happened</span>
 </pre></div>
 </div>
@@ -968,7 +968,7 @@ of <a class="reference internal" href="../library/typing.html#typing.TypeAliasTy
 <p>This code is roughly equivalent to:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">annotation</span><span class="o">-</span><span class="k">def</span><span class="w"> </span><span class="nf">VALUE_OF_Point</span><span class="p">():</span>
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span>
-<span class="n">Point</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">TypeAliasType</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">,</span> <span class="n">VALUE_OF_Point</span><span class="p">())</span>
+<span class="n">Point</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">TypeAliasType</span><span class="p">(</span><span class="s2">"Point"</span><span class="p">,</span> <span class="n">VALUE_OF_Point</span><span class="p">())</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">annotation-def</span></code> indicates an <a class="reference internal" href="executionmodel.html#annotation-scopes"><span class="std std-ref">annotation scope</span></a>, which behaves
@@ -1153,7 +1153,7 @@ generic classes and functions.</p>
 <a href="https://www.python.org/psf/donations/">Please donate.</a>
 <br>
     <br>
-      آخرین بروز رسانی در اوت 17, 2026 (06:43 UTC) .
+      آخرین بروز رسانی در اوت 18, 2026 (03:01 UTC) .
     
       <a href="/bugs.html">Found a bug</a>?
     
