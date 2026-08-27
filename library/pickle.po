@@ -246,7 +246,7 @@ msgid ""
 "Protocol version 1 is an old binary format which is also compatible with "
 "earlier versions of Python."
 msgstr ""
-"پروتکل نسخه‌ی 1 یک قالب باینری قدیمی است که با نسخه‌های پیشین پایتون نیز "
+"پروتکل نسخه‌ی 1 یک قالب دودویی قدیمی است که با نسخه‌های پیشین پایتون نیز "
 "سازگار است."
 
 msgid ""
@@ -494,7 +494,7 @@ msgstr ""
 ":class:`PickleBuffer` را صادر می‌کند:"
 
 msgid "This takes a binary file for writing a pickle data stream."
-msgstr "این یک فایل باینری برای نوشتن جریان داده‌ی pickle می‌پذیرد."
+msgstr "این یک فایل دودویی برای نوشتن جریان داده‌ی pickle می‌پذیرد."
 
 msgid ""
 "The optional *protocol* argument, an integer, tells the pickler to use the "
@@ -671,7 +671,7 @@ msgstr ""
 " مفید است."
 
 msgid "This takes a binary file for reading a pickle data stream."
-msgstr "این یک فایل باینری را برای خواندن جریان داده pickle دریافت می‌کند."
+msgstr "این یک فایل دودویی را برای خواندن جریان داده pickle دریافت می‌کند."
 
 msgid ""
 "The protocol version of the pickle is detected automatically, so no protocol"

@@ -78,7 +78,7 @@ msgid ""
 " are available at https://www.python.org/downloads/."
 msgstr ""
 "از پایتون 3.13 به بعد، نصب‌کننده‌های رسمی macOS و Windows به‌صورت اختیاری از"
-" نصب باینری‌های پایتون آزاد‌نخ (free-threaded) پشتیبانی می‌کنند. این "
+" نصب دودویی‌های پایتون آزاد‌نخ (free-threaded) پشتیبانی می‌کنند. این "
 "نصب‌کننده‌ها در https://www.python.org/downloads/ در دسترس هستند."
 
 msgid ""

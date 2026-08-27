@@ -202,7 +202,7 @@ msgstr ""
 "متفاوت از پایتون دارند)، :exc:`EOFError`، :exc:`ValueError` یا "
 ":exc:`TypeError` را پرتاب می‌کند. از :ref:`اشیای کد <code-objects>` فقط در "
 "صورتی پشتیبانی می‌شود که *allow_code* مقدار true باشد. فایل باید یک "
-":term:`فایل باینری <binary file>` قابل‌خواندن باشد."
+":term:`فایل دودویی <binary file>` قابل‌خواندن باشد."
 
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``marshal.load`` with no "

@@ -43,7 +43,7 @@ msgid ""
 "Queries the given executable (defaults to the Python interpreter binary) for"
 " various architecture information."
 msgstr ""
-"اطلاعات گوناگون معماری را از فایل اجرایی داده‌شده (که به‌طور پیش‌فرض باینری "
+"اطلاعات گوناگون معماری را از فایل اجرایی داده‌شده (که به‌طور پیش‌فرض دودویی "
 "مفسر پایتون است) پرس‌وجو می‌کند."
 
 msgid ""

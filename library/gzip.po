@@ -96,7 +96,7 @@ msgid ""
 "``'at'``, ``'wt'``, or ``'xt'`` for text mode. The default is ``'rb'``."
 msgstr ""
 "آرگومان *mode* می‌تواند یکی از ``'r'``، ``'rb'``، ``'a'``، ``'ab'``، "
-"``'w'``، ``'wb'``، ``'x'`` یا ``'xb'`` برای حالت باینری، یا ``'rt'``، "
+"``'w'``، ``'wb'``، ``'x'`` یا ``'xb'`` برای حالت دودویی، یا ``'rt'``، "
 "``'at'``، ``'wt'`` یا ``'xt'`` برای حالت متنی باشد. مقدار پیش‌فرض ``'rb'`` "
 "است."
 
@@ -450,7 +450,7 @@ msgstr ""
 "        shutil.copyfileobj(f_in, f_out)"
 
 msgid "Example of how to GZIP compress a binary string::"
-msgstr "مثالی از نحوهٔ فشرده‌سازی GZIP یک رشتهٔ باینری::"
+msgstr "مثالی از نحوهٔ فشرده‌سازی GZIP یک رشتهٔ دودویی::"
 
 msgid ""
 "import gzip\n"

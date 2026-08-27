@@ -248,7 +248,7 @@ msgstr ""
 msgid ""
 "The function returns a binary string that is the contents of the specified "
 "resource."
-msgstr "این تابع یک رشته باینری برمی‌گرداند که محتوای منبع مشخص‌شده است."
+msgstr "این تابع یک رشته دودویی برمی‌گرداند که محتوای منبع مشخص‌شده است."
 
 msgid ""
 "This function uses the :term:`loader` method "

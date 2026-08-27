@@ -73,7 +73,7 @@ msgstr ""
 
 msgid "New API, old API deprecated.  Support for binary format plists added."
 msgstr ""
-"API جدید، API قدیمی منسوخ شد. پشتیبانی از plistهای قالب باینری افزوده شد."
+"API جدید، API قدیمی منسوخ شد. پشتیبانی از plistهای قالب دودویی افزوده شد."
 
 msgid ""
 "Support added for reading and writing :class:`UID` tokens in binary plists "
@@ -170,7 +170,7 @@ msgid ""
 "Write *value* to a plist file. *fp* should be a writable, binary file "
 "object."
 msgstr ""
-"*value* را در یک فایل plist بنویسید. *fp* باید یک شیء فایل باینری قابل‌نوشتن"
+"*value* را در یک فایل plist بنویسید. *fp* باید یک شیء فایل دودویی قابل‌نوشتن"
 " باشد."
 
 msgid ""
@@ -184,7 +184,7 @@ msgid ":data:`FMT_XML`: XML formatted plist file"
 msgstr ":data:`FMT_XML`: فایل plist با قالب XML"
 
 msgid ":data:`FMT_BINARY`: Binary formatted plist file"
-msgstr ":data:`FMT_BINARY`: فایل plist قالب‌بندی‌شده به‌صورت باینری"
+msgstr ":data:`FMT_BINARY`: فایل plist قالب‌بندی‌شده به‌صورت دودویی"
 
 msgid ""
 "When *sort_keys* is true (the default) the keys for dictionaries will be "
@@ -254,7 +254,7 @@ msgid "The XML format for plist files."
 msgstr "قالب XML برای فایل‌های plist."
 
 msgid "The binary format for plist files"
-msgstr "قالب باینری برای فایل‌های plist"
+msgstr "قالب دودویی برای فایل‌های plist"
 
 msgid "The module defines the following exceptions:"
 msgstr "این ماژول استثنا‌های زیر را تعریف می‌کند:"

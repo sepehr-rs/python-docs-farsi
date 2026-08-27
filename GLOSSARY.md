@@ -15,6 +15,7 @@
 | await              | await                   |
 | boolean            | بولی                    |
 | built-in           | توکار، درونی، درون‌ساخته |
+| binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | character          | نویسه                   |

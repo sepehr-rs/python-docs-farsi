@@ -1399,7 +1399,7 @@ msgstr ""
 "می‌کند."
 
 msgid "*file* must be a regular file object opened in binary mode."
-msgstr "*file* باید یک شیء فایل معمولی باشد که در حالت باینری باز شده باشد."
+msgstr "*file* باید یک شیء فایل معمولی باشد که در حالت دودویی باز شده باشد."
 
 msgid ""
 "*offset* tells from where to start reading the file. If specified, *count* "
@@ -1735,7 +1735,7 @@ msgstr ""
 ":const:`socket.SOCK_STREAM` باشد."
 
 msgid "*file* must be a regular file object open in binary mode."
-msgstr "*file* باید یک شیء فایل معمولی باشد که در حالت باینری باز شده است."
+msgstr "*file* باید یک شیء فایل معمولی باشد که در حالت دودویی باز شده است."
 
 msgid ""
 "*fallback*, when set to ``True``, makes asyncio manually read and send the "

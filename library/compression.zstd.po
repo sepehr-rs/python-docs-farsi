@@ -113,7 +113,7 @@ msgid ""
 "Open a Zstandard-compressed file in binary or text mode, returning a "
 ":term:`file object`."
 msgstr ""
-"یک فایل فشرده‌شده با Zstandard را در حالت باینری یا متنی باز می‌کند و یک "
+"یک فایل فشرده‌شده با Zstandard را در حالت دودویی یا متنی باز می‌کند و یک "
 ":term:`شیء فایل` بازمی‌گرداند."
 
 msgid ""
@@ -188,7 +188,7 @@ msgstr ""
 "مشخص‌شده، آن را در بر می‌گیرد."
 
 msgid "Open a Zstandard-compressed file in binary mode."
-msgstr "باز کردن یک فایل فشرده‌شده با Zstandard در حالت باینری."
+msgstr "باز کردن یک فایل فشرده‌شده با Zstandard در حالت دودویی."
 
 msgid ""
 "A :class:`ZstdFile` can wrap an already-open :term:`file object`, or operate"

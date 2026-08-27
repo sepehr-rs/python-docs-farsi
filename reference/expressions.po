@@ -2785,7 +2785,7 @@ msgstr ""
 " [#]_"
 
 msgid "Strings and binary sequences cannot be directly compared."
-msgstr "رشته‌ها و دنباله‌های باینری را نمی‌توان به‌صورت مستقیم مقایسه کرد."
+msgstr "رشته‌ها و دنباله‌های دودویی را نمی‌توان به‌صورت مستقیم مقایسه کرد."
 
 msgid ""
 "Sequences (instances of :class:`tuple`, :class:`list`, or :class:`range`) "

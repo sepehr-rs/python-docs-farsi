@@ -27,7 +27,7 @@ msgstr ""
 
 msgid ":mod:`!struct` --- Interpret bytes as packed binary data"
 msgstr ""
-":mod:`!struct` --- تفسیر بایت‌ها به‌عنوان داده‌های باینری بسته‌بندی‌شده"
+":mod:`!struct` --- تفسیر بایت‌ها به‌عنوان داده‌های دودویی بسته‌بندی‌شده"
 
 msgid "**Source code:** :source:`Lib/struct.py`"
 msgstr ":source:`Lib/struct.py`"

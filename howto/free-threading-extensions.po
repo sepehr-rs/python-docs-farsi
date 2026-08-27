@@ -765,7 +765,7 @@ msgid ""
 "The wheels, shared libraries, and binaries are indicated by a ``t`` suffix."
 msgstr ""
 "افزونه‌های C API باید به‌طور خاص برای ساخت آزاد-نخی (free-threaded) ساخته "
-"شوند. wheelها، کتابخانه‌های مشترک و باینری‌ها با پسوند ``t`` مشخص می‌شوند."
+"شوند. wheelها، کتابخانه‌های مشترک و دودویی‌ها با پسوند ``t`` مشخص می‌شوند."
 
 msgid ""
 "`pypa/manylinux <https://github.com/pypa/manylinux>`_ supports the free-"

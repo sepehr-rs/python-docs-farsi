@@ -2057,7 +2057,7 @@ msgid "The *newline* parameter was added."
 msgstr "پارامتر *newline* افزوده شد."
 
 msgid "Return the binary contents of the pointed-to file as a bytes object::"
-msgstr "محتوای باینری فایل اشاره‌شده را به‌عنوان یک شیء bytes برمی‌گرداند::"
+msgstr "محتوای دودویی فایل اشاره‌شده را به‌عنوان یک شیء bytes برمی‌گرداند::"
 
 msgid ""
 ">>> p = Path('my_binary_file')\n"

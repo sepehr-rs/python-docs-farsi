@@ -255,7 +255,7 @@ msgid ""
 "This function returns a :class:`~typing.BinaryIO` object, that is, a binary "
 "stream open for reading."
 msgstr ""
-"این تابع یک شیء :class:`~typing.BinaryIO` برمی‌گرداند، یعنی یک جریان باینری "
+"این تابع یک شیء :class:`~typing.BinaryIO` برمی‌گرداند، یعنی یک جریان دودویی "
 "باز برای خواندن."
 
 msgid "This function is roughly equivalent to::"
