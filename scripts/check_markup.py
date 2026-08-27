@@ -9,6 +9,9 @@ Verify Sphinx markup consistency between msgid and msgstr:
   - Literal/code spans (``...``), substitution refs (|...|), and %s/{name}
     placeholders — these must match verbatim, since they're not prose.
 
+Output is grouped by file, with a per-file mismatch count and a grand
+total at the end.
+
 Requires: pip install polib
 
 Usage:
@@ -45,8 +48,9 @@ def extract_role_targets(text: str):
     return targets
 
 
-def check_file(path: Path) -> int:
-    problems = 0
+def check_file(path: Path):
+    """Return a list of finding-dicts for this file (empty if none)."""
+    results = []
     po = polib.pofile(str(path))
     for entry in po:
         if entry.obsolete or not entry.msgid or not entry.msgstr:
@@ -76,17 +80,33 @@ def check_file(path: Path) -> int:
                     findings.append(f"extra {label} not in source: {extra}")
 
         if findings:
-            problems += 1
             loc = (
-                f" ({entry.occurrences[0][0]}:{entry.occurrences[0][1]})"
+                f"{entry.occurrences[0][0]}:{entry.occurrences[0][1]}"
                 if entry.occurrences
                 else ""
             )
-            tag = " [fuzzy]" if entry.fuzzy else ""
-            print(f"{path}{loc}{tag}: {'; '.join(findings)}")
-            print(f"    msgid : {entry.msgid[:100]}")
-            print(f"    msgstr: {entry.msgstr[:100]}")
-    return problems
+            results.append(
+                {
+                    "loc": loc,
+                    "fuzzy": entry.fuzzy,
+                    "findings": findings,
+                    "msgid": entry.msgid,
+                    "msgstr": entry.msgstr,
+                }
+            )
+    return results
+
+
+def print_file_group(path: Path, results):
+    print(f"\n{'=' * 70}")
+    print(f"{path}  ({len(results)} mismatch(es))")
+    print("=" * 70)
+    for r in results:
+        tag = " [fuzzy]" if r["fuzzy"] else ""
+        loc = f" ({r['loc']})" if r["loc"] else ""
+        print(f"{loc}{tag}: {'; '.join(r['findings'])}")
+        print(f"    msgid : {r['msgid'][:100]}")
+        print(f"    msgstr: {r['msgstr'][:100]}")
 
 
 def main():
@@ -97,13 +117,32 @@ def main():
     files = []
     for arg in sys.argv[1:]:
         p = Path(arg)
-        files.extend(sorted(p.rglob("*.po"))) if p.is_dir() else files.append(p)
+        if p.is_dir():
+            files.extend(
+                sorted(f for f in p.rglob("*.po") if ".git" not in f.parts)
+            )
+        else:
+            files.append(p)
 
-    total = sum(check_file(f) for f in files)
+    total = 0
+    per_file_counts = []
+
+    for f in files:
+        results = check_file(f)
+        if results:
+            print_file_group(f, results)
+            total += len(results)
+            per_file_counts.append((f, len(results)))
 
     if total:
-        print(f"\n{total} markup mismatch(es) found.")
+        print(f"\n{'=' * 70}")
+        print("Summary by file (sorted by mismatch count, descending):")
+        print("=" * 70)
+        for f, count in sorted(per_file_counts, key=lambda x: -x[1]):
+            print(f"  {count:4d}  {f}")
+        print(f"\n{total} markup mismatch(es) found across {len(per_file_counts)} file(s).")
         sys.exit(1)
+
     print("No markup mismatches found.")
 
 
