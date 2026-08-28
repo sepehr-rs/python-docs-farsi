@@ -336,7 +336,7 @@ msgid ""
 "by pushing all values onto a heap and then popping off the smallest values "
 "one at a time::"
 msgstr ""
-"می‌توان یک `مرتب‌سازی پشته‌ای <https://en.wikipedia.org/wiki/Heapsort>`_ را با "
+"می‌توان یک `مرتب‌سازی پشته‌ای <https://fa.wikipedia.org/wiki/مرتب‌سازی_هرمی>`_ را با "
 "قرار دادن همه مقادیر در یک پشته و سپس برداشتن کوچک‌ترین مقادیر به‌صورت یکی‌یکی "
 "پیاده‌سازی کرد::"
 

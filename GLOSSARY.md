@@ -14,12 +14,13 @@
 | attribute          | ویژگی، صفت، شاخصه       |
 | await              | await                   |
 | boolean            | بولی                    |
+| bootstrapping      | بوت‌استرپینگ             |
 | built-in           | توکار، درونی، درون‌ساخته |
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | character          | نویسه                   |
-| class              | کلاس                    |
+| class              | کلاس                     |
 | command line       | خط فرمان                |
 | community          | کامیونیتی               |
 | component          | کامپوننت                |

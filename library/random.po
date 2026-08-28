@@ -877,7 +877,7 @@ msgid ""
 "of a sample::"
 msgstr ""
 "مثالی از `بوت‌استرپ آماری (statistical bootstrapping) "
-"<https://en.wikipedia.org/wiki/Bootstrapping_(statistics)>`_ با استفاده از "
+"<https://fa.wikipedia.org/wiki/بوت‌استرپینگ_(آمار)>`_ با استفاده از "
 "نمونه‌گیری مجدد با جایگذاری برای برآورد بازه اطمینان میانگین یک نمونه::"
 
 msgid ""

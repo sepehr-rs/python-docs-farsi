@@ -522,7 +522,7 @@ msgid ""
 msgstr ""
 "برای به دست آوردن الزامات یک تولیدگر قوی از نظر رمزنگاری، مقالهٔ ویکی‌پدیا، "
 "`Cryptographically secure pseudorandom number generator (CSPRNG) "
-"<https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator>`_"
+"<https://fa.wikipedia.org/wiki/مولد_امن_اعداد_شبه‌تصادفی_در_رمزنگاری>`_"
 " را بخوانید."
 
 msgid ""

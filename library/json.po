@@ -41,7 +41,7 @@ msgstr ""
 " (که :rfc:`4627` را منسوخ می‌کند) و `ECMA-404 <https://ecma-"
 "international.org/publications-and-standards/standards/ecma-404/>`_ مشخص شده"
 " است، قالبی سبک برای تبادل داده است که از نحو لیترال شیء در `JavaScript "
-"<https://en.wikipedia.org/wiki/JavaScript>`_ الهام گرفته است (اگرچه "
+"<https://fa.wikipedia.org/wiki/جاوااسکریپت>`_ الهام گرفته است (اگرچه "
 "زیرمجموعه‌ای دقیق از جاوااسکریپت نیست [#rfc-errata]_)."
 
 msgid ""

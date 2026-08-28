@@ -1204,7 +1204,7 @@ msgid ""
 "`Cartesian product <https://en.wikipedia.org/wiki/Cartesian_product>`_ of "
 "the input iterables."
 msgstr ""
-"`ضرب دکارتی <https://en.wikipedia.org/wiki/Cartesian_product>`_ "
+"`ضرب دکارتی <https://fa.wikipedia.org/wiki/ضرب_دکارتی>`_ "
 "تکرارپذیر‌های ورودی."
 
 msgid ""

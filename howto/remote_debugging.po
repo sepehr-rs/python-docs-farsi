@@ -421,7 +421,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Executable_and_Linkable_Format>`_."
 msgstr ""
 "می‌توانید درباره‌ی قالب فایل ELF در `مشخصات ELF "
-"<https://en.wikipedia.org/wiki/Executable_and_Linkable_Format>`_ بیشتر "
+"<https://fa.wikipedia.org/wiki/فرمت_اجرایی_و_مرتبط>`_ بیشتر "
 "بخوانید."
 
 msgid "macOS (Mach-O)"

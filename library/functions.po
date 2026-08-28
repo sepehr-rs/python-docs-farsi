@@ -3737,7 +3737,7 @@ msgid ""
 msgstr ""
 "راه دیگری برای درک :func:`zip` این است که سطرها را به ستون‌ها و ستون‌ها را "
 "به سطرها تبدیل می‌کند. این کار مشابه `ترانهادهٔ یک ماتریس "
-"<https://en.wikipedia.org/wiki/Transpose>`_ است."
+"<https://fa.wikipedia.org/wiki/ترانهاده>`_ است."
 
 msgid ""
 ":func:`zip` is lazy: The elements won't be processed until the iterable is "

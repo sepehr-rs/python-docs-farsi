@@ -3044,7 +3044,7 @@ msgid ""
 "first step in writing a compiler or interpreter."
 msgstr ""
 "یک `توکنایزر (tokenizer) یا اسکنر (scanner) "
-"<https://en.wikipedia.org/wiki/Lexical_analysis>`_ رشته‌ای را تحلیل می‌کند "
+"<https://fa.wikipedia.org/wiki/تحلیل_واژگانی>`_ رشته‌ای را تحلیل می‌کند "
 "تا گروه‌هایی از نویسه‌ها را دسته‌بندی کند. این نخستین گام مفید در نوشتن یک "
 "کامپایلر یا مفسر است."
 

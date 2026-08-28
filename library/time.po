@@ -1149,7 +1149,7 @@ msgstr ""
 "برمی‌گرداند. نحوهٔ مدیریت `ثانیه‌های کبیسه`_ به پلتفرم بستگی دارد. در ویندوز"
 " و بیشتر سیستم‌های یونیکسی، ثانیه‌های کبیسه در شمار ثانیه‌های سپری‌شده از "
 "مبدأ زمانی (epoch_) لحاظ نمی‌شوند. این معمولاً به‌عنوان `زمان یونیکس "
-"<https://en.wikipedia.org/wiki/Unix_time>`_ شناخته می‌شود."
+"<https://fa.wikipedia.org/wiki/ساعت_یونیکس>`_ شناخته می‌شود."
 
 msgid ""
 "Note that even though the time is always returned as a floating-point "
