@@ -1781,7 +1781,7 @@ msgid ""
 "Perform the same operation as :func:`sub`, but return a tuple ``(new_string, "
 "number_of_subs_made)``."
 msgstr ""
-"همان عملیات :func:`sub` را انجام می‌دهد، اما یک تاپل (tuple) به شکل "
+"همان عملیات :func:`sub` را انجام می‌دهد، اما یک تاپلبه شکل "
 "``(new_string, number_of_subs_made)`` برمی‌گرداند."
 
 msgid ""

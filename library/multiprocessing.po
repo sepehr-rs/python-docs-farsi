@@ -4104,7 +4104,7 @@ msgid ""
 "An ``'AF_INET'`` address is a tuple of the form ``(hostname, port)`` where *hostname* is a string and "
 "*port* is an integer."
 msgstr ""
-"یک نشانی ``'AF_INET'`` یک تاپل (tuple) به شکل ``(hostname, port)`` است که در آن *hostname* یک رشته و *port* "
+"یک نشانی ``'AF_INET'`` یک تاپلبه شکل ``(hostname, port)`` است که در آن *hostname* یک رشته و *port* "
 "یک عدد صحیح است."
 
 msgid "An ``'AF_UNIX'`` address is a string representing a filename on the filesystem."

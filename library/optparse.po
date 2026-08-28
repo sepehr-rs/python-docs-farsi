@@ -3598,7 +3598,7 @@ msgid ""
 "A tuple of type names; in your subclass, simply define a new tuple :attr:`TYPES` "
 "that builds on the standard one."
 msgstr ""
-"یک تاپل (tuple) از نام‌های نوع؛ در زیرکلاس خود، به‌سادگی یک تاپل جدید به "
+"یک تاپلاز نام‌های نوع؛ در زیرکلاس خود، به‌سادگی یک تاپل جدید به "
 "نام :attr:`TYPES` تعریف کنید که بر پایه‌ی تاپل استاندارد ساخته می‌شود."
 
 msgid ""

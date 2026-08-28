@@ -25,7 +25,7 @@ msgid ":mod:`!shlex` --- Simple lexical analysis"
 msgstr ":mod:`!shlex` --- تحلیل واژگانی ساده"
 
 msgid "**Source code:** :source:`Lib/shlex.py`"
-msgstr ":sources:`Lib/shlex.py`"
+msgstr ":source:`Lib/shlex.py`"
 
 msgid ""
 "The :class:`~shlex.shlex` class makes it easy to write lexical analyzers for"
@@ -216,7 +216,7 @@ msgid ""
 msgstr ""
 "هنگامی که :class:`~shlex.shlex` یک درخواست منبع را تشخیص می‌دهد (به "
 ":attr:`source` در زیر مراجعه کنید)، این متد توکن بعدی را به‌عنوان آرگومان "
-"دریافت می‌کند و انتظار می‌رود یک تاپل (tuple) شامل یک نام فایل و یک شیء "
+"دریافت می‌کند و انتظار می‌رود یک تاپلشامل یک نام فایل و یک شیء "
 "شبه‌فایل باز را برگرداند."
 
 msgid ""

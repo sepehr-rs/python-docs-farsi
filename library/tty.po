@@ -25,7 +25,7 @@ msgid ":mod:`!tty` --- Terminal control functions"
 msgstr ":mod:`!tty` --- توابع کنترل پایانه"
 
 msgid "**Source code:** :source:`Lib/tty.py`"
-msgstr ":sources:`Lib/tty.py`"
+msgstr ":source:`Lib/tty.py`"
 
 msgid ""
 "The :mod:`!tty` module defines functions for putting the tty into cbreak and"

@@ -147,7 +147,7 @@ msgstr ""
 msgid ""
 "Like :func:`ngettext`, but look the message up in the specified *domain*."
 msgstr ""
-"مانند :func:`ngettext`، اما پیام را در *domain*ِ مشخص‌شده جستجو می‌کند."
+"مانند :func:`ngettext`، اما پیام را در *domain*\\ِ مشخص‌شده جستجو می‌کند."
 
 msgid ""
 "Similar to the corresponding functions without the ``p`` in the prefix (that"

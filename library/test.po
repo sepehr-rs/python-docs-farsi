@@ -639,7 +639,7 @@ msgid ""
 ":option:`python -OO <-O>` option, which strips docstrings of functions "
 "implemented in Python."
 msgstr ""
-"اگر رشته‌های مستندسازی (docstring) توابع در دسترس باشند، روی ``True`` تنظیم "
+"اگر رشته‌های مستندسازی توابع در دسترس باشند، روی ``True`` تنظیم "
 "می‌شود. گزینه‌ی :option:`python -OO <-O>` را ببینید، که رشته‌های مستندسازی "
 "توابع پیاده‌سازی‌شده در پایتون را حذف می‌کند."
 

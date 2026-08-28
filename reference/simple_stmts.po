@@ -1168,7 +1168,7 @@ msgid ""
 "at the module level.  Attempting to use it in class or function definitions "
 "will raise a :exc:`SyntaxError`."
 msgstr ""
-"شکل کارت وحشی (wild card) ایمپورت --- ``from module import *`` --- فقط در سطح "
+"شکل ایمپورت وایلدکارد --- ``from module import *`` --- فقط در سطح "
 "ماژول مجاز است. تلاش برای استفاده از آن در تعریف کلاس یا تابع باعث پرتاب "
 "یک :exc:`SyntaxError` می‌شود."
 
@@ -1246,7 +1246,7 @@ msgstr ""
 "از یک دستور آینده ظاهر شوند، عبارت‌اند از:"
 
 msgid "the module docstring (if any),"
-msgstr "داک‌استرینگ ماژول (در صورت وجود)،"
+msgstr "رشته مستند ماژول (در صورت وجود)،"
 
 msgid "comments,"
 msgstr "توضیحات،"

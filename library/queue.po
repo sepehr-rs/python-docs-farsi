@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 "ابتدا آیتم‌هایی با کم‌ترین مقدار بازیابی می‌شوند (آیتم با کم‌ترین مقدار، "
 "آیتمی است که ``min(entries)`` آن را بازمی‌گرداند). یک الگوی رایج برای "
-"آیتم‌ها، چندتایی (tuple) به شکل ``(priority_number, data)`` است."
+"آیتم‌ها، چندتاییبه شکل ``(priority_number, data)`` است."
 
 msgid ""
 "If the *data* elements are not comparable, the data can be wrapped in a "

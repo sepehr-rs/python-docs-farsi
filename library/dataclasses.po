@@ -27,7 +27,7 @@ msgid ":mod:`!dataclasses` --- Data Classes"
 msgstr ":mod:`!dataclasses` --- کلاس‌های داده"
 
 msgid "**Source code:** :source:`Lib/dataclasses.py`"
-msgstr ":sources:`Lib/dataclasses.py`"
+msgstr ":source:`Lib/dataclasses.py`"
 
 msgid ""
 "This module provides a decorator and functions for automatically adding "
@@ -645,7 +645,7 @@ msgstr ""
 "فیلدهای فقط کلیدواژه‌ای نیز در :attr:`!__match_args__` گنجانده نمی‌شوند."
 
 msgid "*doc*: optional docstring for this field."
-msgstr "*doc*: رشته‌ی مستندسازی (docstring) اختیاری برای این فیلد."
+msgstr "*doc*: رشته‌ی مستندسازی اختیاری برای این فیلد."
 
 msgid ""
 "If the default value of a field is specified by a call to :func:`!field`, "

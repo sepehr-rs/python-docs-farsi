@@ -1480,7 +1480,7 @@ msgid "When possible, put comments on a line of their own."
 msgstr "در صورت امکان، توضیحات را در یک خط جداگانه قرار دهید."
 
 msgid "Use docstrings."
-msgstr "از رشته‌های مستندسازی (docstring) استفاده کنید."
+msgstr "از رشته‌های مستندسازی استفاده کنید."
 
 msgid "Use spaces around operators and after commas, but not directly inside bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr "در اطراف عملگرها و پس از ویرگول‌ها فاصله قرار دهید، اما مستقیماً درون سازه‌های محصورکننده فاصله نگذارید: ``a = f(1, 2) + g(3, 4)``."
@@ -1516,7 +1516,7 @@ msgid "documentation strings"
 msgstr "رشته‌های مستندسازی"
 
 msgid "docstrings"
-msgstr "رشته‌های مستندسازی (docstring)"
+msgstr "رشته‌های مستندسازی"
 
 msgid "strings, documentation"
 msgstr "رشته‌ها، مستندسازی"

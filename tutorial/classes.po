@@ -242,7 +242,7 @@ msgstr ""
 "        return 'hello world'"
 
 msgid "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`~type.__doc__` is also a valid attribute, returning the docstring belonging to the class: ``\"A simple example class\"``."
-msgstr "سپس ``MyClass.i`` و ``MyClass.f`` ارجاعهای ویژگی معتبری هستند که به‌ترتیب یک عدد صحیح و یک شیء تابع را برمی‌گردانند. به ویژگی‌های کلاس نیز می‌توان مقدار داد، بنابراین می‌توانید مقدار ``MyClass.i`` را با تخصیص (مقداردهی) تغییر دهید. :attr:`~type.__doc__` نیز یک ویژگی معتبر است که رشته‌ی مستند (docstring) متعلق به کلاس را برمی‌گرداند: ``\"A simple example class\"``."
+msgstr "سپس ``MyClass.i`` و ``MyClass.f`` ارجاعهای ویژگی معتبری هستند که به‌ترتیب یک عدد صحیح و یک شیء تابع را برمی‌گردانند. به ویژگی‌های کلاس نیز می‌توان مقدار داد، بنابراین می‌توانید مقدار ``MyClass.i`` را با تخصیص (مقداردهی) تغییر دهید. :attr:`~type.__doc__` نیز یک ویژگی معتبر است که رشته‌ی مستند  متعلق به کلاس را برمی‌گرداند: ``\"A simple example class\"``."
 
 msgid "Class *instantiation* uses function notation.  Just pretend that the class object is a parameterless function that returns a new instance of the class. For example (assuming the above class)::"
 msgstr "*نمونه‌سازی* کلاس از نماد توابع استفاده می‌کند. فقط تصور کنید که شیء کلاس، یک تابع بدون پارامتر است که یک نمونه‌ی جدید از کلاس را برمی‌گرداند. برای مثال (با فرض کلاس بالا)::"

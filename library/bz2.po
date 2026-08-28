@@ -27,7 +27,7 @@ msgid ":mod:`!bz2` --- Support for :program:`bzip2` compression"
 msgstr ":mod:`!bz2` --- پشتیبانی از فشرده‌سازی :program:`bzip2`"
 
 msgid "**Source code:** :source:`Lib/bz2.py`"
-msgstr ":sources:`Lib/bz2.py`"
+msgstr ":source:`Lib/bz2.py`"
 
 msgid ""
 "This module provides a comprehensive interface for compressing and "

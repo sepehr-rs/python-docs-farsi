@@ -663,7 +663,7 @@ msgstr ""
 
 msgid "The old values are returned as a tuple: (delay, interval)."
 msgstr ""
-"مقادیر قدیمی به‌صورت یک تاپل (tuple) بازگردانده می‌شوند: (delay, interval)."
+"مقادیر قدیمی به‌صورت یک تاپلبازگردانده می‌شوند: (delay, interval)."
 
 msgid ""
 "Attempting to pass an invalid interval timer will cause an "

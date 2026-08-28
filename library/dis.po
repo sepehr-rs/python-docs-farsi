@@ -2277,7 +2277,7 @@ msgid "``INTRINSIC_LIST_TO_TUPLE``"
 msgstr "``INTRINSIC_LIST_TO_TUPLE``"
 
 msgid "Converts a list to a tuple"
-msgstr "یک فهرست را به تاپل (tuple) تبدیل می‌کند"
+msgstr "یک فهرست را به تاپلتبدیل می‌کند"
 
 msgid "``INTRINSIC_TYPEVAR``"
 msgstr "``INTRINSIC_TYPEVAR``"

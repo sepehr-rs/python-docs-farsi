@@ -710,7 +710,7 @@ msgid ""
 "Return a tuple ``(fg, bg)`` containing the colors for the requested color "
 "pair. The value of *pair_number* must be between ``0`` and ``COLOR_PAIRS - 1``."
 msgstr ""
-"یک تاپل (tuple) ``(fg, bg)`` را برمی‌گرداند که شامل رنگ‌های جفت‌رنگ درخواستی است. "
+"یک تاپل  ``(fg, bg)`` را برمی‌گرداند که شامل رنگ‌های جفت‌رنگ درخواستی است. "
 "مقدار *pair_number* باید بین ``0`` و ``COLOR_PAIRS - 1`` باشد."
 
 msgid ""

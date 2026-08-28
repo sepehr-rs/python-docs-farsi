@@ -895,7 +895,7 @@ msgid ""
 "*args* is a list or tuple of arguments for the target invocation.  Defaults "
 "to ``()``."
 msgstr ""
-"*args* یک فهرست یا تاپل (tuple) از آرگومان‌ها برای فراخوانی هدف است. مقدار "
+"*args* یک فهرست یا تاپلاز آرگومان‌ها برای فراخوانی هدف است. مقدار "
 "پیش‌فرض آن ``()`` است."
 
 msgid ""

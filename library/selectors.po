@@ -28,7 +28,7 @@ msgid ":mod:`!selectors` --- High-level I/O multiplexing"
 msgstr ":mod:`!selectors` --- تسهیم سطح بالای I/O (multiplexing)"
 
 msgid "**Source code:** :source:`Lib/selectors.py`"
-msgstr ":sources:`Lib/selectors.py`"
+msgstr ":source:`Lib/selectors.py`"
 
 msgid "Introduction"
 msgstr "مقدمه"

@@ -31,7 +31,7 @@ msgid ""
 ":source:`Lib/concurrent/futures/process.py`, and "
 ":source:`Lib/concurrent/futures/interpreter.py`"
 msgstr ""
-":sources:`Lib/concurrent/futures/thread.py`، "
+":source:`Lib/concurrent/futures/thread.py`، "
 ":source:`Lib/concurrent/futures/process.py` و "
 ":source:`Lib/concurrent/futures/interpreter.py`"
 

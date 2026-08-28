@@ -2386,7 +2386,7 @@ msgstr ""
 "مستندات :mod:`xml.parsers.expat` را ببینید."
 
 msgid "A tuple of *line*, *column* numbers, specifying where the error occurred."
-msgstr "یک تاپل (tuple) از شماره‌های *خط* و *ستون*، که محل وقوع خطا را مشخص می‌کند."
+msgstr "یک تاپلاز شماره‌های *خط* و *ستون*، که محل وقوع خطا را مشخص می‌کند."
 
 msgid "Footnotes"
 msgstr "پانوشت‌ها"

@@ -23,7 +23,7 @@ msgid "Call graph introspection"
 msgstr "درون‌نگری گراف فراخوانی"
 
 msgid "**Source code:** :source:`Lib/asyncio/graph.py`"
-msgstr ":sources:`Lib/asyncio/graph.py`"
+msgstr ":source:`Lib/asyncio/graph.py`"
 
 msgid ""
 "asyncio has powerful runtime call graph introspection utilities to trace the"

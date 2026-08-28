@@ -3370,7 +3370,7 @@ msgid ""
 "that has a title and description. For example::"
 msgstr ""
 "توجه داشته باشید که در حال حاضر گروه‌های آرگومان متقابلاً انحصاری از آرگومان‌های *title* و "
-"*description*ِ :meth:`~ArgumentParser.add_argument_group` پشتیبانی نمی‌کنند. با این حال، می‌توان یک گروه متقابلاً انحصاری "
+"*description*\\ِ :meth:`~ArgumentParser.add_argument_group` پشتیبانی نمی‌کنند. با این حال، می‌توان یک گروه متقابلاً انحصاری "
 "را به یک گروه آرگومان که دارای عنوان و توضیحات است اضافه کرد. برای مثال::"
 
 msgid ""

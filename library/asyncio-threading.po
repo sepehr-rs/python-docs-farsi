@@ -113,7 +113,7 @@ msgid ""
 "**Task management**: Tasks and futures created in one thread should not be "
 "awaited or manipulated from another thread."
 msgstr ""
-"**مدیریت تسک **:تسک‌ها (Tasks) و فیوچر‌ها (futures) ایجادشده در یک نخ"
+"**مدیریت تسک**: تسک‌ها (Tasks) و فیوچر‌ها (futures) ایجادشده در یک نخ"
 " نباید از نخی دیگر await شوند یا دستکاری شوند."
 
 msgid ""

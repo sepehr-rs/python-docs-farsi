@@ -323,7 +323,7 @@ msgid "* (asterisk)"
 msgstr "* (ستاره)"
 
 msgid "in glob-style wildcards"
-msgstr "در وایلدکارت‌های به‌سبک glob"
+msgstr "در وایلدکارد‌های به‌سبک glob"
 
 msgid "? (question mark)"
 msgstr "? (علامت پرسش)"

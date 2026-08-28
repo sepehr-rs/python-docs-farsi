@@ -1003,7 +1003,7 @@ msgstr ""
 "مطابقت دارد."
 
 msgid ":class:`!ReprEnum` uses the :meth:`repr() <Enum.__repr__>` of :class:`Enum`, but the :class:`str() <str>` of the mixed-in data type:"
-msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>`ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع دادهٔ آمیخته (mixed-in) استفاده می‌کند:"
+msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>` ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع دادهٔ آمیخته (mixed-in) استفاده می‌کند:"
 
 msgid ":meth:`!int.__str__` for :class:`IntEnum` and :class:`IntFlag`"
 msgstr ":meth:`!int.__str__` برای :class:`IntEnum` و :class:`IntFlag`"

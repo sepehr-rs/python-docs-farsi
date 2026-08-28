@@ -198,7 +198,7 @@ msgid "Return a tuple containing names of locals in this function."
 msgstr "یک تاپل شامل نام‌های متغیر‌های محلی این تابع برمی‌گرداند."
 
 msgid "Return a tuple containing names of globals in this function."
-msgstr "یک تاپل (tuple) شامل نام‌های متغیرهای سراسری در این تابع برمی‌گرداند."
+msgstr "یک تاپلشامل نام‌های متغیرهای سراسری در این تابع برمی‌گرداند."
 
 msgid ""
 "Return a tuple containing names of explicitly declared nonlocals in this "
