@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-26 03:59+0000\n"
-"PO-Revision-Date: 2026-07-27 12:39+0330\n"
+"PO-Revision-Date: 2026-08-28 11:07+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
 "Language: fa\n"
@@ -52,7 +52,7 @@ msgid "https://www.python.org:  The major Python website.  It contains code, doc
 msgstr "https://www.python.org: وب‌سایت اصلی پایتون. این وب‌سایت شامل کد، مستندات و پیوندهایی به صفحات مرتبط با پایتون در سراسر وب است."
 
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
-msgstr "https://docs.python.org: دسترسی سریع به مستندات پایتون"
+msgstr "https://docs.python.org: دسترسی سریع به مستندات پایتون."
 
 msgid "https://pypi.org: The Python Package Index, previously also nicknamed the Cheese Shop [#]_, is an index of user-created Python modules that are available for download.  Once you begin releasing code, you can register it here so that others can find it."
 msgstr "https://pypi.org: اندیس بسته‌های پایتون (Python Package Index) که پیش‌تر با نام مستعار Cheese Shop [#]_ نیز شناخته می‌شد، فهرستی از ماژول‌های پایتونِ ایجادشده توسط کاربران است که برای دانلود در دسترس هستند. هنگامی که انتشار کدهای خود را آغاز کردید، می‌توانید آن‌ها را در اینجا ثبت کنید تا دیگران بتوانند آن‌ها را پیدا کنند."

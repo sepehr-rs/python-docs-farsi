@@ -674,7 +674,7 @@ msgstr ""
 
 msgid "Returns IMAP namespaces as defined in :rfc:`2342`."
 msgstr ""
-"نام‌فضاهای IMAP را، همان‌طور که در :rfc:`2342` تعریف شده است، بازمی‌گرداند."
+"فضای نام های IMAP را، همان‌طور که در :rfc:`2342` تعریف شده است، بازمی‌گرداند."
 
 msgid "Send ``NOOP`` to server."
 msgstr "``NOOP`` را به سرور ارسال کنید."
@@ -722,7 +722,7 @@ msgid ""
 " into any user's mailbox."
 msgstr ""
 "احراز هویت به‌عنوان *user* را فرض کنید. به یک مدیر مجاز اجازه می‌دهد تا "
-"به‌صورت پروکسی (proxy) به صندوق پستی هر کاربری دسترسی یابد."
+"به‌صورت پراکسی  به صندوق پستی هر کاربری دسترسی یابد."
 
 msgid ""
 "Reads *size* bytes from the remote server. You may override this method."

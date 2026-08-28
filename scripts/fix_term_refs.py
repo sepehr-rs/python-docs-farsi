@@ -105,7 +105,7 @@ FALLBACK_MAP = {
     "mock": "ماک",
     "module": "ماژول",
     "mutable": "تغییرپذیر",
-    "namespace": "نام‌فضا",
+    "namespace": "فضای نام",
     "object": "شیء",
     "operator": "عملگر",
     "package": "بسته",

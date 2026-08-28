@@ -1800,7 +1800,7 @@ msgid ""
 "See :meth:`types.SimpleNamespace` for a mutable namespace based on an "
 "underlying dictionary instead of a tuple."
 msgstr ""
-"برای یک نام‌فضای تغییر‌پذیر که به‌جای یک تاپل، مبتنی بر یک دیکشنری زیربنایی "
+"برای یک فضای نام تغییر‌پذیر که به‌جای یک تاپل، مبتنی بر یک دیکشنری زیربنایی "
 "است، :meth:`types.SimpleNamespace` را ببینید."
 
 msgid ""

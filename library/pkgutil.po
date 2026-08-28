@@ -316,7 +316,7 @@ msgstr ""
 "اگر بسته پیدا نشود یا بارگذاری نشود، یا از یک :term:`بارگذار <loader>` "
 "استفاده کند که از :meth:`get_data <importlib.abc.ResourceLoader.get_data>` "
 "پشتیبانی نکند، ``None`` برگردانده می‌شود. به‌ویژه، :term:`بارگذار <loader>` "
-"برای :term:`بسته‌های نام‌فضا <namespace package>` از "
+"برای :term:`بسته‌های فضای نام <namespace package>` از "
 ":meth:`get_data <importlib.abc.ResourceLoader.get_data>` پشتیبانی نمی‌کند."
 
 msgid ""

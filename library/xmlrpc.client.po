@@ -984,7 +984,7 @@ msgid ""
 "To access an XML-RPC server through a HTTP proxy, you need to define a "
 "custom transport.  The following example shows how::"
 msgstr ""
-"برای دسترسی به یک سرور XML-RPC از طریق یک پروکسی HTTP، باید یک انتقال سفارشی"
+"برای دسترسی به یک سرور XML-RPC از طریق یک پراکسی HTTP، باید یک انتقال سفارشی"
 " (transport) تعریف کنید. مثال زیر نشان می‌دهد که چگونه::"
 
 msgid ""

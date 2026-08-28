@@ -78,9 +78,6 @@ msgstr "زیرکلاسی از :exc:`RuntimeError`."
 msgid "The requested read operation did not complete fully."
 msgstr "عملیات خواندن درخواست‌شده به‌طور کامل انجام نشد."
 
-msgid "Raised by the :ref:`asyncio stream APIs <asyncio-streams>`."
-msgstr "توسط :ref:`API‌های جریان asyncio <asyncio-streams>` پرتاب می‌شود."
-
 msgid "This exception is a subclass of :exc:`EOFError`."
 msgstr "این استثنا یک زیرکلاس از :exc:`EOFError` است."
 

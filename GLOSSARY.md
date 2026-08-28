@@ -74,10 +74,11 @@
 | mock               | ماک                     |
 | module             | ماژول                   |
 | mutable            | تغییرپذیر               |
-| namespace          | نام‌فضا                  |
+| namespace          | فضای نام                  |
 | object             | شیء                     |
 | operator           | عملگر                   |
 | package            | بسته                    |
+| proxy              | پراکسی                  |
 | parallelism        | موازی‌سازی               |
 | parameter          | پارامتر                 |
 | positional         | جایگاهی                 |

@@ -26,7 +26,7 @@ msgid "Built-in Constants"
 msgstr "ثابت‌های توکار"
 
 msgid "A small number of constants live in the built-in namespace.  They are:"
-msgstr "تعداد کمی از ثابت‌ها در نام‌فضای توکار قرار دارند. آن‌ها عبارتند از:"
+msgstr "تعداد کمی از ثابت‌ها در فضای نام توکار قرار دارند. آن‌ها عبارتند از:"
 
 msgid ""
 "The false value of the :class:`bool` type. Assignments to ``False`` are "
@@ -153,7 +153,7 @@ msgid ""
 "interpreter shell and should not be used in programs."
 msgstr ""
 "ماژول :mod:`site` (که به‌صورت خودکار هنگام راه‌اندازی ایمپورت می‌شود، مگر "
-"اینکه گزینه خط فرمان :option:`-S` داده شده باشد) چند ثابت را به نام‌فضای "
+"اینکه گزینه خط فرمان :option:`-S` داده شده باشد) چند ثابت را به فضای نام "
 "توکار اضافه می‌کند. این ثابت‌ها برای پوسته تعاملی مفسر مفید هستند و نباید در"
 " برنامه‌ها استفاده شوند."
 
