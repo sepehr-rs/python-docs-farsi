@@ -479,7 +479,7 @@ msgstr ""
 "[(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]"
 
 msgid "The :mod:`heapq` module provides functions for implementing heaps based on regular lists.  The lowest valued entry is always kept at position zero.  This is useful for applications which repeatedly access the smallest element but do not want to run a full list sort::"
-msgstr "ماژول :mod:`heapq` توابعی برای پیاده‌سازی هیپ (Heap) بر پایهٔ فهرست‌های معمولی فراهم می‌کند. در این ساختار، کوچک‌ترین عنصر همیشه در اندیس صفر قرار می‌گیرد. این ویژگی برای برنامه‌هایی مفید است که به‌طور مکرر به کوچک‌ترین عنصر نیاز دارند، اما نمی‌خواهند هر بار کل فهرست را مرتب کنند::"
+msgstr "ماژول :mod:`heapq` توابعی برای پیاده‌سازی هیپبر پایهٔ فهرست‌های معمولی فراهم می‌کند. در این ساختار، کوچک‌ترین عنصر همیشه در اندیس صفر قرار می‌گیرد. این ویژگی برای برنامه‌هایی مفید است که به‌طور مکرر به کوچک‌ترین عنصر نیاز دارند، اما نمی‌خواهند هر بار کل فهرست را مرتب کنند::"
 
 msgid ""
 ">>> from heapq import heapify, heappop, heappush\n"

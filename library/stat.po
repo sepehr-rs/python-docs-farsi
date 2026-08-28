@@ -64,7 +64,7 @@ msgid "Return non-zero if the mode is from a regular file."
 msgstr "اگر حالت مربوط به یک فایل معمولی باشد، مقدار غیرصفر برمی‌گرداند."
 
 msgid "Return non-zero if the mode is from a FIFO (named pipe)."
-msgstr "اگر حالت از یک FIFO (لوله نام‌دار) باشد، مقدار غیرصفر برمی‌گرداند."
+msgstr "اگر حالت از یک FIFO (پایپ نام‌دار) باشد، مقدار غیرصفر برمی‌گرداند."
 
 msgid "Return non-zero if the mode is from a symbolic link."
 msgstr "اگر حالت از یک پیوند نمادین باشد، مقدار غیرصفر برمی‌گرداند."

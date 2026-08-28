@@ -269,7 +269,7 @@ msgid ""
 "objects are converted to strings.  The default implementation uses the "
 "internals of the :func:`saferepr` implementation."
 msgstr ""
-"این متد به‌عنوان یک قلاب (hook) ارائه شده است تا زیرکلاس‌ها بتوانند نحوه "
+"این متد به‌عنوان یک قلابارائه شده است تا زیرکلاس‌ها بتوانند نحوه "
 "تبدیل اشیاء به رشته را تغییر دهند. پیاده‌سازی پیش‌فرض از بخش‌های داخلی "
 "پیاده‌سازی :func:`saferepr` استفاده می‌کند."
 

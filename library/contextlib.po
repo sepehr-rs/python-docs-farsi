@@ -831,7 +831,7 @@ msgid ""
 "using ``ContextDecorator`` as a mixin class::"
 msgstr ""
 "مدیران زمینه موجودی که از قبل یک کلاس پایه دارند، می‌توانند با استفاده از "
-"``ContextDecorator`` به‌عنوان کلاس ترکیبی (mixin class) گسترش یابند::"
+"``ContextDecorator`` به‌عنوان کلاس میکس‌این گسترش یابند::"
 
 msgid ""
 "from contextlib import ContextDecorator\n"

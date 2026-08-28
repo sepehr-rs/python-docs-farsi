@@ -201,7 +201,7 @@ msgstr ""
 
 msgid "Ignore symlinks pointing outside the given directory."
 msgstr ""
-"پیوندهای نمادین (symlinks) اشاره‌کننده به بیرون از پوشهٔ داده‌شده را نادیده "
+"پیوندهای نمادیناشاره‌کننده به بیرون از پوشهٔ داده‌شده را نادیده "
 "بگیرید."
 
 msgid ""

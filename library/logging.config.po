@@ -1375,7 +1375,7 @@ msgstr ""
 "شیئی که API عمومی :meth:`Queue.put_nowait <queue.Queue.put_nowait>` و "
 ":meth:`Queue.get <queue.Queue.get>` را پیاده‌سازی می‌کند. برای نمونه، این "
 "ممکن است یک نمونه واقعی از :class:`queue.Queue` یا زیرکلاسی از آن، یا یک "
-"پراکسی  به‌دست‌آمده از طریق "
+"پراکسیبه‌دست‌آمده از طریق "
 ":meth:`multiprocessing.managers.SyncManager.Queue` باشد."
 
 msgid ""

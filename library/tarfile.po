@@ -406,7 +406,7 @@ msgid "``'w|bz2'``"
 msgstr "``'w|bz2'``"
 
 msgid "Open a bzip2 compressed *stream* for writing."
-msgstr "یک *جریان* (stream) فشرده‌شده با bzip2 را برای نوشتن باز کنید."
+msgstr "یک *جریان*  فشرده‌شده با bzip2 را برای نوشتن باز کنید."
 
 msgid "``'w|xz'``"
 msgstr "``'w|xz'``"
@@ -512,7 +512,7 @@ msgstr "برای امتناع از استخراج یک عضو خارج از پو
 
 msgid "Raised to refuse extracting a special file (e.g. a device or pipe)."
 msgstr ""
-"برای خودداری از استخراج یک فایل خاص (مثلاً یک دستگاه یا لوله (pipe)) پرتاب "
+"برای خودداری از استخراج یک فایل خاص (مثلاً یک دستگاه یا پایپ ) پرتاب "
 "می‌شود."
 
 msgid "Raised to refuse extracting a symbolic link with an absolute path."

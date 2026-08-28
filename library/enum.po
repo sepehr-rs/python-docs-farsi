@@ -303,7 +303,7 @@ msgid "type"
 msgstr "نوع"
 
 msgid "A mix-in type for the new Enum."
-msgstr "یک نوع mix-in برای Enum جدید."
+msgstr "یک نوع میکس‌این برای Enum جدید."
 
 msgid "start"
 msgstr "شروع"

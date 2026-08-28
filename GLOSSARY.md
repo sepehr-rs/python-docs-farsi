@@ -12,6 +12,7 @@
 | argument           | آرگومان                 |
 | async              | ناهمگام، غیرهمگام       |
 | attribute          | ویژگی، صفت، شاخصه       |
+| action             | اکشن، کنش               |
 | await              | await                   |
 | boolean            | بولی                    |
 | bootstrapping      | بوت‌استرپینگ             |
@@ -49,8 +50,11 @@
 | garbage collection | زباله‌روبی               |
 | generator          | تولیدگر                 |
 | generic function   | تابع عام، تابع عمومی    |
+| symlink            | پیوند نمادین            |
 | global             | سراسری                  |
 | hexadecimal        | مبنای شانزده            |
+| heap               | هیپ                     |
+| mix-in             | میکس‌این                 |
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
 | import             | ایمپورت                 |
@@ -74,16 +78,17 @@
 | mock               | ماک                     |
 | module             | ماژول                   |
 | mutable            | تغییرپذیر               |
-| namespace          | فضای نام                  |
+| namespace          | فضای نام                |
 | object             | شیء                     |
 | operator           | عملگر                   |
 | package            | بسته                    |
+| pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | parallelism        | موازی‌سازی               |
 | parameter          | پارامتر                 |
 | positional         | جایگاهی                 |
 | property           | ویژگی، پراپرتی، خصوصیت  |
-| quotation          | علامت نقل‌قول            |
+| quotation          | علامت نقل‌قول             |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
 | return             | بازگشت، برگرداندن       |
@@ -104,3 +109,4 @@
 | value              | مقدار                   |
 | variable           | متغیر                   |
 | wrapper            | پوششی، دربرگیرنده       |
+| widget             | ابزارک                    |            

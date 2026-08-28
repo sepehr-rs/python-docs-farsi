@@ -2165,7 +2165,7 @@ msgid ""
 "Create an empty file with *filename*.  If it already exists, truncate it."
 msgstr ""
 "یک فایل خالی با *filename* ایجاد کنید. اگر از قبل وجود دارد، آن را کوتاه "
-"کنید (truncate)."
+"کنید ."
 
 msgid "Count the number of open file descriptors."
 msgstr "تعداد توصیف‌گرهای فایل باز را بشمارید."

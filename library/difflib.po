@@ -337,7 +337,7 @@ msgid ""
 "*tabsize* is an optional keyword argument to specify tab stop spacing and "
 "defaults to ``8``."
 msgstr ""
-"*tabsize* یک آرگومان کلیدواژه‌ای اختیاری برای تعیین فاصله‌گذاری تب (tab stop) "
+"*tabsize* یک آرگومان کلیدواژه‌ای اختیاری برای تعیین فاصله‌گذاری تب  "
 "است و مقدار پیش‌فرض آن ``8`` است."
 
 msgid ""

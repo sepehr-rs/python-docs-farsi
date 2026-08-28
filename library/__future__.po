@@ -32,7 +32,7 @@ msgid "**Source code:** :source:`Lib/__future__.py`"
 msgstr "**کد منبع:** :source:`Lib/__future__.py`"
 
 msgid "Imports of the form ``from __future__ import feature`` are called :ref:`future statements <future>`. These are special-cased by the Python compiler to allow the use of new Python features in modules containing the future statement before the release in which the feature becomes standard."
-msgstr "ایمپورت‌هایی به شکل ``from __future__ import feature``، :ref:`future statements <future>` نامیده می‌شوند. این موارد توسط کامپایلر پایتون به‌صورت ویژه درنظر گرفته می‌شوند تا امکان استفاده از ویژگیهای جدید پایتون را در ماژول‌هایی که شامل دستور آینده هستند، قبل از نسخه‌ای که آن ویژگی به‌صورت استاندارد درمی‌آید، فراهم کنند."
+msgstr "ایمپورت‌هایی به شکل ``from __future__ import feature``، :ref:`future statements <future>` نامیده می‌شوند. این موارد توسط کامپایلر پایتون به‌صورت ویژه درنظر گرفته می‌شوند تا امکان استفاده از ویژگی‌های جدید پایتون را در ماژول‌هایی که شامل دستور آینده هستند، قبل از نسخه‌ای که آن ویژگی به‌صورت استاندارد درمی‌آید، فراهم کنند."
 
 msgid "While these future statements are given additional special meaning by the Python compiler, they are still executed like any other import statement and the :mod:`!__future__` exists and is handled by the import system the same way any other Python module would be. This design serves three purposes:"
 msgstr "اگرچه این دستورات آینده‌نگر به‌واسطه کامپایلر پایتون معنای ویژه‌ای پیدا می‌کنند، اما همچنان مانند هر دستور ایمپورت دیگری اجرا می‌شوند. ماژول :mod:`!__future__` وجود دارد و توسط سازوکار ایمپورت، دقیقاً مانند هر ماژول پایتون دیگری مدیریت می‌شود. این طراحی سه هدف را دنبال می‌کند:"

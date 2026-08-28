@@ -234,7 +234,7 @@ msgid "The maximum size of a file which the process may create."
 msgstr "حداکثر اندازهٔ فایلی که فرایند می‌تواند ایجاد کند."
 
 msgid "The maximum size (in bytes) of the process's heap."
-msgstr "حداکثر اندازه‌ی انباشت (heap) فرایند (به بایت)"
+msgstr "حداکثر اندازه‌ی انباشتفرایند (به بایت)"
 
 msgid ""
 "The maximum size (in bytes) of the call stack for the current process.  This"
@@ -379,7 +379,7 @@ msgid ""
 msgstr ""
 "هر یک از فیلدهای مقدار بازگشتی، نحوه استفاده از یک منبع سیستمی خاص را توصیف "
 "می‌کنند، برای مثال میزان زمانی که در حالت کاربر صرف اجرا شده یا تعداد دفعاتی"
-" که فرایند از حافظه اصلی خارج (swap out) شده است. برخی مقادیر به بازه تیک "
+" که فرایند از حافظه اصلی خارجشده است. برخی مقادیر به بازه تیک "
 "ساعت وابسته‌اند، برای مثال میزان حافظه‌ای که فرایند در حال استفاده از آن "
 "است."
 
@@ -492,7 +492,7 @@ msgid ":attr:`!ru_nswap`"
 msgstr ":attr:`!ru_nswap`"
 
 msgid "number of swap outs"
-msgstr "تعداد swap out‌ها (swap outs)"
+msgstr "تعداد خروج‌ها "
 
 msgid "``9``"
 msgstr "``9``"

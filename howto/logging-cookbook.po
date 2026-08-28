@@ -6886,7 +6886,7 @@ msgstr ""
 "                super().emit(rec)"
 
 msgid "You can use the mixin as in the following script:"
-msgstr "می‌توانید از میکسین (mixin) مانند اسکریپت زیر استفاده کنید:"
+msgstr "می‌توانید از میکسینمانند اسکریپت زیر استفاده کنید:"
 
 msgid ""
 "import logging\n"

@@ -114,7 +114,7 @@ msgid ""
 "The returned finder is cached in :data:`sys.path_importer_cache` if it was "
 "newly created by a path hook."
 msgstr ""
-"یابندهٔ برگردانده‌شده، اگر به‌تازگی به‌وسیلهٔ یک قلاب مسیر (path hook) ایجاد"
+"یابندهٔ برگردانده‌شده، اگر به‌تازگی به‌وسیلهٔ یک قلاب مسیرایجاد"
 " شده باشد، در :data:`sys.path_importer_cache` نهان‌سازی می‌شود."
 
 msgid ""

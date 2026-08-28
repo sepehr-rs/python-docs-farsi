@@ -4237,7 +4237,7 @@ msgstr "``nim``"
 
 msgid ""
 "play the classical nim game with three heaps of sticks against the computer."
-msgstr "بازی کلاسیک نیم (Nim) را با سه توده چوب در برابر رایانه انجام دهید."
+msgstr "بازی کلاسیک نیم (Nim) را با سه هیپ چوب در برابر رایانه انجام دهید."
 
 msgid "turtles as nimsticks, event driven (mouse, keyboard)"
 msgstr "لاک‌پشت‌ها به‌عنوان nimsticks، رویدادمحور (ماوس، صفحه‌کلید)"

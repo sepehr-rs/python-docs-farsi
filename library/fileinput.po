@@ -332,7 +332,7 @@ msgstr ""
 "استاندارد خوانده می‌شود، غیرفعال است."
 
 msgid "The two following opening hooks are provided by this module:"
-msgstr "این ماژول دو قلاب (hook) بازکننده‌ی زیر را فراهم می‌کند:"
+msgstr "این ماژول دو قلاببازکننده‌ی زیر را فراهم می‌کند:"
 
 msgid ""
 "Transparently opens files compressed with gzip and bzip2 (recognized by the "

@@ -423,7 +423,7 @@ msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum "
 "<https://gvanrossum.github.io/>`_, Python's creator."
 msgstr ""
-"Benevolent Dictator For Life،  نام دیگر `Guido van Rossum "
+"Benevolent Dictator For Life،نام دیگر `Guido van Rossum "
 "<https://gvanrossum.github.io/>`_، خالق پایتون."
 
 msgid "binary file"

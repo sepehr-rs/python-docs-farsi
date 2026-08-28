@@ -223,7 +223,7 @@ msgid ""
 "While symlinks are supported on Windows, they are not recommended. Of particular note is that double-clicking "
 "``python.exe`` in File Explorer will resolve the symlink eagerly and ignore the virtual environment."
 msgstr ""
-"اگرچه پیوندهای نمادین (symlinks) در ویندوز پشتیبانی می‌شوند، اما استفاده از آن‌ها توصیه نمی‌شود. به‌ویژه توجه داشته "
+"اگرچه پیوندهای نمادیندر ویندوز پشتیبانی می‌شوند، اما استفاده از آن‌ها توصیه نمی‌شود. به‌ویژه توجه داشته "
 "باشید که دوبار کلیک کردن روی ``python.exe`` در File Explorer، پیوند نمادین را بلافاصله حل می‌کند و محیط مجازی را "
 "نادیده می‌گیرد."
 
@@ -430,7 +430,7 @@ msgstr "*clear* -- یک مقدار بولی که اگر درست باشد، مح
 
 msgid "*symlinks* -- a boolean value indicating whether to attempt to symlink the Python binary rather than copying."
 msgstr ""
-"*symlinks* -- یک مقدار بولی که نشان می‌دهد آیا باید به‌جای کپی کردن، برای ایجاد پیوند نمادین (symlink) دودویی Python "
+"*symlinks* -- یک مقدار بولی که نشان می‌دهد آیا باید به‌جای کپی کردن، برای ایجاد پیوند نمادیندودویی Python "
 "تلاش شود یا خیر."
 
 msgid ""

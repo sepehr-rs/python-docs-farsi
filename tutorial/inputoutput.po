@@ -41,7 +41,7 @@ msgid "Often you'll want more control over the formatting of your output than si
 msgstr "اغلب، کنترل بیشتری بر قالب‌بندی خروجی خود می‌خواهید تا صرفاً چاپ مقادیر با فاصله از هم. روش‌های گوناگونی برای قالب‌بندی خروجی وجود دارد."
 
 msgid "To use :ref:`formatted string literals <tut-f-strings>`, begin a string with ``f`` or ``F`` before the opening quotation mark or triple quotation mark. Inside this string, you can write a Python expression between ``{`` and ``}`` characters that can refer to variables or literal values."
-msgstr "برای استفاده از :ref:`لیترال‌های رشته‌ای قالبی <tut-f-strings>`، یک رشته را با ``f`` یا ``F`` قبل از علامت نقل‌قول یا نقل‌قول سه‌گانه آغاز کنید. درون این رشته، می‌توانید یک عبارت پایتون را بین  نویسه‌های ``{`` و ``}`` بنویسید که می‌تواند به متغیرها یا مقادیر لیترال ارجاع دهد."
+msgstr "برای استفاده از :ref:`لیترال‌های رشته‌ای قالبی <tut-f-strings>`، یک رشته را با ``f`` یا ``F`` قبل از علامت نقل‌قول یا نقل‌قول سه‌گانه آغاز کنید. درون این رشته، می‌توانید یک عبارت پایتون را بیننویسه‌های ``{`` و ``}`` بنویسید که می‌تواند به متغیرها یا مقادیر لیترال ارجاع دهد."
 
 msgid ""
 ">>> year = 2016\n"

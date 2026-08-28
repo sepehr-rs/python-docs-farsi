@@ -448,7 +448,7 @@ msgid ""
 "If a name is annotated in a function scope, then this name is local for that "
 "scope. Annotations are never evaluated and stored in function scopes."
 msgstr ""
-"اگر نامی در محدوده تابع حاشیه‌نویسی (annotation) شده باشد، این نام برای آن "
+"اگر نامی در محدوده تابع حاشیه‌نویسیشده باشد، این نام برای آن "
 "محدوده محلی است. حاشیه‌نویسی‌ها هرگز ارزیابی نمی‌شوند و در محدوده‌های تابع ذخیره "
 "نمی‌شوند."
 
@@ -1711,7 +1711,7 @@ msgid "__debug__"
 msgstr "__debug__"
 
 msgid "exception"
-msgstr "استثنا"
+msgstr "exception"
 
 msgid "AssertionError"
 msgstr "AssertionError"
@@ -1732,13 +1732,13 @@ msgid "deletion"
 msgstr "حذف"
 
 msgid "global"
-msgstr "سراسری"
+msgstr "global"
 
 msgid "unbinding"
 msgstr "لغو اتصال"
 
 msgid "return"
-msgstr "بازگشت"
+msgstr "return"
 
 msgid "function"
 msgstr "تابع"
@@ -1753,7 +1753,7 @@ msgid "keyword"
 msgstr "کلیدواژه"
 
 msgid "finally"
-msgstr "سرانجام (finally)"
+msgstr "finally"
 
 msgid "yield"
 msgstr "yield"
@@ -1861,4 +1861,4 @@ msgid "nonlocal"
 msgstr "nonlocal"
 
 msgid "type"
-msgstr "نوع"
+msgstr "type"

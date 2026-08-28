@@ -230,7 +230,7 @@ msgid ""
 "Force the :c:func:`malloc` heap to clean itself up and return unused blocks "
 "to the operating system. On failure, this raises :exc:`OSError`."
 msgstr ""
-"توده (heap) مربوط به :c:func:`malloc` را مجبور می‌کند تا خود را پاک‌سازی کند"
+"هیپمربوط به :c:func:`malloc` را مجبور می‌کند تا خود را پاک‌سازی کند"
 " و بلوک‌های استفاده‌نشده را به سیستم‌عامل بازگرداند. در صورت شکست، "
 ":exc:`OSError` پرتاب می‌شود."
 

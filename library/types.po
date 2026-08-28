@@ -124,7 +124,7 @@ msgid ":pep:`3115` - Metaclasses in Python 3000"
 msgstr ":pep:`3115` - فراکلاس‌ها در Python 3000"
 
 msgid "Introduced the ``__prepare__`` namespace hook"
-msgstr "قلاب (hook) فضای نام ``__prepare__`` معرفی شد"
+msgstr "قلابفضای نام ``__prepare__`` معرفی شد"
 
 msgid "Resolve MRO entries dynamically as specified by :pep:`560`."
 msgstr "مدخل‌های MRO به‌صورت پویا، مطابق :pep:`560` حل می‌شوند."

@@ -190,7 +190,7 @@ msgstr "پیوندهای بیش‌ازحد"
 msgid ""
 "Broken pipe. This error is mapped to the exception :exc:`BrokenPipeError`."
 msgstr ""
-"لوله‌ی شکسته. این خطا به استثنای :exc:`BrokenPipeError` نگاشته شده است."
+"پایپ‌ی شکسته. این خطا به استثنای :exc:`BrokenPipeError` نگاشته شده است."
 
 msgid "Math argument out of domain of func"
 msgstr "آرگومان ریاضی خارج از دامنه‌ی تابع"

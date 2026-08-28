@@ -785,7 +785,7 @@ msgid ""
 "A debugging hook.  If :attr:`debuglevel` is greater than zero, messages will"
 " be printed to stdout as the response is read and parsed."
 msgstr ""
-"یک قلاب اشکال‌زدایی (hook). اگر :attr:`debuglevel` بزرگ‌تر از صفر باشد، در "
+"یک قلاب اشکال‌زدایی . اگر :attr:`debuglevel` بزرگ‌تر از صفر باشد، در "
 "حین خوانده و تجزیه شدن پاسخ، پیام‌ها در stdout چاپ خواهند شد."
 
 msgid "Is ``True`` if the stream is closed."

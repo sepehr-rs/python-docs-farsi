@@ -1062,7 +1062,7 @@ msgstr ""
 "'February 29'"
 
 msgid "The earliest representable date, ``date(MINYEAR, 1, 1)``."
-msgstr "زودترین تاریخ نمایش‌پذیر، ``date(MINYEAR, 1, 1)``."
+msgstr "زودترین تاریخ قابل نمایش، ``date(MINYEAR, 1, 1)``."
 
 msgid "The latest representable date, ``date(MAXYEAR, 12, 31)``."
 msgstr "آخرین تاریخ قابل‌نمایش، ``date(MAXYEAR, 12, 31)``."

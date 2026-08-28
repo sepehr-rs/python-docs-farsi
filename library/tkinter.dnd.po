@@ -58,17 +58,17 @@ msgid "Top-down search of the area under the mouse for a target widget:"
 msgstr "جستجوی بالا به پایین در ناحیهٔ زیر ماوس برای یک ابزارک هدف (widget):"
 
 msgid "the target widget should have a callable *dnd_accept* attribute;"
-msgstr "ویجت هدف باید یک ویژگی *dnd_accept* قابل فراخوانی داشته باشد؛"
+msgstr "ابزارک هدف باید یک ویژگی *dnd_accept* قابل فراخوانی داشته باشد؛"
 
 msgid ""
 "if *dnd_accept* is not present or returns ``None``, the search moves to the "
 "parent widget;"
 msgstr ""
-"اگر *dnd_accept* وجود نداشته باشد یا ``None`` را برگرداند، جستجو به ویجت "
+"اگر *dnd_accept* وجود نداشته باشد یا ``None`` را برگرداند، جستجو به ابزارک "
 "والد منتقل می‌شود؛"
 
 msgid "if no target widget is found, the target object is ``None``."
-msgstr "اگر هیچ ویجت هدفی یافت نشود، شیء هدف ``None`` خواهد بود."
+msgstr "اگر هیچ ابزارک هدفی یافت نشود، شیء هدف ``None`` خواهد بود."
 
 msgid "Call to ``<old_target>.dnd_leave(source, event)``."
 msgstr "فراخوانی ``<old_target>.dnd_leave(source, event)``."

@@ -115,7 +115,7 @@ msgid ""
 "Destroy the dialog window, clearing the reference to the widget that had the"
 " initial focus."
 msgstr ""
-"پنجرهٔ محاوره را از بین می‌برد و ارجاع به ویجتی که فوکوس اولیه را داشت پاک "
+"پنجرهٔ محاوره را از بین می‌برد و ارجاع به ابزارکی که فوکوس اولیه را داشت پاک "
 "می‌کند."
 
 msgid ""

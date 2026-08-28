@@ -276,7 +276,7 @@ msgid "``await`` :meth:`loop.sendfile`"
 msgstr "``await`` :meth:`loop.sendfile`"
 
 msgid "Send a file over a transport."
-msgstr "ارسال یک فایل از طریق یک انتقال (transport)."
+msgstr "ارسال یک فایل از طریق یک انتقال ."
 
 msgid "``await`` :meth:`loop.start_tls`"
 msgstr "``await`` :meth:`loop.start_tls`"
@@ -483,26 +483,26 @@ msgid "Transports"
 msgstr "انتقال‌ها"
 
 msgid "All transports implement the following methods:"
-msgstr "تمام ترابری‌ها (transports) متدهای زیر را پیاده‌سازی می‌کنند:"
+msgstr "تمام ترابری‌ها  متدهای زیر را پیاده‌سازی می‌کنند:"
 
 msgid ":meth:`transport.close() <BaseTransport.close>`"
 msgstr ":meth:`transport.close() <BaseTransport.close>`"
 
 msgid "Close the transport."
-msgstr "انتقال (transport) را ببندید."
+msgstr "انتقال  را ببندید."
 
 msgid ":meth:`transport.is_closing() <BaseTransport.is_closing>`"
 msgstr ":meth:`transport.is_closing() <BaseTransport.is_closing>`"
 
 msgid "Return ``True`` if the transport is closing or is closed."
 msgstr ""
-"اگر انتقال (transport) در حال بسته شدن یا بسته باشد، ``True`` برمی‌گرداند."
+"اگر انتقال  در حال بسته شدن یا بسته باشد، ``True`` برمی‌گرداند."
 
 msgid ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
 msgstr ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
 
 msgid "Request for information about the transport."
-msgstr "درخواست اطلاعات دربارهٔ انتقال (transport)."
+msgstr "درخواست اطلاعات دربارهٔ انتقال ."
 
 msgid ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
 msgstr ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
@@ -521,7 +521,7 @@ msgid ""
 "Returned from methods like :meth:`loop.create_connection`, "
 ":meth:`loop.create_unix_connection`, :meth:`loop.connect_read_pipe`, etc:"
 msgstr ""
-"انتقال‌دهنده‌هایی (Transports) که می‌توانند داده دریافت کنند (اتصال‌های TCP "
+"انتقال‌دهنده‌هایی  که می‌توانند داده دریافت کنند (اتصال‌های TCP "
 "و Unix، پایپ‌ها و غیره). از متدهایی مانند :meth:`loop.create_connection`، "
 ":meth:`loop.create_unix_connection`، :meth:`loop.connect_read_pipe` و غیره "
 "بازگشت داده می‌شوند:"
@@ -533,7 +533,7 @@ msgid ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
 msgstr ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
 
 msgid "Return ``True`` if the transport is receiving."
-msgstr "اگر انتقال (transport) در حال دریافت باشد، ``True`` برمی‌گرداند."
+msgstr "اگر انتقال  در حال دریافت باشد، ``True`` برمی‌گرداند."
 
 msgid ":meth:`transport.pause_reading() <ReadTransport.pause_reading>`"
 msgstr ":meth:`transport.pause_reading() <ReadTransport.pause_reading>`"
@@ -564,20 +564,20 @@ msgid ":meth:`transport.write() <WriteTransport.write>`"
 msgstr ":meth:`transport.write() <WriteTransport.write>`"
 
 msgid "Write data to the transport."
-msgstr "داده‌ها را در ترنسپورت (transport) بنویسید."
+msgstr "داده‌ها را در انتقال  بنویسید."
 
 msgid ":meth:`transport.writelines() <WriteTransport.writelines>`"
 msgstr ":meth:`transport.writelines() <WriteTransport.writelines>`"
 
 msgid "Write buffers to the transport."
-msgstr "بافر‌ها را به ترنسپورت بنویسید."
+msgstr "بافر‌ها را به انتقال بنویسید."
 
 msgid ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
 msgstr ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
 
 msgid "Return :const:`True` if the transport supports sending EOF."
 msgstr ""
-"اگر انتقال (transport) از ارسال EOF پشتیبانی کند، :const:`True` را "
+"اگر انتقال  از ارسال EOF پشتیبانی کند، :const:`True` را "
 "برمی‌گرداند."
 
 msgid ":meth:`transport.write_eof() <WriteTransport.write_eof>`"
@@ -590,7 +590,7 @@ msgid ":meth:`transport.abort() <WriteTransport.abort>`"
 msgstr ":meth:`transport.abort() <WriteTransport.abort>`"
 
 msgid "Close the transport immediately."
-msgstr "ترنسپورت (transport) را بلافاصله ببندید."
+msgstr "انتقال  را بلافاصله ببندید."
 
 msgid ""
 ":meth:`transport.get_write_buffer_size() "
@@ -626,7 +626,7 @@ msgstr "آستانه‌های بالا و پایین جدید را برای کن
 
 msgid "Transports returned by :meth:`loop.create_datagram_endpoint`:"
 msgstr ""
-"انتقال‌های (transports) برگردانده‌شده توسط "
+"انتقال‌های  برگردانده‌شده توسط "
 ":meth:`loop.create_datagram_endpoint`:"
 
 msgid "Datagram Transports"
@@ -645,7 +645,7 @@ msgid ""
 "Low-level transport abstraction over subprocesses. Returned by "
 ":meth:`loop.subprocess_exec` and :meth:`loop.subprocess_shell`:"
 msgstr ""
-"انتزاع انتقال (transport) سطح پایین بر روی زیرفرایندها. توسط "
+"انتزاع انتقال  سطح پایین بر روی زیرفرایندها. توسط "
 ":meth:`loop.subprocess_exec` و :meth:`loop.subprocess_shell` برگردانده "
 "می‌شود:"
 
@@ -669,7 +669,7 @@ msgid ""
 "Return the transport for the requested communication pipe (*stdin*, "
 "*stdout*, or *stderr*)."
 msgstr ""
-"ترنسپورت (transport) برای لولهٔ ارتباطی درخواست‌شده (*stdin*، *stdout* یا "
+"انتقال برای لولهٔ ارتباطی درخواست‌شده (*stdin*، *stdout* یا "
 "*stderr*) را برمی‌گرداند."
 
 msgid ""
@@ -727,7 +727,7 @@ msgstr "``callback`` :meth:`pause_writing() <BaseProtocol.pause_writing>`"
 
 msgid "Called when the transport's buffer goes over the high water mark."
 msgstr ""
-"هنگامی که بافر (buffer) انتقال (transport) از آستانه بالا (high water mark) "
+"هنگامی که بافر  انتقال  از آستانه بالا (high water mark) "
 "عبور کند، فراخوانی می‌شود."
 
 msgid "``callback`` :meth:`resume_writing() <BaseProtocol.resume_writing>`"
@@ -735,7 +735,7 @@ msgstr "``callback`` :meth:`resume_writing() <BaseProtocol.resume_writing>`"
 
 msgid "Called when the transport's buffer drains below the low water mark."
 msgstr ""
-"هنگامی که بافر (buffer) انتقال (transport) به زیر آستانه پایین (low water "
+"هنگامی که بافر  انتقال  به زیر آستانه پایین (low water "
 "mark) تخلیه شود، فراخوانی می‌شود."
 
 msgid "Streaming Protocols (TCP, Unix Sockets, Pipes)"
@@ -807,7 +807,7 @@ msgid ""
 "Called when the child process writes data into its *stdout* or *stderr* "
 "pipe."
 msgstr ""
-"هنگامی فراخوانی می‌شود که فرایند فرزند داده‌ای را در پایپ (pipe) *stdout* یا"
+"هنگامی فراخوانی می‌شود که فرایند فرزند داده‌ای را در پایپ  *stdout* یا"
 " *stderr* خود می‌نویسد."
 
 msgid "``callback`` :meth:`~SubprocessProtocol.pipe_connection_lost`"
@@ -816,7 +816,7 @@ msgstr "``callback`` :meth:`~SubprocessProtocol.pipe_connection_lost`"
 msgid ""
 "Called when one of the pipes communicating with the child process is closed."
 msgstr ""
-"هنگامی که یکی از پایپ‌های (pipe) ارتباطی با فرایند فرزند بسته می‌شود، "
+"هنگامی که یکی از پایپ‌های  ارتباطی با فرایند فرزند بسته می‌شود، "
 "فراخوانی می‌شود."
 
 msgid ""

@@ -722,7 +722,7 @@ msgid ""
 " into any user's mailbox."
 msgstr ""
 "احراز هویت به‌عنوان *user* را فرض کنید. به یک مدیر مجاز اجازه می‌دهد تا "
-"به‌صورت پراکسی  به صندوق پستی هر کاربری دسترسی یابد."
+"به‌صورت پراکسیبه صندوق پستی هر کاربری دسترسی یابد."
 
 msgid ""
 "Reads *size* bytes from the remote server. You may override this method."

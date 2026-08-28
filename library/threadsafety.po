@@ -39,7 +39,7 @@ msgid ""
 "see :ref:`freethreading-python-howto`."
 msgstr ""
 "برای راهنمایی کلی درباره نوشتن کد ایمن در برابر نخ‌ها (thread-safe) در "
-"پایتون آزاد‌نخ (free-threaded)، به :ref:`freethreading-python-howto` مراجعه "
+"پایتون آزاد‌نخ ، به :ref:`freethreading-python-howto` مراجعه "
 "کنید."
 
 msgid "Thread safety levels"

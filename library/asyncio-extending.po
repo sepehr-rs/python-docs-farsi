@@ -107,7 +107,7 @@ msgid "*loop* is an optional event loop instance."
 msgstr "*loop* نمونه‌ای اختیاری از حلقه رویداد است."
 
 msgid "Create a built-in task instance."
-msgstr "یک نمونه از وظیفه (task) توکار ایجاد کنید."
+msgstr "یک نمونه از وظیفهتوکار ایجاد کنید."
 
 msgid ""
 "*loop* is an optional event loop instance. The rest of arguments are "
@@ -127,16 +127,16 @@ msgid ""
 "keep a task visible by :func:`asyncio.all_tasks` and "
 ":func:`asyncio.current_task`:"
 msgstr ""
-"یک پیاده‌سازی تسک (task) شخص ثالث باید توابع زیر را فراخوانی کند تا یک تسک "
+"یک پیاده‌سازی تسکشخص ثالث باید توابع زیر را فراخوانی کند تا یک تسک "
 "برای :func:`asyncio.all_tasks` و :func:`asyncio.current_task` قابل مشاهده "
 "باقی بماند:"
 
 msgid "Register a new *task* as managed by *asyncio*."
 msgstr ""
-"یک *وظیفه (task)* جدید را به‌عنوان مدیریت‌شده توسط *asyncio* ثبت کنید."
+"یک *وظیفه * جدید را به‌عنوان مدیریت‌شده توسط *asyncio* ثبت کنید."
 
 msgid "Call the function from a task constructor."
-msgstr "تابع را از یک سازنده‌ی وظیفه (task) فراخوانی کنید."
+msgstr "تابع را از یک سازنده‌ی وظیفهفراخوانی کنید."
 
 msgid "Unregister a *task* from *asyncio* internal structures."
 msgstr "ثبت یک *task* را از ساختارهای داخلی *asyncio* حذف کنید."

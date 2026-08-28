@@ -9315,7 +9315,7 @@ msgid ""
 "See :ref:`types` for this information.  It describes :ref:`stack frame objects <frame-"
 "objects>`, :ref:`traceback objects <traceback-objects>`, and slice objects."
 msgstr ""
-"برای این اطلاعات :ref:`types` را ببینید. این بخش :ref:`شیء‌های قاب پشته (stack frame) "
+"برای این اطلاعات :ref:`types` را ببینید. این بخش :ref:`شیء‌های فریم پشته (stack frame) "
 "<frame-objects>`، :ref:`شیء‌های ردگیری پشته <traceback-objects>` و شیء‌های برش (slice) "
 "را توصیف می‌کند."
 
@@ -10180,7 +10180,7 @@ msgid "context management"
 msgstr "مدیریت زمینه"
 
 msgid "annotation"
-msgstr "حاشیه‌نویسی (annotation)"
+msgstr "حاشیه‌نویسی "
 
 msgid "type annotation; type hint"
 msgstr "حاشیه‌نویسی نوع؛ راهنمای نوع"

@@ -2406,7 +2406,7 @@ msgid ""
 "decode byte sequences that correspond to surrogate code points."
 msgstr ""
 "کدگذارهای utf-16\\* و utf-32\\* دیگر اجازه نمی‌دهند نقاط کد جانشین "
-"(surrogate code points) (``U+D800``--``U+DFFF``) کدگذاری شوند. کدگشاهای "
+"(``U+D800``--``U+DFFF``) کدگذاری شوند. کدگشاهای "
 "utf-32\\* دیگر دنباله‌های بایتی متناظر با نقاط کد جانشین (surrogate code "
 "points) را کدگشایی نمی‌کنند."
 

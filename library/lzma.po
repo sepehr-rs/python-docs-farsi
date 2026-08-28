@@ -178,7 +178,7 @@ msgid ""
 "``\"a\"``."
 msgstr ""
 "اگر *filename* یک شیء فایل باشد (نه یک نام فایل واقعی)، حالت ``\"w\"`` فایل "
-"را کوتاه نمی‌کند (truncate) و در عوض معادل ``\"a\"`` است."
+"را کوتاه نمی‌کند  و در عوض معادل ``\"a\"`` است."
 
 msgid ""
 "When opening a file for reading, the input file may be the concatenation of "

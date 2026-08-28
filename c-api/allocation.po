@@ -32,7 +32,7 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid "Allocating objects on the heap"
-msgstr "تخصیص اشیاء روی پشته"
+msgstr "تخصیص اشیاء روی هیپ"
 
 msgid "Initialize a newly allocated object *op* with its type and initial reference.  Returns the initialized object.  Other fields of the object are not initialized.  Despite its name, this function is unrelated to the object's :meth:`~object.__init__` method (:c:member:`~PyTypeObject.tp_init` slot).  Specifically, this function does **not** call the object's :meth:`!__init__` method."
 msgstr "یک شیء *op* که به‌تازگی تخصیص داده شده را با نوع و مرجع اولیه‌اش مقداردهی اولیه می‌کند. شیء مقداردهی‌شده را برمی‌گرداند. سایر فیلدهای شیء مقداردهی اولیه نمی‌شوند. با وجود نام این تابع، آن به متد :meth:`~object.__init__` شیء (درگاه :c:member:`~PyTypeObject.tp_init`) مربوط نیست. به‌طور خاص، این تابع متد :meth:`!__init__` شیء را **فراخوانی نمی‌کند**."
