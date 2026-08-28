@@ -1113,7 +1113,7 @@ msgid ""
 "Python source file (``.py``).  This file must be accessible and readable by "
 "the target process when execution is triggered."
 msgstr ""
-"``debugger_script_path``: یک بافر  با اندازهٔ ثابت که مسیر کامل یک "
+"``debugger_script_path``: یک بافربا اندازهٔ ثابت که مسیر کامل یک "
 "فایل منبع پایتون (``.py``) را در خود نگه می‌دارد. این فایل باید هنگامی که "
 "اجرا راه‌اندازی می‌شود، برای فرایند هدف قابل دسترسی و خواندن باشد."
 

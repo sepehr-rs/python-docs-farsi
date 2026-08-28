@@ -89,7 +89,7 @@ msgid ""
 msgstr ""
 "در لینوکس >= 2.6.11، ماژول :mod:`!fcntl` ثابت‌های ``F_GETPIPE_SZ`` و "
 "``F_SETPIPE_SZ`` را در معرض قرار می‌دهد که به ترتیب امکان بررسی و تغییر "
-"اندازهٔ پایپ  را فراهم می‌کنند."
+"اندازهٔ پایپرا فراهم می‌کنند."
 
 msgid ""
 "On FreeBSD, the :mod:`!fcntl` module exposes the ``F_DUP2FD`` and "

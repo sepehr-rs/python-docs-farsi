@@ -328,7 +328,7 @@ msgid ""
 "Controls the type of Content Transfer Encodings that may be or are required "
 "to be used.  The possible values are:"
 msgstr ""
-"نوع کدگذاری‌های انتقال محتوا  را که ممکن است "
+"نوع کدگذاری‌های انتقال محتوارا که ممکن است "
 "استفاده شوند یا استفاده از آن‌ها الزامی باشد، کنترل می‌کند. مقادیر ممکن "
 "عبارت‌اند از:"
 
