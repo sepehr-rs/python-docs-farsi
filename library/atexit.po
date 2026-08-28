@@ -225,7 +225,7 @@ msgstr ""
 "atexit.register(goodbye, adjective='nice', name='Donny')"
 
 msgid "Usage as a :term:`decorator`::"
-msgstr "استفاده به‌عنوان یک :term:`دکوراتور`::"
+msgstr "استفاده به‌عنوان یک :term:`دکوراتور <decorator>`::"
 
 msgid ""
 "import atexit\n"

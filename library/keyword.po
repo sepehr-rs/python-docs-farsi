@@ -36,7 +36,7 @@ msgstr ""
 "keywords>` است یا خیر."
 
 msgid "Return ``True`` if *s* is a Python :ref:`keyword <keywords>`."
-msgstr "اگر *s* یک کلیدواژه پایتون باشد، ``True`` برمی‌گرداند."
+msgstr "اگر *s* یک :ref:`کلیدواژه پایتون <keywords>` باشد، ``True`` برمی‌گرداند."
 
 msgid ""
 "Sequence containing all the :ref:`keywords <keywords>` defined for the "

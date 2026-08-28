@@ -345,7 +345,7 @@ msgid "Describes the XML-RPC protocol extension for introspection."
 msgstr "افزونه‌ی پروتکل XML-RPC برای درون‌نگری را توصیف می‌کند."
 
 msgid "`XML-RPC Specification <http://xmlrpc.scripting.com/spec.html>`_"
-msgstr "مشخصات XML-RPC <http://xmlrpc.scripting.com/spec.html>`_"
+msgstr "مشخصات `XML-RPC <http://xmlrpc.scripting.com/spec.html>`_"
 
 msgid "The official specification."
 msgstr "مشخصات رسمی."

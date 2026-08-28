@@ -723,7 +723,7 @@ msgid ""
 "definition of :term:`asynchronous iterable`."
 msgstr ""
 "ABC برای کلاس‌هایی که متد ``__aiter__`` را ارائه می‌دهند. همچنین تعریف "
-":term:`تکرارپذیر ناهمگام` را ببینید."
+":term:`تکرارپذیر ناهمگام <asynchronous iterable>` را ببینید."
 
 msgid ""
 "ABC for classes that provide ``__aiter__`` and ``__anext__`` methods.  See "

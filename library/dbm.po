@@ -88,7 +88,9 @@ msgstr ""
 "رشته‌ای شامل نام ماژول مورد نیاز، مانند ``'dbm.ndbm'`` یا ``'dbm.gnu'``"
 
 msgid "*filename* accepts a :term:`path-like object`."
-msgstr "*filename* یک :term:`شیء مسیر‌مانند (path-like object)` را می‌پذیرد."
+msgstr ""
+"*filename* یک :term:`شیء مسیر‌مانند (path-like object) <path-like object>` "
+"را می‌پذیرد."
 
 msgid "Open a database and return the corresponding database object."
 msgstr ""

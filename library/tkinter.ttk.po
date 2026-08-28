@@ -2046,7 +2046,7 @@ msgid ""
 "`The Tile Widget Set <https://tktable.sourceforge.net/tile/tile-"
 "tcl2004.pdf>`_"
 msgstr ""
-"مجموعه‌ی ویجت Tile <https://tktable.sourceforge.net/tile/tile-tcl2004.pdf>`_"
+"مجموعه‌ی ویجت `Tile <https://tktable.sourceforge.net/tile/tile-tcl2004.pdf>`_"
 
 msgid ""
 "Joe English's 2004 paper introducing the theme engine (then the separate "

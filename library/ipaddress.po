@@ -1295,7 +1295,7 @@ msgid ""
 " raised if *addresses* contains mixed version objects."
 msgstr ""
 "یک تکرارگر از شیء‌های جمع‌شدهٔ :class:`IPv4Network` یا :class:`IPv6Network` "
-"برمی‌گرداند. *addresses* یک :term:`تکرارپذیر` از شیء‌های "
+"برمی‌گرداند. *addresses* یک :term:`تکرارپذیر <iterable>` از شیء‌های "
 ":class:`IPv4Network` یا :class:`IPv6Network` است. اگر *addresses* شامل "
 "شیء‌هایی با نسخه‌های مختلط باشد، یک :exc:`TypeError` پرتاب می‌شود."
 

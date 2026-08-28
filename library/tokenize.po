@@ -71,7 +71,7 @@ msgid "Tokenizing Input"
 msgstr "توکن‌بندی ورودی"
 
 msgid "The primary entry point is a :term:`generator`:"
-msgstr "نقطه ورود اصلی یک :term:`تولیدگر` است:"
+msgstr "نقطه ورود اصلی یک :term:`تولیدگر <generator>` است:"
 
 msgid ""
 "The :func:`.tokenize` generator requires one argument, *readline*, which "

@@ -287,7 +287,8 @@ msgid ""
 "The type of :term:`coroutine` objects, created by :keyword:`async def` "
 "functions."
 msgstr ""
-"نوع اشیای :term:`هم‌روال`، که با توابع :keyword:`async def` ایجاد می‌شوند."
+"نوع اشیای :term:`هم‌روال <coroutine>`، که با توابع :keyword:`async def` "
+"ایجاد می‌شوند."
 
 msgid ""
 "The type of :term:`asynchronous generator`-iterator objects, created by "
@@ -437,8 +438,8 @@ msgstr ""
 msgid "This type can now be subclassed."
 msgstr "اکنون می‌توان این نوع را زیرکلاس‌سازی کرد."
 
-msgid ":ref:`Generic Alias Types<types-genericalias>`"
-msgstr ":ref:`انواع نام‌های مستعار عام<types-genericalias>`"
+msgid ":ref:`Generic Alias Types <types-genericalias>`"
+msgstr ":ref:`انواع نام‌های مستعار عام <types-genericalias>`"
 
 msgid "In-depth documentation on instances of :class:`!types.GenericAlias`"
 msgstr "مستندات تفصیلی درباره‌ی نمونه‌های :class:`!types.GenericAlias`"
@@ -449,8 +450,8 @@ msgstr ":pep:`585` - راهنمای نوع برای عمومی‌ها در مج�
 msgid "Introducing the :class:`!types.GenericAlias` class"
 msgstr "معرفی کلاس :class:`!types.GenericAlias`"
 
-msgid "The type of :ref:`union type expressions<types-union>`."
-msgstr "نوع :ref:`عبارت‌های نوع union<types-union>`."
+msgid "The type of :ref:`union type expressions <types-union>`."
+msgstr "نوع :ref:`عبارت‌های نوع union <types-union>`."
 
 msgid "This is now an alias for :class:`typing.Union`."
 msgstr "این اکنون یک نام مستعار برای :class:`typing.Union` است."
