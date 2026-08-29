@@ -324,7 +324,7 @@ msgid "a *coroutine function*: an :keyword:`async def` function;"
 msgstr "یک *تابع هم‌روال*: یک تابع :keyword:`async def`؛"
 
 msgid "a *coroutine object*: an object returned by calling a *coroutine function*."
-msgstr "یک *شیء هم‌روال*: شیئی که با فراخوانی یک *تابع هم‌روال* برگردانده می‌شود."
+msgstr "یک *شیء هم‌روال*: شیءای که با فراخوانی یک *تابع هم‌روال* برگردانده می‌شود."
 
 msgid "Tasks"
 msgstr "وظایف"

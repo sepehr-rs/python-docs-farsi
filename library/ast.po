@@ -2642,7 +2642,7 @@ msgid ""
 "is being matched against the cases) and ``cases`` contains an iterable "
 "of :class:`match_case` nodes with the different cases."
 msgstr ""
-"یک دستور ``match``. ``subject`` شامل موضوع تطبیق (شیئی که با حالت‌های مختلف تطبیق "
+"یک دستور ``match``. ``subject`` شامل موضوع تطبیق (شیءای که با حالت‌های مختلف تطبیق "
 "داده می‌شود) است و ``cases`` شامل یک تکرارپذیر از گره‌های :class:`match_case` برای "
 "حالت‌های مختلف است."
 

@@ -446,7 +446,7 @@ msgid "gi_yieldfrom"
 msgstr "gi_yieldfrom"
 
 msgid "object being iterated by ``yield from``, or ``None``"
-msgstr "شیئی که با ``yield from`` تکرار می‌شود، یا ``None``"
+msgstr "شیءای که با ``yield from`` تکرار می‌شود، یا ``None``"
 
 msgid "async generator"
 msgstr "تولیدگر ناهمگام"

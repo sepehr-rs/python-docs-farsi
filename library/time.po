@@ -1014,7 +1014,7 @@ msgid ""
 "attribute name.  The following values are present:"
 msgstr ""
 "نوع دنبالهٔ مقادیر زمانی که توسط :func:`gmtime`، :func:`localtime` "
-"و :func:`strptime` برگردانده می‌شود. این، شیئی با رابط :term:`named tuple` است: "
+"و :func:`strptime` برگردانده می‌شود. این، شیءای با رابط :term:`named tuple` است: "
 "می‌توان به مقادیر از طریق اندیس و نام ویژگی دسترسی داشت. مقادیر زیر موجود هستند:"
 
 msgid "Index"

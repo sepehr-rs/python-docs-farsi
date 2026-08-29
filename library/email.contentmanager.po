@@ -149,7 +149,7 @@ msgid ""
 "*typekey* is passed to :meth:`set_content`.  For the possible values of "
 "*typekey*, see :meth:`set_content`."
 msgstr ""
-"*handler* را به‌عنوان تابعی ثبت کنید که هنگام ارسال شیئی از نوع مطابق با "
+"*handler* را به‌عنوان تابعی ثبت کنید که هنگام ارسال شیءای از نوع مطابق با "
 "*typekey* به :meth:`set_content` فراخوانی می‌شود. برای مقادیر ممکن "
 "*typekey*، :meth:`set_content` را ببینید."
 

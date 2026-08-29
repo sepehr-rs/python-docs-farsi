@@ -804,7 +804,7 @@ msgid ""
 ":mailheader:`Content-Type` header.  Optional *header* is the header to "
 "search instead of :mailheader:`Content-Type`."
 msgstr ""
-"*failobj* اختیاری، شیئی است که اگر سربرگ :mailheader:`Content-Type` وجود "
+"*failobj* اختیاری، شیءای است که اگر سربرگ :mailheader:`Content-Type` وجود "
 "نداشته باشد، بازگردانده می‌شود. *header* اختیاری، سربرگی است که به‌جای "
 ":mailheader:`Content-Type` جستجو می‌شود."
 

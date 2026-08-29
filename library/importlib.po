@@ -1444,7 +1444,7 @@ msgid ""
 "additional, module-specific data to use when loading the module.  Otherwise "
 "it should be set to ``None``."
 msgstr ""
-":term:`یابنده <finder>` ممکن است این ویژگی را روی شیئی حاوی داده‌های اضافی و"
+":term:`یابنده <finder>` ممکن است این ویژگی را روی شیءای حاوی داده‌های اضافی و"
 " مختص ماژول برای استفاده هنگام بارگذاری ماژول تنظیم کند. در غیر این صورت "
 "باید روی ``None`` تنظیم شود."
 

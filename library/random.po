@@ -192,7 +192,7 @@ msgid ""
 "Return an object capturing the current internal state of the generator.  This "
 "object can be passed to :func:`setstate` to restore the state."
 msgstr ""
-"شیئی را برمی‌گرداند که وضعیت داخلی فعلی تولیدگر را ثبت می‌کند. می‌توان این شیء را "
+"شیءای را برمی‌گرداند که وضعیت داخلی فعلی تولیدگر را ثبت می‌کند. می‌توان این شیء را "
 "به :func:`setstate` ارسال کرد تا وضعیت بازیابی شود."
 
 msgid ""

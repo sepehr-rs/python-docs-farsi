@@ -647,7 +647,7 @@ msgid ""
 "Return the object that should be used as the ``wsgi.errors`` stream. The "
 "default implementation just returns ``sys.stderr``."
 msgstr ""
-"شیئی را که باید به‌عنوان جریان ``wsgi.errors`` استفاده شود، برمی‌گرداند. "
+"شیءای را که باید به‌عنوان جریان ``wsgi.errors`` استفاده شود، برمی‌گرداند. "
 "پیاده‌سازی پیش‌فرض فقط ``sys.stderr`` را برمی‌گرداند."
 
 msgid ""

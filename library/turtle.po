@@ -2142,7 +2142,7 @@ msgstr ""
 "لاک‌پشت و همچنین ترسیمات سایر لاک‌پشت‌ها تحت تأثیر قرار نمی‌گیرند."
 
 msgid "object to be written to the TurtleScreen"
-msgstr "شیئی که باید در TurtleScreen نوشته شود"
+msgstr "شیءای که باید در TurtleScreen نوشته شود"
 
 msgid "True/False"
 msgstr "درست/نادرست"

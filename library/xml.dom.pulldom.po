@@ -133,7 +133,7 @@ msgid ""
 "``node`` is an object of type :class:`xml.dom.minidom.Document`, "
 ":class:`xml.dom.minidom.Element` or :class:`xml.dom.minidom.Text`."
 msgstr ""
-"``node`` شیئی از نوع :class:`xml.dom.minidom.Document`، "
+"``node`` شیءای از نوع :class:`xml.dom.minidom.Document`، "
 ":class:`xml.dom.minidom.Element` یا :class:`xml.dom.minidom.Text` است."
 
 msgid ""

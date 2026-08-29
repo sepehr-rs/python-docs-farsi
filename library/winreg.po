@@ -293,7 +293,7 @@ msgid ""
 "An object that holds the value data, and whose type depends on the "
 "underlying registry type"
 msgstr ""
-"شیئی که داده‌های مقدار را نگه می‌دارد و نوع آن به نوع رجیستری (registry) "
+"شیءای که داده‌های مقدار را نگه می‌دارد و نوع آن به نوع رجیستری (registry) "
 "زیربنایی وابسته است"
 
 msgid "``2``"

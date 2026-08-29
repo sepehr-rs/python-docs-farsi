@@ -975,7 +975,7 @@ msgid ""
 "``get_buffer()`` must return an object implementing the :ref:`buffer "
 "protocol <bufferobjects>`."
 msgstr ""
-"``get_buffer()`` باید شیئی را برگرداند که :ref:`پروتکل بافر <bufferobjects>`"
+"``get_buffer()`` باید شیءای را برگرداند که :ref:`پروتکل بافر <bufferobjects>`"
 " را پیاده‌سازی کند."
 
 msgid "Called when the buffer was updated with the received data."

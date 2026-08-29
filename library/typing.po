@@ -1585,7 +1585,7 @@ msgid ""
 "just ``str`` is not. A string created by composing ``LiteralString``-typed objects is also acceptable as a "
 "``LiteralString``."
 msgstr ""
-"هر لیترال رشته‌ای با ``LiteralString`` سازگار است، همان‌طور که یک ``LiteralString`` دیگر نیز چنین است. با این حال، شیئی "
+"هر لیترال رشته‌ای با ``LiteralString`` سازگار است، همان‌طور که یک ``LiteralString`` دیگر نیز چنین است. با این حال، شیءای "
 "که فقط به‌عنوان ``str`` نوع‌دهی شده باشد، سازگار نیست. رشته‌ای که با ترکیب اشیای دارای نوع ``LiteralString`` ایجاد شده "
 "باشد نیز به‌عنوان ``LiteralString`` قابل‌قبول است."
 

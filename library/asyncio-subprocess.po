@@ -266,7 +266,7 @@ msgid ""
 ":func:`~asyncio.create_subprocess_exec` and "
 ":func:`~asyncio.create_subprocess_shell` functions."
 msgstr ""
-"شیئی که فرآیندهای سیستم‌عاملِ ایجادشده توسط توابع "
+"شیءای که فرآیندهای سیستم‌عاملِ ایجادشده توسط توابع "
 ":func:`~asyncio.create_subprocess_exec` و "
 ":func:`~asyncio.create_subprocess_shell` را در بر می‌گیرد."
 

@@ -425,7 +425,7 @@ msgstr ""
 
 msgid "A path object can be used anywhere an object implementing :class:`os.PathLike` is accepted::"
 msgstr ""
-"می‌توان از یک شیء مسیر در هر جایی که شیئی پیاده‌سازی‌کنندهٔ :class:`os.PathLike` پذیرفته می‌شود، استفاده کرد::"
+"می‌توان از یک شیء مسیر در هر جایی که شیءای پیاده‌سازی‌کنندهٔ :class:`os.PathLike` پذیرفته می‌شود، استفاده کرد::"
 
 msgid ""
 ">>> import os\n"

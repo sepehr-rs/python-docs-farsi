@@ -962,7 +962,7 @@ msgid "A string describing the specific codec error."
 msgstr "رشته‌ای که خطای خاص کدک را توصیف می‌کند."
 
 msgid "The object the codec was attempting to encode or decode."
-msgstr "شیئی که کدک در حال تلاش برای کدگذاری یا کدگشایی آن بود."
+msgstr "شیءای که کدک در حال تلاش برای کدگذاری یا کدگشایی آن بود."
 
 msgid "The first index of invalid data in :attr:`object`."
 msgstr "اولین اندیس داده‌های نامعتبر در :attr:`object`."

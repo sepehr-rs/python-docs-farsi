@@ -2400,7 +2400,7 @@ msgid "args_ - List of strings to parse.  The default is taken from :data:`sys.a
 msgstr "args_ - فهرستی از رشته‌ها برای تجزیه. مقدار پیش‌فرض از :data:`sys.argv` گرفته می‌شود."
 
 msgid "namespace_ - An object to take the attributes.  The default is a new empty :class:`Namespace` object."
-msgstr "namespace_ - شیئی که ویژگی‌ها را دریافت می‌کند. پیش‌فرض یک شیء :class:`Namespace` جدید و خالی است."
+msgstr "namespace_ - شیءای که ویژگی‌ها را دریافت می‌کند. پیش‌فرض یک شیء :class:`Namespace` جدید و خالی است."
 
 msgid "Option value syntax"
 msgstr "نحو مقدار گزینه"
