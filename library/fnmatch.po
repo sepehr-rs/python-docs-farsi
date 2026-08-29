@@ -42,7 +42,7 @@ msgid "Pattern"
 msgstr "الگو"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "``*``"
 msgstr "``*``"

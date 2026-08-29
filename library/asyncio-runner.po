@@ -263,7 +263,7 @@ msgid ""
 "before any user code is executed and removes it when exiting from the "
 "function."
 msgstr ""
-":meth:`asyncio.Runner.run` پیش از اجرای هر کد کاربر، یک کنترل‌کننده سفارشی "
+":meth:`asyncio.Runner.run` پیش از اجرای هر کد کاربر، یک هندلر سفارشی "
 "برای :const:`signal.SIGINT` نصب می‌کند و هنگام خروج از تابع، آن را حذف "
 "می‌کند."
 

@@ -716,7 +716,7 @@ msgstr ""
 "``422 UNPROCESSABLE_ENTITY``."
 
 msgid "HTTP status category"
-msgstr "دستهٔ وضعیت HTTP"
+msgstr "دسته وضعیت HTTP"
 
 msgid ""
 "The enum values have several properties to indicate the HTTP status "

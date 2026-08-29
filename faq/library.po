@@ -227,7 +227,7 @@ msgstr ""
 "در C است."
 
 msgid "Why don't my signal handlers work?"
-msgstr "چرا کنترل‌کننده‌های سیگنال من کار نمی‌کنند؟"
+msgstr "چرا هندلرهای سیگنال من کار نمی‌کنند؟"
 
 msgid ""
 "The most common problem is that the signal handler is declared with the "

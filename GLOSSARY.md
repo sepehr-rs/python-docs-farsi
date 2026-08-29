@@ -8,14 +8,16 @@
 | English            | فارسی                   |
 | ------------------ | ----------------------- |
 | accessibility      | دسترسی‌پذیری             |
+| availability       | دسترس‌پذیری              |
 | API                | API                     |
 | argument           | آرگومان                 |
 | async              | ناهمگام، غیرهمگام       |
 | attribute          | ویژگی، صفت، شاخصه       |
 | action             | اکشن، کنش               |
-| await               | await                   |
+| await              | await                   |
 | boolean            | بولی                    |
 | bootstrapping      | بوت‌استرپینگ             |
+| bind               | مقید کردن               |
 | built-in           | توکار، درونی، درون‌ساخته |
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
@@ -55,6 +57,8 @@
 | global             | سراسری، عمومی           |
 | hexadecimal        | مبنای شانزده            |
 | heap               | هیپ                     |
+| handler            | هندلر                   |
+| handle             | دسته                    |
 | mix-in             | میکس‌این                 |
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
@@ -70,30 +74,38 @@
 | keyword argument   | آرگومان کلیدواژه‌ای      |
 | list               | فهرست                   |
 | list comprehension | درک فهرستی              |
+| little-endian      | کوچک‌پایان               |
+| locale             | locale                  |
 | load               | بارگذاری                |
 | loader             | بارگذار                 |
 | local              | محلی                    |
 | loop               | حلقه                    |
+| logging            | گزارش‌گیری               |
 | metaclass          | فراکلاس                  |
 | method             | متد، روش                |
 | mock               | ماک                     |
+| manager            | مدیر                    |
 | module             | ماژول                   |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
 | object             | شیء                     |
+| octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
 | package            | بسته                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
+| payload            | بار                     |
 | parallelism        | موازی‌سازی               |
+| parser             | پارسر                   |
 | parameter          | پارامتر                 |
+| padding            | پُرکننده، پدینگ          |
 | positional         | جایگاهی                 |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
 | return             | بازگشت، برگرداندن       |
-| run time, run-time | زمان اجرا                |
+| run time, run-time | زمان اجرا               |
 | runtime            | ران‌تایم                 |
 | scope              | محدوده                  |
 | shadowing          | پوشاندن                 |

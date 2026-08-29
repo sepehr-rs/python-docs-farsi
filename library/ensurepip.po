@@ -88,7 +88,7 @@ msgid "The original rationale and specification for this module."
 msgstr "مبانی و مشخصات اولیه‌ی این ماژول."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "This module is not supported on :ref:`mobile platforms <mobile-"

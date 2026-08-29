@@ -910,10 +910,10 @@ msgstr "دسته‌ی یونی‌کد ``<Lu>`` - حروف بزرگ (شامل ``A
 
 msgid ""
 "Unicode category ``<Ll>`` - lowercase letters (includes ``a`` to ``z``)"
-msgstr "دستهٔ یونی‌کد ``<Ll>`` - حروف کوچک (شامل ``a`` تا ``z``)"
+msgstr "دسته یونی‌کد ``<Ll>`` - حروف کوچک (شامل ``a`` تا ``z``)"
 
 msgid "Unicode category ``<Lt>`` - titlecase letters"
-msgstr "دستهٔ یونی‌کد ``<Lt>`` - حروف عنوانی (titlecase)"
+msgstr "دسته یونی‌کد ``<Lt>`` - حروف عنوانی (titlecase)"
 
 msgid "Unicode category ``<Lm>`` - modifier letters"
 msgstr "ردهٔ یونی‌کد ``<Lm>`` - حروف اصلاح‌کننده"
@@ -953,7 +953,7 @@ msgid "Unicode category ``<Nd>`` - decimal numbers (includes ``0`` to ``9``)"
 msgstr "دسته‌بندی یونی‌کد ``<Nd>`` - اعداد دهدهی (شامل ``0`` تا ``9`` می‌شود)"
 
 msgid "Unicode category ``<Pc>`` - connector punctuations"
-msgstr "دستهٔ یونی‌کد ``<Pc>`` - نشانه‌گذاری‌های اتصال"
+msgstr "دسته یونی‌کد ``<Pc>`` - نشانه‌گذاری‌های اتصال"
 
 msgid "Unicode category ``<Mn>`` - nonspacing marks"
 msgstr "دسته‌ی یونی‌کد ``<Mn>`` - علامت‌های بدون فاصله"
@@ -1216,7 +1216,7 @@ msgid "Escape Sequence"
 msgstr "دنباله‌ی خنثی‌سازی"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "``\\``\\ <newline>"
 msgstr "``\\``\\ <newline>"
@@ -1524,7 +1524,7 @@ msgid ""
 msgstr ""
 "توجه داشته باشید که برای لیترال‌های bytes، دنباله‌های گریزی که فقط در "
 "لیترال‌های رشته‌ای شناسایی می‌شوند (``\\N...``، ``\\u...``، ``\\U...``) در "
-"دستهٔ دنباله‌های گریز ناشناخته قرار می‌گیرند."
+"دسته دنباله‌های گریز ناشناخته قرار می‌گیرند."
 
 msgid "Unrecognized escape sequences produce a :exc:`DeprecationWarning`."
 msgstr ""

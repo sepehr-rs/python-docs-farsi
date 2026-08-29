@@ -65,7 +65,7 @@ msgstr ""
 "<asyncio-future>` را ببینید."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See "

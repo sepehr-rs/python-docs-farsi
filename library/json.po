@@ -614,7 +614,7 @@ msgid "object"
 msgstr "شیء"
 
 msgid "dict"
-msgstr "دیکشنری"
+msgstr "dict"
 
 msgid "array"
 msgstr "آرایه"
@@ -638,7 +638,7 @@ msgid "number (real)"
 msgstr "عدد (حقیقی)"
 
 msgid "float"
-msgstr "شناور"
+msgstr "float"
 
 msgid "true"
 msgstr "درست"
@@ -650,10 +650,10 @@ msgid "false"
 msgstr "نادرست"
 
 msgid "False"
-msgstr "نادرست"
+msgstr "False"
 
 msgid "null"
-msgstr "تهی"
+msgstr "null"
 
 msgid "None"
 msgstr "None"

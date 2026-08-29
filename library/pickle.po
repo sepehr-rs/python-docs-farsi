@@ -473,7 +473,7 @@ msgid ""
 "Error raised when there is a problem unpickling an object, such as a data "
 "corruption or a security violation.  It inherits from :exc:`PickleError`."
 msgstr ""
-"خطایی که هنگام بروز مشکلی در ناپیکل‌کردن (unpickling) یک شیء، مانند خرابی "
+"خطایی که هنگام بروز مشکلی در پیکل‌گشایی (unpickling) یک شیء، مانند خرابی "
 "داده یا نقض امنیت، پرتاب می‌شود. این خطا از :exc:`PickleError` ارث می‌برد."
 
 msgid ""
@@ -2390,7 +2390,7 @@ msgid "High-performance serialization of built-in types."
 msgstr "سریال‌سازی (serialization) انواع توکار با کارایی بالا."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid "Don't confuse this with the :mod:`marshal` module"
 msgstr "این را با ماژول :mod:`marshal` اشتباه نگیرید"

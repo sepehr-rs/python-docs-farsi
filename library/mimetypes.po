@@ -442,7 +442,7 @@ msgid "Load MIME type information from the Windows registry."
 msgstr "بارگذاری اطلاعات نوع MIME از رجیستری ویندوز."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "Add a mapping from the MIME type *type* to the extension *ext*. Valid "

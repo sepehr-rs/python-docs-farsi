@@ -1509,7 +1509,7 @@ msgid "Name"
 msgstr "نام"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "*POSITIONAL_ONLY*"
 msgstr "*POSITIONAL_ONLY*"

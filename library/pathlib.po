@@ -2557,7 +2557,7 @@ msgid "Pattern"
 msgstr "الگو"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "\"``**/*``\""
 msgstr "``**/*``"
@@ -2934,7 +2934,7 @@ msgid ":meth:`Path.lchmod`"
 msgstr ":meth:`Path.lchmod`"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 ":func:`os.path.relpath` calls :func:`~os.path.abspath` to make paths absolute and remove \"``..``\" parts, "

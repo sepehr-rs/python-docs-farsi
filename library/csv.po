@@ -1057,7 +1057,7 @@ msgstr ""
 "    print(row)"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "If ``newline=''`` is not specified, newlines embedded inside quoted fields "

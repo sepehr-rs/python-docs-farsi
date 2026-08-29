@@ -36,7 +36,7 @@ msgstr ""
 "توسط یک برنامه استفاده می‌شوند، فراهم می‌کند."
 
 msgid "Availability"
-msgstr "موجودیت"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "Symbolic constants are used to specify particular system resources and to "

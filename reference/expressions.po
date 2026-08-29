@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 "اتم‌ها بنیادی‌ترین عناصر عبارت‌ها هستند. ساده‌ترین اتم‌ها :ref:`نام‌ها "
 "<identifiers>` یا لیترال‌ها هستند. صورت‌هایی که در پرانتز، کروشه یا آکولاد "
-"محصور شده‌اند نیز از نظر نحوی در دستهٔ اتم‌ها قرار می‌گیرند."
+"محصور شده‌اند نیز از نظر نحوی در دسته اتم‌ها قرار می‌گیرند."
 
 msgid "Formally, the syntax for atoms is:"
 msgstr "به‌طور رسمی، نحو اتم‌ها عبارت است از:"
@@ -3431,7 +3431,7 @@ msgid "Assignment expression"
 msgstr "عبارت انتساب"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be"

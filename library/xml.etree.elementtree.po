@@ -2198,7 +2198,7 @@ msgid ""
 msgstr ""
 "توجه داشته باشید که :meth:`flush` به‌عنوان یک اصلاح امنیتی به برخی نسخه‌های پیشین "
 "CPython بازگردانده شده است (backported). در صورت استفاده در کدی که روی نسخه‌های "
-"گوناگون پایتون اجرا می‌شود، در دسترس بودن :meth:`flush` را با استفاده "
+"گوناگون پایتون اجرا می‌شود، دسترس‌پذیری :meth:`flush` را با استفاده "
 "از :func:`hasattr` بررسی کنید."
 
 msgid ""
@@ -2389,7 +2389,7 @@ msgid "A tuple of *line*, *column* numbers, specifying where the error occurred.
 msgstr "یک تاپلاز شماره‌های *خط* و *ستون*، که محل وقوع خطا را مشخص می‌کند."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "The encoding string included in XML output should conform to the appropriate "

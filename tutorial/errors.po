@@ -152,10 +152,10 @@ msgid "If an exception occurs during execution of the :keyword:`try` clause, the
 msgstr "اگر در طول اجرای بخش :keyword:`try` استثنایی رخ دهد، بقیه آن بخش نادیده گرفته می‌شود. سپس، اگر نوع استثنا با استثنایی که بعد از کلیدواژه :keyword:`except` آمده مطابقت داشته باشد، *بخش except* اجرا می‌شود و پس از آن اجرای برنامه بعد از بلوک try/except ادامه می‌یابد."
 
 msgid "If an exception occurs which does not match the exception named in the *except clause*, it is passed on to outer :keyword:`try` statements; if no handler is found, it is an *unhandled exception* and execution stops with an error message."
-msgstr "اگر استثنایی رخ دهد که با استثنای نام‌برده‌شده در *بند except* مطابقت نداشته باشد، به دستورهای :keyword:`try` بیرونی منتقل می‌شود. اگر هیچ رسیدگی‌کننده‌ای (handler) پیدا نشود، آن استثنا یک *استثنای رسیدگی‌نشده* (unhandled exception) محسوب می‌شود و اجرای برنامه با نمایش یک پیام خطا متوقف خواهد شد."
+msgstr "اگر استثنایی رخ دهد که با استثنای نام‌برده‌شده در *بند except* مطابقت نداشته باشد، به دستورهای :keyword:`try` بیرونی منتقل می‌شود. اگر هیچ هندلر‌ای (handler) پیدا نشود، آن استثنا یک *استثنای رسیدگی‌نشده* (unhandled exception) محسوب می‌شود و اجرای برنامه با نمایش یک پیام خطا متوقف خواهد شد."
 
 msgid "A :keyword:`try` statement may have more than one *except clause*, to specify handlers for different exceptions.  At most one handler will be executed. Handlers only handle exceptions that occur in the corresponding *try clause*, not in other handlers of the same :keyword:`!try` statement.  An *except clause* may name multiple exceptions, for example::"
-msgstr "یک دستور :keyword:`try` می‌تواند بیش از یک *بند except* داشته باشد تا برای استثناهای مختلف رسیدگی‌کننده‌های متفاوتی تعریف شود. در هر بار وقوع استثنا، حداکثر یکی از این رسیدگی‌کننده‌ها اجرا می‌شود. هر رسیدگی‌کننده فقط استثناهایی را مدیریت می‌کند که در *بخش try* متناظر با آن رخ داده‌اند، نه استثناهایی که در سایر رسیدگی‌کننده‌های همان دستور :keyword:`!try` ایجاد شوند. همچنین یک *بند except* می‌تواند چندین استثنا را مشخص کند، برای مثال::"
+msgstr "یک دستور :keyword:`try` می‌تواند بیش از یک *بند except* داشته باشد تا برای استثناهای مختلف هندلر‌های متفاوتی تعریف شود. در هر بار وقوع استثنا، حداکثر یکی از این هندلر‌ها اجرا می‌شود. هر هندلر فقط استثناهایی را مدیریت می‌کند که در *بخش try* متناظر با آن رخ داده‌اند، نه استثناهایی که در سایر هندلر‌های همان دستور :keyword:`!try` ایجاد شوند. همچنین یک *بند except* می‌تواند چندین استثنا را مشخص کند، برای مثال::"
 
 msgid ""
 "... except RuntimeError, TypeError, NameError:\n"
@@ -317,7 +317,7 @@ msgid "The use of the :keyword:`!else` clause is better than adding additional c
 msgstr "استفاده از بند :keyword:`!else` بهتر از افزودن کد بیشتر به :keyword:`try` است، زیرا از این که به‌طور ناخواسته استثنایی که توسط کد محافظت‌شده با دستور :keyword:`!try` ... :keyword:`!except` پرتاب نشده است نیز گرفته شود، جلوگیری می‌کند."
 
 msgid "Exception handlers do not handle only exceptions that occur immediately in the *try clause*, but also those that occur inside functions that are called (even indirectly) in the *try clause*. For example::"
-msgstr "رسیدگی‌کننده‌های استثنا فقط استثناهایی را که مستقیماً در *بخش try* رخ می‌دهند مدیریت نمی‌کنند، بلکه استثناهایی را که درون توابعی که (حتی به‌طور غیرمستقیم) از *بخش try* فراخوانی شده‌اند نیز رخ می‌دهند، مدیریت می‌کنند. برای مثال::"
+msgstr "هندلر‌های استثنا فقط استثناهایی را که مستقیماً در *بخش try* رخ می‌دهند مدیریت نمی‌کنند، بلکه استثناهایی را که درون توابعی که (حتی به‌طور غیرمستقیم) از *بخش try* فراخوانی شده‌اند نیز رخ می‌دهند، مدیریت می‌کنند. برای مثال::"
 
 msgid ""
 ">>> def this_fails():\n"
@@ -528,7 +528,7 @@ msgid "Programs may name their own exceptions by creating a new exception class 
 msgstr "برنامه‌ها می‌توانند با ایجاد یک کلاس استثنای جدید، استثناهای اختصاصی خود را تعریف کنند (برای آشنایی بیشتر با کلاس‌های پایتون، به :ref:`tut-classes` مراجعه کنید). معمولاً استثناها باید، به‌صورت مستقیم یا غیرمستقیم، از کلاس :exc:`Exception` مشتق شوند."
 
 msgid "Exception classes can be defined which do anything any other class can do, but are usually kept simple, often only offering a number of attributes that allow information about the error to be extracted by handlers for the exception."
-msgstr "کلاس‌های استثنا می‌توانند هر کاری را انجام دهند که سایر کلاس‌ها قادر به انجام آن هستند، اما معمولاً ساده نگه داشته می‌شوند و اغلب تنها چند ویژگی (attribute) در اختیار می‌گذارند تا مدیریت‌کننده‌های استثنا بتوانند اطلاعات مربوط به خطا را از آن‌ها استخراج کنند."
+msgstr "کلاس‌های استثنا می‌توانند هر کاری را انجام دهند که سایر کلاس‌ها قادر به انجام آن هستند، اما معمولاً ساده نگه داشته می‌شوند و اغلب تنها چند ویژگی (attribute) در اختیار می‌گذارند تا هندلرهای استثنا بتوانند اطلاعات مربوط به خطا را از آن‌ها استخراج کنند."
 
 msgid "Most exceptions are defined with names that end in \"Error\", similar to the naming of the standard exceptions."
 msgstr "نام بیشتر استثناها به «Error» ختم می‌شود؛ مشابه شیوهٔ نام‌گذاری استثناهای استاندارد."

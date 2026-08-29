@@ -3430,7 +3430,7 @@ msgid ""
 "The parameter specification variable tells the type checker that the callable passed into the decorator and the new "
 "callable returned by it have inter-dependent type parameters::"
 msgstr ""
-"برای مثال، برای افزودن لاگ‌گیری پایه به یک تابع، می‌توان یک دکوراتور ``add_logging`` برای ثبت فراخوانی‌های تابع ایجاد "
+"برای مثال، برای افزودن گزارش‌گیری پایه به یک تابع، می‌توان یک دکوراتور ``add_logging`` برای ثبت فراخوانی‌های تابع ایجاد "
 "کرد. متغیر مشخصه پارامتر به بررسی‌کننده نوع می‌گوید که شیء قابل فراخوانی‌ای که به دکوراتور داده می‌شود و شیء قابل "
 "فراخوانی جدیدی که توسط آن بازگردانده می‌شود، پارامترهای نوع وابسته به یکدیگر دارند::"
 

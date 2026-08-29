@@ -3577,7 +3577,7 @@ msgid ""
 "command-line options are the action and type of each option, the most likely "
 "direction of extension is to add new actions and new types."
 msgstr ""
-"از آن‌جا که دو عامل اصلی کنترل‌کنندهٔ چگونگی تفسیر گزینه‌های خط فرمان توسط :mod:`!"
+"از آن‌جا که دو عامل اصلی هندلر چگونگی تفسیر گزینه‌های خط فرمان توسط :mod:`!"
 "optparse`، اکشنو نوع هر گزینه هستند، محتمل‌ترین مسیر توسعه، افزودن "
 "کنش‌های جدید و انواع جدید است."
 

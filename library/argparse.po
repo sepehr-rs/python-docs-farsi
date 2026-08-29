@@ -745,7 +745,7 @@ msgid ""
 msgstr ""
 ":class:`ArgumentParser` کدگذاری و خطاها را برای خواندن فایل‌های آرگومان از پیش‌فرض (برای "
 "مثال :func:`locale.getpreferredencoding(False) <locale.getpreferredencoding>` و ``\"strict\"``) به :term:`کدگذاری و "
-"کنترل‌کننده خطای فایل‌سیستم <filesystem encoding and error handler>` تغییر داد. فایل آرگومان‌ها باید در ویندوز به‌جای ANSI "
+"هندلر خطای فایل‌سیستم <filesystem encoding and error handler>` تغییر داد. فایل آرگومان‌ها باید در ویندوز به‌جای ANSI "
 "Codepage با UTF-8 کدگذاری شود."
 
 msgid "argument_default"

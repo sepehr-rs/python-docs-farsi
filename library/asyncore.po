@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!asyncore` --- Asynchronous socket handler"
-msgstr ":mod:`!asyncore` --- گرداننده سوکت ناهمگام"
+msgstr ":mod:`!asyncore` --- هندلر سوکت ناهمگام"
 
 msgid ""
 "This module is no longer part of the Python standard library. It was "

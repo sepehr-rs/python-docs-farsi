@@ -40,7 +40,7 @@ msgstr ""
 "کنترل‌کنندهٔ آن به‌صورت برنامه‌ای."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "Pseudo-terminal handling is highly platform dependent. This code is mainly "

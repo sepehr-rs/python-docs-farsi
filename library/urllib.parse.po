@@ -77,7 +77,7 @@ msgid ""
 "categories: URL parsing and URL quoting. These are covered in detail in the "
 "following sections."
 msgstr ""
-"ماژول :mod:`!urllib.parse` توابعی را تعریف می‌کند که به دو دستهٔ کلی تقسیم "
+"ماژول :mod:`!urllib.parse` توابعی را تعریف می‌کند که به دو دسته کلی تقسیم "
 "می‌شوند: تجزیهٔ URL و کدگذاری URL (URL quoting). این موارد در بخش‌های زیر با "
 "جزئیات پوشش داده شده‌اند."
 

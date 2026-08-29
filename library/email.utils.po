@@ -352,7 +352,7 @@ msgstr ""
 "شامل عناصری به‌شکل ``(content-type, string-value)`` است."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "Note that the sign of the timezone offset is the opposite of the sign of the"

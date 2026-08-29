@@ -484,7 +484,7 @@ msgid ""
 "file (as would be returned by :func:`os.open`) and the absolute pathname of "
 "that file, in that order."
 msgstr ""
-":func:`mkstemp` یک تاپل شامل یک دستگیره (handle) در سطح سیستم‌عامل برای یک "
+":func:`mkstemp` یک تاپل شامل یک دسته (handle) در سطح سیستم‌عامل برای یک "
 "فایل باز (مانند آنچه توسط :func:`os.open` بازگردانده می‌شود) و نام مسیر مطلق"
 " آن فایل را، به همین ترتیب، بازمی‌گرداند."
 

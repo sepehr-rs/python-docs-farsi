@@ -44,7 +44,7 @@ msgstr ""
 "اجازهٔ نوشتن در پوشه‌های کتابخانه را ندارند نیز قابل استفاده می‌سازد."
 
 msgid "Availability"
-msgstr "موجودیت"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. "

@@ -861,7 +861,7 @@ msgid ""
 "unit-testing-in-django-with-mocking-and-patching/>`_."
 msgstr ""
 "راه جایگزینی برای سروکار داشتن با ماک کردن تاریخ‌ها، یا سایر کلاس‌های توکار،"
-" در `این مطلب وبلاگی <https://williambert.online/2011/07/how-to-unit-"
+" در `این مطلب وبگزارشی <https://williambert.online/2011/07/how-to-unit-"
 "testing-in-django-with-mocking-and-patching/>`_ بحث شده است."
 
 msgid "Mocking a generator method"

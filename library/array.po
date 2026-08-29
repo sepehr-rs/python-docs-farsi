@@ -158,7 +158,7 @@ msgid "``'f'``"
 msgstr "``'f'``"
 
 msgid "float"
-msgstr "شناور"
+msgstr "float"
 
 msgid "``'d'``"
 msgstr "``'d'``"

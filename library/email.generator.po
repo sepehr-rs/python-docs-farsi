@@ -417,7 +417,7 @@ msgstr ""
 ":class:`Generator` هستند."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "This statement assumes that you use the appropriate setting for "

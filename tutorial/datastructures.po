@@ -916,7 +916,7 @@ msgstr ""
 "'Trondheim'"
 
 msgid "Note that in Python, unlike C, assignment inside expressions must be done explicitly with the :ref:`walrus operator <why-can-t-i-use-an-assignment-in-an-expression>` ``:=``. This avoids a common class of problems encountered in C programs: typing ``=`` in an expression when ``==`` was intended."
-msgstr "توجه کنید که در پایتون، برخلاف C، انتساب درون عبارت‌ها باید به‌صورت صریح با عملگر :ref:`walrus <why-can-t-i-use-an-assignment-in-an-expression>` ``:=`` انجام شود. این کار از یک دستهٔ رایج از مشکلات موجود در برنامه‌های C جلوگیری می‌کند: نوشتن ``=`` در یک عبارت، در حالی که منظور ``==`` بوده است."
+msgstr "توجه کنید که در پایتون، برخلاف C، انتساب درون عبارت‌ها باید به‌صورت صریح با عملگر :ref:`walrus <why-can-t-i-use-an-assignment-in-an-expression>` ``:=`` انجام شود. این کار از یک دسته رایج از مشکلات موجود در برنامه‌های C جلوگیری می‌کند: نوشتن ``=`` در یک عبارت، در حالی که منظور ``==`` بوده است."
 
 msgid "Comparing Sequences and Other Types"
 msgstr "مقایسهٔ دنباله‌ها و انواع دیگر"

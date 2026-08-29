@@ -113,7 +113,7 @@ msgid ""
 "generally refers to a min-heap. The API for max-heaps is named using a "
 "``_max``  suffix."
 msgstr ""
-"در API زیر و در این مستندات، اصطلاح بدون قید *heap* معمولاً به یک کمینه‌پشته "
+"در API زیر و در این مستندات، اصطلاح بدون قید *هیپ* معمولاً به یک هیپ-کمینه "
 "اشاره دارد. API برای بیشینه‌پشته‌ها با استفاده از پسوند ``_max`` نام‌گذاری شده "
 "است."
 
@@ -131,13 +131,13 @@ msgstr "توابع زیر برای هیپ‌های کمینه فراهم شده�
 
 msgid "Transform list *x* into a min-heap, in-place, in linear time."
 msgstr ""
-"فهرست *x* را به‌صورت درجا و در زمان خطی به یک پشته‌ی کمینه (min-heap) تبدیل "
+"فهرست *x* را به‌صورت درجا و در زمان خطی به یک هیپ-کمینه (min-heap) تبدیل "
 "می‌کند."
 
 msgid ""
 "Push the value *item* onto the *heap*, maintaining the min-heap invariant."
 msgstr ""
-"مقدار *item* را روی *heap* قرار دهید، به‌طوری که ناوردا کمینه‌هپ حفظ شود."
+"مقدار *item* را روی *هیپ* قرار دهید، به‌طوری که ناوردا کمینه‌هپ حفظ شود."
 
 msgid ""
 "Pop and return the smallest item from the *heap*, maintaining the min-heap "
@@ -145,7 +145,7 @@ msgid ""
 "the smallest item without popping it, use ``heap[0]``."
 msgstr ""
 "کوچک‌ترین آیتم را از *هیپ*  بردارید و برگردانید، به‌طوری که ناوردا "
-"(invariant) کمینه-هیپ حفظ شود. اگر هیپ خالی باشد، :exc:`IndexError` پرتاب "
+"(invariant) هیپ-کمینه حفظ شود. اگر هیپ خالی باشد، :exc:`IndexError` پرتاب "
 "می‌شود. برای دسترسی به کوچک‌ترین آیتم بدون برداشتن آن، از ``heap[0]`` استفاده "
 "کنید."
 
@@ -773,7 +773,7 @@ msgstr ""
 "دسترس باشد. :-)"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "The disk balancing algorithms which are current, nowadays, are more "

@@ -957,7 +957,7 @@ msgstr ""
 "260"
 
 msgid "Footnotes"
-msgstr "پاورقی‌ها"
+msgstr "پانویس‌ها"
 
 msgid "Except for one thing.  Module objects have a secret read-only attribute called :attr:`~object.__dict__` which returns the dictionary used to implement the module's namespace; the name ``__dict__`` is an attribute but not a global name. Obviously, using this violates the abstraction of namespace implementation, and should be restricted to things like post-mortem debuggers."
 msgstr "به جز یک مورد.  اشیاء ماژول یک ویژگی مخفی فقط‌خواندنی دارند به نام :attr:`~object.__dict__` که دیکشنری مورد استفاده برای پیاده‌سازی فضای نام ماژول را برمی‌گرداند؛ نام ``__dict__`` یک ویژگی است اما یک نام سراسری نیست. بدیهی است که استفاده از این ویژگی، انتزاع پیاده‌سازی فضای نام را نقض می‌کند و باید به مواردی مانند اشکال‌زدای پس‌ازمرگ محدود شود."

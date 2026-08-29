@@ -1052,7 +1052,7 @@ msgstr ""
 "سریال‌سازی پیام‌هایی استفاده شود که با سیاست :const:`compat32` ایجاد شده‌اند."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "Originally added in 3.3 as a :term:`provisional feature <provisional "

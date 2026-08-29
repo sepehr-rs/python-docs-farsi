@@ -349,7 +349,7 @@ msgstr ""
 "پایگاه داده یونیکد نیاز دارند (مانند IDNA)."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid "https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt"
 msgstr "https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt"

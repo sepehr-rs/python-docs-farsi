@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 "`Scaling asyncio on Free-Threaded Python "
 "<https://labs.quansight.org/blog/scaling-asyncio-on-free-threaded-"
-"python>`__، یک پست وبلاگی از Kumar Aditya که تغییرات داخلی‌ای را توضیح "
+"python>`__، یک پست وبگزارشی از Kumar Aditya که تغییرات داخلی‌ای را توضیح "
 "می‌دهد که باعث ایمن و کارآمد شدن asyncio در پایتون آزاد-نخی (Free-Threaded "
 "Python) می‌شوند، به‌همراه بنچمارک‌هایی از بهبودهای حاصل."
 

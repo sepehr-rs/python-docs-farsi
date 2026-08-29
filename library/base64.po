@@ -146,7 +146,7 @@ msgstr ""
 msgid ""
 "A :exc:`binascii.Error` exception is raised if *s* is incorrectly padded."
 msgstr ""
-"اگر *s* به‌درستی پدگذاری (padding) نشده باشد، استثنای :exc:`binascii.Error` "
+"اگر *s* به‌درستی پدینگ (padding) نشده باشد، استثنای :exc:`binascii.Error` "
 "پرتاب می‌شود."
 
 msgid ""

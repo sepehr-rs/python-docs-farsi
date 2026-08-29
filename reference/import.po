@@ -1823,7 +1823,7 @@ msgstr ""
 "بارگذار‌ها را فراهم می‌کنند."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid "See :class:`types.ModuleType`."
 msgstr ":class:`types.ModuleType` را ببینید."

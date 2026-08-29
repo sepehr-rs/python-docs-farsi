@@ -53,7 +53,7 @@ msgid "Attribute"
 msgstr "ویژگی"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "0"
 msgstr "0"

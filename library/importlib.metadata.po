@@ -465,7 +465,7 @@ msgid ""
 "The ``Description`` is now included in the metadata when presented through "
 "the payload. Line continuation characters have been removed."
 msgstr ""
-"``Description`` اکنون هنگام ارائه از طریق پی‌لود (payload) در فراداده "
+"``Description`` اکنون هنگام ارائه از طریق بار (payload) در فراداده "
 "گنجانده شده است. نویسه‌های ادامه‌ی خط حذف شده‌اند."
 
 msgid "The ``json`` attribute was added."

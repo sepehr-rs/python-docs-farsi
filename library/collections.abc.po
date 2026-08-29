@@ -446,7 +446,7 @@ msgid "``__buffer__``"
 msgstr "``__buffer__``"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "These ABCs override :meth:`~abc.ABCMeta.__subclasshook__` to support testing"

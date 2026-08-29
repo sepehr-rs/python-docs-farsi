@@ -461,7 +461,7 @@ msgstr ""
 "دسترس قرار گرفتن گستردهٔ تغییرات این قواعد، به‌روزرسانی شود."
 
 msgid "Availability"
-msgstr "موجودیت"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "Join one or more path segments intelligently.  The return value is the "

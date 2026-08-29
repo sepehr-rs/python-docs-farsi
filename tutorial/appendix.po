@@ -122,7 +122,7 @@ msgid ":index:`sitecustomize` works in the same way, but is typically created by
 msgstr ":index:`sitecustomize` به همان صورت کار می‌کند، اما به‌طور معمول توسط مدیر سیستم در پوشه global site-packages ایجاد می‌شود و قبل از :index:`usercustomize` وارد می‌شود. برای جزئیات بیشتر به مستندات ماژول :mod:`site` مراجعه کنید."
 
 msgid "Footnotes"
-msgstr "پاورقی‌ها"
+msgstr "پانویس‌ها"
 
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr "یک مشکل در بسته‌ی «GNU Readline» ممکن است مانع این کار شود."

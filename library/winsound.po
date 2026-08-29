@@ -35,7 +35,7 @@ msgstr ""
 "سکو‌های ویندوزی را فراهم می‌کند. این ماژول شامل توابع و چند ثابت است."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "Beep the PC's speaker. The *frequency* parameter specifies frequency, in "

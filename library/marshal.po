@@ -339,7 +339,7 @@ msgid "Support for :class:`slice` objects"
 msgstr "پشتیبانی از اشیاء :class:`slice`"
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "The name of this module stems from a bit of terminology used by the "

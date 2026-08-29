@@ -190,7 +190,7 @@ msgid "TOML document"
 msgstr "سند TOML"
 
 msgid "dict"
-msgstr "دیکشنری"
+msgstr "dict"
 
 msgid "string"
 msgstr "رشته"
@@ -202,13 +202,13 @@ msgid "integer"
 msgstr "عدد صحیح"
 
 msgid "int"
-msgstr "عدد صحیح"
+msgstr "int"
 
 msgid "float"
-msgstr "شناور"
+msgstr "float"
 
 msgid "float (configurable with *parse_float*)"
-msgstr "شناور (قابل پیکربندی با *parse_float*)"
+msgstr "float (قابل پیکربندی با *parse_float*)"
 
 msgid "boolean"
 msgstr "بولی"

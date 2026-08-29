@@ -133,7 +133,7 @@ msgstr ""
 "<a href=\"%(bugs)s\">یک گزارش مشکل باز کنید</a>."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid "Part of the"
 msgstr "قسمتی از"

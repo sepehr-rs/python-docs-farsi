@@ -254,7 +254,7 @@ msgstr ""
 "مانند خطای قطعه‌بندی (segmentation fault)."
 
 msgid "Availability"
-msgstr "موجودیت"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "See the man page for :manpage:`pthread_getcpuclockid(3)` for further "
@@ -323,7 +323,7 @@ msgid ""
 msgstr ""
 "اگر *secs* ارائه‌نشده باشد یا :const:`None` باشد، از زمان جاری برگردانده‌شده "
 "توسط :func:`.time` استفاده می‌شود. ``ctime(secs)`` معادل "
-"``asctime(localtime(secs))`` است. اطلاعات محلی (Locale) توسط :func:`ctime` "
+"``asctime(localtime(secs))`` است. اطلاعات locale (Locale) توسط :func:`ctime` "
 "استفاده نمی‌شود."
 
 msgid ""
@@ -625,7 +625,7 @@ msgid ""
 "the rationale)."
 msgstr ""
 "این تابع اکنون حداقل به مدت *secs* می‌خوابد، حتی اگر این خواب با یک سیگنال قطع "
-"شود، مگر در صورتی که کنترل‌کنندهٔ سیگنال استثنایی پرتاب کند (برای آگاهی از "
+"شود، مگر در صورتی که هندلر سیگنال استثنایی پرتاب کند (برای آگاهی از "
 "دلیل، :pep:`475` را ببینید)."
 
 msgid ""
@@ -672,7 +672,7 @@ msgid "Directive"
 msgstr "دستور"
 
 msgid "Meaning"
-msgstr "معنا"
+msgstr "معنی"
 
 msgid "Notes"
 msgstr "یادداشت‌ها"
@@ -681,31 +681,31 @@ msgid "``%a``"
 msgstr "``%a``"
 
 msgid "Locale's abbreviated weekday name."
-msgstr "نام کوتاه‌شدهٔ روز هفته بر اساس Locale."
+msgstr "نام کوتاه‌شدهٔ روز هفته بر اساس locale."
 
 msgid "``%A``"
 msgstr "``%A``"
 
 msgid "Locale's full weekday name."
-msgstr "نام کامل روز هفته بر اساس ناحیه."
+msgstr "نام کامل روز هفته بر اساس locale."
 
 msgid "``%b``"
 msgstr "``%b``"
 
 msgid "Locale's abbreviated month name."
-msgstr "نام کوتاه‌شده‌ی ماه در ناحیه (Locale)."
+msgstr "نام کوتاه‌شده‌ی ماه در locale (Locale)."
 
 msgid "``%B``"
 msgstr "``%B``"
 
 msgid "Locale's full month name."
-msgstr "نام کامل ماهِ تنظیمات محلی (Locale)."
+msgstr "نام کامل ماهِ تنظیمات locale (Locale)."
 
 msgid "``%c``"
 msgstr "``%c``"
 
 msgid "Locale's appropriate date and time representation."
-msgstr "نمایش مناسب تاریخ و زمان متناسب با تنظیمات محلی (Locale)."
+msgstr "نمایش مناسب تاریخ و زمان متناسب با تنظیمات locale (Locale)."
 
 msgid "``%d``"
 msgstr "``%d``"
@@ -759,7 +759,7 @@ msgid "``%p``"
 msgstr "``%p``"
 
 msgid "Locale's equivalent of either AM or PM."
-msgstr "معادل محلی (locale) برای AM یا PM."
+msgstr "معادل locale (locale) برای AM یا PM."
 
 msgid "\\(2)"
 msgstr "\\(2)"
@@ -814,13 +814,13 @@ msgid "``%x``"
 msgstr "``%x``"
 
 msgid "Locale's appropriate date representation."
-msgstr "نمایش تاریخ مناسب با تنظیمات محلی (locale)."
+msgstr "نمایش تاریخ مناسب با تنظیمات locale (locale)."
 
 msgid "``%X``"
 msgstr "``%X``"
 
 msgid "Locale's appropriate time representation."
-msgstr "نمایش زمان مناسب برای تنظیمات محلی (locale)."
+msgstr "نمایش زمان مناسب برای تنظیمات locale (locale)."
 
 msgid "``%y``"
 msgstr "``%y``"
@@ -1577,7 +1577,7 @@ msgstr ""
 "این ماژول است."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "The use of ``%Z`` is now deprecated, but the ``%z`` escape that expands to the "

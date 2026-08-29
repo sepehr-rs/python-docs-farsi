@@ -124,7 +124,7 @@ msgid ""
 "events>` to events with the :meth:`!bind` method don't get handled even when"
 " the appropriate key is pressed."
 msgstr ""
-"شکایتی که اغلب شنیده می‌شود این است که مدیرهای رویداد :ref:`متصل <bindings-"
+"شکایتی که اغلب شنیده می‌شود این است که هندلرهای رویداد :ref:`متصل <bindings-"
 "and-events>` به رویدادها با متد :meth:`!bind`، حتی زمانی که کلید مناسب فشرده"
 " می‌شود، فراخوانی نمی‌شوند."
 

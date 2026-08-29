@@ -479,7 +479,7 @@ msgstr ""
 "نگاشت شده است."
 
 msgid "Stale NFS file handle"
-msgstr "دستگیره‌ی فایل NFS قدیمی"
+msgstr "دسته‌ی فایل NFS قدیمی"
 
 msgid "Structure needs cleaning"
 msgstr "ساختار نیاز به پاک‌سازی دارد"
@@ -587,7 +587,7 @@ msgstr ""
 "قابلیت‌ها ناکافی است. این خطا به استثنای :exc:`PermissionError` نگاشت می‌شود."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid "Operation canceled"
 msgstr "عملیات لغو شد"

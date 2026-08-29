@@ -766,7 +766,7 @@ msgstr ""
 "``Address`` تنها خواهد بود."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "Originally added in 3.3 as a :term:`provisional module <provisional package>`"

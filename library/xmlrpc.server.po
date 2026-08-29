@@ -50,7 +50,7 @@ msgstr ""
 "دارید، :ref:`xml-security` را ببینید."
 
 msgid "Availability"
-msgstr "در دسترس بودن"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See "
@@ -118,7 +118,7 @@ msgid ""
 "to the :class:`SimpleXMLRPCServer` constructor parameter is honored."
 msgstr ""
 "یک نمونه‌ی جدید از مدیر درخواست ایجاد کنید. این مدیر درخواست از درخواست‌های "
-"``POST`` پشتیبانی می‌کند و ثبت وقایع را اصلاح می‌کند تا پارامتر "
+"``POST`` پشتیبانی می‌کند و گزارش‌گیری را اصلاح می‌کند تا پارامتر "
 "*logRequests* در سازنده‌ی :class:`SimpleXMLRPCServer` رعایت شود."
 
 msgid "SimpleXMLRPCServer objects"

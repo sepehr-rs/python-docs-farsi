@@ -44,7 +44,7 @@ msgstr ""
 "نمی‌شود."
 
 msgid "Availability"
-msgstr "موجودیت"
+msgstr "دسترس‌پذیری"
 
 msgid ""
 "This module does not work or is not available on WebAssembly. See "

@@ -67,7 +67,7 @@ msgstr ""
 "دیکشنری‌ای که نقاط کد یونیکد را به نام‌های موجودیت HTML4 نگاشت می‌دهد."
 
 msgid "Footnotes"
-msgstr "پاورقی‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "See https://html.spec.whatwg.org/multipage/named-characters.html#named-"

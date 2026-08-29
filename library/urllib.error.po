@@ -46,7 +46,7 @@ msgid ""
 "The handlers raise this exception (or derived exceptions) when they run into"
 " a problem.  It is a subclass of :exc:`OSError`."
 msgstr ""
-"مدیرها این استثنا (یا استثناهای مشتق‌شده) را هنگامی که با مشکلی مواجه "
+"هندلرها این استثنا (یا استثناهای مشتق‌شده) را هنگامی که با مشکلی مواجه "
 "می‌شوند، پرتاب می‌کنند. این یک زیرکلاس از :exc:`OSError` است."
 
 msgid ""

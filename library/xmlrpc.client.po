@@ -1035,7 +1035,7 @@ msgid "See :ref:`simplexmlrpcserver-example`."
 msgstr ":ref:`simplexmlrpcserver-example` را ببینید."
 
 msgid "Footnotes"
-msgstr "پانوشت‌ها"
+msgstr "پانویس‌ها"
 
 msgid ""
 "This approach has been first presented in `a discussion on xmlrpc.com "

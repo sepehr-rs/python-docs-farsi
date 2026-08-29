@@ -226,7 +226,7 @@ msgid ""
 "suitable for reading (same as :attr:`pathlib.Path.open`)."
 msgstr ""
 "*mode* می‌تواند 'r' یا 'rb' باشد تا به‌صورت متنی یا دودویی باز شود. "
-"دستگیره‌ای مناسب برای خواندن برمی‌گرداند (مشابه :attr:`pathlib.Path.open`)."
+"دسته‌ای مناسب برای خواندن برمی‌گرداند (مشابه :attr:`pathlib.Path.open`)."
 
 msgid ""
 "When opening as text, accepts encoding parameters such as those accepted by "
