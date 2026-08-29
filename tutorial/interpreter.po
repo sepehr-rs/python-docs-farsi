@@ -30,13 +30,13 @@ msgid "Invoking the Interpreter"
 msgstr "فراخوانی مفسر"
 
 msgid "The Python interpreter is usually installed as |usr_local_bin_python_x_dot_y_literal| on those machines where it is available; putting :file:`/usr/local/bin` in your Unix shell's search path makes it possible to start it by typing the command:"
-msgstr "مفسر پایتون معمولاً روی سیستم‌هایی که در دسترس است، در مسیر |usr_local_bin_python_x_dot_y_literal| نصب می‌شود. اگر مسیر :file:`/usr/local/bin` را به مسیر جست‌وجوی شل یونیکس خود اضافه کنید، می‌توانید با وارد کردن دستور زیر آن را اجرا کنید:"
+msgstr "مفسر پایتون معمولاً روی سیستم‌هایی که در دسترس است، در مسیر |usr_local_bin_python_x_dot_y_literal| نصب می‌شود. اگر مسیر :file:`/usr/local/bin` را به مسیر جست‌وجوی پوسته یونیکس خود اضافه کنید، می‌توانید با وارد کردن دستور زیر آن را اجرا کنید:"
 
 msgid "python3.14"
 msgstr "python3.14"
 
 msgid "to the shell. [#]_ Since the choice of the directory where the interpreter lives is an installation option, other places are possible; check with your local Python guru or system administrator.  (E.g., :file:`/usr/local/python` is a popular alternative location.)"
-msgstr "در شل. [#]_ از آنجا که انتخاب محل نصب مفسر به تنظیمات نصب بستگی دارد، ممکن است در مسیرهای دیگری نیز قرار داشته باشد؛ در این صورت با مسئول سیستم یا فرد آشنا با پایتون در سیستم خود مشورت کنید. (برای مثال، :file:`/usr/local/python` نیز محل رایج دیگری برای نصب است.)"
+msgstr "در پوسته. [#]_ از آنجا که انتخاب محل نصب مفسر به تنظیمات نصب بستگی دارد، ممکن است در مسیرهای دیگری نیز قرار داشته باشد؛ در این صورت با مسئول سیستم یا فرد آشنا با پایتون در سیستم خود مشورت کنید. (برای مثال، :file:`/usr/local/python` نیز محل رایج دیگری برای نصب است.)"
 
 msgid "On Windows machines where you have installed Python from the :ref:`Microsoft Store <windows-store>`, the |python_x_dot_y_literal| command will be available. If you have the :ref:`py.exe launcher <launcher>` installed, you can use the :file:`py` command. See :ref:`setting-envvars` for other ways to launch Python."
 msgstr "در ویندوز، اگر پایتون را از :ref:`Microsoft Store <windows-store>` نصب کرده باشید، دستور |python_x_dot_y_literal| در دسترس خواهد بود. اگر :ref:`راه‌انداز py.exe <launcher>` را نیز نصب کرده باشید، می‌توانید از دستور :file:`py` استفاده کنید. برای روش‌های دیگر اجرای پایتون، به بخش :ref:`setting-envvars` مراجعه کنید."
@@ -48,10 +48,10 @@ msgid "The interpreter's line-editing features include interactive editing, hist
 msgstr "ویژگی‌های ویرایش خط فرمان مفسر در بیشتر سیستم‌ها شامل ویرایش تعاملی، جایگزینی تاریخچه و تکمیل خودکار کد است. شاید سریع‌ترین راه برای بررسی پشتیبانی از ویرایش خط فرمان این باشد که در اعلان پایتون یک کلمه تایپ کنید و سپس کلید پیکان چپ (یا :kbd:`Control-b`) را فشار دهید. اگر مکان‌نما جابه‌جا شد، ویرایش خط فرمان پشتیبانی می‌شود؛ برای آشنایی با کلیدها به پیوست :ref:`tut-interacting` مراجعه کنید. اگر هیچ اتفاقی نیفتاد یا دنباله‌ای مانند ``^[[D`` یا ``^B`` نمایش داده شد، ویرایش خط فرمان در دسترس نیست و تنها می‌توانید با کلید Backspace نویسه‌های خط جاری را حذف کنید."
 
 msgid "The interpreter operates somewhat like the Unix shell: when called with standard input connected to a tty device, it reads and executes commands interactively; when called with a file name argument or with a file as standard input, it reads and executes a *script* from that file."
-msgstr "عملکرد مفسر تا حدی شبیه شل یونیکس است: اگر ورودی استاندارد آن به یک دستگاه tty متصل باشد، دستورات را به‌صورت تعاملی می‌خواند و اجرا می‌کند؛ اما اگر نام یک فایل یا خود فایل به‌عنوان ورودی استاندارد به آن داده شود، *اسکریپت* موجود در آن فایل را می‌خواند و اجرا می‌کند."
+msgstr "عملکرد مفسر تا حدی شبیه پوسته یونیکس است: اگر ورودی استاندارد آن به یک دستگاه tty متصل باشد، دستورات را به‌صورت تعاملی می‌خواند و اجرا می‌کند؛ اما اگر نام یک فایل یا خود فایل به‌عنوان ورودی استاندارد به آن داده شود، *اسکریپت* موجود در آن فایل را می‌خواند و اجرا می‌کند."
 
 msgid "A second way of starting the interpreter is ``python -c command [arg] ...``, which executes the statement(s) in *command*, analogous to the shell's :option:`-c` option.  Since Python statements often contain spaces or other characters that are special to the shell, it is usually advised to quote *command* in its entirety."
-msgstr "روش دیگر برای اجرای مفسر، استفاده از دستور ``python -c command [arg] ...`` است که دستور(های) موجود در *command* را اجرا می‌کند؛ مشابه گزینهٔ :option:`-c` در شل. از آنجا که دستورات پایتون معمولاً شامل فاصله یا نویسه‌هایی هستند که برای شل معنای ویژه‌ای دارند، معمولاً توصیه می‌شود کل *command* را داخل نقل‌قول قرار دهید."
+msgstr "روش دیگر برای اجرای مفسر، استفاده از دستور ``python -c command [arg] ...`` است که دستور(های) موجود در *command* را اجرا می‌کند؛ مشابه گزینهٔ :option:`-c` در پوسته. از آنجا که دستورات پایتون معمولاً شامل فاصله یا نویسه‌هایی هستند که برای پوسته معنای ویژه‌ای دارند، معمولاً توصیه می‌شود کل *command* را داخل نقل‌قول قرار دهید."
 
 msgid "Some Python modules are also useful as scripts.  These can be invoked using ``python -m module [arg] ...``, which executes the source file for *module* as if you had spelled out its full name on the command line."
 msgstr "برخی از ماژول‌های پایتون را نیز می‌توان به‌صورت اسکریپت اجرا کرد. این کار با استفاده از دستور ``python -m module [arg] ...`` انجام می‌شود که فایل مبدأ مربوط به *module* را طوری اجرا می‌کند که گویی نام کامل آن را در خط فرمان وارد کرده‌اید."
@@ -113,7 +113,7 @@ msgid "Source Code Encoding"
 msgstr "کدگذاری فایل‌های مبدأ"
 
 msgid "By default, Python source files are treated as encoded in UTF-8.  In that encoding, characters of most languages in the world can be used simultaneously in string literals, identifiers and comments --- although the standard library only uses ASCII characters for identifiers, a convention that any portable code should follow.  To display all these characters properly, your editor must recognize that the file is UTF-8, and it must use a font that supports all the characters in the file."
-msgstr "به‌طور پیش‌فرض، فایل‌های مبدأ پایتون با کدگذاری UTF-8 در نظر گرفته می‌شوند. در این کدگذاری، می‌توان نویسه‌های بیشتر زبان‌های دنیا را به‌طور هم‌زمان در رشته‌ها، شناسه‌ها و توضیحات به کار برد؛ هرچند کتابخانهٔ استاندارد فقط از نویسه‌های ASCII برای شناسه‌ها استفاده می‌کند، که این رویه برای کدهای قابل‌حمل نیز توصیه می‌شود. برای نمایش صحیح همهٔ این نویسه‌ها، ویرایشگر شما باید فایل را به‌عنوان UTF-8 تشخیص دهد و از قلمی استفاده کند که از تمام نویسه‌های موجود در فایل پشتیبانی کند."
+msgstr "به‌طور پیش‌فرض، فایل‌های مبدأ پایتون با کدگذاری UTF-8 در نظر گرفته می‌شوند. در این کدگذاری، می‌توان نویسه‌های بیشتر زبان‌های دنیا را به‌طور همزمان در رشته‌ها، شناسه‌ها و توضیحات به کار برد؛ هرچند کتابخانهٔ استاندارد فقط از نویسه‌های ASCII برای شناسه‌ها استفاده می‌کند، که این رویه برای کدهای قابل‌حمل نیز توصیه می‌شود. برای نمایش صحیح همهٔ این نویسه‌ها، ویرایشگر شما باید فایل را به‌عنوان UTF-8 تشخیص دهد و از قلمی استفاده کند که از تمام نویسه‌های موجود در فایل پشتیبانی کند."
 
 msgid "To declare an encoding other than the default one, a special comment line should be added as the *first* line of the file.  The syntax is as follows::"
 msgstr "برای اعلام کدگذاری‌ای غیر از کدگذاری پیش‌فرض، باید یک خط توضیح ویژه را به‌عنوان *اولین* خط فایل اضافه کنید. قالب آن به شکل زیر است::"
@@ -144,4 +144,4 @@ msgid "Footnotes"
 msgstr "پانویس‌ها"
 
 msgid "On Unix, the Python 3.x interpreter is by default not installed with the executable named ``python``, so that it does not conflict with a simultaneously installed Python 2.x executable."
-msgstr "در یونیکس، مفسر Python 3.x به‌طور پیش‌فرض با نام اجرایی ``python`` نصب نمی‌شود تا با نسخهٔ هم‌زمان نصب‌شدهٔ Python 2.x تداخلی نداشته باشد."
+msgstr "در یونیکس، مفسر Python 3.x به‌طور پیش‌فرض با نام اجرایی ``python`` نصب نمی‌شود تا با نسخهٔ همزمان نصب‌شدهٔ Python 2.x تداخلی نداشته باشد."

@@ -1412,7 +1412,7 @@ msgstr ""
 "همچنین :func:`set_blocking` و :meth:`socket.socket.setblocking` را ببینید."
 
 msgid "On Windows, this function is limited to pipes."
-msgstr "در ویندوز، این تابع محدود به لوله‌ها (pipes) است."
+msgstr "در ویندوز، این تابع محدود به پایپ‌ها (pipes) است."
 
 msgid "Added support for pipes on Windows."
 msgstr "پشتیبانی از پایپ‌ها (pipes) در ویندوز اضافه شد."
@@ -2111,7 +2111,7 @@ msgid ""
 "nevertheless block because the spliced file descriptors may block."
 msgstr ""
 "اگر :const:`SPLICE_F_NONBLOCK` تعیین شده باشد، از هسته خواسته می‌شود که در ورودی/"
-"خروجی مسدود نشود. این باعث می‌شود عملیات‌های لولهٔ splice غیرمسدودکننده شوند، اما "
+"خروجی مسدود نشود. این باعث می‌شود عملیات‌های پایپ splice غیرمسدودکننده شوند، اما "
 "با این حال ممکن است splice مسدود شود، زیرا ممکن است توصیفگرهای فایل splice‌شده "
 "مسدود شوند."
 

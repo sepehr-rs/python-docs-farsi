@@ -99,7 +99,7 @@ msgid "``await`` :func:`gather`"
 msgstr "``await`` :func:`gather`"
 
 msgid "Schedule and wait for things concurrently."
-msgstr "چیزها را زمان‌بندی کنید و به‌صورت هم‌زمان منتظر آن‌ها بمانید."
+msgstr "چیزها را زمان‌بندی کنید و به‌صورت همزمان منتظر آن‌ها بمانید."
 
 msgid "``await`` :func:`wait_for`"
 msgstr "``await`` :func:`wait_for`"
@@ -170,8 +170,7 @@ msgstr ":ref:`استفاده از asyncio.sleep() <asyncio_example_sleep>`."
 
 msgid "See also the main :ref:`Tasks documentation page <coroutine>`."
 msgstr ""
-"همچنین صفحه‌ی مستندات اصلی :ref:`Tasks documentation page <coroutine>` را "
-"ببینید."
+"همچنین صفحه‌ی مستندات اصلی :ref:`هم‌روال <coroutine>` را ببینید."
 
 msgid "Queues"
 msgstr "صف‌ها"

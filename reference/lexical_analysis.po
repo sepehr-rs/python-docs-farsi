@@ -88,7 +88,7 @@ msgid ":ref:`New line <line-structure>`"
 msgstr ":ref:`خط جدید <line-structure>`"
 
 msgid ":ref:`Indentation <indentation>`"
-msgstr ":ref:`Indentation <indentation>`"
+msgstr ":ref:`تورفتگی <indentation>`"
 
 msgid "backslash (``\\``)"
 msgstr "بک‌اسلش (``\\``)"
@@ -1903,8 +1903,7 @@ msgid ""
 "Formatted string literals cannot be used as :term:`docstrings <docstring>`, "
 "even if they do not include expressions::"
 msgstr ""
-"لیترال‌های رشته قالب‌بندی‌شده را نمی‌توان به‌عنوان :term:`docstrings "
-"<docstring>` استفاده کرد، حتی اگر شامل عبارت نباشند::"
+"لیترال‌های رشته قالب‌بندی‌شده را نمی‌توان به‌عنوان :term:`رشته مستند <docstring>` استفاده کرد، حتی اگر شامل عبارت نباشند::"
 
 msgid ""
 ">>> def foo():\n"

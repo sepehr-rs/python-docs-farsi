@@ -1771,7 +1771,7 @@ msgid ""
 "Docstrings can be customized by making direct assignments to the ``__doc__``"
 " fields:"
 msgstr ""
-"می‌توانید داک‌استرینگ‌ها را با انتساب مستقیم به فیلدهای ``__doc__`` سفارشی "
+"می‌توانید رشته مستندات را با انتساب مستقیم به فیلدهای ``__doc__`` سفارشی "
 "کنید:"
 
 msgid "Property docstrings became writeable."

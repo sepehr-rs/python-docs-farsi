@@ -44,7 +44,7 @@ msgid "To document when incompatible changes were introduced, and when they will
 msgstr "برای مستندسازی زمان معرفی تغییرات ناسازگار و زمانی که این تغییرات اجباری خواهند شد --- یا شده‌اند، این نوعی مستندسازی قابل‌اجرا است، و می‌توان آن را به‌صورت برنامه‌نویسی با ایمپورت کردن :mod:`!__future__` و بررسی محتویات آن مشاهده کرد."
 
 msgid "To ensure that :ref:`future statements <future>` run under releases prior to Python 2.1 at least yield runtime exceptions (the import of :mod:`!__future__` will fail, because there was no module of that name prior to 2.1)."
-msgstr "برای اطمینان از اینکه :ref:`future statements <future>` در نسخه‌های پیش از پایتون 2.1 حداقل استثناهای زمان اجرا ایجاد می‌کنند (ایمپورت کردن :mod:`!__future__` با شکست مواجه خواهد شد، زیرا هیچ ماژولی با آن نام پیش از نسخه‌ی ۲.۱ وجود نداشته است)."
+msgstr "برای اطمینان از اینکه :ref:`future statements <future>` در نسخه‌های پیش از پایتون 2.1 حداقل استثناهای ران‌تایم پرتاب می‌کنند (ایمپورت کردن :mod:`!__future__` با شکست مواجه خواهد شد، زیرا هیچ ماژولی با آن نام پیش از نسخه‌ی ۲.۱ وجود نداشته است)."
 
 msgid "Module Contents"
 msgstr "محتویات ماژول"

@@ -686,7 +686,7 @@ msgid ""
 "If the subprocess hasn't returned yet, and close transports of *stdin*, "
 "*stdout*, and *stderr* pipes."
 msgstr ""
-"اگر زیرفرایند هنوز بازگشت نکرده است، و انتقال‌هایلوله‌های "
+"اگر زیرفرایند هنوز بازگشت نکرده است، و انتقال‌های پایپ‌های "
 "*stdin*، *stdout* و *stderr* را ببندید."
 
 msgid "Protocols"

@@ -732,7 +732,7 @@ msgid "Looping Techniques"
 msgstr "تکنیک‌های حلقه‌زنی"
 
 msgid "When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the :meth:`~dict.items` method. ::"
-msgstr "هنگام پیمایش روی دیکشنری‌ها، کلید و مقدار متناظر آن را می‌توان به‌طور هم‌زمان با استفاده از متد :meth:`~dict.items` دریافت کرد. ::"
+msgstr "هنگام پیمایش روی دیکشنری‌ها، کلید و مقدار متناظر آن را می‌توان به‌طور همزمان با استفاده از متد :meth:`~dict.items` دریافت کرد. ::"
 
 msgid ""
 ">>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n"
@@ -750,7 +750,7 @@ msgstr ""
 "robin the brave"
 
 msgid "When looping through a sequence, the position index and corresponding value can be retrieved at the same time using the :func:`enumerate` function. ::"
-msgstr "هنگام پیمایش روی یک دنباله، اندیس موقعیت و مقدار متناظر آن را می‌توان به‌طور هم‌زمان با استفاده از تابع :func:`enumerate` دریافت کرد. ::"
+msgstr "هنگام پیمایش روی یک دنباله، اندیس موقعیت و مقدار متناظر آن را می‌توان به‌طور همزمان با استفاده از تابع :func:`enumerate` دریافت کرد. ::"
 
 msgid ""
 ">>> for i, v in enumerate(['tic', 'tac', 'toe']):\n"
@@ -768,7 +768,7 @@ msgstr ""
 "2 toe"
 
 msgid "To loop over two or more sequences at the same time, the entries can be paired with the :func:`zip` function. ::"
-msgstr "برای پیمایش روی دو یا چند دنباله به‌طور هم‌زمان، می‌توان ورودی‌های آن‌ها را با استفاده از تابع :func:`zip` جفت کرد. ::"
+msgstr "برای پیمایش روی دو یا چند دنباله به‌طور همزمان، می‌توان ورودی‌های آن‌ها را با استفاده از تابع :func:`zip` جفت کرد. ::"
 
 msgid ""
 ">>> questions = ['name', 'quest', 'favorite color']\n"

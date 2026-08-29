@@ -2584,7 +2584,7 @@ msgid ""
 "components of the time to include (the default is ``'auto'``). It can be "
 "one of the following:"
 msgstr ""
-"آرگومان اختیاری *timespec* تعداد مؤلفه‌های اضافی زمان برای شامل شدن را مشخص "
+"آرگومان اختیاری *timespec* تعداد کامپوننت‌های اضافی زمان برای شامل شدن را مشخص "
 "می‌کند (پیش‌فرض ``'auto'`` است). این می‌تواند یکی از موارد زیر باشد:"
 
 msgid ""

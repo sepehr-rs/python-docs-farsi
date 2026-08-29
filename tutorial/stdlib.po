@@ -401,7 +401,7 @@ msgid "Quality control"
 msgstr "کنترل کیفیت"
 
 msgid "One approach for developing high quality software is to write tests for each function as it is developed and to run those tests frequently during the development process."
-msgstr "یکی از روش‌ها برای توسعهٔ نرم‌افزار با کیفیت بالا این است که برای هر تابع، هم‌زمان با توسعهٔ آن، آزمون‌هایی نوشته شود و این آزمون‌ها در طول فرایند توسعه به‌طور مکرر اجرا شوند."
+msgstr "یکی از روش‌ها برای توسعهٔ نرم‌افزار با کیفیت بالا این است که برای هر تابع، همزمان با توسعهٔ آن، آزمون‌هایی نوشته شود و این آزمون‌ها در طول فرایند توسعه به‌طور مکرر اجرا شوند."
 
 msgid "The :mod:`doctest` module provides a tool for scanning a module and validating tests embedded in a program's docstrings.  Test construction is as simple as cutting-and-pasting a typical call along with its results into the docstring. This improves the documentation by providing the user with an example and it allows the doctest module to make sure the code remains true to the documentation::"
 msgstr "ماژول :mod:`doctest` ابزاری برای پیمایش یک ماژول و اعتبارسنجی آزمون‌هایی که در رشته‌های مستندات رشته مستند برنامه قرار داده شده‌اند فراهم می‌کند. ساخت آزمون‌ها به سادگیِ کپی‌کردن یک فراخوانی معمولی به همراه نتیجهٔ آن در docstring است. این کار مستندات را بهتر می‌کند، زیرا نمونه‌ای برای کاربر فراهم می‌کند و همچنین به ماژول doctest اجازه می‌دهد اطمینان حاصل کند که کد همچنان مطابق با مستندات عمل می‌کند::"

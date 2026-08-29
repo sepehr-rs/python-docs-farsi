@@ -98,7 +98,7 @@ msgid ""
 ":ref:`run Python coroutines <coroutine>` concurrently and have full control "
 "over their execution;"
 msgstr ""
-":ref:`اجرای هم‌روال‌های پایتون <coroutine>` به‌صورت هم‌زمان و داشتن کنترل کامل "
+":ref:`اجرای هم‌روال‌های پایتون <coroutine>` به‌صورت همزمان و داشتن کنترل کامل "
 "بر اجرای آن‌ها؛"
 
 msgid "perform :ref:`network IO and IPC <asyncio-streams>`;"

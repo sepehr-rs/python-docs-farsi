@@ -701,7 +701,7 @@ msgid "Raising and Handling Multiple Unrelated Exceptions"
 msgstr "پرتاب و مدیریت چندین استثنای نامربوط به هم"
 
 msgid "There are situations where it is necessary to report several exceptions that have occurred. This is often the case in concurrency frameworks, when several tasks may have failed in parallel, but there are also other use cases where it is desirable to continue execution and collect multiple errors rather than raise the first exception."
-msgstr "گاهی لازم است چندین استثنا که رخ داده‌اند به‌طور هم‌زمان گزارش شوند. این وضعیت معمولاً در چارچوب‌های هم‌روندی (concurrency) پیش می‌آید؛ جایی که ممکن است چندین وظیفه به‌طور موازی شکست بخورند. البته موارد دیگری نیز وجود دارد که در آن‌ها ترجیح داده می‌شود اجرای برنامه ادامه پیدا کند و چندین خطا جمع‌آوری شوند، به‌جای اینکه با اولین استثنا متوقف شود."
+msgstr "گاهی لازم است چندین استثنا که رخ داده‌اند به‌طور همزمان گزارش شوند. این وضعیت معمولاً در چارچوب‌های هم‌روندی (concurrency) پیش می‌آید؛ جایی که ممکن است چندین وظیفه به‌طور موازی شکست بخورند. البته موارد دیگری نیز وجود دارد که در آن‌ها ترجیح داده می‌شود اجرای برنامه ادامه پیدا کند و چندین خطا جمع‌آوری شوند، به‌جای اینکه با اولین استثنا متوقف شود."
 
 msgid "The builtin :exc:`ExceptionGroup` wraps a list of exception instances so that they can be raised together. It is an exception itself, so it can be caught like any other exception. ::"
 msgstr "استثنای توکار :exc:`ExceptionGroup` فهرستی از نمونه‌های استثنا را در خود نگه می‌دارد تا بتوان آن‌ها را به‌صورت گروهی پرتاب کرد. خود این کلاس نیز یک استثنا است، بنابراین مانند هر استثنای دیگری قابل مدیریت (catch) است.::"

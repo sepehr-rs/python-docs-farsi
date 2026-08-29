@@ -520,7 +520,7 @@ msgid ""
 "interactive sessions, by only appending the new history. ::"
 msgstr ""
 "مثال زیر همان هدف را برآورده می‌کند، اما فقط با افزودن تاریخچهٔ جدید، از "
-"نشست‌های تعاملی هم‌زمان پشتیبانی می‌کند. ::"
+"نشست‌های تعاملی همزمان پشتیبانی می‌کند. ::"
 
 msgid ""
 "import atexit\n"

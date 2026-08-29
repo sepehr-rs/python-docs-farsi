@@ -182,7 +182,7 @@ msgstr "*initialfile* - فایل انتخاب‌شده هنگام باز شدن 
 msgid ""
 "*filetypes* - a sequence of (label, pattern) tuples, '*' wildcard is allowed"
 msgstr ""
-"*filetypes* - دنباله‌ای از تاپل‌های (label, pattern)، نویسه‌ی عام '*' مجاز "
+"*filetypes* - دنباله‌ای از تاپل‌های (label, pattern)، وایلدکارد '*' مجاز "
 "است"
 
 msgid ""

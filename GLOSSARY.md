@@ -13,7 +13,7 @@
 | async              | ناهمگام، غیرهمگام       |
 | attribute          | ویژگی، صفت، شاخصه       |
 | action             | اکشن، کنش               |
-| await              | await                   |
+| await               | await                   |
 | boolean            | بولی                    |
 | bootstrapping      | بوت‌استرپینگ             |
 | built-in           | توکار، درونی، درون‌ساخته |
@@ -24,7 +24,7 @@
 | class              | کلاس                     |
 | command line       | خط فرمان                |
 | community          | کامیونیتی               |
-| component          | کامپوننت                |
+| component          | کامپوننت، جزء           |
 | context management | مدیریت زمینه            |
 | coroutine          | هم‌روال                  |
 | custom             | سفارشی، اختصاصی         |
@@ -32,6 +32,7 @@
 | decoding           | کدگشایی                 |
 | decorator          | دکوراتور، آراینده       |
 | dependency         | وابستگی                 |
+| docstring          | رشته مستند              |
 | deprecated         | منسوخ، از رده خارج شده  |
 | dictionary         | دیکشنری                 |
 | directory          | پوشه                    |
@@ -41,7 +42,7 @@
 | element            | المان، عنصر             |
 | encoding           | کدگذاری                 |
 | endpoint           | پایانه                  |
-| escape             | خنثی کردن               |
+| escape             | خنثی کردن، گریز         |
 | event              | رویداد                  |
 | exception          | استثنا                  |
 | expression         | عبارت                   |
@@ -51,7 +52,7 @@
 | generator          | تولیدگر                 |
 | generic function   | تابع عام، تابع عمومی    |
 | symlink            | پیوند نمادین            |
-| global             | سراسری                  |
+| global             | سراسری، عمومی           |
 | hexadecimal        | مبنای شانزده            |
 | heap               | هیپ                     |
 | mix-in             | میکس‌این                 |
@@ -73,8 +74,8 @@
 | loader             | بارگذار                 |
 | local              | محلی                    |
 | loop               | حلقه                    |
-| metaclass          | فراکلاس                 |
-| method             | متد                     |
+| metaclass          | فراکلاس                  |
+| method             | متد، روش                |
 | mock               | ماک                     |
 | module             | ماژول                   |
 | mutable            | تغییرپذیر               |
@@ -92,6 +93,7 @@
 | race               | رقابت                   |
 | raise              | پرتاب                   |
 | return             | بازگشت، برگرداندن       |
+| run time, run-time | زمان اجرا                |
 | runtime            | ران‌تایم                 |
 | scope              | محدوده                  |
 | shadowing          | پوشاندن                 |
@@ -109,4 +111,5 @@
 | value              | مقدار                   |
 | variable           | متغیر                   |
 | wrapper            | پوششی، دربرگیرنده       |
-| widget             | ابزارک                    |            
+| widget             | ابزارک                  |            
+| wildcard           | وایلدکارد               |

@@ -258,7 +258,7 @@ msgid "Multi-threading"
 msgstr "چندنخی"
 
 msgid "Threading is a technique for decoupling tasks which are not sequentially dependent.  Threads can be used to improve the responsiveness of applications that accept user input while other tasks run in the background.  A related use case is running I/O in parallel with computations in another thread."
-msgstr "چندنخی روشی برای جدا کردن وظایفی است که به‌صورت ترتیبی به یکدیگر وابسته نیستند. از نخ‌ها می‌توان برای افزایش پاسخ‌گویی برنامه‌هایی استفاده کرد که هم‌زمان با اجرای وظایف دیگر در پس‌زمینه، ورودی کاربر را نیز دریافت می‌کنند. یکی دیگر از کاربردهای رایج آن، اجرای عملیات ورودی/خروجی به‌صورت موازی با محاسبات در نخ دیگر است."
+msgstr "چندنخی روشی برای جدا کردن وظایفی است که به‌صورت ترتیبی به یکدیگر وابسته نیستند. از نخ‌ها می‌توان برای افزایش پاسخ‌گویی برنامه‌هایی استفاده کرد که همزمان با اجرای وظایف دیگر در پس‌زمینه، ورودی کاربر را نیز دریافت می‌کنند. یکی دیگر از کاربردهای رایج آن، اجرای عملیات ورودی/خروجی به‌صورت موازی با محاسبات در نخ دیگر است."
 
 msgid "The following code shows how the high level :mod:`threading` module can run tasks in background while the main program continues to run::"
 msgstr "کد زیر نشان می‌دهد که چگونه ماژول سطح‌بالای :mod:`threading` می‌تواند وظایف را در پس‌زمینه اجرا کند، در حالی که برنامهٔ اصلی همچنان به اجرای خود ادامه می‌دهد::"

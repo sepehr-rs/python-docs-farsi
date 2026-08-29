@@ -294,7 +294,7 @@ msgid ""
 "writers, just like its equivalent classes in :mod:`gzip` and :mod:`lzma` "
 "have always been."
 msgstr ""
-"این کلاس در مواجهه با چندین خواننده یا نویسنده هم‌زمان، از نظر نخی ایمن "
+"این کلاس در مواجهه با چندین خواننده یا نویسنده همزمان، از نظر نخی ایمن "
 "نیست، همان‌طور که کلاس‌های معادل آن در :mod:`gzip` و :mod:`lzma` همیشه "
 "بوده‌اند."
 

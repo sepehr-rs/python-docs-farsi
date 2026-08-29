@@ -235,7 +235,7 @@ msgstr ""
 msgid ""
 "Setting both *altinstall* and *default_pip* will trigger :exc:`ValueError`."
 msgstr ""
-"تنظیم هم‌زمان *altinstall* و *default_pip* باعث پرتاب :exc:`ValueError` "
+"تنظیم همزمان *altinstall* و *default_pip* باعث پرتاب :exc:`ValueError` "
 "می‌شود."
 
 msgid ""

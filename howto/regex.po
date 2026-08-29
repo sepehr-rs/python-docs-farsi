@@ -1646,7 +1646,7 @@ msgid ""
 ":meth:`~re.Match.group` can be passed multiple group numbers at a time, in which "
 "case it will return a tuple containing the corresponding values for those groups. ::"
 msgstr ""
-"می‌توان چندین شماره گروه را به‌صورت هم‌زمان به :meth:`~re.Match.group` ارسال کرد، که "
+"می‌توان چندین شماره گروه را به‌صورت همزمان به :meth:`~re.Match.group` ارسال کرد، که "
 "در این صورت یک تاپل شامل مقادیر متناظر برای آن گروه‌ها برمی‌گرداند. ::"
 
 msgid ""

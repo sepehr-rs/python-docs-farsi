@@ -1051,7 +1051,7 @@ msgid ""
 "individual handler-level locks as those handlers are configured."
 msgstr ""
 "API‌های پیکربندی لاگ‌برداری، قفل سطح ماژول را کسب می‌کنند و سپس قفل‌های "
-"جداگانه‌ی سطح هندلر (handler) را هم‌زمان با پیکربندی آن هندلرها کسب می‌کنند."
+"جداگانه‌ی سطح هندلر (handler) را همزمان با پیکربندی آن هندلرها کسب می‌کنند."
 
 msgid ""
 "Many logging APIs lock the module-level lock. If such an API is called from "
