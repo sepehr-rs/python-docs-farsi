@@ -249,7 +249,7 @@ msgid ""
 "Returns the current maximum field size allowed by the parser. If *new_limit*"
 " is given, this becomes the new limit."
 msgstr ""
-"حداکثر اندازه فیلدی که تجزیه‌گر در حال حاضر مجاز می‌داند را برمی‌گرداند. اگر"
+"حداکثر اندازه فیلدی که پارسر در حال حاضر مجاز می‌داند را برمی‌گرداند. اگر"
 " *new_limit* داده شود، به حد جدید تبدیل می‌شود."
 
 msgid "The :mod:`!csv` module defines the following classes:"
@@ -831,7 +831,7 @@ msgstr "اشیای Reader دارای ویژگی‌های عمومی زیر هس�
 
 msgid "A read-only description of the dialect in use by the parser."
 msgstr ""
-"توضیحی فقط‌خواندنی دربارهٔ گویش (dialect) مورد استفاده‌ی تجزیه‌کننده "
+"توضیحی فقط‌خواندنی دربارهٔ گویش (dialect) مورد استفاده‌ی پارسر "
 "(parser)."
 
 msgid ""

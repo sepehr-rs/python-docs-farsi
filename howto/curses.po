@@ -628,7 +628,7 @@ msgid ""
 "either a string of length 1, a bytestring of length 1, or an integer."
 msgstr ""
 "متدهای :meth:`~curses.window.addch` یک نویسه دریافت می‌کنند، که می‌تواند یک "
-"رشته به طول ۱، یک بایت‌استرینگ (bytestring) به طول ۱، یا یک عدد صحیح باشد."
+"رشته به طول ۱، یک رشته‌بایت (bytestring) به طول ۱، یا یک عدد صحیح باشد."
 
 msgid ""
 "Constants are provided for extension characters; these constants are "

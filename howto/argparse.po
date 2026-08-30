@@ -898,7 +898,7 @@ msgid ""
 "We have introduced another action, \"count\", to count the number of "
 "occurrences of specific options."
 msgstr ""
-"ما اکشندیگری به نام \"count\" برای شمارش تعداد دفعات استفاده از "
+"ما اکشن دیگری به نام \"count\" برای شمارش تعداد دفعات استفاده از "
 "گزینه‌های خاص معرفی کرده‌ایم."
 
 msgid ""

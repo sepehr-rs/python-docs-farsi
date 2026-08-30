@@ -125,7 +125,7 @@ msgid ""
 "Replace callback actions and the ``callback_*`` keyword arguments with "
 "``type`` or ``action`` arguments."
 msgstr ""
-"اکشن‌های کال‌بک و آرگومان‌های کلیدواژه‌ای ``callback_*`` را با آرگومان‌های "
+"کنش‌های کال‌بک و آرگومان‌های کلیدواژه‌ای ``callback_*`` را با آرگومان‌های "
 "``type`` یا ``action`` جایگزین کنید."
 
 msgid ""

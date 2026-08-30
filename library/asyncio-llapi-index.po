@@ -183,7 +183,7 @@ msgid "Set the default executor for :meth:`loop.run_in_executor`."
 msgstr "اجراکننده‌ی پیش‌فرض را برای :meth:`loop.run_in_executor` تنظیم کنید."
 
 msgid "Tasks and Futures"
-msgstr "تسک‌ها و فیوچر‌ها (Tasks and Futures)"
+msgstr "وظایف و آینده‌نماها (Tasks and Futures)"
 
 msgid ":meth:`loop.create_future`"
 msgstr ":meth:`loop.create_future`"

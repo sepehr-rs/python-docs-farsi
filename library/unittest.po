@@ -3065,7 +3065,7 @@ msgstr "پارامتر مستند‌نشده و غیررسمی *use_load_tests* 
 
 msgid "Return a suite of all test cases given a string specifier."
 msgstr ""
-"یک سوئیت (suite) از تمام موارد تست را بر اساس یک مشخص‌کننده رشته‌ای "
+"یک بدنه (suite) از تمام موارد تست را بر اساس یک مشخص‌کننده رشته‌ای "
 "برمی‌گرداند."
 
 msgid ""

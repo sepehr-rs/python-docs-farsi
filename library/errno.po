@@ -269,7 +269,7 @@ msgid "Invalid request code"
 msgstr "کد درخواست نامعتبر"
 
 msgid "Invalid slot"
-msgstr "شکاف نا‌معتبر (slot)"
+msgstr "جایگاه نا‌معتبر (slot)"
 
 msgid "File locking deadlock error"
 msgstr "خطای بن‌بست در قفل فایل"

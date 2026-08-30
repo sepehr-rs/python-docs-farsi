@@ -6,7 +6,7 @@
 
 ## شروع کار
 
-1. ریپازیتوری را روی GitHub **فورک** کنید و نسخهٔ خودتان را کلون کنید:
+1. ریپازیتوری را روی GitHub **منشعب** کنید و نسخهٔ خودتان را کلون کنید:
    ```bash
    git clone https://github.com/<username>/python-docs-fa.git
    cd python-docs-fa

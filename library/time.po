@@ -557,7 +557,7 @@ msgid ""
 "signal handler, the sleep is restarted with a recomputed timeout."
 msgstr ""
 "اگر sleep بر اثر یک سیگنال دچار وقفه شود و مدیر سیگنال استثنایی پرتاب نکند، "
-"sleep با تایم‌اوت بازمحاسبه‌شده دوباره آغاز می‌شود."
+"sleep با مهلت زمانی بازمحاسبه‌شده دوباره آغاز می‌شود."
 
 msgid ""
 "The suspension time may be longer than requested by an arbitrary amount, "
@@ -602,7 +602,7 @@ msgstr "یا از ``select()`` استفاده کنید (دقت: ۱ میکروث�
 
 msgid "To emulate a \"no-op\", use :keyword:`pass` instead of ``time.sleep(0)``."
 msgstr ""
-"برای شبیه‌سازی یک «بدون عملیات» (no-op)، به جای ``time.sleep(0)`` "
+"برای شبیه‌سازی یک «عملیات بی‌اثر» (no-op)، به جای ``time.sleep(0)`` "
 "از :keyword:`pass` استفاده کنید."
 
 msgid ""

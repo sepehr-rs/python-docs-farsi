@@ -1380,7 +1380,7 @@ msgid "If there are more lines in the documentation string, the second line shou
 msgstr "اگر خطوط بیشتری در رشتهٔ مستندسازی وجود دارد، خط دوم باید خالی باشد تا به‌صورت بصری خلاصه را از ادامهٔ توضیحات جدا کند. خطوط بعدی باید شامل یک یا چند پاراگراف باشند که قراردادهای فراخوانی شیء، عوارض جانبی آن و موارد مشابه را توضیح می‌دهند."
 
 msgid "The Python parser strips indentation from multi-line string literals when they serve as module, class, or function docstrings."
-msgstr "تجزیه‌گر پایتون هنگام استفاده از رشته‌های چندخطی به‌عنوان رشته‌های مستندسازی ماژول، کلاس یا تابع، تورفتگی را از آن‌ها حذف می‌کند."
+msgstr "پارسر پایتون هنگام استفاده از رشته‌های چندخطی به‌عنوان رشته‌های مستندسازی ماژول، کلاس یا تابع، تورفتگی را از آن‌ها حذف می‌کند."
 
 msgid "Here is an example of a multi-line docstring::"
 msgstr "در اینجا یک نمونه از یک رشتهٔ مستندسازی چندخطی آمده است::"

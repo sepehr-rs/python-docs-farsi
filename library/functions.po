@@ -4007,7 +4007,7 @@ msgid ""
 "you are reading the code from a file, make sure to use newline conversion "
 "mode to convert Windows or Mac-style newlines."
 msgstr ""
-"توجه داشته باشید که تجزیه‌کننده (parser) فقط قرارداد پایان خط به سبک یونیکس "
+"توجه داشته باشید که پارسر (parser) فقط قرارداد پایان خط به سبک یونیکس "
 "را می‌پذیرد. اگر کد را از یک پرونده می‌خوانید، مطمئن شوید که از حالت تبدیل "
 "نویسهٔ پایان خط برای تبدیل پایان خط‌های ویندوز یا مک استفاده می‌کنید."
 

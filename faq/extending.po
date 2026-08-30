@@ -449,7 +449,7 @@ msgid ""
 "parser's behavior sufficiently.  IDLE uses this, for example."
 msgstr ""
 "در پایتون می‌توانید از ماژول :mod:`codeop` استفاده کنید، که رفتار "
-"تجزیه‌کننده (parser) را به‌اندازهٔ کافی تقریب می‌زند. برای مثال، IDLE از این"
+"پارسر (parser) را به‌اندازهٔ کافی تقریب می‌زند. برای مثال، IDLE از این"
 " استفاده می‌کند."
 
 msgid ""

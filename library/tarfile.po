@@ -1213,7 +1213,7 @@ msgstr ":meth:`~TarFile.addfile` شکست خواهد خورد."
 
 msgid ":meth:`~TarFile.list` will print a placeholder string."
 msgstr ""
-":meth:`~TarFile.list` یک رشتهٔ جای‌گیر (placeholder) را چاپ خواهد کرد."
+":meth:`~TarFile.list` یک رشتهٔ جای‌نگهدار (placeholder) را چاپ خواهد کرد."
 
 msgid "Create a :class:`TarInfo` object."
 msgstr "یک شیء :class:`TarInfo` ایجاد کنید."

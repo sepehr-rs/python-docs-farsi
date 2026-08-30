@@ -32,7 +32,7 @@ msgid ""
 "version here omits details related to code generation and error recovery."
 msgstr ""
 "این دستور زبان کامل پایتون است و مستقیماً از دستور زبانی گرفته شده است که "
-"برای تولید تجزیه‌کننده CPython به کار می‌رود (به :source:`Grammar/"
+"برای تولید پارسر CPython به کار می‌رود (به :source:`Grammar/"
 "python.gram` مراجعه کنید). این نسخه جزئیات مربوط به تولید کد و بازیابی از "
 "خطا را حذف می‌کند."
 

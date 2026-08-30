@@ -35,7 +35,7 @@ msgid "Syntax Errors"
 msgstr "خطاهای دستوری"
 
 msgid "Syntax errors, also known as parsing errors, are perhaps the most common kind of complaint you get while you are still learning Python::"
-msgstr "خطاهای دستوری، که به‌عنوان خطاهای تجزیه‌گر «parsing errors» نیز شناخته می‌شوند، شاید رایج‌ترین نوع خطاهایی باشند که هنگام یادگیری پایتون با آن‌ها مواجه می‌شوید::"
+msgstr "خطاهای دستوری، که به‌عنوان خطاهای پارسر «parsing errors» نیز شناخته می‌شوند، شاید رایج‌ترین نوع خطاهایی باشند که هنگام یادگیری پایتون با آن‌ها مواجه می‌شوید::"
 
 msgid ""
 ">>> while True print('Hello world')\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 msgid "The parser repeats the offending line and displays little arrows pointing at the place where the error was detected.  Note that this is not always the place that needs to be fixed.  In the example, the error is detected at the function :func:`print`, since a colon (``':'``) is missing just before it."
 msgstr ""
-"تجزیه‌گر «parser» خط مشکل‌دار را تکرار می‌کند و فلش‌های کوچکی را نشان می‌دهد که به جایی اشاره دارند که خطا در آن شناسایی شده است.\n"
+"پارسر «parser» خط مشکل‌دار را تکرار می‌کند و فلش‌های کوچکی را نشان می‌دهد که به جایی اشاره دارند که خطا در آن شناسایی شده است.\n"
 "توجه داشته باشید که این همیشه همان جایی نیست که باید اصلاح شود.\n"
 "در این مثال، خطا در تابع :func:`print` شناسایی شده است، زیرا دو نقطه (``':'``) درست قبل از آن وجود ندارد."
 

@@ -989,7 +989,7 @@ msgstr ""
 "      return typ"
 
 msgid "Creating a custom callable annotate function"
-msgstr "ایجاد یک تابع یادداشت‌گذاری (annotate) سفارشی و قابل‌فراخوانی"
+msgstr "ایجاد یک تابع یادداشت‌گذاری (annotate) سفارشی و فراخوانی‌پذیر"
 
 msgid ""
 "Custom :term:`annotate functions <annotate function>` may be literal "

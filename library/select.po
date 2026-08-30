@@ -710,7 +710,7 @@ msgid ""
 "timeout in seconds (floats possible); the default is ``None``, to wait "
 "forever"
 msgstr ""
-"تایم‌اوت (timeout) به ثانیه (امکان استفاده از مقادیر شناور وجود دارد)؛ "
+"مهلت زمانی (timeout) به ثانیه (امکان استفاده از مقادیر شناور وجود دارد)؛ "
 "پیش‌فرض ``None`` است، تا برای همیشه منتظر بماند"
 
 msgid "Kevent objects"

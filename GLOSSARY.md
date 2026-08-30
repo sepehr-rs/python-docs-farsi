@@ -22,6 +22,7 @@
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
+| callable           | فراخوانی‌پذیر            |
 | character          | نویسه                   |
 | class              | کلاس                     |
 | command line       | خط فرمان                |
@@ -49,7 +50,9 @@
 | exception          | استثنا                  |
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
+| fork               | انشعاب، فورک            |
 | function           | تابع                    |
+| futures            | آینده‌نماها، فیوچرز      |
 | garbage collection | زباله‌روبی               |
 | generator          | تولیدگر                 |
 | generic function   | تابع عام، تابع عمومی    |
@@ -59,7 +62,6 @@
 | heap               | هیپ                     |
 | handler            | هندلر                   |
 | handle             | دسته                    |
-| mix-in             | میکس‌این                 |
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
 | import             | ایمپورت                 |
@@ -69,6 +71,7 @@
 | interface          | رابط                    |
 | interpreter        | مفسر                    |
 | item               | آیتم                    |
+| idempotent         | هم‌توان                  |
 | iterable           | تکرارپذیر               |
 | keyword            | کلیدواژه                |
 | keyword argument   | آرگومان کلیدواژه‌ای      |
@@ -86,20 +89,30 @@
 | mock               | ماک                     |
 | manager            | مدیر                    |
 | module             | ماژول                   |
+| mutex              | قفل متقابل              |
+| mix-in             | میکس‌این                 |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
+| no-op              | عملیات بی‌اثر            |
 | object             | شیء                     |
 | octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
+| overload           | سربارگذاری              |
 | package            | بسته                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | payload            | بار                     |
+| pane               | بخش                     |
+| patch              | وصل                     |
+| predicate          | محمول                   |
 | parallelism        | موازی‌سازی               |
 | parser             | پارسر                   |
 | parameter          | پارامتر                 |
 | padding            | پُرکننده، پدینگ          |
 | positional         | جایگاهی                 |
+| placeholder        | جای‌نگهدار               |
+| pickle             | پیکل                    |
+| unpickle           | پیکل‌گشایی               |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
 | race               | رقابت                   |
@@ -110,16 +123,23 @@
 | scope              | محدوده                  |
 | shadowing          | پوشاندن                 |
 | shell              | پوسته                   |
+| singleton          | تک‌نمونه                 |
+| slot               | جایگاه                  |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
+| suite              | بدنه                    |
+| stub               | stub                    |
 | string             | رشته                    |
 | syntactic sugar    | قند نحوی                |
 | syntax             | سینتکس، نحو             |
 | thread             | نخ                      |
 | tracking           | پیگیری                  |
+| task               | وظیفه                   |
+| timeout            | مهلت زمانی              |
 | type               | نوع، نوع داده، تایپ     |
 | unit test          | یونیت تست               |
 | unpacking          | واگشایی                 |
+| unary              | یک‌عملوندی               |
 | value              | مقدار                   |
 | variable           | متغیر                   |
 | wrapper            | پوششی، دربرگیرنده       |

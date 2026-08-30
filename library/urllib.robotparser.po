@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!urllib.robotparser` ---  Parser for robots.txt"
-msgstr ":mod:`!urllib.robotparser` ---  تجزیه‌کننده برای robots.txt"
+msgstr ":mod:`!urllib.robotparser` ---  پارسر برای robots.txt"
 
 msgid "**Source code:** :source:`Lib/urllib/robotparser.py`"
 msgstr "کد منبع: :source:`Lib/urllib/robotparser.py`"
@@ -52,7 +52,7 @@ msgstr "URL ارجاع‌دهنده به فایل :file:`robots.txt` را تنظ
 
 msgid "Reads the :file:`robots.txt` URL and feeds it to the parser."
 msgstr ""
-"نشانی URL :file:`robots.txt` را می‌خواند و آن را به تحلیل‌گر (parser) "
+"نشانی URL :file:`robots.txt` را می‌خواند و آن را به پارسر (parser) "
 "می‌دهد."
 
 msgid "Parses the lines argument."

@@ -1553,7 +1553,7 @@ msgstr ""
 "10.43c\"`` همگی ناحیه‌های معتبر هستند."
 
 msgid "relief"
-msgstr "تسکین"
+msgstr "وظیفهین"
 
 msgid ""
 "Determines what the border style of a widget will be.  Legal values are: "

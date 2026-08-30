@@ -127,7 +127,7 @@ msgid ""
 "keep a task visible by :func:`asyncio.all_tasks` and "
 ":func:`asyncio.current_task`:"
 msgstr ""
-"یک پیاده‌سازی تسکشخص ثالث باید توابع زیر را فراخوانی کند تا یک تسک "
+"یک پیاده‌سازی وظیفهشخص ثالث باید توابع زیر را فراخوانی کند تا یک وظیفه "
 "برای :func:`asyncio.all_tasks` و :func:`asyncio.current_task` قابل مشاهده "
 "باقی بماند:"
 
@@ -146,7 +146,7 @@ msgstr ""
 "این تابع باید هنگامی فراخوانی شود که یک وظیفه در آستانهٔ پایان قرار دارد."
 
 msgid "Switch the current task to the *task* argument."
-msgstr "تسک جاری را به آرگومان *task* تغییر دهید."
+msgstr "وظیفه جاری را به آرگومان *task* تغییر دهید."
 
 msgid ""
 "Call the function just before executing a portion of embedded *coroutine* "

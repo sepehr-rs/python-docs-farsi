@@ -416,7 +416,7 @@ msgstr "فقط می‌توان به فایل الحاق کرد."
 
 msgid "The directory is opaque when viewed through a union stack."
 msgstr ""
-"پوشه هنگامی که از طریق یک پشته‌ی اتحاد (union stack) مشاهده می‌شود، غیرشفاف "
+"پوشه هنگامی که از طریق یک پشته‌ی اجتماع (union stack) مشاهده می‌شود، غیرشفاف "
 "است."
 
 msgid "The file may not be renamed or deleted."

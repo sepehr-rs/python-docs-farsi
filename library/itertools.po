@@ -238,7 +238,7 @@ msgid ":func:`takewhile`"
 msgstr ":func:`takewhile`"
 
 msgid "seq[0], seq[1], until predicate fails"
-msgstr "seq[0]، seq[1]، تا زمانی که شرط (predicate) شکست نخورد"
+msgstr "seq[0]، seq[1]، تا زمانی که محمول (predicate) شکست نخورد"
 
 msgid "``takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4``"
 msgstr "``takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4``"

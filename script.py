@@ -206,11 +206,26 @@ def mostly_preserved_code(msgid, msgstr):
     return kept / len(toks) >= 0.8
 
 
+# Bare code fragments embedded directly in prose with NO backticks/roles at
+# all, e.g. "...(e.g. list.index()) but functions for other (e.g. len(list))"
+# or "using ``list(dictview)``" -- covers dotted-call (name.method(...)),
+# bare call (name(...)), and subscript/dunder-ish tokens.
+BARE_DOTTED_CALL_RE = re.compile(r"\b[A-Za-z_][\w]*(?:\.[A-Za-z_][\w]*)+\(\)?")
+BARE_CALL_RE = re.compile(r"\b[A-Za-z_][\w]*\([^()\s]{0,40}\)")
+
+
+def strip_bare_code_fragments(text):
+    text = BARE_DOTTED_CALL_RE.sub(" ", text)
+    text = BARE_CALL_RE.sub(" ", text)
+    return text
+
+
 def clean_prose(msgid):
-    """Full pipeline: literal blocks -> markup -> quoted code stripped."""
+    """Full pipeline: literal blocks -> markup -> quoted code -> bare code."""
     text = strip_literal_blocks(msgid)
     text = strip_markup(text)
     text = strip_quoted_code(text)
+    text = strip_bare_code_fragments(text)
     return text
 
 
@@ -259,12 +274,19 @@ def scan_file(path):
         if mostly_preserved_code(msgid, msgstr):
             continue
 
-        prose = clean_prose(msgid)
-        if not prose.strip():
+        msgid_prose = clean_prose(msgid)
+        if not msgid_prose.strip():
             continue
 
+        # Strip the same code/markup out of msgstr too. Otherwise a fully
+        # correct translation still "matches" because the term survives
+        # inside a code snippet embedded in the msgstr (e.g. Farsi prose
+        # around a kept ``list.insert()`` call) even though nothing was
+        # actually left untranslated in the prose itself.
+        msgstr_prose = clean_prose(msgstr)
+
         for term, pattern in TERM_PATTERNS.items():
-            if pattern.search(prose) and pattern.search(msgstr):
+            if pattern.search(msgid_prose) and pattern.search(msgstr_prose):
                 hits.append((term, entry.linenum, msgid, msgstr))
 
     return hits

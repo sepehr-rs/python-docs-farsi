@@ -64,7 +64,7 @@ msgid "Submodules in the ``html`` package are:"
 msgstr "زیرماژول‌های موجود در بسته ``html`` عبارتند از:"
 
 msgid ":mod:`html.parser` -- HTML/XHTML parser with lenient parsing mode"
-msgstr ":mod:`html.parser` -- تجزیه‌گر HTML/XHTML با حالت تجزیهٔ آسان‌گیر"
+msgstr ":mod:`html.parser` -- پارسر HTML/XHTML با حالت تجزیهٔ آسان‌گیر"
 
 msgid ":mod:`html.entities` -- HTML entity definitions"
 msgstr ":mod:`html.entities` -- تعاریف entity در HTML"

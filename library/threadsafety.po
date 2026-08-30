@@ -168,7 +168,7 @@ msgid ""
 "Example: :c:func:`PyMutex_IsLocked` performs an atomic read of the mutex "
 "state and can be called from any thread at any time."
 msgstr ""
-"مثال: :c:func:`PyMutex_IsLocked` یک خواندن اتمی از وضعیت میوتکس (mutex) "
+"مثال: :c:func:`PyMutex_IsLocked` یک خواندن اتمی از وضعیت قفل متقابل (mutex) "
 "انجام می‌دهد و می‌تواند از هر نخی در هر زمانی فراخوانی شود."
 
 msgid "Thread safety for list objects"

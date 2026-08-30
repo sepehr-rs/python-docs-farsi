@@ -392,7 +392,7 @@ msgid "Acquire a shared lock."
 msgstr "یک قفل مشترک را به دست آورید."
 
 msgid "Acquire an exclusive lock."
-msgstr "یک قفل انحصاری کسب کنید."
+msgstr "یک قفل متقابل کسب کنید."
 
 msgid ""
 "Bitwise OR with any of the other three ``LOCK_*`` constants to make the "

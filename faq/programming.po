@@ -3228,7 +3228,7 @@ msgstr ""
 
 msgid "How can I overload constructors (or methods) in Python?"
 msgstr ""
-"چگونه می‌توانم سازنده‌ها (یا متدها) را در پایتون بارگذاری بیش از حد "
+"چگونه می‌توانم سازنده‌ها (یا متدها) را در پایتون سربارگذاری "
 "(overload) کنم؟"
 
 msgid ""

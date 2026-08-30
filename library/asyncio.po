@@ -119,13 +119,13 @@ msgstr "برای **درون‌نگری** (introspection)، asyncio APIها و ا
 
 msgid ""
 "inspecting the :ref:`async call graph <asyncio-graph>` of tasks and futures;"
-msgstr "بازرسی :ref:`گراف فراخوانی نا‌همگام <asyncio-graph>` تسک‌ها و فیوچرها؛"
+msgstr "بازرسی :ref:`گراف فراخوانی نا‌همگام <asyncio-graph>` وظایف و آینده‌نماها؛"
 
 msgid ""
 "inspecting tasks in another running Python process with :ref:`command-line "
 "tools <asyncio-introspection-tools>`;"
 msgstr ""
-"بازرسی تسک‌ها در فرایند پایتون دیگری که در حال اجرا است با :ref:`ابزارهای خط "
+"بازرسی وظایف در فرایند پایتون دیگری که در حال اجرا است با :ref:`ابزارهای خط "
 "فرمان <asyncio-introspection-tools>`؛"
 
 msgid ""
