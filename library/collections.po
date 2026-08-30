@@ -862,7 +862,7 @@ msgstr ""
 "جدیدترین فعالیت مورد توجه است، مفید هستند."
 
 msgid "Deques are :ref:`generic <generics>` over the type of their contents."
-msgstr "دک‌ها (deque) نسبت به نوع محتوای خود :ref:`عام <generics>` هستند."
+msgstr "صف‌های دوطرفه (deque) نسبت به نوع محتوای خود :ref:`عام <generics>` هستند."
 
 msgid "Deque objects support the following methods:"
 msgstr "اشیای Deque از متدهای زیر پشتیبانی می‌کنند:"
@@ -907,7 +907,7 @@ msgstr ""
 "نشدن، :exc:`ValueError` را پرتاب می‌کند."
 
 msgid "Insert *value* into the deque at position *index*."
-msgstr "*value* را در موقعیت *index* در دک (deque) درج کنید."
+msgstr "*value* را در موقعیت *index* در صف دوطرفه (deque) درج کنید."
 
 msgid ""
 "If the insertion would cause a bounded deque to grow beyond *maxlen*, an "
@@ -980,7 +980,7 @@ msgid ""
 "Starting in version 3.5, deques support ``__add__()``, ``__mul__()``, and "
 "``__imul__()``."
 msgstr ""
-"از نسخه 3.5 به بعد، دِک‌ها (deque) از ``__add__()``، ``__mul__()`` و "
+"از نسخه 3.5 به بعد، صف‌های دوطرفه (deque) از ``__add__()``، ``__mul__()`` و "
 "``__imul__()`` پشتیبانی می‌کنند."
 
 msgid "Example:"

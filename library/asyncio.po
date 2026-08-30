@@ -103,7 +103,7 @@ msgstr ""
 
 msgid "perform :ref:`network IO and IPC <asyncio-streams>`;"
 msgstr ""
-"انجام :ref:`ورودی/خروجی شبکه و ارتباط بین‌پردازشی (IPC) <asyncio-streams>`؛"
+"انجام :ref:`ورودی/خروجی شبکه و ارتباط بین‌فرایندی (IPC) <asyncio-streams>`؛"
 
 msgid "control :ref:`subprocesses <asyncio-subprocess>`;"
 msgstr "کنترل :ref:`زیر‌فرایندها <asyncio-subprocess>`؛"

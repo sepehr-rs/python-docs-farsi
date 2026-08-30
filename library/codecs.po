@@ -1367,7 +1367,7 @@ msgstr ""
 "نمونه‌ای از :class:`StreamRecoder` می‌سازد که یک تبدیل دوطرفه را پیاده‌سازی "
 "می‌کند: *encode* و *decode* در بخش جلویی (frontend) کار می‌کنند — داده‌هایی که "
 "برای کدی که :meth:`~StreamReader.read` و :meth:`~StreamWriter.write` را "
-"فراخوانی می‌کند قابل مشاهده است، در حالی که *Reader* و *Writer* در بخش پشتی "
+"فراخوانی می‌کند قابل مشاهده است، در حالی که *Reader* و *Writer* در بخش بک‌اند "
 "(backend) کار می‌کنند — داده‌های موجود در *stream*."
 
 msgid ""

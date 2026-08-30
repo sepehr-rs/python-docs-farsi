@@ -17,6 +17,7 @@
 | await              | await                   |
 | boolean            | بولی                    |
 | bootstrapping      | بوت‌استرپینگ             |
+| backend            | بک‌اند                   |
 | bind               | مقید کردن               |
 | built-in           | توکار، درونی، درون‌ساخته |
 | binary             | دودویی                  |
@@ -29,12 +30,14 @@
 | community          | کامیونیتی               |
 | component          | کامپوننت، جزء           |
 | context management | مدیریت زمینه            |
+| checksum           | جمع‌آزما                 |
 | coroutine          | هم‌روال                  |
 | custom             | سفارشی، اختصاصی         |
 | debugging          | اشکال‌زدایی، دیباگ کردن  |
 | decoding           | کدگشایی                 |
 | decorator          | دکوراتور، آراینده       |
 | dependency         | وابستگی                 |
+| deque              | صف دوطرفه               |
 | docstring          | رشته مستند              |
 | deprecated         | منسوخ، از رده خارج شده  |
 | dictionary         | دیکشنری                 |
@@ -50,6 +53,7 @@
 | exception          | استثنا                  |
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
+| formatter          | قالب‌بند                 |
 | fork               | انشعاب، فورک            |
 | function           | تابع                    |
 | futures            | آینده‌نماها، فیوچرز      |
@@ -66,6 +70,7 @@
 | immutable          | تغییرناپذیر             |
 | import             | ایمپورت                 |
 | index              | اندیس، شماره            |
+| IPC                | ارتباط بین‌فرایندی       |
 | instance           | نمونه                   |
 | integer            | عدد صحیح                |
 | interface          | رابط                    |
@@ -95,10 +100,12 @@
 | namespace          | فضای نام                |
 | no-op              | عملیات بی‌اثر            |
 | object             | شیء                     |
+| opcode             | کدعمل                   |
 | octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
 | overload           | سربارگذاری              |
 | package            | بسته                    |
+| picklable          | پیکل‌پذیر                |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | payload            | بار                     |
@@ -117,6 +124,7 @@
 | quotation          | علامت نقل‌قول             |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
+| reentrant          | بازورودپذیر             |
 | return             | بازگشت، برگرداندن       |
 | run time, run-time | زمان اجرا               |
 | runtime            | ران‌تایم                 |

@@ -233,7 +233,7 @@ msgid "Asynchronous version of :meth:`socket.getnameinfo`."
 msgstr "نسخه‌ی ناهمگام :meth:`socket.getnameinfo`."
 
 msgid "Networking and IPC"
-msgstr "شبکه‌سازی و ارتباط بین‌فرآیندی (IPC)"
+msgstr "شبکه‌سازی و ارتباط بین‌فرایندی (IPC)"
 
 msgid "``await`` :meth:`loop.create_connection`"
 msgstr "``await`` :meth:`loop.create_connection`"

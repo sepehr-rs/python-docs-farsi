@@ -1752,10 +1752,10 @@ msgid ""
 "are :func:`suppress`, :func:`redirect_stdout`, and :func:`chdir`. Here's a "
 "very simple example of reentrant use::"
 msgstr ""
-":class:`threading.RLock` نمونه‌ای از یک مدیر زمینه‌ی قابل ورود مجدد "
+":class:`threading.RLock` نمونه‌ای از یک مدیر زمینه‌ی بازورودپذیر
 "(reentrant) است، همان‌طور که :func:`suppress`، :func:`redirect_stdout` "
 "و :func:`chdir` نیز چنین هستند. در اینجا یک نمونه‌ی بسیار ساده از استفاده‌ی "
-"قابل ورود مجدد آمده است::"
+"بازورودپذیر آمده است::"
 
 msgid ""
 ">>> from contextlib import redirect_stdout\n"

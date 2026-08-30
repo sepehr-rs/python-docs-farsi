@@ -1260,7 +1260,7 @@ msgid ""
 "operator is used."
 msgstr ""
 "به بیان ساده، ``LITERAL`` تنها در صورتی موفق می‌شود که ``<subject> == "
-"LITERAL`` باشد. برای مقادیر یکتا (singletons) ``None``، ``True`` و "
+"LITERAL`` باشد. برای مقادیر تک‌نمونه (singletons) ``None``، ``True`` و "
 "``False``، از عملگر :keyword:`is` استفاده می‌شود."
 
 msgid "Capture Patterns"

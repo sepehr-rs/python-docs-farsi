@@ -235,7 +235,7 @@ msgid ""
 "code if they are used incorrectly:"
 msgstr ""
 "این موضوع تضمین می‌کند که ماک‌های شما در صورت استفاده‌ی نادرست، به همان "
-"شیوه‌ای که کد عملیاتی شما شکست می‌خورد، شکست خواهند خورد:"
+"شیوه‌ای که کدعمل شما شکست می‌خورد، شکست خواهند خورد:"
 
 msgid ""
 ":func:`create_autospec` can also be used on classes, where it copies the "

@@ -6732,7 +6732,7 @@ msgstr ""
 ">>>"
 
 msgid "Of course, the examples above show output according to the format used by :func:`~logging.basicConfig`, but you can use a different formatter when you configure logging."
-msgstr "البته، مثال‌های بالا خروجی را مطابق قالب مورد استفاده‌ی :func:`~logging.basicConfig` نشان می‌دهند، اما شما می‌توانید هنگام پیکربندی گزارش‌گیری از یک فرمت‌کننده (formatter) متفاوت استفاده کنید."
+msgstr "البته، مثال‌های بالا خروجی را مطابق قالب مورد استفاده‌ی :func:`~logging.basicConfig` نشان می‌دهند، اما شما می‌توانید هنگام پیکربندی گزارش‌گیری از یک قالب‌بند (formatter) متفاوت استفاده کنید."
 
 msgid ""
 "Note that with the above scheme, you are somewhat at the mercy of buffering and the sequence of write calls which you are intercepting. For example, with the definition of ``LoggerWriter`` above, "
@@ -7073,7 +7073,7 @@ msgid ""
 "Configuring logging by adding handlers, formatters and filters is the responsibility of the application developer, not the library developer. If you are maintaining a library, ensure that you "
 "don't add handlers to any of your loggers other than a :class:`~logging.NullHandler` instance."
 msgstr ""
-"پیکربندی گزارش‌گیری (logging) با افزودن هندلر‌ها (handlers)، فرمت‌کننده‌ها (formatters) و فیلتر‌ها (filters)، بر عهده توسعه‌دهنده برنامه است، نه توسعه‌دهنده کتابخانه. اگر در حال نگهداری یک کتابخانه "
+"پیکربندی گزارش‌گیری (logging) با افزودن هندلر‌ها (handlers)، قالب‌بند‌ها (formatters) و فیلتر‌ها (filters)، بر عهده توسعه‌دهنده برنامه است، نه توسعه‌دهنده کتابخانه. اگر در حال نگهداری یک کتابخانه "
 "هستید، اطمینان حاصل کنید که به هیچ‌یک از گزارش‌گیر‌های (loggers) خود هندلری اضافه نمی‌کنید، مگر یک نمونه از :class:`~logging.NullHandler`."
 
 msgid "Creating a lot of loggers"
