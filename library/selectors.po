@@ -150,7 +150,7 @@ msgid "File object registered."
 msgstr "شیء فایل ثبت شد."
 
 msgid "Underlying file descriptor."
-msgstr "توصیفگر فایل زیربنایی."
+msgstr "توصیف‌گر فایل زیربنایی."
 
 msgid "Events that must be waited for on this file object."
 msgstr "رویداد‌هایی که باید روی این شیء فایل منتظر آن‌ها ماند."

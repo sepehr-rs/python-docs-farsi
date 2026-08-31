@@ -694,7 +694,7 @@ msgstr ""
 "صورت فراخوانی، استثنای :exc:`NotImplementedError` را پرتاب می‌کنند."
 
 msgid "Notes on Reproducibility"
-msgstr "نکاتی درباره تکرارپذیری"
+msgstr "نکاتی درباره پیمایش‌پذیری"
 
 msgid ""
 "Sometimes it is useful to be able to reproduce the sequences given by a pseudo-"
@@ -1016,7 +1016,7 @@ msgid ""
 "These recipes show how to efficiently make random selections from the "
 "combinatoric iterators in the :mod:`itertools` module:"
 msgstr ""
-"این دستورهای پخت نشان می‌دهند که چگونه می‌توان به‌شکل کارآمد از تکرارگرهای ترکیبیاتی "
+"این دستورهای پخت نشان می‌دهند که چگونه می‌توان به‌شکل کارآمد از پیمایش‌گرهای ترکیبیاتی "
 "در ماژول :mod:`itertools` انتخاب‌های تصادفی انجام داد:"
 
 msgid ""

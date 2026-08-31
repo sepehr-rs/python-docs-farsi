@@ -479,7 +479,7 @@ msgid ""
 "Return an :class:`!Idler`: an iterable context manager implementing the "
 "IMAP4 ``IDLE`` command as defined in :rfc:`2177`."
 msgstr ""
-"یک :class:`!Idler` برمی‌گرداند: یک مدیر زمینه تکرارپذیر که دستور ``IDLE`` در"
+"یک :class:`!Idler` برمی‌گرداند: یک مدیر زمینه پیمایش‌پذیر که دستور ``IDLE`` در"
 " IMAP4 را همان‌طور که در :rfc:`2177` تعریف شده است، پیاده‌سازی می‌کند."
 
 msgid ""

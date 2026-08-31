@@ -86,7 +86,7 @@ msgstr ""
 "مقدار توکنی که نشان‌دهندهٔ یک :ref:`شناسه یا کلیدواژه <identifiers>` است."
 
 msgid "Token value that indicates a :ref:`numeric literal <numbers>`"
-msgstr "مقدار توکن نشان‌دهندهٔ یک :ref:`لیترال عددی <numbers>`"
+msgstr "مقدار توکن نشان‌دهندهٔ یک :ref:`لفظی عددی <numbers>`"
 
 msgid ""
 "Token value that indicates a :ref:`string or byte literal <strings>`, "
@@ -178,7 +178,7 @@ msgid ""
 "same tokens as other expressions, and are delimited by :data:`LBRACE`, "
 ":data:`RBRACE`, :data:`EXCLAMATION` and :data:`COLON` tokens."
 msgstr ""
-"فیلدهای جایگزینی (یعنی بخش‌های غیرلیترال اف‌استرینگ‌ها) از همان توکن‌های "
+"فیلدهای جایگزینی (یعنی بخش‌های غیرلفظی اف‌استرینگ‌ها) از همان توکن‌های "
 "سایر عبارت‌ها استفاده می‌کنند و با توکن‌های :data:`LBRACE`، :data:`RBRACE`، "
 ":data:`EXCLAMATION` و :data:`COLON` جدا می‌شوند."
 

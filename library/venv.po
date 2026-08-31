@@ -463,7 +463,7 @@ msgid ""
 "Support is defined by having a method named ``create_{scm}_ignore_file``. The only value supported by default is "
 "``\"git\"`` via :meth:`create_git_ignore_file`."
 msgstr ""
-"*scm_ignore_files* -- برای مدیران کنترل منبع (SCM) مشخص‌شده در تکرارپذیر، فایل‌های نادیده‌گرفتن (ignore files) ایجاد "
+"*scm_ignore_files* -- برای مدیران کنترل منبع (SCM) مشخص‌شده در پیمایش‌پذیر، فایل‌های نادیده‌گرفتن (ignore files) ایجاد "
 "می‌کند. پشتیبانی با داشتن متدی به نام ``create_{scm}_ignore_file`` تعریف می‌شود. تنها مقدار پشتیبانی‌شده به‌صورت "
 "پیش‌فرض ``\"git\"`` از طریق :meth:`create_git_ignore_file` است."
 

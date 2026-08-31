@@ -406,7 +406,7 @@ msgid "All user settable flags."
 msgstr "تمام پرچم‌های قابل‌تنظیم توسط کاربر."
 
 msgid "Do not dump the file."
-msgstr "فایل را dump نکنید."
+msgstr "فایل را برون‌ریزی نکنید."
 
 msgid "The file may not be changed."
 msgstr "ممکن است فایل تغییر نکرده باشد."

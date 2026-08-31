@@ -881,7 +881,7 @@ msgid ""
 msgstr ""
 "@abc.abstractmethod\n"
 "def find_distributions(context=DistributionFinder.Context()) -> Iterable[Distribution]:\n"
-"    \"\"\"تکرارپذیری از همه نمونه‌های Distribution برمی‌گرداند که توانایی بارگذاری فراداده بسته‌ها برای ``context`` مشخص‌شده را دارند.\n"
+"    \"\"\"پیمایش‌پذیری از همه نمونه‌های Distribution برمی‌گرداند که توانایی بارگذاری فراداده بسته‌ها برای ``context`` مشخص‌شده را دارند.\n"
 "    \"\"\""
 
 msgid ""

@@ -169,7 +169,7 @@ msgid ""
 "representation)."
 msgstr ""
 "تعیین کنید که آیا *code* در جدول C.7 قرار دارد (نامناسب برای بازنمایی "
-"متعارف)."
+"کانونیکال)."
 
 msgid ""
 "Determine whether *code* is in tableC.8  (Change display properties or are "

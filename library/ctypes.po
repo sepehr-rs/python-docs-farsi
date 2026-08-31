@@ -4575,7 +4575,7 @@ msgid ""
 "allow reading and writing the fields by direct attribute accesses.  These are the"
 msgstr ""
 "انواع عینی ساختار و اجتماع (union) باید با زیرکلاس‌سازی از یکی از این انواع ایجاد شوند، و حداقل یک "
-"متغیر کلاس :attr:`_fields_` را تعریف کنند. :mod:`!ctypes` توصیفگر‌ها (:term:`descriptor`\\s) را "
+"متغیر کلاس :attr:`_fields_` را تعریف کنند. :mod:`!ctypes` توصیف‌گر‌ها (:term:`descriptor`\\s) را "
 "ایجاد می‌کند که امکان خواندن و نوشتن فیلد‌ها را از طریق دسترسی مستقیم به ویژگی‌ها فراهم می‌کنند. این‌ها"
 
 msgid ""

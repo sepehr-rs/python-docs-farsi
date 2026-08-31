@@ -2356,7 +2356,7 @@ msgid ""
 "an existing file descriptor (a positive integer), for example those created "
 "with :meth:`os.pipe`"
 msgstr ""
-"یک توصیفگر فایل موجود (یک عدد صحیح مثبت)، برای مثال مواردی که با "
+"یک توصیف‌گر فایل موجود (یک عدد صحیح مثبت)، برای مثال مواردی که با "
 ":meth:`os.pipe` ایجاد شده‌اند."
 
 msgid ""
@@ -2972,7 +2972,7 @@ msgstr ""
 "تابع :func:`run` ایجاد شده است."
 
 msgid "Watch a file descriptor for read events"
-msgstr "پایش یک توصیفگر فایل برای رویدادهای خواندن"
+msgstr "پایش یک توصیف‌گر فایل برای رویدادهای خواندن"
 
 msgid ""
 "Wait until a file descriptor received some data using the "

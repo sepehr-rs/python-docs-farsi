@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!email.iterators`: Iterators"
-msgstr ":mod:`!email.iterators`: تکرارکننده‌ها"
+msgstr ":mod:`!email.iterators`: پیمایش‌گرها"
 
 msgid "**Source code:** :source:`Lib/email/iterators.py`"
 msgstr "کد منبع: :source:`Lib/email/iterators.py`"

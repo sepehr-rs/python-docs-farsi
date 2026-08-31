@@ -152,7 +152,7 @@ msgstr ""
 "هندلرهایی برای سیگنال‌های :const:`~signal.SIGSEGV`، "
 ":const:`~signal.SIGFPE`، :const:`~signal.SIGABRT`، :const:`~signal.SIGBUS` و"
 " :const:`~signal.SIGILL` نصب شوند که در صورت سقوط، ردگیری پشته پایتون را "
-"تخلیه می‌کنند."
+"برون‌ریزی می‌کنند."
 
 msgid ""
 "It behaves as if the :option:`-X faulthandler <-X>` command line option is "

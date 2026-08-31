@@ -8,6 +8,7 @@
 | English            | فارسی                   |
 | ------------------ | ----------------------- |
 | accessibility      | دسترسی‌پذیری             |
+| assertion          | ادعا، شرط               |
 | availability       | دسترس‌پذیری              |
 | API                | API                     |
 | argument           | آرگومان                 |
@@ -18,13 +19,17 @@
 | boolean            | بولی                    |
 | bootstrapping      | بوت‌استرپینگ             |
 | backend            | بک‌اند                   |
+| bom, byte-order mark  | نشانگر ترتیب بایت    |
+| backreference      | بازارجاع                |
 | bind               | مقید کردن               |
+| barrier            | سد                      |
 | built-in           | توکار، درونی، درون‌ساخته |
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | callable           | فراخوانی‌پذیر            |
 | closure            | بستار                   |
+| cast               | تبدیل نوع، قالب‌ریزی     |
 | clone              | رونوشت                  |
 | character          | نویسه                   |
 | class              | کلاس                     |
@@ -33,6 +38,8 @@
 | component          | کامپوننت، جزء           |
 | context management | مدیریت زمینه            |
 | checksum           | جمع‌آزما                 |
+| canonical          | کانونیکال               |
+| code point         | نقطه‌کد                  |
 | coroutine          | هم‌روال                  |
 | custom             | سفارشی، اختصاصی         |
 | debugging          | اشکال‌زدایی، دیباگ کردن  |
@@ -41,6 +48,8 @@
 | decorator          | دکوراتور، آراینده       |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
+| dump               | برون‌ریزی                |
+| descriptor         | توصیف‌گر                 |
 | docstring          | رشته مستند              |
 | deprecated         | منسوخ، از رده خارج شده  |
 | dictionary         | دیکشنری                 |
@@ -49,13 +58,16 @@
 | duck-typing        | نوع‌دهی اردکی            |
 | ecosystem          | اکوسیستم                |
 | element            | المان، عنصر             |
+| enum               | enum                    |
 | encoding           | کدگذاری                 |
 | endpoint           | پایانه                  |
+| executor           | اجرا‌کننده               |
 | escape             | خنثی کردن، گریز         |
 | event              | رویداد                  |
 | exception          | استثنا                  |
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
+| factory function   | تابع کارخانه‌ای          |
 | formatter          | قالب‌بند                 |
 | fork               | انشعاب، فورک            |
 | function           | تابع                    |
@@ -82,11 +94,16 @@
 | interpreter        | مفسر                    |
 | item               | آیتم                    |
 | idempotent         | هم‌توان                  |
-| iterable           | تکرارپذیر               |
+| iterable           | پیمایش‌پذیر              |
+| iterator           | پیمایش‌گر                |
+| iteration          | پیمایش                  |
+| iterate            | پیمایش کردن             |
 | join               | پیوستن، الحاق           |
 | keyword            | کلیدواژه                |
 | keyword argument   | آرگومان کلیدواژه‌ای      |
 | list               | فهرست                   |
+| literal            | لفظی                    |
+| literals           | مقادیر لفظی             |
 | list comprehension | درک فهرستی              |
 | little-endian      | کوچک‌پایان               |
 | locale             | locale                  |
@@ -98,16 +115,19 @@
 | metaclass          | فراکلاس                  |
 | method             | متد، روش                |
 | mock               | ماک                     |
+| monkey-patch       | مانکی‌پچ                 |
 | manager            | مدیر                    |
 | module             | ماژول                   |
 | mutex              | قفل متقابل              |
 | mix-in             | میکس‌این                 |
+| mixed-in           | افزوده‌شده، میکس‌این      |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
 | notation           | نمادگذاری               |
 | no-op              | عملیات بی‌اثر            |
 | object             | شیء                     |
 | opcode             | کدعمل                   |
+| offset             | آفست                    |
 | octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
 | overload           | سربارگذاری              |
@@ -115,6 +135,8 @@
 | picklable          | پیکل‌پذیر                |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
+| profiler           | پروفایل‌گیر              |
+| profiling          | پروفایل‌گیری             |
 | post-mortem debugging | اشکال‌زدایی پس از خاتمه |
 | payload            | بار                     |
 | pane               | بخش                     |
@@ -130,6 +152,7 @@
 | unpickle           | پیکل‌گشایی               |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
+| quantifier         | کمیت‌گذار                |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
 | reentrant          | بازورودپذیر             |
@@ -146,6 +169,7 @@
 | statement          | دستور                   |
 | suite              | بدنه                    |
 | scheme             | طرح‌واره، طرح            |
+| subscript          | زیرنویس                 |
 | subscription       | زیرنویسی                |
 | serialization      | سریال‌سازی               |
 | stub               | stub                    |
@@ -165,3 +189,4 @@
 | wrapper            | پوششی، دربرگیرنده       |
 | widget             | ابزارک                  |            
 | wildcard           | وایلدکارد               |
+| zero-width assertion | شرط با عرض صفر        |

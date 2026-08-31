@@ -139,7 +139,7 @@ msgstr ""
 "اگر دستور کامل و معتبر باشد، یک شیء کد (همانند ``compile(source, filename, "
 "symbol)``) را بازمی‌گرداند؛ اگر دستور ناتمام باشد، ``None`` را بازمی‌گرداند؛"
 " اگر دستور کامل باشد و حاوی خطای سینتکسی باشد، :exc:`SyntaxError` را پرتاب "
-"می‌کند، یا اگر دستور حاوی یک لیترال (literal) نامعتبر باشد، "
+"می‌کند، یا اگر دستور حاوی یک لفظی (literal) نامعتبر باشد، "
 ":exc:`OverflowError` یا :exc:`ValueError` را پرتاب می‌کند."
 
 msgid "Interactive Interpreter Objects"

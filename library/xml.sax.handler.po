@@ -237,7 +237,7 @@ msgid ""
 "description: When parsing, the current DOM node being visited if this is a "
 "DOM iterator; when not parsing, the root DOM node for iteration."
 msgstr ""
-"توضیح: هنگام تجزیه، گره DOM جاری که بازدید می‌شود، اگر این یک تکرارکننده DOM"
+"توضیح: هنگام تجزیه، گره DOM جاری که بازدید می‌شود، اگر این یک پیمایش‌گر DOM"
 " باشد؛ هنگامی که تجزیه انجام نمی‌شود، گره DOM ریشه برای تکرار."
 
 msgid "value: ``\"http://xml.org/sax/properties/xml-string\"``"

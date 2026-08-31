@@ -407,7 +407,7 @@ msgstr ""
 "زباله‌روبی کلیدها را بیش از حد نیاز نگه دارد."
 
 msgid "Return an iterable of the weak references to the keys."
-msgstr "یک تکرارپذیر از ارجاع‌های ضعیف به کلیدها برمی‌گرداند."
+msgstr "یک پیمایش‌پذیر از ارجاع‌های ضعیف به کلیدها برمی‌گرداند."
 
 msgid ""
 "Mapping class that references values weakly.  Entries in the dictionary will"
@@ -424,7 +424,7 @@ msgstr ""
 ":meth:`WeakKeyDictionary.keyrefs` را دارد."
 
 msgid "Return an iterable of the weak references to the values."
-msgstr "یک تکرارپذیر از ارجاع‌های ضعیف به مقادیر برمی‌گرداند."
+msgstr "یک پیمایش‌پذیر از ارجاع‌های ضعیف به مقادیر برمی‌گرداند."
 
 msgid ""
 "Set class that keeps weak references to its elements.  An element will be "

@@ -392,7 +392,7 @@ msgid ""
 "the parser when building messages.  Defaults to ``None``, in which "
 "case :class:`~email.message.Message` is used."
 msgstr ""
-"یک تابع سازنده (factory function) برای ساختن یک شیء پیام خالی جدید. توسط "
+"یک تابع کارخانه‌ای (factory function) برای ساختن یک شیء پیام خالی جدید. توسط "
 "پارسر هنگام ساخت پیام‌ها استفاده می‌شود. پیش‌فرض آن ``None`` است، که در "
 "این صورت از :class:`~email.message.Message` استفاده می‌شود."
 

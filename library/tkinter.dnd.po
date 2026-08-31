@@ -112,7 +112,7 @@ msgid ""
 ":class:`DndHandler` instance managing the drag, or ``None`` if a drag could "
 "not be started."
 msgstr ""
-"تابع سازنده برای فرآیند کشیدن و رها کردن. نمونه‌ی :class:`DndHandler` را که "
+"تابع کارخانه‌ای برای فرآیند کشیدن و رها کردن. نمونه‌ی :class:`DndHandler` را که "
 "عملیات کشیدن را مدیریت می‌کند برمی‌گرداند، یا اگر امکان آغاز عملیات کشیدن "
 "وجود نداشت، ``None`` برمی‌گرداند."
 

@@ -50,7 +50,7 @@ msgid "is a set of symbolic names (members) bound to unique values"
 msgstr "مجموعه‌ای از نام‌های نمادین (اعضا) است که به مقادیر یکتا متصل شده‌اند"
 
 msgid "can be iterated over to return its canonical (i.e. non-alias) members in definition order"
-msgstr "می‌توان آن را پیمایش کرد تا اعضای اصلی (یعنی غیر‌مستعار) آن به ترتیب تعریف برگردانده شوند"
+msgstr "می‌توان آن را پیمایش کرد تا اعضای کانونیکال (یعنی غیر‌مستعار) آن به ترتیب تعریف برگردانده شوند"
 
 msgid "uses *call* syntax to return members by value"
 msgstr "از سینتکس *call* برای برگرداندن اعضا بر اساس مقدار استفاده می‌کند"
@@ -149,7 +149,7 @@ msgid ":class:`ReprEnum`"
 msgstr ":class:`ReprEnum`"
 
 msgid "Used by :class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag` to keep the :class:`str() <str>` of the mixed-in type."
-msgstr "توسط :class:`IntEnum`، :class:`StrEnum` و :class:`IntFlag` استفاده می‌شود تا :class:`str() <str>` نوع درآمیخته (mixed-in) حفظ شود."
+msgstr "توسط :class:`IntEnum`، :class:`StrEnum` و :class:`IntFlag` استفاده می‌شود تا :class:`str() <str>` نوع افزوده‌شده (mixed-in) حفظ شود."
 
 msgid ":class:`EnumCheck`"
 msgstr ":class:`EnumCheck`"
@@ -1003,7 +1003,7 @@ msgstr ""
 "مطابقت دارد."
 
 msgid ":class:`!ReprEnum` uses the :meth:`repr() <Enum.__repr__>` of :class:`Enum`, but the :class:`str() <str>` of the mixed-in data type:"
-msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>` ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع دادهٔ آمیخته (mixed-in) استفاده می‌کند:"
+msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>` ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع دادهٔ افزوده‌شده (mixed-in) استفاده می‌کند:"
 
 msgid ":meth:`!int.__str__` for :class:`IntEnum` and :class:`IntFlag`"
 msgstr ":meth:`!int.__str__` برای :class:`IntEnum` و :class:`IntFlag`"
@@ -1014,7 +1014,7 @@ msgstr ":meth:`!str.__str__` برای :class:`StrEnum`"
 msgid ""
 "Inherit from :class:`!ReprEnum` to keep the :class:`str() <str>` / :func:`format` of the mixed-in data type instead of using the :class:`Enum`-default :meth:`str() <Enum.__str__>`."
 msgstr ""
-"برای حفظ :class:`str() <str>` / :func:`format` نوع دادهٔ آمیخته (mixed-in) به‌جای استفاده از :meth:`str() <Enum.__str__>` پیش‌فرض :class:`Enum`، از :class:`!ReprEnum` ارث ببرید."
+"برای حفظ :class:`str() <str>` / :func:`format` نوع دادهٔ افزوده‌شده (mixed-in) به‌جای استفاده از :meth:`str() <Enum.__str__>` پیش‌فرض :class:`Enum`، از :class:`!ReprEnum` ارث ببرید."
 
 msgid "*EnumCheck* contains the options used by the :func:`verify` decorator to ensure various constraints; failed constraints result in a :exc:`ValueError`."
 msgstr ""

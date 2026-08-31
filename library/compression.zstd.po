@@ -657,7 +657,7 @@ msgid ""
 "The *samples* argument (an iterable of :class:`bytes` objects), contains "
 "sample data for generating the Zstandard dictionary."
 msgstr ""
-"آرگومان *samples* (یک تکرارپذیر از شیء‌های :class:`bytes`)، شامل داده‌های "
+"آرگومان *samples* (یک پیمایش‌پذیر از شیء‌های :class:`bytes`)، شامل داده‌های "
 "نمونه برای تولید دیکشنری Zstandard است."
 
 msgid ""

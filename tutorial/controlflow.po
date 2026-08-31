@@ -215,7 +215,7 @@ msgid "In many ways the object returned by :func:`range` behaves as if it is a l
 msgstr "از بسیاری جهات، شی‌ءای که توسط :func:`range` برگردانده می‌شود طوری رفتار می‌کند که گویی یک فهرست است، اما در واقع چنین نیست. این یک شیء است که هنگام پیمایش، آیتم‌های متوالی دنبالهٔ موردنظر را برمی‌گرداند، اما واقعاً فهرست را ایجاد نمی‌کند و در نتیجه در فضا صرفه‌جویی می‌شود."
 
 msgid "We say such an object is :term:`iterable`, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted.  We have seen that the :keyword:`for` statement is such a construct, while an example of a function that takes an iterable is :func:`sum`::"
-msgstr "می‌گوییم چنین شی‌ءای :term:`تکرارپذیر <iterable>` است؛ یعنی برای استفاده به‌عنوان هدف تابع‌ها و ساختارهایی مناسب است که انتظار دارند چیزی وجود داشته باشد که بتوانند از آن آیتم‌های متوالی را تا زمانی که چیزی باقی نمانده است دریافت کنند. دیدیم که دستور :keyword:`for` چنین ساختاری است، در حالی که نمونه‌ای از تابعی که یک شیء تکرارپذیر دریافت می‌کند :func:`sum` است::"
+msgstr "می‌گوییم چنین شی‌ءای :term:`پیمایش‌پذیر <iterable>` است؛ یعنی برای استفاده به‌عنوان هدف تابع‌ها و ساختارهایی مناسب است که انتظار دارند چیزی وجود داشته باشد که بتوانند از آن آیتم‌های متوالی را تا زمانی که چیزی باقی نمانده است دریافت کنند. دیدیم که دستور :keyword:`for` چنین ساختاری است، در حالی که نمونه‌ای از تابعی که یک شیء پیمایش‌پذیر دریافت می‌کند :func:`sum` است::"
 
 msgid ""
 ">>> sum(range(4))  # 0 + 1 + 2 + 3\n"
@@ -225,7 +225,7 @@ msgstr ""
 "6"
 
 msgid "Later we will see more functions that return iterables and take iterables as arguments.  In chapter :ref:`tut-structures`, we will discuss :func:`list` in more detail."
-msgstr "بعداً تابع‌های بیشتری را خواهیم دید که اشیای تکرارپذیر برمی‌گردانند و اشیای تکرارپذیر را به‌عنوان آرگومان دریافت می‌کنند. در فصل :ref:`tut-structures`، دربارهٔ :func:`list` با جزئیات بیشتری صحبت خواهیم کرد."
+msgstr "بعداً تابع‌های بیشتری را خواهیم دید که اشیای پیمایش‌پذیر برمی‌گردانند و اشیای پیمایش‌پذیر را به‌عنوان آرگومان دریافت می‌کنند. در فصل :ref:`tut-structures`، دربارهٔ :func:`list` با جزئیات بیشتری صحبت خواهیم کرد."
 
 msgid ":keyword:`!break` and :keyword:`!continue` Statements"
 msgstr "دستورهای :keyword:`!break` و :keyword:`!continue`"
@@ -591,7 +591,7 @@ msgid "Several other key features of this statement:"
 msgstr "چند ویژگی کلیدی دیگر این دستور:"
 
 msgid "Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary sequences.  An important exception is that they don't match iterators or strings."
-msgstr "مانند انتساب‌های واگشایی، الگوهای تاپل و فهرست دقیقاً معنای یکسانی دارند و در واقع با دنباله‌های دلخواه تطبیق پیدا می‌کنند. یک استثنای مهم این است که آن‌ها با تکرارگرها یا رشته‌ها تطبیق پیدا نمی‌کنند."
+msgstr "مانند انتساب‌های واگشایی، الگوهای تاپل و فهرست دقیقاً معنای یکسانی دارند و در واقع با دنباله‌های دلخواه تطبیق پیدا می‌کنند. یک استثنای مهم این است که آن‌ها با پیمایش‌گرها یا رشته‌ها تطبیق پیدا نمی‌کنند."
 
 msgid "Sequence patterns support extended unpacking: ``[x, y, *rest]`` and ``(x, y, *rest)`` work similar to unpacking assignments.  The name after ``*`` may also be ``_``, so ``(x, y, *_)`` matches a sequence of at least two items without binding the remaining items."
 msgstr "الگوهای دنباله‌ای از واگشاییٔ گسترده پشتیبانی می‌کنند: ``[x, y, *rest]`` و ``(x, y, *rest)`` مشابه انتساب‌های واگشایی عمل می‌کنند. نام پس از ``*`` نیز می‌تواند ``_`` باشد، بنابراین ``(x, y, *_)`` با دنباله‌ای دارای حداقل دو آیتم تطبیق پیدا می‌کند، بدون اینکه آیتم‌های باقی‌مانده را در متغیری قرار دهد."

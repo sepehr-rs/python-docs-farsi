@@ -439,7 +439,7 @@ msgid ""
 "patterns.  The debugger will not step into frames that originate in a module "
 "that matches one of these patterns. [1]_"
 msgstr ""
-"آرگومان *skip*، در صورت داده شدن، باید تکرارپذیری از الگوهای نام ماژول به‌سبک "
+"آرگومان *skip*، در صورت داده شدن، باید پیمایش‌پذیری از الگوهای نام ماژول به‌سبک "
 "glob باشد. اشکال‌زدا به فریم‌هایی که از ماژولی منطبق با یکی از این الگوها "
 "سرچشمه می‌گیرند، وارد نخواهد شد. [1]_"
 

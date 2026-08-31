@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 "اگر مشکلی در *source* وجود داشته باشد، استثنایی پرتاب خواهد شد. اگر سینتکس "
 "پایتون نا‌معتبر باشد، :exc:`SyntaxError` پرتاب می‌شود، و در صورت وجود یک "
-"لیترال نا‌معتبر، :exc:`OverflowError` یا :exc:`ValueError` پرتاب می‌شود."
+"لفظی نا‌معتبر، :exc:`OverflowError` یا :exc:`ValueError` پرتاب می‌شود."
 
 msgid ""
 "The *symbol* argument determines whether *source* is compiled as a statement"

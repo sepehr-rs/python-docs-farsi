@@ -700,7 +700,7 @@ msgid ""
 "constructor call with canonical attribute values."
 msgstr ""
 "نمایش رشته‌ای شیء :class:`timedelta` را به‌صورت یک فراخوانی سازنده با مقادیر "
-"ویژگی‌های استاندارد برمی‌گرداند."
+"ویژگی‌های کانونیکال برمی‌گرداند."
 
 msgid "Notes:"
 msgstr "یادداشت‌ها:"

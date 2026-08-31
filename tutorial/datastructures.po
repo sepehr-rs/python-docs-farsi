@@ -39,7 +39,7 @@ msgid "Add an item to the end of the list.  Similar to ``a[len(a):] = [x]``."
 msgstr "یک آیتم را به انتهای فهرست اضافه می‌کند. مشابه ``a[len(a):] = [x]`` است."
 
 msgid "Extend the list by appending all the items from the iterable.  Similar to ``a[len(a):] = iterable``."
-msgstr "فهرست را با افزودن تمام آیتم‌های شیء تکرارپذیر گسترش می‌دهد. مشابه ``a[len(a):] = iterable`` است."
+msgstr "فهرست را با افزودن تمام آیتم‌های شیء پیمایش‌پذیر گسترش می‌دهد. مشابه ``a[len(a):] = iterable`` است."
 
 msgid "Insert an item at a given position.  The first argument is the index of the element before which to insert, so ``a.insert(0, x)`` inserts at the front of the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr "یک آیتم را در موقعیت مشخصی درج می‌کند. اولین آرگومان، اندیس عنصری است که آیتم باید پیش از آن درج شود؛ بنابراین ``a.insert(0, x)`` آیتم را در ابتدای فهرست درج می‌کند و ``a.insert(len(a), x)`` معادل ``a.append(x)`` است."
@@ -198,7 +198,7 @@ msgid "List Comprehensions"
 msgstr "درک‌های فهرستی"
 
 msgid "List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition."
-msgstr "درک‌های فهرستی روشی کوتاه و مختصر برای ایجاد فهرست‌ها فراهم می‌کنند. کاربردهای رایج آن‌ها ایجاد فهرست‌های جدیدی است که در آن‌ها هر عنصر، نتیجهٔ انجام برخی عملیات روی هر عضو از یک دنباله یا شیء تکرارپذیر دیگر است، یا ایجاد یک زیر‌دنباله از عناصری که یک شرط مشخص را برآورده می‌کنند."
+msgstr "درک‌های فهرستی روشی کوتاه و مختصر برای ایجاد فهرست‌ها فراهم می‌کنند. کاربردهای رایج آن‌ها ایجاد فهرست‌های جدیدی است که در آن‌ها هر عنصر، نتیجهٔ انجام برخی عملیات روی هر عضو از یک دنباله یا شیء پیمایش‌پذیر دیگر است، یا ایجاد یک زیر‌دنباله از عناصری که یک شرط مشخص را برآورده می‌کنند."
 
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr "برای مثال، فرض کنید می‌خواهیم فهرستی از مربع‌ها ایجاد کنیم، مانند::"

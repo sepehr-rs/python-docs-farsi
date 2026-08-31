@@ -413,7 +413,7 @@ msgid ""
 "The file descriptor is :ref:`not inherited by child processes "
 "<fd_inheritance>`."
 msgstr ""
-"توصیفگر فایل :ref:`توسط فرآیند‌های فرزند به ارث برده نمی‌شود "
+"توصیف‌گر فایل :ref:`توسط فرآیند‌های فرزند به ارث برده نمی‌شود "
 "<fd_inheritance>`."
 
 msgid ""

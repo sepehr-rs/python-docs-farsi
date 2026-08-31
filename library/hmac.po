@@ -167,7 +167,7 @@ msgid "The internal block size of the hash algorithm in bytes."
 msgstr "اندازه‌ی بلوک داخلی الگوریتم هش بر حسب بایت."
 
 msgid "The canonical name of this HMAC, always lowercase, e.g. ``hmac-md5``."
-msgstr "نام استاندارد این HMAC، همیشه با حروف کوچک، مثلاً ``hmac-md5``."
+msgstr "نام کانونیکال این HMAC، همیشه با حروف کوچک، مثلاً ``hmac-md5``."
 
 msgid ""
 "Removed the undocumented attributes ``HMAC.digest_cons``, ``HMAC.inner``, "

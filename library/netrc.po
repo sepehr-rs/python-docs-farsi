@@ -134,7 +134,7 @@ msgid ""
 "Dump the class data as a string in the format of a netrc file. (This "
 "discards comments and may reorder the entries.)"
 msgstr ""
-"داده‌های کلاس را به‌صورت رشته‌ای در قالب یک فایل netrc خروجی می‌دهد. (این "
+"داده‌های کلاس را به‌صورت رشته‌ای در قالب یک فایل netrc برون‌ریزی میکند. (این "
 "کار توضیحات را حذف می‌کند و ممکن است ترتیب ورودی‌ها را تغییر دهد.)"
 
 msgid "Instances of :class:`~netrc.netrc` have public instance variables:"
