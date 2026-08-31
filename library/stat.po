@@ -457,7 +457,7 @@ msgstr ""
 "این فایل برای نوشتن در آن به یک مجوز (entitlement) نیاز دارد (macOS 10.13+)"
 
 msgid "The file is a snapshot file."
-msgstr "این فایل یک فایل اسنپ‌شات است."
+msgstr "این فایل یک فایل تصویر لحظه‌ای است."
 
 msgid "The file is a firmlink (macOS 10.15+)"
 msgstr "این فایل یک فیرملینک (firmlink) است (macOS 10.15+)"

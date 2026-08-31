@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!html` --- HyperText Markup Language support"
-msgstr ":mod:`!html` --- پشتیبانی از زبان نشانه‌گذاری ابرمتن"
+msgstr ":mod:`!html` --- پشتیبانی از زبان نمادگذاری ابرمتن"
 
 msgid "**Source code:** :source:`Lib/html/__init__.py`"
 msgstr "کد منبع: :source:`Lib/html/__init__.py`"

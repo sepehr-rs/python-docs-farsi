@@ -694,7 +694,7 @@ msgstr ""
 msgid ""
 "prepare your program or module by specially marking translatable strings"
 msgstr ""
-"برنامه یا ماژول خود را با نشانه‌گذاری ویژهٔ رشته‌های قابل‌ترجمه آماده کنید"
+"برنامه یا ماژول خود را با نمادگذاری ویژهٔ رشته‌های قابل‌ترجمه آماده کنید"
 
 msgid ""
 "run a suite of tools over your marked files to generate raw messages "

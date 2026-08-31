@@ -1858,7 +1858,7 @@ msgstr "یک پایگاه داده سریال‌سازی‌شده."
 
 msgid "The database name to deserialize into. Defaults to ``\"main\"``."
 msgstr ""
-"نام پایگاه داده مقصد برای بازسریال‌سازی (deserialize). پیش‌فرض آن ``\"main\"`` است."
+"نام پایگاه داده مقصد برای سریال‌زدایی کردن (deserialize). پیش‌فرض آن ``\"main\"`` است."
 
 msgid ""
 "If the database connection is currently involved in a read transaction or a backup "
@@ -1877,7 +1877,7 @@ msgid ""
 "This method is only available if the underlying SQLite library has the deserialize "
 "API."
 msgstr ""
-"این متد تنها در صورتی در دسترس است که کتابخانه SQLite زیرین دارای API بازسریال‌سازی "
+"این متد تنها در صورتی در دسترس است که کتابخانه SQLite زیرین دارای API سریال‌زدایی کردن "
 "(deserialize) باشد."
 
 msgid ""

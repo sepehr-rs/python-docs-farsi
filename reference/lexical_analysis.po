@@ -953,7 +953,7 @@ msgid "Unicode category ``<Nd>`` - decimal numbers (includes ``0`` to ``9``)"
 msgstr "دسته‌بندی یونی‌کد ``<Nd>`` - اعداد دهدهی (شامل ``0`` تا ``9`` می‌شود)"
 
 msgid "Unicode category ``<Pc>`` - connector punctuations"
-msgstr "دسته یونی‌کد ``<Pc>`` - نشانه‌گذاری‌های اتصال"
+msgstr "دسته یونی‌کد ``<Pc>`` - نمادگذاری‌های اتصال"
 
 msgid "Unicode category ``<Mn>`` - nonspacing marks"
 msgstr "دسته‌ی یونی‌کد ``<Mn>`` - علامت‌های بدون فاصله"

@@ -1472,7 +1472,7 @@ msgstr ""
 
 msgid "The flattening property makes tee iterators efficiently peekable:"
 msgstr ""
-"ویژگی مسطح‌سازی باعث می‌شود پیمایش‌گرهای tee به‌طور کارآمد قابل پیش‌نگری "
+"ویژگی تخت‌سازی باعث می‌شود پیمایش‌گرهای tee به‌طور کارآمد قابل پیش‌نگری "
 "(peekable) باشند:"
 
 msgid ""

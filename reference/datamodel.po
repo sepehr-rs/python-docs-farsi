@@ -667,7 +667,7 @@ msgstr ""
 "مانند :meth:`~set.add`، تغییر داد."
 
 msgid "Frozen sets"
-msgstr "مجموعه‌های یخ‌زده"
+msgstr "مجموعه‌های فریزشده"
 
 msgid ""
 "These represent an immutable set.  They are created by the built-"

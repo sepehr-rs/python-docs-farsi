@@ -21,6 +21,7 @@
 | backend            | بک‌اند                   |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
 | bytes-like object  | شیء شبه‌بایت             |
+| bouding box        | جعبهٔ محدودکننده         |
 | backreference      | بازارجاع                |
 | bind               | مقید کردن               |
 | barrier            | سد                      |
@@ -29,14 +30,19 @@
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | callable           | فراخوانی‌پذیر            |
+| checkbutton        | دکمه‌ی انتخابی           |
 | closure            | بستار                   |
 | cast               | تبدیل نوع، قالب‌ریزی     |
+| contravariant      | پادوردا                 |
+| covariant          | هم‌وردا                  |
+| cipher             | رمز                     |
 | clone              | رونوشت                  |
 | character          | نویسه                   |
 | class              | کلاس                     |
 | command line       | خط فرمان                |
 | community          | کامیونیتی               |
 | component          | کامپوننت، جزء           |
+| combobox           | جعبه انتخاب             |
 | context management | مدیریت زمینه            |
 | checksum           | جمع‌آزما                 |
 | canonical          | کانونیکال               |
@@ -46,13 +52,17 @@
 | debugging          | اشکال‌زدایی، دیباگ کردن  |
 | decoding           | کدگشایی                 |
 | deserialization    | سریال‌زدایی              |
+| deserializer       | سریال‌زدا                |
+| deserialize        | سریال‌زدایی کردن         |
 | decorator          | دکوراتور، آراینده       |
 | decompressor       | واگشا                   |
 | disassemble        | واسازی کردن             |
+| disassembler       | واساز                   |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
 | dump               | برون‌ریزی                |
 | descriptor         | توصیف‌گر                 |
+| dispatch table     | جدول نگاشت              |
 | docstring          | رشته مستند              |
 | deprecated         | منسوخ، از رده خارج شده  |
 | dictionary         | دیکشنری                 |
@@ -63,6 +73,7 @@
 | ecosystem          | اکوسیستم                |
 | element            | المان، عنصر             |
 | enum               | enum                    |
+| epoch              | مبدأ زمان               |
 | encoding           | کدگذاری                 |
 | endpoint           | پایانه                  |
 | ellipsis           | سه‌نقطه                  |
@@ -74,6 +85,9 @@
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
 | factory function   | تابع کارخانه‌ای          |
+| frozen             | فریز‌شده                 |
+| facility           | امکان، دسته گزارش       |
+| flattening         | تخت‌سازی                 |
 | float (type)       | اعشاری                  |
 | float (value)      | عدد اعشاری              |
 | floating point (adj., representation) | ممیز شناور |
@@ -92,7 +106,9 @@
 | global             | سراسری، عمومی           |
 | hexadecimal        | مبنای شانزده            |
 | heap               | هیپ                     |
+| hadnshake          | دست‌دهی                  |
 | handler            | هندلر                   |
+| hook               | قلاب                     |
 | handle             | دسته                    |
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
@@ -100,6 +116,7 @@
 | index              | اندیس، شماره            |
 | IPC                | ارتباط بین‌فرایندی       |
 | instance           | نمونه                   |
+| invariant          | ناوردا                  |
 | integer            | عدد صحیح                |
 | interface          | رابط                    |
 | interpreter        | مفسر                    |
@@ -110,6 +127,7 @@
 | iteration          | پیمایش                  |
 | iterate            | پیمایش کردن             |
 | join               | پیوستن، الحاق           |
+| junction           | اتصال                   |
 | keyword            | کلیدواژه                |
 | keyword argument   | آرگومان کلیدواژه‌ای      |
 | list               | فهرست                   |
@@ -131,10 +149,11 @@
 | module             | ماژول                   |
 | mutex              | قفل متقابل              |
 | mix-in             | میکس‌این                 |
+| min-heap           | هیپ کمینه               |
 | mixed-in           | افزوده‌شده، میکس‌این      |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
-| notation           | نمادگذاری               |
+| notation           | نمادگذاری، نماد         |
 | no-op              | عملیات بی‌اثر            |
 | object             | شیء                     |
 | opcode             | کدعمل                   |
@@ -142,6 +161,7 @@
 | octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
 | overload           | سربارگذاری              |
+| overloaded         | سربارگذاری‌شده           |
 | package            | بسته                    |
 | picklable          | پیکل‌پذیر                |
 | pipe               | پایپ                    |
@@ -155,6 +175,8 @@
 | patch              | وصل                     |
 | predicate          | محمول                   |
 | parallelism        | موازی‌سازی               |
+| persistent         | پایا                    |
+| persistence        | ماندگاری                |
 | parser             | پارسر                   |
 | pretty-print       | زیبانویسی               |
 | pretty-printer     | زیبانویس                |
@@ -166,6 +188,7 @@
 | pickler            | پیکل‌ساز                 |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
+| quoted-printable   | quoted-printable        |
 | quantifier         | کمیت‌گذار                |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
@@ -178,7 +201,9 @@
 | shadowing          | پوشاندن                 |
 | spinbox            | اسپین‌باکس               |
 | shell              | پوسته                   |
+| sash               |  نوار جداکننده          |
 | single precision   | دقت منفرد               |
+| snapshot           | تصویر لحظه‌ای            |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
 | stack traceback    | ردگیری پشته             |
@@ -186,6 +211,7 @@
 | suite              | بدنه                    |
 | scheme             | طرح‌واره، طرح            |
 | subscript          | زیرنویس                 |
+| spec               | مشخصات                  |
 | subscription       | زیرنویسی                |
 | subnormal          | زیرنرمال                |
 | serialization      | سریال‌سازی               |

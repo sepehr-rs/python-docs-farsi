@@ -1920,7 +1920,7 @@ msgid "This class has custom assertion methods for inspecting bytecode."
 msgstr "این کلاس دارای متد‌های ادعای سفارشی برای بازرسی بایت‌کد است."
 
 msgid "Return the disassembly of *co* as string."
-msgstr "دیس‌اسمبل (disassembly) *co* را به‌صورت رشته برمی‌گرداند."
+msgstr "واسازی (disassembly) *co* را به‌صورت رشته برمی‌گرداند."
 
 msgid ""
 "Return instr if *opname* is found, otherwise throws :exc:`AssertionError`."

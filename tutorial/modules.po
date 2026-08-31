@@ -628,7 +628,7 @@ msgid "Although certain modules are designed to export only names that follow ce
 msgstr "اگرچه برخی ماژول‌ها طوری طراحی شده‌اند که هنگام استفاده از ``import *`` فقط نام‌هایی مطابق با الگوهای خاص صادر کنند، همچنان این کار در کدهای تولیدی روشی نامناسب محسوب می‌شود."
 
 msgid "Remember, there is nothing wrong with using ``from package import specific_submodule``!  In fact, this is the recommended notation unless the importing module needs to use submodules with the same name from different packages."
-msgstr "به یاد داشته باشید که استفاده از ``from package import specific_submodule`` هیچ مشکلی ندارد! در واقع، این نشانه‌گذاری توصیه‌شده است، مگر اینکه ماژول ایمپورت‌کننده نیاز داشته باشد از زیرماژول‌هایی با نام یکسان از بسته‌های مختلف استفاده کند."
+msgstr "به یاد داشته باشید که استفاده از ``from package import specific_submodule`` هیچ مشکلی ندارد! در واقع، این نمادگذاری توصیه‌شده است، مگر اینکه ماژول ایمپورت‌کننده نیاز داشته باشد از زیرماژول‌هایی با نام یکسان از بسته‌های مختلف استفاده کند."
 
 msgid "Intra-package References"
 msgstr "ارجاع‌های درون‌بسته‌ای"

@@ -676,7 +676,7 @@ msgid "Reports the end of DTD declaration."
 msgstr "پایان اعلان DTD را گزارش می‌دهد."
 
 msgid "Reports the start of a CDATA marked section."
-msgstr "آغاز یک بخش نشانه‌گذاری‌شدهٔ CDATA را گزارش می‌کند."
+msgstr "آغاز یک بخش نمادگذاری‌شدهٔ CDATA را گزارش می‌کند."
 
 msgid ""
 "The contents of the CDATA marked section will be reported through the "
@@ -685,4 +685,4 @@ msgstr ""
 "محتوای بخش علامت‌گذاری‌شده CDATA از طریق هندلر نویسه‌ها گزارش می‌شود."
 
 msgid "Reports the end of a CDATA marked section."
-msgstr "پایان یک بخش نشانه‌گذاری‌شده CDATA را گزارش می‌دهد."
+msgstr "پایان یک بخش نمادگذاری‌شده CDATA را گزارش می‌دهد."

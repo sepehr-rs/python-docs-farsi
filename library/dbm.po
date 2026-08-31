@@ -606,7 +606,7 @@ msgid ""
 "interface which is written entirely in Python. Unlike other :mod:`!dbm` "
 "backends, such as :mod:`dbm.gnu`, no external library is required."
 msgstr ""
-"ماژول :mod:`!dbm.dumb` رابطی ماندگار شبیه به :class:`dict` فراهم می‌کند که "
+"ماژول :mod:`!dbm.dumb` رابطی پایا شبیه به :class:`dict` فراهم می‌کند که "
 "به‌طور کامل به زبان پایتون نوشته شده است. برخلاف سایر بک‌اندهای :mod:`!dbm`،"
 " مانند :mod:`dbm.gnu`، نیازی به کتابخانهٔ خارجی نیست."
 

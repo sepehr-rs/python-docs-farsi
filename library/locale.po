@@ -262,7 +262,7 @@ msgid "``'negative_sign'``"
 msgstr "``'negative_sign'``"
 
 msgid "Symbol used to annotate a negative monetary value."
-msgstr "نمادی که برای نشانه‌گذاری مقدار پولی منفی استفاده می‌شود."
+msgstr "نمادی که برای نمادگذاری مقدار پولی منفی استفاده می‌شود."
 
 msgid "``'p_sign_posn/n_sign_posn'``"
 msgstr "``'p_sign_posn/n_sign_posn'``"

@@ -426,7 +426,7 @@ msgid ""
 "(i.e., binaries produced by packages like **PyInstaller** and **cx_Freeze**) on POSIX systems. The "
 "``'fork'`` start method may work if code does not use threads."
 msgstr ""
-"به‌طور کلی، نمی‌توان از روش‌های شروع ``'spawn'`` و ``'forkserver'`` با فایل‌های اجرایی «یخ‌زده» (یعنی فایل‌های "
+"به‌طور کلی، نمی‌توان از روش‌های شروع ``'spawn'`` و ``'forkserver'`` با فایل‌های اجرایی «فریزشده» (یعنی فایل‌های "
 "دودویی تولیدشده توسط بسته‌هایی مانند **PyInstaller** و **cx_Freeze**) در سیستم‌های POSIX استفاده کرد. روش "
 "شروع ``'fork'`` ممکن است در صورتی کار کند که کد از نخ‌ها استفاده نکند."
 

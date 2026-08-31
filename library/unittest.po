@@ -2347,7 +2347,7 @@ msgid ":meth:`assertSetEqual(a, b) <TestCase.assertSetEqual>`"
 msgstr ":meth:`assertSetEqual(a, b) <TestCase.assertSetEqual>`"
 
 msgid "sets or frozensets"
-msgstr "مجموعه‌ها یا مجموعه‌های یخ‌زده"
+msgstr "مجموعه‌ها یا مجموعه‌های فریزشده"
 
 msgid ":meth:`assertDictEqual(a, b) <TestCase.assertDictEqual>`"
 msgstr ":meth:`assertDictEqual(a, b) <TestCase.assertDictEqual>`"

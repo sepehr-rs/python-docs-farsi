@@ -1047,7 +1047,7 @@ msgid ""
 ":class:`importlib.abc.MetaPathFinder` and "
 ":class:`importlib.abc.InspectLoader` ABCs."
 msgstr ""
-"یک ایمپورت‌کننده (:term:`importer`) برای ماژول‌های منجمد. این کلاس، کلاس‌های"
+"یک ایمپورت‌کننده (:term:`importer`) برای ماژول‌های فریز. این کلاس، کلاس‌های"
 " پایه انتزاعی (ABCs) :class:`importlib.abc.MetaPathFinder` و "
 ":class:`importlib.abc.InspectLoader` را پیاده‌سازی می‌کند."
 

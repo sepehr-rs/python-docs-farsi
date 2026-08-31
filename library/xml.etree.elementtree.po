@@ -771,7 +771,7 @@ msgstr ""
 msgid ""
 "For XML with namespaces, use the usual qualified ``{namespace}tag`` notation::"
 msgstr ""
-"برای XML با فضای نامها، از نشانه‌گذاری معمولِ واجد شرایط ``{namespace}tag`` "
+"برای XML با فضای نامها، از نمادگذاری معمولِ واجد شرایط ``{namespace}tag`` "
 "استفاده کنید::"
 
 msgid ""

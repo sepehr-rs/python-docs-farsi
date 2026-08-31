@@ -380,7 +380,7 @@ msgid ""
 "Freeze all the objects tracked by the garbage collector; move them to a "
 "permanent generation and ignore them in all the future collections."
 msgstr ""
-"همه اشیای پیگیری‌شده توسط زباله‌روبی را منجمد می‌کند؛ آن‌ها را به یک نسل "
+"همه اشیای پیگیری‌شده توسط زباله‌روبی را فریز می‌کند؛ آن‌ها را به یک نسل "
 "دائمی منتقل می‌کند و در همه جمع‌آوری‌های آینده نادیده می‌گیرد."
 
 msgid ""

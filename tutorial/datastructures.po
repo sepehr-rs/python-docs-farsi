@@ -57,7 +57,7 @@ msgid "Return zero-based index of the first occurrence of *value* in the list. R
 msgstr "اندیس مبتنی بر صفرِ اولین رخداد *value* در فهرست را برمی‌گرداند. اگر چنین آیتمی وجود نداشته باشد، یک :exc:`ValueError` پرتاب می‌کند."
 
 msgid "The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list.  The returned index is computed relative to the beginning of the full sequence rather than the *start* argument."
-msgstr "آرگومان‌های اختیاری *start* و *end* مانند نشانه‌گذاری برش تفسیر می‌شوند و برای محدود کردن جست‌وجو به یک زیر‌دنبالهٔ مشخص از فهرست استفاده می‌شوند. اندیس بازگردانده‌شده نسبت به ابتدای دنبالهٔ کامل محاسبه می‌شود، نه نسبت به آرگومان *start*."
+msgstr "آرگومان‌های اختیاری *start* و *end* مانند نمادگذاری برش تفسیر می‌شوند و برای محدود کردن جست‌وجو به یک زیر‌دنبالهٔ مشخص از فهرست استفاده می‌شوند. اندیس بازگردانده‌شده نسبت به ابتدای دنبالهٔ کامل محاسبه می‌شود، نه نسبت به آرگومان *start*."
 
 msgid "Return the number of times *value* appears in the list."
 msgstr "تعداد دفعاتی که *value* در فهرست ظاهر می‌شود را برمی‌گرداند."
@@ -323,7 +323,7 @@ msgstr ""
 "    [x, x**2 for x in range(6)]\n"
 "     ^^^^^^^\n"
 "SyntaxError: did you forget parentheses around the comprehension target?\n"
-">>> # تخت کردن یک فهرست با استفاده از listcomp و دو حلقه‌ی for\n"
+">>> # تخت‌سازی یک فهرست با استفاده از listcomp و دو حلقه‌ی for\n"
 ">>> vec = [[1,2,3], [4,5,6], [7,8,9]]\n"
 ">>> [num for elem in vec for num in elem]\n"
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"

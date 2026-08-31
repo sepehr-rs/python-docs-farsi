@@ -160,7 +160,7 @@ msgid ""
 "defaults need to be filled in to complete the transformation to a string "
 "(for example, MIME boundaries may be generated or modified)."
 msgstr ""
-"تخت کردن پیام (flattening) ممکن است باعث ایجاد تغییراتی در :class:`Message` "
+"تخت‌سازی پیام (flattening) ممکن است باعث ایجاد تغییراتی در :class:`Message` "
 "شود، اگر برای تکمیل تبدیل به رشته نیاز باشد مقادیر پیش‌فرض پر شوند (برای "
 "مثال، ممکن است مرزهای MIME تولید یا اصلاح شوند)."
 

@@ -1782,7 +1782,7 @@ msgid ""
 "  It also provides an elegant notation using the :keyword:`class` keyword::"
 msgstr ""
 "برای روشی جهت افزودن راهنمای نوع به تاپل‌های نام‌دار، "
-":class:`typing.NamedTuple` را ببینید. این کلاس همچنین یک نشانه‌گذاری آراسته "
+":class:`typing.NamedTuple` را ببینید. این کلاس همچنین یک نمادگذاری آراسته "
 "با استفاده از کلیدواژه‌ی :keyword:`class` ارائه می‌کند::"
 
 msgid ""

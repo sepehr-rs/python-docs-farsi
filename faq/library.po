@@ -1232,7 +1232,7 @@ msgstr ""
 "DatabaseProgramming>`_ را ببینید."
 
 msgid "How do you implement persistent objects in Python?"
-msgstr "چگونه اشیاء ماندگار را در پایتون پیاده‌سازی می‌کنید؟"
+msgstr "چگونه اشیاء پایا را در پایتون پیاده‌سازی می‌کنید؟"
 
 msgid ""
 "The :mod:`pickle` library module solves this in a very general way (though "
@@ -1243,7 +1243,7 @@ msgstr ""
 "ماژول کتابخانه‌ای :mod:`pickle` این مسئله را به‌شکلی بسیار عمومی حل می‌کند "
 "(هرچند هنوز نمی‌توانید چیزهایی مانند فایل‌های باز، سوکت‌ها یا پنجره‌ها را ذخیره "
 "کنید)، و ماژول کتابخانه‌ای :mod:`shelve` از pickle و (g)dbm برای ایجاد "
-"نگاشت‌های ماندگار شامل اشیاء پایتون دلخواه استفاده می‌کند."
+"نگاشت‌های پایا شامل اشیاء پایتون دلخواه استفاده می‌کند."
 
 msgid "Mathematics and Numerics"
 msgstr "ریاضیات و محاسبات عددی"

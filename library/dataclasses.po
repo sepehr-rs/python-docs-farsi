@@ -367,7 +367,7 @@ msgid ""
 ":ref:`discussion <dataclasses-frozen>` below."
 msgstr ""
 "*frozen*: اگر true باشد (پیش‌فرض ``False`` است)، انتساب به فیلدها باعث ایجاد"
-" یک استثنا می‌شود. این حالت، نمونه‌های یخ‌زده فقط‌خواندنی را شبیه‌سازی "
+" یک استثنا می‌شود. این حالت، نمونه‌های فریزشده فقط‌خواندنی را شبیه‌سازی "
 "می‌کند. به :ref:`بحث <dataclasses-frozen>` در زیر مراجعه کنید."
 
 msgid ""
@@ -1251,7 +1251,7 @@ msgstr ""
 ":attr:`!j` برمی‌گرداند، اما نه برای :attr:`!database`."
 
 msgid "Frozen instances"
-msgstr "نمونه‌های یخ‌زده"
+msgstr "نمونه‌های فریزشده"
 
 msgid ""
 "It is not possible to create truly immutable Python objects.  However, by "
