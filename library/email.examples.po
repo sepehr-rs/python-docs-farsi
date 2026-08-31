@@ -40,7 +40,7 @@ msgid ""
 "text content and the addresses may contain unicode characters):"
 msgstr ""
 "ابتدا، بیایید ببینیم چگونه یک پیام متنی ساده را ایجاد و ارسال کنیم (هم "
-"محتوای متنی و هم نشانی‌ها ممکن است حاوی نویسه‌های یونی‌کد باشند):"
+"محتوای متنی و هم نشانی‌ها ممکن است حاوی نویسه‌های یونیکد باشند):"
 
 msgid ""
 "# Import smtplib for the actual sending function\n"

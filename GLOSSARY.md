@@ -8,6 +8,7 @@
 | English            | فارسی                   |
 | ------------------ | ----------------------- |
 | accessibility      | دسترسی‌پذیری             |
+| ASCII              | اسکی                    |
 | assertion          | ادعا، شرط               |
 | availability       | دسترس‌پذیری              |
 | API                | API                     |
@@ -17,8 +18,10 @@
 | action             | اکشن، کنش               |
 | await              | await                   |
 | boolean            | بولی                    |
+| by-name            | نام‌محور                 |
 | bootstrapping      | بوت‌استرپینگ             |
 | backend            | بک‌اند                   |
+| bytecode           | بایت‌کد                  |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
 | bytes-like object  | شیء شبه‌بایت             |
 | bouding box        | جعبهٔ محدودکننده         |
@@ -33,6 +36,7 @@
 | checkbutton        | دکمه‌ی انتخابی           |
 | closure            | بستار                   |
 | cast               | تبدیل نوع، قالب‌ریزی     |
+| container          | ظرف                     |
 | contravariant      | پادوردا                 |
 | covariant          | هم‌وردا                  |
 | cipher             | رمز                     |
@@ -54,6 +58,7 @@
 | deserialization    | سریال‌زدایی              |
 | deserializer       | سریال‌زدا                |
 | deserialize        | سریال‌زدایی کردن         |
+| deferred reference counting | شمارش ارجاعِ معوق |
 | decorator          | دکوراتور، آراینده       |
 | decompressor       | واگشا                   |
 | disassemble        | واسازی کردن             |
@@ -62,9 +67,12 @@
 | deque              | صف دوطرفه               |
 | dump               | برون‌ریزی                |
 | descriptor         | توصیف‌گر                 |
+| drop-in            | جایگزین مستقیم          |
+| dataclass          | دیتاکلاس                 |
 | dispatch table     | جدول نگاشت              |
 | docstring          | رشته مستند              |
 | deprecated         | منسوخ، از رده خارج شده  |
+| delegation         | واگذاری                 |
 | dictionary         | دیکشنری                 |
 | directory          | پوشه                    |
 | DOM                | DOM                     |
@@ -80,10 +88,14 @@
 | Ellipsis           | Ellipsis                |
 | executor           | اجرا‌کننده               |
 | escape             | خنثی کردن، گریز         |
+| extention types    | نوع‌های توسعه‌ای          |
+| extension modules  | ماژول‌های توسعه‌ای        |
 | event              | رویداد                  |
 | exception          | استثنا                  |
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
+| free-threaded      | نخ‌آزاد                  |
+| free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
 | frozen             | فریز‌شده                 |
 | facility           | امکان، دسته گزارش       |
@@ -101,6 +113,7 @@
 | garbage collection | زباله‌روبی               |
 | generator          | تولیدگر                 |
 | generic            | عام                     |
+| guard              | نگهبان                  |
 | generic function   | تابع عام، تابع عمومی    |
 | symlink            | پیوند نمادین            |
 | global             | سراسری، عمومی           |
@@ -124,12 +137,14 @@
 | idempotent         | هم‌توان                  |
 | iterable           | پیمایش‌پذیر              |
 | iterator           | پیمایش‌گر                |
+| IDE                | IDE, محیط توسعه یکپارچه |
 | iteration          | پیمایش                  |
 | iterate            | پیمایش کردن             |
 | join               | پیوستن، الحاق           |
 | junction           | اتصال                   |
 | keyword            | کلیدواژه                |
 | keyword argument   | آرگومان کلیدواژه‌ای      |
+| keybinding         | کلیدبندی                |
 | list               | فهرست                   |
 | literal            | لفظی                    |
 | literals           | مقادیر لفظی             |
@@ -141,6 +156,7 @@
 | local              | محلی                    |
 | loop               | حلقه                    |
 | logging            | گزارش‌گیری               |
+| logger             | گزارش‌گیر                |
 | metaclass          | فراکلاس                  |
 | method             | متد، روش                |
 | mock               | ماک                     |
@@ -164,6 +180,8 @@
 | overloaded         | سربارگذاری‌شده           |
 | package            | بسته                    |
 | picklable          | پیکل‌پذیر                |
+| protocol           | پروتکل                  |
+| probe              | پروب                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | precision          | دقت                     |
@@ -194,6 +212,10 @@
 | raise              | پرتاب                   |
 | REPL               | REPL، پوسته تعاملی پایتون|
 | reentrant          | بازورودپذیر             |
+| reference          | ارجاع                   |
+| reference counting | شمارش ارجاع             |
+| refcount           | شمارش ارجاع             |
+| regular expression/RE | عبارت باقاعده        |
 | return             | بازگشت، برگرداندن       |
 | run time, run-time | زمان اجرا               |
 | runtime            | ران‌تایم                 |
@@ -206,6 +228,8 @@
 | snapshot           | تصویر لحظه‌ای            |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
+| sleep              | توقف                    |
+| seed               | بذر                     |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
 | suite              | بدنه                    |
@@ -225,9 +249,11 @@
 | tracking           | پیگیری                  |
 | task               | وظیفه                   |
 | timeout            | مهلت زمانی              |
+| thread-safe        | نخ‌ایمن                  |
 | type               | نوع، نوع داده، تایپ     |
 | typeahead          | پیش‌تایپ                 |
 | unit test          | یونیت تست               |
+| unicode            | یونیکد                  |
 | unpacking          | واگشایی                 |
 | unary              | یک‌عملوندی               |
 | unpickle           | پیکل‌گشایی               |

@@ -982,7 +982,7 @@ msgid ""
 "If the guard evaluates as true or is missing, the ``block`` inside "
 "``case_block`` is executed."
 msgstr ""
-"اگر محافظ (guard) به‌صورت درست ارزیابی شود یا وجود نداشته باشد، ``block`` "
+"اگر نگهبان (guard) به‌صورت درست ارزیابی شود یا وجود نداشته باشد، ``block`` "
 "داخل ``case_block`` اجرا می‌شود."
 
 msgid "Otherwise, the next ``case_block`` is attempted as described above."
@@ -1036,7 +1036,7 @@ msgid ""
 "In this case, ``if flag`` is a guard.  Read more about that in the next "
 "section."
 msgstr ""
-"در این حالت، ``if flag`` یک محافظ (guard) است. در بخش بعدی بیشتر دربارهٔ آن "
+"در این حالت، ``if flag`` یک نگهبان (guard) است. در بخش بعدی بیشتر دربارهٔ آن "
 "بخوانید."
 
 msgid "Guards"
@@ -3164,7 +3164,7 @@ msgid "built-in function"
 msgstr "تابع توکار"
 
 msgid "range"
-msgstr "بازه (range)"
+msgstr "range"
 
 msgid "try"
 msgstr "try"
@@ -3182,22 +3182,22 @@ msgid "except clause"
 msgstr "بند except"
 
 msgid "module"
-msgstr "ماژول"
+msgstr "module"
 
 msgid "sys"
 msgstr "sys"
 
 msgid "traceback"
-msgstr "ردگیری"
+msgstr "traceback"
 
 msgid "except_star"
 msgstr "except_star"
 
 msgid "return"
-msgstr "بازگشت"
+msgstr "return"
 
 msgid "with"
-msgstr "با"
+msgstr "with"
 
 msgid "with statement"
 msgstr "دستور with"
@@ -3206,7 +3206,7 @@ msgid ", (comma)"
 msgstr ", (ویرگول)"
 
 msgid "match"
-msgstr "تطبیق"
+msgstr "match"
 
 msgid "case"
 msgstr "حالت"
@@ -3218,7 +3218,7 @@ msgid "match statement"
 msgstr "دستور match"
 
 msgid "guard"
-msgstr "محافظ"
+msgstr "نگهبان"
 
 msgid "irrefutable case block"
 msgstr "بلوک case غیرقابل‌انکار"

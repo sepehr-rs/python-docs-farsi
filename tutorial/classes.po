@@ -215,7 +215,7 @@ msgid "When a class definition is entered, a new namespace is created, and used 
 msgstr "هنگامی که یک تعریف کلاس وارد می‌شود، یک فضای نام جدید ایجاد شده و به‌عنوان محدوده‌ی محلی استفاده می‌شود --- بنابراین، تمام تخصیص‌ها به متغیرهای محلی به این فضای نام جدید می‌روند. به‌ویژه، تعاریف توابع، نام تابع جدید را در اینجا متصل می‌کنند."
 
 msgid "When a class definition is left normally (via the end), a *class object* is created.  This is basically a wrapper around the contents of the namespace created by the class definition; we'll learn more about class objects in the next section.  The original local scope (the one in effect just before the class definition was entered) is reinstated, and the class object is bound here to the class name given in the class definition header (:class:`!ClassName` in the example)."
-msgstr "هنگامی که یک تعریف کلاس به‌طور عادی (با رسیدن به انتها) ترک می‌شود، یک *شیء کلاس* ایجاد می‌شود. این در اصل یک پوسته (wrapper) پیرامون محتویات فضای نامی است که توسط تعریف کلاس ایجاد شده است؛ در بخش بعدی بیشتر درباره‌ی اشیاء کلاس خواهیم آموخت. محدوده‌ی محلی اصلی (همان محدوده‌ای که درست قبل از ورود به تعریف کلاس فعال بود) بازیابی می‌شود، و شیء کلاس در اینجا به نام کلاسی که در سرآیند تعریف کلاس داده شده است، متصل می‌شود (:class:`!ClassName` در مثال)."
+msgstr "هنگامی که یک تعریف کلاس به‌طور عادی (با رسیدن به انتها) ترک می‌شود، یک *شیء کلاس* ایجاد می‌شود. این در اصل یک پوسته (wrapper) پیرامون محتویات فضای نامی است که توسط تعریف کلاس ایجاد شده است؛ در بخش بعدی بیشتر درباره‌ی اشیاء کلاس خواهیم آموخت. محدوده‌ی محلی اصلی (همان محدوده‌ای که درست قبل از ورود به تعریف کلاس فعال بود) بازیابی می‌شود، و شیء کلاس در اینجا به نام کلاسی که در سرآیند تعریف دیتاکلاس شده است، متصل می‌شود (:class:`!ClassName` در مثال)."
 
 msgid "Class Objects"
 msgstr "اشیاء کلاس"
@@ -267,7 +267,7 @@ msgid "When a class defines an :meth:`~object.__init__` method, class instantiat
 msgstr "وقتی یک کلاس یک متد :meth:`~object.__init__` تعریف می‌کند، نمونه‌سازی کلاس به‌طور خودکار :meth:`!__init__` را برای نمونه‌ی تازه‌ایجادشده‌ی کلاس فراخوانی می‌کند. بنابراین در این مثال، می‌توان یک نمونه‌ی جدید و مقداردهی‌شده را با دستور زیر به‌دست آورد::"
 
 msgid "Of course, the :meth:`~object.__init__` method may have arguments for greater flexibility.  In that case, arguments given to the class instantiation operator are passed on to :meth:`!__init__`.  For example, ::"
-msgstr "البته، متد :meth:`~object.__init__` ممکن است برای انعطاف‌پذیری بیشتر، آرگومان‌هایی داشته باشد. در آن صورت، آرگومان‌هایی که به عملگر نمونه‌سازی کلاس داده می‌شوند، به :meth:`!__init__` منتقل می‌شوند. برای مثال، ::"
+msgstr "البته، متد :meth:`~object.__init__` ممکن است برای انعطاف‌پذیری بیشتر، آرگومان‌هایی داشته باشد. در آن صورت، آرگومان‌هایی که به عملگر نمونه‌سازی دیتاکلاس می‌شوند، به :meth:`!__init__` منتقل می‌شوند. برای مثال، ::"
 
 msgid ""
 ">>> class Complex:\n"

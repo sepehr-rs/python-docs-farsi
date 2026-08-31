@@ -4491,7 +4491,7 @@ msgid ""
 "unicode string.  The constructor accepts an optional string initializer, the length of the string "
 "must be exactly one character."
 msgstr ""
-"نشان‌دهندهٔ نوع دادهٔ :c:type:`wchar_t` در C است و مقدار را به‌عنوان یک رشتهٔ یونی‌کد تک‌نویسه‌ای تفسیر "
+"نشان‌دهندهٔ نوع دادهٔ :c:type:`wchar_t` در C است و مقدار را به‌عنوان یک رشتهٔ یونیکد تک‌نویسه‌ای تفسیر "
 "می‌کند. سازنده یک مقدار اولیهٔ رشته‌ای اختیاری می‌پذیرد؛ طول رشته باید دقیقاً ۱ نویسه باشد."
 
 msgid ""

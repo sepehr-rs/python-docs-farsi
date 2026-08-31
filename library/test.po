@@ -1114,7 +1114,7 @@ msgid ""
 "Decorator for skipping tests on the free-threaded build.  If the :term:`GIL`"
 " is disabled, the test is skipped."
 msgstr ""
-"دکوراتور برای رد کردن آزمون‌ها در ساخت آزاد-نخ (free-threaded build). اگر "
+"دکوراتور برای رد کردن آزمون‌ها در ساخت نخ‌آزاد (free-threaded build). اگر "
 ":term:`GIL` غیرفعال باشد، آزمون رد می‌شود."
 
 msgid "Decorator for skipping tests on non-IEEE 754 platforms."

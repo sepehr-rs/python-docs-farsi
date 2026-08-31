@@ -103,7 +103,7 @@ msgid ""
 "If running inside a container, use ``--cap-add=SYS_PTRACE`` or ``--"
 "privileged``, and run as root if needed."
 msgstr ""
-"اگر داخل یک کانتینر اجرا می‌شود، از ``--cap-add=SYS_PTRACE`` یا ``--"
+"اگر داخل یک ظرف اجرا می‌شود، از ``--cap-add=SYS_PTRACE`` یا ``--"
 "privileged`` استفاده کنید و در صورت نیاز، به‌عنوان root اجرا کنید."
 
 msgid "Try re-running the command with elevated privileges:"

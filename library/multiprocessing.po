@@ -2353,7 +2353,7 @@ msgid ""
 "function's behavior using a sleeping loop."
 msgstr ""
 "در macOS، از ``sem_timedwait`` پشتیبانی نمی‌شود، بنابراین فراخوانی ``acquire()`` با یک مهلت زمانی (timeout)، "
-"رفتار آن تابع را با استفاده از یک حلقه‌ی خواب شبیه‌سازی خواهد کرد."
+"رفتار آن تابع را با استفاده از یک حلقه‌ی توقف شبیه‌سازی خواهد کرد."
 
 msgid ""
 "Some of this package's functionality requires a functioning shared semaphore implementation on the host "

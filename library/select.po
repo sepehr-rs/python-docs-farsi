@@ -513,7 +513,7 @@ msgid ":const:`EPOLLWAKEUP`"
 msgstr ":const:`EPOLLWAKEUP`"
 
 msgid "Prevents sleep during event waiting."
-msgstr "از به خواب رفتن در حین انتظار برای رویداد جلوگیری می‌کند."
+msgstr "از متوقف شدن در حین انتظار برای رویداد جلوگیری می‌کند."
 
 msgid ""
 ":const:`EPOLLEXCLUSIVE` was added.  It's only supported by Linux Kernel 4.5 "

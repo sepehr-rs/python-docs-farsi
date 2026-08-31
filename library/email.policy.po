@@ -806,7 +806,7 @@ msgstr ""
 "اگر مقدار دارای ویژگی ``name`` باشد، بدون تغییر بازگردانده می‌شود. در غیر "
 "این صورت، *name* و *value*، پس از حذف هرگونه نویسه CR یا LF از مقدار، به "
 "``header_factory`` فرستاده می‌شوند و شیء سربرگ حاصل بازگردانده می‌شود. "
-"بایت‌های surrogateescaped به علامت نویسهٔ ناشناختهٔ یونی‌کد تبدیل می‌شوند."
+"بایت‌های surrogateescaped به علامت نویسهٔ ناشناختهٔ یونیکد تبدیل می‌شوند."
 
 msgid ""
 "Header folding is controlled by the :attr:`refold_source` policy setting. A "

@@ -356,7 +356,7 @@ msgstr ""
 ":file:`~/.local/lib/python{X.Y}[t]/site-packages`، برای ساخت‌های فریم‌ورک "
 "macOS برابر با :file:`~/Library/Python/{X.Y}/lib/python/site-packages`، و در"
 " ویندوز :file:`{%APPDATA%}\\\\Python\\\\Python{XY}\\\\site-packages` است. "
-"نویسه اختیاری «t» نشان‌دهنده ساخت آزاد-نخاست. این پوشه یک "
+"نویسه اختیاری «t» نشان‌دهنده ساخت نخ‌آزاداست. این پوشه یک "
 "پوشه سایت (site directory) است، به این معنا که فایل‌های :file:`.pth` درون آن"
 " پردازش خواهند شد."
 

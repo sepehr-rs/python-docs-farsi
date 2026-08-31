@@ -176,7 +176,7 @@ msgstr ""
 "``None`` را برمی‌گرداند."
 
 msgid "Returns a ``FutureCallGraph`` data class object:"
-msgstr "یک شیء از کلاس داده ``FutureCallGraph`` برمی‌گرداند:"
+msgstr "یک شیء از دیتاکلاس ``FutureCallGraph`` برمی‌گرداند:"
 
 msgid "``FutureCallGraph(future, call_stack, awaited_by)``"
 msgstr "``FutureCallGraph(future, call_stack, awaited_by)``"

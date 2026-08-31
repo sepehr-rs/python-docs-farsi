@@ -517,7 +517,7 @@ msgstr ""
 
 msgid "ABC for sized iterable container classes."
 msgstr ""
-"کلاس پایه انتزاعی (ABC) برای کلاس‌های کانتینر (container) اندازه‌دار و "
+"کلاس پایه انتزاعی (ABC) برای کلاس‌های ظرف (container) اندازه‌دار و "
 "پیمایش‌پذیر."
 
 msgid ""

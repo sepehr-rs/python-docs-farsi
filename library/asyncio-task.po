@@ -838,7 +838,7 @@ msgstr ""
 "Task 1: done"
 
 msgid "Sleeping"
-msgstr "خواب"
+msgstr "توقف"
 
 msgid "Block for *delay* seconds."
 msgstr "به مدت *delay* ثانیه مسدود می‌شود."

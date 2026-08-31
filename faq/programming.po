@@ -2951,7 +2951,7 @@ msgstr ""
 "obj.search()"
 
 msgid "What is delegation?"
-msgstr "تفویض (delegation) چیست؟"
+msgstr "واگذاری (delegation) چیست؟"
 
 msgid ""
 "Delegation is an object-oriented technique (also called a design pattern). "

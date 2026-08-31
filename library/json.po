@@ -352,7 +352,7 @@ msgid ""
 "and a circular reference will result in a :exc:`RecursionError` (or worse). "
 "Default ``True``."
 msgstr ""
-"اگر ``False`` باشد، بررسی ارجاع‌های دوری برای انواع کانتینری نادیده گرفته "
+"اگر ``False`` باشد، بررسی ارجاع‌های دوری برای انواع ظرفی نادیده گرفته "
 "می‌شود و یک ارجاع دوری به :exc:`RecursionError` (یا بدتر) منجر خواهد شد. "
 "پیش‌فرض ``True`` است."
 

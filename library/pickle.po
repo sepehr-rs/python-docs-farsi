@@ -2362,7 +2362,7 @@ msgid "Module :mod:`copyreg`"
 msgstr "ماژول :mod:`copyreg`"
 
 msgid "Pickle interface constructor registration for extension types."
-msgstr "ثبت سازنده‌ی رابط Pickle برای انواع توسعه."
+msgstr "ثبت سازنده‌ی رابط Pickle برای انواع توسعه‌ای."
 
 msgid "Module :mod:`pickletools`"
 msgstr "ماژول :mod:`pickletools`"
