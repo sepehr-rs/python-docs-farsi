@@ -105,7 +105,7 @@ msgid ""
 "A generic token value that indicates an :ref:`operator <operators>` or "
 ":ref:`delimiter <delimiters>`."
 msgstr ""
-"یک مقدار توکن عمومی که نشان‌دهندهٔ یک :ref:`عملگر <operators>` یا "
+"یک مقدار توکن عام که نشان‌دهندهٔ یک :ref:`عملگر <operators>` یا "
 ":ref:`جداکننده <delimiters>` است."
 
 msgid ""

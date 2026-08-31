@@ -51,7 +51,7 @@ msgid ""
 msgstr ""
 "برای ساده‌سازی مدیریت جریان توکن، تمام توکن‌های :ref:`عملگر <operators>` و "
 ":ref:`جدا‌کننده <delimiters>` و :data:`Ellipsis` با استفاده از نوع توکن "
-"عمومی :data:`~token.OP` برگردانده می‌شوند. نوع دقیق را می‌توان با بررسی "
+"عام :data:`~token.OP` برگردانده می‌شوند. نوع دقیق را می‌توان با بررسی "
 "ویژگی ``exact_type`` روی :term:`named tuple` برگشتی از "
 ":func:`tokenize.tokenize` تعیین کرد."
 

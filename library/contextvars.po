@@ -89,7 +89,7 @@ msgid ""
 ":class:`!ContextVar`\\s are :ref:`generic <generics>` over the type of their"
 " contained value."
 msgstr ""
-":class:`!ContextVar` ‌ها نسبت به نوع مقدار درون خود :ref:`عمومی <generics>` "
+":class:`!ContextVar` ‌ها نسبت به نوع مقدار درون خود :ref:`عام <generics>` "
 "هستند."
 
 msgid "The name of the variable.  This is a read-only property."

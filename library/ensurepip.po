@@ -212,7 +212,7 @@ msgid ""
 "*user* indicates whether to use the user scheme rather than installing "
 "globally."
 msgstr ""
-"*user* نشان می‌دهد که آیا باید از طرح کاربر به‌جای نصب به‌صورت سراسری "
+"*user* نشان می‌دهد که آیا باید از طرح‌واره کاربر به‌جای نصب به‌صورت سراسری "
 "استفاده شود."
 
 msgid ""

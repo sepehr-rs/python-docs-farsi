@@ -723,7 +723,7 @@ msgid ""
 "instantiated (or when :func:`dump` or :func:`dumps` was called)."
 msgstr ""
 "اگر *buffers* برابر ``None`` باشد (پیش‌فرض)، تمام داده‌های مورد نیاز برای "
-"پیاده‌سازی (deserialization) باید در جریان pickle قرار داشته باشند. این بدان "
+"سریال‌زدایی (deserialization) باید در جریان pickle قرار داشته باشند. این بدان "
 "معناست که آرگومان *buffer_callback* هنگام ایجاد نمونه‌ای از :class:`Pickler` "
 "(یا هنگام فراخوانی :func:`dump` یا :func:`dumps`) برابر ``None`` بوده است."
 

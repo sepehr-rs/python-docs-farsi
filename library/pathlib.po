@@ -191,7 +191,7 @@ msgid ""
 "A generic class that represents the system's path flavour (instantiating it creates either "
 "a :class:`PurePosixPath` or a :class:`PureWindowsPath`)::"
 msgstr ""
-"یک کلاس عمومی که نشان‌دهندهٔ سبک مسیر سیستم است (نمونه‌سازی از آن یک :class:`PurePosixPath` "
+"یک کلاس عام که نشان‌دهندهٔ سبک مسیر سیستم است (نمونه‌سازی از آن یک :class:`PurePosixPath` "
 "یا :class:`PureWindowsPath` ایجاد می‌کند)::"
 
 msgid ""

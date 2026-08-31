@@ -378,7 +378,7 @@ msgid "Module :mod:`dbm`"
 msgstr "ماژول :mod:`dbm`"
 
 msgid "Generic interface to ``dbm``-style databases."
-msgstr "رابط عمومی برای پایگاه‌های داده به سبک ``dbm``."
+msgstr "رابط عام برای پایگاه‌های داده به سبک ``dbm``."
 
 msgid "Module :mod:`pickle`"
 msgstr "ماژول :mod:`pickle`"

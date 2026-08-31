@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Generic Operating System Services"
-msgstr "خدمات عمومی سیستم‌عامل"
+msgstr "خدمات عام سیستم‌عامل"
 
 msgid ""
 "The modules described in this chapter provide interfaces to operating system"

@@ -43,7 +43,7 @@ msgstr ""
 ":rfc:`1521` تعریف شده است، انجام می‌دهد: «MIME (Multipurpose Internet Mail "
 "Extensions) Part One: Mechanisms for Specifying and Describing the Format of"
 " Internet Message Bodies». کدگذاری quoted-printable برای داده‌هایی طراحی شده"
-" است که تعداد نویسه‌های غیرچاپی آن‌ها نسبتاً کم است؛ طرح کدگذاری base64 که "
+" است که تعداد نویسه‌های غیرچاپی آن‌ها نسبتاً کم است؛ طرح‌واره کدگذاری base64 که "
 "از طریق ماژول :mod:`base64` در دسترس است، اگر چنین نویسه‌هایی زیاد باشند، "
 "فشرده‌تر است؛ برای مثال هنگام ارسال یک فایل گرافیکی."
 

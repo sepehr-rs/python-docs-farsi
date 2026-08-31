@@ -24,6 +24,8 @@
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | callable           | فراخوانی‌پذیر            |
+| closure            | بستار                   |
+| clone              | رونوشت                  |
 | character          | نویسه                   |
 | class              | کلاس                     |
 | command line       | خط فرمان                |
@@ -35,6 +37,7 @@
 | custom             | سفارشی، اختصاصی         |
 | debugging          | اشکال‌زدایی، دیباگ کردن  |
 | decoding           | کدگشایی                 |
+| deserialization    | سریال‌زدایی              |
 | decorator          | دکوراتور، آراینده       |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
@@ -56,9 +59,11 @@
 | formatter          | قالب‌بند                 |
 | fork               | انشعاب، فورک            |
 | function           | تابع                    |
+| finalizer          | نهایی‌ساز                |
 | futures            | آینده‌نماها، فیوچرز      |
 | garbage collection | زباله‌روبی               |
 | generator          | تولیدگر                 |
+| generic            | عام                     |
 | generic function   | تابع عام، تابع عمومی    |
 | symlink            | پیوند نمادین            |
 | global             | سراسری، عمومی           |
@@ -78,6 +83,7 @@
 | item               | آیتم                    |
 | idempotent         | هم‌توان                  |
 | iterable           | تکرارپذیر               |
+| join               | پیوستن، الحاق           |
 | keyword            | کلیدواژه                |
 | keyword argument   | آرگومان کلیدواژه‌ای      |
 | list               | فهرست                   |
@@ -98,6 +104,7 @@
 | mix-in             | میکس‌این                 |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
+| notation           | نمادگذاری               |
 | no-op              | عملیات بی‌اثر            |
 | object             | شیء                     |
 | opcode             | کدعمل                   |
@@ -108,6 +115,7 @@
 | picklable          | پیکل‌پذیر                |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
+| post-mortem debugging | اشکال‌زدایی پس از خاتمه |
 | payload            | بار                     |
 | pane               | بخش                     |
 | patch              | وصل                     |
@@ -130,12 +138,16 @@
 | runtime            | ران‌تایم                 |
 | scope              | محدوده                  |
 | shadowing          | پوشاندن                 |
+| spinbox            | اسپین‌باکس               |
 | shell              | پوسته                   |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
 | suite              | بدنه                    |
+| scheme             | طرح‌واره، طرح            |
+| subscription       | زیرنویسی                |
+| serialization      | سریال‌سازی               |
 | stub               | stub                    |
 | string             | رشته                    |
 | syntactic sugar    | قند نحوی                |

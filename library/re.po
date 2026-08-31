@@ -2114,7 +2114,7 @@ msgid ""
 "Matches are :ref:`generic <generics>` over the type of string which was matched "
 "(:class:`str` or :class:`bytes`)."
 msgstr ""
-"تطبیق‌ها نسبت به نوع رشته‌ای که تطبیق داده شده است :ref:`عمومی <generics>` هستند "
+"تطبیق‌ها نسبت به نوع رشته‌ای که تطبیق داده شده است :ref:`عام <generics>` هستند "
 "(:class:`str` یا :class:`bytes`)."
 
 msgid ""

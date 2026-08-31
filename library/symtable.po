@@ -211,7 +211,7 @@ msgid ""
 "Return a tuple containing names of :term:`free (closure) variables <closure "
 "variable>` in this function."
 msgstr ""
-"یک تاپل شامل نام‌های :term:`متغیرهای آزاد (closure) <closure variable>` در "
+"یک تاپل شامل نام‌های :term:`متغیرهای آزاد (بستار) <closure variable>` در "
 "این تابع بازمی‌گرداند."
 
 msgid ""

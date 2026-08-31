@@ -169,7 +169,7 @@ msgstr "تعداد دفعاتی که به یک :class:`Breakpoint` رسیده ا
 
 msgid "The :class:`Bdb` class acts as a generic Python debugger base class."
 msgstr ""
-"کلاس :class:`Bdb` به‌عنوان یک کلاس پایه عمومی برای اشکال‌زدای پایتون عمل "
+"کلاس :class:`Bdb` به‌عنوان یک کلاس پایه عام برای اشکال‌زدای پایتون عمل "
 "می‌کند."
 
 msgid ""

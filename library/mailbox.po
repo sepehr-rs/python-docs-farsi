@@ -798,7 +798,7 @@ msgid ""
 "Notes on Maildir by its inventor. Includes an updated name-creation scheme "
 "and details on \"info\" semantics."
 msgstr ""
-"یادداشت‌هایی درباره Maildir از مخترع آن. شامل یک طرح به‌روزشده برای ایجاد "
+"یادداشت‌هایی درباره Maildir از مخترع آن. شامل یک طرح‌واره به‌روزشده برای ایجاد "
 "نام و جزئیاتی درباره معنای «info» است."
 
 msgid ":class:`!mbox` objects"

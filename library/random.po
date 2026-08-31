@@ -177,7 +177,7 @@ msgstr ""
 "می‌کند."
 
 msgid "Moved to the version 2 scheme which uses all of the bits in a string seed."
-msgstr "به طرح نسخه‌ی 2 منتقل شد که از تمام بیت‌های یک بذر رشته‌ای استفاده می‌کند."
+msgstr "به طرح‌واره نسخه‌ی 2 منتقل شد که از تمام بیت‌های یک بذر رشته‌ای استفاده می‌کند."
 
 msgid ""
 "The *seed* must be one of the following types: "

@@ -1221,7 +1221,7 @@ msgid ""
 "The generic function :func:`copy.replace` also supports :class:`date` "
 "objects."
 msgstr ""
-"تابع عمومی :func:`copy.replace` همچنین از شیء‌های :class:`date` پشتیبانی "
+"تابع عام :func:`copy.replace` همچنین از شیء‌های :class:`date` پشتیبانی "
 "می‌کند."
 
 msgid ""

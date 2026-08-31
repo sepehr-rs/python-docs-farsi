@@ -742,7 +742,7 @@ msgid ""
 "The spinbox widget generates an **<<Increment>>** virtual event when the user "
 "presses <Up>, and a **<<Decrement>>** virtual event when the user presses <Down>."
 msgstr ""
-"ابزارک spinbox هنگامی که کاربر <Up> را فشار می‌دهد، یک رویداد مجازی "
+"ابزارک اسپین‌باکس هنگامی که کاربر <Up> را فشار می‌دهد، یک رویداد مجازی "
 "**<<Increment>>** و هنگامی که کاربر <Down> را فشار می‌دهد، یک رویداد مجازی "
 "**<<Decrement>>** تولید می‌کند."
 
@@ -757,10 +757,10 @@ msgstr ""
 "numeric-locale>` را ببینید."
 
 msgid "Returns the current value of the spinbox."
-msgstr "مقدار فعلی جعبه چرخان (spinbox) را برمی‌گرداند."
+msgstr "مقدار فعلی اسپین‌باکس (spinbox) را برمی‌گرداند."
 
 msgid "Sets the value of the spinbox to *value*."
-msgstr "مقدار جعبه چرخان (spinbox) را روی *value* تنظیم می‌کند."
+msgstr "مقدار اسپین‌باکس (spinbox) را روی *value* تنظیم می‌کند."
 
 msgid "Notebook"
 msgstr "نوت‌بوک (Notebook)"

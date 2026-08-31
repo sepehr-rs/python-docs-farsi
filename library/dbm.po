@@ -30,7 +30,7 @@ msgid "**Source code:** :source:`Lib/dbm/__init__.py`"
 msgstr ":source:`Lib/dbm/__init__.py`"
 
 msgid ":mod:`!dbm` is a generic interface to variants of the DBM database:"
-msgstr ":mod:`!dbm` یک رابط عمومی برای انواع پایگاه داده DBM است:"
+msgstr ":mod:`!dbm` یک رابط عام برای انواع پایگاه داده DBM است:"
 
 msgid ":mod:`dbm.sqlite3`"
 msgstr ":mod:`dbm.sqlite3`"

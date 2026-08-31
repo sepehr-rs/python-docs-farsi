@@ -2595,7 +2595,7 @@ msgid ""
 "Create and return a clone of the turtle with same position, heading and "
 "turtle properties."
 msgstr ""
-"یک همزاد (clone) از لاک‌پشت با همان موقعیت، جهت و ویژگی‌های لاک‌پشت ایجاد کرده "
+"یک رونوشت (clone) از لاک‌پشت با همان موقعیت، جهت و ویژگی‌های لاک‌پشت ایجاد کرده "
 "و بازمی‌گرداند."
 
 msgid ""

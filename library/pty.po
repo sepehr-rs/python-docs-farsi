@@ -80,7 +80,7 @@ msgid ""
 "``(master, slave)``, for the master and the slave end, respectively."
 msgstr ""
 "یک جفت پایانه کاذب (pseudo-terminal) جدید را، در صورت امکان با استفاده از "
-":func:`os.openpty` یا با کد شبیه‌سازی برای سیستم‌های یونیکسی عمومی، باز "
+":func:`os.openpty` یا با کد شبیه‌سازی برای سیستم‌های یونیکسی عام، باز "
 "می‌کند. یک جفت توصیف‌گر فایل ``(master, slave)`` را به‌ترتیب برای سمت master"
 " و slave برمی‌گرداند."
 

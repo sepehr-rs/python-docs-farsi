@@ -84,7 +84,7 @@ msgstr ""
 ":attr:`~socketserver.BaseRequestHandler.server` در هندلر (handler)."
 
 msgid "The HTTP server's fully qualified domain name."
-msgstr "نام دامنه‌ی کاملاً مشخص سرور HTTP."
+msgstr "نام دامنه‌ی کاملاً واجد شرایط سرور HTTP."
 
 msgid "The HTTP server's port number obtained from *server_address*."
 msgstr "شماره پورت سرور HTTP که از *server_address* به‌دست می‌آید."

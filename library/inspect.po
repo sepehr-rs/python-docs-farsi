@@ -111,7 +111,7 @@ msgstr "__type_params__"
 
 msgid ""
 "A tuple containing the :ref:`type parameters <type-params>` of a generic class"
-msgstr "یک تاپل حاوی :ref:`پارامتر‌های نوع <type-params>` یک کلاس عمومی"
+msgstr "یک تاپل حاوی :ref:`پارامتر‌های نوع <type-params>` یک کلاس عام"
 
 msgid "method"
 msgstr "متد"
@@ -183,7 +183,7 @@ msgstr ""
 msgid ""
 "A tuple containing the :ref:`type parameters <type-params>` of a generic "
 "function"
-msgstr "تاپلی شامل :ref:`پارامتر‌های نوع <type-params>` یک تابع عمومی"
+msgstr "تاپلی شامل :ref:`پارامتر‌های نوع <type-params>` یک تابع عام"
 
 msgid "name of module in which this function was defined"
 msgstr "نام ماژولی که این تابع در آن تعریف شده است"
@@ -348,7 +348,7 @@ msgid "co_freevars"
 msgstr "co_freevars"
 
 msgid "tuple of names of free variables (referenced via a function's closure)"
-msgstr "تاپلی از نام‌های متغیرهای آزاد (ارجاع‌شده از طریق بسته‌ی یک تابع (closure))"
+msgstr "تاپلی از نام‌های متغیرهای آزاد (ارجاع‌شده از طریق بستار یک تابع (closure))"
 
 msgid "co_posonlyargcount"
 msgstr "co_posonlyargcount"
