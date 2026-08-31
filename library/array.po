@@ -334,7 +334,7 @@ msgid ""
 "as an array of machine values (as if it had been read from a file using the "
 ":meth:`fromfile` method)."
 msgstr ""
-"آیتم‌ها را از :term:`شیء بایت‌مانند <bytes-like object>` می‌افزاید و محتوای "
+"آیتم‌ها را از :term:`شیء شبه‌بایت <bytes-like object>` می‌افزاید و محتوای "
 "آن را به‌عنوان آرایه‌ای از مقادیر ماشینی تفسیر می‌کند (انگار که با استفاده "
 "از متد :meth:`fromfile` از فایلی خوانده شده باشد)."
 

@@ -399,7 +399,7 @@ msgid ""
 "If a literal ellipsis ``...`` is given as the argument list, it indicates that a callable with any arbitrary "
 "parameter list would be acceptable:"
 msgstr ""
-"اگر یک بیضوی (ellipsis) به‌صورت ``...`` به‌عنوان فهرست آرگومان‌ها داده شود، نشان می‌دهد که یک فراخوانی‌پذیر با هر فهرست "
+"اگر یک سه‌نقطه (ellipsis) به‌صورت ``...`` به‌عنوان فهرست آرگومان‌ها داده شود، نشان می‌دهد که یک فراخوانی‌پذیر با هر فهرست "
 "پارامتر دلخواهی قابل‌قبول است:"
 
 msgid ""
@@ -5494,7 +5494,7 @@ msgstr ""
 "مستندات :meth:`annotationlib.ForwardRef.evaluate` را ببینید."
 
 msgid "A sentinel object used to indicate that a type parameter has no default value. For example:"
-msgstr "یک شیء نشانه (sentinel) که برای نشان دادن این به کار می‌رود که یک پارامتر نوع مقدار پیش‌فرض ندارد. برای مثال:"
+msgstr "یک شیء نشانگر (sentinel) که برای نشان دادن این به کار می‌رود که یک پارامتر نوع مقدار پیش‌فرض ندارد. برای مثال:"
 
 msgid ""
 ">>> T = TypeVar(\"T\")\n"

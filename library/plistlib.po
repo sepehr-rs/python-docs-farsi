@@ -67,7 +67,7 @@ msgid ""
 "dictionaries (but only with string keys), :class:`bytes`, :class:`bytearray`"
 " or :class:`datetime.datetime` objects."
 msgstr ""
-"مقادیر می‌توانند رشته‌ها، اعداد صحیح، اعداد شناور، بولی‌ها، تاپل‌ها، "
+"مقادیر می‌توانند رشته‌ها، اعداد صحیح، اعداد اعشاری، بولی‌ها، تاپل‌ها، "
 "فهرست‌ها، دیکشنری‌ها (اما فقط با کلیدهای رشته‌ای)، اشیای :class:`bytes`، "
 ":class:`bytearray` یا :class:`datetime.datetime` باشند."
 

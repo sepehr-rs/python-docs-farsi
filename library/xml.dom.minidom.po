@@ -330,7 +330,7 @@ msgid ""
 "indentation string and defaults to a tabulator; *newl* specifies the string "
 "emitted at the end of each line and defaults to ``\\n``."
 msgstr ""
-"یک نسخهٔ خوش‌چاپ از سند برمی‌گرداند. *indent* رشتهٔ تورفتگی را مشخص می‌کند و "
+"یک نسخهٔ زیبانویسی‌شده از سند برمی‌گرداند. *indent* رشتهٔ تورفتگی را مشخص می‌کند و "
 "پیش‌فرض آن یک نویسهٔ تب است؛ *newl* رشته‌ای را که در پایان هر خط درج می‌شود "
 "مشخص می‌کند و پیش‌فرض آن ``\\n`` است."
 

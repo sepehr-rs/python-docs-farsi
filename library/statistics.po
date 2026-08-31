@@ -407,7 +407,7 @@ msgid "Added support for *weights*."
 msgstr "پشتیبانی از *weights* افزوده شد."
 
 msgid "Convert *data* to floats and compute the geometric mean."
-msgstr "*data* را به اعداد شناور تبدیل کنید و میانگین هندسی را محاسبه کنید."
+msgstr "*data* را به اعداد اعشاری تبدیل کنید و میانگین هندسی را محاسبه کنید."
 
 msgid ""
 "The geometric mean indicates the central tendency or typical value of the "

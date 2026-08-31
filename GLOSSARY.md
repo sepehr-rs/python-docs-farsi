@@ -20,6 +20,7 @@
 | bootstrapping      | بوت‌استرپینگ             |
 | backend            | بک‌اند                   |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
+| bytes-like object  | شیء شبه‌بایت             |
 | backreference      | بازارجاع                |
 | bind               | مقید کردن               |
 | barrier            | سد                      |
@@ -46,6 +47,8 @@
 | decoding           | کدگشایی                 |
 | deserialization    | سریال‌زدایی              |
 | decorator          | دکوراتور، آراینده       |
+| decompressor       | واگشا                   |
+| disassemble        | واسازی کردن             |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
 | dump               | برون‌ریزی                |
@@ -55,12 +58,15 @@
 | dictionary         | دیکشنری                 |
 | directory          | پوشه                    |
 | DOM                | DOM                     |
+| double (double precision) | ممیز شناور با دقت مضاعف |
 | duck-typing        | نوع‌دهی اردکی            |
 | ecosystem          | اکوسیستم                |
 | element            | المان، عنصر             |
 | enum               | enum                    |
 | encoding           | کدگذاری                 |
 | endpoint           | پایانه                  |
+| ellipsis           | سه‌نقطه                  |
+| Ellipsis           | Ellipsis                |
 | executor           | اجرا‌کننده               |
 | escape             | خنثی کردن، گریز         |
 | event              | رویداد                  |
@@ -68,6 +74,11 @@
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
 | factory function   | تابع کارخانه‌ای          |
+| float (type)       | اعشاری                  |
+| float (value)      | عدد اعشاری              |
+| floating point (adj., representation) | ممیز شناور |
+| floating-point number | عدد ممیز شناور        |
+| floating-point arithmetic | محاسبات ممیز شناور   |
 | formatter          | قالب‌بند                 |
 | fork               | انشعاب، فورک            |
 | function           | تابع                    |
@@ -135,6 +146,7 @@
 | picklable          | پیکل‌پذیر                |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
+| precision          | دقت                     |
 | profiler           | پروفایل‌گیر              |
 | profiling          | پروفایل‌گیری             |
 | post-mortem debugging | اشکال‌زدایی پس از خاتمه |
@@ -144,17 +156,20 @@
 | predicate          | محمول                   |
 | parallelism        | موازی‌سازی               |
 | parser             | پارسر                   |
+| pretty-print       | زیبانویسی               |
+| pretty-printer     | زیبانویس                |
 | parameter          | پارامتر                 |
 | padding            | پُرکننده، پدینگ          |
 | positional         | جایگاهی                 |
 | placeholder        | جای‌نگهدار               |
 | pickle             | پیکل                    |
-| unpickle           | پیکل‌گشایی               |
+| pickler            | پیکل‌ساز                 |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
 | quantifier         | کمیت‌گذار                |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
+| REPL               | REPL، پوسته تعاملی پایتون|
 | reentrant          | بازورودپذیر             |
 | return             | بازگشت، برگرداندن       |
 | run time, run-time | زمان اجرا               |
@@ -163,6 +178,7 @@
 | shadowing          | پوشاندن                 |
 | spinbox            | اسپین‌باکس               |
 | shell              | پوسته                   |
+| single precision   | دقت منفرد               |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
 | stack traceback    | ردگیری پشته             |
@@ -171,9 +187,12 @@
 | scheme             | طرح‌واره، طرح            |
 | subscript          | زیرنویس                 |
 | subscription       | زیرنویسی                |
+| subnormal          | زیرنرمال                |
 | serialization      | سریال‌سازی               |
 | stub               | stub                    |
+| stipple            | نقطه‌نگاری               |
 | string             | رشته                    |
+| sentinel           | نشانگر                  |
 | syntactic sugar    | قند نحوی                |
 | syntax             | سینتکس، نحو             |
 | thread             | نخ                      |
@@ -181,12 +200,17 @@
 | task               | وظیفه                   |
 | timeout            | مهلت زمانی              |
 | type               | نوع، نوع داده، تایپ     |
+| typeahead          | پیش‌تایپ                 |
 | unit test          | یونیت تست               |
 | unpacking          | واگشایی                 |
 | unary              | یک‌عملوندی               |
+| unpickle           | پیکل‌گشایی               |
+| unhashable         | هش‌ناپذیر                |
 | value              | مقدار                   |
 | variable           | متغیر                   |
 | wrapper            | پوششی، دربرگیرنده       |
 | widget             | ابزارک                  |            
 | wildcard           | وایلدکارد               |
 | zero-width assertion | شرط با عرض صفر        |
+| zero-padding       | پدینگ صفر               |
+| zero-padded        | پرشده با صفر            |

@@ -2625,7 +2625,7 @@ msgstr ""
 "دسترسی پیدا شود. به همین منظور، مقدار پیش‌فرض در یک :ref:`محدوده حاشیه‌نویسی "
 "(annotation scope) <annotation-scopes>` جداگانه ارزیابی می‌شود. اگر مقدار "
 "پیش‌فرضی برای یک پارامتر نوع مشخص نشده باشد، ویژگی ``__default__`` به شیء "
-"نشانه (sentinel) ویژه‌ی :data:`typing.NoDefault` تنظیم می‌شود."
+"نشانگر (sentinel) ویژه‌ی :data:`typing.NoDefault` تنظیم می‌شود."
 
 msgid ""
 "The following example indicates the full set of allowed type parameter "

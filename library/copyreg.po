@@ -76,7 +76,7 @@ msgid ""
 " reduction functions."
 msgstr ""
 "توجه داشته باشید که می‌توان از ویژگی :attr:`~pickle.Pickler.dispatch_table` "
-"یک شیء پیکل‌کننده (pickler) یا زیر‌کلاسی از :class:`pickle.Pickler` نیز برای"
+"یک شیء پیکل‌ساز (pickler) یا زیر‌کلاسی از :class:`pickle.Pickler` نیز برای"
 " اعلام توابع کاهش (reduction) استفاده کرد."
 
 msgid "Example"

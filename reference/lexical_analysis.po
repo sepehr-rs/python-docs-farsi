@@ -2243,7 +2243,7 @@ msgid ""
 "In floats with only integer and exponent parts, the decimal point may be "
 "omitted::"
 msgstr ""
-"در اعداد شناوری که فقط بخش عدد صحیح و بخش توان دارند، می‌توان نقطه اعشار را "
+"در اعداد اعشاریی که فقط بخش عدد صحیح و بخش توان دارند، می‌توان نقطه اعشار را "
 "حذف کرد::"
 
 msgid ""

@@ -2948,7 +2948,7 @@ msgid ""
 " equal should either have the same hash value, or be marked as unhashable."
 msgstr ""
 "نتیجه‌ی :func:`hash` باید با برابری سازگار باشد. اشیایی که برابر هستند باید "
-"یا مقدار هش یکسانی داشته باشند، یا به‌عنوان غیرقابل هش (unhashable) "
+"یا مقدار هش یکسانی داشته باشند، یا به‌عنوان هش‌ناپذیر (unhashable) "
 "علامت‌گذاری شوند."
 
 msgid ""

@@ -57,7 +57,7 @@ msgid ""
 "The :func:`compress` and :func:`decompress` functions for one-shot "
 "(de)compression."
 msgstr ""
-"تابع‌های :func:`compress` و :func:`decompress` برای فشرده‌سازی/فشرده‌زدایی "
+"تابع‌های :func:`compress` و :func:`decompress` برای فشرده‌سازی/فشرده‌گشایی "
 "یک‌باره."
 
 msgid ""
@@ -434,7 +434,7 @@ msgid "One-shot (de)compression"
 msgstr "فشرده‌سازی/بازگشایی یک‌باره"
 
 msgid "Compress *data*, a :term:`bytes-like object <bytes-like object>`."
-msgstr "فشرده‌سازی *data*، یک :term:`شیء بایت‌مانند <bytes-like object>`."
+msgstr "فشرده‌سازی *data*، یک :term:`شیء شبه‌بایت <bytes-like object>`."
 
 msgid "For incremental compression, use a :class:`BZ2Compressor` instead."
 msgstr ""
@@ -442,7 +442,7 @@ msgstr ""
 
 msgid "Decompress *data*, a :term:`bytes-like object <bytes-like object>`."
 msgstr ""
-"فشرده‌گشایی *data*، یک :term:`شیء بایت‌مانند (bytes-like object) <bytes-like"
+"فشرده‌گشایی *data*، یک :term:`شیء شبه‌بایت (bytes-like object) <bytes-like"
 " object>`."
 
 msgid ""

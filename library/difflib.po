@@ -1082,7 +1082,7 @@ msgstr "در نهایت، این دو را با هم مقایسه می‌کنی�
 
 msgid "``result`` is a list of strings, so let's pretty-print it:"
 msgstr ""
-"``result`` یک فهرست از رشته‌ها است، بنابراین بیایید آن را به‌صورت خوانا چاپ "
+"``result`` یک فهرست از رشته‌ها است، بنابراین بیایید آن را زیبانویسی "
 "کنیم (pretty-print):"
 
 msgid "As a single multi-line string it looks like this:"

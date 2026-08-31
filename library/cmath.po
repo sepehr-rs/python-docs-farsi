@@ -558,13 +558,13 @@ msgid "Constants"
 msgstr "ثابت‌ها"
 
 msgid "The mathematical constant *π*, as a float."
-msgstr "ثابت ریاضی *π*، به‌عنوان یک عدد شناور (float)."
+msgstr "ثابت ریاضی *π*، به‌عنوان یک عدد اعشاری (float)."
 
 msgid "The mathematical constant *e*, as a float."
 msgstr "ثابت ریاضی *e*، به‌عنوان یک float."
 
 msgid "The mathematical constant *τ*, as a float."
-msgstr "ثابت ریاضی *τ*، به‌صورت یک عدد شناور."
+msgstr "ثابت ریاضی *τ*، به‌صورت یک عدد اعشاری."
 
 msgid "Floating-point positive infinity. Equivalent to ``float('inf')``."
 msgstr "بی‌نهایت مثبت از نوع ممیز شناور. معادل ``float('inf')``."

@@ -2145,7 +2145,7 @@ msgstr ""
 "به :ref:`multiprocessing-managers` مراجعه کنید."
 
 msgid "A barrier object: a clone of :class:`threading.Barrier`."
-msgstr "یک شیء مانع (barrier): نسخه‌ای از :class:`threading.Barrier`."
+msgstr "یک شیء سد (barrier): نسخه‌ای از :class:`threading.Barrier`."
 
 msgid "A bounded semaphore object: a close analog of :class:`threading.BoundedSemaphore`."
 msgstr "یک شیء سمافور محدود: معادلی نزدیک به :class:`threading.BoundedSemaphore`."

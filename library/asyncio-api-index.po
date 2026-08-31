@@ -326,7 +326,7 @@ msgid ":class:`Barrier`"
 msgstr ":class:`Barrier`"
 
 msgid "A barrier object."
-msgstr "یک شیء مانع."
+msgstr "یک شیء سد."
 
 msgid ":ref:`Using asyncio.Event <asyncio_example_sync_event>`."
 msgstr ":ref:`استفاده از asyncio.Event <asyncio_example_sync_event>`."
