@@ -401,7 +401,7 @@ msgstr ""
 "نمونه‌ای از یک ماژول با وضعیت به‌ازای هر ماژول، در حال حاضر به‌عنوان "
 "`xxlimited "
 "<https://github.com/python/cpython/blob/master/Modules/xxlimited.c>`__ در "
-"دسترس است؛ مقداردهی اولیه ماژول نمونه در انتهای فایل نشان داده شده است."
+"دسترس است؛ مقداردهی اولیه ماژول نمونه در پایان پرونده نشان داده شده است."
 
 msgid "Opt-Out: Limiting to One Module Object per Process"
 msgstr "انصراف: محدود کردن به یک شیء ماژول در هر فرایند"

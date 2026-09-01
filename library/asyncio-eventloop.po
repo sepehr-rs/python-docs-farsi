@@ -1202,7 +1202,7 @@ msgstr ""
 " است)."
 
 msgid "*flags* is a bitmask for :meth:`getaddrinfo`."
-msgstr "*flags* یک بیت‌ماسک (bitmask) برای :meth:`getaddrinfo` است."
+msgstr "*flags* یک نقاب بیتی (bitmask) برای :meth:`getaddrinfo` است."
 
 msgid ""
 "*sock* can optionally be specified in order to use a preexisting socket "

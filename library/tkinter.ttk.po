@@ -2788,7 +2788,7 @@ msgid ""
 "Destroy this widget and remove the trace callback registered on the associated "
 "variable."
 msgstr ""
-"این ابزارک را نابود می‌کند و کال‌بک ردیابی (trace callback) ثبت‌شده روی متغیر مرتبط را "
+"این ابزارک را نابود می‌کند و کال‌بک ردگیری (trace callback) ثبت‌شده روی متغیر مرتبط را "
 "حذف می‌کند."
 
 msgid ""

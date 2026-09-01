@@ -1253,7 +1253,7 @@ msgstr ""
 
 msgid "A bitmask or'ing together all the comparison flags above."
 msgstr ""
-"یک بیت‌ماسک (bitmask) حاصل از ترکیب همه‌ی پرچم‌های مقایسه‌ی بالا با عملگر "
+"یک نقاب بیتی (bitmask) حاصل از ترکیب همه‌ی پرچم‌های مقایسه‌ی بالا با عملگر "
 "OR."
 
 msgid "The second group of options controls how test failures are reported:"
@@ -1318,7 +1318,7 @@ msgstr ""
 
 msgid "A bitmask or'ing together all the reporting flags above."
 msgstr ""
-"بیت‌ماسکی (bitmask) که همهٔ پرچم‌های گزارش‌دهی بالا را با OR بیتی ترکیب "
+"نقاب بیتی (bitmask) که همهٔ پرچم‌های گزارش‌دهی بالا را با OR بیتی ترکیب "
 "می‌کند."
 
 msgid ""

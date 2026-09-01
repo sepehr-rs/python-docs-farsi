@@ -465,7 +465,7 @@ msgstr ""
 "یا :meth:`~object.__setattr__` ارزیابی می‌کند."
 
 msgid ":pep:`526` - Syntax for Variable Annotations"
-msgstr ":pep:`526` - نحو یادداشت‌گذاری متغیر‌ها"
+msgstr ":pep:`526` - نحو حاشیه‌نویسی متغیر‌ها"
 
 msgid ""
 "The proposal that added syntax for annotating the types of variables "
@@ -1684,7 +1684,7 @@ msgid "<<="
 msgstr "<<="
 
 msgid "annotated"
-msgstr "یادداشت‌گذاری‌شده"
+msgstr "حاشیه‌نویسی‌شده"
 
 msgid "assignment, annotated"
 msgstr "انتساب، حاشیه‌نویسی‌شده"

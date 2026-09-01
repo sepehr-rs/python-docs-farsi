@@ -320,7 +320,7 @@ msgid ""
 "selection and update the line and column status."
 msgstr ""
 "مکان‌نما را به ابتدای خط درخواست‌شده منتقل کنید و آن خط را قابل مشاهده کنید."
-" درخواستی که از انتهای فایل فراتر باشد، به انتها می‌رود. هرگونه انتخاب را "
+" درخواستی که از پایان پرونده فراتر باشد، به انتها می‌رود. هرگونه انتخاب را "
 "پاک کنید و وضعیت خط و ستون را به‌روزرسانی کنید."
 
 msgid "Show Completions"
@@ -861,7 +861,7 @@ msgid ":kbd:`Page Up` and :kbd:`Page Down` go up or down one screen."
 msgstr ":kbd:`Page Up` و :kbd:`Page Down` یک صفحه به بالا یا پایین می‌روند."
 
 msgid ":kbd:`C-Home` and :kbd:`C-End` go to beginning or end of the file."
-msgstr ":kbd:`C-Home` و :kbd:`C-End` به ابتدا یا انتهای فایل می‌روند."
+msgstr ":kbd:`C-Home` و :kbd:`C-End` به ابتدا یا پایان پرونده می‌روند."
 
 msgid ""
 ":kbd:`Backspace` and :kbd:`Del` (or :kbd:`C-d`) delete the previous or next "

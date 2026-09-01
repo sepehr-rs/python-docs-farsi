@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Enum HOWTO"
-msgstr "راهنمای چگونگی Enum"
+msgstr "راهنمای عملی Enum"
 
 msgid ""
 "An :class:`Enum` is a set of symbolic names bound to unique values.  They "

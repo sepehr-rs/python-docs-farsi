@@ -268,14 +268,14 @@ msgid "f_trace"
 msgstr "f_trace"
 
 msgid "tracing function for this frame, or ``None``"
-msgstr "تابع ردیابی برای این فریم، یا ``None``"
+msgstr "تابع ردگیری برای این فریم، یا ``None``"
 
 msgid "f_trace_lines"
 msgstr "f_trace_lines"
 
 msgid "indicate whether a tracing event is triggered for each source source line"
 msgstr ""
-"نشان می‌دهد که آیا یک رویداد ردیابی برای هر خط منبع راه‌اندازی می‌شود یا خیر"
+"نشان می‌دهد که آیا یک رویداد ردگیری برای هر خط منبع راه‌اندازی می‌شود یا خیر"
 
 msgid "f_trace_opcodes"
 msgstr "f_trace_opcodes"

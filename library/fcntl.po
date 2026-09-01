@@ -433,7 +433,7 @@ msgid ""
 msgstr "``1`` -- نسبت به موقعیت فعلی بافر (:const:`os.SEEK_CUR`)"
 
 msgid "``2`` -- relative to the end of the file (:const:`os.SEEK_END`)"
-msgstr "``2`` -- نسبت به انتهای فایل (:const:`os.SEEK_END`)"
+msgstr "``2`` -- نسبت به پایان پرونده (:const:`os.SEEK_END`)"
 
 msgid ""
 "The default for *start* is 0, which means to start at the beginning of the "
@@ -441,7 +441,7 @@ msgid ""
 "  The default for *whence* is also 0."
 msgstr ""
 "مقدار پیش‌فرض برای *start* برابر ۰ است، که به معنای آغاز از ابتدای فایل است."
-" مقدار پیش‌فرض برای *len* برابر ۰ است، که به معنای قفل کردن تا انتهای فایل "
+" مقدار پیش‌فرض برای *len* برابر ۰ است، که به معنای قفل کردن تا پایان پرونده "
 "است. مقدار پیش‌فرض برای *whence* نیز ۰ است."
 
 msgid ""

@@ -731,7 +731,7 @@ msgid ""
 "generate line tracing events."
 msgstr ""
 "کد بدون عمل. توسط بهینه‌ساز بایت‌کد به‌عنوان جای‌نگهدار و برای تولید رویدادهای "
-"ردیابی خط استفاده می‌شود."
+"ردگیری خط استفاده می‌شود."
 
 msgid ""
 "Do nothing code. Used by the interpreter to record :monitoring-"
@@ -2121,7 +2121,7 @@ msgstr ""
 
 msgid "A no-op. Performs internal tracing, debugging and optimization checks."
 msgstr ""
-"عملیات بی‌اثر (no-op). بررسی‌های ردیابی داخلی، اشکال‌زدایی و بهینه‌سازی را انجام "
+"عملیات بی‌اثر (no-op). بررسی‌های ردگیری داخلی، اشکال‌زدایی و بهینه‌سازی را انجام "
 "می‌دهد."
 
 msgid ""

@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!chunk` --- Read IFF chunked data"
-msgstr ":mod:`!chunk` --- خواندن داده‌های تکه‌بندی‌شده (chunked) IFF"
+msgstr ":mod:`!chunk` --- خواندن داده‌های بخش‌بندی‌شده (chunked) IFF"
 
 msgid ""
 "This module is no longer part of the Python standard library. It was "

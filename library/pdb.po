@@ -497,7 +497,7 @@ msgstr ""
 "را برجسته می‌کند."
 
 msgid "Example call to enable tracing with *skip*::"
-msgstr "نمونه فراخوانی برای فعال‌سازی ردیابی با *skip*::"
+msgstr "نمونه فراخوانی برای فعال‌سازی ردگیری با *skip*::"
 
 msgid "import pdb; pdb.Pdb(skip=['django.*']).set_trace()"
 msgstr "import pdb; pdb.Pdb(skip=['django.*']).set_trace()"
@@ -1280,7 +1280,7 @@ msgid ""
 msgstr ""
 "اگر اشکال‌زدا در حالت ``'inline'`` فراخوانی شود، یک اعلان تأیید نمایش داده "
 "خواهد شد. پس از تأیید، اشکال‌زدا بلافاصله :func:`sys.exit` را فراخوانی می‌کند، "
-"به‌جای اینکه :exc:`bdb.BdbQuit` را در رویداد ردیابی بعدی پرتاب کند."
+"به‌جای اینکه :exc:`bdb.BdbQuit` را در رویداد ردگیری بعدی پرتاب کند."
 
 msgid ""
 "Enter a recursive debugger that steps through *code* (which is an arbitrary "

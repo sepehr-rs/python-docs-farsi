@@ -342,7 +342,7 @@ msgid "The performance of calling ``NewType`` has been restored to its level in 
 msgstr "عملکرد فراخوانی ``NewType`` به سطح آن در Python 3.9 بازگردانده شده است."
 
 msgid "Annotating callable objects"
-msgstr "یادداشت‌گذاری اشیاء قابل فراخوانی"
+msgstr "حاشیه‌نویسی اشیاء قابل فراخوانی"
 
 msgid ""
 "Functions -- or other :term:`callable` objects -- can be annotated using :class:`collections.abc.Callable` or "
@@ -556,7 +556,7 @@ msgid "Syntactic support for generics is new in Python 3.12."
 msgstr "پشتیبانی سینتکسی از ژنریک‌ها (generics) در پایتون 3.12 جدید است."
 
 msgid "Annotating tuples"
-msgstr "یادداشت‌گذاری تاپل‌ها"
+msgstr "حاشیه‌نویسی تاپل‌ها"
 
 msgid ""
 "For most containers in Python, the typing system assumes that all elements in the container will be of the same type. "
@@ -1978,7 +1978,7 @@ msgstr ""
 "اکنون می‌توان Optional را به‌صورت ``X | None`` نوشت. به :ref:`عبارات نوع اتحادی (union) <types-union>` مراجعه کنید."
 
 msgid "Special form for annotating higher-order functions."
-msgstr "شکل ویژه برای یادداشت‌گذاری توابع مرتبه‌بالاتر."
+msgstr "شکل ویژه برای حاشیه‌نویسی توابع مرتبه‌بالاتر."
 
 msgid ""
 "``Concatenate`` can be used in conjunction with :ref:`Callable <annotating-callables>` and :class:`ParamSpec` to "
@@ -3497,9 +3497,9 @@ msgid ""
 msgstr ""
 "از آن‌جا که ``ParamSpec`` هم پارامترهای جایگاهی و هم پارامترهای کلیدواژه‌ای را در بر می‌گیرد، می‌توان از ``P.args`` و "
 "``P.kwargs`` برای تجزیه یک ``ParamSpec`` به کامپوننت‌های آن استفاده کرد. ``P.args`` نشان‌دهنده تاپل پارامترهای جایگاهی "
-"در یک فراخوانی مشخص است و باید فقط برای یادداشت‌گذاری ``*args`` به کار رود. ``P.kwargs`` نشان‌دهنده نگاشت پارامترهای "
-"کلیدواژه‌ای به مقادیرشان در یک فراخوانی مشخص است و باید فقط برای یادداشت‌گذاری ``**kwargs`` به کار رود. هر دو ویژگی "
-"مستلزم آن هستند که پارامتر یادداشت‌گذاری‌شده در محدوده باشد. در ران‌تایم، ``P.args`` و ``P.kwargs`` به‌ترتیب نمونه‌هایی "
+"در یک فراخوانی مشخص است و باید فقط برای حاشیه‌نویسی ``*args`` به کار رود. ``P.kwargs`` نشان‌دهنده نگاشت پارامترهای "
+"کلیدواژه‌ای به مقادیرشان در یک فراخوانی مشخص است و باید فقط برای حاشیه‌نویسی ``**kwargs`` به کار رود. هر دو ویژگی "
+"مستلزم آن هستند که پارامتر حاشیه‌نویسی‌شده در محدوده باشد. در ران‌تایم، ``P.args`` و ``P.kwargs`` به‌ترتیب نمونه‌هایی "
 "از :class:`ParamSpecArgs` و :class:`ParamSpecKwargs` هستند."
 
 msgid "The name of the parameter specification."

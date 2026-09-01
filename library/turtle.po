@@ -2848,7 +2848,7 @@ msgid ""
 msgstr ""
 "تمام ترسیم‌ها و تمام لاک‌پشت‌ها را از TurtleScreen حذف می‌کند. TurtleScreen که "
 "اکنون خالی است را به وضعیت اولیه‌اش بازنشانی می‌کند: پس‌زمینه سفید، بدون تصویر "
-"پس‌زمینه، بدون اتصال‌های رویداد و با ردیابی روشن."
+"پس‌زمینه، بدون اتصال‌های رویداد و با ردگیری روشن."
 
 msgid ""
 "This TurtleScreen method is available as a global function only under the "

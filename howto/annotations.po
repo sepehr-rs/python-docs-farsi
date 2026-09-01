@@ -26,7 +26,7 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid "Annotations Best Practices"
-msgstr "بهترین شیوه‌های یادداشت‌گذاری"
+msgstr "بهترین شیوه‌های حاشیه‌نویسی"
 
 msgid "author"
 msgstr "نویسنده"

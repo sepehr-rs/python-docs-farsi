@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "timer file descriptor HOWTO"
-msgstr "راهنمای چگونگی (HOWTO) توصیف‌گر فایل زمان‌سنج"
+msgstr "راهنمای عملی (HOWTO) توصیف‌گر فایل زمان‌سنج"
 
 msgid "Release"
 msgstr "انتشار"
@@ -35,7 +35,7 @@ msgstr "1.13"
 msgid ""
 "This HOWTO discusses Python's support for the linux timer file descriptor."
 msgstr ""
-"این HOWTO پشتیبانی پایتون از توصیف‌گر فایل تایمر در لینوکس را بررسی می‌کند."
+"این راهنمای عملی پشتیبانی پایتون از توصیف‌گر فایل تایمر در لینوکس را بررسی می‌کند."
 
 msgid "Examples"
 msgstr "مثال‌ها"

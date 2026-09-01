@@ -8,7 +8,9 @@
 | English            | فارسی                   |
 | ------------------ | ----------------------- |
 | accessibility      | دسترسی‌پذیری             |
+| annotate           | حاشیه‌نویسی کردن         |
 | ASCII              | اسکی                    |
+| ABC                | کلاس پایه انتزاعی        |
 | assertion          | ادعا، شرط               |
 | availability       | دسترس‌پذیری              |
 | API                | API                     |
@@ -17,9 +19,11 @@
 | attribute          | ویژگی، صفت، شاخصه       |
 | action             | اکشن، کنش               |
 | await              | await                   |
+| awaitable          | انتظارپذیر، awaitable   |
 | boolean            | بولی                    |
 | by-name            | نام‌محور                 |
 | bootstrapping      | بوت‌استرپینگ             |
+| buffer             | بافر                    |
 | backend            | بک‌اند                   |
 | bytecode           | بایت‌کد                  |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
@@ -29,6 +33,7 @@
 | bind               | مقید کردن               |
 | barrier            | سد                      |
 | built-in           | توکار، درونی، درون‌ساخته |
+| bitmask            | نقاب بیتی               |
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
@@ -38,6 +43,7 @@
 | cast               | تبدیل نوع، قالب‌ریزی     |
 | container          | ظرف                     |
 | contravariant      | پادوردا                 |
+| CPU-bound          | محدود به CPU            |
 | covariant          | هم‌وردا                  |
 | cipher             | رمز                     |
 | clone              | رونوشت                  |
@@ -46,7 +52,11 @@
 | command line       | خط فرمان                |
 | community          | کامیونیتی               |
 | component          | کامپوننت، جزء           |
+| converter          | مبدل                    |
+| converter function | تابع تبدیل‌کننده         |
 | combobox           | جعبه انتخاب             |
+| chunked            | بخش‌بندی‌شده              |
+| capture pattern    | الگوی ثبت‌کننده          |
 | context management | مدیریت زمینه            |
 | checksum           | جمع‌آزما                 |
 | canonical          | کانونیکال               |
@@ -86,9 +96,11 @@
 | endpoint           | پایانه                  |
 | ellipsis           | سه‌نقطه                  |
 | Ellipsis           | Ellipsis                |
+| EOF                | EOF، پایان پرونده       |
 | executor           | اجرا‌کننده               |
 | escape             | خنثی کردن، گریز         |
 | extention types    | نوع‌های توسعه‌ای          |
+| extended hex alphabet | الفبای مبنای شانزدهٔ توسعه‌یافته |
 | extension modules  | ماژول‌های توسعه‌ای        |
 | event              | رویداد                  |
 | exception          | استثنا                  |
@@ -118,8 +130,10 @@
 | symlink            | پیوند نمادین            |
 | global             | سراسری، عمومی           |
 | hexadecimal        | مبنای شانزده            |
+| hex                | مبنای شانزده            |
 | heap               | هیپ                     |
 | hadnshake          | دست‌دهی                  |
+| howto              | راهنمای عملی            |
 | handler            | هندلر                   |
 | hook               | قلاب                     |
 | handle             | دسته                    |
@@ -147,6 +161,8 @@
 | keybinding         | کلیدبندی                |
 | list               | فهرست                   |
 | literal            | لفظی                    |
+| lookahead assertion  | شرط پیش‌نگر            |
+| lookbehind assertion | شرط پس‌نگر             |
 | literals           | مقادیر لفظی             |
 | list comprehension | درک فهرستی              |
 | little-endian      | کوچک‌پایان               |
@@ -162,6 +178,7 @@
 | mock               | ماک                     |
 | monkey-patch       | مانکی‌پچ                 |
 | manager            | مدیر                    |
+| mask               | نقاب                    |
 | module             | ماژول                   |
 | mutex              | قفل متقابل              |
 | mix-in             | میکس‌این                 |
@@ -171,6 +188,7 @@
 | namespace          | فضای نام                |
 | notation           | نمادگذاری، نماد         |
 | no-op              | عملیات بی‌اثر            |
+| non-capturing group   | گروه غیرثبت‌کننده     |
 | object             | شیء                     |
 | opcode             | کدعمل                   |
 | offset             | آفست                    |
@@ -185,6 +203,7 @@
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | precision          | دقت                     |
+| process            | فرایند                  |
 | profiler           | پروفایل‌گیر              |
 | profiling          | پروفایل‌گیری             |
 | post-mortem debugging | اشکال‌زدایی پس از خاتمه |
@@ -215,6 +234,11 @@
 | reference          | ارجاع                   |
 | reference counting | شمارش ارجاع             |
 | refcount           | شمارش ارجاع             |
+| realm              | قلمرو                   |
+| resolve            | حل کردن                 |
+| resolution	     | حل، وضوح                |
+| name resolution	 | حل نام                  |
+| dependency resolution	 | حل وابستگی          |
 | regular expression/RE | عبارت باقاعده        |
 | return             | بازگشت، برگرداندن       |
 | run time, run-time | زمان اجرا               |
@@ -229,7 +253,9 @@
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
 | sleep              | توقف                    |
+| stringifier        | رشته‌ساز                 |
 | seed               | بذر                     |
+| set                | مجموعه                  |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
 | suite              | بدنه                    |
@@ -248,7 +274,9 @@
 | thread             | نخ                      |
 | tracking           | پیگیری                  |
 | task               | وظیفه                   |
+| transformer        | تبدیل کننده             |
 | timeout            | مهلت زمانی              |
+| trace              | ردگیری                  |
 | thread-safe        | نخ‌ایمن                  |
 | type               | نوع، نوع داده، تایپ     |
 | typeahead          | پیش‌تایپ                 |

@@ -1755,7 +1755,7 @@ msgstr ""
 msgid ""
 "If the type_ keyword is used with the default_ keyword, the type converter is only applied if the default is a string."
 msgstr ""
-"اگر از کلیدواژهٔ type_ همراه با کلیدواژهٔ default_ استفاده شود، تبدیل‌کنندهٔ نوع فقط زمانی اعمال می‌شود که مقدار پیش‌فرض یک "
+"اگر از کلیدواژهٔ type_ همراه با کلیدواژهٔ default_ استفاده شود، مبدل نوع فقط زمانی اعمال می‌شود که مقدار پیش‌فرض یک "
 "رشته باشد."
 
 msgid ""

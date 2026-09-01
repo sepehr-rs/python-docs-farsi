@@ -279,7 +279,7 @@ msgid ""
 "object. *events* is a bitmask of events ready on this file object."
 msgstr ""
 "*key* نمونه‌ی :class:`SelectorKey` متناظر با یک شیء فایل آماده است. *events*"
-" یک بیت‌ماسک (bitmask) از رویدادهای آماده برای این شیء فایل است."
+" یک نقاب بیتی (bitmask) از رویدادهای آماده برای این شیء فایل است."
 
 msgid ""
 "This method can return before any file object becomes ready or the timeout "

@@ -197,7 +197,7 @@ msgstr ""
 "True"
 
 msgid "The :meth:`float.hex` method expresses a float in hexadecimal (base 16), again giving the exact value stored by your computer:"
-msgstr "متد :meth:`float.hex` یک عدد ممیز شناور را به شکل هگزادسیمال (مبنای ۱۶) نمایش می‌دهد و دوباره مقدار دقیقی را که توسط کامپیوتر شما ذخیره شده است ارائه می‌کند:"
+msgstr "متد :meth:`float.hex` یک عدد ممیز شناور را به شکل مبنای شانزده نمایش می‌دهد و دوباره مقدار دقیقی را که توسط کامپیوتر شما ذخیره شده است ارائه می‌کند:"
 
 msgid ""
 ">>> x.hex()\n"
@@ -207,7 +207,7 @@ msgstr ""
 "'0x1.921f9f01b866ep+1'"
 
 msgid "This precise hexadecimal representation can be used to reconstruct the float value exactly:"
-msgstr "این نمایش دقیق هگزادسیمال می‌تواند برای بازسازی دقیق مقدار عدد ممیز شناور استفاده شود:"
+msgstr "این نمایش دقیق مبنای شانزده می‌تواند برای بازسازی دقیق مقدار عدد ممیز شناور استفاده شود:"
 
 msgid ""
 ">>> x == float.fromhex('0x1.921f9f01b866ep+1')\n"

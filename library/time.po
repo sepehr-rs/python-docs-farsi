@@ -633,7 +633,7 @@ msgid ""
 "if available. On Windows, a waitable timer is now used."
 msgstr ""
 "در یونیکس، اکنون در صورت در دسترس بودن، از تابع‌های ``clock_nanosleep()`` و "
-"``nanosleep()`` استفاده می‌شود. در ویندوز، اکنون از یک زمان‌سنج قابل انتظار "
+"``nanosleep()`` استفاده می‌شود. در ویندوز، اکنون از یک زمان‌سنج انتظارپذیر "
 "(waitable timer) استفاده می‌شود."
 
 msgid "Raises an auditing event."

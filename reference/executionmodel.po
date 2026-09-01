@@ -107,7 +107,7 @@ msgstr ""
 " :keyword:`except* <except_star>`، یا در الگوی as در تطبیق الگوی ساختاری،"
 
 msgid "in a capture pattern in structural pattern matching"
-msgstr "در یک الگوی گیراندازی (capture pattern) در تطبیق الگوی ساختاری"
+msgstr "در یک الگوی ثبت‌کننده (capture pattern) در تطبیق الگوی ساختاری"
 
 msgid ":keyword:`import` statements."
 msgstr "دستورهای :keyword:`import`."

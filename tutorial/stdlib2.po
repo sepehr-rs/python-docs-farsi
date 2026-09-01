@@ -512,7 +512,7 @@ msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr "کنترل نحوهٔ گرد کردن اعداد برای انطباق با الزامات یا مقررات،"
 
 msgid "tracking of significant decimal places, or"
-msgstr "حفظ و ردیابی تعداد ارقام معنادار اعشاری، یا"
+msgstr "حفظ و ردگیری تعداد ارقام معنادار اعشاری، یا"
 
 msgid "applications where the user expects the results to match calculations done by hand."
 msgstr "برنامه‌هایی که کاربر انتظار دارد نتایج آن‌ها با محاسبات دستی مطابقت داشته باشد."
