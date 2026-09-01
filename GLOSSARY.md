@@ -200,6 +200,7 @@
 | package            | بسته                    |
 | picklable          | پیکل‌پذیر                |
 | protocol           | پروتکل                  |
+| proleptic Gregorian  | گاه‌شماری میلادی تعمیم‌یافته  |
 | probe              | پروب                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
@@ -259,6 +260,8 @@
 | set                | مجموعه                  |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
+| seek               | مکان‌یابی کردن           |
+| seeking            | مکان‌یابی                |
 | suite              | بدنه                    |
 | scheme             | طرح‌واره، طرح            |
 | subscript          | زیرنویس                 |

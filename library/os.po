@@ -1536,7 +1536,7 @@ msgid ""
 "sparsely allocated files."
 msgstr ""
 "پارامترهایی برای تابع :func:`lseek` و متد :meth:`~io.IOBase.seek` "
-"در :term:`اشیاء شبه‌فایل <file object>`، برای جست‌وجوی داده‌ها و حفره‌های فایل در "
+"در :term:`اشیاء شبه‌فایل <file object>`، برای مکان‌یابی داده‌ها و حفره‌های فایل در "
 "فایل‌هایی با تخصیص پراکنده."
 
 msgid ":data:`!SEEK_DATA`"

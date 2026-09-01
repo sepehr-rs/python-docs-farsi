@@ -543,7 +543,7 @@ msgid ""
 "Return whether the file supports seeking, and the return value is always "
 "``True``."
 msgstr ""
-"برمی‌گرداند که آیا فایل از پیمایش (seeking) پشتیبانی می‌کند، و مقدار بازگشتی "
+"برمی‌گرداند که آیا فایل از مکان‌یابی (seeking) پشتیبانی می‌کند، و مقدار بازگشتی "
 "همیشه ``True`` است."
 
 msgid ""

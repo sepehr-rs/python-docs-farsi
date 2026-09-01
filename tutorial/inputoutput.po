@@ -569,7 +569,7 @@ msgstr ""
 "b'd'"
 
 msgid "In text files (those opened without a ``b`` in the mode string), only seeks relative to the beginning of the file are allowed (the exception being seeking to the very file end with ``seek(0, 2)``) and the only valid *offset* values are those returned from the ``f.tell()``, or zero. Any other *offset* value produces undefined behaviour."
-msgstr "در فایل‌های متنی (آنهایی که بدون ``b`` در رشته‌ی حالت باز شده‌اند)، فقط جست‌وجوهای نسبت به ابتدای فایل مجاز هستند (به جز جست‌وجو به پایان پرونده با ``seek(0, 2)``) و تنها مقادیر معتبر *offset* مقادیری هستند که از ``f.tell()`` بازگردانده می‌شوند، یا صفر. هر مقدار *offset* دیگر رفتار تعریف‌نشده‌ای ایجاد می‌کند."
+msgstr "در فایل‌های متنی (آنهایی که بدون ``b`` در رشته‌ی حالت باز شده‌اند)، فقط مکان‌یابی‌های نسبت به ابتدای فایل مجاز هستند (به جز مکان‌یابی به پایان پرونده با ``seek(0, 2)``) و تنها مقادیر معتبر *offset* مقادیری هستند که از ``f.tell()`` بازگردانده می‌شوند، یا صفر. هر مقدار *offset* دیگر رفتار تعریف‌نشده‌ای ایجاد می‌کند."
 
 msgid "File objects have some additional methods, such as :meth:`~io.IOBase.isatty` and :meth:`~io.IOBase.truncate` which are less frequently used; consult the Library Reference for a complete guide to file objects."
 msgstr "اشیاء فایل دارای متدهای اضافی دیگری نیز هستند، مانند :meth:`~io.IOBase.isatty` و :meth:`~io.IOBase.truncate` که کمتر استفاده می‌شوند؛ برای راهنمای کامل اشیاء فایل به مرجع کتابخانه مراجعه کنید."

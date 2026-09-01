@@ -220,7 +220,7 @@ msgid "Return whether the file was opened for reading."
 msgstr "برمی‌گرداند که آیا فایل برای خواندن باز شده است."
 
 msgid "Return whether the file supports seeking."
-msgstr "برمی‌گرداند که آیا فایل از جابه‌جایی (seeking) پشتیبانی می‌کند."
+msgstr "برمی‌گرداند که آیا فایل از مکان‌یابی (seeking) پشتیبانی می‌کند."
 
 msgid "Return whether the file was opened for writing."
 msgstr "برمی‌گرداند که آیا فایل برای نوشتن باز شده است یا خیر."
