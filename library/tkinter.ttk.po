@@ -1322,7 +1322,7 @@ msgid "tree: display tree labels in column #0."
 msgstr "tree: نمایش برچسب‌های درخت در ستون #0."
 
 msgid "headings: display the heading row."
-msgstr "headings: نمایش ردیف سربرگ."
+msgstr "headings: نمایش ردیف سرآیند."
 
 msgid "The default is \"tree headings\", that is, show all elements."
 msgstr "پیش‌فرض \"tree headings\" است، یعنی تمام المان‌ها نمایش داده می‌شوند."
@@ -1708,7 +1708,7 @@ msgid "heading"
 msgstr "عنوان"
 
 msgid "Tree heading area."
-msgstr "ناحیه سربرگ درخت."
+msgstr "ناحیه سرآیند درخت."
 
 msgid "separator"
 msgstr "جداکننده"

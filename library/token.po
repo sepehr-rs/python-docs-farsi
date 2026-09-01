@@ -47,7 +47,7 @@ msgid ""
 "functions.  The functions mirror definitions in the Python C header files."
 msgstr ""
 "این ماژول همچنین نگاشتی از کدهای عددی به نام‌ها و چند تابع فراهم می‌کند. این"
-" توابع، تعاریف موجود در فایل‌های هدر C پایتون را منعکس می‌کنند."
+" توابع، تعاریف موجود در فایل‌های سرآیند C پایتون را منعکس می‌کنند."
 
 msgid ""
 "Note that a token's value may depend on tokenizer options. For example, a "

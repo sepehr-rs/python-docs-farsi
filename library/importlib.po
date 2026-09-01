@@ -1802,7 +1802,7 @@ msgid ""
 "in its header."
 msgstr ""
 "هش *source_bytes* را به‌صورت بایت برمی‌گرداند. یک فایل ``.pyc`` مبتنی بر هش،"
-" :func:`source_hash` محتوای فایل منبع مربوطه را در سربرگ خود جاسازی می‌کند."
+" :func:`source_hash` محتوای فایل منبع مربوطه را در سرآیند خود جاسازی می‌کند."
 
 msgid ""
 "A context manager that can temporarily skip the compatibility check for "

@@ -336,14 +336,14 @@ msgid "Returns current *mode* for the specified *type*."
 msgstr "*حالت* جاری برای *نوع* مشخص‌شده را بازمی‌گرداند."
 
 msgid "The CRT Assembly version, from the :file:`crtassem.h` header file."
-msgstr "نسخه‌ی CRT Assembly، از فایل سربرگ :file:`crtassem.h`."
+msgstr "نسخه‌ی CRT Assembly، از فایل سرآیند :file:`crtassem.h`."
 
 msgid ""
 "The VC Assembly public key token, from the :file:`crtassem.h` header file."
-msgstr "توکن کلید عمومی VC Assembly، از فایل سربرگ :file:`crtassem.h`."
+msgstr "توکن کلید عمومی VC Assembly، از فایل سرآیند :file:`crtassem.h`."
 
 msgid ""
 "The Libraries Assembly name prefix, from the :file:`crtassem.h` header file."
 msgstr ""
-"پیشوند نام اسمبلی کتابخانه‌ها (Libraries Assembly)، از فایل هدر "
+"پیشوند نام اسمبلی کتابخانه‌ها (Libraries Assembly)، از فایل سرآیند "
 ":file:`crtassem.h`."

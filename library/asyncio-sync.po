@@ -177,7 +177,7 @@ msgid ""
 "An asyncio event can be used to notify multiple asyncio tasks that some "
 "event has happened."
 msgstr ""
-"می‌توان از یک رویداد asyncio برای آگاه‌سازی چندین وظیفهدر asyncio از"
+"می‌توان از یک رویداد asyncio برای آگاه‌سازی چندین وظیفه در asyncio از"
 " وقوع رویدادی استفاده کرد."
 
 msgid ""

@@ -93,7 +93,7 @@ msgid ""
 "Parsing :rfc:`822` headers can easily be done by the using the classes from "
 "the :mod:`~email.parser` module:"
 msgstr ""
-"تجزیه سربرگ‌های :rfc:`822` را می‌توان به‌راحتی با استفاده از کلاس‌های "
+"تجزیه سرآیندهای :rfc:`822` را می‌توان به‌راحتی با استفاده از کلاس‌های "
 "ماژول :mod:`~email.parser` انجام داد:"
 
 msgid ""

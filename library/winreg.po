@@ -911,7 +911,7 @@ msgstr "یک عدد ۶۴ بیتی."
 msgid ""
 "A 64-bit number in little-endian format. Equivalent to :const:`REG_QWORD`."
 msgstr ""
-"یک عدد ۶۴ بیتی در قالب کوچک‌پایان (little-endian). معادل :const:`REG_QWORD`."
+"یک عدد ۶۴ بیتی در قالب کوچک‌اندیان (little-endian). معادل :const:`REG_QWORD`."
 
 msgid "A device-driver resource list."
 msgstr "فهرست منابع یک راه‌انداز دستگاه."

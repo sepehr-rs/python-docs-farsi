@@ -1123,7 +1123,7 @@ msgid ""
 "mirror the values defined in the ``sys/syslog.h`` header file."
 msgstr ""
 "مقادیر نمادین ``LOG_`` در :class:`SysLogHandler` تعریف شده‌اند و با مقادیر "
-"تعریف‌شده در فایل سربرگ ``sys/syslog.h`` مطابقت دارند."
+"تعریف‌شده در فایل سرآیند ``sys/syslog.h`` مطابقت دارند."
 
 msgid "**Priorities**"
 msgstr "اولویت‌ها"

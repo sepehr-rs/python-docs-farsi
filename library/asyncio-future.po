@@ -90,7 +90,7 @@ msgid ""
 "Save a reference to the result of this function, to avoid a task "
 "disappearing mid-execution."
 msgstr ""
-"برای جلوگیری از ناپدید شدن یک وظیفهدر میانه‌ی اجرا، ارجاعی به "
+"برای جلوگیری از ناپدید شدن یک وظیفه در میانه‌ی اجرا، ارجاعی به "
 "نتیجه‌ی این تابع ذخیره کنید."
 
 msgid ""

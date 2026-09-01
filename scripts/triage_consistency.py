@@ -12,7 +12,7 @@ buckets every finding by the *decision* it needs:
 
   1. quick wins (mechanical fixes, no judgment)
        zwnj-spelling  -- same msgid, translations differ only by ZWNJ /
-                        spacing / punctuation (پارامترها vs پارامتر‌ها).
+                        spacing / punctuation (پارامترها vs پارامترها).
                         The majority spelling is suggested as canonical.
        align-minority -- one translation dominates (default >= 60%);
                         minority locations are listed for alignment.
@@ -150,7 +150,7 @@ def canon_msgstr(s: str) -> str:
 def viz(s: str) -> str:
     """Make invisible differences visible.
 
-    ZWNJ and other zero-width chars are the usual culprit: استثنا‌ها and
+    ZWNJ and other zero-width chars are the usual culprit: استثناها and
     استثناها render identically but differ by U+200C. Show it as <ZWNJ>
     (or its codepoint) so the fix needed is obvious. Also show the raw
     hex form of the two words side by side when debugging.

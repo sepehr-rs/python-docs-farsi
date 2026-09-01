@@ -998,7 +998,7 @@ msgid ""
 " interpretation is similar to an integer *address*."
 msgstr ""
 "یک عدد صحیح بسته‌بندی‌شده در یک شیء :class:`bytes` به طول ۱۶، با ترتیب "
-"بزرگ‌پایان (big-endian). تفسیر آن مشابه یک *نشانی* عدد صحیحی است."
+"بزرگ‌اندیان (big-endian). تفسیر آن مشابه یک *نشانی* عدد صحیحی است."
 
 msgid ""
 "A two-tuple of an address description and a netmask, where the address "

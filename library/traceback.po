@@ -151,7 +151,7 @@ msgid ""
 "if *tb* is not ``None``, it prints a header ``Traceback (most recent call "
 "last):``"
 msgstr ""
-"اگر *tb* ``None`` نباشد، سربرگ ``Traceback (most recent call last):`` را چاپ"
+"اگر *tb* ``None`` نباشد، سرآیند ``Traceback (most recent call last):`` را چاپ"
 " می‌کند"
 
 msgid "it prints the exception type and *value* after the stack trace"

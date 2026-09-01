@@ -24,6 +24,7 @@
 | by-name            | نام‌محور                 |
 | bootstrapping      | بوت‌استرپینگ             |
 | buffer             | بافر                    |
+| big-endian         | بزرگ‌اندیان              |
 | backend            | بک‌اند                   |
 | bytecode           | بایت‌کد                  |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
@@ -101,6 +102,8 @@
 | EOF                | EOF، پایان پرونده       |
 | executor           | اجراکننده               |
 | escape             | خنثی کردن، گریز         |
+| endian             | اندیان                  |
+| endianness         | ترتیب بایت              |
 | extention types    | نوع‌های توسعه‌ای          |
 | extended hex alphabet | الفبای مبنای شانزده‌ی توسعه‌یافته |
 | extension modules  | ماژول‌های توسعه‌ای        |
@@ -112,6 +115,7 @@
 | free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
 | frozen             | فریزشده                 |
+| fallback           | جایگزین پشتیبان         |
 | facility           | امکان، دسته گزارش       |
 | flattening         | تخت‌سازی                 |
 | float (type)       | اعشاری                  |
@@ -138,6 +142,7 @@
 | howto              | راهنمای عملی            |
 | handler            | هندلر                   |
 | hook               | قلاب                     |
+| header             | سرآیند                  |
 | handle             | دسته                    |
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
@@ -151,6 +156,7 @@
 | interpreter        | مفسر                    |
 | item               | آیتم                    |
 | idempotent         | هم‌توان                  |
+| IDN                | IDN، دامنه اینترنتی بین‌المللی |
 | iterable           | پیمایش‌پذیر              |
 | iterator           | پیمایش‌گر                |
 | IDE                | IDE, محیط توسعه یکپارچه |
@@ -167,13 +173,14 @@
 | lookbehind assertion | شرط پس‌نگر             |
 | literals           | مقادیر لفظی             |
 | list comprehension | درک فهرستی              |
-| little-endian      | کوچک‌پایان               |
+| little-endian      | کوچک‌اندیان               |
 | locale             | locale                  |
 | load               | بارگذاری                |
 | loader             | بارگذار                 |
 | local              | محلی                    |
 | loop               | حلقه                    |
 | logging            | گزارش‌گیری               |
+| long distance matcher | تطبیق‌گر فاصله بلند   |
 | logger             | گزارش‌گیر                |
 | metaclass          | فراکلاس                  |
 | method             | متد، روش                |
@@ -280,6 +287,8 @@
 | tracking           | پیگیری                  |
 | task               | وظیفه                   |
 | transformer        | تبدیل کننده             |
+| transcode          | بازکدگذاری کردن         |
+| transcoding        | بازکدگذاری              |
 | timeout            | مهلت زمانی              |
 | trace              | ردگیری                  |
 | thread-safe        | نخ‌ایمن                  |

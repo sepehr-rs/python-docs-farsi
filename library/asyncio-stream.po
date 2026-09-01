@@ -627,12 +627,12 @@ msgstr ""
 "متد :meth:`loop.create_server` استفاده می‌کند."
 
 msgid "Get HTTP headers"
-msgstr "دریافت هدرهای HTTP"
+msgstr "دریافت سرآیندهای HTTP"
 
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr ""
-"مثال ساده‌ای برای پرس‌وجوی سربرگ‌های HTTP مربوط به URL داده‌شده در خط فرمان::"
+"مثال ساده‌ای برای پرس‌وجوی سرآیندهای HTTP مربوط به URL داده‌شده در خط فرمان::"
 
 msgid ""
 "import asyncio\n"

@@ -277,7 +277,7 @@ ARABIC_PLURALS = {
     "رابط": ("روابط",),
 }
 
-# Separable Persian preverbs: می‌/نمی‌/ن is inserted AFTER the preverb
+# Separable Persian preverbs: می/نمی/ن is inserted AFTER the preverb
 # (برگرداندن -> برمی‌گرداند، برنمی‌گرداند). بر and باز are largely
 # interchangeable in these compound verbs (برگرداندن ~ بازگرداندن).
 PREVERB_ALTS = {
@@ -354,7 +354,7 @@ def variant_to_regex(variant: str) -> str:
 
     Handles: ZWNJ-attached suffixes, known Arabic broken plurals,
     hamza/yeh spelling variants, verb variants in کردن/شدن infinitive
-    form (conjugated stems still count, including می‌-insertion after
+    form (conjugated stems still count, including می-insertion after
     separable preverbs), and multi-word variants with up to one filler
     word or a ZWNJ-plural in between
     (آرگومان کلیدواژه‌ای -> آرگومان‌های کلیدواژه‌ای).
