@@ -69,7 +69,7 @@ msgstr ""
 "<multiprocessing-recv-pickle-security>`"
 
 msgid ":mod:`pickle`: :ref:`Restricting globals in pickle <pickle-restrict>`"
-msgstr ":mod:`pickle`: :ref:`محدود‌سازی سراسری‌ها در pickle <pickle-restrict>`"
+msgstr ":mod:`pickle`: :ref:`محدودسازی سراسری‌ها در pickle <pickle-restrict>`"
 
 msgid ""
 ":mod:`random` shouldn't be used for security purposes, use :mod:`secrets` "
@@ -121,7 +121,7 @@ msgstr ""
 "از گزینه خط فرمان :option:`-I` می‌توان برای اجرای پایتون در حالت ایزوله "
 "(isolated mode) استفاده کرد. هنگامی که نمی‌توان از آن استفاده کرد، می‌توان از "
 "گزینه :option:`-P` یا متغیر محیطی :envvar:`PYTHONSAFEPATH` استفاده کرد تا "
-"مسیر بالقوه نا‌امنی مانند پوشه جاری، پوشه اسکریپت یا یک رشته خالی "
+"مسیر بالقوه ناامنی مانند پوشه جاری، پوشه اسکریپت یا یک رشته خالی "
 "به :data:`sys.path` پیش‌افزوده نشود."
 
 msgid "security considerations"

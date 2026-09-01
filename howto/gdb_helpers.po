@@ -471,7 +471,7 @@ msgid ""
 " and ``down`` commands, but try to move at the level of CPython frames, "
 "rather than C frames."
 msgstr ""
-"دستور‌های ``py-up`` و ``py-down`` مشابه دستور‌های معمولی ``up`` و ``down`` "
+"دستورهای ``py-up`` و ``py-down`` مشابه دستورهای معمولی ``up`` و ``down`` "
 "در GDB هستند، اما تلاش می‌کنند در سطح فریم‌های CPython حرکت کنند، نه "
 "فریم‌های C."
 

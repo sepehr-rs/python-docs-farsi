@@ -153,7 +153,7 @@ msgstr ""
 "4"
 
 msgid "The given end point is never part of the generated sequence; ``range(10)`` generates 10 values, the legal indices for items of a sequence of length 10.  It is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the 'step')::"
-msgstr "نقطه‌ی پایانی داده‌شده هرگز بخشی از دنباله‌ی تولیدشده نیست؛ ``range(10)`` مقدار تولید می‌کند که همان اندیس‌‌های مجاز برای آیتم‌های یک دنباله با طول ۱۰ هستند. امکان این وجود دارد که شروع بازه را از عدد دیگری تعیین کنید، یا افزایشی متفاوت (حتی منفی؛ که گاهی «گام» نامیده می‌شود) مشخص کنید::"
+msgstr "نقطه‌ی پایانی داده‌شده هرگز بخشی از دنباله‌ی تولیدشده نیست؛ ``range(10)`` مقدار تولید می‌کند که همان اندیس‌های مجاز برای آیتم‌های یک دنباله با طول ۱۰ هستند. امکان این وجود دارد که شروع بازه را از عدد دیگری تعیین کنید، یا افزایشی متفاوت (حتی منفی؛ که گاهی «گام» نامیده می‌شود) مشخص کنید::"
 
 msgid ""
 ">>> list(range(5, 10))\n"
@@ -175,7 +175,7 @@ msgstr ""
 "[-10, -40, -70]"
 
 msgid "To iterate over the indices of a sequence, you can combine :func:`range` and :func:`len` as follows::"
-msgstr "برای پیمایش روی اندیس‌‌های یک دنباله، می‌توانید :func:`range` و :func:`len` را به شکل زیر ترکیب کنید::"
+msgstr "برای پیمایش روی اندیس‌های یک دنباله، می‌توانید :func:`range` و :func:`len` را به شکل زیر ترکیب کنید::"
 
 msgid ""
 ">>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n"
@@ -231,7 +231,7 @@ msgid ":keyword:`!break` and :keyword:`!continue` Statements"
 msgstr "دستورهای :keyword:`!break` و :keyword:`!continue`"
 
 msgid "The :keyword:`break` statement breaks out of the innermost enclosing :keyword:`for` or :keyword:`while` loop::"
-msgstr "دستور :keyword:`break` از توکار‌ترین حلقه‌ی محصورکننده‌ی :keyword:`for` یا :keyword:`while` خارج می‌شود::"
+msgstr "دستور :keyword:`break` از توکارترین حلقه‌ی محصورکننده‌ی :keyword:`for` یا :keyword:`while` خارج می‌شود::"
 
 msgid ""
 ">>> for n in range(2, 10):\n"
@@ -532,7 +532,7 @@ msgid "A recommended way to read patterns is to look at them as an extended form
 msgstr "روش پیشنهادی برای خواندن الگوها این است که آن‌ها را شکل گسترش‌یافته‌ای از چیزی در نظر بگیرید که در سمت چپ یک انتساب قرار می‌دهید، تا متوجه شوید چه متغیرهایی با چه مقادیری تنظیم خواهند شد. تنها نام‌های مستقل (مانند ``var`` در بالا) توسط دستور match مقداردهی می‌شوند. نام‌های نقطه‌ای (مانند ``foo.bar``)، نام ویژگی‌ها (مانند ``x=`` و ``y=`` در بالا) یا نام کلاس‌ها (که با (...) کنار آن‌ها، مانند ``Point`` در بالا، شناخته می‌شوند) هرگز مقداردهی نمی‌شوند."
 
 msgid "Patterns can be arbitrarily nested.  For example, if we have a short list of Points, with ``__match_args__`` added, we could match it like this::"
-msgstr "الگوها می‌توانند به‌صورت دلخواه تو‌در‌تو باشند. برای مثال، اگر یک فهرست کوتاه از Pointها داشته باشیم و ``__match_args__`` را به آن‌ها اضافه کرده باشیم، می‌توانیم آن را به این شکل تطبیق دهیم::"
+msgstr "الگوها می‌توانند به‌صورت دلخواه تودرتو باشند. برای مثال، اگر یک فهرست کوتاه از Pointها داشته باشیم و ``__match_args__`` را به آن‌ها اضافه کرده باشیم، می‌توانیم آن را به این شکل تطبیق دهیم::"
 
 msgid ""
 "class Point:\n"
@@ -935,7 +935,7 @@ msgstr ""
 "parrot(actor='John Cleese')  # آرگومان کلیدواژه‌ای ناشناخته"
 
 msgid "In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must match one of the arguments accepted by the function (e.g. ``actor`` is not a valid argument for the ``parrot`` function), and their order is not important.  This also includes non-optional arguments (e.g. ``parrot(voltage=1000)`` is valid too). No argument may receive a value more than once. Here's an example that fails due to this restriction::"
-msgstr "در یک فراخوانی تابع، آرگومان‌های کلیدواژه‌ای باید پس از آرگومان‌های جایگاهی بیایند. تمام آرگومان‌های کلیدواژه‌ای ارسال‌شده باید با یکی از آرگومان‌های پذیرفته‌شده توسط تابع مطابقت داشته باشند (برای مثال، ``actor`` یک آرگومان معتبر برای تابع ``parrot`` نیست)، و ترتیب آن‌ها اهمیتی ندارد. این موضوع شامل آرگومان‌های غیر‌اختیاری نیز می‌شود (برای مثال، ``parrot(voltage=1000)`` نیز معتبر است). هیچ آرگومانی نمی‌تواند بیش از یک‌بار مقدار دریافت کند. در اینجا مثالی وجود دارد که به دلیل این محدودیت شکست می‌خورد::"
+msgstr "در یک فراخوانی تابع، آرگومان‌های کلیدواژه‌ای باید پس از آرگومان‌های جایگاهی بیایند. تمام آرگومان‌های کلیدواژه‌ای ارسال‌شده باید با یکی از آرگومان‌های پذیرفته‌شده توسط تابع مطابقت داشته باشند (برای مثال، ``actor`` یک آرگومان معتبر برای تابع ``parrot`` نیست)، و ترتیب آن‌ها اهمیتی ندارد. این موضوع شامل آرگومان‌های غیراختیاری نیز می‌شود (برای مثال، ``parrot(voltage=1000)`` نیز معتبر است). هیچ آرگومانی نمی‌تواند بیش از یک‌بار مقدار دریافت کند. در اینجا مثالی وجود دارد که به دلیل این محدودیت شکست می‌خورد::"
 
 msgid ""
 ">>> def function(a):\n"
@@ -1332,7 +1332,7 @@ msgid "Lambda Expressions"
 msgstr "عبارت‌های لامبدا"
 
 msgid "Small anonymous functions can be created with the :keyword:`lambda` keyword. This function returns the sum of its two arguments: ``lambda a, b: a+b``. Lambda functions can be used wherever function objects are required.  They are syntactically restricted to a single expression.  Semantically, they are just syntactic sugar for a normal function definition.  Like nested function definitions, lambda functions can reference variables from the containing scope::"
-msgstr "توابع کوچک بی‌نام را می‌توان با کلیدواژه :keyword:`lambda` ایجاد کرد. این تابع مجموع دو آرگومان خود را برمی‌گرداند: ``lambda a, b: a+b``. توابع لامبدا را می‌توان هر جا که به اشیای تابع نیاز باشد استفاده کرد. آن‌ها از نظر نحوی به یک عبارت منفرد محدود هستند. از نظر معنایی، آن‌ها تنها شکری نحوی برای یک تعریف معمولی تابع هستند. مانند تعریف‌های توابع تو‌در‌تو، توابع لامبدا می‌توانند به متغیرهای محدوده‌ی دربرگیرنده دسترسی داشته باشند::"
+msgstr "توابع کوچک بی‌نام را می‌توان با کلیدواژه :keyword:`lambda` ایجاد کرد. این تابع مجموع دو آرگومان خود را برمی‌گرداند: ``lambda a, b: a+b``. توابع لامبدا را می‌توان هر جا که به اشیای تابع نیاز باشد استفاده کرد. آن‌ها از نظر نحوی به یک عبارت منفرد محدود هستند. از نظر معنایی، آن‌ها تنها شکری نحوی برای یک تعریف معمولی تابع هستند. مانند تعریف‌های توابع تودرتو، توابع لامبدا می‌توانند به متغیرهای محدوده‌ی دربرگیرنده دسترسی داشته باشند::"
 
 msgid ""
 ">>> def make_incrementor(n):\n"
@@ -1465,7 +1465,7 @@ msgid "Use 4-space indentation, and no tabs."
 msgstr "از تورفتگی ۴ فاصله‌ای استفاده کنید و از Tab استفاده نکنید."
 
 msgid "4 spaces are a good compromise between small indentation (allows greater nesting depth) and large indentation (easier to read).  Tabs introduce confusion, and are best left out."
-msgstr "۴ فاصله سازشی مناسب بین تورفتگی کم (که امکان تو‌در‌تو شدن بیشتر را فراهم می‌کند) و تورفتگی زیاد (که خواندن را آسان‌تر می‌کند) است. استفاده از Tab باعث سردرگمی می‌شود و بهتر است کنار گذاشته شود."
+msgstr "۴ فاصله سازشی مناسب بین تورفتگی کم (که امکان تودرتو شدن بیشتر را فراهم می‌کند) و تورفتگی زیاد (که خواندن را آسان‌تر می‌کند) است. استفاده از Tab باعث سردرگمی می‌شود و بهتر است کنار گذاشته شود."
 
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr "خطوط را طوری شکسته‌بندی کنید که بیشتر از ۷۹ نویسه نباشند."

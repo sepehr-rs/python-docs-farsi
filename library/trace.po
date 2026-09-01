@@ -112,7 +112,7 @@ msgid "Display lines as they are executed."
 msgstr "خطوط را همان‌طور که اجرا می‌شوند، نمایش دهید."
 
 msgid "Display the functions executed by running the program."
-msgstr "نمایش توابع اجرا‌شده با اجرای برنامه."
+msgstr "نمایش توابع اجراشده با اجرای برنامه."
 
 msgid ""
 "Produce an annotated list from an earlier program run that used the "

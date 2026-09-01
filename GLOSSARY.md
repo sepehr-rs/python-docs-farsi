@@ -48,6 +48,7 @@
 | covariant          | هم‌وردا                  |
 | cipher             | رمز                     |
 | clone              | رونوشت                  |
+| calendar           | گاه‌شماری                |
 | character          | نویسه                   |
 | class              | کلاس                     |
 | command line       | خط فرمان                |
@@ -98,7 +99,7 @@
 | ellipsis           | سه‌نقطه                  |
 | Ellipsis           | Ellipsis                |
 | EOF                | EOF، پایان پرونده       |
-| executor           | اجرا‌کننده               |
+| executor           | اجراکننده               |
 | escape             | خنثی کردن، گریز         |
 | extention types    | نوع‌های توسعه‌ای          |
 | extended hex alphabet | الفبای مبنای شانزده‌ی توسعه‌یافته |
@@ -110,7 +111,7 @@
 | free-threaded      | نخ‌آزاد                  |
 | free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
-| frozen             | فریز‌شده                 |
+| frozen             | فریزشده                 |
 | facility           | امکان، دسته گزارش       |
 | flattening         | تخت‌سازی                 |
 | float (type)       | اعشاری                  |

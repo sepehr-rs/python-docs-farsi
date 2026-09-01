@@ -196,7 +196,7 @@ msgid ""
 msgstr ""
 "یک شیء کد را اجرا می‌کند. هنگامی که یک استثنا رخ می‌دهد، "
 ":meth:`showtraceback` برای نمایش یک ردگیری پشته فراخوانی می‌شود. همه‌ی "
-"استثنا‌ها گرفته می‌شوند، به‌جز :exc:`SystemExit`، که اجازه دارد منتشر شود."
+"استثناها گرفته می‌شوند، به‌جز :exc:`SystemExit`، که اجازه دارد منتشر شود."
 
 msgid ""
 "A note about :exc:`KeyboardInterrupt`: this exception may occur elsewhere in"

@@ -409,7 +409,7 @@ msgstr ""
 "هرگونه ترتیب از پیش موجود در یک مجموعه داده بهره ببرد."
 
 msgid "Decorate-Sort-Undecorate"
-msgstr "آرایش-مرتب‌سازی-نا‌آرایش (Decorate-Sort-Undecorate)"
+msgstr "آرایش-مرتب‌سازی-ناآرایش (Decorate-Sort-Undecorate)"
 
 msgid "This idiom is called Decorate-Sort-Undecorate after its three steps:"
 msgstr ""
@@ -424,7 +424,7 @@ msgstr ""
 "آراسته می‌شود."
 
 msgid "Second, the decorated list is sorted."
-msgstr "دوم، فهرست دکور‌شده مرتب می‌شود."
+msgstr "دوم، فهرست دکورشده مرتب می‌شود."
 
 msgid ""
 "Finally, the decorations are removed, creating a list that contains only the"
@@ -479,7 +479,7 @@ msgid ""
 "example the original list could contain complex numbers which cannot be "
 "sorted directly."
 msgstr ""
-"آیتم‌های اصلی لازم نیست قابل مقایسه باشند، زیرا ترتیب تاپل‌های دکور‌شده "
+"آیتم‌های اصلی لازم نیست قابل مقایسه باشند، زیرا ترتیب تاپل‌های دکورشده "
 "حداکثر بر اساس دو آیتم اول تعیین می‌شود. بنابراین برای مثال، فهرست اصلی "
 "می‌تواند شامل اعداد مختلط باشد که نمی‌توان آن‌ها را به‌طور مستقیم مرتب کرد."
 

@@ -105,7 +105,7 @@ msgstr "تعداد نویسه‌های خالی که برای تورفتگی ی�
 msgid ""
 "When multiple objects are disassembled, preserve memo between disassemblies."
 msgstr ""
-"هنگامی که چندین شیء disassemble می‌شوند، memo بین disassembly‌ها حفظ می‌شود."
+"هنگامی که چندین شیء disassemble می‌شوند، memo بین disassemblyها حفظ می‌شود."
 
 msgid ""
 "When more than one pickle file is specified, print given preamble before "

@@ -890,7 +890,7 @@ msgstr ""
 "نمونه‌های :class:`StatisticDiff` دریافت کنید که بر اساس *key_type* گروه‌بندی شده‌اند."
 
 msgid "See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* parameters."
-msgstr "برای پارامتر‌های *key_type* و *cumulative*، متد :meth:`Snapshot.statistics` را ببینید."
+msgstr "برای پارامترهای *key_type* و *cumulative*، متد :meth:`Snapshot.statistics` را ببینید."
 
 msgid ""
 "The result is sorted from the biggest to the smallest by: absolute value "
@@ -1057,7 +1057,7 @@ msgid ""
 "Difference of total size of memory blocks in bytes between the old and the new snapshots "
 "(``int``): ``0`` if the memory blocks have been allocated in the new snapshot."
 msgstr ""
-"تفاوت اندازه‌ی کل بلوک‌های حافظه بر حسب بایت بین تصویر‌های لحظه‌ای قدیمی و جدید (``int``): اگر "
+"تفاوت اندازه‌ی کل بلوک‌های حافظه بر حسب بایت بین تصویرهای لحظه‌ای قدیمی و جدید (``int``): اگر "
 "بلوک‌های حافظه در تصویر لحظه‌ای جدید تخصیص یافته باشند، ``0`` است."
 
 msgid "Traceback where the memory blocks were allocated, :class:`Traceback` instance."

@@ -294,7 +294,7 @@ msgstr ""
 "و باید متدهای مورد نیاز آن کلاس را فراهم کند."
 
 msgid "Added the *filter* and *compressed* parameters."
-msgstr "پارامتر‌های *filter* و *compressed* افزوده شدند."
+msgstr "پارامترهای *filter* و *compressed* افزوده شدند."
 
 msgid ""
 "Return the interpreter specified in the ``#!`` line at the start of the "

@@ -158,7 +158,7 @@ msgid ""
 "``get*()`` methods."
 msgstr ""
 "یک :func:`~collections.namedtuple` ``(nchannels, sampwidth, framerate, "
-"nframes, comptype, compname)`` برمی‌گرداند، که معادل خروجی متد‌های "
+"nframes, comptype, compname)`` برمی‌گرداند، که معادل خروجی متدهای "
 "``get*()`` است."
 
 msgid ""
@@ -236,7 +236,7 @@ msgstr ""
 "*nframes* را پیش از نوشتن داده‌ی فریم بر همین اساس تنظیم خواهد کرد."
 
 msgid "Wave_write objects have the following methods:"
-msgstr "شیء‌های Wave_write دارای متد‌های زیر هستند:"
+msgstr "شیء‌های Wave_write دارای متدهای زیر هستند:"
 
 msgid ""
 "Make sure *nframes* is correct, and close the file if it was opened by "
@@ -265,7 +265,7 @@ msgid "Set the frame rate to *n*."
 msgstr "نرخ فریم را روی *n* تنظیم کنید."
 
 msgid "A non-integral input to this method is rounded to the nearest integer."
-msgstr "ورودی غیر‌صحیح به این متد به نزدیک‌ترین عدد صحیح گرد می‌شود."
+msgstr "ورودی غیرصحیح به این متد به نزدیک‌ترین عدد صحیح گرد می‌شود."
 
 msgid "Return the frame rate."
 msgstr "نرخ فریم را برمی‌گرداند."

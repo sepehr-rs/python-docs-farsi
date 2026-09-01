@@ -214,7 +214,7 @@ msgid "Directory not empty"
 msgstr "پوشه خالی نیست"
 
 msgid "Too many symbolic links encountered"
-msgstr "با پیوند‌های نمادین بیش از حد مواجه شد"
+msgstr "با پیوندهای نمادین بیش از حد مواجه شد"
 
 msgid ""
 "Operation would block. This error is mapped to the "
@@ -269,7 +269,7 @@ msgid "Invalid request code"
 msgstr "کد درخواست نامعتبر"
 
 msgid "Invalid slot"
-msgstr "جایگاه نا‌معتبر (slot)"
+msgstr "جایگاه نامعتبر (slot)"
 
 msgid "File locking deadlock error"
 msgstr "خطای بن‌بست در قفل فایل"

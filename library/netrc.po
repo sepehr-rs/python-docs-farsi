@@ -117,7 +117,7 @@ msgid "netrc Objects"
 msgstr "اشیاء netrc"
 
 msgid "A :class:`~netrc.netrc` instance has the following methods:"
-msgstr "نمونه‌ای از :class:`~netrc.netrc` دارای متد‌های زیر است:"
+msgstr "نمونه‌ای از :class:`~netrc.netrc` دارای متدهای زیر است:"
 
 msgid ""
 "Return a 3-tuple ``(login, account, password)`` of authenticators for "

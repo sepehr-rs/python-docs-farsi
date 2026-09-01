@@ -113,7 +113,7 @@ msgid ""
 " screen invisible."
 msgstr ""
 "پنل را پنهان می‌کند. این کار شیء را حذف نمی‌کند، فقط پنجره‌ی روی صفحه را "
-"نا‌مرئی می‌کند."
+"نامرئی می‌کند."
 
 msgid "Move the panel to the screen coordinates ``(y, x)``."
 msgstr "پنل را به مختصات صفحه ``(y, x)`` منتقل کنید."

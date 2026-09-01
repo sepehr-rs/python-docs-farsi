@@ -48,7 +48,7 @@ msgstr ""
 "بنویسد که:"
 
 msgid "filter which processes are to be observed"
-msgstr "فیلتر کردن فرایند‌هایی که باید مشاهده شوند"
+msgstr "فیلتر کردن فرایندهایی که باید مشاهده شوند"
 
 msgid "gather data from the processes of interest"
 msgstr "جمع‌آوری داده‌ها از فرآیندهای مورد نظر"
@@ -61,9 +61,9 @@ msgid ""
 " as \"probes\", that can be observed by a DTrace or SystemTap script, making"
 " it easier to monitor what the CPython processes on a system are doing."
 msgstr ""
-"از پایتون 3.6 به بعد، می‌توان CPython را با نشانگر‌های تعبیه‌شده‌ای ساخت که "
+"از پایتون 3.6 به بعد، می‌توان CPython را با نشانگرهای تعبیه‌شده‌ای ساخت که "
 "با نام «پروب‌ها» (probes) نیز شناخته می‌شوند و می‌توان آن‌ها را با یک "
-"اسکریپت DTrace یا SystemTap مشاهده کرد؛ این امر پایش آنچه را که فرآیند‌های "
+"اسکریپت DTrace یا SystemTap مشاهده کرد؛ این امر پایش آنچه را که فرآیندهای "
 "CPython بر روی یک سیستم انجام می‌دهند، آسان‌تر می‌کند."
 
 msgid ""
@@ -389,7 +389,7 @@ msgstr ""
 "156641360747370 function-return:call_stack.py:start:28"
 
 msgid "Static SystemTap markers"
-msgstr "نشانگر‌های ایستای SystemTap"
+msgstr "نشانگرهای ایستای SystemTap"
 
 msgid ""
 "The low-level way to use the SystemTap integration is to use the static "
@@ -699,7 +699,7 @@ msgstr ""
 " و ``0`` را برمی‌گردانند."
 
 msgid "SystemTap Tapsets"
-msgstr "Tapset‌های SystemTap"
+msgstr "Tapsetهای SystemTap"
 
 msgid ""
 "The higher-level way to use the SystemTap integration is to use a "

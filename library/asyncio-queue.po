@@ -271,7 +271,7 @@ msgstr ""
 "می‌کند (آخرین ورودی، اولین خروجی)."
 
 msgid "Exceptions"
-msgstr "استثنا‌ها"
+msgstr "استثناها"
 
 msgid ""
 "This exception is raised when the :meth:`~Queue.get_nowait` method is called"

@@ -197,7 +197,7 @@ msgstr ""
 "باشند."
 
 msgid ":class:`BaseHTTPRequestHandler` has the following instance variables:"
-msgstr ":class:`BaseHTTPRequestHandler` دارای متغیر‌های نمونه زیر است:"
+msgstr ":class:`BaseHTTPRequestHandler` دارای متغیرهای نمونه زیر است:"
 
 msgid ""
 "Contains a tuple of the form ``(host, port)`` referring to the client's "
@@ -482,7 +482,7 @@ msgstr ""
 "اضافه می‌کند و :meth:`flush_headers` را فراخوانی می‌کند."
 
 msgid "The buffered headers are written to the output stream."
-msgstr "سربرگ‌های بافر‌شده در جریان خروجی نوشته می‌شوند."
+msgstr "سربرگ‌های بافرشده در جریان خروجی نوشته می‌شوند."
 
 msgid ""
 "Finally send the headers to the output stream and flush the internal headers"
@@ -787,7 +787,7 @@ msgid ""
 "prior to execution of the CGI script.  This pre-empts the status code."
 msgstr ""
 "اسکریپت‌های CGI که توسط کلاس :class:`CGIHTTPRequestHandler` اجرا می‌شوند، "
-"نمی‌توانند تغییرمسیر‌ها (redirects، کد HTTP ۳۰۲) را انجام دهند، زیرا کد ۲۰۰ "
+"نمی‌توانند تغییرمسیرها (redirects، کد HTTP ۳۰۲) را انجام دهند، زیرا کد ۲۰۰ "
 "(خروجی اسکریپت در ادامه می‌آید) پیش از اجرای اسکریپت CGI ارسال می‌شود. این "
 "موضوع مانع از ارسال کد وضعیت می‌شود."
 
@@ -798,7 +798,7 @@ msgid ""
 "denoting CGI scripts."
 msgstr ""
 "با این حال، اگر این کلاس حدس بزند که آن یک اسکریپت CGI است، به‌جای ارائه آن "
-"به‌عنوان فایل، اسکریپت CGI را اجرا می‌کند. تنها از CGI‌های مبتنی بر پوشه "
+"به‌عنوان فایل، اسکریپت CGI را اجرا می‌کند. تنها از CGIهای مبتنی بر پوشه "
 "استفاده می‌شود — پیکربندی رایج دیگر سرور این است که پسوندهای خاص را به‌عنوان"
 " نشان‌دهنده اسکریپت‌های CGI در نظر بگیرد."
 
@@ -961,7 +961,7 @@ msgstr "این گزینه نیاز دارد که ``--tls-cert`` مشخص شود.
 
 msgid "Specifies the password file for password-protected private keys:"
 msgstr ""
-"فایل گذرواژه را برای کلید‌های خصوصی محافظت‌شده با گذرواژه مشخص می‌کند:"
+"فایل گذرواژه را برای کلیدهای خصوصی محافظت‌شده با گذرواژه مشخص می‌کند:"
 
 msgid ""
 "python -m http.server \\\n"

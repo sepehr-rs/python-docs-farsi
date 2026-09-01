@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!getopt` --- C-style parser for command line options"
-msgstr ":mod:`!getopt` --- پارسر‌ای به‌سبک C برای گزینه‌های خط فرمان"
+msgstr ":mod:`!getopt` --- پارسرای به‌سبک C برای گزینه‌های خط فرمان"
 
 msgid "**Source code:** :source:`Lib/getopt.py`"
 msgstr ":source:`Lib/getopt.py`"
@@ -188,7 +188,7 @@ msgstr ""
 msgid ""
 "Support for returning intermixed options and non-option arguments in order."
 msgstr ""
-"پشتیبانی از بازگرداندن گزینه‌ها و آرگومان‌های غیر‌گزینه‌ای درهم‌آمیخته "
+"پشتیبانی از بازگرداندن گزینه‌ها و آرگومان‌های غیرگزینه‌ای درهم‌آمیخته "
 "به‌ترتیب."
 
 msgid ""

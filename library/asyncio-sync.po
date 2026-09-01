@@ -665,7 +665,7 @@ msgid ""
 ":exc:`CancelledError` if a task is cancelled."
 msgstr ""
 "این متد ممکن است در صورتی که سد در حین انتظار یک وظیفهشکسته شود یا"
-" باز‌نشانی شود، استثنای :class:`BrokenBarrierError` را پرتاب کند. ممکن است "
+" بازنشانی شود، استثنای :class:`BrokenBarrierError` را پرتاب کند. ممکن است "
 "در صورت لغو شدن یک وظیفه، استثنای :exc:`CancelledError` را پرتاب کند."
 
 msgid ""

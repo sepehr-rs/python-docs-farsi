@@ -736,7 +736,7 @@ msgid "``100 <= status <= 199``"
 msgstr "``100 <= status <= 199``"
 
 msgid "HTTP Semantics :rfc:`9110`, Section 15"
-msgstr "معنا‌شناسی HTTP :rfc:`9110`، بخش ۱۵"
+msgstr "معناشناسی HTTP :rfc:`9110`، بخش ۱۵"
 
 msgid "``is_success``"
 msgstr "``is_success``"
@@ -826,7 +826,7 @@ msgstr ""
 " <HTTPMethod.TRACE>]"
 
 msgid "HTTP methods"
-msgstr "متد‌های HTTP"
+msgstr "متدهای HTTP"
 
 msgid ""
 "Supported, `IANA-registered methods <https://www.iana.org/assignments/http-"

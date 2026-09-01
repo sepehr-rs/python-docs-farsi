@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!hmac` --- Keyed-Hashing for Message Authentication"
-msgstr ":mod:`!hmac` --- هش کلید‌دار برای اصالت‌سنجی پیام"
+msgstr ":mod:`!hmac` --- هش کلیددار برای اصالت‌سنجی پیام"
 
 msgid "**Source code:** :source:`Lib/hmac.py`"
 msgstr ":source:`Lib/hmac.py`"
@@ -80,7 +80,7 @@ msgstr ""
 "خلاصه‌ی *msg* را برای *key* محرمانه و *digest* داده‌شده برمی‌گرداند. این "
 "تابع معادل ``HMAC(key, msg, digest).digest()`` است، اما از یک پیاده‌سازی "
 "بهینه‌شده به زبان C یا پیاده‌سازی درون‌خطی استفاده می‌کند که برای پیام‌هایی "
-"که در حافظه جا می‌شوند سریع‌تر است. پارامتر‌های *key*، *msg* و *digest* همان"
+"که در حافظه جا می‌شوند سریع‌تر است. پارامترهای *key*، *msg* و *digest* همان"
 " معنایی را دارند که در :func:`~hmac.new` آمده است."
 
 msgid ""

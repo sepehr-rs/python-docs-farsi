@@ -48,7 +48,7 @@ msgid "Remove the first item from the list whose value is equal to *value*.  It 
 msgstr "اولین آیتم از فهرست را که مقدار آن برابر با *value* است حذف می‌کند. اگر چنین آیتمی وجود نداشته باشد، یک :exc:`ValueError` پرتاب می‌کند."
 
 msgid "Remove the item at the given position in the list, and return it.  If no index is specified, ``a.pop()`` removes and returns the last item in the list. It raises an :exc:`IndexError` if the list is empty or the index is outside the list range."
-msgstr "آیتم موجود در موقعیت مشخص‌شده از فهرست را حذف می‌کند و آن را برمی‌گرداند. اگر هیچ اندیسی مشخص نشده باشد، ``a.pop()`` آخرین آیتم فهرست را حذف کرده و برمی‌گرداند. اگر فهرست خالی باشد یا اندیس‌ خارج از محدوده‌ی فهرست باشد، یک :exc:`IndexError` پرتاب می‌کند."
+msgstr "آیتم موجود در موقعیت مشخص‌شده از فهرست را حذف می‌کند و آن را برمی‌گرداند. اگر هیچ اندیسی مشخص نشده باشد، ``a.pop()`` آخرین آیتم فهرست را حذف کرده و برمی‌گرداند. اگر فهرست خالی باشد یا اندیس خارج از محدوده‌ی فهرست باشد، یک :exc:`IndexError` پرتاب می‌کند."
 
 msgid "Remove all items from the list.  Similar to ``del a[:]``."
 msgstr "تمام آیتم‌های فهرست را حذف می‌کند. مشابه ``del a[:]`` است."
@@ -57,7 +57,7 @@ msgid "Return zero-based index of the first occurrence of *value* in the list. R
 msgstr "اندیس مبتنی بر صفرِ اولین رخداد *value* در فهرست را برمی‌گرداند. اگر چنین آیتمی وجود نداشته باشد، یک :exc:`ValueError` پرتاب می‌کند."
 
 msgid "The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list.  The returned index is computed relative to the beginning of the full sequence rather than the *start* argument."
-msgstr "آرگومان‌های اختیاری *start* و *end* مانند نمادگذاری برش تفسیر می‌شوند و برای محدود کردن جست‌وجو به یک زیر‌دنباله‌ی مشخص از فهرست استفاده می‌شوند. اندیس بازگردانده‌شده نسبت به ابتدای دنباله‌ی کامل محاسبه می‌شود، نه نسبت به آرگومان *start*."
+msgstr "آرگومان‌های اختیاری *start* و *end* مانند نمادگذاری برش تفسیر می‌شوند و برای محدود کردن جست‌وجو به یک زیردنباله‌ی مشخص از فهرست استفاده می‌شوند. اندیس بازگردانده‌شده نسبت به ابتدای دنباله‌ی کامل محاسبه می‌شود، نه نسبت به آرگومان *start*."
 
 msgid "Return the number of times *value* appears in the list."
 msgstr "تعداد دفعاتی که *value* در فهرست ظاهر می‌شود را برمی‌گرداند."
@@ -198,7 +198,7 @@ msgid "List Comprehensions"
 msgstr "درک‌های فهرستی"
 
 msgid "List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition."
-msgstr "درک‌های فهرستی روشی کوتاه و مختصر برای ایجاد فهرست‌ها فراهم می‌کنند. کاربردهای رایج آن‌ها ایجاد فهرست‌های جدیدی است که در آن‌ها هر عنصر، نتیجه‌ی انجام برخی عملیات روی هر عضو از یک دنباله یا شیء پیمایش‌پذیر دیگر است، یا ایجاد یک زیر‌دنباله از عناصری که یک شرط مشخص را برآورده می‌کنند."
+msgstr "درک‌های فهرستی روشی کوتاه و مختصر برای ایجاد فهرست‌ها فراهم می‌کنند. کاربردهای رایج آن‌ها ایجاد فهرست‌های جدیدی است که در آن‌ها هر عنصر، نتیجه‌ی انجام برخی عملیات روی هر عضو از یک دنباله یا شیء پیمایش‌پذیر دیگر است، یا ایجاد یک زیردنباله از عناصری که یک شرط مشخص را برآورده می‌کنند."
 
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr "برای مثال، فرض کنید می‌خواهیم فهرستی از مربع‌ها ایجاد کنیم، مانند::"
@@ -329,7 +329,7 @@ msgstr ""
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 
 msgid "List comprehensions can contain complex expressions and nested functions::"
-msgstr "درک‌های فهرستی می‌توانند شامل عبارت‌های پیچیده و تابع‌های تو‌در‌تو باشند::"
+msgstr "درک‌های فهرستی می‌توانند شامل عبارت‌های پیچیده و تابع‌های تودرتو باشند::"
 
 msgid ""
 ">>> from math import pi\n"
@@ -341,7 +341,7 @@ msgstr ""
 "['3.1', '3.14', '3.142', '3.1416', '3.14159']"
 
 msgid "Nested List Comprehensions"
-msgstr "درک‌های فهرستی تو‌در‌تو"
+msgstr "درک‌های فهرستی تودرتو"
 
 msgid "The initial expression in a list comprehension can be any arbitrary expression, including another list comprehension."
 msgstr "عبارت اولیه در یک درک فهرستی می‌تواند هر عبارت دلخواهی باشد، از جمله یک درک فهرستی دیگر."
@@ -471,7 +471,7 @@ msgid "Tuples and Sequences"
 msgstr "تاپل‌ها و دنباله‌ها"
 
 msgid "We saw that lists and strings have many common properties, such as indexing and slicing operations.  They are two examples of *sequence* data types (see :ref:`typesseq`).  Since Python is an evolving language, other sequence data types may be added.  There is also another standard sequence data type: the *tuple*."
-msgstr "دیدیم که فهرست‌ها و رشته‌ها ویژگی‌های مشترک بسیاری مانند عملیات اندیس‌‌گذاری و برش دارند. آن‌ها دو نمونه از نوع‌های داده‌ی *دنباله‌ای* (به :ref:`typesseq` مراجعه کنید) هستند. از آنجا که پایتون زبانی در حال تکامل است، ممکن است نوع‌های داده‌ی دنباله‌ای دیگری نیز به آن افزوده شوند. همچنین یک نوع داده‌ی دنباله‌ای استاندارد دیگر وجود دارد: *تاپل*."
+msgstr "دیدیم که فهرست‌ها و رشته‌ها ویژگی‌های مشترک بسیاری مانند عملیات اندیس‌گذاری و برش دارند. آن‌ها دو نمونه از نوع‌های داده‌ی *دنباله‌ای* (به :ref:`typesseq` مراجعه کنید) هستند. از آنجا که پایتون زبانی در حال تکامل است، ممکن است نوع‌های داده‌ی دنباله‌ای دیگری نیز به آن افزوده شوند. همچنین یک نوع داده‌ی دنباله‌ای استاندارد دیگر وجود دارد: *تاپل*."
 
 msgid "A tuple consists of a number of values separated by commas, for instance::"
 msgstr "یک تاپل از تعدادی مقدار تشکیل شده است که با ویرگول از هم جدا شده‌اند، برای مثال::"
@@ -516,10 +516,10 @@ msgstr ""
 "([1, 2, 3], [3, 2, 1])"
 
 msgid "As you see, on output tuples are always enclosed in parentheses, so that nested tuples are interpreted correctly; they may be input with or without surrounding parentheses, although often parentheses are necessary anyway (if the tuple is part of a larger expression).  It is not possible to assign to the individual items of a tuple, however it is possible to create tuples which contain mutable objects, such as lists."
-msgstr "همان‌طور که می‌بینید، در خروجی تاپل‌ها همیشه درون پرانتز قرار می‌گیرند تا تاپل‌های تو‌در‌تو به‌درستی تفسیر شوند؛ آن‌ها می‌توانند با یا بدون پرانتزهای اطرافشان وارد شوند، اگرچه اغلب پرانتزها به هر حال لازم هستند (اگر تاپل بخشی از یک عبارت بزرگ‌تر باشد). امکان انتساب به آیتم‌های جداگانه‌ی یک تاپل وجود ندارد، بااین‌حال می‌توان تاپل‌هایی ایجاد کرد که شامل اشیای تغییرپذیر، مانند فهرست‌ها، باشند."
+msgstr "همان‌طور که می‌بینید، در خروجی تاپل‌ها همیشه درون پرانتز قرار می‌گیرند تا تاپل‌های تودرتو به‌درستی تفسیر شوند؛ آن‌ها می‌توانند با یا بدون پرانتزهای اطرافشان وارد شوند، اگرچه اغلب پرانتزها به هر حال لازم هستند (اگر تاپل بخشی از یک عبارت بزرگ‌تر باشد). امکان انتساب به آیتم‌های جداگانه‌ی یک تاپل وجود ندارد، بااین‌حال می‌توان تاپل‌هایی ایجاد کرد که شامل اشیای تغییرپذیر، مانند فهرست‌ها، باشند."
 
 msgid "Though tuples may seem similar to lists, they are often used in different situations and for different purposes. Tuples are :term:`immutable`, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of :func:`namedtuples <collections.namedtuple>`). Lists are :term:`mutable`, and their elements are usually homogeneous and are accessed by iterating over the list."
-msgstr "اگرچه تاپل‌ها ممکن است شبیه فهرست‌ها به نظر برسند، اغلب در موقعیت‌ها و برای اهداف متفاوتی استفاده می‌شوند. تاپل‌ها :term:`تغییرناپذیر <immutable>` هستند و معمولاً شامل یک دنباله‌ی ناهمگن از عناصر هستند که از طریق واگشایی (در ادامه‌ی این بخش توضیح داده می‌شود) یا اندیس‌‌گذاری (یا حتی از طریق ویژگی‌ها در مورد :func:`namedtuples <collections.namedtuple>`) به آن‌ها دسترسی پیدا می‌شود. فهرست‌ها :term:`تغییرپذیر <mutable>` هستند و عناصر آن‌ها معمولاً همگن هستند و با پیمایش روی فهرست به آن‌ها دسترسی پیدا می‌شود."
+msgstr "اگرچه تاپل‌ها ممکن است شبیه فهرست‌ها به نظر برسند، اغلب در موقعیت‌ها و برای اهداف متفاوتی استفاده می‌شوند. تاپل‌ها :term:`تغییرناپذیر <immutable>` هستند و معمولاً شامل یک دنباله‌ی ناهمگن از عناصر هستند که از طریق واگشایی (در ادامه‌ی این بخش توضیح داده می‌شود) یا اندیس‌گذاری (یا حتی از طریق ویژگی‌ها در مورد :func:`namedtuples <collections.namedtuple>`) به آن‌ها دسترسی پیدا می‌شود. فهرست‌ها :term:`تغییرپذیر <mutable>` هستند و عناصر آن‌ها معمولاً همگن هستند و با پیمایش روی فهرست به آن‌ها دسترسی پیدا می‌شود."
 
 msgid "A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these.  Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses). Ugly, but effective.  For example::"
 msgstr "یک مسئله‌ی ویژه، ساخت تاپل‌هایی است که شامل 0 یا 1 آیتم هستند: نحو زبان برای سازگاری با این موارد چند نکته‌ی خاص دارد. تاپل‌های خالی با یک جفت پرانتز خالی ساخته می‌شوند؛ یک تاپل با یک آیتم با قرار دادن یک ویرگول پس از یک مقدار ساخته می‌شود (قرار دادن یک مقدار تنها درون پرانتز کافی نیست). زشت، اما مؤثر. برای مثال::"
@@ -630,7 +630,7 @@ msgid "Dictionaries"
 msgstr "دیکشنری‌ها"
 
 msgid "Another useful data type built into Python is the *dictionary* (see :ref:`typesmapping`). Dictionaries are sometimes found in other languages as \"associative memories\" or \"associative arrays\".  Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by *keys*, which can be any immutable type; strings and numbers can always be keys.  Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can't use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like :meth:`~list.append` and :meth:`~list.extend`."
-msgstr "یک نوع داده‌ی مفید دیگر که به‌صورت توکار در پایتون وجود دارد، *دیکشنری* است (به :ref:`typesmapping` مراجعه کنید). دیکشنری‌ها در برخی زبان‌های دیگر با نام «حافظه‌های انجمنی» یا «آرایه‌های انجمنی» شناخته می‌شوند. برخلاف دنباله‌ها که با یک بازه از اعداد اندیس‌‌گذاری می‌شوند، دیکشنری‌ها با *کلیدها* اندیس‌‌گذاری می‌شوند؛ کلیدها می‌توانند هر نوع تغییرناپذیری باشند؛ رشته‌ها و اعداد همیشه می‌توانند کلید باشند. تاپل‌ها نیز می‌توانند به‌عنوان کلید استفاده شوند، اگر فقط شامل رشته‌ها، اعداد یا تاپل‌ها باشند؛ اگر یک تاپل به‌صورت مستقیم یا غیرمستقیم شامل یک شیء تغییرپذیر باشد، نمی‌توان از آن به‌عنوان کلید استفاده کرد. نمی‌توانید از فهرست‌ها به‌عنوان کلید استفاده کنید، زیرا فهرست‌ها را می‌توان با استفاده از انتساب اندیسی، انتساب برش، یا متدهایی مانند :meth:`~list.append` و :meth:`~list.extend` در محل تغییر داد."
+msgstr "یک نوع داده‌ی مفید دیگر که به‌صورت توکار در پایتون وجود دارد، *دیکشنری* است (به :ref:`typesmapping` مراجعه کنید). دیکشنری‌ها در برخی زبان‌های دیگر با نام «حافظه‌های انجمنی» یا «آرایه‌های انجمنی» شناخته می‌شوند. برخلاف دنباله‌ها که با یک بازه از اعداد اندیس‌گذاری می‌شوند، دیکشنری‌ها با *کلیدها* اندیس‌گذاری می‌شوند؛ کلیدها می‌توانند هر نوع تغییرناپذیری باشند؛ رشته‌ها و اعداد همیشه می‌توانند کلید باشند. تاپل‌ها نیز می‌توانند به‌عنوان کلید استفاده شوند، اگر فقط شامل رشته‌ها، اعداد یا تاپل‌ها باشند؛ اگر یک تاپل به‌صورت مستقیم یا غیرمستقیم شامل یک شیء تغییرپذیر باشد، نمی‌توان از آن به‌عنوان کلید استفاده کرد. نمی‌توانید از فهرست‌ها به‌عنوان کلید استفاده کنید، زیرا فهرست‌ها را می‌توان با استفاده از انتساب اندیسی، انتساب برش، یا متدهایی مانند :meth:`~list.append` و :meth:`~list.extend` در محل تغییر داد."
 
 msgid "It is best to think of a dictionary as a set of *key: value* pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: ``{}``. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output."
 msgstr "بهترین روش این است که یک دیکشنری را به‌عنوان مجموعه‌ای از جفت‌های *کلید: مقدار* در نظر بگیرید، با این شرط که کلیدها (درون یک دیکشنری) یکتا باشند. یک جفت آکولاد یک دیکشنری خالی ایجاد می‌کند: ``{}``. قرار دادن یک فهرست جداشده با ویرگول از جفت‌های کلید:مقدار درون آکولاد، جفت‌های اولیه‌ی کلید:مقدار را به دیکشنری اضافه می‌کند؛ این همان روشی است که دیکشنری‌ها در خروجی نوشته می‌شوند."
@@ -922,7 +922,7 @@ msgid "Comparing Sequences and Other Types"
 msgstr "مقایسه‌ی دنباله‌ها و انواع دیگر"
 
 msgid "Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses *lexicographical* ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively.  If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one.  Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type::"
-msgstr "اشیای دنباله‌ای معمولاً می‌توانند با اشیای دیگری از همان نوع دنباله مقایسه شوند. مقایسه از ترتیب *لغت‌نامه‌ای* (*lexicographical*) استفاده می‌کند: ابتدا دو آیتم اول با یکدیگر مقایسه می‌شوند و اگر متفاوت باشند، نتیجه‌ی مقایسه را تعیین می‌کنند؛ اگر برابر باشند، دو آیتم بعدی مقایسه می‌شوند و این روند ادامه پیدا می‌کند تا زمانی که یکی از دنباله‌ها به پایان برسد. اگر دو آیتمی که باید مقایسه شوند خودشان دنباله‌هایی از همان نوع باشند، مقایسه‌ی لغت‌نامه‌ای به‌صورت بازگشتی انجام می‌شود. اگر تمام آیتم‌های دو دنباله برابر مقایسه شوند، دنباله‌ها برابر در نظر گرفته می‌شوند. اگر یکی از دنباله‌ها زیر‌دنباله‌ی ابتدایی دیگری باشد، دنباله‌ی کوتاه‌تر، کوچک‌تر (کمتر) در نظر گرفته می‌شود. ترتیب لغت‌نامه‌ای برای رشته‌ها از شماره‌ی نقطه‌ی کد یونیکد برای مرتب‌سازی نویسه‌های منفرد استفاده می‌کند. چند نمونه از مقایسه‌ی دنباله‌های هم‌نوع::"
+msgstr "اشیای دنباله‌ای معمولاً می‌توانند با اشیای دیگری از همان نوع دنباله مقایسه شوند. مقایسه از ترتیب *لغت‌نامه‌ای* (*lexicographical*) استفاده می‌کند: ابتدا دو آیتم اول با یکدیگر مقایسه می‌شوند و اگر متفاوت باشند، نتیجه‌ی مقایسه را تعیین می‌کنند؛ اگر برابر باشند، دو آیتم بعدی مقایسه می‌شوند و این روند ادامه پیدا می‌کند تا زمانی که یکی از دنباله‌ها به پایان برسد. اگر دو آیتمی که باید مقایسه شوند خودشان دنباله‌هایی از همان نوع باشند، مقایسه‌ی لغت‌نامه‌ای به‌صورت بازگشتی انجام می‌شود. اگر تمام آیتم‌های دو دنباله برابر مقایسه شوند، دنباله‌ها برابر در نظر گرفته می‌شوند. اگر یکی از دنباله‌ها زیردنباله‌ی ابتدایی دیگری باشد، دنباله‌ی کوتاه‌تر، کوچک‌تر (کمتر) در نظر گرفته می‌شود. ترتیب لغت‌نامه‌ای برای رشته‌ها از شماره‌ی نقطه‌ی کد یونیکد برای مرتب‌سازی نویسه‌های منفرد استفاده می‌کند. چند نمونه از مقایسه‌ی دنباله‌های هم‌نوع::"
 
 msgid ""
 "(1, 2, 3)              < (1, 2, 4)\n"
@@ -948,4 +948,4 @@ msgid "Footnotes"
 msgstr "پانویس‌ها"
 
 msgid "Other languages may return the mutated object, which allows method chaining, such as ``d->insert(\"a\")->remove(\"b\")->sort();``."
-msgstr "زبان‌های دیگر ممکن است شیء تغییر‌یافته را برگردانند، که امکان زنجیره‌سازی متدها را فراهم می‌کند، مانند ``d->insert(\"a\")->remove(\"b\")->sort();``."
+msgstr "زبان‌های دیگر ممکن است شیء تغییریافته را برگردانند، که امکان زنجیره‌سازی متدها را فراهم می‌کند، مانند ``d->insert(\"a\")->remove(\"b\")->sort();``."

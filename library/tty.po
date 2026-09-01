@@ -114,7 +114,7 @@ msgid ""
 "describe in their ``stty(1)`` man pages regarding cbreak mode."
 msgstr ""
 "پرچم ``ICRNL`` دیگر پاک نمی‌شود. این کار رفتار پایتون 3.11 و نسخه‌های پیش‌تر"
-" را بازمی‌گرداند و همچنین با آنچه Linux، macOS و BSD‌ها در صفحه‌های راهنمای "
+" را بازمی‌گرداند و همچنین با آنچه Linux، macOS و BSDها در صفحه‌های راهنمای "
 "``stty(1)`` خود درباره حالت cbreak شرح می‌دهند، مطابقت دارد."
 
 msgid "Module :mod:`termios`"

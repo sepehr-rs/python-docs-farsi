@@ -72,7 +72,7 @@ msgid ""
 "For a literal match, wrap the meta-characters in brackets. For example, "
 "``'[?]'`` matches the character ``'?'``."
 msgstr ""
-"برای تطبیق لفظی، فرا‌نویسه‌ها را در براکت قرار دهید. برای مثال، ``'[?]'`` با"
+"برای تطبیق لفظی، فرانویسه‌ها را در براکت قرار دهید. برای مثال، ``'[?]'`` با"
 " نویسه‌ی ``'?'`` مطابقت دارد."
 
 msgid ""

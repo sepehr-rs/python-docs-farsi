@@ -448,7 +448,7 @@ msgid ""
 "The token buffer.  It may be useful to examine this when catching "
 "exceptions."
 msgstr ""
-"بافر توکن (token buffer). ممکن است بررسی این مورد هنگام گرفتن استثنا‌ها مفید"
+"بافر توکن (token buffer). ممکن است بررسی این مورد هنگام گرفتن استثناها مفید"
 " باشد."
 
 msgid ""

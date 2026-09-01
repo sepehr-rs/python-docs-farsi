@@ -205,7 +205,7 @@ msgid ""
 "Morsels are dictionary-like objects, whose set of keys is constant --- the "
 "valid :rfc:`2109` attributes, which are:"
 msgstr ""
-"Morsel‌ها اشیای دیکشنری‌مانندی هستند که مجموعه‌ی کلیدهای آن‌ها ثابت است — "
+"Morselها اشیای دیکشنری‌مانندی هستند که مجموعه‌ی کلیدهای آن‌ها ثابت است — "
 "ویژگی‌های معتبر :rfc:`2109`، که عبارتند از:"
 
 msgid ""
@@ -294,7 +294,7 @@ msgid "Set the *key*, *value* and *coded_value* attributes."
 msgstr "ویژگی‌های *key*، *value* و *coded_value* را تنظیم کنید."
 
 msgid "Whether *K* is a member of the set of keys of a :class:`Morsel`."
-msgstr "اینکه آیا *K* عضوی از مجموعه‌ی کلید‌های یک :class:`Morsel` است."
+msgstr "اینکه آیا *K* عضوی از مجموعه‌ی کلیدهای یک :class:`Morsel` است."
 
 msgid ""
 "Return a string representation of the Morsel, suitable to be sent as an HTTP"
@@ -332,7 +332,7 @@ msgstr ""
 "پرتاب می‌کند."
 
 msgid "an error is raised for invalid keys."
-msgstr "برای کلید‌های نامعتبر یک خطا پرتاب می‌شود."
+msgstr "برای کلیدهای نامعتبر یک خطا پرتاب می‌شود."
 
 msgid "Return a shallow copy of the Morsel object."
 msgstr "یک کپی سطحی از شیء Morsel برمی‌گرداند."

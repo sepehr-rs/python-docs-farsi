@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Exceptions"
-msgstr "استثنا‌ها"
+msgstr "استثناها"
 
 msgid "**Source code:** :source:`Lib/asyncio/exceptions.py`"
 msgstr ":source:`Lib/asyncio/exceptions.py`"
@@ -92,7 +92,7 @@ msgid "Reached the buffer size limit while looking for a separator."
 msgstr "در حین جست‌وجوی جداکننده، به محدودیت اندازه‌ی بافر رسیده است."
 
 msgid "Raised by the :ref:`asyncio stream APIs <asyncio-streams>`."
-msgstr "توسط :ref:`API‌های جریان asyncio <asyncio-streams>` پرتاب می‌شود."
+msgstr "توسط :ref:`APIهای جریان asyncio <asyncio-streams>` پرتاب می‌شود."
 
 msgid "The total number of to be consumed bytes."
 msgstr "تعداد کل بایت‌هایی که باید مصرف شوند."

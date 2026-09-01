@@ -28,7 +28,7 @@ msgid "Low-level API Index"
 msgstr "اندیس API سطح پایین"
 
 msgid "This page lists all low-level asyncio APIs."
-msgstr "این صفحه همه‌ی API‌های سطح پایین asyncio را فهرست می‌کند."
+msgstr "این صفحه همه‌ی APIهای سطح پایین asyncio را فهرست می‌کند."
 
 msgid "Obtaining the Event Loop"
 msgstr "به دست آوردن حلقه رویداد"
@@ -119,7 +119,7 @@ msgid "``await`` :meth:`loop.shutdown_asyncgens`"
 msgstr "``await`` :meth:`loop.shutdown_asyncgens`"
 
 msgid "Close asynchronous generators."
-msgstr "تولیدگر‌های نا‌همگام را ببندید."
+msgstr "تولیدگرهای ناهمگام را ببندید."
 
 msgid "Debugging"
 msgstr "اشکال‌زدایی"
@@ -173,7 +173,7 @@ msgid ""
 "Run a CPU-bound or other blocking function in a :mod:`concurrent.futures` "
 "executor."
 msgstr ""
-"یک تابع محدود به CPU یا یک تابع مسدود‌کننده دیگر را در یک اجرا‌کننده "
+"یک تابع محدود به CPU یا یک تابع مسدودکننده دیگر را در یک اجراکننده "
 "(executor) از :mod:`concurrent.futures` اجرا کنید."
 
 msgid ":meth:`loop.set_default_executor`"
@@ -398,7 +398,7 @@ msgid "Remove a handler for a :mod:`signal`."
 msgstr "حذف یک هندلر برای :mod:`signal`."
 
 msgid "Subprocesses"
-msgstr "زیرفرایند‌ها"
+msgstr "زیرفرایندها"
 
 msgid ":meth:`loop.subprocess_exec`"
 msgstr ":meth:`loop.subprocess_exec`"
@@ -410,7 +410,7 @@ msgid ":meth:`loop.subprocess_shell`"
 msgstr ":meth:`loop.subprocess_shell`"
 
 msgid "Spawn a subprocess from a shell command."
-msgstr "راه‌اندازی یک زیر‌فرایند از طریق یک دستور پوسته."
+msgstr "راه‌اندازی یک زیرفرایند از طریق یک دستور پوسته."
 
 msgid "Error Handling"
 msgstr "مدیریت خطا"
@@ -425,7 +425,7 @@ msgid ":meth:`loop.set_exception_handler`"
 msgstr ":meth:`loop.set_exception_handler`"
 
 msgid "Set a new exception handler."
-msgstr "یک هندلر‌ی جدید استثنا تنظیم کنید."
+msgstr "یک هندلری جدید استثنا تنظیم کنید."
 
 msgid ":meth:`loop.get_exception_handler`"
 msgstr ":meth:`loop.get_exception_handler`"
@@ -527,7 +527,7 @@ msgstr ""
 "بازگشت داده می‌شوند:"
 
 msgid "Read Transports"
-msgstr "ترابرد‌های خواندنی"
+msgstr "ترابردهای خواندنی"
 
 msgid ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
 msgstr ":meth:`transport.is_reading() <ReadTransport.is_reading>`"
@@ -570,7 +570,7 @@ msgid ":meth:`transport.writelines() <WriteTransport.writelines>`"
 msgstr ":meth:`transport.writelines() <WriteTransport.writelines>`"
 
 msgid "Write buffers to the transport."
-msgstr "بافر‌ها را به انتقال بنویسید."
+msgstr "بافرها را به انتقال بنویسید."
 
 msgid ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
 msgstr ":meth:`transport.can_write_eof() <WriteTransport.can_write_eof>`"
@@ -696,7 +696,7 @@ msgid ":meth:`transport.terminate() <SubprocessTransport.terminate>`"
 msgstr ":meth:`transport.terminate() <SubprocessTransport.terminate>`"
 
 msgid "Stop the subprocess."
-msgstr "زیر‌فرایند را متوقف کنید."
+msgstr "زیرفرایند را متوقف کنید."
 
 msgid ":meth:`transport.close() <SubprocessTransport.close>`"
 msgstr ":meth:`transport.close() <SubprocessTransport.close>`"
@@ -754,7 +754,7 @@ msgid "Called when an EOF is received."
 msgstr "هنگام دریافت EOF فراخوانی می‌شود."
 
 msgid "Buffered Streaming Protocols"
-msgstr "پروتکل‌های جریانی بافر‌شده"
+msgstr "پروتکل‌های جریانی بافرشده"
 
 msgid "``callback`` :meth:`get_buffer() <BufferedProtocol.get_buffer>`"
 msgstr "``callback`` :meth:`get_buffer() <BufferedProtocol.get_buffer>`"
@@ -798,7 +798,7 @@ msgstr ""
 "فراخوانی می‌شود."
 
 msgid "Subprocess Protocols"
-msgstr "پروتکل‌های زیر‌فرایند"
+msgstr "پروتکل‌های زیرفرایند"
 
 msgid "``callback`` :meth:`~SubprocessProtocol.pipe_data_received`"
 msgstr "``callback`` :meth:`~SubprocessProtocol.pipe_data_received`"

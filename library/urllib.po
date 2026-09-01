@@ -30,10 +30,10 @@ msgstr ":source:`Lib/urllib/`"
 msgid ""
 "``urllib`` is a package that collects several modules for working with URLs:"
 msgstr ""
-"``urllib`` بسته‌ای است که چندین ماژول را برای کار با URL‌ها گردآوری می‌کند:"
+"``urllib`` بسته‌ای است که چندین ماژول را برای کار با URLها گردآوری می‌کند:"
 
 msgid ":mod:`urllib.request` for opening and reading URLs"
-msgstr ":mod:`urllib.request` برای باز کردن و خواندن URL‌ها"
+msgstr ":mod:`urllib.request` برای باز کردن و خواندن URLها"
 
 msgid ""
 ":mod:`urllib.error` containing the exceptions raised by "

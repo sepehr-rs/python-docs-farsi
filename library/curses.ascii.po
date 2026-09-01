@@ -240,7 +240,7 @@ msgstr ""
 
 msgid "Checks for a non-ASCII character (ordinal values 0x80 and above)."
 msgstr ""
-"بررسی می‌کند که آیا نویسه‌ای غیر‌ASCII است (مقادیر عددی 0x80 و بالاتر)."
+"بررسی می‌کند که آیا نویسه‌ای غیرASCII است (مقادیر عددی 0x80 و بالاتر)."
 
 msgid ""
 "These functions accept either integers or single-character strings; when the"

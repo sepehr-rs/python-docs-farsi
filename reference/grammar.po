@@ -62,7 +62,7 @@ msgid ""
 "Cuts currently don't appear inside parentheses, brackets, lookaheads and "
 "similar. Their behavior in these contexts is deliberately left unspecified."
 msgstr ""
-"در حال حاضر برش‌ها (Cuts) در داخل پرانتز‌ها، براکت‌ها، پیش‌نگر‌ها (lookaheads) و "
+"در حال حاضر برش‌ها (Cuts) در داخل پرانتزها، براکت‌ها، پیش‌نگرها (lookaheads) و "
 "موارد مشابه ظاهر نمی‌شوند. رفتار آن‌ها در این زمینه‌ها عمداً نامشخص باقی مانده "
 "است."
 

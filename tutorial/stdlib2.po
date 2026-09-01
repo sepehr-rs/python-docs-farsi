@@ -33,7 +33,7 @@ msgid "Output formatting"
 msgstr "قالب‌بندی خروجی"
 
 msgid "The :mod:`reprlib` module provides a version of :func:`repr` customized for abbreviated displays of large or deeply nested containers::"
-msgstr "ماژول :mod:`reprlib` نسخه‌ای از تابع :func:`repr` را ارائه می‌دهد که برای نمایش خلاصه‌شده‌ی ظرف‌های بزرگ یا دارای تو‌در‌تویی عمیق سفارشی شده است::"
+msgstr "ماژول :mod:`reprlib` نسخه‌ای از تابع :func:`repr` را ارائه می‌دهد که برای نمایش خلاصه‌شده‌ی ظرف‌های بزرگ یا دارای تودرتویی عمیق سفارشی شده است::"
 
 msgid ""
 ">>> import reprlib\n"

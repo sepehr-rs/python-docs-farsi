@@ -71,7 +71,7 @@ msgid ""
 "On macOS the use of this function is unsafe when mixed with using higher-"
 "level system APIs, and that includes using :mod:`urllib.request`."
 msgstr ""
-"در macOS، استفاده از این تابع در صورت ترکیب با استفاده از API‌های سیستمی سطح"
+"در macOS، استفاده از این تابع در صورت ترکیب با استفاده از APIهای سیستمی سطح"
 " بالاتر ناایمن است، و این شامل استفاده از :mod:`urllib.request` نیز می‌شود."
 
 msgid ""

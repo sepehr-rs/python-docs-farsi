@@ -261,7 +261,7 @@ msgid ""
 "Exception raised on incomplete data. These are usually not programming "
 "errors, but may be handled by reading a little more data and trying again."
 msgstr ""
-"استثنایی که هنگام ناقص بودن داده‌ها پرتاب می‌شود. این استثنا‌ها معمولاً خطاهای "
+"استثنایی که هنگام ناقص بودن داده‌ها پرتاب می‌شود. این استثناها معمولاً خطاهای "
 "برنامه‌نویسی نیستند، اما ممکن است با خواندن اندکی داده بیشتر و تلاش دوباره "
 "مدیریت شوند."
 

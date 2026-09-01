@@ -482,7 +482,7 @@ msgstr ""
 "به‌صورت یک شیء ظرف حاوی یک بار (payload) از نوع فهرست به طول ۱ تجزیه "
 "می‌شوند. متد :meth:`~email.message.EmailMessage.is_multipart` این پیام‌ها "
 "مقدار ``True`` را برمی‌گرداند. تنها عنصری که توسط "
-":meth:`~email.message.EmailMessage.iter_parts` تولید می‌شود، یک شیء زیر‌پیام"
+":meth:`~email.message.EmailMessage.iter_parts` تولید می‌شود، یک شیء زیرپیام"
 " خواهد بود."
 
 msgid ""

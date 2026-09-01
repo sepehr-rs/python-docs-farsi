@@ -130,7 +130,7 @@ msgid ""
 "A :class:`dictionary <dict>` mapping names to descriptors for nested "
 "functions and classes."
 msgstr ""
-"یک :class:`دیکشنری <dict>` که نام‌ها را به توصیف‌گر‌هایی برای توابع و "
+"یک :class:`دیکشنری <dict>` که نام‌ها را به توصیف‌گرهایی برای توابع و "
 "کلاس‌های تودرتو نگاشت می‌کند."
 
 msgid ""

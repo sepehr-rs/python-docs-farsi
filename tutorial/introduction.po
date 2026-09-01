@@ -235,7 +235,7 @@ msgstr ""
 "'\"Isn\\'t,\" they said.'"
 
 msgid "In the Python shell, the string definition and output string can look different.  The :func:`print` function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters::"
-msgstr "در پوسته‌ی پایتون، تعریف رشته و رشته‌ی خروجی ممکن است متفاوت به نظر برسند. تابع :func:`print` خروجی خواناتری تولید می‌کند، زیرا نقل‌قول‌های احاطه‌کننده را حذف می‌کند و نویسه‌های escape‌شده و ویژه را چاپ می‌کند::"
+msgstr "در پوسته‌ی پایتون، تعریف رشته و رشته‌ی خروجی ممکن است متفاوت به نظر برسند. تابع :func:`print` خروجی خواناتری تولید می‌کند، زیرا نقل‌قول‌های احاطه‌کننده را حذف می‌کند و نویسه‌های escapeشده و ویژه را چاپ می‌کند::"
 
 msgid ""
 ">>> s = 'First line.\\nSecond line.'  # \\n means newline\n"
@@ -372,7 +372,7 @@ msgstr ""
 "'Python'"
 
 msgid "Strings can be *indexed* (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one::"
-msgstr "رشته‌ها را می‌توان *اندیس‌‌گذاری* (اندیس‌گذاری) کرد؛ به‌طوری که اولین نویسه دارای اندیس 0 است. نوع جداگانه‌ای برای نویسه وجود ندارد؛ یک نویسه در واقع فقط رشته‌ای با اندازه‌ی یک است::"
+msgstr "رشته‌ها را می‌توان *اندیس‌گذاری* (اندیس‌گذاری) کرد؛ به‌طوری که اولین نویسه دارای اندیس 0 است. نوع جداگانه‌ای برای نویسه وجود ندارد؛ یک نویسه در واقع فقط رشته‌ای با اندازه‌ی یک است::"
 
 msgid ""
 ">>> word = 'Python'\n"
@@ -388,7 +388,7 @@ msgstr ""
 "'n'"
 
 msgid "Indices may also be negative numbers, to start counting from the right::"
-msgstr "اندیس‌‌ها همچنین می‌توانند اعداد منفی باشند تا شمارش از سمت راست آغاز شود::"
+msgstr "اندیس‌ها همچنین می‌توانند اعداد منفی باشند تا شمارش از سمت راست آغاز شود::"
 
 msgid ""
 ">>> word[-1]  # last character\n"
@@ -406,10 +406,10 @@ msgstr ""
 "'P'"
 
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
-msgstr "توجه کنید که چون ‎-0 همان 0 است، اندیس‌‌های منفی از ‎-1 شروع می‌شوند."
+msgstr "توجه کنید که چون ‎-0 همان 0 است، اندیس‌های منفی از ‎-1 شروع می‌شوند."
 
 msgid "In addition to indexing, *slicing* is also supported.  While indexing is used to obtain individual characters, *slicing* allows you to obtain a substring::"
-msgstr "علاوه بر اندیس‌‌گذاری، *برش‌دهی* نیز پشتیبانی می‌شود. در حالی که اندیس‌‌گذاری برای به‌دست آوردن نویسه‌های جداگانه استفاده می‌شود، *برش‌دهی* به شما اجازه می‌دهد یک زیررشته به‌دست آورید::"
+msgstr "علاوه بر اندیس‌گذاری، *برش‌دهی* نیز پشتیبانی می‌شود. در حالی که اندیس‌گذاری برای به‌دست آوردن نویسه‌های جداگانه استفاده می‌شود، *برش‌دهی* به شما اجازه می‌دهد یک زیررشته به‌دست آورید::"
 
 msgid ""
 ">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n"
@@ -423,7 +423,7 @@ msgstr ""
 "'tho'"
 
 msgid "Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced. ::"
-msgstr "اندیس‌‌های برش مقدارهای پیش‌فرض مفیدی دارند؛ اگر اندیس اول حذف شود، مقدار پیش‌فرض آن صفر است و اگر اندیس دوم حذف شود، مقدار پیش‌فرض آن اندازه‌ی رشته‌ای است که در حال برش خوردن است. ::"
+msgstr "اندیس‌های برش مقدارهای پیش‌فرض مفیدی دارند؛ اگر اندیس اول حذف شود، مقدار پیش‌فرض آن صفر است و اگر اندیس دوم حذف شود، مقدار پیش‌فرض آن اندازه‌ی رشته‌ای است که در حال برش خوردن است. ::"
 
 msgid ""
 ">>> word[:2]   # character from the beginning to position 2 (excluded)\n"
@@ -455,7 +455,7 @@ msgstr ""
 "'Python'"
 
 msgid "One way to remember how slices work is to think of the indices as pointing *between* characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of *n* characters has index *n*, for example::"
-msgstr "یک روش برای به خاطر سپردن نحوه‌ی کار برش‌ها این است که تصور کنید اندیس‌‌ها به *بین* نویسه‌ها اشاره می‌کنند، به‌طوری که لبه‌ی سمت چپ اولین نویسه شماره‌ی 0 دارد. سپس لبه‌ی سمت راست آخرین نویسه‌ی یک رشته با *n* نویسه، دارای اندیس *n* است؛ برای مثال::"
+msgstr "یک روش برای به خاطر سپردن نحوه‌ی کار برش‌ها این است که تصور کنید اندیس‌ها به *بین* نویسه‌ها اشاره می‌کنند، به‌طوری که لبه‌ی سمت چپ اولین نویسه شماره‌ی 0 دارد. سپس لبه‌ی سمت راست آخرین نویسه‌ی یک رشته با *n* نویسه، دارای اندیس *n* است؛ برای مثال::"
 
 msgid ""
 " +---+---+---+---+---+---+\n"
@@ -471,10 +471,10 @@ msgstr ""
 "-6  -5  -4  -3  -2  -1"
 
 msgid "The first row of numbers gives the position of the indices 0...6 in the string; the second row gives the corresponding negative indices. The slice from *i* to *j* consists of all characters between the edges labeled *i* and *j*, respectively."
-msgstr "ردیف اول اعداد، موقعیت اندیس‌‌های 0...6 در رشته را نشان می‌دهد؛ ردیف دوم اندیس‌‌های منفی متناظر را نشان می‌دهد. برش از *i* تا *j* شامل تمام نویسه‌هایی است که بین لبه‌های مشخص‌شده با *i* و *j* قرار دارند."
+msgstr "ردیف اول اعداد، موقعیت اندیس‌های 0...6 در رشته را نشان می‌دهد؛ ردیف دوم اندیس‌های منفی متناظر را نشان می‌دهد. برش از *i* تا *j* شامل تمام نویسه‌هایی است که بین لبه‌های مشخص‌شده با *i* و *j* قرار دارند."
 
 msgid "For non-negative indices, the length of a slice is the difference of the indices, if both are within bounds.  For example, the length of ``word[1:3]`` is 2."
-msgstr "برای اندیس‌‌های غیرمنفی، طول یک برش برابر با تفاوت بین اندیس‌‌ها است، به شرطی که هر دو در محدوده باشند. برای مثال، طول ``word[1:3]`` برابر با 2 است."
+msgstr "برای اندیس‌های غیرمنفی، طول یک برش برابر با تفاوت بین اندیس‌ها است، به شرطی که هر دو در محدوده باشند. برای مثال، طول ``word[1:3]`` برابر با 2 است."
 
 msgid "Attempting to use an index that is too large will result in an error::"
 msgstr "تلاش برای استفاده از اندیسی که بیش از حد بزرگ است، باعث ایجاد خطا خواهد شد::"
@@ -491,7 +491,7 @@ msgstr ""
 "IndexError: string index out of range"
 
 msgid "However, out of range slice indexes are handled gracefully when used for slicing::"
-msgstr "بااین‌حال، اندیس‌‌های برش خارج از محدوده هنگام استفاده برای برش‌دهی به‌صورت مناسبی مدیریت می‌شوند::"
+msgstr "بااین‌حال، اندیس‌های برش خارج از محدوده هنگام استفاده برای برش‌دهی به‌صورت مناسبی مدیریت می‌شوند::"
 
 msgid ""
 ">>> word[4:42]\n"
@@ -505,7 +505,7 @@ msgstr ""
 "''"
 
 msgid "Python strings cannot be changed --- they are :term:`immutable`. Therefore, assigning to an indexed position in the string results in an error::"
-msgstr "رشته‌های پایتون قابل تغییر نیستند --- آن‌ها :term:`تغییرناپذیر <immutable>` هستند. بنابراین، اختصاص دادن مقدار به یک موقعیت اندیس‌‌گذاری‌شده در رشته باعث ایجاد خطا می‌شود::"
+msgstr "رشته‌های پایتون قابل تغییر نیستند --- آن‌ها :term:`تغییرناپذیر <immutable>` هستند. بنابراین، اختصاص دادن مقدار به یک موقعیت اندیس‌گذاری‌شده در رشته باعث ایجاد خطا می‌شود::"
 
 msgid ""
 ">>> word[0] = 'J'\n"
@@ -598,7 +598,7 @@ msgstr ""
 "[1, 4, 9, 16, 25]"
 
 msgid "Like strings (and all other built-in :term:`sequence` types), lists can be indexed and sliced::"
-msgstr "مانند رشته‌ها (و تمام نوع‌های توکار دیگر :term:`دنباله <sequence>`)، فهرست‌ها را می‌توان اندیس‌‌گذاری و برش داد::"
+msgstr "مانند رشته‌ها (و تمام نوع‌های توکار دیگر :term:`دنباله <sequence>`)، فهرست‌ها را می‌توان اندیس‌گذاری و برش داد::"
 
 msgid ""
 ">>> squares[0]  # indexing returns the item\n"

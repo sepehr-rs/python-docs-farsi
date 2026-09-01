@@ -61,10 +61,10 @@ msgid "Used for the symbol table of a module."
 msgstr "برای جدول نمادهای یک ماژول استفاده می‌شود."
 
 msgid "Used for the symbol table of a function."
-msgstr "برای جدول نماد‌های یک تابع استفاده می‌شود."
+msgstr "برای جدول نمادهای یک تابع استفاده می‌شود."
 
 msgid "Used for the symbol table of a class."
-msgstr "برای جدول نماد‌های یک کلاس استفاده می‌شود."
+msgstr "برای جدول نمادهای یک کلاس استفاده می‌شود."
 
 msgid ""
 "The following members refer to different flavors of :ref:`annotation scopes "
@@ -95,7 +95,7 @@ msgid ""
 "TypeVarTuple or a ParamSpec object (the latter two do not support a bound or"
 " a constraint tuple)."
 msgstr ""
-"برای جدول نماد‌های کران، تاپل محدودیت یا مقدار پیش‌فرض یک متغیر نوع واحد به "
+"برای جدول نمادهای کران، تاپل محدودیت یا مقدار پیش‌فرض یک متغیر نوع واحد به "
 "معنای رسمی، یعنی یک شیء TypeVar، TypeVarTuple یا ParamSpec استفاده می‌شود "
 "(دو مورد آخر از کران یا تاپل محدودیت پشتیبانی نمی‌کنند)."
 
@@ -192,10 +192,10 @@ msgstr ""
 "یک فضای نام برای یک تابع یا متد. این کلاس از :class:`SymbolTable` ارث می‌برد."
 
 msgid "Return a tuple containing names of parameters to this function."
-msgstr "یک تاپل شامل نام‌های پارامتر‌های این تابع را برمی‌گرداند."
+msgstr "یک تاپل شامل نام‌های پارامترهای این تابع را برمی‌گرداند."
 
 msgid "Return a tuple containing names of locals in this function."
-msgstr "یک تاپل شامل نام‌های متغیر‌های محلی این تابع برمی‌گرداند."
+msgstr "یک تاپل شامل نام‌های متغیرهای محلی این تابع برمی‌گرداند."
 
 msgid "Return a tuple containing names of globals in this function."
 msgstr "یک تاپلشامل نام‌های متغیرهای سراسری در این تابع برمی‌گرداند."

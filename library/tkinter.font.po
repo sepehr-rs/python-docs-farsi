@@ -97,7 +97,7 @@ msgid "*slant* - ROMAN, ITALIC"
 msgstr "*slant* - ROMAN, ITALIC"
 
 msgid "*underline* - font underlining (0 - none, 1 - underline)"
-msgstr "*underline* - زیر‌خط قلم (۰ - بدون زیر‌خط، ۱ - زیر‌خط)"
+msgstr "*underline* - زیرخط قلم (۰ - بدون زیرخط، ۱ - زیرخط)"
 
 msgid "*overstrike* - font strikeout (0 - none, 1 - strikeout)"
 msgstr "*overstrike* - خط‌خوردگی قلم (۰ - بدون، ۱ - خط‌خورده)"

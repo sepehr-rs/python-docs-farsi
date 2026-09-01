@@ -196,7 +196,7 @@ msgstr ""
 "نتیجه‌ی آزمون ``b in a`` را برمی‌گرداند. به معکوس بودن عملوندها توجه کنید."
 
 msgid "Return the number of occurrences of *b* in *a*."
-msgstr "تعداد رخداد‌های *b* در *a* را برمی‌گرداند."
+msgstr "تعداد رخدادهای *b* در *a* را برمی‌گرداند."
 
 msgid "Remove the value of *a* at index *b*."
 msgstr "مقدار *a* در اندیس *b* را حذف می‌کند."
@@ -396,7 +396,7 @@ msgstr ""
 "    return caller"
 
 msgid "Mapping Operators to Functions"
-msgstr "نگاشت عملگر‌ها به توابع"
+msgstr "نگاشت عملگرها به توابع"
 
 msgid ""
 "This table shows how abstract operations correspond to operator symbols in "

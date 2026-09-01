@@ -417,7 +417,7 @@ msgid ""
 msgstr "شما باید از حذف ویژگی ``__annotations__`` یک شیء خودداری کنید."
 
 msgid "``__annotations__`` Quirks"
-msgstr "رفتار‌های عجیب ``__annotations__``"
+msgstr "رفتارهای عجیب ``__annotations__``"
 
 msgid ""
 "In all versions of Python 3, function objects lazy-create an annotations "

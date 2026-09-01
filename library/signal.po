@@ -1047,7 +1047,7 @@ msgstr ""
 "غیرمنتظره‌ای خارج شود."
 
 msgid "Note on Signal Handlers and Exceptions"
-msgstr "یادداشتی درباره‌ی مدیران سیگنال و استثنا‌ها"
+msgstr "یادداشتی درباره‌ی مدیران سیگنال و استثناها"
 
 msgid ""
 "If a signal handler raises an exception, the exception will be propagated to"

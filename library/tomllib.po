@@ -111,7 +111,7 @@ msgstr "استثناهای زیر در دسترس هستند:"
 
 msgid ""
 "Subclass of :exc:`ValueError` with the following additional attributes:"
-msgstr "زیر‌کلاسی از :exc:`ValueError` با ویژگی‌های اضافی زیر:"
+msgstr "زیرکلاسی از :exc:`ValueError` با ویژگی‌های اضافی زیر:"
 
 msgid "The unformatted error message."
 msgstr "پیام خطای قالب‌بندی‌نشده."

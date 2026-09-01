@@ -567,7 +567,7 @@ msgid "echofilter(input, output, delay=0.7, atten=4)"
 msgstr "echofilter(input, output, delay=0.7, atten=4)"
 
 msgid "Note that when using ``from package import item``, the item can be either a submodule (or subpackage) of the package, or some  other name defined in the package, like a function, class or variable.  The ``import`` statement first tests whether the item is defined in the package; if not, it assumes it is a module and attempts to load it.  If it fails to find it, an :exc:`ImportError` exception is raised."
-msgstr "توجه کنید که هنگام استفاده از ``from package import item``، مورد item می‌تواند یک زیرماژول (یا زیر‌بسته) از بسته باشد، یا نام دیگری باشد که در بسته تعریف شده است، مانند یک تابع، کلاس یا متغیر. دستور ``import`` ابتدا بررسی می‌کند که آیا item در بسته تعریف شده است یا خیر؛ اگر تعریف نشده باشد، فرض می‌کند که یک ماژول است و تلاش می‌کند آن را بارگذاری کند. اگر نتواند آن را پیدا کند، یک استثنای :exc:`ImportError` پرتاب می‌شود."
+msgstr "توجه کنید که هنگام استفاده از ``from package import item``، مورد item می‌تواند یک زیرماژول (یا زیربسته) از بسته باشد، یا نام دیگری باشد که در بسته تعریف شده است، مانند یک تابع، کلاس یا متغیر. دستور ``import`` ابتدا بررسی می‌کند که آیا item در بسته تعریف شده است یا خیر؛ اگر تعریف نشده باشد، فرض می‌کند که یک ماژول است و تلاش می‌کند آن را بارگذاری کند. اگر نتواند آن را پیدا کند، یک استثنای :exc:`ImportError` پرتاب می‌شود."
 
 msgid "Contrarily, when using syntax like ``import item.subitem.subsubitem``, each item except for the last must be a package; the last item can be a module or a package but can't be a class or function or variable defined in the previous item."
 msgstr "برعکس، هنگام استفاده از نحوی مانند ``import item.subitem.subsubitem``، هر مورد به‌جز آخرین مورد باید یک بسته باشد؛ آخرین مورد می‌تواند یک ماژول یا یک بسته باشد، اما نمی‌تواند یک کلاس، تابع یا متغیر تعریف‌شده در مورد قبلی باشد."
@@ -634,7 +634,7 @@ msgid "Intra-package References"
 msgstr "ارجاع‌های درون‌بسته‌ای"
 
 msgid "When packages are structured into subpackages (as with the :mod:`!sound` package in the example), you can use absolute imports to refer to submodules of siblings packages.  For example, if the module :mod:`!sound.filters.vocoder` needs to use the :mod:`!echo` module in the :mod:`!sound.effects` package, it can use ``from sound.effects import echo``."
-msgstr "هنگامی که بسته‌ها به زیر‌بسته‌ها ساختاربندی می‌شوند (مانند بسته‌ی :mod:`!sound` در مثال)، می‌توانید از ایمپورت کردن مطلق برای ارجاع به زیرماژول‌های بسته‌های هم‌سطح استفاده کنید. برای مثال، اگر ماژول :mod:`!sound.filters.vocoder` نیاز داشته باشد از ماژول :mod:`!echo` در بسته‌ی :mod:`!sound.effects` استفاده کند، می‌تواند از ``from sound.effects import echo`` استفاده کند."
+msgstr "هنگامی که بسته‌ها به زیربسته‌ها ساختاربندی می‌شوند (مانند بسته‌ی :mod:`!sound` در مثال)، می‌توانید از ایمپورت کردن مطلق برای ارجاع به زیرماژول‌های بسته‌های هم‌سطح استفاده کنید. برای مثال، اگر ماژول :mod:`!sound.filters.vocoder` نیاز داشته باشد از ماژول :mod:`!echo` در بسته‌ی :mod:`!sound.effects` استفاده کند، می‌تواند از ``from sound.effects import echo`` استفاده کند."
 
 msgid "You can also write relative imports, with the ``from module import name`` form of import statement.  These imports use leading dots to indicate the current and parent packages involved in the relative import.  From the :mod:`!surround` module for example, you might use::"
 msgstr "همچنین می‌توانید از ایمپورت نسبی استفاده کنید، به شکل ``from module import name`` در دستور import. این ایمپورت‌ها از نقطه‌های ابتدایی برای مشخص کردن بسته‌ی فعلی و بسته‌های والد درگیر در ایمپورت نسبی استفاده می‌کنند. برای مثال، از داخل ماژول :mod:`!surround` می‌توانید از دستور زیر استفاده کنید::"
@@ -655,7 +655,7 @@ msgid "Packages in Multiple Directories"
 msgstr "بسته‌ها در چندین پوشه"
 
 msgid "Packages support one more special attribute, :attr:`~module.__path__`.  This is initialized to be a :term:`sequence` of strings containing the name of the directory holding the package's :file:`__init__.py` before the code in that file is executed.  This variable can be modified; doing so affects future searches for modules and subpackages contained in the package."
-msgstr "بسته‌ها یک ویژگی ویژه‌ی دیگر را نیز پشتیبانی می‌کنند: :attr:`~module.__path__`. این ویژگی مقداردهی اولیه می‌شود تا پیش از اجرای کد موجود در آن فایل، یک :term:`دنباله <sequence>` از رشته‌ها باشد که نام پوشه‌ی شامل :file:`__init__.py` بسته را در خود دارد. این متغیر قابل تغییر است؛ تغییر آن بر جست‌وجوهای آینده برای ماژول‌ها و زیر‌بسته‌های موجود در بسته تأثیر می‌گذارد."
+msgstr "بسته‌ها یک ویژگی ویژه‌ی دیگر را نیز پشتیبانی می‌کنند: :attr:`~module.__path__`. این ویژگی مقداردهی اولیه می‌شود تا پیش از اجرای کد موجود در آن فایل، یک :term:`دنباله <sequence>` از رشته‌ها باشد که نام پوشه‌ی شامل :file:`__init__.py` بسته را در خود دارد. این متغیر قابل تغییر است؛ تغییر آن بر جست‌وجوهای آینده برای ماژول‌ها و زیربسته‌های موجود در بسته تأثیر می‌گذارد."
 
 msgid "While this feature is not often needed, it can be used to extend the set of modules found in a package."
 msgstr "اگرچه این قابلیت معمولاً موردنیاز نیست، می‌توان از آن برای گسترش مجموعه‌ی ماژول‌هایی که در یک بسته پیدا می‌شوند استفاده کرد."
@@ -670,7 +670,7 @@ msgid "module"
 msgstr "ماژول"
 
 msgid "search"
-msgstr "جست‌و‌جو"
+msgstr "جست‌وجو"
 
 msgid "path"
 msgstr "مسیر"

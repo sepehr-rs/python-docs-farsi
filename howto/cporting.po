@@ -42,7 +42,7 @@ msgid ""
 "The `Porting guide`_ from the *py3c* project provides opinionated "
 "suggestions with supporting code."
 msgstr ""
-"`Porting guide`_ از پروژه *py3c* پیشنهاد‌های مبتنی بر نظر را به همراه کد "
+"`Porting guide`_ از پروژه *py3c* پیشنهادهای مبتنی بر نظر را به همراه کد "
 "پشتیبانی ارائه می‌دهد."
 
 msgid ""

@@ -151,7 +151,7 @@ msgstr ""
 "بخوانید. این رابط امکان کار با هر نوع دنباله‌ی پایتون را از طریق "
 "فراخوانی‌هایی مانند :c:func:`PySequence_Length`، "
 ":c:func:`PySequence_GetItem` و غیره، و همچنین بسیاری از پروتکل‌های مفید دیگر"
-" مانند اعداد (:c:func:`PyNumber_Index` و غیره) و نگاشت‌ها در API‌های "
+" مانند اعداد (:c:func:`PyNumber_Index` و غیره) و نگاشت‌ها در APIهای "
 "PyMapping فراهم می‌کند."
 
 msgid "How do I use Py_BuildValue() to create a tuple of arbitrary length?"

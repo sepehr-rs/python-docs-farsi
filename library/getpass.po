@@ -53,7 +53,7 @@ msgstr ""
 "'`` است. در یونیکس، پیام درخواست در صورت نیاز با استفاده از مدیر خطای "
 "replace به شیء شبه‌فایل *stream* نوشته می‌شود. مقدار پیش‌فرض *stream* "
 "پایانه‌ی هندلر (:file:`/dev/tty`) است یا اگر آن در دسترس نباشد، "
-"``sys.stderr`` است (این آرگومان در ویندوز نا‌دیده گرفته می‌شود)."
+"``sys.stderr`` است (این آرگومان در ویندوز نادیده گرفته می‌شود)."
 
 msgid ""
 "The *echo_char* argument controls how user input is displayed while typing. "
