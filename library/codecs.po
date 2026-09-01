@@ -2539,7 +2539,7 @@ msgid ""
 "(which only produces :class:`str` output)."
 msgstr ""
 "کدک‌های زیر تبدیل‌های دودویی را ارائه می‌دهند: نگاشت‌هایی از :term:`شیء "
-"بایت‌مانند <bytes-like object>` به :class:`bytes`. :meth:`bytes.decode` از "
+"شبه‌بایت <bytes-like object>` به :class:`bytes`. :meth:`bytes.decode` از "
 "آن‌ها پشتیبانی نمی‌کند (که تنها خروجی :class:`str` را تولید می‌کند)."
 
 msgid "Encoder / decoder"

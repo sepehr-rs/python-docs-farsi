@@ -274,7 +274,7 @@ msgid ""
 "The audit event only occurs for direct instantiation of function objects, "
 "and is not raised for normal compilation."
 msgstr ""
-"رویداد ممیزی فقط برای نمونه‌سازی مستقیم اشیای تابع رخ می‌دهد، و در کامپایل "
+"رویداد حسابرسی فقط برای نمونه‌سازی مستقیم اشیای تابع رخ می‌دهد، و در کامپایل "
 "معمولی پرتاب نمی‌شود."
 
 msgid ""

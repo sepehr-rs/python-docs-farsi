@@ -143,7 +143,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.open_osfhandle`` with "
 "arguments ``handle``, ``flags``."
 msgstr ""
-"یک :ref:`رویداد ممیزی <auditing>` ``msvcrt.open_osfhandle`` را با "
+"یک :ref:`رویداد حسابرسی <auditing>` ``msvcrt.open_osfhandle`` را با "
 "آرگومان‌های ``handle`` و ``flags`` پرتاب می‌کند."
 
 msgid ""

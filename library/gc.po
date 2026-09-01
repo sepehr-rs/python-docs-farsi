@@ -301,7 +301,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``gc.get_referents`` with "
 "argument ``objs``."
 msgstr ""
-"یک :ref:`رویداد ممیزی <auditing>` ``gc.get_referents`` را با آرگومان "
+"یک :ref:`رویداد حسابرسی <auditing>` ``gc.get_referents`` را با آرگومان "
 "``objs`` پرتاب می‌کند."
 
 msgid ""

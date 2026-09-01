@@ -9,6 +9,7 @@
 | ------------------ | ----------------------- |
 | accessibility      | دسترسی‌پذیری             |
 | annotate           | حاشیه‌نویسی کردن         |
+| audit              | حسابرسی                 |
 | ASCII              | اسکی                    |
 | ABC                | کلاس پایه انتزاعی        |
 | assertion          | ادعا، شرط               |
@@ -27,9 +28,10 @@
 | big-endian         | بزرگ‌اندیان              |
 | backend            | بک‌اند                   |
 | bytecode           | بایت‌کد                  |
+| bottom tee         | tee پایین               |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
 | bytes-like object  | شیء شبه‌بایت             |
-| bouding box        | جعبه‌ی محدودکننده         |
+| bouding box        | جعبه‌ی محدودکننده        |
 | backreference      | بازارجاع                |
 | bind               | مقید کردن               |
 | barrier            | سد                      |
@@ -41,11 +43,13 @@
 | callable           | فراخوانی‌پذیر            |
 | checkbutton        | دکمه‌ی انتخابی           |
 | closure            | بستار                   |
+| cardinality        | کاردینالیتی             |
 | cast               | تبدیل نوع، قالب‌ریزی     |
 | container          | ظرف                     |
 | CLI                | رابط خط فرمان، CLI      |
 | contravariant      | پادوردا                 |
 | CPU-bound          | محدود به CPU            |
+| context            | زمینه                   |
 | covariant          | هم‌وردا                  |
 | cipher             | رمز                     |
 | clone              | رونوشت                  |
@@ -71,10 +75,12 @@
 | deserialization    | سریال‌زدایی              |
 | deserializer       | سریال‌زدا                |
 | deserialize        | سریال‌زدایی کردن         |
+| delta              | دلتا                    |
 | deferred reference counting | شمارش ارجاعِ معوق |
 | decorator          | دکوراتور، آراینده       |
 | decompressor       | واگشا                   |
 | disassemble        | واسازی کردن             |
+| dialect            | گویش                    |
 | disassembler       | واساز                   |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
@@ -115,7 +121,7 @@
 | free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
 | frozen             | فریزشده                 |
-| fallback           | جایگزین پشتیبان         |
+| fallback           | جایگزین         |
 | facility           | امکان، دسته گزارش       |
 | flattening         | تخت‌سازی                 |
 | float (type)       | اعشاری                  |
@@ -147,12 +153,14 @@
 | immortal           | نامیرا                  |
 | immutable          | تغییرناپذیر             |
 | import             | ایمپورت                 |
+| inode              | آی‌نود                   |
 | index              | اندیس، شماره            |
 | IPC                | ارتباط بین‌فرایندی       |
 | instance           | نمونه                   |
 | invariant          | ناوردا                  |
 | integer            | عدد صحیح                |
 | interface          | رابط                    |
+| interpolation      | درون‌یابی                |
 | interpreter        | مفسر                    |
 | item               | آیتم                    |
 | idempotent         | هم‌توان                  |
@@ -196,10 +204,13 @@
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
 | notation           | نمادگذاری، نماد         |
+| nul                | تهی                     |
+| NaN                | NaN                     |
 | no-op              | عملیات بی‌اثر            |
 | non-capturing group   | گروه غیرثبت‌کننده     |
 | object             | شیء                     |
 | opcode             | کدعمل                   |
+| ordinal            | ترتیبی                  |
 | offset             | آفست                    |
 | octet              |  هشت‌بیتی                |
 | operator           | عملگر                   |
@@ -214,10 +225,12 @@
 | proxy              | پراکسی                  |
 | precision          | دقت                     |
 | process            | فرایند                  |
+| prototype          | پیش‌نمونه                |
 | profiler           | پروفایل‌گیر              |
 | profiling          | پروفایل‌گیری             |
 | post-mortem debugging | اشکال‌زدایی پس از خاتمه |
 | payload            | بار                     |
+| pathname           | مسیرنام                 |
 | pane               | بخش                     |
 | patch              | وصل                     |
 | predicate          | محمول                   |
@@ -241,6 +254,7 @@
 | raise              | پرتاب                   |
 | REPL               | REPL، پوسته تعاملی پایتون|
 | reentrant          | بازورودپذیر             |
+| reentrancy         | بازورودپذیری            |
 | reference          | ارجاع                   |
 | reference counting | شمارش ارجاع             |
 | refcount           | شمارش ارجاع             |
@@ -260,9 +274,11 @@
 | sash               |  نوار جداکننده          |
 | single precision   | دقت منفرد               |
 | snapshot           | تصویر لحظه‌ای            |
+| signal             | سیگنال                  |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
 | sleep              | توقف                    |
+| segmentation fault   | خطای قطعه‌بندی (segmentation fault) |
 | stringifier        | رشته‌ساز                 |
 | seed               | بذر                     |
 | set                | مجموعه                  |
@@ -289,16 +305,22 @@
 | transformer        | تبدیل کننده             |
 | transcode          | بازکدگذاری کردن         |
 | transcoding        | بازکدگذاری              |
+| trap (decimal signal mechanism) | تله        |
+| trap (catch/intercept) | گرفتن، رهگیری کردن  |
+| time tuple         | تاپل زمانی              |
 | timeout            | مهلت زمانی              |
 | trace              | ردگیری                  |
+| thread-local       | نخ‌محلی                  |
 | thread-safe        | نخ‌ایمن                  |
 | type               | نوع، نوع داده، تایپ     |
 | typeahead          | پیش‌تایپ                 |
 | unit test          | یونیت تست               |
 | unicode            | یونیکد                  |
+| UTC                | UTC، زمان هماهنگ جهانی  |
 | unpacking          | واگشایی                 |
 | unary              | یک‌عملوندی               |
 | unpickle           | پیکل‌گشایی               |
+| universal          | همگانی                  |
 | unhashable         | هش‌ناپذیر                |
 | value              | مقدار                   |
 | variable           | متغیر                   |

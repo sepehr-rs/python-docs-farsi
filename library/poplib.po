@@ -105,7 +105,7 @@ msgid ""
 "``poplib.putline`` with arguments ``self`` and ``line``, where ``line`` is "
 "the bytes about to be sent to the remote host."
 msgstr ""
-"همه‌ی دستورات یک :ref:`رویداد ممیزی <auditing>` ``poplib.putline`` را با "
+"همه‌ی دستورات یک :ref:`رویداد حسابرسی <auditing>` ``poplib.putline`` را با "
 "آرگومان‌های ``self`` و ``line`` پرتاب می‌کنند، که در آن ``line`` بایت‌هایی است "
 "که قرار است به میزبان راه‌دور ارسال شوند."
 

@@ -131,7 +131,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments"
 " ``ident``, ``logoption``, ``facility``."
 msgstr ""
-"یک :ref:`رویداد ممیزی <auditing>` ``syslog.openlog`` را با آرگومان‌های "
+"یک :ref:`رویداد حسابرسی <auditing>` ``syslog.openlog`` را با آرگومان‌های "
 "``ident``، ``logoption`` و ``facility`` پرتاب می‌کند."
 
 msgid ""

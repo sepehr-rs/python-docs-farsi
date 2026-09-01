@@ -215,14 +215,14 @@ msgstr ""
 
 msgid "(also 3.11.10, 3.10.15, 3.9.20, and 3.8.20) Emits audit events."
 msgstr ""
-"(همچنین 3.11.10، 3.10.15، 3.9.20 و 3.8.20) رویدادهای ممیزی را منتشر می‌کند."
+"(همچنین 3.11.10، 3.10.15، 3.9.20 و 3.8.20) رویدادهای حسابرسی را منتشر می‌کند."
 
 msgid ""
 "Uses PyREPL if possible, in which case :envvar:`PYTHONSTARTUP` is also "
 "executed. Emits audit events."
 msgstr ""
 "در صورت امکان از PyREPL استفاده می‌کند، که در این "
-"صورت :envvar:`PYTHONSTARTUP` نیز اجرا می‌شود. رویدادهای ممیزی (audit events) "
+"صورت :envvar:`PYTHONSTARTUP` نیز اجرا می‌شود. رویدادهای حسابرسی (audit events) "
 "را منتشر می‌کند."
 
 msgid "Reference"

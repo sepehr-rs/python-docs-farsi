@@ -160,7 +160,7 @@ msgstr ""
 "کدام فایل را حل می‌کند."
 
 msgid "The auditing event was added."
-msgstr "رویداد ممیزی افزوده شد."
+msgstr "رویداد حسابرسی افزوده شد."
 
 msgid "Line buffer"
 msgstr "بافر خط"

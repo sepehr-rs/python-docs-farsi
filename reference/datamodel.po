@@ -3260,7 +3260,7 @@ msgid ""
 "<auditing>` ``object.__setattr__`` with arguments ``obj``, ``name``, "
 "``value``."
 msgstr ""
-"برای برخی انتساب‌های حساس ویژگی، یک :ref:`رویداد ممیزی (auditing event) "
+"برای برخی انتساب‌های حساس ویژگی، یک :ref:`رویداد حسابرسی (auditing event) "
 "<auditing>` ``object.__setattr__`` را با آرگومان‌های ``obj``، ``name`` و "
 "``value`` پرتاب می‌کند."
 

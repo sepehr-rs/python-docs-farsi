@@ -2434,7 +2434,7 @@ msgid "alternate name for top tee"
 msgstr "نام جایگزین برای T بالایی (top tee)"
 
 msgid "bottom tee"
-msgstr "تی پایینی (bottom tee)"
+msgstr "tee پایین (bottom tee)"
 
 msgid "bullet"
 msgstr "بولت (bullet)"

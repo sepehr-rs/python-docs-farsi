@@ -1536,7 +1536,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.enable_load_extension`` with "
 "arguments ``connection``, ``enabled``."
 msgstr ""
-"یک :ref:`رویداد ممیزی <auditing>` ``sqlite3.enable_load_extension`` را با "
+"یک :ref:`رویداد حسابرسی <auditing>` ``sqlite3.enable_load_extension`` را با "
 "آرگومان‌های ``connection`` و ``enabled`` پرتاب می‌کند."
 
 msgid "Added the ``sqlite3.enable_load_extension`` auditing event."

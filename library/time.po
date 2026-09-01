@@ -637,7 +637,7 @@ msgstr ""
 "(waitable timer) استفاده می‌شود."
 
 msgid "Raises an auditing event."
-msgstr "یک رویداد ممیزی را پرتاب می‌کند."
+msgstr "یک رویداد حسابرسی را پرتاب می‌کند."
 
 msgid ""
 "Convert a tuple or :class:`struct_time` representing a time as returned "
@@ -656,7 +656,7 @@ msgid ""
 "0 is a legal argument for any position in the time tuple; if it is normally "
 "illegal the value is forced to a correct one."
 msgstr ""
-"۰ یک آرگومان مجاز برای هر جایگاهی از تاپل زمان است؛ اگر در حالت عادی غیرمجاز "
+"۰ یک آرگومان مجاز برای هر جایگاهی از تاپل زمانی است؛ اگر در حالت عادی غیرمجاز "
 "باشد، مقدار به‌اجبار به مقداری درست تغییر می‌یابد."
 
 msgid ""

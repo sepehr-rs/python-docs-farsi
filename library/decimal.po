@@ -1509,7 +1509,7 @@ msgstr ""
 "مضرب ``Decimal('1E-ndigits')`` است؛ در این حالت، ``round(number, ndigits)`` "
 "معادل ``self.quantize(Decimal('1E-ndigits'))`` است.  اگر *number* یک NaN ساکت "
 "(quiet NaN) باشد، ``Decimal('NaN')`` را برمی‌گرداند.  اگر *number* یک بی‌نهایت یا "
-"یک NaN علامت‌دهنده (signaling NaN) باشد، یا اگر طول ضریب پس از عملیات quantize "
+"یک NaN سیگنال‌دهنده (signaling NaN) باشد، یا اگر طول ضریب پس از عملیات quantize "
 "بیشتر از دقت زمینه‌ی فعلی باشد، :class:`InvalidOperation` را پرتاب می‌کند.  به "
 "عبارت دیگر، برای حالت‌های غیرمرزی:"
 

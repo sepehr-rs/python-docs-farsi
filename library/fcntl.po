@@ -340,7 +340,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
 "``fd``, ``request``, ``arg``."
 msgstr ""
-"یک :ref:`رویداد ممیزی <auditing>` ``fcntl.ioctl`` را با آرگومان‌های ``fd``، "
+"یک :ref:`رویداد حسابرسی <auditing>` ``fcntl.ioctl`` را با آرگومان‌های ``fd``، "
 "``request`` و ``arg`` پرتاب می‌کند."
 
 msgid ""

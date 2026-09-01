@@ -48,7 +48,7 @@ msgid ""
 "that support the buffer protocol)."
 msgstr ""
 "توابع ``a2b_*`` رشته‌های یونیکدی را می‌پذیرند که فقط شامل نویسه‌های ASCII "
-"باشند. سایر توابع فقط :term:`اشیاء بایت‌مانند <bytes-like object>` "
+"باشند. سایر توابع فقط :term:`اشیاء شبه‌بایت <bytes-like object>` "
 "(مانند :class:`bytes`، :class:`bytearray` و اشیاء دیگری که از پروتکل بافر "
 "پشتیبانی می‌کنند) را می‌پذیرند."
 

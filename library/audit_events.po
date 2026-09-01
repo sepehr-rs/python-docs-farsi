@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Audit events table"
-msgstr "جدول رویدادهای ممیزی"
+msgstr "جدول رویدادهای حسابرسی"
 
 msgid ""
 "This table contains all events raised by :func:`sys.audit` or "
@@ -60,7 +60,7 @@ msgstr ""
 "مربوط نمی‌شوند:"
 
 msgid "Audit event"
-msgstr "رویداد ممیزی"
+msgstr "رویداد حسابرسی"
 
 msgid "Arguments"
 msgstr "آرگومان‌ها"
@@ -124,4 +124,4 @@ msgid "The ``_posixsubprocess.fork_exec`` internal audit event."
 msgstr "رویداد حسابرسی داخلی ``_posixsubprocess.fork_exec``."
 
 msgid "audit events"
-msgstr "رویدادهای ممیزی"
+msgstr "رویدادهای حسابرسی"
