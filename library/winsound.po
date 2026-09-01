@@ -31,7 +31,7 @@ msgid ""
 "machinery provided by Windows platforms.  It includes functions and several "
 "constants."
 msgstr ""
-"ماژول :mod:`!winsound` دسترسی به سازوکار پایهٔ پخش صدا ارائه‌شده توسط "
+"ماژول :mod:`!winsound` دسترسی به سازوکار پایه‌ی پخش صدا ارائه‌شده توسط "
 "سکو‌های ویندوزی را فراهم می‌کند. این ماژول شامل توابع و چند ثابت است."
 
 msgid "Availability"

@@ -214,7 +214,7 @@ msgstr ""
 
 msgid "Mark the Future as *done* and set its result."
 msgstr ""
-"Future را به‌عنوان *انجام‌شده* علامت‌گذاری می‌کند و نتیجهٔ آن را تنظیم "
+"Future را به‌عنوان *انجام‌شده* علامت‌گذاری می‌کند و نتیجه‌ی آن را تنظیم "
 "می‌کند."
 
 msgid ""
@@ -275,7 +275,7 @@ msgid ""
 msgstr ""
 "یک آرگومان *context* اختیاری و فقط کلیدواژه‌ای به شما امکان می‌دهد یک "
 ":class:`contextvars.Context` سفارشی را مشخص کنید تا *callback* در آن اجرا "
-"شود. هنگامی که *context* ارائه نشود، از زمینهٔ کنونی استفاده می‌شود."
+"شود. هنگامی که *context* ارائه نشود، از زمینه‌ی کنونی استفاده می‌شود."
 
 msgid ""
 ":func:`functools.partial` can be used to pass parameters to the callback, "

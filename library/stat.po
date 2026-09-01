@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "ماژول :mod:`!stat` ثابت‌ها و توابعی را برای تفسیر نتایج :func:`os.stat`، "
 ":func:`os.fstat` و :func:`os.lstat` (در صورت وجود) تعریف می‌کند. برای جزئیات"
-" کامل دربارهٔ فراخوانی‌های :c:func:`stat`، :c:func:`!fstat` و "
+" کامل درباره‌ی فراخوانی‌های :c:func:`stat`، :c:func:`!fstat` و "
 ":c:func:`!lstat`، به مستندات سیستم خود مراجعه کنید."
 
 msgid "The stat module is backed by a C implementation."
@@ -201,7 +201,7 @@ msgid "Inode protection mode."
 msgstr "حالت محافظت اینود (inode)."
 
 msgid "Inode number."
-msgstr "شمارهٔ اینود (inode)."
+msgstr "شماره‌ی اینود (inode)."
 
 msgid "Device inode resides on."
 msgstr "دستگاهی که اینود (inode) روی آن قرار دارد."
@@ -265,7 +265,7 @@ msgid ""
 "Use of the functions above is more portable than use of the first set of "
 "flags:"
 msgstr ""
-"استفاده از توابع بالا نسبت به استفاده از مجموعهٔ نخست پرچم‌ها، قابل‌حمل‌تر "
+"استفاده از توابع بالا نسبت به استفاده از مجموعه‌ی نخست پرچم‌ها، قابل‌حمل‌تر "
 "است:"
 
 msgid "Socket."
@@ -345,25 +345,25 @@ msgid "Mask for file owner permissions."
 msgstr "ماسک دسترسی‌های مالک پرونده."
 
 msgid "Owner has read permission."
-msgstr "مالک دارای اجازهٔ خواندن است."
+msgstr "مالک دارای اجازه‌ی خواندن است."
 
 msgid "Owner has write permission."
-msgstr "مالک اجازهٔ نوشتن دارد."
+msgstr "مالک اجازه‌ی نوشتن دارد."
 
 msgid "Owner has execute permission."
-msgstr "مالک اجازهٔ اجرا دارد."
+msgstr "مالک اجازه‌ی اجرا دارد."
 
 msgid "Mask for group permissions."
 msgstr "ماسک دسترسی‌های گروه."
 
 msgid "Group has read permission."
-msgstr "گروه اجازهٔ خواندن دارد."
+msgstr "گروه اجازه‌ی خواندن دارد."
 
 msgid "Group has write permission."
-msgstr "گروه اجازهٔ نوشتن دارد."
+msgstr "گروه اجازه‌ی نوشتن دارد."
 
 msgid "Group has execute permission."
-msgstr "گروه اجازهٔ اجرا دارد."
+msgstr "گروه اجازه‌ی اجرا دارد."
 
 msgid "Mask for permissions for others (not in group)."
 msgstr "ماسک (mask) دسترسی‌های دیگران (خارج از گروه)."
@@ -375,7 +375,7 @@ msgid "Others have write permission."
 msgstr "دیگران دسترسی نوشتن دارند."
 
 msgid "Others have execute permission."
-msgstr "دیگران اجازهٔ اجرا دارند."
+msgstr "دیگران اجازه‌ی اجرا دارند."
 
 msgid ""
 "System V file locking enforcement.  This flag is shared with "
@@ -438,16 +438,16 @@ msgstr ""
 "این فایل نباید در یک رابط کاربری گرافیکی (GUI) نمایش داده شود (macOS 10.5+)."
 
 msgid "All super-user changeable flags"
-msgstr "همهٔ پرچم‌های قابل‌تغییر توسط ابرکاربر"
+msgstr "همه‌ی پرچم‌های قابل‌تغییر توسط ابرکاربر"
 
 msgid "All super-user supported flags"
-msgstr "همهٔ پرچم‌های پشتیبانی‌شدهٔ ابرکاربر"
+msgstr "همه‌ی پرچم‌های پشتیبانی‌شده‌ی ابرکاربر"
 
 msgid "Availability"
 msgstr "دسترس‌پذیری"
 
 msgid "All super-user read-only synthetic flags"
-msgstr "همهٔ پرچم‌های مصنوعی فقط‌خواندنی برای ابرکاربر"
+msgstr "همه‌ی پرچم‌های مصنوعی فقط‌خواندنی برای ابرکاربر"
 
 msgid "The file may be archived."
 msgstr "ممکن است فایل بایگانی‌شده باشد."

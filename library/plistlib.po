@@ -89,11 +89,11 @@ msgid ""
 "`PList manual page "
 "<https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/>`_"
 msgstr ""
-"`صفحهٔ راهنمای PList "
+"`صفحه‌ی راهنمای PList "
 "<https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/>`_"
 
 msgid "Apple's documentation of the file format."
-msgstr "مستندات اپل دربارهٔ قالب فایل."
+msgstr "مستندات اپل درباره‌ی قالب فایل."
 
 msgid "This module defines the following functions:"
 msgstr "این ماژول توابع زیر را تعریف می‌کند:"

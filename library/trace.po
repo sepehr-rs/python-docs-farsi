@@ -76,7 +76,7 @@ msgid "Display usage and exit."
 msgstr "نمایش کاربرد و خروج."
 
 msgid "Display the version of the module and exit."
-msgstr "نمایش نسخهٔ ماژول و خروج."
+msgstr "نمایش نسخه‌ی ماژول و خروج."
 
 msgid "Added ``--module`` option that allows running an executable module."
 msgstr ""
@@ -192,7 +192,7 @@ msgid ""
 "Ignore all modules and packages in the named directory and subdirectories. "
 "The argument can be a list of directories separated by :data:`os.pathsep`."
 msgstr ""
-"تمام ماژول‌ها و بسته‌ها را در پوشهٔ مشخص‌شده و زیرپوشه‌ها نادیده بگیرید. "
+"تمام ماژول‌ها و بسته‌ها را در پوشه‌ی مشخص‌شده و زیرپوشه‌ها نادیده بگیرید. "
 "آرگومان می‌تواند فهرستی از پوشه‌ها باشد که با :data:`os.pathsep` جدا "
 "شده‌اند."
 

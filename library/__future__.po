@@ -128,7 +128,7 @@ msgid "Never [1]_"
 msgstr "هرگز [1]_"
 
 msgid ":pep:`563`: *Postponed evaluation of annotations*, :pep:`649`: *Deferred evaluation of annotations using descriptors*"
-msgstr ":pep:`563`: *ارزیابی به‌تعویق‌افتادهٔ annotationها*، :pep:`649`: *ارزیابی به‌تعویق‌افتادهٔ annotationها با استفاده از توصیف‌گرها*"
+msgstr ":pep:`563`: *ارزیابی به‌تعویق‌افتاده‌ی annotationها*، :pep:`649`: *ارزیابی به‌تعویق‌افتاده‌ی annotationها با استفاده از توصیف‌گرها*"
 
 msgid "Each statement in :file:`__future__.py` is of the form::"
 msgstr "هر دستور در :file:`__future__.py` به شکل زیر است::"

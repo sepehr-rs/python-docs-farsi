@@ -374,7 +374,7 @@ msgid ""
 "    You should upgrade, and read the"
 msgstr ""
 "این سند مربوط به نسخه‌ای قدیمی از پایتون است که دیگر پشتیبانی نمی‌شود.\n"
-"    شما باید نسخهٔ خود را ارتقا دهید و مطالب مربوط به"
+"    شما باید نسخه‌ی خود را ارتقا دهید و مطالب مربوط به"
 
 msgid "Python documentation for the current stable release"
 msgstr "مستندات پایتون برای نسخه‌ی پایدار فعلی"

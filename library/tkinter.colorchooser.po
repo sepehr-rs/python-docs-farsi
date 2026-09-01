@@ -34,7 +34,7 @@ msgid ""
 ":class:`~tkinter.commondialog.Dialog` class."
 msgstr ""
 "ماژول :mod:`!tkinter.colorchooser` کلاس :class:`Chooser` را به‌عنوان رابطی "
-"برای پنجره محاورهٔ انتخاب رنگ بومی فراهم می‌کند. ``Chooser`` یک پنجره "
+"برای پنجره محاوره‌ی انتخاب رنگ بومی فراهم می‌کند. ``Chooser`` یک پنجره "
 "محاوره‌ای مودال برای انتخاب رنگ پیاده‌سازی می‌کند. کلاس ``Chooser`` از کلاس "
 ":class:`~tkinter.commondialog.Dialog` ارث می‌برد."
 

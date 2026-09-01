@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!spwd` --- The shadow password database"
-msgstr ":mod:`!spwd` --- پایگاه دادهٔ گذرواژهٔ سایه"
+msgstr ":mod:`!spwd` --- پایگاه داده‌ی گذرواژه‌ی سایه"
 
 msgid ""
 "This module is no longer part of the Python standard library. It was "
@@ -37,7 +37,7 @@ msgid ""
 "A possible replacement is the third-party library :pypi:`python-pam`. This "
 "library is not supported or maintained by the Python core team."
 msgstr ""
-"یک جایگزین ممکن، کتابخانهٔ شخص ثالث :pypi:`python-pam` است. این کتابخانه "
+"یک جایگزین ممکن، کتابخانه‌ی شخص ثالث :pypi:`python-pam` است. این کتابخانه "
 "توسط تیم اصلی پایتون پشتیبانی یا نگهداری نمی‌شود."
 
 msgid ""

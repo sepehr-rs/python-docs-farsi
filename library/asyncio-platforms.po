@@ -79,7 +79,7 @@ msgid ""
 "Unix."
 msgstr ""
 "از :meth:`loop.create_unix_connection` و :meth:`loop.create_unix_server` "
-"پشتیبانی نمی‌شود. خانوادهٔ سوکت :const:`socket.AF_UNIX` مخصوص یونیکس است."
+"پشتیبانی نمی‌شود. خانواده‌ی سوکت :const:`socket.AF_UNIX` مخصوص یونیکس است."
 
 msgid ""
 ":meth:`loop.add_signal_handler` and :meth:`loop.remove_signal_handler` are "

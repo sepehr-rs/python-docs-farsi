@@ -50,7 +50,7 @@ msgstr ""
 msgid ""
 "Return ``True`` if *s* is a Python :ref:`soft keyword <soft-keywords>`."
 msgstr ""
-"اگر *s* یک :ref:`کلیدواژهٔ نرم <soft-keywords>` پایتون باشد، ``True`` را "
+"اگر *s* یک :ref:`کلیدواژه‌ی نرم <soft-keywords>` پایتون باشد، ``True`` را "
 "برمی‌گرداند."
 
 msgid ""

@@ -47,7 +47,7 @@ msgid ""
 " all them from scratch is a tedious job."
 msgstr ""
 ":class:`asyncio.AbstractEventLoop` تعداد بسیار زیادی متد را اعلام می‌کند. "
-"پیاده‌سازی همهٔ آن‌ها از ابتدا کار خسته‌کننده‌ای است."
+"پیاده‌سازی همه‌ی آن‌ها از ابتدا کار خسته‌کننده‌ای است."
 
 msgid ""
 "A loop can get many common methods implementation for free by inheriting "
@@ -143,7 +143,7 @@ msgstr "ثبت یک *task* را از ساختارهای داخلی *asyncio* ح�
 
 msgid "The function should be called when a task is about to finish."
 msgstr ""
-"این تابع باید هنگامی فراخوانی شود که یک وظیفه در آستانهٔ پایان قرار دارد."
+"این تابع باید هنگامی فراخوانی شود که یک وظیفه در آستانه‌ی پایان قرار دارد."
 
 msgid "Switch the current task to the *task* argument."
 msgstr "وظیفه جاری را به آرگومان *task* تغییر دهید."
@@ -156,7 +156,7 @@ msgstr ""
 "(:meth:`coroutine.send` یا :meth:`coroutine.throw`)."
 
 msgid "Switch the current task back from *task* to ``None``."
-msgstr "وظیفهٔ جاری را از *task* به ``None`` بازمی‌گرداند."
+msgstr "وظیفه‌ی جاری را از *task* به ``None`` بازمی‌گرداند."
 
 msgid ""
 "Call the function just after :meth:`coroutine.send` or "

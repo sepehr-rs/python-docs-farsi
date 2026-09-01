@@ -42,7 +42,7 @@ msgstr ""
 ":mod:`urllib.error` شامل استثناهای پرتاب‌شده توسط :mod:`urllib.request`"
 
 msgid ":mod:`urllib.parse` for parsing URLs"
-msgstr ":mod:`urllib.parse` برای تجزیهٔ URLها"
+msgstr ":mod:`urllib.parse` برای تجزیه‌ی URLها"
 
 msgid ":mod:`urllib.robotparser` for parsing ``robots.txt`` files"
-msgstr ":mod:`urllib.robotparser` برای تجزیهٔ فایل‌های ``robots.txt``"
+msgstr ":mod:`urllib.robotparser` برای تجزیه‌ی فایل‌های ``robots.txt``"

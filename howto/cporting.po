@@ -35,7 +35,7 @@ msgid ""
 "reader through porting an extension module."
 msgstr ""
 "فصل `Migrating C extensions`_ از کتاب *Supporting Python 3: An in-depth "
-"guide*، کتابی دربارهٔ مهاجرت از Python 2 به Python 3 به‌طور کلی، خواننده را "
+"guide*، کتابی درباره‌ی مهاجرت از Python 2 به Python 3 به‌طور کلی، خواننده را "
 "در انتقال یک ماژول توسعه راهنمایی می‌کند."
 
 msgid ""

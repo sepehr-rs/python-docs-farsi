@@ -28,7 +28,7 @@ msgid "Low-level API Index"
 msgstr "اندیس API سطح پایین"
 
 msgid "This page lists all low-level asyncio APIs."
-msgstr "این صفحه همهٔ API‌های سطح پایین asyncio را فهرست می‌کند."
+msgstr "این صفحه همه‌ی API‌های سطح پایین asyncio را فهرست می‌کند."
 
 msgid "Obtaining the Event Loop"
 msgstr "به دست آوردن حلقه رویداد"
@@ -502,7 +502,7 @@ msgid ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
 msgstr ":meth:`transport.get_extra_info() <BaseTransport.get_extra_info>`"
 
 msgid "Request for information about the transport."
-msgstr "درخواست اطلاعات دربارهٔ انتقال ."
+msgstr "درخواست اطلاعات درباره‌ی انتقال ."
 
 msgid ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
 msgstr ":meth:`transport.set_protocol() <BaseTransport.set_protocol>`"
@@ -584,7 +584,7 @@ msgid ":meth:`transport.write_eof() <WriteTransport.write_eof>`"
 msgstr ":meth:`transport.write_eof() <WriteTransport.write_eof>`"
 
 msgid "Close and send EOF after flushing buffered data."
-msgstr "بستن و ارسال EOF پس از تخلیهٔ داده‌های بافرشده."
+msgstr "بستن و ارسال EOF پس از تخلیه‌ی داده‌های بافرشده."
 
 msgid ":meth:`transport.abort() <WriteTransport.abort>`"
 msgstr ":meth:`transport.abort() <WriteTransport.abort>`"
@@ -656,7 +656,7 @@ msgid ":meth:`transport.get_pid() <SubprocessTransport.get_pid>`"
 msgstr ":meth:`transport.get_pid() <SubprocessTransport.get_pid>`"
 
 msgid "Return the subprocess process id."
-msgstr "شناسهٔ فرایند زیرفرایند را بازمی‌گرداند."
+msgstr "شناسه‌ی فرایند زیرفرایند را بازمی‌گرداند."
 
 msgid ""
 ":meth:`transport.get_pipe_transport() "

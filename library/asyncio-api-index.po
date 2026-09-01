@@ -29,7 +29,7 @@ msgstr "اندیس API سطح بالا"
 
 msgid "This page lists all high-level async/await enabled asyncio APIs."
 msgstr ""
-"این صفحه همهٔ API‌های سطح بالای asyncio را که از ناهمگام/await پشتیبانی "
+"این صفحه همه‌ی API‌های سطح بالای asyncio را که از ناهمگام/await پشتیبانی "
 "می‌کنند، فهرست می‌کند."
 
 msgid "Tasks"
@@ -67,8 +67,8 @@ msgid ""
 "A context manager that holds a group of tasks. Provides a convenient and "
 "reliable way to wait for all tasks in the group to finish."
 msgstr ""
-"یک مدیریت‌کنندهٔ زمینه که گروهی از وظایف را نگه می‌دارد. راهی آسان و مطمئن "
-"برای منتظر ماندن تا پایان همهٔ وظایف گروه فراهم می‌کند."
+"یک مدیریت‌کننده‌ی زمینه که گروهی از وظایف را نگه می‌دارد. راهی آسان و مطمئن "
+"برای منتظر ماندن تا پایان همه‌ی وظایف گروه فراهم می‌کند."
 
 msgid ":func:`create_task`"
 msgstr ":func:`create_task`"
@@ -208,7 +208,7 @@ msgstr ""
 "<asyncio_example_queue_dist>`."
 
 msgid "See also the :ref:`Queues documentation page <asyncio-queues>`."
-msgstr "همچنین :ref:`صفحهٔ مستندات صف‌ها <asyncio-queues>` را ببینید."
+msgstr "همچنین :ref:`صفحه‌ی مستندات صف‌ها <asyncio-queues>` را ببینید."
 
 msgid "Subprocesses"
 msgstr "زیرفرایند‌ها"

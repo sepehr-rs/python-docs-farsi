@@ -47,7 +47,7 @@ msgid ""
 " are cancelled.  In almost all situations the exception must be re-raised."
 msgstr ""
 "این استثنا می‌تواند گرفته شود تا هنگامی که Taskهای asyncio لغو می‌شوند، "
-"عملیات سفارشی انجام شود. تقریباً در همهٔ شرایط، این استثنا باید دوباره پرتاب"
+"عملیات سفارشی انجام شود. تقریباً در همه‌ی شرایط، این استثنا باید دوباره پرتاب"
 " شود."
 
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 "رشته‌ای از :class:`bytes` که پیش از رسیدن به پایان جریان خوانده شده است."
 
 msgid "Reached the buffer size limit while looking for a separator."
-msgstr "در حین جست‌وجوی جداکننده، به محدودیت اندازهٔ بافر رسیده است."
+msgstr "در حین جست‌وجوی جداکننده، به محدودیت اندازه‌ی بافر رسیده است."
 
 msgid "Raised by the :ref:`asyncio stream APIs <asyncio-streams>`."
 msgstr "توسط :ref:`API‌های جریان asyncio <asyncio-streams>` پرتاب می‌شود."

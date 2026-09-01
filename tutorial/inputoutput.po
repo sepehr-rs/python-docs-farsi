@@ -195,7 +195,7 @@ msgid "The String format() Method"
 msgstr "متد قالب‌بندی رشته"
 
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
-msgstr "استفادهٔ پایه از متد :meth:`str.format` به این شکل است::"
+msgstr "استفاده‌ی پایه از متد :meth:`str.format` به این شکل است::"
 
 msgid ""
 ">>> print('We are the {} who say \"{}!\"'.format('knights', 'Ni'))\n"

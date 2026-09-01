@@ -30,10 +30,10 @@ msgid ""
 "reasons, and will not be removed without a deprecation cycle. The use of "
 "modules in :mod:`!compression` is encouraged where practical."
 msgstr ""
-"بستهٔ :mod:`!compression` شامل ماژول‌های فشرده‌سازی کانونیکال است که رابط‌هایی "
+"بسته‌ی :mod:`!compression` شامل ماژول‌های فشرده‌سازی کانونیکال است که رابط‌هایی "
 "برای چندین الگوریتم فشرده‌سازی مختلف دارند. برخی از این ماژول‌ها از نظر "
 "تاریخی به‌صورت ماژول‌های جداگانه در دسترس بوده‌اند؛ آن‌ها به دلایل سازگاری "
-"همچنان با نام‌های اصلی خود در دسترس خواهند بود و بدون یک چرخهٔ از رده خارج "
+"همچنان با نام‌های اصلی خود در دسترس خواهند بود و بدون یک چرخه‌ی از رده خارج "
 "شدن حذف نخواهند شد. استفاده از ماژول‌های موجود در :mod:`!compression` در "
 "صورت امکان توصیه می‌شود."
 
@@ -51,4 +51,4 @@ msgstr ":mod:`!compression.zlib` -- :mod:`zlib` را بازصادرات می‌�
 
 msgid ""
 ":mod:`compression.zstd` -- Wrapper for the Zstandard compression library"
-msgstr ":mod:`compression.zstd` -- پوششی برای کتابخانهٔ فشرده‌سازی Zstandard"
+msgstr ":mod:`compression.zstd` -- پوششی برای کتابخانه‌ی فشرده‌سازی Zstandard"

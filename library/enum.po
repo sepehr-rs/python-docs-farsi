@@ -544,10 +544,10 @@ msgid "A *staticmethod* that is used to determine the next value returned by :cl
 msgstr "یک *staticmethod* که برای تعیین مقدار بعدی برگردانده‌شده توسط :class:`auto` استفاده می‌شود."
 
 msgid "For standard :class:`Enum` classes the next value chosen is the highest value seen incremented by one."
-msgstr "برای کلاس‌های استاندارد :class:`Enum`، مقدار بعدی انتخاب‌شده برابر با بالاترین مقدار مشاهده‌شده به‌اضافهٔ یک است."
+msgstr "برای کلاس‌های استاندارد :class:`Enum`، مقدار بعدی انتخاب‌شده برابر با بالاترین مقدار مشاهده‌شده به‌اضافه‌ی یک است."
 
 msgid "For :class:`Flag` classes the next value chosen will be the next highest power-of-two."
-msgstr "برای کلاس‌های :class:`Flag`، مقدار انتخاب‌شدهٔ بعدی، بالاترین توان بعدی عدد ۲ خواهد بود."
+msgstr "برای کلاس‌های :class:`Flag`، مقدار انتخاب‌شده‌ی بعدی، بالاترین توان بعدی عدد ۲ خواهد بود."
 
 msgid "This method may be overridden, e.g.::"
 msgstr "می‌توان این متد را بازنویسی کرد، برای مثال::"
@@ -775,7 +775,7 @@ msgid ""
 "*StrEnum* is the same as :class:`Enum`, but its members are also strings and can be used in most of the same places that a string can be used. The result of any string operation "
 "performed on or with a *StrEnum* member is not part of the enumeration."
 msgstr ""
-"*StrEnum* همانند :class:`Enum` است، اما اعضای آن نیز رشته هستند و می‌توان از آن‌ها در بیشتر همان جاهایی استفاده کرد که از یک رشته استفاده می‌شود. نتیجهٔ هر عملیات رشته‌ای که بر روی یک "
+"*StrEnum* همانند :class:`Enum` است، اما اعضای آن نیز رشته هستند و می‌توان از آن‌ها در بیشتر همان جاهایی استفاده کرد که از یک رشته استفاده می‌شود. نتیجه‌ی هر عملیات رشته‌ای که بر روی یک "
 "عضو *StrEnum* یا با آن انجام شود، بخشی از شمارش نیست."
 
 msgid ""
@@ -792,7 +792,7 @@ msgid ""
 ":meth:`~object.__str__` is :meth:`!str.__str__` to better support the *replacement of existing constants* use-case.  :meth:`~object.__format__` is likewise :meth:`!str.__format__` "
 "for that same reason."
 msgstr ""
-":meth:`~object.__str__` همان :meth:`!str.__str__` است تا بهتر از مورد استفادهٔ *جایگزینی ثابت‌های موجود* پشتیبانی کند.  :meth:`~object.__format__` نیز به همین دلیل همان :meth:`!"
+":meth:`~object.__str__` همان :meth:`!str.__str__` است تا بهتر از مورد استفاده‌ی *جایگزینی ثابت‌های موجود* پشتیبانی کند.  :meth:`~object.__format__` نیز به همین دلیل همان :meth:`!"
 "str.__format__` است."
 
 msgid ""
@@ -1003,7 +1003,7 @@ msgstr ""
 "مطابقت دارد."
 
 msgid ":class:`!ReprEnum` uses the :meth:`repr() <Enum.__repr__>` of :class:`Enum`, but the :class:`str() <str>` of the mixed-in data type:"
-msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>` ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع دادهٔ افزوده‌شده (mixed-in) استفاده می‌کند:"
+msgstr ":class:`!ReprEnum` از :meth:`repr() <Enum.__repr__>` ِ :class:`Enum` استفاده می‌کند، اما از :class:`str() <str>`\\ ِ نوع داده‌ی افزوده‌شده (mixed-in) استفاده می‌کند:"
 
 msgid ":meth:`!int.__str__` for :class:`IntEnum` and :class:`IntFlag`"
 msgstr ":meth:`!int.__str__` برای :class:`IntEnum` و :class:`IntFlag`"
@@ -1014,7 +1014,7 @@ msgstr ":meth:`!str.__str__` برای :class:`StrEnum`"
 msgid ""
 "Inherit from :class:`!ReprEnum` to keep the :class:`str() <str>` / :func:`format` of the mixed-in data type instead of using the :class:`Enum`-default :meth:`str() <Enum.__str__>`."
 msgstr ""
-"برای حفظ :class:`str() <str>` / :func:`format` نوع دادهٔ افزوده‌شده (mixed-in) به‌جای استفاده از :meth:`str() <Enum.__str__>` پیش‌فرض :class:`Enum`، از :class:`!ReprEnum` ارث ببرید."
+"برای حفظ :class:`str() <str>` / :func:`format` نوع داده‌ی افزوده‌شده (mixed-in) به‌جای استفاده از :meth:`str() <Enum.__str__>` پیش‌فرض :class:`Enum`، از :class:`!ReprEnum` ارث ببرید."
 
 msgid "*EnumCheck* contains the options used by the :func:`verify` decorator to ensure various constraints; failed constraints result in a :exc:`ValueError`."
 msgstr ""
@@ -1241,7 +1241,7 @@ msgid ":meth:`~Enum._add_value_alias_` -- adds a new value as an alias to an exi
 msgstr ":meth:`~Enum._add_value_alias_` -- یک مقدار جدید را به‌عنوان نام مستعار به یک عضو موجود اضافه می‌کند."
 
 msgid "While ``_sunder_`` names are generally reserved for the further development of the :class:`Enum` class and can not be used, some are explicitly allowed:"
-msgstr "اگرچه نام‌های ``_sunder_`` به‌طور کلی برای توسعهٔ آتی کلاس :class:`Enum` رزرو شده‌اند و نمی‌توان از آن‌ها استفاده کرد، برخی به‌طور صریح مجاز هستند:"
+msgstr "اگرچه نام‌های ``_sunder_`` به‌طور کلی برای توسعه‌ی آتی کلاس :class:`Enum` رزرو شده‌اند و نمی‌توان از آن‌ها استفاده کرد، برخی به‌طور صریح مجاز هستند:"
 
 msgid "``_repr_*`` (e.g. ``_repr_html_``), as used in `IPython's rich display`_"
 msgstr "``_repr_*`` (برای مثال ``_repr_html_``)، همان‌طور که در `IPython's rich display`_ استفاده می‌شود"

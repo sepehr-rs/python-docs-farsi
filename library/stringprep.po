@@ -150,7 +150,7 @@ msgstr ""
 
 msgid "Determine whether *code* is in tableC.3  (Private use)."
 msgstr ""
-"تعیین کنید که آیا *code* در tableC.3 (استفادهٔ خصوصی) قرار دارد یا خیر."
+"تعیین کنید که آیا *code* در tableC.3 (استفاده‌ی خصوصی) قرار دارد یا خیر."
 
 msgid "Determine whether *code* is in tableC.4  (Non-character code points)."
 msgstr ""

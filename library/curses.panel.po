@@ -132,7 +132,7 @@ msgid ""
 "Display the panel (which might have been hidden), placing it on top of the "
 "panel stack."
 msgstr ""
-"پنل را نمایش دهید (که ممکن است پنهان شده باشد) و آن را در بالای پشتهٔ پنل "
+"پنل را نمایش دهید (که ممکن است پنهان شده باشد) و آن را در بالای پشته‌ی پنل "
 "قرار دهید."
 
 msgid "Push panel to the top of the stack."

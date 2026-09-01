@@ -101,7 +101,7 @@ msgid "Exec format error"
 msgstr "خطای قالب اجرایی"
 
 msgid "Bad file number"
-msgstr "شمارهٔ فایل نامعتبر"
+msgstr "شماره‌ی فایل نامعتبر"
 
 msgid ""
 "No child processes. This error is mapped to the "
@@ -196,7 +196,7 @@ msgid "Math argument out of domain of func"
 msgstr "آرگومان ریاضی خارج از دامنه‌ی تابع"
 
 msgid "Math result not representable"
-msgstr "نتیجهٔ ریاضی قابل بازنمایی نیست"
+msgstr "نتیجه‌ی ریاضی قابل بازنمایی نیست"
 
 msgid "Resource deadlock would occur"
 msgstr "بن‌بست منابع رخ خواهد داد"
@@ -242,7 +242,7 @@ msgid "Level 3 reset"
 msgstr "بازنشانی سطح ۳"
 
 msgid "Link number out of range"
-msgstr "شمارهٔ پیوند خارج از محدوده"
+msgstr "شماره‌ی پیوند خارج از محدوده"
 
 msgid "Protocol driver not attached"
 msgstr "راه‌انداز پروتکل متصل نیست"
@@ -323,7 +323,7 @@ msgid "Not a data message"
 msgstr "پیام داده نیست"
 
 msgid "Value too large for defined data type"
-msgstr "مقدار برای نوع دادهٔ تعریف‌شده بیش از حد بزرگ است"
+msgstr "مقدار برای نوع داده‌ی تعریف‌شده بیش از حد بزرگ است"
 
 msgid "Name not unique on network"
 msgstr "نام در شبکه یکتا نیست"
@@ -347,7 +347,7 @@ msgid "Attempting to link in too many shared libraries"
 msgstr "تلاش برای پیوند دادن تعداد بیش از حدی از کتابخانه‌های مشترک"
 
 msgid "Cannot exec a shared library directly"
-msgstr "نمی‌توان یک کتابخانهٔ اشتراکی را مستقیماً اجرا کرد"
+msgstr "نمی‌توان یک کتابخانه‌ی اشتراکی را مستقیماً اجرا کرد"
 
 msgid "Illegal byte sequence"
 msgstr "دنباله بایت غیرمجاز"
@@ -389,7 +389,7 @@ msgid "Operation not supported"
 msgstr "عملیات پشتیبانی نمی‌شود"
 
 msgid "Protocol family not supported"
-msgstr "خانوادهٔ پروتکل پشتیبانی نمی‌شود"
+msgstr "خانواده‌ی پروتکل پشتیبانی نمی‌شود"
 
 msgid "Address family not supported by protocol"
 msgstr "خانواده آدرس توسط پروتکل پشتیبانی نمی‌شود"
@@ -430,13 +430,13 @@ msgid "Transport endpoint is already connected"
 msgstr "پایانه‌ی انتقال از قبل متصل است"
 
 msgid "Transport endpoint is not connected"
-msgstr "پایانهٔ انتقال متصل نیست"
+msgstr "پایانه‌ی انتقال متصل نیست"
 
 msgid ""
 "Cannot send after transport endpoint shutdown. This error is mapped to the "
 "exception :exc:`BrokenPipeError`."
 msgstr ""
-"ارسال پس از خاموش شدن پایانهٔ انتقال ممکن نیست. این خطا به "
+"ارسال پس از خاموش شدن پایانه‌ی انتقال ممکن نیست. این خطا به "
 "استثنای :exc:`BrokenPipeError` نگاشت داده شده است."
 
 msgid "Too many references: cannot splice"
@@ -485,7 +485,7 @@ msgid "Structure needs cleaning"
 msgstr "ساختار نیاز به پاک‌سازی دارد"
 
 msgid "Not a XENIX named type file"
-msgstr "یک فایل از نوع نام‌گذاری‌شدهٔ XENIX نیست"
+msgstr "یک فایل از نوع نام‌گذاری‌شده‌ی XENIX نیست"
 
 msgid "No XENIX semaphores available"
 msgstr "هیچ سمافور XENIX در دسترس نیست"
@@ -560,13 +560,13 @@ msgid "Too many processes"
 msgstr "فرایندهای بیش‌ازحد"
 
 msgid "Bad procedure for program"
-msgstr "رویهٔ بد برای برنامه"
+msgstr "رویه‌ی بد برای برنامه"
 
 msgid "Program version wrong"
 msgstr "نسخه برنامه نادرست است"
 
 msgid "RPC prog. not avail"
-msgstr "برنامهٔ RPC در دسترس نیست"
+msgstr "برنامه‌ی RPC در دسترس نیست"
 
 msgid "Device power is off"
 msgstr "برق دستگاه خاموش است"

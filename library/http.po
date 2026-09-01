@@ -670,7 +670,7 @@ msgid "``NOT_EXTENDED``"
 msgstr "``NOT_EXTENDED``"
 
 msgid "An HTTP Extension Framework :rfc:`2774`, Section 7 (Experimental)"
-msgstr "یک چارچوب توسعهٔ HTTP :rfc:`2774`، بخش ۷ (آزمایشی)"
+msgstr "یک چارچوب توسعه‌ی HTTP :rfc:`2774`، بخش ۷ (آزمایشی)"
 
 msgid "``511``"
 msgstr "``511``"

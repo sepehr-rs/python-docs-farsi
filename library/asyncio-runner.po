@@ -141,7 +141,7 @@ msgstr ""
 "آن پس، برای پیکربندی حلقه رویداد به یک *loop_factory* صریح نیاز است."
 
 msgid "Runner context manager"
-msgstr "مدیر زمینهٔ Runner"
+msgstr "مدیر زمینه‌ی Runner"
 
 msgid ""
 "A context manager that simplifies *multiple* async function calls in the "
@@ -208,7 +208,7 @@ msgstr ""
 " اگر context برابر ``None`` باشد، از زمینه پیش‌فرض اجراکننده استفاده می‌شود."
 
 msgid "Returns the awaitable's result or raises an exception."
-msgstr "نتیجهٔ awaitable را برمی‌گرداند یا یک استثنا را پرتاب می‌کند."
+msgstr "نتیجه‌ی awaitable را برمی‌گرداند یا یک استثنا را پرتاب می‌کند."
 
 msgid "Close the runner."
 msgstr "اجراکننده را ببندید."
@@ -221,7 +221,7 @@ msgstr ""
 "رویداد و آزادسازی :class:`contextvars.Context` تعبیه‌شده."
 
 msgid "Return the event loop associated with the runner instance."
-msgstr "حلقهٔ رویداد مرتبط با نمونهٔ اجراکننده (runner) را بازمی‌گرداند."
+msgstr "حلقه‌ی رویداد مرتبط با نمونه‌ی اجراکننده (runner) را بازمی‌گرداند."
 
 msgid ""
 ":class:`Runner` uses the lazy initialization strategy, its constructor "
@@ -271,7 +271,7 @@ msgid ""
 "The :class:`~asyncio.Runner` creates the main task for the passed coroutine "
 "for its execution."
 msgstr ""
-":class:`~asyncio.Runner` برای اجرای هم‌روالِ داده‌شده، وظیفهٔ اصلیرا"
+":class:`~asyncio.Runner` برای اجرای هم‌روالِ داده‌شده، وظیفه‌ی اصلیرا"
 " ایجاد می‌کند."
 
 msgid ""

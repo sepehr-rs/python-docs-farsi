@@ -54,7 +54,7 @@ msgid "``?``"
 msgstr "``?``"
 
 msgid "matches any single character"
-msgstr "با هر نویسهٔ منفرد تطابق دارد"
+msgstr "با هر نویسه‌ی منفرد تطابق دارد"
 
 msgid "``[seq]``"
 msgstr "``[seq]``"
@@ -73,7 +73,7 @@ msgid ""
 "``'[?]'`` matches the character ``'?'``."
 msgstr ""
 "برای تطبیق لفظی، فرا‌نویسه‌ها را در براکت قرار دهید. برای مثال، ``'[?]'`` با"
-" نویسهٔ ``'?'`` مطابقت دارد."
+" نویسه‌ی ``'?'`` مطابقت دارد."
 
 msgid ""
 "Note that the filename separator (``'/'`` on Unix) is *not* special to this "
@@ -186,7 +186,7 @@ msgid "Module :mod:`glob`"
 msgstr "ماژول :mod:`glob`"
 
 msgid "Unix shell-style path expansion."
-msgstr "بسط مسیر به سبک پوستهٔ یونیکس."
+msgstr "بسط مسیر به سبک پوسته‌ی یونیکس."
 
 msgid "filenames"
 msgstr "نام فایل‌ها"

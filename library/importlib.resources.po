@@ -110,7 +110,7 @@ msgid ""
 "<types.ModuleType>` or a module name as a string. Defined as ``Union[str, "
 "ModuleType]``."
 msgstr ""
-"نشان‌دهندهٔ یک لنگر برای منابع است، خواه یک :class:`شیء ماژول "
+"نشان‌دهنده‌ی یک لنگر برای منابع است، خواه یک :class:`شیء ماژول "
 "<types.ModuleType>` باشد خواه نام یک ماژول به‌صورت یک رشته. به‌صورت "
 "``Union[str, ModuleType]`` تعریف شده است."
 
@@ -188,7 +188,7 @@ msgstr ""
 " این ابزارها امکان انجام عملیات رایج را در یک فراخوانی تابع فراهم می‌کنند."
 
 msgid "For all the following functions:"
-msgstr "برای همهٔ توابع زیر:"
+msgstr "برای همه‌ی توابع زیر:"
 
 msgid ""
 "*anchor* is an :class:`~importlib.resources.Anchor`, as in "

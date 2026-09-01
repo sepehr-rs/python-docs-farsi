@@ -44,7 +44,7 @@ msgid "This function only initializes the object's memory corresponding to the i
 msgstr "این تابع فقط حافظه‌ی شیء را که مربوط به ساختار ابتدایی :c:type:`PyObject` است، مقداردهی اولیه می‌کند. بقیه‌ی حافظه را صفر نمی‌کند."
 
 msgid "This does everything :c:func:`PyObject_Init` does, and also initializes the length information for a variable-size object."
-msgstr "این تابع همهٔ کارهایی را انجام می‌دهد که :c:func:`PyObject_Init` انجام می‌دهد، و همچنین اطلاعات مربوط به طول را برای یک شیء با اندازهٔ متغیر مقداردهی می‌کند."
+msgstr "این تابع همه‌ی کارهایی را انجام می‌دهد که :c:func:`PyObject_Init` انجام می‌دهد، و همچنین اطلاعات مربوط به طول را برای یک شیء با اندازه‌ی متغیر مقداردهی می‌کند."
 
 msgid "This function only initializes some of the object's memory.  It does not zero the rest."
 msgstr "این تابع فقط بخشی از حافظه‌ی شیء را مقداردهی اولیه می‌کند. بقیه‌ی حافظه را صفر نمی‌کند."

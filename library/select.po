@@ -695,7 +695,7 @@ msgid "``True`` if the kqueue object is closed."
 msgstr "اگر شیء kqueue بسته باشد، ``True`` است."
 
 msgid "Create a kqueue object from a given file descriptor."
-msgstr "یک شیء kqueue از یک توصیف‌گر پروندهٔ داده‌شده ایجاد کنید."
+msgstr "یک شیء kqueue از یک توصیف‌گر پرونده‌ی داده‌شده ایجاد کنید."
 
 msgid "Low level interface to kevent"
 msgstr "رابط سطح پایین برای kevent"

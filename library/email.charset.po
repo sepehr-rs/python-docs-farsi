@@ -112,7 +112,7 @@ msgid ""
 "*official* email names (e.g. ``latin_1`` is converted to ``iso-8859-1``).  "
 "Defaults to 7-bit ``us-ascii``."
 msgstr ""
-"مجموعه نویسهٔ اولیهٔ مشخص‌شده. نام‌های مستعار رایج به نام‌های ایمیلی *رسمی* "
+"مجموعه نویسه‌ی اولیه‌ی مشخص‌شده. نام‌های مستعار رایج به نام‌های ایمیلی *رسمی* "
 "خود تبدیل می‌شوند (برای مثال ``latin_1`` به ``iso-8859-1`` تبدیل می‌شود). "
 "مقدار پیش‌فرض آن ``us-ascii`` ۷ بیتی است."
 
@@ -202,7 +202,7 @@ msgstr ""
 "*input_charset* است."
 
 msgid "Header-encode the string *string*."
-msgstr "رشتهٔ *string* را به‌صورت سربرگ کدگذاری کنید."
+msgstr "رشته‌ی *string* را به‌صورت سربرگ کدگذاری کنید."
 
 msgid ""
 "The type of encoding (base64 or quoted-printable) will be based on the "

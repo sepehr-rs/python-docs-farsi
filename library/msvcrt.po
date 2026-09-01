@@ -77,8 +77,8 @@ msgid ""
 "individually."
 msgstr ""
 "بخشی از یک فایل را بر اساس توصیف‌گر فایل *fd* از ران‌تایم C قفل می‌کند. در "
-"صورت شکست، :exc:`OSError` را پرتاب می‌کند. ناحیهٔ قفل‌شدهٔ فایل از موقعیت "
-"فعلی فایل شروع شده و به اندازهٔ *nbytes* بایت ادامه می‌یابد و ممکن است از "
+"صورت شکست، :exc:`OSError` را پرتاب می‌کند. ناحیه‌ی قفل‌شده‌ی فایل از موقعیت "
+"فعلی فایل شروع شده و به اندازه‌ی *nbytes* بایت ادامه می‌یابد و ممکن است از "
 "پایان پرونده فراتر رود. *mode* باید یکی از ثابت‌های :const:`!LK_\\*` "
 "فهرست‌شده در زیر باشد. ممکن است چندین ناحیه در یک فایل به‌طور همزمان قفل "
 "شوند، اما نباید هم‌پوشانی داشته باشند. ناحیه‌های مجاور با هم ادغام نمی‌شوند؛"
@@ -199,7 +199,7 @@ msgstr ""
 
 msgid "Wide char variant of :func:`getche`, returning a Unicode value."
 msgstr ""
-"نسخهٔ نویسهٔ پهن (wide char) از :func:`getche`، که یک مقدار یونیکد را "
+"نسخه‌ی نویسه‌ی پهن (wide char) از :func:`getche`، که یک مقدار یونیکد را "
 "برمی‌گرداند."
 
 msgid "Print the byte string *char* to the console without buffering."
@@ -207,7 +207,7 @@ msgstr "رشته بایتی *char* را بدون بافرینگ در کنسول 
 
 msgid "Wide char variant of :func:`putch`, accepting a Unicode value."
 msgstr ""
-"نسخهٔ نویسهٔ عریض (wide char) از :func:`putch` که یک مقدار یونیکد را "
+"نسخه‌ی نویسه‌ی عریض (wide char) از :func:`putch` که یک مقدار یونیکد را "
 "می‌پذیرد."
 
 msgid ""
@@ -314,7 +314,7 @@ msgid "Assertion failures."
 msgstr "شکست‌های ادعا."
 
 msgid "Writes the message to the debugger's output window."
-msgstr "پیام را در پنجرهٔ خروجی اشکال‌زدا می‌نویسد."
+msgstr "پیام را در پنجره‌ی خروجی اشکال‌زدا می‌نویسد."
 
 msgid ""
 "Writes the message to a user-supplied file handle. :func:`CrtSetReportFile` "
@@ -336,7 +336,7 @@ msgid "Returns current *mode* for the specified *type*."
 msgstr "*حالت* جاری برای *نوع* مشخص‌شده را بازمی‌گرداند."
 
 msgid "The CRT Assembly version, from the :file:`crtassem.h` header file."
-msgstr "نسخهٔ CRT Assembly، از فایل سربرگ :file:`crtassem.h`."
+msgstr "نسخه‌ی CRT Assembly، از فایل سربرگ :file:`crtassem.h`."
 
 msgid ""
 "The VC Assembly public key token, from the :file:`crtassem.h` header file."

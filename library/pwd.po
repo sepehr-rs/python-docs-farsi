@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!pwd` --- The password database"
-msgstr ":mod:`!pwd` --- پایگاه دادهٔ گذرواژه"
+msgstr ":mod:`!pwd` --- پایگاه داده‌ی گذرواژه"
 
 msgid ""
 "This module provides access to the Unix user account and password database."
@@ -71,7 +71,7 @@ msgid "``pw_passwd``"
 msgstr "``pw_passwd``"
 
 msgid "Optional encrypted password"
-msgstr "گذرواژهٔ رمزنگاری‌شده اختیاری"
+msgstr "گذرواژه‌ی رمزنگاری‌شده اختیاری"
 
 msgid "2"
 msgstr "2"
@@ -89,7 +89,7 @@ msgid "``pw_gid``"
 msgstr "``pw_gid``"
 
 msgid "Numerical group ID"
-msgstr "شناسهٔ عددی گروه"
+msgstr "شناسه‌ی عددی گروه"
 
 msgid "4"
 msgstr "۴"
@@ -107,7 +107,7 @@ msgid "``pw_dir``"
 msgstr "``pw_dir``"
 
 msgid "User home directory"
-msgstr "پوشهٔ خانهٔ کاربر"
+msgstr "پوشه‌ی خانه‌ی کاربر"
 
 msgid "6"
 msgstr "۶"
@@ -147,7 +147,7 @@ msgstr "این آیتم‌های زیر را تعریف می‌کند:"
 
 msgid "Return the password database entry for the given numeric user ID."
 msgstr ""
-"بازگرداندن مدخل پایگاه دادهٔ گذرواژه برای شناسهٔ کاربری عددی داده‌شده."
+"بازگرداندن مدخل پایگاه داده‌ی گذرواژه برای شناسه‌ی کاربری عددی داده‌شده."
 
 msgid "Return the password database entry for the given user name."
 msgstr "مدخل پایگاه داده‌ی گذرواژه را برای نام کاربری داده‌شده برمی‌گرداند."
@@ -163,4 +163,4 @@ msgid "Module :mod:`grp`"
 msgstr "ماژول :mod:`grp`"
 
 msgid "An interface to the group database, similar to this."
-msgstr "رابطی به پایگاه دادهٔ گروه، مشابه این."
+msgstr "رابطی به پایگاه داده‌ی گروه، مشابه این."

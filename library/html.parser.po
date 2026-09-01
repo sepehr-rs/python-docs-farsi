@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!html.parser` --- Simple HTML and XHTML parser"
-msgstr ":mod:`!html.parser` --- پارسر سادهٔ HTML و XHTML"
+msgstr ":mod:`!html.parser` --- پارسر ساده‌ی HTML و XHTML"
 
 msgid "**Source code:** :source:`Lib/html/parser.py`"
 msgstr "کد منبع: :source:`Lib/html/parser.py`"
@@ -98,7 +98,7 @@ msgid ""
 ":class:`HTMLParser` class to print out start tags, end tags, and data as "
 "they are encountered:"
 msgstr ""
-"به‌عنوان یک مثال پایه، در زیر یک پارسر سادهٔ HTML آمده است که از کلاس "
+"به‌عنوان یک مثال پایه، در زیر یک پارسر ساده‌ی HTML آمده است که از کلاس "
 ":class:`HTMLParser` برای چاپ برچسب‌های شروع، برچسب‌های پایان و داده‌ها "
 "به‌محض مواجهه با آن‌ها استفاده می‌کند:"
 
@@ -480,7 +480,7 @@ msgstr ""
 "Decl     : DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\""
 
 msgid "Parsing an element with a few attributes and a title:"
-msgstr "تجزیهٔ یک عنصر با چند ویژگی و یک عنوان:"
+msgstr "تجزیه‌ی یک عنصر با چند ویژگی و یک عنوان:"
 
 msgid ""
 ">>> parser.feed('<img src=\"python-logo.png\" alt=\"The Python logo\">')\n"
