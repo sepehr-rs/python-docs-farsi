@@ -55,7 +55,7 @@ msgstr ""
 "'Results of the 2016 Referendum'"
 
 msgid "The :meth:`str.format` method of strings requires more manual effort.  You'll still use ``{`` and ``}`` to mark where a variable will be substituted and can provide detailed formatting directives, but you'll also need to provide the information to be formatted. In the following code block there are two examples of how to format variables:"
-msgstr "متد :meth:`str.format` رشته‌ها نیازمند تلاش دستی بیشتری است.  هنوز از ``{`` و ``}`` برای مشخص کردن جایی که یک متغیر جایگزین می‌شود استفاده می‌کنید و می‌توانید دستورالعمل‌های دقیق قالب‌بندی ارائه دهید، اما همچنین نیاز دارید اطلاعاتی که قرار است قالب‌بندی شوند را ارائه دهید. در بلوک کد زیر دو مثال از نحوه‌ی قالب‌بندی متغیرها آورده شده است:"
+msgstr "متد :meth:`str.format` رشته‌ها نیازمند تلاش دستی بیشتری است.  هنوز از ``{`` و ``}`` برای مشخص کردن جایی که یک متغیر جایگزین می‌شود استفاده می‌کنید و می‌توانید دایرکتیوهای دقیق قالب‌بندی ارائه دهید، اما همچنین نیاز دارید اطلاعاتی که قرار است قالب‌بندی شوند را ارائه دهید. در بلوک کد زیر دو مثال از نحوه‌ی قالب‌بندی متغیرها آورده شده است:"
 
 msgid ""
 ">>> yes_votes = 42_572_654\n"

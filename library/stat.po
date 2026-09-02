@@ -198,16 +198,16 @@ msgstr ""
 ":func:`os.stat`، :func:`os.fstat` یا :func:`os.lstat` بازگردانده می‌شود."
 
 msgid "Inode protection mode."
-msgstr "حالت محافظت اینود (inode)."
+msgstr "حالت محافظت آی‌نود (inode)."
 
 msgid "Inode number."
-msgstr "شماره‌ی اینود (inode)."
+msgstr "شماره‌ی آی‌نود (inode)."
 
 msgid "Device inode resides on."
-msgstr "دستگاهی که اینود (inode) روی آن قرار دارد."
+msgstr "دستگاهی که آی‌نود (inode) روی آن قرار دارد."
 
 msgid "Number of links to the inode."
-msgstr "تعداد پیوندها به اینود (inode)."
+msgstr "تعداد پیوندها به آی‌نود (inode)."
 
 msgid "User id of the owner."
 msgstr "شناسه کاربری مالک."

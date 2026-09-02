@@ -667,7 +667,7 @@ msgstr "``__VENV_NAME__`` با نام محیط جایگزین می‌شود (آ�
 msgid ""
 "``__VENV_PROMPT__`` is replaced with the prompt (the environment name surrounded by parentheses and with a "
 "following space)"
-msgstr "``__VENV_PROMPT__`` با پرامپت (prompt) جایگزین می‌شود (نام محیط داخل پرانتز به‌همراه یک فاصله پس از آن)"
+msgstr "``__VENV_PROMPT__`` با اعلان (prompt) جایگزین می‌شود (نام محیط داخل پرانتز به‌همراه یک فاصله پس از آن)"
 
 msgid "``__VENV_BIN_NAME__`` is replaced with the name of the bin directory (either ``bin`` or ``Scripts``)."
 msgstr "``__VENV_BIN_NAME__`` با نام پوشه‌ی bin (یا ``bin`` یا ``Scripts``) جایگزین می‌شود."

@@ -107,7 +107,7 @@ msgid ":ref:`cporting-howto`"
 msgstr ":ref:`cporting-howto`"
 
 msgid "Debugging and profiling:"
-msgstr "اشکال‌زدایی و نمایه‌سازی:"
+msgstr "اشکال‌زدایی و پروفایل‌گیری:"
 
 msgid ":ref:`gdb`"
 msgstr ":ref:`gdb`"

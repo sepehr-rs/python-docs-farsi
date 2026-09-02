@@ -80,7 +80,7 @@ msgid "ZIP64 is supported"
 msgstr "از ZIP64 پشتیبانی می‌شود"
 
 msgid "Previously, ZIP archives with an archive comment were not supported."
-msgstr "پیش‌تر، از آرشیوهای ZIP دارای توضیح آرشیو پشتیبانی نمی‌شد."
+msgstr "پیش‌تر، از آرشیوهای ZIP دارای کامنت آرشیو پشتیبانی نمی‌شد."
 
 msgid ""
 "`PKZIP Application Note "
@@ -224,7 +224,7 @@ msgid ""
 "raises :exc:`ZipImportError` on failure."
 msgstr ""
 "ماژول مشخص‌شده با *fullname* را بارگذاری می‌کند. *fullname* باید نام کاملاً "
-"واجد شرایط (نقطه‌دار) ماژول باشد. در صورت موفقیت، ماژول ایمپورت‌شده را "
+"کامل (نقطه‌دار) ماژول باشد. در صورت موفقیت، ماژول ایمپورت‌شده را "
 "برمی‌گرداند و در صورت شکست، :exc:`ZipImportError` را پرتاب می‌کند."
 
 msgid "Use :meth:`exec_module` instead."

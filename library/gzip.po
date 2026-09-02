@@ -311,7 +311,7 @@ msgstr ""
 
 msgid "Support for zero-padded and unseekable files was added."
 msgstr ""
-"پشتیبانی از فایل‌های پرشده با صفر (zero-padded) و غیرقابل جابه‌جایی "
+"پشتیبانی از فایل‌های پرشده با صفر (zero-padded) و غیرقابل مکان‌یابی "
 "(unseekable) اضافه شد."
 
 msgid "The :meth:`io.BufferedIOBase.read1` method is now implemented."

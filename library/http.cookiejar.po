@@ -1056,7 +1056,7 @@ msgstr "اگر این یک کوکی نشست باشد، ``True`` است."
 msgid ""
 "String comment from the server explaining the function of this cookie, or "
 "``None``."
-msgstr "رشته‌ی توضیح از سرور که عملکرد این کوکی را توضیح می‌دهد، یا ``None``."
+msgstr "رشته‌ی کامنت از سرور که عملکرد این کوکی را توضیح می‌دهد، یا ``None``."
 
 msgid ""
 "URL linking to a comment from the server explaining the function of this "

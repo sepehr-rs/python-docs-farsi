@@ -13,6 +13,7 @@
 | ASCII              | اسکی                    |
 | ABC                | کلاس پایه انتزاعی        |
 | assertion          | ادعا، شرط               |
+| anchor             | لنگر                    |
 | availability       | دسترس‌پذیری              |
 | API                | API                     |
 | argument           | آرگومان                 |
@@ -28,11 +29,15 @@
 | big-endian         | بزرگ‌اندیان              |
 | backend            | بک‌اند                   |
 | bytecode           | بایت‌کد                  |
+| bitmap             | بیت‌مپ                   |
 | bottom tee         | tee پایین               |
+| broadcast (network/event) | پخش              |
+| broadcasting (array) | بسط‌دهی                |
 | bom, byte-order mark  | نشانگر ترتیب بایت    |
 | bytes-like object  | شیء شبه‌بایت             |
 | bouding box        | جعبه‌ی محدودکننده        |
 | backreference      | بازارجاع                |
+| backslash          | بک‌اسلش                  |
 | bind               | مقید کردن               |
 | barrier            | سد                      |
 | built-in           | توکار، درونی، درون‌ساخته |
@@ -47,7 +52,10 @@
 | cast               | تبدیل نوع، قالب‌ریزی     |
 | container          | ظرف                     |
 | CLI                | رابط خط فرمان، CLI      |
+| comment            | کامنت                   |
 | contravariant      | پادوردا                 |
+| classmethod        | classmethod             |
+| class method       | متد کلاس                 |
 | CPU-bound          | محدود به CPU            |
 | context            | زمینه                   |
 | covariant          | هم‌وردا                  |
@@ -58,7 +66,10 @@
 | class              | کلاس                     |
 | command line       | خط فرمان                |
 | community          | کامیونیتی               |
+| crash              | فروپاشی                 |
 | component          | کامپوننت، جزء           |
+| compile            | کامپایل                 |
+| compiled           | کامپایل‌شده              |
 | converter          | مبدل                    |
 | converter function | تابع تبدیل‌کننده         |
 | combobox           | جعبه انتخاب             |
@@ -79,9 +90,11 @@
 | deferred reference counting | شمارش ارجاعِ معوق |
 | decorator          | دکوراتور، آراینده       |
 | decompressor       | واگشا                   |
+| daemon             | دِیمِن                    |
 | disassemble        | واسازی کردن             |
 | dialect            | گویش                    |
 | disassembler       | واساز                   |
+| directive          | دایرکتیو                |
 | dependency         | وابستگی                 |
 | deque              | صف دوطرفه               |
 | dump               | برون‌ریزی                |
@@ -103,6 +116,7 @@
 | epoch              | مبدأ زمان               |
 | encoding           | کدگذاری                 |
 | endpoint           | پایانه                  |
+| envelope           | پاکت                    |
 | ellipsis           | سه‌نقطه                  |
 | Ellipsis           | Ellipsis                |
 | EOF                | EOF، پایان پرونده       |
@@ -110,6 +124,7 @@
 | escape             | خنثی کردن، گریز         |
 | endian             | اندیان                  |
 | endianness         | ترتیب بایت              |
+| entity             | موجودیت                 |
 | extention types    | نوع‌های توسعه‌ای          |
 | extended hex alphabet | الفبای مبنای شانزده‌ی توسعه‌یافته |
 | extension modules  | ماژول‌های توسعه‌ای        |
@@ -118,10 +133,11 @@
 | expression         | عبارت                   |
 | f-string           | اف‌استرینگ               |
 | free-threaded      | نخ‌آزاد                  |
+| folding            | تا کردن                 |
 | free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
 | frozen             | فریزشده                 |
-| fallback           | جایگزین         |
+| fallback           | جایگزین                 |
 | facility           | امکان، دسته گزارش       |
 | flattening         | تخت‌سازی                 |
 | float (type)       | اعشاری                  |
@@ -195,11 +211,17 @@
 | mock               | ماک                     |
 | monkey-patch       | مانکی‌پچ                 |
 | manager            | مدیر                    |
+| marshal            | مارشال‌کردن              |
+| marshaling/marshalling   | مارشالینگ         |
+| unmarshal          | مارشال‌گشایی کردن        |
+| unmarshaling       | مارشال‌گشایی             |
 | mask               | نقاب                    |
 | module             | ماژول                   |
+| match finder       | تطبیق‌یاب                |
 | mutex              | قفل متقابل              |
 | mix-in             | میکس‌این                 |
 | min-heap           | هیپ کمینه               |
+| max-heap           | هیپ بیشینه              |
 | mixed-in           | افزوده‌شده، میکس‌این      |
 | mutable            | تغییرپذیر               |
 | namespace          | فضای نام                |
@@ -223,8 +245,11 @@
 | probe              | پروب                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
+| prompt             | اعلان                    |
 | precision          | دقت                     |
 | process            | فرایند                  |
+| process-safe       | فرایندایمن              |
+| process-local      | فرایندمحلی              |
 | prototype          | پیش‌نمونه                |
 | profiler           | پروفایل‌گیر              |
 | profiling          | پروفایل‌گیری             |
@@ -250,6 +275,7 @@
 | quotation          | علامت نقل‌قول             |
 | quoted-printable   | quoted-printable        |
 | quantifier         | کمیت‌گذار                |
+| qualified          | کامل                    |
 | race               | رقابت                   |
 | raise              | پرتاب                   |
 | REPL               | REPL، پوسته تعاملی پایتون|
@@ -259,13 +285,17 @@
 | reference counting | شمارش ارجاع             |
 | refcount           | شمارش ارجاع             |
 | realm              | قلمرو                   |
+| rollover           | چرخش                    |
 | resolve            | حل کردن                 |
 | resolution	     | حل، وضوح                |
+| register           | ثبت کردن                |
+| registry           | رجیستری                 |
 | name resolution	 | حل نام                  |
 | dependency resolution	 | حل وابستگی          |
 | regular expression/RE | عبارت باقاعده        |
 | return             | بازگشت، برگرداندن       |
 | run time, run-time | زمان اجرا               |
+| reverse solidus    | اسلش معکوس              |
 | runtime            | ران‌تایم                 |
 | scope              | محدوده                  |
 | shadowing          | پوشاندن                 |
@@ -274,9 +304,12 @@
 | sash               |  نوار جداکننده          |
 | single precision   | دقت منفرد               |
 | snapshot           | تصویر لحظه‌ای            |
+| staticmethod       | staticmethod            |
+| static method      | متد ایستا               |
 | signal             | سیگنال                  |
 | singleton          | تک‌نمونه                 |
 | slot               | جایگاه                  |
+| salt               | نمک                     |
 | sleep              | توقف                    |
 | segmentation fault   | خطای قطعه‌بندی (segmentation fault) |
 | stringifier        | رشته‌ساز                 |
@@ -284,6 +317,7 @@
 | set                | مجموعه                  |
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
+| seal               | مهر و موم               |
 | seek               | مکان‌یابی کردن           |
 | seeking            | مکان‌یابی                |
 | suite              | بدنه                    |
@@ -308,6 +342,9 @@
 | trap (decimal signal mechanism) | تله        |
 | trap (catch/intercept) | گرفتن، رهگیری کردن  |
 | time tuple         | تاپل زمانی              |
+| TLS                | TLS                     |
+| Transport Layer Security | امنیت لایه انتقال  |
+| t-string           | تی‌استرینگ               |
 | timeout            | مهلت زمانی              |
 | trace              | ردگیری                  |
 | thread-local       | نخ‌محلی                  |
@@ -325,7 +362,10 @@
 | value              | مقدار                   |
 | variable           | متغیر                   |
 | wrapper            | پوششی، دربرگیرنده       |
-| widget             | ابزارک                  |            
+| write-through      | نوشتن‌همزمان             |
+| widget             | ابزارک                  |
+| wide               | پهن                     |
+| write-back         | بازنوشت                 |
 | wildcard           | وایلدکارد               |
 | zero-width assertion | شرط با عرض صفر        |
 | zero-padding       | پدینگ صفر               |

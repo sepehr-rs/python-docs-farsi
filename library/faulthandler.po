@@ -103,7 +103,7 @@ msgid ""
 "The module is implemented in C, so tracebacks can be dumped on a crash or "
 "when Python is deadlocked."
 msgstr ""
-"این ماژول به زبان C پیاده‌سازی شده است، بنابراین در صورت بروز کرش (crash) یا"
+"این ماژول به زبان C پیاده‌سازی شده است، بنابراین در صورت بروز فروپاشی (crash) یا"
 " هنگامی که پایتون در بن‌بست (deadlock) باشد، می‌توان ردگیری‌های پشته را برون‌ریزی"
 " (dump) کرد."
 

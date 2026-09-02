@@ -2382,4 +2382,4 @@ msgid "debugger"
 msgstr "اشکال‌زدا"
 
 msgid "profile function"
-msgstr "تابع نمایه‌سازی"
+msgstr "تابع پروفایل‌گیری"

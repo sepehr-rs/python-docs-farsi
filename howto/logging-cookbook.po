@@ -5982,7 +5982,7 @@ msgid ""
 "The code should work with recent releases of any of ``PySide6``, ``PyQt6``, ``PySide2`` or ``PyQt5``. You should be able to adapt the approach to earlier versions of Qt. Please refer to the "
 "comments in the code snippet for more detailed information."
 msgstr ""
-"این کد باید با نسخه‌های اخیر هر یک از ``PySide6``، ``PyQt6``، ``PySide2`` یا ``PyQt5`` کار کند. شما باید بتوانید این رویکرد را با نسخه‌های پیشین Qt تطبیق دهید. لطفاً برای اطلاعات دقیق‌تر به توضیحات "
+"این کد باید با نسخه‌های اخیر هر یک از ``PySide6``، ``PyQt6``، ``PySide2`` یا ``PyQt5`` کار کند. شما باید بتوانید این رویکرد را با نسخه‌های پیشین Qt تطبیق دهید. لطفاً برای اطلاعات دقیق‌تر به کامنت‌های "
 "موجود در قطعه‌کد مراجعه کنید."
 
 msgid ""

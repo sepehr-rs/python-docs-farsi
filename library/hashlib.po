@@ -948,7 +948,7 @@ msgid ""
 "In BLAKE2 the salt is processed as a one-time input to the hash function "
 "during initialization, rather than as an input to each compression function."
 msgstr ""
-"در BLAKE2، سالت (salt) به‌عنوان یک ورودی یک‌باره برای تابع هش در حین مقداردهی "
+"در BLAKE2، نمک (salt) به‌عنوان یک ورودی یک‌باره برای تابع هش در حین مقداردهی "
 "اولیه پردازش می‌شود، نه به‌عنوان ورودی برای هر تابع فشرده‌سازی."
 
 msgid ""

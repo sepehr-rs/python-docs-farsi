@@ -212,7 +212,7 @@ msgid ""
 msgstr ""
 "در macOS، :mod:`dbm.ndbm` می‌تواند هنگام به‌روزرسانی‌ها بدون هشدار فایل "
 "پایگاه داده را خراب کند، که این می‌تواند هنگام تلاش برای خواندن از پایگاه "
-"داده باعث کرش‌های سخت شود."
+"داده باعث فروپاشی‌های سخت شود."
 
 msgid ""
 "A subclass of :class:`collections.abc.MutableMapping` which stores pickled "

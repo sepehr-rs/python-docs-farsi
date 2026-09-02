@@ -252,7 +252,7 @@ msgid ""
 "tokens are produced instead of regular :data:`COMMENT` tokens only with the "
 ":data:`~ast.PyCF_TYPE_COMMENTS` flag."
 msgstr ""
-"مقدار توکنی که نشان می‌دهد یک توضیح ``type: ignore`` شناسایی شده است. چنین "
+"مقدار توکنی که نشان می‌دهد یک کامنت ``type: ignore`` شناسایی شده است. چنین "
 "توکن‌هایی به‌جای توکن‌های معمولی :data:`COMMENT` فقط با پرچم "
 ":data:`~ast.PyCF_TYPE_COMMENTS` تولید می‌شوند."
 

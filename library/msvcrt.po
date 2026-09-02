@@ -49,10 +49,10 @@ msgid ""
 "use for internationalized applications. The wide char API should be used "
 "where ever possible."
 msgstr ""
-"این ماژول هر دو گونه‌ی معمولی و نویسه‌ی عریض (wide char) از API ورودی/خروجی "
+"این ماژول هر دو گونه‌ی معمولی و نویسه‌ی پهن (wide char) از API ورودی/خروجی "
 "کنسول را پیاده‌سازی می‌کند. API معمولی تنها با نویسه‌های ASCII سروکار دارد و"
 " کاربرد محدودی برای برنامه‌های بین‌المللی‌سازی‌شده دارد. باید تا جایی که "
-"ممکن است از API نویسه‌ی عریض (wide char) استفاده شود."
+"ممکن است از API نویسه‌ی پهن (wide char) استفاده شود."
 
 msgid "Availability"
 msgstr "دسترس‌پذیری"
@@ -207,7 +207,7 @@ msgstr "رشته بایتی *char* را بدون بافرینگ در کنسول 
 
 msgid "Wide char variant of :func:`putch`, accepting a Unicode value."
 msgstr ""
-"نسخه‌ی نویسه‌ی عریض (wide char) از :func:`putch` که یک مقدار یونیکد را "
+"نسخه‌ی نویسه‌ی پهن (wide char) از :func:`putch` که یک مقدار یونیکد را "
 "می‌پذیرد."
 
 msgid ""
@@ -220,7 +220,7 @@ msgstr ""
 
 msgid "Wide char variant of :func:`ungetch`, accepting a Unicode value."
 msgstr ""
-"نسخه‌ی نویسه‌ی عریض (wide char) از :func:`ungetch`، که یک مقدار یونیکد را "
+"نسخه‌ی نویسه‌ی پهن (wide char) از :func:`ungetch`، که یک مقدار یونیکد را "
 "می‌پذیرد."
 
 msgid "Other Functions"

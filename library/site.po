@@ -501,7 +501,7 @@ msgid "# (hash)"
 msgstr "# (هش)"
 
 msgid "comment"
-msgstr "توضیح"
+msgstr "کامنت"
 
 msgid "statement"
 msgstr "دستور"

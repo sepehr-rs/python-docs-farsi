@@ -98,7 +98,7 @@ msgid "``pw_gecos``"
 msgstr "``pw_gecos``"
 
 msgid "User name or comment field"
-msgstr "فیلد نام‌کاربری یا نظر"
+msgstr "فیلد نام‌کاربری یا کامنت"
 
 msgid "5"
 msgstr "۵"

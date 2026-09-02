@@ -113,7 +113,7 @@ msgid ""
 "Returns the computer's network name (may not be fully qualified!). An empty "
 "string is returned if the value cannot be determined."
 msgstr ""
-"نام شبکه‌ی رایانه را برمی‌گرداند (ممکن است کاملاً واجد شرایط نباشد!). اگر "
+"نام شبکه‌ی رایانه را برمی‌گرداند (ممکن است کامل نباشد!). اگر "
 "مقدار قابل تعیین نباشد، یک رشته‌ی خالی برگردانده می‌شود."
 
 msgid ""

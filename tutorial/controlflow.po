@@ -1477,7 +1477,7 @@ msgid "Use blank lines to separate functions and classes, and larger blocks of c
 msgstr "برای جدا کردن توابع و کلاس‌ها، و همچنین بلوک‌های بزرگ‌تر کد درون توابع، از خطوط خالی استفاده کنید."
 
 msgid "When possible, put comments on a line of their own."
-msgstr "در صورت امکان، توضیحات را در یک خط جداگانه قرار دهید."
+msgstr "در صورت امکان، کامنت‌هارا را در یک خط جداگانه قرار دهید."
 
 msgid "Use docstrings."
 msgstr "از رشته‌های مستندسازی استفاده کنید."
