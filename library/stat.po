@@ -454,7 +454,7 @@ msgstr "ممکن است فایل بایگانی‌شده باشد."
 
 msgid "The file needs an entitlement to write to (macOS 10.13+)"
 msgstr ""
-"این فایل برای نوشتن در آن به یک مجوز (entitlement) نیاز دارد (macOS 10.13+)"
+"این فایل برای نوشتن در آن به یک حق دسترسی (entitlement) نیاز دارد (macOS 10.13+)"
 
 msgid "The file is a snapshot file."
 msgstr "این فایل یک فایل تصویر لحظه‌ای است."

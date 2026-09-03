@@ -76,7 +76,7 @@ msgstr ""
 "معرفی می‌شوند."
 
 msgid "The following constructs bind names:"
-msgstr "سازه‌های زیر نام‌ها را متصل می‌کنند:"
+msgstr "سازه‌های زیر نام‌ها را مقید می‌کنند:"
 
 msgid "formal parameters to functions,"
 msgstr "پارامترهای صوری توابع،"

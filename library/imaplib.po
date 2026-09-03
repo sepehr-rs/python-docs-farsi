@@ -162,7 +162,7 @@ msgid ""
 "certificate and hostname are not verified. To verify them, pass a context "
 "created by :func:`ssl.create_default_context`."
 msgstr ""
-"با *ssl_context* پیش‌فرض، اتصال رمزگذاری شده است، اما گواهینامه سرور و نام "
+"با *ssl_context* پیش‌فرض، اتصال رمزگذاری شده است، اما گواهی سرور و نام "
 "میزبان تأیید نمی‌شوند. برای تأیید آن‌ها، یک زمینه ایجادشده توسط "
 ":func:`ssl.create_default_context` را ارسال کنید."
 

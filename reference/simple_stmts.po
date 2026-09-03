@@ -76,7 +76,7 @@ msgid ""
 "Assignment statements are used to (re)bind names to values and to modify "
 "attributes or items of mutable objects:"
 msgstr ""
-"دستورهای انتساب برای (باز)پیوند دادن نام‌ها به مقادیر و تغییر ویژگی‌ها یا "
+"دستورهای انتساب برای (باز)مقیدسازی نام‌ها به مقادیر و تغییر ویژگی‌ها یا "
 "آیتم‌های اشیاء تغییرپذیر استفاده می‌شوند:"
 
 msgid ""

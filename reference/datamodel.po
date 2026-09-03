@@ -5071,7 +5071,7 @@ msgid ""
 msgstr ""
 "وارد زمینه ران‌تایم مرتبط با این شیء می‌شود. دستور :keyword:`with` مقدار "
 "بازگشتی این متد را به هدف(های) مشخص‌شده در بند :keyword:`!as` دستور، در صورت "
-"وجود، متصل می‌کند."
+"وجود، مقید می‌کند."
 
 msgid ""
 "Exit the runtime context related to this object. The parameters describe the "

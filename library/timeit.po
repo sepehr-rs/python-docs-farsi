@@ -312,7 +312,7 @@ msgid ""
 "compiled template will be displayed.  The optional *file* argument directs "
 "where the traceback is sent; it defaults to :data:`sys.stderr`."
 msgstr ""
-"مزیت آن نسبت به ردگیری پشته استاندارد این است که سطرهای منبع در قالب "
+"مزیت آن نسبت به ردگیری پشته استاندارد این است که ردیفهای منبع در قالب "
 "کامپایل‌شده نمایش داده خواهند شد. آرگومان اختیاری *file* مشخص می‌کند که "
 "ردگیری پشته به کجا ارسال می‌شود؛ پیش‌فرض آن :data:`sys.stderr` است."
 

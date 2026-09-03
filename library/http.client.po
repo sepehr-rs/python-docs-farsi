@@ -162,7 +162,7 @@ msgid ""
 ":func:`!ssl._create_unverified_context` can be passed to the *context* "
 "parameter."
 msgstr ""
-"این کلاس اکنون به‌طور پیش‌فرض تمام بررسی‌های لازم برای گواهینامه و نام "
+"این کلاس اکنون به‌طور پیش‌فرض تمام بررسی‌های لازم برای گواهی و نام "
 "میزبان را انجام می‌دهد. برای بازگشت به رفتار قبلی و تأییدنشده، می‌توان "
 ":func:`!ssl._create_unverified_context` را به پارامتر *context* ارسال کرد."
 

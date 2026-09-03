@@ -103,7 +103,7 @@ msgstr ""
 "اجرا است."
 
 msgid "A basic boilerplate is often used::"
-msgstr "اغلب از یک کد قالب (boilerplate) ساده استفاده می‌شود::"
+msgstr "اغلب از یک کد پیش‌ساخته (boilerplate) ساده استفاده می‌شود::"
 
 msgid ""
 "import unittest\n"

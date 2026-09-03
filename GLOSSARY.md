@@ -29,7 +29,12 @@
 | big-endian         | بزرگ‌اندیان              |
 | backend            | بک‌اند                   |
 | bytecode           | بایت‌کد                  |
+| backspace          | بک‌اسپیس، پس‌بر           |
+| blob               | بلاب                     |
+| bot                | بات                     |
+| boilerplate        | کد پیش‌ساخته، متن قالبی  |
 | bitmap             | بیت‌مپ                   |
+| bitwise mask       | نقاب بیتی               |
 | bottom tee         | tee پایین               |
 | broadcast (network/event) | پخش              |
 | broadcasting (array) | بسط‌دهی                |
@@ -40,12 +45,18 @@
 | backslash          | بک‌اسلش                  |
 | bind               | مقید کردن               |
 | barrier            | سد                      |
+| bound              | کران                    |
 | built-in           | توکار، درونی، درون‌ساخته |
 | bitmask            | نقاب بیتی               |
 | binary             | دودویی                  |
 | cache              | نهانگاه                 |
 | callback           | کال‌بک، فراخوانی بازگشتی |
 | callable           | فراخوانی‌پذیر            |
+| collation          | ترتیب‌گذاری              |
+| cursor             | مکان‌نما                 |
+| cursor (database)  | نشانگر                  |
+| carriage return    | بازگشت به ابتدای سطر    |
+| column             | ستون                    |
 | checkbutton        | دکمه‌ی انتخابی           |
 | closure            | بستار                   |
 | cardinality        | کاردینالیتی             |
@@ -55,12 +66,17 @@
 | comment            | کامنت                   |
 | contravariant      | پادوردا                 |
 | classmethod        | classmethod             |
+| certification      | گواهی                   |
+| capturing group    | گروه ثبت‌کننده           |
 | class method       | متد کلاس                 |
+| CRL                | فهرست لغو گواهی         |
+| CA                 | مرجع صدور گواهی         |
 | CPU-bound          | محدود به CPU            |
 | context            | زمینه                   |
 | covariant          | هم‌وردا                  |
 | cipher             | رمز                     |
 | clone              | رونوشت                  |
+| commit (database transaction) | ثبت نهایی    |
 | calendar           | گاه‌شماری                |
 | character          | نویسه                   |
 | class              | کلاس                     |
@@ -121,6 +137,7 @@
 | Ellipsis           | Ellipsis                |
 | EOF                | EOF، پایان پرونده       |
 | executor           | اجراکننده               |
+| entitlement        | حق دسترسی               |
 | escape             | خنثی کردن، گریز         |
 | endian             | اندیان                  |
 | endianness         | ترتیب بایت              |
@@ -134,6 +151,7 @@
 | f-string           | اف‌استرینگ               |
 | free-threaded      | نخ‌آزاد                  |
 | folding            | تا کردن                 |
+| forwardreference   | ارجاع پیشرو             |
 | free threading     | نخ‌بندی آزاد             |
 | factory function   | تابع کارخانه‌ای          |
 | frozen             | فریزشده                 |
@@ -197,27 +215,36 @@
 | lookbehind assertion | شرط پس‌نگر             |
 | literals           | مقادیر لفظی             |
 | list comprehension | درک فهرستی              |
-| little-endian      | کوچک‌اندیان               |
+| little-endian      | کوچک‌اندیان              |
 | locale             | locale                  |
 | load               | بارگذاری                |
 | loader             | بارگذار                 |
 | local              | محلی                    |
+| line feed          | تغذیه‌ی سطر              |
+| form feed          | تغذیه‌ی صفحه             |
+| line               | سطر                     |
 | loop               | حلقه                    |
 | logging            | گزارش‌گیری               |
 | long distance matcher | تطبیق‌گر فاصله بلند   |
 | logger             | گزارش‌گیر                |
 | metaclass          | فراکلاس                  |
 | method             | متد، روش                |
+| mode               | حالت                    |
 | mock               | ماک                     |
 | monkey-patch       | مانکی‌پچ                 |
 | manager            | مدیر                    |
+| master (pty)       | اصلی                    |
+| slave (pty)        | پیرو                    |
 | marshal            | مارشال‌کردن              |
 | marshaling/marshalling   | مارشالینگ         |
 | unmarshal          | مارشال‌گشایی کردن        |
+| unpacking assignments | انتساب‌های واگشایی    |
 | unmarshaling       | مارشال‌گشایی             |
 | mask               | نقاب                    |
 | module             | ماژول                   |
 | match finder       | تطبیق‌یاب                |
+| map                | نگاشت                   |
+| mapped             | نگاشت‌شده                |
 | mutex              | قفل متقابل              |
 | mix-in             | میکس‌این                 |
 | min-heap           | هیپ کمینه               |
@@ -243,12 +270,15 @@
 | protocol           | پروتکل                  |
 | proleptic Gregorian  | گاه‌شماری میلادی تعمیم‌یافته  |
 | probe              | پروب                    |
+| poll               | پایش                    |
+| polling            | پایش                    |
 | pipe               | پایپ                    |
 | proxy              | پراکسی                  |
 | prompt             | اعلان                    |
 | precision          | دقت                     |
 | process            | فرایند                  |
 | process-safe       | فرایندایمن              |
+| pseudo-terminal    | شبه‌پایانه               |
 | process-local      | فرایندمحلی              |
 | prototype          | پیش‌نمونه                |
 | profiler           | پروفایل‌گیر              |
@@ -273,6 +303,7 @@
 | pickler            | پیکل‌ساز                 |
 | property           | ویژگی، پراپرتی، خصوصیت  |
 | quotation          | علامت نقل‌قول             |
+| qualifier          | مشخص‌کننده               |
 | quoted-printable   | quoted-printable        |
 | quantifier         | کمیت‌گذار                |
 | qualified          | کامل                    |
@@ -282,6 +313,7 @@
 | reentrant          | بازورودپذیر             |
 | reentrancy         | بازورودپذیری            |
 | reference          | ارجاع                   |
+| rollback           | بازگرداندن              |    
 | reference counting | شمارش ارجاع             |
 | refcount           | شمارش ارجاع             |
 | realm              | قلمرو                   |
@@ -289,6 +321,7 @@
 | resolve            | حل کردن                 |
 | resolution	     | حل، وضوح                |
 | register           | ثبت کردن                |
+| row                | ردیف                    |
 | registry           | رجیستری                 |
 | name resolution	 | حل نام                  |
 | dependency resolution	 | حل وابستگی          |
@@ -303,11 +336,13 @@
 | shell              | پوسته                   |
 | sash               |  نوار جداکننده          |
 | single precision   | دقت منفرد               |
+| sandbox            | سندباکس                 |
 | snapshot           | تصویر لحظه‌ای            |
 | staticmethod       | staticmethod            |
 | static method      | متد ایستا               |
 | signal             | سیگنال                  |
 | singleton          | تک‌نمونه                 |
+| shelf              | قفسه                    |
 | slot               | جایگاه                  |
 | salt               | نمک                     |
 | sleep              | توقف                    |
@@ -318,12 +353,14 @@
 | stack traceback    | ردگیری پشته             |
 | statement          | دستور                   |
 | seal               | مهر و موم               |
+| state              | وضعیت                   |
 | seek               | مکان‌یابی کردن           |
 | seeking            | مکان‌یابی                |
 | suite              | بدنه                    |
 | scheme             | طرح‌واره، طرح            |
 | subscript          | زیرنویس                 |
 | spec               | مشخصات                  |
+| surrogate          | جانشین                  |
 | subscription       | زیرنویسی                |
 | subnormal          | زیرنرمال                |
 | serialization      | سریال‌سازی               |
@@ -339,14 +376,21 @@
 | transformer        | تبدیل کننده             |
 | transcode          | بازکدگذاری کردن         |
 | transcoding        | بازکدگذاری              |
+| turtle             | turtle، لاک‌پشت           |
 | trap (decimal signal mechanism) | تله        |
 | trap (catch/intercept) | گرفتن، رهگیری کردن  |
 | time tuple         | تاپل زمانی              |
 | TLS                | TLS                     |
 | Transport Layer Security | امنیت لایه انتقال  |
 | t-string           | تی‌استرینگ               |
+| titlecase          | نگارش عنوان‌نویسی        |
+| titlecased         | عنوان‌نویسی‌شده           |
+| trampoline         | ترامپولین               |
 | timeout            | مهلت زمانی              |
+| token              | توکن                    |
+| tokenizer          | توکن‌ساز                 |
 | trace              | ردگیری                  |
+| treeview           | نمای درختی              |
 | thread-local       | نخ‌محلی                  |
 | thread-safe        | نخ‌ایمن                  |
 | type               | نوع، نوع داده، تایپ     |
@@ -358,10 +402,13 @@
 | unary              | یک‌عملوندی               |
 | unpickle           | پیکل‌گشایی               |
 | universal          | همگانی                  |
+| undo buffer        | بافر لغو                |
 | unhashable         | هش‌ناپذیر                |
 | value              | مقدار                   |
 | variable           | متغیر                   |
+| view               | نما                     |
 | wrapper            | پوششی، دربرگیرنده       |
+| wrap               | پوشش دادن، دربرگرفتن    |
 | write-through      | نوشتن‌همزمان             |
 | widget             | ابزارک                  |
 | wide               | پهن                     |

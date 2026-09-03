@@ -729,10 +729,9 @@ msgid ""
 ":class:`contextvars.Context` object and accessed via "
 ":class:`~contextvars.ContextVar` objects.  Also see :term:`context "
 "variable`."
-msgstr ""
-"مجموعه‌ی اتصال‌های کلید-مقدار مرتبط با یک شیء :class:`contextvars.Context` "
-"خاص و قابل دسترسی از طریق اشیای :class:`~contextvars.ContextVar`. همچنین "
-":term:`متغیر زمینه <context variable>` را ببینید."
+"مجموعه‌ی مقیدسازی‌های کلید-مقدار مرتبط با یک شیء :class:`contextvars.Context` خاص و قابل دسترسی از طریق اشیای :class:`~contextvars.ContextVar`."
+" همچنین :term:`متغیر زمینه <context variable>` را ببینید."
+
 
 msgid ""
 "A :class:`contextvars.Context` object.  Also see :term:`current context`."

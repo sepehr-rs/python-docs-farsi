@@ -911,7 +911,7 @@ msgid ""
 "To save a some tedious error-handling boilerplate code, you can combine "
 "these two steps with :c:func:`PyType_GetModuleState`, resulting in::"
 msgstr ""
-"برای پرهیز از برخی کدهای کلیشه‌ای ملال‌آور مدیریت خطا، می‌توانید این دو "
+"برای پرهیز از برخی کدهای پیش‌ساخته ملال‌آور مدیریت خطا، می‌توانید این دو "
 "مرحله را با :c:func:`PyType_GetModuleState` ترکیب کنید، که نتیجه به این صورت"
 " است::"
 

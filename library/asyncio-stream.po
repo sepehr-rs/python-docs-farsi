@@ -503,7 +503,7 @@ msgid ""
 "*server_hostname*: sets or overrides the host name that the target server's "
 "certificate will be matched against."
 msgstr ""
-"*server_hostname*: نام میزبانی را که گواهینامه‌ی سرور هدف با آن مطابقت داده "
+"*server_hostname*: نام میزبانی را که گواهی‌ی سرور هدف با آن مطابقت داده "
 "خواهد شد، تنظیم یا بازنویسی می‌کند."
 
 msgid ""

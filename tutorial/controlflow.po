@@ -1199,7 +1199,7 @@ msgstr ""
 "    return 'name' in kwds"
 
 msgid "There is no possible call that will make it return ``True`` as the keyword ``'name'`` will always bind to the first parameter. For example::"
-msgstr "هیچ فراخوانی ممکنی وجود ندارد که باعث شود این تابع مقدار ``True`` را برگرداند، زیرا کلیدواژه ``'name'`` همیشه به اولین پارامتر متصل می‌شود. برای مثال::"
+msgstr "هیچ فراخوانی ممکنی وجود ندارد که باعث شود این تابع مقدار ``True`` را برگرداند، زیرا کلیدواژه ``'name'`` همیشه به اولین پارامتر مقید می‌شود. برای مثال::"
 
 msgid ""
 ">>> foo(1, **{'name': 2})\n"

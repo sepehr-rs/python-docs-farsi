@@ -363,7 +363,7 @@ msgstr ""
 "... ]"
 
 msgid "The following list comprehension will transpose rows and columns::"
-msgstr "درک فهرستی زیر سطرها و ستون‌ها را جابه‌جا می‌کند::"
+msgstr "درک فهرستی زیر ردیفها و ستون‌ها را جابه‌جا می‌کند::"
 
 msgid ""
 ">>> [[row[i] for row in matrix] for i in range(4)]\n"

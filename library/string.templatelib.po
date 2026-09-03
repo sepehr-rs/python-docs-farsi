@@ -29,7 +29,7 @@ msgid ":ref:`Format strings <f-strings>`"
 msgstr ":ref:`رشته‌های قالب‌بندی <f-strings>`"
 
 msgid ":ref:`Template string literal (t-string) syntax <t-strings>`"
-msgstr ":ref:`سینتکس رشته‌ی قالبی (t-string) <t-strings>`"
+msgstr ":ref:`سینتکس رشته‌ی الگویی (t-string) <t-strings>`"
 
 msgid ":pep:`750`"
 msgstr ":pep:`750`"

@@ -44,7 +44,7 @@ msgid ""
 "current process, and any side effects (such as cached imports of other "
 "modules) will remain in place after the functions have returned."
 msgstr ""
-"توجه داشته باشید که این یک ماژول سندباکس (sandbox) *نیست* — تمام کدها در "
+"توجه داشته باشید که این یک ماژول سندباکس *نیست* — تمام کدها در "
 "فرایند جاری اجرا می‌شوند و هرگونه اثر جانبی (مانند ایمپورت‌های نهانگاه‌شده‌ی "
 "سایر ماژول‌ها) پس از بازگشت توابع بر جای خواهد ماند."
 

@@ -1311,7 +1311,7 @@ msgid ""
 "An attempt was made to undeclare reserved namespace prefix ``xml`` or to "
 "bind it to another namespace URI."
 msgstr ""
-"تلاشی برای لغو تعریف پیشوند فضای نام رزروشده ``xml`` یا پیوند دادن آن به "
+"تلاشی برای لغو تعریف پیشوند فضای نام رزروشده ``xml`` یا مقیدسازی آن به "
 "URI یک فضای نام دیگر انجام شد."
 
 msgid ""

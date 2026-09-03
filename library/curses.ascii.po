@@ -76,7 +76,7 @@ msgid "Alias for :const:`TAB`: \"Horizontal tab\""
 msgstr "نام مستعار برای :const:`TAB`: «تب افقی»"
 
 msgid "Line feed"
-msgstr "سرخط"
+msgstr "تغذیه‌ی سطر"
 
 msgid "Alias for :const:`LF`: \"New line\""
 msgstr "نام مستعار برای :const:`LF`: «خط جدید»"
@@ -85,10 +85,10 @@ msgid "Vertical tab"
 msgstr "تب عمودی"
 
 msgid "Form feed"
-msgstr "سرصفحه"
+msgstr "تغذیه‌ی صفحه"
 
 msgid "Carriage return"
-msgstr "بازگشت سرسطر"
+msgstr "بازگشت به ابتدای سطر"
 
 msgid "Shift-out, begin alternate character set"
 msgstr "Shift-out، آغاز مجموعه نویسه‌ی جایگزین"
@@ -218,8 +218,8 @@ msgid ""
 "Checks for ASCII white-space characters; space, line feed, carriage return, "
 "form feed, horizontal tab, vertical tab."
 msgstr ""
-"بررسی نویسه‌های فضای سفید ASCII؛ فاصله، تغذیه‌ی خط، بازگشت سر سطر، تغذیه‌ی "
-"فرم، تب افقی، تب عمودی."
+"بررسی نویسه‌های فضای سفید ASCII؛ فاصله، تغذیه‌ی سطر، بازگشت به ابتدای سطر، تغذیه‌ی "
+"تغذیه‌ی صفحه، تب افقی، تب عمودی."
 
 msgid "Checks for an ASCII uppercase letter."
 msgstr "بررسی می‌کند که آیا یک نویسه بزرگ ASCII است."
