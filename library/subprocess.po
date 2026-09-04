@@ -2434,7 +2434,7 @@ msgid "``_USE_POSIX_SPAWN``"
 msgstr "``_USE_POSIX_SPAWN``"
 
 msgid "universal newlines"
-msgstr "خطوط جدید همگانی"
+msgstr "سطرهای جدید همگانی"
 
 msgid "subprocess module"
 msgstr "ماژول subprocess"

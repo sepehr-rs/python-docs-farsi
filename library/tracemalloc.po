@@ -108,7 +108,7 @@ msgstr ""
 "    print(stat)"
 
 msgid "Example of output of the Python test suite::"
-msgstr "نمونه‌ای از خروجی مجموعه تست پایتون::"
+msgstr "نمونه‌ای از خروجی مجموعه آزمون پایتون::"
 
 msgid ""
 "[ Top 10 ]\n"
@@ -183,7 +183,7 @@ msgstr ""
 "    print(stat)"
 
 msgid "Example of output before/after running some tests of the Python test suite::"
-msgstr "نمونه‌ای از خروجی پیش از/پس از اجرای برخی از تست‌های مجموعه تست پایتون::"
+msgstr "نمونه‌ای از خروجی پیش از/پس از اجرای برخی از آزمون‌های مجموعه آزمون پایتون::"
 
 msgid ""
 "[ Top 10 differences ]\n"

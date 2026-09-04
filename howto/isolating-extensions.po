@@ -1072,7 +1072,7 @@ msgstr ""
 
 msgid "Module State Access from Slot Methods, Getters and Setters"
 msgstr ""
-"دسترسی به وضعیت ماژول از متدهای جایگاه (slot)، دریافت‌کننده‌ها (getters) و "
+"دسترسی به وضعیت ماژول از متدهای جایگاه (slot)، دریابندهها (getters) و "
 "تنظیم‌کننده‌ها (setters)"
 
 msgid "This is new in Python 3.11."
@@ -1090,7 +1090,7 @@ msgstr ""
 ":c:member:`~PyNumberMethods.nb_add` برای :py:attr:`~object.__add__` یا "
 ":c:member:`~PyTypeObject.tp_new` برای مقداردهی اولیه—دارای API بسیار ساده‌ای"
 " هستند که برخلاف :c:type:`PyCMethod` اجازه‌ی ارسال کلاس تعریف‌کننده را "
-"نمی‌دهد. همین موضوع برای دریافت‌کننده‌ها و تنظیم‌کننده‌ها (getters and "
+"نمی‌دهد. همین موضوع برای دریابندهها و تنظیم‌کننده‌ها (getters and "
 "setters) که با :c:type:`PyGetSetDef` تعریف‌شده‌اند نیز صدق می‌کند."
 
 msgid ""

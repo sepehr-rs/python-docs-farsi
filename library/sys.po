@@ -1968,7 +1968,7 @@ msgid ""
 "This function is intended for testing and debugging the JIT itself. It "
 "should be avoided for any other purpose."
 msgstr ""
-"این تابع برای تست و اشکال‌زدایی خود JIT در نظر گرفته شده است. باید از "
+"این تابع برای آزمون و اشکال‌زدایی خود JIT در نظر گرفته شده است. باید از "
 "استفاده از آن برای هر هدف دیگری پرهیز شود."
 
 msgid ""

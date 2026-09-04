@@ -1067,7 +1067,7 @@ msgid ""
 "(:term:`universal <universal newlines>`) newline handling."
 msgstr ""
 "اگر ``newline=''`` مشخص نشود، خط‌های جدید نهفته در فیلدهای نقل‌قول‌شده به‌درستی تفسیر نمی‌شوند، و در سکوهایی که هنگام نوشتن از پایان‌خط‌های ``\\r\\\n"
-"`` استفاده می‌کنند، یک ``\\r`` اضافی افزوده می‌شود. مشخص کردن ``newline=''`` باید همیشه ایمن باشد، زیرا ماژول csv مدیریت خط جدید (:term:`خطوط جدید همگانی (universal newlines) <universal newlines>`) خود را انجام می‌دهد."
+"`` استفاده می‌کنند، یک ``\\r`` اضافی افزوده می‌شود. مشخص کردن ``newline=''`` باید همیشه ایمن باشد، زیرا ماژول csv مدیریت خط جدید (:term:`سطرهای جدید همگانی (universal newlines) <universal newlines>`) خود را انجام می‌دهد."
 
 msgid "csv"
 msgstr "csv"
@@ -1079,7 +1079,7 @@ msgid "tabular"
 msgstr "جدولی"
 
 msgid "universal newlines"
-msgstr "خطوط جدید همگانی (universal newlines)"
+msgstr "سطرهای جدید همگانی (universal newlines)"
 
 msgid "csv.reader function"
 msgstr "تابع csv.reader"
