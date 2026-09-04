@@ -1104,7 +1104,7 @@ msgstr ""
 "کرد."
 
 msgid "A Python :class:`int` writer instance."
-msgstr "یک نمونه نویسندهٔ :class:`int` پایتون."
+msgstr "یک نمونه نویسنده‌ی :class:`int` پایتون."
 
 msgid ""
 "The instance must be destroyed by :c:func:`PyLongWriter_Finish` "
