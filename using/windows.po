@@ -3126,7 +3126,7 @@ msgid ""
 "Installs the launcher for all users. Also requires ``Include_launcher`` to be "
 "set to 1"
 msgstr ""
-"راه‌انداز را برای همهٔ کاربران نصب می‌کند. همچنین نیازمند آن است که "
+"راه‌انداز را برای همه‌ی کاربران نصب می‌کند. همچنین نیازمند آن است که "
 "``Include_launcher`` روی 1 تنظیم شده باشد"
 
 msgid "Include_lib"

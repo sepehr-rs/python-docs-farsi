@@ -1667,7 +1667,7 @@ msgstr "بازرسی کردن"
 msgid ""
 "A new :func:`~inspect.getclosurevars` function has been added. This function reports the current binding of all names referenced from the function body and where those names were resolved, making it easier to verify correct internal state when testing code that relies on stateful closures."
 msgstr ""
-"تابع جدید :func:`~inspect.getclosurevars` افزوده شده است. این تابع مقیدسازی فعلی همهٔ نام‌هایی که از بدنهٔ تابع به آن‌ها ارجاع شده است و اینکه آن نام‌ها در کجا حل شده‌اند را گزارش می‌کند؛ این امر راستی‌آزمایی درستی وضعیت درونی را هنگام آزمون کدی که به بستارهای وضعیت‌دار وابسته است، آسان‌تر می‌سازد."
+"تابع جدید :func:`~inspect.getclosurevars` افزوده شده است. این تابع مقیدسازی فعلی همه‌ی نام‌هایی که از بدنه‌ی تابع به آن‌ها ارجاع شده است و اینکه آن نام‌ها در کجا حل شده‌اند را گزارش می‌کند؛ این امر راستی‌آزمایی درستی وضعیت درونی را هنگام آزمون کدی که به بستارهای وضعیت‌دار وابسته است، آسان‌تر می‌سازد."
 
 msgid "(Contributed by Meador Inge and Nick Coghlan in :issue:`13062`.)"
 msgstr "(مشارکت‌شده توسط Meador Inge و Nick Coghlan در :issue:`13062`.)"
