@@ -1015,7 +1015,7 @@ msgid ""
 msgstr ""
 "متدهای دیکشنری :meth:`~dict.keys`، :meth:`~dict.values` و "
 ":meth:`~dict.items` در پایتون 3.x متفاوت هستند. آن‌ها به‌جای فهرستی کاملاً "
-"عینیت‌یافته (materialized)، شیئی به نام :dfn:`نما` برمی‌گردانند."
+"عینیت‌یافته (materialized)، شیئی به نام :dfn:`نما <view>` برمی‌گردانند."
 
 msgid ""
 "It's not possible to change the return values of :meth:`~dict.keys`, "

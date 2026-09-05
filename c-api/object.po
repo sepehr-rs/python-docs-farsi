@@ -1031,7 +1031,7 @@ msgid ""
 msgstr ""
 ":c:func:`PyUnstable_EnableTryIncRef` باید پیش‌تر روی *obj* فراخوانی شده "
 "باشد؛ در غیر این صورت، این تابع ممکن است در :term:`بیلد نخ‌آزاد <free-"
-"threaded build>`` به‌طور کاذب ``0`` را برگرداند."
+"threaded build>` به‌طور کاذب ``0`` را برگرداند."
 
 msgid ""
 "This function is logically equivalent to the following C code, except that "

@@ -46,7 +46,7 @@ msgid ""
 ":ref:`code object <code-objects>`."
 msgstr ""
 "این یک نمونه از :c:type:`PyTypeObject` است که شیء کد پایتون را نمایندگی "
-"می‌کند."
+"می‌کند و :ref:`شیء کد <code-objects>`"
 
 msgid ""
 "Return true if *co* is a :ref:`code object <code-objects>`. This function "

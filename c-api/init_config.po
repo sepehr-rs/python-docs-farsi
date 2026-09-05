@@ -426,7 +426,7 @@ msgid ":c:member:`bytes_warning <PyConfig.bytes_warning>`"
 msgstr ":c:member:`bytes_warning <PyConfig.bytes_warning>`"
 
 msgid "``\"check_hash_pycs_mode\"``"
-msgstr "````\"check_hash_pycs_mode\"````"
+msgstr "``\"check_hash_pycs_mode\"``"
 
 msgid ":c:member:`check_hash_pycs_mode <PyConfig.check_hash_pycs_mode>`"
 msgstr ":c:member:`check_hash_pycs_mode <PyConfig.check_hash_pycs_mode>`"
@@ -456,7 +456,7 @@ msgid ":c:member:`configure_c_stdio <PyConfig.configure_c_stdio>`"
 msgstr ":c:member:`configure_c_stdio <PyConfig.configure_c_stdio>`"
 
 msgid "``\"configure_locale\"``"
-msgstr "```\"configure_locale\"```"
+msgstr "``\"configure_locale\"``"
 
 msgid ":c:member:`configure_locale <PyPreConfig.configure_locale>`"
 msgstr ":c:member:`configure_locale <PyPreConfig.configure_locale>`"
@@ -540,7 +540,7 @@ msgid ":c:member:`inspect <PyConfig.inspect>`"
 msgstr ":c:member:`inspect <PyConfig.inspect>`"
 
 msgid "``\"install_signal_handlers\"``"
-msgstr "````\"install_signal_handlers\"````"
+msgstr "``\"install_signal_handlers\"``"
 
 msgid ":c:member:`install_signal_handlers <PyConfig.install_signal_handlers>`"
 msgstr ":c:member:`install_signal_handlers <PyConfig.install_signal_handlers>`"
@@ -558,7 +558,7 @@ msgid ":c:member:`interactive <PyConfig.interactive>`"
 msgstr ":c:member:`interactive <PyConfig.interactive>`"
 
 msgid "``\"isolated\"``"
-msgstr "````\"isolated\"````"
+msgstr "``\"isolated\"``"
 
 msgid ":c:member:`isolated <PyConfig.isolated>`"
 msgstr ":c:member:`isolated <PyConfig.isolated>`"
@@ -614,7 +614,7 @@ msgid ":c:member:`parser_debug <PyConfig.parser_debug>`"
 msgstr ":c:member:`parser_debug <PyConfig.parser_debug>`"
 
 msgid "``\"pathconfig_warnings\"``"
-msgstr "```\"pathconfig_warnings\"```"
+msgstr "``\"pathconfig_warnings\"``"
 
 msgid ":c:member:`pathconfig_warnings <PyConfig.pathconfig_warnings>`"
 msgstr ":c:member:`pathconfig_warnings <PyConfig.pathconfig_warnings>`"
@@ -674,7 +674,7 @@ msgid ":c:member:`run_module <PyConfig.run_module>`"
 msgstr ":c:member:`run_module <PyConfig.run_module>`"
 
 msgid "``\"run_presite\"``"
-msgstr "````\"run_presite\"````"
+msgstr "``\"run_presite\"``"
 
 msgid ":c:member:`run_presite <PyConfig.run_presite>`"
 msgstr ":c:member:`run_presite <PyConfig.run_presite>`"
@@ -730,7 +730,7 @@ msgid ":c:member:`tracemalloc <PyConfig.tracemalloc>`"
 msgstr ":c:member:`tracemalloc <PyConfig.tracemalloc>`"
 
 msgid "``\"use_environment\"``"
-msgstr "````\"use_environment\"````"
+msgstr "``\"use_environment\"``"
 
 msgid ":c:member:`use_environment <PyConfig.use_environment>`"
 msgstr ":c:member:`use_environment <PyConfig.use_environment>`"
@@ -766,7 +766,7 @@ msgid ":c:member:`utf8_mode <PyPreConfig.utf8_mode>`"
 msgstr ":c:member:`utf8_mode <PyPreConfig.utf8_mode>`"
 
 msgid "``\"verbose\"``"
-msgstr "```\"verbose\"```"
+msgstr "``\"verbose\"``"
 
 msgid ":c:member:`verbose <PyConfig.verbose>`"
 msgstr ":c:member:`verbose <PyConfig.verbose>`"
@@ -799,7 +799,7 @@ msgid "``dict[str, str]``"
 msgstr "``dict[str, str]``"
 
 msgid "``\"_pystats\"``"
-msgstr "````\"_pystats\"````"
+msgstr "``\"_pystats\"``"
 
 msgid ":c:member:`_pystats <PyConfig._pystats>`"
 msgstr ":c:member:`_pystats <PyConfig._pystats>`"

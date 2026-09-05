@@ -154,7 +154,7 @@ msgid ""
 "guide assume the use of a :term:`virtual environment`."
 msgstr ""
 "برای کاربران POSIX (از جمله کاربران macOS و Linux)، مثال‌های این راهنما فرض "
-"می‌کنند که از :term:`محیط مجازی` استفاده می‌شود."
+"می‌کنند که از :term:`محیط مجازی <virtual environment>` استفاده می‌شود."
 
 msgid ""
 "For Windows users, the examples in this guide assume that the option to "

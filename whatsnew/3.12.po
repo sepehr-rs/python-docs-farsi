@@ -3641,7 +3641,7 @@ msgid "To migrate, consult the following correspondence table:"
 msgstr "برای مهاجرت، به جدول تناظر زیر مراجعه کنید:"
 
 msgid "``imp.NullImporter``"
-msgstr "````imp.NullImporter````"
+msgstr "``imp.NullImporter``"
 
 msgid "Insert ``None`` into ``sys.path_importer_cache``"
 msgstr "``None`` را در ``sys.path_importer_cache`` درج کنید"
@@ -3653,7 +3653,7 @@ msgid ":func:`importlib.util.cache_from_source`"
 msgstr ":func:`importlib.util.cache_from_source`"
 
 msgid "``imp.find_module()``"
-msgstr "```imp.find_module()```"
+msgstr "``imp.find_module()``"
 
 msgid ":func:`importlib.util.find_spec`"
 msgstr ":func:`importlib.util.find_spec`"
@@ -3675,7 +3675,7 @@ msgstr ""
 "و :const:`importlib.machinery.BYTECODE_SUFFIXES`"
 
 msgid "``imp.get_tag()``"
-msgstr "````imp.get_tag()````"
+msgstr "``imp.get_tag()``"
 
 msgid ":attr:`sys.implementation.cache_tag <sys.implementation>`"
 msgstr ":attr:`sys.implementation.cache_tag <sys.implementation>`"
@@ -3693,7 +3693,7 @@ msgid "``types.ModuleType(name)``"
 msgstr "``types.ModuleType(name)``"
 
 msgid "``imp.reload()``"
-msgstr "````imp.reload()````"
+msgstr "``imp.reload()``"
 
 msgid ":func:`importlib.reload`"
 msgstr ":func:`importlib.reload`"
@@ -3829,7 +3829,7 @@ msgid "``sqlite3.enable_shared_cache()``"
 msgstr "``sqlite3.enable_shared_cache()``"
 
 msgid "``sqlite3.OptimizedUnicode``"
-msgstr "````sqlite3.OptimizedUnicode````"
+msgstr "``sqlite3.OptimizedUnicode``"
 
 msgid ""
 "If a shared cache must be used, open the database in URI mode using the "
@@ -4019,7 +4019,7 @@ msgid ""
 "An alias of the :class:`~unittest.TextTestResult` class: ``_TextTestResult`` "
 "(deprecated in Python 3.2)."
 msgstr ""
-"نام مستعاری برای کلاس :class:`~unittest.TextTestResult``: ``_TextTestResult`` "
+"نام مستعاری برای کلاس :class:`~unittest.TextTestResult`: ``_TextTestResult`` "
 "(در پایتون 3.2 منسوخ شده است)."
 
 msgid "(Contributed by Serhiy Storchaka in :gh:`89325`.)"
@@ -5706,7 +5706,7 @@ msgstr ""
 
 msgid ":c:func:`PyOS_AfterFork`: Use :c:func:`PyOS_AfterFork_Child` instead."
 msgstr ""
-":c:func:`PyOS_AfterFork``: به جای آن از :c:func:`PyOS_AfterFork_Child`` "
+":c:func:`PyOS_AfterFork`: به جای آن از :c:func:`PyOS_AfterFork_Child` "
 "استفاده کنید."
 
 msgid ""

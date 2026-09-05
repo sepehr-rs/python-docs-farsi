@@ -347,7 +347,9 @@ msgstr ""
 " بدون تنظیم استثنا برمی‌گرداند."
 
 msgid "The caller does not need to hold an :term:`attached thread state`."
-msgstr "فراخواننده نیازی به در اختیار داشتن :term:`وضعیت نخ متصل` ندارد."
+msgstr ""
+"فراخواننده نیازی به در اختیار داشتن :term:`وضعیت نخ متصل <attached thread "
+"state>` ندارد."
 
 msgid ""
 "Destroy *lock*. The lock should not be held by any thread when calling this."

@@ -3636,7 +3636,7 @@ msgid "Returns n'th child element."
 msgstr "عنصر فرزند n-اُم را برمی‌گرداند."
 
 msgid "``elem[m:n]``"
-msgstr "````elem[m:n]````"
+msgstr "``elem[m:n]``"
 
 msgid "Returns list of m'th through n'th child elements."
 msgstr "فهرستی از عناصر فرزند m-ام تا n-ام را بازمی‌گرداند."
@@ -3678,7 +3678,7 @@ msgid "Returns list of attribute names."
 msgstr "فهرست نام‌های ویژگی‌ها را بازمی‌گرداند."
 
 msgid "``elem.get(name)``"
-msgstr "````elem.get(name)````"
+msgstr "``elem.get(name)``"
 
 msgid "Returns value of attribute *name*."
 msgstr "مقدار ویژگی *name* را برمی‌گرداند."

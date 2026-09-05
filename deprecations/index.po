@@ -735,7 +735,7 @@ msgid "``ssl.OP_NO_TLS*`` options"
 msgstr "گزینه‌های ``ssl.OP_NO_TLS*``"
 
 msgid "``ssl.PROTOCOL_SSLv3``"
-msgstr "````ssl.PROTOCOL_SSLv3````"
+msgstr "``ssl.PROTOCOL_SSLv3``"
 
 msgid "``ssl.PROTOCOL_TLS``"
 msgstr "``ssl.PROTOCOL_TLS``"
@@ -744,7 +744,7 @@ msgid "``ssl.PROTOCOL_TLSv1``"
 msgstr "``ssl.PROTOCOL_TLSv1``"
 
 msgid "``ssl.PROTOCOL_TLSv1_1``"
-msgstr "````ssl.PROTOCOL_TLSv1_1````"
+msgstr "``ssl.PROTOCOL_TLSv1_1``"
 
 msgid "``ssl.PROTOCOL_TLSv1_2``"
 msgstr "``ssl.PROTOCOL_TLSv1_2``"

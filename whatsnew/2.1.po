@@ -384,7 +384,7 @@ msgid ":meth:`~object.__ge__`"
 msgstr ":meth:`~object.__ge__`"
 
 msgid "``==``"
-msgstr "```==```"
+msgstr "``==``"
 
 msgid ":meth:`~object.__eq__`"
 msgstr ":meth:`~object.__eq__`"
