@@ -857,7 +857,7 @@ msgstr ""
 "این مقدار کوتاه خواهند شد."
 
 msgid "Path objects"
-msgstr "شیء‌های Path"
+msgstr "اشیای Path"
 
 msgid ""
 "Construct a Path object from a ``root`` zipfile (which may be "

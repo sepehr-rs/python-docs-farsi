@@ -1922,7 +1922,7 @@ msgstr ""
 "API قدیمی :mod:`plistlib` حذف شده است؛ این API از پایتون 3.4 منسوخ شده بود. از "
 "توابع :func:`~plistlib.load`، :func:`~plistlib.loads`، :func:`~plistlib.dump` "
 "و :func:`~plistlib.dumps` استفاده کنید. علاوه بر این، پارامتر "
-"*use_builtin_types* حذف شد و در عوض همیشه از شیء‌های استاندارد :class:`bytes` "
+"*use_builtin_types* حذف شد و در عوض همیشه از اشیای استاندارد :class:`bytes` "
 "استفاده می‌شود. (مشارکت‌شده توسط جان جانزن در :issue:`36409`.)"
 
 msgid ""

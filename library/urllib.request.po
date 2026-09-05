@@ -1157,7 +1157,7 @@ msgid ""
 "useful, and others that are meant to be used by derived classes.  These are "
 "intended for direct use:"
 msgstr ""
-"شیء‌های :class:`BaseHandler` چند متد ارائه می‌دهند که مستقیماً مفید هستند، و"
+"اشیای :class:`BaseHandler` چند متد ارائه می‌دهند که مستقیماً مفید هستند، و"
 " متدهای دیگری نیز دارند که برای استفاده در کلاس‌های مشتق‌شده در نظر گرفته "
 "شده‌اند. این موارد برای استفاده‌ی مستقیم در نظر گرفته شده‌اند:"
 

@@ -194,7 +194,7 @@ msgid "Added the *policy* keyword."
 msgstr "کلیدواژه‌ی *policy* افزوده شد."
 
 msgid "*_factory* defaults to the policy ``message_factory``."
-msgstr "*_factory* به‌صورت پیش‌فرض برابر با ``message_factory``\\ ِ سیاست است."
+msgstr "*_factory* به‌صورت پیش‌فرض برابر با ``message_factory``\\ سیاست است."
 
 msgid ""
 "Feed the parser some more data.  *data* should be a :term:`bytes-like "

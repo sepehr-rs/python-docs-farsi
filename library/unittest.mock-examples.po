@@ -31,7 +31,7 @@ msgid "Mock patching methods"
 msgstr "متدهای وصله‌کردن (patching) ماک"
 
 msgid "Common uses for :class:`Mock` objects include:"
-msgstr "کاربردهای رایج برای شیء‌های :class:`Mock` عبارتند از:"
+msgstr "کاربردهای رایج برای اشیای :class:`Mock` عبارتند از:"
 
 msgid "Patching methods"
 msgstr "روش‌های وصله کردن"
@@ -1724,7 +1724,7 @@ msgid ""
 "more complex assertions on objects used as arguments to mocks."
 msgstr ""
 "با استفاده از همان مفهوم پایه‌ای :data:`ANY`، می‌توانیم تطبیق‌دهنده‌ها "
-"(matchers) را پیاده‌سازی کنیم تا ادعاهای پیچیده‌تری روی شیء‌هایی که به‌عنوان"
+"(matchers) را پیاده‌سازی کنیم تا ادعاهای پیچیده‌تری روی اشیایی که به‌عنوان"
 " آرگومان برای ماک‌ها استفاده می‌شوند، انجام دهیم."
 
 msgid ""

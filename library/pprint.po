@@ -246,7 +246,7 @@ msgid ""
 msgstr ""
 "متدهای زیر پیاده‌سازی‌های توابع متناظر با همین نام‌ها را ارائه می‌دهند. "
 "استفاده از این متدها بر روی یک نمونه کمی کارآمدتر است، زیرا نیازی به ایجاد "
-"شیء‌های جدید :class:`PrettyPrinter` نیست."
+"اشیای جدید :class:`PrettyPrinter` نیست."
 
 msgid ""
 "Determine if the formatted representation of the object is \"readable,\" or "

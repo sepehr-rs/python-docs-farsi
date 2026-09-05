@@ -853,7 +853,7 @@ msgstr "پرهیز از ``PyObject_New``"
 
 msgid "GC-tracked objects need to be allocated using GC-aware functions."
 msgstr ""
-"شیء‌های پیگیری‌شده توسط زباله‌روبی باید با استفاده از توابع آگاه از "
+"اشیای پیگیری‌شده توسط زباله‌روبی باید با استفاده از توابع آگاه از "
 "زباله‌روبی تخصیص داده شوند."
 
 msgid "If you use :c:func:`PyObject_New` or :c:func:`PyObject_NewVar`:"

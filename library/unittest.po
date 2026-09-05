@@ -1949,7 +1949,7 @@ msgid "A list of :class:`logging.LogRecord` objects of the matching log messages
 msgstr "فهرستی از اشیاء :class:`logging.LogRecord` مربوط به پیام‌های گزارش منطبق."
 
 msgid "A list of :class:`str` objects with the formatted output of matching messages."
-msgstr "فهرستی از شیء‌های :class:`str` با خروجی قالب‌بندی‌شده‌ی پیام‌های منطبق."
+msgstr "فهرستی از اشیای :class:`str` با خروجی قالب‌بندی‌شده‌ی پیام‌های منطبق."
 
 msgid "Example::"
 msgstr "مثال::"
@@ -2838,7 +2838,7 @@ msgstr ""
 "ویژگی‌های قابل‌پیکربندی را فراهم می‌کند."
 
 msgid ":class:`TestLoader` objects have the following attributes:"
-msgstr "شیء‌های :class:`TestLoader` دارای ویژگی‌های زیر هستند:"
+msgstr "اشیای :class:`TestLoader` دارای ویژگی‌های زیر هستند:"
 
 msgid ""
 "A list of the non-fatal errors encountered while loading tests. Not reset by the "
@@ -2852,7 +2852,7 @@ msgstr ""
 "که هنگام اجرا، خطای اصلی را پرتاب می‌کند."
 
 msgid ":class:`TestLoader` objects have the following methods:"
-msgstr "شیء‌های :class:`TestLoader` متدهای زیر را دارند:"
+msgstr "اشیای :class:`TestLoader` متدهای زیر را دارند:"
 
 msgid ""
 "Return a suite of all test cases contained in the :class:`TestCase`\\ "

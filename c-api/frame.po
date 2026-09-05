@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Frame objects"
-msgstr "شیء‌های قاب"
+msgstr "اشیای قاب"
 
 msgid "The C structure of the objects used to describe frame objects."
 msgstr "ساختار C اشیایی که برای توصیف اشیاء فریم استفاده می‌شوند."

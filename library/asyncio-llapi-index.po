@@ -864,4 +864,4 @@ msgid ":class:`AbstractEventLoopPolicy`"
 msgstr ":class:`AbstractEventLoopPolicy`"
 
 msgid "Base class for policy objects."
-msgstr "کلاس پایه برای شیء‌های سیاست."
+msgstr "کلاس پایه برای اشیای سیاست."

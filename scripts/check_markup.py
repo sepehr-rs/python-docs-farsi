@@ -27,7 +27,15 @@ from pathlib import Path
 import polib
 
 ROLE_PATTERN = re.compile(r":(?:\w+:)?[\w.-]+:`([^`]+)`")
-TARGET_PATTERN = re.compile(r"^(.*)\s<([^<>]+)>$")
+# Sphinx itself accepts `label<target>` (no space) as well as the more
+# common `label <target>` -- both are valid RST role syntax, and the
+# upstream English source uses the no-space form in a few places (e.g.
+# ":pypi:`file built<blurb>`"). The space before "<" is therefore made
+# optional here so those roles are recognized as having an explicit
+# target instead of being treated as if the *entire* display text were
+# the target (which produced impossible-to-match false positives, since
+# no translation could ever reproduce the literal English phrase).
+TARGET_PATTERN = re.compile(r"^(.*?)\s?<([^<>]+)>$")
 
 LITERAL_PATTERNS = [
     ("literal/code span", re.compile(r"``.*?``")),

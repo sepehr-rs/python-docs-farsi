@@ -1870,7 +1870,7 @@ msgid ""
 "Python has :ref:`complex number <typesnumeric>` objects, but no complex literals. Instead, *imaginary literals* denote "
 "complex numbers with a zero real part."
 msgstr ""
-"پایتون شیء‌های :ref:`عدد مختلط <typesnumeric>` دارد، اما هیچ لفظی مختلطی ندارد. در عوض، *مقادیر لفظی موهومی* نشان‌دهنده‌ی "
+"پایتون اشیای :ref:`عدد مختلط <typesnumeric>` دارد، اما هیچ لفظی مختلطی ندارد. در عوض، *مقادیر لفظی موهومی* نشان‌دهنده‌ی "
 "اعداد مختلط با بخش حقیقی صفر هستند."
 
 msgid ""

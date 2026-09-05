@@ -1306,7 +1306,7 @@ msgid ""
 "longer depend on the locale at compile time. Only the locale at matching time "
 "affects the result of matching."
 msgstr ""
-"شیء‌های عبارت باقاعده‌ی کامپایل‌شده با پرچم :py:const:`~re.LOCALE` دیگر به تنظیمات "
+"اشیای عبارت باقاعده‌ی کامپایل‌شده با پرچم :py:const:`~re.LOCALE` دیگر به تنظیمات "
 "locale (locale) در زمان کامپایل وابسته نیستند. تنها تنظیمات locale در زمان تطبیق بر "
 "نتیجه‌ی تطبیق تأثیر می‌گذارد."
 
@@ -2085,7 +2085,7 @@ msgstr ""
 "باقاعده‌ی کامپایل‌شده، اتمی در نظر گرفته می‌شوند."
 
 msgid "Match Objects"
-msgstr "شیء‌های تطبیق (Match Objects)"
+msgstr "اشیای تطبیق (Match Objects)"
 
 msgid ""
 "Match objects always have a boolean value of ``True``. "

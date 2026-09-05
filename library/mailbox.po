@@ -1310,7 +1310,7 @@ msgstr ""
 "پیام سفارشی را هنگام راه‌اندازی نمونه‌ای از :class:`!Mailbox` تعیین کرد."
 
 msgid ":class:`!MaildirMessage` objects"
-msgstr "شیء‌های :class:`!MaildirMessage`"
+msgstr "اشیای :class:`!MaildirMessage`"
 
 msgid ""
 "A message with Maildir-specific behaviors. Parameter *message* has the same "
@@ -1747,7 +1747,7 @@ msgid ":class:`MMDFMessage` state"
 msgstr "وضعیت :class:`MMDFMessage`"
 
 msgid ":class:`!MHMessage` objects"
-msgstr "شیء‌های :class:`!MHMessage`"
+msgstr "اشیای :class:`!MHMessage`"
 
 msgid ""
 "A message with MH-specific behaviors. Parameter *message* has the same meaning "

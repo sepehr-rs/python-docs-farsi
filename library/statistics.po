@@ -1527,7 +1527,7 @@ msgid "Subclass of :exc:`ValueError` for statistics-related exceptions."
 msgstr "زیرکلاسی از :exc:`ValueError` برای استثناهای مرتبط با آمار."
 
 msgid ":class:`NormalDist` objects"
-msgstr "شیء‌های :class:`NormalDist`"
+msgstr "اشیای :class:`NormalDist`"
 
 msgid ""
 ":class:`NormalDist` is a tool for creating and manipulating normal "

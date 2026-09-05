@@ -668,7 +668,7 @@ msgstr ""
 "داده‌های پروفایل استفاده کرد."
 
 msgid ":class:`Stats` objects have the following methods:"
-msgstr "شیء‌های :class:`Stats` دارای متدهای زیر هستند:"
+msgstr "اشیای :class:`Stats` دارای متدهای زیر هستند:"
 
 msgid ""
 "This method for the :class:`Stats` class removes all leading path "

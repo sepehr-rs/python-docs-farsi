@@ -88,7 +88,7 @@ msgid ""
 "Three attributes on exception objects provide information about the context "
 "in which the exception was raised:"
 msgstr ""
-"سه ویژگی در شیء‌های استثنا اطلاعاتی درباره زمینه‌ای که استثنا در آن پرتاب شده "
+"سه ویژگی در اشیای استثنا اطلاعاتی درباره زمینه‌ای که استثنا در آن پرتاب شده "
 "است فراهم می‌کنند:"
 
 msgid ""

@@ -170,7 +170,7 @@ msgstr ""
 "<enum.IntEnum>` تبدیل شده‌اند (به‌ترتیب :class:`Signals`، :class:`Handlers` "
 "و :class:`Sigmasks`). توابع :func:`getsignal`، :func:`pthread_sigmask`، "
 ":func:`sigpending` و :func:`sigwait`، :class:`enums <enum.IntEnum>` "
-"قابل‌خواندن برای انسان را به‌صورت شیء‌های :class:`Signals` بازمی‌گردانند."
+"قابل‌خواندن برای انسان را به‌صورت اشیای :class:`Signals` بازمی‌گردانند."
 
 msgid "The signal module defines three enums:"
 msgstr "ماژول signal سه enum تعریف می‌کند:"

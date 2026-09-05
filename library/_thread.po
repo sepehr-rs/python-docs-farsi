@@ -222,7 +222,7 @@ msgstr ""
 "پرتاب :exc:`OverflowError` می‌شود."
 
 msgid "This is the type of lock objects."
-msgstr "این نوع شیء‌های قفل است."
+msgstr "این نوع اشیای قفل است."
 
 msgid "Lock objects have the following methods:"
 msgstr "اشیای قفل دارای متدهای زیر هستند:"

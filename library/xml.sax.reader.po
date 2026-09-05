@@ -124,7 +124,7 @@ msgid ""
 "application, although it may make copies and modify those."
 msgstr ""
 "یک :class:`InputSource` به برنامه تعلق دارد؛ :class:`XMLReader` اجازه ندارد "
-"شیء‌های :class:`InputSource` ارسال‌شده از برنامه به آن را تغییر دهد، اگرچه "
+"اشیای :class:`InputSource` ارسال‌شده از برنامه به آن را تغییر دهد، اگرچه "
 "می‌تواند کپی‌هایی بسازد و آن‌ها را تغییر دهد."
 
 msgid ""

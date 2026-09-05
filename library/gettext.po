@@ -672,7 +672,7 @@ msgid ""
 "supported access through a mapping API, but this appears to be unused and so"
 " is not currently supported."
 msgstr ""
-"یکی از تفاوت‌های میان این ماژول و ماژول Henstridge: شیء‌های کاتالوگ او از "
+"یکی از تفاوت‌های میان این ماژول و ماژول Henstridge: اشیای کاتالوگ او از "
 "دسترسی از طریق یک API نگاشت پشتیبانی می‌کردند، اما به نظر می‌رسد این قابلیت "
 "استفاده نشده است و بنابراین در حال حاضر پشتیبانی نمی‌شود."
 

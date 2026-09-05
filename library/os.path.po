@@ -56,7 +56,7 @@ msgstr ""
 "بخواهد. (ماژول :mod:`glob` را نیز ببینید.)"
 
 msgid "The :mod:`pathlib` module offers high-level path objects."
-msgstr "ماژول :mod:`pathlib` شیء‌های مسیر سطح بالا را ارائه می‌دهد."
+msgstr "ماژول :mod:`pathlib` اشیای مسیر سطح بالا را ارائه می‌دهد."
 
 msgid ""
 "All of these functions accept either only bytes or only string objects as "

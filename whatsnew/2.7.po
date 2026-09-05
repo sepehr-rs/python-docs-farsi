@@ -351,7 +351,7 @@ msgid ""
 "switch that causes warnings about using classic division with integers and "
 "long integers."
 msgstr ""
-"سوییچ :option:`!-3` اکنون به‌طور خودکار سوییچ :option:`!Qwarn` را فعال "
+"سوییچ :option:`!-3` اکنون به‌طور خودکار سوییچ :option:`!-Qwarn` را فعال "
 "می‌کند که هشدارهایی درباره‌ی استفاده از تقسیم کلاسیک روی اعداد صحیح و اعداد "
 "صحیح بلند ایجاد می‌کند."
 

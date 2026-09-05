@@ -1538,7 +1538,7 @@ msgid ""
 "option lines, it's not recommended to override it because that would "
 "interfere with constructor options *allow_no_value* and *delimiters*."
 msgstr ""
-"اگرچه شیء‌های ConfigParser همچنین از یک ویژگی ``OPTCRE`` برای تشخیص خطوط "
+"اگرچه اشیای ConfigParser همچنین از یک ویژگی ``OPTCRE`` برای تشخیص خطوط "
 "گزینه استفاده می‌کنند، توصیه نمی‌شود آن را بازنویسی کنید، زیرا این کار با "
 "گزینه‌های سازنده یعنی *allow_no_value* و *delimiters* تداخل ایجاد می‌کند."
 

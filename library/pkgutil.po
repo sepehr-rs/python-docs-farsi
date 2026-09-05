@@ -132,7 +132,7 @@ msgstr ""
 "مستقیماً بر پایه‌ی :mod:`importlib` باشد."
 
 msgid "Yield :term:`finder` objects for the given module name."
-msgstr "شیء‌های :term:`finder` را برای نام ماژول داده‌شده تولید می‌کند."
+msgstr "اشیای :term:`finder` را برای نام ماژول داده‌شده تولید می‌کند."
 
 msgid ""
 "If *fullname* contains a ``'.'``, the finders will be for the package "

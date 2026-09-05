@@ -126,7 +126,7 @@ msgid ""
 "Exception raised by zipimporter objects. It's a subclass of "
 ":exc:`ImportError`, so it can be caught as :exc:`ImportError`, too."
 msgstr ""
-"استثنایی که توسط شیء‌های zipimporter پرتاب می‌شود. این استثنا یک زیرکلاس از "
+"استثنایی که توسط اشیای zipimporter پرتاب می‌شود. این استثنا یک زیرکلاس از "
 ":exc:`ImportError` است، بنابراین می‌توان آن را به‌عنوان :exc:`ImportError` "
 "نیز گرفت."
 

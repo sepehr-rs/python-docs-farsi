@@ -883,7 +883,7 @@ msgid ""
 "creating :class:`Cursor` objects, and :ref:`sqlite3-controlling-transactions`."
 msgstr ""
 "هر پایگاه داده‌ی باز SQLite با یک شیء ``Connection`` نمایش داده می‌شود، که با استفاده "
-"از :func:`sqlite3.connect` ایجاد می‌شود. هدف اصلی آن‌ها ایجاد شیء‌های :class:`Cursor` "
+"از :func:`sqlite3.connect` ایجاد می‌شود. هدف اصلی آن‌ها ایجاد اشیای :class:`Cursor` "
 "و :ref:`sqlite3-controlling-transactions` است."
 
 msgid ":ref:`sqlite3-connection-shortcuts`"

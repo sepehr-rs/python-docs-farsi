@@ -152,7 +152,7 @@ msgstr "f = open(\"myfile.jpg\", \"rb\")"
 msgid ""
 "In-memory binary streams are also available as :class:`BytesIO` objects::"
 msgstr ""
-"جریان‌های دودویی درون‌حافظه نیز به‌عنوان شیء‌های :class:`BytesIO` در دسترس "
+"جریان‌های دودویی درون‌حافظه نیز به‌عنوان اشیای :class:`BytesIO` در دسترس "
 "هستند::"
 
 msgid "f = io.BytesIO(b\"some initial binary data: \\x00\\x01\")"

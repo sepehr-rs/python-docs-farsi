@@ -3225,8 +3225,7 @@ msgid "``threading.thread.getName`` => :attr:`threading.Thread.name`"
 msgstr "``threading.thread.getName`` => :attr:`threading.Thread.name`"
 
 msgid "``threading.Thread.isDaemon`` => :attr:`threading.Thread.daemon`"
-msgstr ""
-"````threading.Thread.isDaemon`` => :attr:`threading.Thread.daemon`````"
+msgstr "``threading.Thread.isDaemon`` => :attr:`threading.Thread.daemon`"
 
 msgid "``threading.Thread.setDaemon`` => :attr:`threading.Thread.daemon`"
 msgstr "``threading.Thread.setDaemon`` => :attr:`threading.Thread.daemon`"

@@ -161,7 +161,8 @@ msgstr ""
 
 msgid ""
 "New :mod:`pickle` :ref:`protocol 4 <whatsnew-protocol-4>` (:pep:`3154`)."
-msgstr "پروتکل ۴ جدید :mod:`pickle` (:pep:`3154`)."
+msgstr ""
+":ref:`پروتکل ۴ جدید <whatsnew-protocol-4>` :mod:`pickle` (:pep:`3154`)."
 
 msgid ""
 ":mod:`multiprocessing` now has :ref:`an option to avoid using os.fork on "

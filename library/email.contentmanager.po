@@ -115,7 +115,7 @@ msgid "the type's :attr:`qualname <type.__qualname__>` (``typ.__qualname__``)"
 msgstr ":attr:`qualname <type.__qualname__>` نوع (``typ.__qualname__``)"
 
 msgid "the type's :attr:`name <type.__name__>` (``typ.__name__``)."
-msgstr ":attr:`name <type.__name__>`\\ ِ نوع (``typ.__name__``)."
+msgstr ":attr:`name <type.__name__>`\\ نوع (``typ.__name__``)."
 
 msgid ""
 "If none of the above match, repeat all of the checks above for each of the "
@@ -354,7 +354,7 @@ msgid ""
 "by having a ``name`` attribute), add the headers to *msg*."
 msgstr ""
 "اگر *headers* مشخص شده باشد و فهرستی از رشته‌هایی به‌صورت ``headername: "
-"headervalue`` یا فهرستی از شیء‌های ``header`` باشد (که با داشتن ویژگی "
+"headervalue`` یا فهرستی از اشیای ``header`` باشد (که با داشتن ویژگی "
 "``name`` از رشته‌ها متمایز می‌شوند)، سرآیندها به *msg* اضافه می‌شوند."
 
 msgid "Footnotes"

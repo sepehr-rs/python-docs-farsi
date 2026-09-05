@@ -189,10 +189,10 @@ msgstr ""
 "زیرکلاس‌های آن‌ها) است."
 
 msgid "``call_stack`` is a tuple of ``FrameCallGraphEntry`` objects."
-msgstr "``call_stack`` یک تاپل از شیء‌های ``FrameCallGraphEntry`` است."
+msgstr "``call_stack`` یک تاپل از اشیای ``FrameCallGraphEntry`` است."
 
 msgid "``awaited_by`` is a tuple of ``FutureCallGraph`` objects."
-msgstr "``awaited_by`` تاپلی از شیء‌های ``FutureCallGraph`` است."
+msgstr "``awaited_by`` تاپلی از اشیای ``FutureCallGraph`` است."
 
 msgid "``FrameCallGraphEntry(frame)``"
 msgstr "``FrameCallGraphEntry(frame)``"

@@ -2457,7 +2457,7 @@ msgstr ""
 
 msgid "Use ``argv[0]`` of :c:member:`~PyConfig.argv` if available and non-empty."
 msgstr ""
-"در صورت موجود و غیرخالی بودن، از ``argv[0]``ِ :c:member:`~PyConfig.argv` استفاده "
+"در صورت موجود و غیرخالی بودن، از ``argv[0]`` :c:member:`~PyConfig.argv` استفاده "
 "کنید."
 
 msgid ""

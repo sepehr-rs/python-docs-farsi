@@ -140,7 +140,7 @@ msgid ""
 "their :attr:`UUID.int` attributes.  Comparison with a non-UUID object raises "
 "a :exc:`TypeError`."
 msgstr ""
-"مقایسه‌ی شیء‌های UUID از طریق مقایسه‌ی ویژگی‌های :attr:`UUID.int` آن‌ها انجام "
+"مقایسه‌ی اشیای UUID از طریق مقایسه‌ی ویژگی‌های :attr:`UUID.int` آن‌ها انجام "
 "می‌شود. مقایسه با یک شیء غیر UUID باعث پرتاب یک :exc:`TypeError` می‌شود."
 
 msgid ""

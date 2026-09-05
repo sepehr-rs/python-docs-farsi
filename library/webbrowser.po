@@ -441,7 +441,7 @@ msgstr ""
 "webbrowser.open_new(url)"
 
 msgid "Browser controller objects"
-msgstr "شیء‌های کنترل‌کننده مرورگر"
+msgstr "اشیای کنترل‌کننده مرورگر"
 
 msgid ""
 "Browser controllers provide the :attr:`~controller.name` attribute, and the "

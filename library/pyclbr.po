@@ -102,7 +102,7 @@ msgstr ""
 "Class هستند. انتظار نمی‌رود کاربران نمونه‌هایی از این کلاس‌ها ایجاد کنند."
 
 msgid "Function Objects"
-msgstr "شیء‌های تابع"
+msgstr "اشیای تابع"
 
 msgid ""
 "Class :class:`!Function` instances describe functions defined by def "

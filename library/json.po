@@ -323,7 +323,7 @@ msgid ""
 "``fp.write()`` must support :class:`str` input."
 msgstr ""
 "شیء فایل‌ماندی که *obj* به آن سریال‌سازی می‌شود. ماژول :mod:`!json` همیشه "
-"شیء‌های :class:`str` تولید می‌کند، نه شیء‌های :class:`bytes`؛ بنابراین "
+"اشیای :class:`str` تولید می‌کند، نه اشیای :class:`bytes`؛ بنابراین "
 "``fp.write()`` باید از ورودی :class:`str` پشتیبانی کند."
 
 msgid ""

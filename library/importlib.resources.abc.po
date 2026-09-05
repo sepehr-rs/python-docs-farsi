@@ -164,7 +164,7 @@ msgid "Abstract. The base name of this object without any parent references."
 msgstr "انتزاعی. نام پایه‌ی این شیء بدون هیچ ارجاعی به والد."
 
 msgid "Yield Traversable objects in self."
-msgstr "شیء‌های Traversable در self را yield می‌کند."
+msgstr "اشیای Traversable در self را yield می‌کند."
 
 msgid "Return ``True`` if self is a directory."
 msgstr "اگر self یک پوشه باشد، ``True`` را برمی‌گرداند."

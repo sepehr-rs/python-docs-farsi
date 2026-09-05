@@ -126,7 +126,7 @@ msgstr ""
 "<upgrading-optparse-code>` را ببینید."
 
 msgid "ArgumentParser objects"
-msgstr "شیء‌های ArgumentParser"
+msgstr "اشیای ArgumentParser"
 
 msgid ""
 "Create a new :class:`ArgumentParser` object. All parameters should be passed as keyword arguments. Each parameter has "
@@ -148,7 +148,7 @@ msgid "epilog_ - Text to display after the argument help (by default, no text)"
 msgstr "epilog_ - متنی که پس از راهنمای آرگومان نمایش داده می‌شود (به‌طور پیش‌فرض، بدون متن)"
 
 msgid "parents_ - A list of :class:`ArgumentParser` objects whose arguments should also be included"
-msgstr "parents_ - فهرستی از شیء‌های :class:`ArgumentParser` که آرگومان‌های آن‌ها نیز باید گنجانده شوند"
+msgstr "parents_ - فهرستی از اشیای :class:`ArgumentParser` که آرگومان‌های آن‌ها نیز باید گنجانده شوند"
 
 msgid "formatter_class_ - A class for customizing the help output"
 msgstr "formatter_class_ - کلاسی برای سفارشی‌سازی خروجی راهنما"

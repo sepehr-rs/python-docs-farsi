@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid ":mod:`!marshal` --- Internal Python object serialization"
-msgstr ":mod:`!marshal` --- سریال‌سازی داخلی شیء‌های پایتون"
+msgstr ":mod:`!marshal` --- سریال‌سازی داخلی اشیای پایتون"
 
 msgid ""
 "This module contains functions that can read and write Python values in a "

@@ -2598,7 +2598,7 @@ msgid ""
 "*Do not* call ``super().__new__()``, as the lookup-only ``__new__`` is the "
 "one that is found; instead, use the data type directly -- e.g.::"
 msgstr ""
-"``super().__new__()`` را *فراخوانی نکنید*، زیرا ``__new__``\\ ِ فقط برای جستج"
+"``super().__new__()`` را *فراخوانی نکنید*، زیرا ``__new__``\\ فقط برای جستج"
 "و همان چیزی است که پیدا می‌شود؛ در عوض، مستقیماً از نوع داده استفاده کنید -"
 "- مثلاً::"
 

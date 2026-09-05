@@ -236,7 +236,7 @@ msgstr ""
 "*nframes* را پیش از نوشتن داده‌ی فریم بر همین اساس تنظیم خواهد کرد."
 
 msgid "Wave_write objects have the following methods:"
-msgstr "شیء‌های Wave_write دارای متدهای زیر هستند:"
+msgstr "اشیای Wave_write دارای متدهای زیر هستند:"
 
 msgid ""
 "Make sure *nframes* is correct, and close the file if it was opened by "

@@ -311,7 +311,7 @@ msgstr ""
 "ماژول :mod:`fnmatch` بسط نام فایل (نه مسیر) به‌سبک پوسته را ارائه می‌دهد."
 
 msgid "The :mod:`pathlib` module offers high-level path objects."
-msgstr "ماژول :mod:`pathlib` شیء‌های مسیر سطح بالا را ارائه می‌دهد."
+msgstr "ماژول :mod:`pathlib` اشیای مسیر سطح بالا را ارائه می‌دهد."
 
 msgid "filenames"
 msgstr "نام فایل‌ها"

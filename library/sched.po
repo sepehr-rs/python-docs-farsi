@@ -119,7 +119,7 @@ msgstr ""
 "1652342840.3697174"
 
 msgid "Scheduler Objects"
-msgstr "شیء‌های زمان‌بند"
+msgstr "اشیای زمان‌بند"
 
 msgid ""
 ":class:`scheduler` instances have the following methods and attributes:"

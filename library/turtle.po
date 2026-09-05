@@ -118,7 +118,7 @@ msgid "Starting a turtle environment"
 msgstr "راه‌اندازی محیط turtle"
 
 msgid "In a Python shell, import all the objects of the ``turtle`` module::"
-msgstr "در یک پوسته‌ی پایتون، همه‌ی شیء‌های ماژول ``turtle`` را ایمپورت کنید::"
+msgstr "در یک پوسته‌ی پایتون، همه‌ی اشیای ماژول ``turtle`` را ایمپورت کنید::"
 
 msgid "from turtle import *"
 msgstr "from turtle import *"

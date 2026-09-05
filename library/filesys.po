@@ -43,7 +43,7 @@ msgid ""
 "lower level than Python :term:`file objects <file object>`."
 msgstr ""
 "رابط‌های سیستم‌عامل، از جمله توابعی برای کار با فایل‌ها در سطحی پایین‌تر از "
-":term:`شیء‌های فایل <file object>` پایتون."
+":term:`اشیای فایل <file object>` پایتون."
 
 msgid "Module :mod:`io`"
 msgstr "ماژول :mod:`io`"
