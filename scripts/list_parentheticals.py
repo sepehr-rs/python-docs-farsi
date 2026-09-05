@@ -110,18 +110,12 @@ def scan_glosses(entries):
 
 
 def coverage(entries, terms, partner_lexemes):
-    """Per English term: msgids containing it, split by gloss presence.
-
-    Multi-word terms only count when their parts appear consecutively
-    (hyphen/space interchangeable), so "class hinting" doesn't fire on
-    every msgid containing "class". Lookups are dict-driven to stay fast.
-    """
     if not terms:
         return {}
     terms_parts = {t: re.split(r"[\s\-]+", t) for t in terms}
-    by_first = defaultdict(list)  # first token -> [term names]
+    by_first = defaultdict(list)
     for t, parts in terms_parts.items():
-        by_first[parts[0]].append(t)
+        by_first[parts[0].lower()].append(t)  # <-- lowercase for case-insensitive lookup
 
     gloss_re = {
         t: re.compile(
@@ -144,15 +138,32 @@ def coverage(entries, terms, partner_lexemes):
         if not msgid.strip():
             continue
 
-        low = [t.lower() for t in
-               re.findall(r"[A-Za-z][A-Za-z0-9\-']*", msgid)]
+        # FIX: tokenize on whitespace only, preserving hyphenated tokens,
+        # then normalise each token to lowercase for lookup.
+        raw_tokens = re.findall(r"[A-Za-z][A-Za-z0-9\-']*", msgid)
+        low = [t.lower() for t in raw_tokens]
         n = len(low)
         found = set()
         for i, tok in enumerate(low):
-            for t in by_first.get(tok, ()):
-                parts = terms_parts[t]
-                if len(parts) == 1 or low[i:i + len(parts)] == parts:
-                    found.add(t)
+            for term in by_first.get(tok, ()):
+                parts = terms_parts[term]
+                np = len(parts)
+                if np == 1:
+                    found.add(term)
+                else:
+                    # FIX: compare against hyphen-normalised msgid tokens
+                    # so "as-pattern" in msgid matches parts ["as", "pattern"]
+                    # whether written as "as-pattern" or "as pattern".
+                    msgid_slice = [
+                        re.sub(r"\-+", "-", low[j]) for j in range(i, min(i + np, n))
+                    ]
+                    term_parts_norm = [re.sub(r"\-+", "-", p.lower()) for p in parts]
+                    if msgid_slice == term_parts_norm:
+                        found.add(term)
+                    # Also match when the whole hyphenated term appears as one token.
+                    elif np > 1 and low[i] == "-".join(p.lower() for p in parts):
+                        found.add(term)
+
         if not found:
             continue
 
