@@ -1215,7 +1215,7 @@ msgstr ""
 "است ::"
 
 msgid "\"3.0a5+ (py3k:63103M, May 12 2008, 00:53:55) \\n[GCC 4.2.3]\""
-msgstr "3.0a5+ (py3k:63103M, May 12 2008, 00:53:55) \\n[GCC 4.2.3]"
+msgstr "\"3.0a5+ (py3k:63103M, May 12 2008, 00:53:55) \\n[GCC 4.2.3]\""
 
 msgid ""
 "The first word (up to the first space character) is the current Python "

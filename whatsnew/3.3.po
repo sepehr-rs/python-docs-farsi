@@ -95,10 +95,10 @@ msgstr ""
 ":ref:`سازوکار ایمپورت <importlib>` بر پایه‌ی :mod:`importlib` بازنویسی شد."
 
 msgid "More compact :ref:`unicode strings <pep-393>`."
-msgstr ":ref:`رشته‌های یونیکد <pep-393>`` فشرده‌تر."
+msgstr ":ref:`رشته‌های یونیکد <pep-393>` فشرده‌تر."
 
 msgid "More compact :ref:`attribute dictionaries <pep-412>`."
-msgstr ":ref:`دیکشنری‌های ویژگی <pep-412>`` فشرده‌تر."
+msgstr ":ref:`دیکشنری‌های ویژگی <pep-412>` فشرده‌تر."
 
 msgid "Significantly Improved Library Modules:"
 msgstr "ماژول‌های کتابخانه‌ای به‌طور چشمگیر بهبودیافته:"
@@ -3888,7 +3888,7 @@ msgstr ":pep:`418` توابع جدیدی به ماژول :mod:`time` اضافه 
 
 msgid ":func:`~time.get_clock_info`: Get information on a clock."
 msgstr ""
-":func:`~time.get_clock_info``: اطلاعات مربوط به یک ساعت را دریافت می‌کند."
+":func:`~time.get_clock_info`: اطلاعات مربوط به یک ساعت را دریافت می‌کند."
 
 msgid ""
 ":func:`~time.monotonic`: Monotonic clock (cannot go backward), not affected "

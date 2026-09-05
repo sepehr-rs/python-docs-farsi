@@ -1203,7 +1203,7 @@ msgid ""
 "These macros are :term:`soft deprecated`. They describe parameters of the "
 "internal representation of :c:type:`PyLongObject` instances."
 msgstr ""
-"این ماکروها :term:`به‌نرمی منسوخ <soft deprecated>`` هستند. آن‌ها پارامترهای "
+"این ماکروها :term:`به‌نرمی منسوخ <soft deprecated>` هستند. آن‌ها پارامترهای "
 "نمایش داخلی نمونه‌های :c:type:`PyLongObject` را توصیف می‌کنند."
 
 msgid ""

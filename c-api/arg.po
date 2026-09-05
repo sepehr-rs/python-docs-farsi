@@ -254,7 +254,7 @@ msgid ""
 "``z#`` (:class:`str`, read-only :term:`bytes-like object` or ``None``) "
 "[const char \\*, :c:type:`Py_ssize_t`]"
 msgstr ""
-"``z#`` (:class:`str`، :term:`شیء شبه‌بایت <bytes-like object>`ِ فقط‌خواندنی "
+"``z#`` (:class:`str`، :term:`شیء شبه‌بایت <bytes-like object>` فقط‌خواندنی "
 "یا ``None``) [const char \\*, :c:type:`Py_ssize_t`]"
 
 msgid ""

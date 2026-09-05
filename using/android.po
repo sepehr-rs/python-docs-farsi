@@ -84,7 +84,7 @@ msgstr ""
 
 msgid ""
 "`Briefcase <https://briefcase.beeware.org>`__, from the BeeWare project"
-msgstr "``Briefcase <https://briefcase.beeware.org>`__، از پروژه‌ی BeeWare"
+msgstr "`Briefcase <https://briefcase.beeware.org>`__، از پروژه‌ی BeeWare"
 
 msgid ""
 "`Buildozer <https://buildozer.readthedocs.io>`__, from the Kivy project"

@@ -781,7 +781,7 @@ msgid ""
 "reference to *value* on success (if it returns ``0``)."
 msgstr ""
 "مشابه :c:func:`PyModule_AddObjectRef` است، اما در صورت موفقیت (اگر ``0`` را "
-"برگرداند) ارجاع به *value* را :term:`می‌دزدد <steal>``."
+"برگرداند) ارجاع به *value* را :term:`می‌دزدد <steal>`."
 
 msgid ""
 "The new :c:func:`PyModule_Add` or :c:func:`PyModule_AddObjectRef` functions "

@@ -3611,7 +3611,7 @@ msgstr ""
 " با استفاده از :func:`typing.get_type_hints` قابل دسترسی هستند."
 
 msgid "universal newlines"
-msgstr "خط جدید همگانی"
+msgstr "سطرهای جدید همگانی"
 
 msgid ""
 "A manner of interpreting text streams in which all of the following are "

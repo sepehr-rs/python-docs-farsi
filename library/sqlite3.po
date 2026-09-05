@@ -1903,7 +1903,7 @@ msgid ""
 "``True``: Use SQLite's `autocommit mode`_. :meth:`commit` and :meth:`rollback` "
 "have no effect in this mode."
 msgstr ""
-"``True``: از `حالت کامیت خودکار <autocommit mode>`_ SQLite استفاده کنید. در این "
+"``True``: از `autocommit mode`_ SQLite استفاده کنید. در این "
 "حالت، :meth:`commit` و :meth:`rollback` هیچ تأثیری ندارند."
 
 msgid ""

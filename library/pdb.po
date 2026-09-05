@@ -1013,7 +1013,7 @@ msgid ""
 "printed using the :mod:`pprint` module."
 msgstr ""
 "مانند دستور :pdbcmd:`p`، با این تفاوت که مقدار *عبارت* با استفاده از "
-"ماژول :mod:`pprint`زیبانویسی می‌شود."
+"ماژول :mod:`pprint` زیبانویسی می‌شود."
 
 msgid "Print the type of *expression*."
 msgstr "نوع *عبارت* را چاپ کنید."

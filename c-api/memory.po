@@ -212,7 +212,7 @@ msgstr ""
 "دامنه خام: برای تخصیص حافظه به بافرهای حافظه‌ی همه‌منظوره در مواردی در نظر "
 "گرفته شده است که تخصیص *باید* به تخصیص‌دهنده‌ی سیستم برود یا تخصیص‌دهنده "
 "بتواند بدون :term:`attached thread state` کار کند. حافظه مستقیماً از سیستم "
-"درخواست می‌شود. به :ref:`رابط حافظه خام <raw-memoryinterface>`` مراجعه کنید."
+"درخواست می‌شود. به :ref:`رابط حافظه خام <raw-memoryinterface>` مراجعه کنید."
 
 msgid ""
 "\"Mem\" domain: intended for allocating memory for Python buffers and "
