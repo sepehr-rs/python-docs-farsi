@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-22 14:54+0000\n"
+"POT-Creation-Date: 2026-10-27 09:29+0000\n"
 "PO-Revision-Date: 2026-09-13 20:13+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -1037,10 +1037,14 @@ msgstr "``PYMEM_ALLOCATOR_PYMALLOC`` (``5``): :ref:`تخصیص‌دهنده حا
 msgid "``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): :ref:`Python pymalloc memory allocator <pymalloc>` with :ref:`debug hooks <pymem-debug-hooks>`."
 msgstr "``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): :ref:`تخصیص‌دهنده حافظه pymalloc پایتون <pymalloc>` به همراه :ref:`قلاب‌های اشکال‌زدایی <pymem-debug-hooks>`."
 
-msgid "``PYMEM_ALLOCATOR_MIMALLOC`` (``6``): use ``mimalloc``, a fast malloc replacement."
+#, fuzzy
+#| msgid "``PYMEM_ALLOCATOR_MIMALLOC`` (``6``): use ``mimalloc``, a fast malloc replacement."
+msgid "``PYMEM_ALLOCATOR_MIMALLOC`` (``7``): use ``mimalloc``, a fast malloc replacement."
 msgstr "``PYMEM_ALLOCATOR_MIMALLOC`` (``6``): استفاده از ``mimalloc``، جایگزین سریعی برای malloc."
 
-msgid "``PYMEM_ALLOCATOR_MIMALLOC_DEBUG`` (``7``): use ``mimalloc``, a fast malloc replacement with :ref:`debug hooks <pymem-debug-hooks>`."
+#, fuzzy
+#| msgid "``PYMEM_ALLOCATOR_MIMALLOC_DEBUG`` (``7``): use ``mimalloc``, a fast malloc replacement with :ref:`debug hooks <pymem-debug-hooks>`."
+msgid "``PYMEM_ALLOCATOR_MIMALLOC_DEBUG`` (``8``): use ``mimalloc``, a fast malloc replacement with :ref:`debug hooks <pymem-debug-hooks>`."
 msgstr "``PYMEM_ALLOCATOR_MIMALLOC_DEBUG`` (``7``): استفاده از ``mimalloc``، جایگزین سریعی برای malloc با :ref:`قلاب‌های اشکال‌زدایی <pymem-debug-hooks>`."
 
 msgid "``PYMEM_ALLOCATOR_PYMALLOC`` and ``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` are not supported if Python is :option:`configured using --without-pymalloc <--without-pymalloc>`."
