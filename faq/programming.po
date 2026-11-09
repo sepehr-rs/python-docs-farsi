@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"POT-Creation-Date: 2026-11-09 04:05+0000\n"
 "PO-Revision-Date: 2026-09-14 09:35+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -26,9 +26,6 @@ msgstr ""
 
 msgid "Programming FAQ"
 msgstr "پرسش‌های متداول درباره‌ی برنامه‌نویسی"
-
-msgid "Contents"
-msgstr "فهرست"
 
 msgid "General questions"
 msgstr "پرسش‌های عمومی"
@@ -2655,3 +2652,6 @@ msgstr "پارامتر"
 
 msgid "difference from argument"
 msgstr "تفاوت با آرگومان"
+
+#~ msgid "Contents"
+#~ msgstr "فهرست"
