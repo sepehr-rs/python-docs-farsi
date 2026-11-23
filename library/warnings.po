@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 11:59+0000\n"
+"POT-Creation-Date: 2026-11-23 04:05+0000\n"
 "PO-Revision-Date: 2026-09-13 13:23+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -224,6 +224,9 @@ msgstr "از آنجا که کلاس :exc:`Warning` از کلاس توکار :exc
 
 msgid "If a warning is reported and doesn't match any registered filter then the \"default\" action is applied (hence its name)."
 msgstr "اگر هشداری گزارش شود و با هیچ فیلتر ثبت‌شده‌ای مطابقت نداشته باشد، اقدام «default» اعمال می‌شود (از این رو این نام را دارد)."
+
+msgid "Added regular expression support for *message* and *module*."
+msgstr ""
 
 msgid "Repeated Warning Suppression Criteria"
 msgstr "معیارهای فرونشانی هشدارهای تکراری"
