@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-28 10:13+0000\n"
+"POT-Creation-Date: 2026-11-28 04:04+0000\n"
 "PO-Revision-Date: 2026-09-13 16:38+0330\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: none\n"
@@ -3659,4 +3659,12 @@ msgid "Notable changes in 3.14.10"
 msgstr "تغییرات قابل توجه در 3.14.1"
 
 msgid "The :mod:`ssl` module now rejects TLS certificate chains that contain one of a set of compromised eMudhra intermediate CA certificates.  The affected certificates are identified by their public key, so cross-signed copies that reuse the same key are blocked as well.  It is a defense-in-depth backstop that applies even when an application supplies its own root CA bundle, and regardless of whether the platform trust store has removed trust. (Contributed by Christian Heimes in :gh:`160040` for :cve:`2026-115557`.)"
+msgstr ""
+
+#, fuzzy
+#| msgid "Notable changes in 3.14.1"
+msgid "Notable changes in 3.14.11"
+msgstr "تغییرات قابل توجه در 3.14.1"
+
+msgid ":c:func:`Py_INCREF`, :c:func:`Py_XINCREF`, :c:func:`Py_DECREF` and :c:func:`Py_XDECREF` are now implemented as function calls on all limited C API versions.  Previously, they were only implemented as function calls on the limited C API version 3.12 or newer. Patch by Victor Stinner: (Contributed by Victor Stinner in :gh:`158401`.)"
 msgstr ""

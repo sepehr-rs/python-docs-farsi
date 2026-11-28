@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 12:56+0000\n"
+"POT-Creation-Date: 2026-11-28 04:04+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
 "Last-Translator: Sepehr Rasouli <sepehrrasouli06@gmail.com>, 2026\n"
 "Language-Team: Persian (https://github.com/python/python-docs-fa/)\n"
@@ -60,7 +60,9 @@ msgstr "انتظار می‌رود پروژه‌هایی که از این API ا
 msgid "Stable Application Binary Interface"
 msgstr "رابط دودویی پایدار برنامه (ABI)"
 
-msgid "For simplicity, this document talks about *extensions*, but the Limited API and Stable ABI work the same way for all uses of the API – for example, embedding Python."
+#, fuzzy
+#| msgid "For simplicity, this document talks about *extensions*, but the Limited API and Stable ABI work the same way for all uses of the API – for example, embedding Python."
+msgid "For simplicity, this document talks about *extensions*, but the Limited API and Stable ABI work the same way for all uses of the API – for example, embedding Python. When embedding Python on Linux, see :ref:`embedding-python-versions` for how to link the application and for limitations."
 msgstr "برای سادگی، این سند درباره‌ی *افزونه‌ها* صحبت می‌کند، اما API محدود (Limited API) و ABI پایدار برای همه‌ی کاربردهای API به همان شکل کار می‌کنند – برای مثال، تعبیه کردن پایتون."
 
 msgid "Limited C API"
